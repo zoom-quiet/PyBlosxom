@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/plugin_info/zqcategories.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/plugin_info/zqcategories.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/plugin_info/zqcategories.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2013-12-13T06:42:28Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">zqcategories</title>
+<category term="path" />
+<id>/pyblosxom/2013/12/13/zqcategories</id>
+<updated>2013-12-13T06:42:28Z</updated>
+<published>2013-12-13T06:42:28Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/plugin_info/zqcategories.html" />
+<content type="html">&lt;pre&gt;AUTHOR: Will Guaraldi - willg at bluesock dot org
+VERSION: $Id: zqcategories.py,v 7f6c62eaa2db 2011&#x2F;09&#x2F;07 08:52:46 zoomquiet+hg $
+URL: &lt;a href=&quot;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;techic&#x2F;PyBlosxom&#x2F;plugins&#x2F;zqcategories.html&quot;&gt;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;techic&#x2F;PyBlosxom&#x2F;plugins&#x2F;zqcategories.html&lt;&#x2F;a&gt;
+&lt;&#x2F;pre&gt;</content>
+</entry>
+</feed>

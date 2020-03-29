@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<!DOCTYPE content [ <!ENTITY nbsp " "> ]>
+<rdf:RDF xml:base="/pyblosxom/rdf"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<rdf:Description rdf:about="/pyblosxom">
+  <dc:title> Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup> </dc:title>
+  <dc:description> Zoom.Quiet's PyBlosxom blogging </dc:description>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+</rdf:Description>
+
+<rdf:Description rdf:about="/pyblosxom/techic/PyBlosxom/plugins/pyfilenamemtime">
+  <dc:title> pyfilenamemtime.py </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2011-08-31T15:22:00Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <pre class="brush: python"># -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
+"""
+If a filename contains a timestamp in the form of YYYY-MM-DD-hh-mm,
+change the mtime to be the timestamp instead of the one kept by the
+filesystem.  For example, a valid filename would be
+foo-2002-04-01-00-00.txt for April fools day on the year 2002.
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the "Software"), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify,
+merge, publish, distribute, sublicense, and/or sell copies of the
+Software, and to permit persons to whom the Software is furnished
+to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Copyright 2004, 2005 Tim Roberts
+"""
+## Leo: tab_width=-4 page_width=80
+# vim: tabstop=4 shiftwidth=4
+import os, re, time
+
+__author__ = 'Tim Roberts http://www.probo.com/timr/blog/'
+__version__ = '$Id: pyfilenamemtime.py,v 2872b22e2ace 2011/10/27 07:08:25 zoomquiet+hg $'
+
+DAYMATCH = re.compile('([0-9]{4})-([0-1][0-9])-([0-3][0-9])-([0-2][0-9])-([0-5][0-9]).[\w]+$')
+
+def cb_filestat(args):
+    filename = args["filename"]
+    stattuple = args["mtime"]
+
+    mtime = 0
+    mtch = DAYMATCH.search(os.path.basename(filename))
+    if mtch:
+        try:
+            year = int(mtch.groups()[0])
+            mo = int(mtch.groups()[1])
+            day = int(mtch.groups()[2])
+            hr = int(mtch.groups()[3])
+            minute = int(mtch.groups()[4]) 
+            mtime = time.mktime((year,mo,day,hr,minute,0,0,0,-1))
+        except:
+            # TODO: Some sort of debugging code here?
+            pass
+
+    if mtime: 
+        args["mtime"] = tuple(list(stattuple[:8]) + [mtime] + list(stattuple[9:]))
+
+    return args
+
+
+</pre>
+  </content>
+
+  <rdf:Seq>
+
+  </rdf:Seq>
+</rdf:Description>
+</rdf:RDF>

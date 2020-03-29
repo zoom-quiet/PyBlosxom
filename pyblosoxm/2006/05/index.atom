@@ -1,0 +1,962 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/2006/05/index.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/2006/05/index.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/2006/05/index.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2006-05-31T11:00:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">从心理学角度理解Goolge模式</title>
+<category term="/internet" />
+<id>/pyblosxom/2006/05/31/psychology-google-2006-05-31-19-00</id>
+<updated>2006-05-31T11:00:00Z</updated>
+<published>2006-05-31T11:00:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/internet/psychology-google-2006-05-31-19-00.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopNFM1WTVaT&#x27; id=&#x27;toptopNFM1WTVaT&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;从心理学角度理解Goolge模式&lt;&#x2F;h1&gt;
+&lt;h2&gt;--WEB2.0到底是什么本质？&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0JaT&quot;&gt;引述&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc2R0lYQ0IyR&quot;&gt;自说&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc3R0lYRENMU&quot;&gt;2.1. 一个人...&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc4R01YQ0IyT&quot;&gt;问&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0JaT&quot; name=&quot;toc1R0VYQ0JaT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopNFM1WTVaT&#x27;&gt; 1. 引述 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;dl&gt;
+&lt;dt&gt;正看骡子:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    莫非写的亚洲史，嘿嘿...
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;p&gt;
+他说亚洲尤其是东亚季风气候的人整体文化是尊重集体力量的
+所以包括中国，日本跟朝鲜人都是集体类人群
+整体文化讲究的是人与自然的和谐
+也讲究集体的凝聚力
+处于上层金字塔顶端的人并不只是领导者与控制者
+同时还是示范者。历代皇帝都是这样的（比如唐太宗）。
+所以一个朝代的风气与文化与示范者的风格都是同样的。
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+而欧洲文化（主要是基督教）包括伊斯兰文化都是在贫瘠的土地上出生的
+依靠征服与传教来传播的（想想波斯的大流士与十字军东征）
+所以更强调英雄主义与个人努力（那边人少，一场战争可能也就几千人参加，那要是一个哥们勇点，KILL个10个8个的就是英雄了，不象中国，只能在“百万军中，还要取上将首级如探囊取物”才NB），可以想象中国人如何的难出英雄。而中国的英雄，比如董、黄，还有田横等。都是为了集体以及国家而死，几乎没有罗宾汉式的人物（梁山那帮不是，李自成之类是被党包装的）。
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc2R0lYQ0IyR&quot; name=&quot;toc2R0lYQ0IyR&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopNFM1WTVaT&#x27;&gt; 2. 自说 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;dl&gt;
+&lt;dt&gt;我们的2.0生活:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;youmeng.bokee.com&#x2F;5098596.html&quot;&gt;http:&#x2F;&#x2F;youmeng.bokee.com&#x2F;5098596.html&lt;&#x2F;a&gt;
+    得到有一个提示，
+    文化不同，但是社会活动的本质是有规律可循的，
+    就是“马斯洛的需求层次理论”
+    从安全需求以上，就是我们互联网的潜在用户的基本述求了！
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;web2.0都是个死胡同，web3.0呢？:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;ittalks.blogbus.com&#x2F;logs&#x2F;2006&#x2F;05&#x2F;2556158.html&quot;&gt;http:&#x2F;&#x2F;ittalks.blogbus.com&#x2F;logs&#x2F;2006&#x2F;05&#x2F;2556158.html&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;点出了要点：
+     &lt;ul&gt;
+     &lt;li&gt;“互联网精神的本质就是：自由，平等”
+     &lt;&#x2F;li&gt;
+     &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+IT产业的发展基础是建立在逐步划分和限制这种本质的基础上的，
+奈何技术的进化比产业的进化要快的多，
+各种分享&#x2F;发布&#x2F;组织信息&#x2F;资料&#x2F;社会关系的工具&#x2F; 服务&#x2F;技巧层出不穷,
+&lt;p&gt;&lt;&#x2F;p&gt;
+google 仅仅是认了个死理： &lt;code&gt;`不作自个儿控制不了的事儿！`&lt;&#x2F;code&gt;
+所以成功了！
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;中国IT企业:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    思想还在 Web1.0;
+    还在拼命的诱使&#x2F;迫使&#x2F;说服用户交出权力并付费，可以说 是很没前途的！
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc3R0lYRENMU&quot; name=&quot;toc3R0lYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopNFM1WTVaT&#x27;&gt; 2.1. 一个人... &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;一个人，在互联网中的天生权力&#x2F;义务有什么？:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ol&gt;
+    &lt;li&gt;有权力发布自个儿想发布的信息!
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;有义务为自个儿发布的信息负责!
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;p&gt;
+&lt;code&gt;`that all!`&lt;&#x2F;code&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+以上两方面是完全相互对应不可脱离的，任何一种缺失就会产生各种恶果:
+&lt;&#x2F;p&gt;
+ &lt;ol&gt;
+ &lt;li&gt;不能发布自个儿想发布的信息，也就不可能为自个儿发布的信息负责：
+  &lt;ul&gt;
+  &lt;li&gt;所以，有各种各样不负责任的言语在互联网中此起彼伏
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;要求为自个儿发布的信息负责，却不允许发布自个儿想发布的:
+  &lt;ul&gt;
+  &lt;li&gt;所以，实名制不论哪个国家搞都会臭！
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;可以自由发布自个儿想发布的信息时，却没有良好的监督机制：
+  &lt;ul&gt;
+  &lt;li&gt;所以，有各种哗众取宠的组织&#x2F;个人将互联网娱乐化
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;………………
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ol&gt;
+
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;
+维基百科之所以成功，就是将这种基本权力按照一种合理的模式进行了限制…… 
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc4R01YQ0IyT&quot; name=&quot;toc4R01YQ0IyT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopNFM1WTVaT&#x27;&gt; 3. 问 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+我们的IT企业应该怎么开始想了？
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+象我这样的用户应该怎么样设计新的网络生活？
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+引用好友的邮件缀语以纪:
+&lt;&#x2F;p&gt;
+&lt;pre&gt;
+从这里，到那里
+流转的不仅仅是
+生命迁徙的轨迹
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;technorati-over.gif&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;chinese&quot;&gt;chinese&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;Zen&quot;&gt;Zen&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;internet&quot;&gt;internet&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;ul&gt;
+&lt;li&gt;动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;t2t渲染:: 2010-10-09 02:21:40
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;internet&#x2F;psychology-google-2006-05-31-19-00.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">六一了！</title>
+<category term="/Quiet/nomeans" />
+<id>/pyblosxom/2006/05/31/child-day-2006-05-31-14-00</id>
+<updated>2006-05-31T06:00:00Z</updated>
+<published>2006-05-31T06:00:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/Quiet/nomeans/child-day-2006-05-31-14-00.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopNFdDMjNaR&#x27; id=&#x27;toptopNFdDMjNaR&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;六一了！&lt;&#x2F;h1&gt;
+&lt;h2&gt;--应该祝贺，如果没有忘记&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;dl&gt;
+&lt;dt&gt;同贺哪！:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    所有已经有自个儿孩子或是决定不要孩子的曾经是孩子的人们…………
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;pre&gt;
+-------- 原始信息 --------
+主题: 六一快乐
+日期: Wed, 31 May 2006 13:41:10 +0800
+
+= = = = = = 下面是转发的邮件 = = = = = = =
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+三只小蝌蚪到饭店去
+&lt;p&gt;&lt;&#x2F;p&gt;
+当服务员为隔壁桌端上一盘“红烧牛蛙”时
+&lt;p&gt;&lt;&#x2F;p&gt;
+三只小蝌蚪报在一起
+&lt;p&gt;&lt;&#x2F;p&gt;
+伤心的唱着：我不想，我不想，不想长大。。。
+&lt;p&gt;&lt;&#x2F;p&gt;
+预祝大家“六一儿童节”快乐！
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;pre&gt;
+从这里，到那里
+流转的不仅仅是
+生命迁徙的轨迹    
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;technorati-over.gif&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;Quiet&quot;&gt;Quiet&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;nomeans&quot;&gt;nomeans&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;ul&gt;
+&lt;li&gt;动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;t2t渲染:: 2010-10-09 02:21:42
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;Quiet&#x2F;nomeans&#x2F;child-day-2006-05-31-14-00.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">NOT WORD!</title>
+<category term="/oss" />
+<id>/pyblosxom/2006/05/31/not-doc-2006-05-31-12-00</id>
+<updated>2006-05-31T04:00:00Z</updated>
+<published>2006-05-31T04:00:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/oss/not-doc-2006-05-31-12-00.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopSlpIVklJQ&#x27; id=&#x27;toptopSlpIVklJQ&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;NOT WORD!&lt;&#x2F;h1&gt;
+&lt;h2&gt;--不仅仅关乎版权&lt;&#x2F;h2&gt;
+&lt;h3&gt;t2t渲染:: 2010-10-09 02:21:40&lt;&#x2F;h3&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;dl&gt;
+&lt;dt&gt;&lt;a href=&quot;http:&#x2F;&#x2F;blog.delphij.net&#x2F;archives&#x2F;001487.html&quot;&gt;几行字也发个doc??&lt;&#x2F;a&gt;:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    经常在邮件中看到朋友们将些小故事塞到 word 中分享,
+    和delphij 同样的感慨…………
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;有诗曰:&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;pre&gt;
+文本文件好 
+工具遍地跑
+程序两三行
+全部改好了
+&lt;&#x2F;pre&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;blog.cathayan.org&#x2F;item&#x2F;920&quot;&gt;文本好了歌&lt;&#x2F;a&gt; - Blog on 27th Floor
+    cathayan 的感慨
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;文可文，非常文。本可文，非常本。文本,数据之始,字符,万思之母...&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;AllAboutText&quot;&gt;结构化文本&lt;&#x2F;a&gt;才是王道！
+    呜乎矣哉!是也乎是也乎!!
+    为了我们的写作快感，抵制一切富格式化编辑器!
+    有结构化文本想怎么漂亮都成的!不用在界面中辛苦的使用mouse 永远的点击…………
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;可恨&#x2F;可叹:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    M$的市场策略，成功的将
+    &lt;code&gt;正式文档===word文档&lt;&#x2F;code&gt;
+    的概念填入了人们的头脑中，特别是在中国！
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;觉醒:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    从我作起！&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;nodoc4cn.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt; 至少从OOo 开始！
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;p&gt;
+&lt;a href=&quot;http:&#x2F;&#x2F;www.cyut.edu.tw&#x2F;~ckhung&#x2F;i&#x2F;nd&#x2F;fydoc.png&quot;&gt;抵制.doc运动&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;oss&#x2F;not-doc-2006-05-31-12-00.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">NOT WORD!</title>
+<category term="/mind" />
+<id>/pyblosxom/2006/05/31/not-doc-2006-05-31-12-00</id>
+<updated>2006-05-31T04:00:00Z</updated>
+<published>2006-05-31T04:00:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/mind/not-doc-2006-05-31-12-00.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopSlpIVklJQ&#x27; id=&#x27;toptopSlpIVklJQ&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;NOT WORD!&lt;&#x2F;h1&gt;
+&lt;h2&gt;--不仅仅关乎版权&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;dl&gt;
+&lt;dt&gt;&lt;a href=&quot;http:&#x2F;&#x2F;blog.delphij.net&#x2F;archives&#x2F;001487.html&quot;&gt;几行字也发个doc??&lt;&#x2F;a&gt;:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    经常在邮件中看到朋友们将些小故事塞到 word 中分享,
+    和delphij 同样的感慨…………
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;有诗曰:&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;pre&gt;
+文本文件好 
+工具遍地跑
+程序两三行
+全部改好了
+&lt;&#x2F;pre&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;blog.cathayan.org&#x2F;item&#x2F;920&quot;&gt;文本好了歌&lt;&#x2F;a&gt; - Blog on 27th Floor
+    cathayan 的感慨
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;文可文，非常文。本可文，非常本。文本,数据之始,字符,万思之母...&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;AllAboutText&quot;&gt;结构化文本&lt;&#x2F;a&gt;才是王道！
+    呜乎矣哉!是也乎是也乎!!
+    为了我们的写作快感，抵制一切富格式化编辑器!
+    有结构化文本想怎么漂亮都成的!不用在界面中辛苦的使用mouse 永远的点击…………
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;可恨&#x2F;可叹:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    M$的市场策略，成功的将
+    &lt;code&gt;正式文档===word文档&lt;&#x2F;code&gt;
+    的概念填入了人们的头脑中，特别是在中国！
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;觉醒:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    从我作起！&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;nodoc4cn.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt; 至少从OOo 开始！
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;p&gt;
+&lt;a href=&quot;http:&#x2F;&#x2F;www.cyut.edu.tw&#x2F;~ckhung&#x2F;i&#x2F;nd&#x2F;fydoc.png&quot;&gt;抵制.doc运动&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;ul&gt;
+&lt;li&gt;t2t渲染:: 2010-10-09 02:21:39
+&lt;&#x2F;li&gt;
+&lt;li&gt;动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;technorati-over.gif&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;Zen&quot;&gt;Zen&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;mind&#x2F;not-doc-2006-05-31-12-00.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">升级SVN</title>
+<category term="/utility/Subversion" />
+<id>/pyblosxom/2006/05/28/update-svn-2006-05-28-12-00</id>
+<updated>2006-05-28T04:00:00Z</updated>
+<published>2006-05-28T04:00:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/utility/Subversion/update-svn-2006-05-28-12-00.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopNFdHWVBaN&#x27; id=&#x27;toptopNFdHWVBaN&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;升级SVN&lt;&#x2F;h1&gt;
+&lt;h2&gt;--体验如何管理多SVN仓库&lt;&#x2F;h2&gt;
+&lt;h3&gt;t2t渲染:: 2010-10-09 02:18:13&lt;&#x2F;h3&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0JaT&quot;&gt;原因&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc2R0lYQ0IyR&quot;&gt;过程&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0JaT&quot; name=&quot;toc1R0VYQ0JaT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopNFdHWVBaN&#x27;&gt; 1. 原因 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;dl&gt;
+&lt;dt&gt;SVN新版本:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    1.3.1 VS 1.2.0 有了各种功能的提升!
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc2R0lYQ0IyR&quot; name=&quot;toc2R0lYQ0IyR&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopNFdHWVBaN&#x27;&gt; 2. 过程 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;dl&gt;
+&lt;dt&gt;规划:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ol&gt;
+    &lt;li&gt;怎么
+    &lt;p&gt;&lt;&#x2F;p&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;变化:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ol&gt;
+    &lt;li&gt;怎么
+    &lt;p&gt;&lt;&#x2F;p&gt;
+= 总结 =
+    &lt;p&gt;&lt;&#x2F;p&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;规划:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ol&gt;
+    &lt;li&gt;怎么
+    &lt;p&gt;&lt;&#x2F;p&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;变化:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ol&gt;
+    &lt;li&gt;怎么
+    &lt;p&gt;&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;technorati-over.gif&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;OpenSource&quot;&gt;OpenSource&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;Subversion&quot;&gt;Subversion&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;utility&#x2F;Subversion&#x2F;update-svn-2006-05-28-12-00.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">Gmail的硬盘</title>
+<category term="/Zen/Google" />
+<id>/pyblosxom/2006/05/24/joke-gmailhdisk-2006-05-24-12-00</id>
+<updated>2006-05-24T04:00:00Z</updated>
+<published>2006-05-24T04:00:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/Zen/Google/joke-gmailhdisk-2006-05-24-12-00.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopSTVXV0MyT&#x27; id=&#x27;toptopSTVXV0MyT&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;Gmail的硬盘&lt;&#x2F;h1&gt;
+&lt;h2&gt;--IT笑话&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;p&gt;
+:&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;wheregmailharddisk.jpg&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;!
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;ul&gt;
+&lt;li&gt;t2t渲染:: 2010-10-09 02:21:36
+&lt;&#x2F;li&gt;
+&lt;li&gt;动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;Zen&#x2F;Google&#x2F;joke-gmailhdisk-2006-05-24-12-00.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">表形码的消亡背景！</title>
+<category term="/Zen/Chinese" />
+<id>/pyblosxom/2006/05/15/winbx-IMEstory-2006-05-15-12-00</id>
+<updated>2006-05-15T04:00:00Z</updated>
+<published>2006-05-15T04:00:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/Zen/Chinese/winbx-IMEstory-2006-05-15-12-00.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopNUNRMlJaT&#x27; id=&#x27;toptopNUNRMlJaT&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;表形码的消亡背景！&lt;&#x2F;h1&gt;
+&lt;h2&gt;商业竞争的本质就是&quot;让我赢!甭管是否最优!&quot;&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0JaV&quot;&gt;我使用表形码&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc2R0VYRENMU&quot;&gt;1.1. 表形码的文化内质&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc3R0VYREVMU&quot;&gt;1.2. 现在的表形码&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc4R0lYQ0JaN&quot;&gt;结语&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;p&gt;
+&lt;b&gt;汉字编码的使用，就是文字的使用，搞得好功利千秋，搞不好遗害万代。&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc1R0VYQ0JaV&quot; name=&quot;toc1R0VYQ0JaV&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopNUNRMlJaT&#x27;&gt; 1. 我使用表形码 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+很早在&lt;a href=&quot;http:&#x2F;&#x2F;blog.sina.com.cn&#x2F;u&#x2F;538099650100000a&quot;&gt;我的”怪癖”&lt;&#x2F;a&gt; 中提及过“表形码”;是96年大学里，50多岁的工程制图老师推荐的，当时还是win95内置的输入法，当时感觉理念很先进：&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;060515-snap-winbx-intro.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+而且也确定有一定的社会认同::
+&lt;&#x2F;p&gt;
+&lt;pre&gt;
+为提高我国计算机的应用水平，促进中文信息技术向更高层次
+发展，加速国内汉字信息技术的标准化、规范化，维护用户利益，
+去年，受电子工业部和国家技术监督局的委托，按照有一定的市场
+占有量、编码方法符合现代汉语使用规范、易学难忘、适当考虑输
+入速度、形码应能输入国家标准GB13000(国际标准ISO&#x2F;IEC 10646)
+规定的20902个中、日、韩汉字等条件，全国信息技术标准化委员会
+对国内有影响的输入方法进行了评选，择优选出6种向国内外计算机
+软件公司和用户推荐使用(其中形码二种，音码四种)，表形码就是
+其中之一，这也是美国微软公司选择表形码预装入中文版Windows 95
+的一个重要原因。表形码全面符合上述这些条件……
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;
+因为&lt;code&gt;害怕&lt;&#x2F;code&gt;总使用拼音等等音码来输入会忘记怎么写汉字儿！所以坚持使用下来了，
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+虽然中间，Win98SE 之后取消了 &lt;code&gt;表形码&lt;&#x2F;code&gt; (当时只模糊知道是因为公司倒闭)，不过，通过尝试，通过修改注册表的方式，将双拼之类自个儿绝对不会使用的输入法替换的方式，一直使用了下来，win2k, win2k3,winXP……
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+上周，友人&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;GuiXing&quot;&gt;GuiXing&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;，
+整了台&lt;a href=&quot;http:&#x2F;&#x2F;www.apple.com&#x2F;ibook&#x2F;&quot;&gt;iBook&lt;&#x2F;a&gt;受我教唆久已，
+所以&lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;GuiXing&#x2F;BiaoXinInputMod&quot;&gt;表形码转为cin档&lt;&#x2F;a&gt; 来在Mac 中通过&lt;a href=&quot;http:&#x2F;&#x2F;openvanilla.org&#x2F;&quot;&gt;香草输入法&lt;&#x2F;a&gt;使用表形码！
+&lt;&#x2F;p&gt;
+ &lt;ul&gt;
+ &lt;li&gt;期间受到诸如 &lt;a href=&quot;http:&#x2F;&#x2F;lukhnos.org&#x2F;blog&#x2F;zh&#x2F;&quot;&gt;刘前辈&lt;&#x2F;a&gt; 等等大牛的支持&#x2F;指点
+ &lt;p&gt;&lt;&#x2F;p&gt;
+成功后，想在Ubuntu 社区推广，才想到版权问题，&lt;b&gt;不搜不知道，一搜吓一跳&lt;&#x2F;b&gt;::
+    引出这尘封久矣的公案
+ &lt;p&gt;&lt;&#x2F;p&gt;
+== 表形码的公案 == 
+&lt;i&gt;张家港爱文电脑有限公司        张家港市沙州东路35号&lt;&#x2F;i&gt;
+ &lt;p&gt;&lt;&#x2F;p&gt;
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;forum.maxthon.com&#x2F;index.php?showtopic=17161&quot;&gt;这两种输入法还有多少人在用呢？, 陈爱文、周静梓的表形码和周志侬自然码&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;pingce.zhongsou.com&#x2F;20010117&#x2F;155099.shtml&quot;&gt;表形码侵权案宣判 一审7年拖垮一公司&lt;&#x2F;a&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.lanjian.net&#x2F;club&#x2F;show.asp?id=7359&amp;amp;curpage=41&amp;amp;area_id=76&quot;&gt;一案生六案 裁判各不同&lt;&#x2F;a&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;bbs.am1098.com&#x2F;40&#x2F;huojiang&#x2F;37.asp&quot;&gt;&quot;表形码侵权案&quot;的启示&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc2R0VYRENMU&quot; name=&quot;toc2R0VYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopNUNRMlJaT&#x27;&gt; 1.1. 表形码的文化内质 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.yywzw.com&#x2F;pan&#x2F;pan-03d-004.htm&quot;&gt;我的表哥陈爱文——表形码与我国的语言学(潘德孚)&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+才真正全面的记述了表形码的历史悲哀……
+&lt;&#x2F;p&gt;
+&lt;dl&gt;
+&lt;dt&gt;万码奔腾:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    是国人对&lt;b&gt;文字学&lt;&#x2F;b&gt;莫视的胡整
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;语言学家完全政治化:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    我国的语言学家醉心于汉字拼音化，不顾社会现实的需要了!
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;文字的世界分布对比图表&lt;&#x2F;dt&gt;&lt;dd&gt;
+    :&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;060515-pan-03d-004a.jpg&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;;
+    作为当年汉字要拉丁化的重要依据事实，其实根本无法推敲::
+&lt;pre&gt;
+其一，拉丁字母不是文字，根本不能与汉字进行比较；
+其二，土地不能使用文字，这个比较图不能成立
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;汉字:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;b&gt;一字之要，坚如磐石；一义之出，灿若星辰&lt;&#x2F;b&gt;
+    但是!&lt;code&gt;`&quot;我们要的是市场，不是科学！&quot;`&lt;&#x2F;code&gt;
+    在市场大潮中无数智者的劳动被自动漠然置之了…………
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;p&gt;
+没有人关注汉字编码,都是商业和法律的事儿好象!赢
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc3R0VYREVMU&quot; name=&quot;toc3R0VYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopNUNRMlJaT&#x27;&gt; 1.2. 现在的表形码 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+除了90%相同的&lt;a href=&quot;http:&#x2F;&#x2F;www.trm.cn&#x2F;&quot;&gt;天然码&lt;&#x2F;a&gt;;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+居然还有表形码的fans 根据互联网资料自制的:
+&lt;&#x2F;p&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.11nong.com&#x2F;soft&#x2F;18963&#x2F;&quot;&gt;“表形码万能版V6.6”汉字输入法 6.52&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.shareware.cn&#x2F;pub&#x2F;7159.html&quot;&gt;“表形码万能版V6.6”汉字输入法 6.6&lt;&#x2F;a&gt;
+    &lt;p&gt;&lt;&#x2F;p&gt;
+&lt;pre&gt;
+制作：洪景毅  QQ:13826187
+邮件：314hjy@163.com
+主页：http:&#x2F;&#x2F;314hjy.yeah.net
+　　　http:&#x2F;&#x2F;61.131.53.226:99&#x2F;314hjy
+
+红金鱼多媒体工作室
+10&#x2F;22&#x2F;2004
+&lt;&#x2F;pre&gt;
+    &lt;p&gt;&lt;&#x2F;p&gt;
+看来随着法律纠纷的定论，表形码还是要重出江湖的…………支持！
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc4R0lYQ0JaN&quot; name=&quot;toc4R0lYQ0JaN&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopNUNRMlJaT&#x27;&gt; 2. 结语 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;pre&gt;
+文字，国之大事，死生之地，存亡之道，不可不察也。
+汉字集经之以三事，校之以计，而索其情：一曰音，二曰形，三曰义。
+音者，令民即观可读，可用之歌，可用之诵，而不罔也；
+形者，笔划，部首，偏旁，可依之教化万民而不舍远近；
+义者，假借，转议，指代，使之载道传业而不怯岁月；
+世上之文唯汉字三者融会！
+输入之法，盖因电算界面之陋无以笔划之识，简记音形以记之；
+然汉字之文，每字如画如诗，单从音者记，中华之大方言之多，病之！
+唯依形而记，音者辅之，记之用之不违汉文之字美者也！
+表形之码，幻拉丁字母之形为吾汉字之部首，妙之恰当，学之自然，
+唯因商战不为人显，知者爱甚，不知者漠然，
+悲乎！怜我世人，自丧实多，怜我世人，自丧实多…………
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;ul&gt;
+&lt;li&gt;t2t渲染:: 2010-10-09 02:21:35
+&lt;&#x2F;li&gt;
+&lt;li&gt;动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;technorati-over.gif&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;Zen&quot;&gt;Zen&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;Chinese&quot;&gt;Chinese&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;Zen&#x2F;Chinese&#x2F;winbx-IMEstory-2006-05-15-12-00.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">升级！</title>
+<category term="/techic/PyBlosxom" />
+<id>/pyblosxom/2006/05/12/pyblosxom-up132-2006-05-12-19-00</id>
+<updated>2006-05-12T11:00:00Z</updated>
+<published>2006-05-12T11:00:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/PyBlosxom/pyblosxom-up132-2006-05-12-19-00.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopNFdHWVBaN&#x27; id=&#x27;toptopNFdHWVBaN&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;升级！&lt;&#x2F;h1&gt;
+&lt;h2&gt;from Pyblosoxm1.3.0b to Pyblosoxm1.3.2&lt;&#x2F;h2&gt;
+&lt;h3&gt;t2t渲染:2010-10-09 02:21:38&lt;&#x2F;h3&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;dl&gt;
+&lt;dt&gt;升级操作！&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;3分钟完成！
+     &lt;ol&gt;
+     &lt;li&gt;下载 &lt;code&gt;`fetch ,,, pyblosxom-1.3.2.tar.gz`&lt;&#x2F;code&gt;
+     &lt;&#x2F;li&gt;
+     &lt;li&gt;解开 &lt;code&gt;`tar xzvf pyblosxom-1.3.2.tar.gz`&lt;&#x2F;code&gt;
+     &lt;&#x2F;li&gt;
+     &lt;li&gt;安装 &lt;code&gt;`sudo python setup.py install`&lt;&#x2F;code&gt;
+     &lt;&#x2F;li&gt;
+     &lt;li&gt;DONE!
+     &lt;&#x2F;li&gt;
+     &lt;&#x2F;ol&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;居然不用任何修改，&lt;b&gt;兼容以前版本的一切用户定制！&lt;&#x2F;b&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;爽哪！！哈哈哈！！
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;technorati-over.gif&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;OpenSource&quot;&gt;OpenSource&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;PyBlosxom&quot;&gt;PyBlosxom&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;techic&#x2F;PyBlosxom&#x2F;pyblosxom-up132-2006-05-12-19-00.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">方言版大話西游！</title>
+<category term="/Quiet/living" />
+<id>/pyblosxom/2006/05/10/dahua-dialect-2006-05-10-17-00</id>
+<updated>2006-05-10T09:00:00Z</updated>
+<published>2006-05-10T09:00:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/Quiet/living/dahua-dialect-2006-05-10-17-00.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopNDJMTFQyR&#x27; id=&#x27;toptopNDJMTFQyR&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;方言版大話西游！&lt;&#x2F;h1&gt;
+&lt;h2&gt;从这里，到那里 流转的不仅仅 是生命迁徙的轨迹&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;p&gt;
+[转发的邮件]
+&lt;&#x2F;p&gt;
+&lt;dl&gt;
+&lt;dt&gt;普通话版&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+曾经有一份真诚的爱情放在我面前，我没有珍惜，等我失去的时候我才后悔莫及, 人世间最痛苦的事莫过于此.你的剑在我的咽喉上割下去吧！ 不用再犹豫了！如果上天 能够给我一个再来一次的机会, 我会对那个女孩子说三个字：我爱你，如果要给这个爱加一个期限的话，我希望是，一万年！ 
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;北京版&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+我知道我特该死，你丫宰了我都没的说，以前有份还不赖的爱情楞在我的跟前儿，我没搭理她，等过后就傻眼了，这鬼地方对我最好的哪个人就是你丫的了，你丫用刀废了我吧，别琢磨了，如果老天爷能再让我回头，我保准儿会对你丫不停唠叨三个字：我爱你YA！如果非要我在这份爱上加上个日期，一万年成不成？KAO！ 
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;上海版 &lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+老历八早，有一段老刮三的感情摆勒吾的眼门前，碰到赤佬了，吾没去睬伊，等到格段感情窝死空勒以后，吾再晓得。奈么这记僵特了，假使讲老天爷令的清让吾再来一趟，吾勿会神之呜之了，呆卜落笃看伊跑特，吾会帮伊讲吾老欢喜侬额，假使来讲一定要拨伊敲定一段日节，格么吾想随便哪能总归要一万年。 
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;东北版 &lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+曾经有一份贼拉子纯的爱情，搁在俺跟前，俺没咋当回事，直到整没了，俺才发现，世界上最憋屈的事也就这样了。如果老天爷再给俺一个机会，俺愿意对那个汉子说：“俺稀罕你！”如果非要给这件事整个年头的话，俺希望这个年头是———一万年！ 
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;四川版 &lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+妈哟！！爱仙侣简直是求莫明堂！！内年（那年）内个女娃子把她非寄巴纯的爱情摆多爱仙侣更前，爱仙侣装瓜，摁是连理（QIO）都没有（QIO）求一眼，现在安逸了三，瓜起了！要是再来一次的话，爱仙侣赌咒发誓“那个仙人板板”不再切理内个“村姑”了。那个要是不理，就是龟儿子。 
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;南京话版 &lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+老早老早以前，有一段正儿八经的感情摆在我这边，我脑子里头有屎哎，心想多 大事啊。结果歇得来，现在后悔的一米多高，不能跟我自己急唠。要是老天关照我个呆西，再把我一趟机会，我肯定兴的一头霍子，这把我要跟我胖西讲，哎，我对你满有意思的哎，我们叙叙还行啊？要是说非要定个日子的话喃，那就一万年嘛算赖，烦不了了 
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;广东话版 &lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+曾经有啊份亘情摆系哦面琴，魁对哦吼吼架，但系哦某辉怎熄，以家魁*左哦，雷海哦啦，哦先发国魁云雷系亘厚架。于跟，哦机错啦，嘿芒累合以比个给为哦，哦为吼吼对累，怎熄累，于果哦合以寻杂，哦为口份亘情合以起组丫曼林。 
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;山东话版 &lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+俺记地没儿设课和个妮子到成蕞儿冷好地，反正是都些真诚，咱也不知道是脑子里进水啊还是为了么，后来斗散唠呢，内不知道俺那个后悔奥。坦会儿叫俺再碰见那个妮子地话，俺得和她说仨字儿：俺乃内，内要问俺乃内多世姐，也斗是一万年呗，忒长唠也穆意思（鲁中方言，见笑见笑） 
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;长沙话版 &lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+那匝时候有匝不晓得几好的漏放得我扪口，我冒此起它，结果现在冒得达，爱仙侣后悔最了，该一世冒的比国匝漏更烦躁的达。要是天王爱仙侣可怜一哈子我列，我会哦此哦此奔起克跟那个妹子讲，我喜欢你列！（长沙话没有我爱你） 
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;英文版 &lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+I once let the trustest love sliped away from below my eyes。 Only to know that regreting myself when it was too late。 It is no paint in the world can come near to this 。 If only God wouldgive me another chance。 I will said to the gril。 I love you。 If it had to be a limit of time。I pray it’s ……ten thousands years。 
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;日文版 &lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+かつて、??な?が俺の前に置いていたが、大切にしていなかった。あの?を失っ た、どんなに後悔したか、分かってきた！世の中に一番つらいことは、これしかない と思う。お前の?が、俺の喉から切ってくれよ！もう?予しないぞ！もし、神? から、 もう一度やらせる?会がくれれば、俺は、あの男の子にそう言うの が? まって いる???してる！もし、この?に期限を付けなければならなかったら、俺の希望 
+は ： 一万年！！！！ 
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;法语版 &lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+Il y avait un true amour pour moi,mais je l`ai pas choisi.Je suis si repenti quand je l`ai perdu.
+C`est le plus grand mal dans ma vie. Si il y aura une encore chance pour moi,je vais lui dire trois mots: Je t`aime. Si je dois l`ajouter une date contrainte, je souhaite que c`est dix milles ans. 
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;德语版 &lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+Frｕher gab es eine echte Liebe vor mir, die ich aber leider nicht hochgesch&amp;amp;tzt habe.Als ich die verloren habe, habe ich ihren wertvollen Schatz eben erkannt.Die traurigste Dinge nenne ich sie.Wenn God mir noch eine Gelegenheit anbieten k&amp;amp;nnte, wｕrde ich dem M&amp;amp;dchen drei W&amp;amp;rte sagen, &quot;ich liebe Dich!&quot;.Wenn die Liebe zeitlich begrentzt werden mｕsste,hoffe ich 10000 Jahre. 
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;盲文版 &lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;pre&gt;
+..　...　...　.... ..　...　.　...　.　..　.. .　..　..　.. 
+..　.. 
+　. 
+...　..　..　. .　..... .　...　..　.　...　.. 
+....　. .　.　..　.　. 
+..　..　...........　.　.　..　.　...　.　..　.　..　.　.. 
+　.　 ..　.　...　.　.　.....　.　... ...　.　.. 
+　..　.　.. ...　....　..　.　..　 .　.　..　..　.　.　.....　..　. 
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;ul&gt;
+&lt;li&gt;动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;t2t渲染:: 2010-10-09 02:21:42
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;technorati-over.gif&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;living&quot;&gt;living&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;Quiet&quot;&gt;Quiet&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;Quiet&#x2F;living&#x2F;dahua-dialect-2006-05-10-17-00.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">post-commit.py</title>
+<category term="/utility/Subversion/hooks" />
+<id>/pyblosxom/2006/05/01/post-commit</id>
+<updated>2006-05-01T15:23:00Z</updated>
+<published>2006-05-01T15:23:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/utility/Subversion/hooks/post-commit.html" />
+<content type="html">&lt;pre class=&quot;brush: python&quot;&gt;#!&#x2F;usr&#x2F;local&#x2F;bin&#x2F;python
+#tags utility,Subversion,hooks
+#coding=utf-8
+&quot;&quot;&quot;
+SVN 事务日志处理
+    - 使用固定的参数来自动响应检入后续操作:
+        - 记录检入活动信息到每日log文件
+&quot;&quot;&quot;
+##  Zoomq::060110 fixed log exp. esp. for woodpecker repo.
+## only record commit-log of woodpecker
+
+
+import sys,os,time
+
+CHMOD = &quot;&#x2F;bin&#x2F;chmod&quot;
+CHOWN = &quot;&#x2F;usr&#x2F;sbin&#x2F;chown&quot;
+LOOK = &quot;&#x2F;usr&#x2F;local&#x2F;bin&#x2F;svnlook&quot;
+SVN = &quot;&#x2F;usr&#x2F;local&#x2F;bin&#x2F;svn&quot;
+log=&quot;&#x2F;var&#x2F;log&#x2F;svn&#x2F;woodpecker-ci.log&quot;
+daylog = &quot;%s-%s.log&quot;%(log[:-4]
+                    ,time.strftime(&quot;%y%m%d&quot;,
+                                    time.localtime()))
+LOGFILE = daylog
+f = open( LOGFILE, &quot;a+&quot; )
+TSTAMP = &quot;%s&quot;%time.strftime(&quot;%y-%m-%d %H:%M:%S&quot;, time.localtime())
+
+### hook matter
+MARK = &quot;woodpecker&quot;
+MOD = &quot;woodpecker&quot;
+AIM = &quot;&#x2F;path&#x2F;to&#x2F;woodpecker&#x2F;repos&#x2F;&quot;
+def autoco(dirs,svn,mark,aim,mod):
+    &quot;&quot;&quot;auto co all matter files:
+        - svn SVNLOOK where
+        - mark the mark of matter
+        - aim where want to co
+        - mod 指定的模块
+    &quot;&quot;&quot;
+    print &gt;&gt; f,dirs
+    if mark in dirs:
+        print &gt;&gt; f,TSTAMP+&quot; marked::OK! up::&quot;+aim+mod
+        upsvn = svn+&quot; update %s&quot;%(aim+mod)
+        print &gt;&gt; f,TSTAMP+upsvn
+        up = os.popen(upsvn).read().strip()
+        print &gt;&gt; f,up
+    else:
+        print &gt;&gt; f,TSTAMP+&quot; marked::NO! up::nothing&quot;
+def changedirs(look,rev,repos):
+    &quot;&quot;&quot;list all changed dir
+    &quot;&quot;&quot;
+    dirs = os.popen( look+&quot; changed -r &quot;+ rev + &quot; &quot; + repos).read().strip()
+    return dirs
+def chkdirmod(cmod,cown,path,umark):
+    &quot;&quot;&quot;chmod and chown the aim path
+    &quot;&quot;&quot;
+    exp = os.popen(cmod+&quot; -R &quot;+umark+&quot; &quot;+path).read().strip()
+    exp += os.popen(cown+&quot; -R www:www &quot;+path).read().strip()    
+    return exp
+def logcommit(look,rev,repos):
+    &quot;&quot;&quot;log commit info...
+    &quot;&quot;&quot;
+    log = os.popen( look+&quot; author -r &quot;+ rev + &quot; &quot;+ repos).read().strip()
+    print &gt;&gt; f,&quot; &quot;*4+&quot;%s commited;%s&quot;%(str(log),repos)
+    #return log..
+    
+def usage():
+    print &quot;Usage: &quot; + sys.argv[0] + &quot; REPOS REV\n&quot;
+    print &gt;&gt; f,TSTAMP+&quot;Usage: &quot; + sys.argv[0] + &quot; REPOS REV&quot;
+    sys.exit(0)
+
+if __name__ == &#x27;__main__&#x27;:
+    if len(sys.argv) != 3:
+        usage()
+    # start hook matter...
+    repos = sys.argv[1]
+    rev = sys.argv[2]        
+    print &gt;&gt; f,TSTAMP+&quot; &gt;&gt;&gt;&gt;&gt;&gt; woodpecker up rev::&quot;+rev
+    print &gt;&gt; f,changedirs(LOOK,rev,repos)
+    logcommit(LOOK,rev,repos)
+    
+    print &gt;&gt; f,TSTAMP+&quot; &lt;&lt;&lt;&lt;&lt;&lt; woodpecker repo commit DONE! &quot;
+    &lt;&#x2F;pre&gt;</content>
+</entry>
+</feed>

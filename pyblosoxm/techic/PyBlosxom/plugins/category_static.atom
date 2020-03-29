@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/techic/PyBlosxom/plugins/category_static.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/techic/PyBlosxom/plugins/category_static.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/techic/PyBlosxom/plugins/category_static.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2010-05-31T03:10:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">category_static.py</title>
+<category term="" />
+<id>/pyblosxom/2010/05/31/category_static</id>
+<updated>2010-05-31T03:10:00Z</updated>
+<published>2010-05-31T03:10:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/PyBlosxom/plugins/category_static.html" />
+<content type="html">&lt;pre class=&quot;brush: python&quot;&gt;# -*- coding: utf-8 -*-
+&quot;&quot;&quot;
+category_static.py
+    - just fixed for pyblosxom-cmd  staticrender export all .html links
+base index.py from:
+http:&#x2F;&#x2F;snarfed.org&#x2F;space&#x2F;pyblosxom+index
+Ryan Barrett &lt;pyblosxom@ryanb.org&gt;
+    - Zoom.Quiet 100401
+
+This plugin displays an alphabetical index of all entries. It uses these
+optional config variables from config.py, shown here with their defaults:
+
+py[&#x27;cindex_trigger&#x27;]            = &#x27;&#x2F;site-index&#x27;
+py[&#x27;cindex_num_columns&#x27;]        = 2
+py[&#x27;cindex_letters_first&#x27;]      = True
+py[&#x27;cindex_title&#x27;]              = &#x27;index&#x27;
+py[&#x27;cindex_use_story_template&#x27;] = True
+
+
+VERSION:
+0.2
+
+TODO:
+- use a template instead of hard-coded HTML
+
+Copyright 2006 Ryan Barrett
+
+This program is free software; you can redistribute it and&#x2F;or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+&quot;&quot;&quot;
+
+
+import math
+import os.path
+import time
+from operator import itemgetter
+from Pyblosxom import tools
+import Pyblosxom.entries
+#import re
+
+__author__ = &#x27;Zoom.Quiet &lt;zoomquiet+pyb at gmail dot com&gt;&#x27;
+__version__ = &#x27;11.09.7&#x27;
+__url__ = &quot;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;techic&#x2F;PyBlosxom&#x2F;plugins&#x2F;category_static.html&quot;
+__description__ = &#x27;Displays an Category index as Tree for all entries. in one page&#x27;
+DEFAULT_ROOT = []
+def verify_installation(request):
+  return 1
+
+def cb_filelist(args):
+    request = args[&#x27;request&#x27;]
+    http = request.getHttp()
+    data = request.getData()
+    config = request.getConfiguration()
+    _baseurl = config.get(&quot;base_url&quot;, &quot;&quot;)
+
+    trigger = config.get(&#x27;cindex_trigger&#x27;, &#x27;site-index&#x27;)
+    if http[&#x27;PATH_INFO&#x27;] != trigger:
+        return
+
+    # get the entries
+    datadir = config[&#x27;datadir&#x27;]
+    files = tools.Walk(request, datadir)
+    files.sort()
+
+    body = &#x27;&lt;div id=&quot;categoriselist&quot;&gt;&#x27;
+    #print files
+    # sort into sections, one for each letter. the dictionary is 
+    # letter =&gt; (entry name, path) where path is the relative to datadir.
+    #sections = {}
+    #   the entrise dictionary is 
+    # path =&gt; (entry name, 0) 
+    entrise = []
+
+    entry_extensions = data[&#x27;extensions&#x27;].keys()
+
+    for file in files:
+        #objEntry = entries.fileentry.FileEntry(request, file,datadir)
+        #print objEntry.keys()  
+        assert file.startswith(datadir)
+        path, ext = os.path.splitext(file[len(datadir):])
+        if ext[1:] in entry_extensions:  # strip the leading period from ext
+            entry_name = os.path.basename(path)
+            #sections.setdefault(entry_name[0].upper(), []).append((entry_name, path))
+            entrise.append((entry_name,path,file))
+    #print entrise
+    #sortPaths = sorted(entrise.iteritems(), key=itemgetter(1), reverse=True)
+    #print sortPaths
+    #print _baseurl
+    etree = {}
+    &quot;&quot;&quot;{
+    &quot;pathID&quot;:[(path.split()),&quot;title&quot;,...]
+    ,
+    }
+    &quot;&quot;&quot;
+    for entry in entrise:
+        e = Pyblosxom.entries.fileentry.FileEntry(request, entry[2], entry[1])
+        deeps = entry[1].split(&quot;&#x2F;&quot;)[:-1]
+        pathID = &quot;&quot;.join(deeps)
+        if pathID in etree:
+            etree[pathID].append((e[&#x27;title&#x27;],entry[1]))
+        else:
+            etree[pathID]= [tuple(deeps),(e[&#x27;title&#x27;],entry[1])]
+    #print etree.keys()
+    root_path_list = config.get(&quot;category_root_list&quot;, DEFAULT_ROOT)
+    root_entry_list = []
+    for opath in root_path_list:
+        #print opath
+        crtRoot = []
+        for k in etree.keys():
+            if opath in k:
+                crtRoot.append(k)
+        crtRoot.sort()
+        root_entry_list.append((opath,crtRoot))
+
+    &#x27;&#x27;&#x27;root_entry_list as::
+    [(&#x27;Zen&#x27;, [&#x27;ZenChinese&#x27;, &#x27;ZenGoogle&#x27;, &#x27;Zenpythonic&#x27;]), (&#x27;oss&#x27;, [&#x27;oss&#x27;, &#x27;ossFreeBSD&#x27;, &#x27;ossMozillaFireFox&#x27;, &#x27;ossUbuntu&#x27;]), (&#x27;opening&#x27;, []), (&#x27;mind&#x27;, [&#x27;mind&#x27;]), (&#x27;Quiet&#x27;, [&#x27;Quietliving&#x27;, &#x27;Quietnomeans&#x27;]), (&#x27;utility&#x27;, [&#x27;utilitySubversion&#x27;, &#x27;utilitySubversionhooks&#x27;, &#x27;utilitypy4strStructuredText&#x27;, &#x27;utilitypy4webDjango&#x27;, &#x27;utilitypy4webMoinMoin&#x27;, &#x27;utilitypy4webQuixote&#x27;, &#x27;utilitypy4zh&#x27;, &#x27;utilityzqlib&#x27;]), (&#x27;internet&#x27;, [&#x27;internet&#x27;, &#x27;internetFolksonomy&#x27;]), (&#x27;easy&#x27;, [&#x27;easymovie&#x27;, &#x27;easymusic&#x27;]), (&#x27;techic&#x27;, [&#x27;techic&#x27;, &#x27;techicEmacs&#x27;, &#x27;techicPyBlosxom&#x27;, &#x27;techicPyBlosxomblosxom&#x27;, &#x27;techicPyBlosxomplugins&#x27;])]
+    &#x27;&#x27;&#x27;
+    body += &#x27;&lt;h3&gt;&#x2F;&lt;&#x2F;h3&gt;&#x27;
+    for e in etree[&#x27;&#x27;][1:]:
+        #print &quot;etree[&#x27;&#x27;] include::&quot;,e
+        body += &#x27;&lt;span class=&quot;indents&quot;&gt;%s&lt;&#x2F;span&gt;&lt;a href=&quot;%s%s.html&quot;&gt;%s&lt;&#x2F;a&gt;&lt;br&gt;\n&#x27;%(
+            &quot;....&quot;
+            ,_baseurl
+            ,e[1]
+            ,e[0]
+            )
+    #print root_entry_list
+
+    for k in root_entry_list:
+        #[&#x27;techic&#x27;, &#x27;techicEmacs&#x27;, &#x27;techicPyBlosxom&#x27;, &#x27;techicPyBlosxomblosxom&#x27;, &#x27;techicPyBlosxomplugins&#x27;]
+        body += &#x27;&lt;h4&gt;%s&#x2F;&lt;&#x2F;h4&gt;&#x27;%k[0]
+        cpath = &quot;&quot;
+        for p in k[1]:
+            #print etree[p]
+            #[(&#x27;&#x27;, &#x27;Zen&#x27;, &#x27;Chinese&#x27;), &#x27;9.18&#x27;, &#x27;CC Salon BJ&#x27;, &#x27;\xe2\x80\x9c\xe5\x9b\xbd\xe9\x99\x85\xe8\x87\xaa\xe7\x94\xb1\xe8\xbd\xaf\xe4\xbb\xb6\xe6\x97\xa5\xe2\x80\x9d\xe4\xb9\x8b\xe5\xa4\xb4\xe8\x84\x91\xe9\xa3\x8e\xe6\x9a\xb4&#x27;, &#x27;\xe8\xa1\xa8\xe5\xbd\xa2\xe7\xa0\x81\xe7\x9a\x84\xe6\xb6\x88\xe4\xba\xa1\xe8\x83\x8c\xe6\x99\xaf\xef\xbc\x81&#x27;]
+            epath = &quot;&#x2F;&quot;.join(etree[p][0][2:])
+            if k[0] != &quot;&quot;.join(etree[p][0]):
+                if cpath != epath:
+                    cpath = epath
+                    ldeep = len(etree[p][0][1:])
+                    if 3 &gt; ldeep:
+                        body += &#x27;&lt;H5&gt;%s&#x2F;&lt;&#x2F;H5&gt;&#x27;%&quot;&#x2F;&quot;.join(etree[p][0][2:])
+                    else:
+                        body += &#x27;&lt;H6&gt;%s&#x2F;&lt;&#x2F;H6&gt;&#x27;%&quot;&#x2F;&quot;.join(etree[p][0][3:])
+            for e in etree[p][1:]:
+                body += &#x27;&lt;span id=&quot;%s&quot; class=&quot;indents&quot;&gt;%s&lt;&#x2F;span&gt;&lt;a href=&quot;%s%s.html&quot;&gt;%s&lt;&#x2F;a&gt;&lt;br&gt;\n&#x27;%(
+                        &quot;&#x2F;&quot;.join(etree[p][0])
+                        ,&quot;...&quot;*len(etree[p][0])
+                        ,_baseurl
+                        ,e[1]
+                        ,e[0]
+                        )
+
+    &#x27;&#x27;&#x27;
+    [(&#x27;&#x27;, &#x27;easy&#x27;, &#x27;movie&#x27;), &#x27;\xe4\xb8\x96\xe9\x97\xb4\xe5\xae\x89\xe5\xbe\x97\xe5\x8f\x8c\xe5\x85\xa8\xe6\xb3\x95,\xe4\xb8\x8d\xe8\xb4\x9f\xe5\xa6\x82\xe6\x9d\xa5\xe4\xb8\x8d\xe8\xb4\x9f\xe5\x8d\xbf!&#x27;]
+    [(&#x27;&#x27;, &#x27;easy&#x27;, &#x27;music&#x27;), &#x27;ZARD\xe6\xb6\x88\xe9\x80\x9d\xe4\xba\x86&#x27;]
+
+    for entry in entrise:
+        e = Pyblosxom.entries.fileentry.FileEntry(request, entry[2], entry[1])
+        #print e[&#x27;title&#x27;]
+        #print entry[1].split(&quot;&#x2F;&quot;)[:-1]
+        body += &#x27;&lt;span class=&quot;indents&quot;&gt;%s&lt;&#x2F;span&gt;&lt;a href=&quot;%s%s.html&quot;&gt;%s&lt;&#x2F;a&gt;%s&lt;br&gt;\n&#x27;%(
+                &quot;....&quot;*len(entry[1].split(&quot;&#x2F;&quot;))
+                ,_baseurl
+                ,entry[1]
+                ,e[&#x27;title&#x27;] #entry[0]
+                ,entry[1]
+                )
+    &#x27;&#x27;&#x27;
+    #print body
+    body +=&quot;&lt;&#x2F;div&gt;&quot; 
+    data = {&#x27;title&#x27;: config.get(&#x27;cindex_title&#x27;, &#x27;index&#x27;)}
+    # use the epoch for mtime. otherwise, pyblosxom uses the current time, which
+    # makes other plugins (like weblogsping) think this is a new entry.
+    epoch = time.localtime(0)
+    fe = Pyblosxom.entries.base.generate_entry(request, data, body, epoch)
+    return [fe]
+
+def cb_story(args):
+  request = args[&#x27;request&#x27;]
+  http = request.getHttp()
+  config = request.getConfiguration()
+  trigger = config.get(&#x27;cindex_trigger&#x27;, &#x27;site-index&#x27;)
+
+  if (http[&#x27;PATH_INFO&#x27;] == trigger and
+      not config.get(&#x27;cindex_use_story_template&#x27;, 1)):
+    title = config.get(&#x27;cindex_title&#x27;, &#x27;index&#x27;)
+    args[&#x27;template&#x27;] = &#x27;&lt;h1 class=&quot;index&quot;&gt;%s&lt;&#x2F;h1&gt;\n&lt;hr &#x2F;&gt;\n$body&#x27; % title
+
+  return args
+&lt;&#x2F;pre&gt;</content>
+</entry>
+</feed>

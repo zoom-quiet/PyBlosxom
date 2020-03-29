@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/techic/PyBlosxom/plugins/xhtml.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/techic/PyBlosxom/plugins/xhtml.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/techic/PyBlosxom/plugins/xhtml.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2005-04-01T15:23:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">xhtml.py</title>
+<category term="" />
+<id>/pyblosxom/2005/04/01/xhtml</id>
+<updated>2005-04-01T15:23:00Z</updated>
+<published>2005-04-01T15:23:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/PyBlosxom/plugins/xhtml.html" />
+<content type="html">&lt;pre class=&quot;brush: python&quot;&gt;# -*- coding: utf-8 -*-
+&quot;&quot;&quot;XHTML - html Parser
+    - 仅仅适用于 t2t 输出的xhtml
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify,
+merge, publish, distribute, sublicense, and&#x2F;or sell copies of the
+Software, and to permit persons to whom the Software is furnished
+to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Copyleft 2005, 2006 Zoom.Quiet
+
+&quot;&quot;&quot;
+
+
+## Leo: tab_width=-4 page_width=80
+PREFORMATTER_ID = &#x27;xhtml&#x27;
+FILE_EXT = &#x27;xhtml&#x27;
+__version__ = &quot;v10.4.14&quot;
+__author__ = &#x27;Zoom.Quiet &lt;Zoom.Quiet at gmail.com&gt;&#x27;
+#__url__ = &quot;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;OpenSource&#x2F;PyBlosxom&#x2F;plugins&#x2F;xhtml.phtm&quot;
+__url__ = &quot;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;techic&#x2F;PyBlosxom&#x2F;plugins&#x2F;xhtml.html&quot;
+
+__description__ = &quot;txt2tags export xhmtl entry - Pyblosxom Parser.&quot;
+
+from Pyblosxom import tools
+
+def cb_entryparser(args):
+    args[&#x27;xhtml&#x27;] = parse
+    return args
+def parse(filename, request):
+    import os, sys
+    config = request.getConfiguration()
+    ## 简单处理,基于 t2t 2.4.3
+    source = open(filename,&quot;r&quot;).readlines()
+    body = &quot;&quot;.join(source[11:-1])
+    #print source[6]
+    title = source[6][7:-9]
+    #print source[14]
+    #tags = source[14][4:-6]
+    #print tags
+    &#x27;&#x27;&#x27;
+    title = &quot;&quot;
+    for line in open(filename,&quot;r&quot;).readlines():
+        if &quot;&lt;title&gt;&quot; in line:
+            title=line[7:].replace(&quot;&lt;&#x2F;title&gt;&quot;,&quot;&quot;)
+            break
+    if &quot;&quot; == title:
+        title = filename.replace(config[&#x27;datadir&#x27;], &#x27;&#x27;)
+    &#x27;&#x27;&#x27;
+    entryData = {&#x27;body&#x27; : body
+                 ,&#x27;title&#x27; : title
+                 #,&#x27;tags&#x27; : tags
+                 #filename.replace(config[&#x27;datadir&#x27;], &#x27;&#x27;)
+                 }
+
+    return entryData
+
+&lt;&#x2F;pre&gt;</content>
+</entry>
+</feed>

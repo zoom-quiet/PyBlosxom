@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/Zen/pythonic/tryt2t.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/Zen/pythonic/tryt2t.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/Zen/pythonic/tryt2t.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2006-01-21T15:23:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">tryt2t.py</title>
+<category term="" />
+<id>/pyblosxom/2006/01/21/tryt2t</id>
+<updated>2006-01-21T15:23:00Z</updated>
+<published>2006-01-21T15:23:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/Zen/pythonic/tryt2t.html" />
+<content type="html">&lt;pre class=&quot;brush: python&quot;&gt;PREFORMATTER_ID = &#x27;txt2tags&#x27;
+#tags Zen,pythonic
+FILE_EXT = &#x27;t2t&#x27;
+__version__ = &#x27;$Id: tryt2t.py,v 2872b22e2ace 2011&#x2F;10&#x2F;27 07:08:25 zoomquiet+hg $&#x27;
+__author__ = &#x27;Zoom.Quiet &lt;Zoom dot Quiet  at gmail.com&gt;&#x27;
+#T2T = &quot;&#x2F;usr&#x2F;local&#x2F;bin&#x2F;txt2tags&quot;
+T2T = &quot;t2t&quot;
+
+
+def cb_entryparser(args):
+    args[&#x27;t2t&#x27;] = parse
+    #args[FILE_EXT] = readfile
+    return args
+
+
+&quot;&quot;&quot;
+def parse(filename):
+    #html = publish_string(story, writer_name=&#x27;html&#x27;)
+    import os
+    act = T2T+&quot; -t html -H --toc %s&quot;%filename
+    html = act
+    html += os.popen(act).read().strip()
+    #return html[html.find(&#x27;&lt;body&gt;&#x27;) + 6:html.find(&#x27;&lt;&#x2F;body&gt;&#x27;)]
+    return html
+&quot;&quot;&quot;
+#def parse(filename, request):
+def parse(filename):
+    import os, sys
+    from StringIO import StringIO
+    # open own source
+    #config = request.getConfiguration()
+    act = T2T+&quot; -t html -H --toc -o - %s&quot;%filename
+    #source = open(filename).read()
+    #out = StringIO()
+    
+    #html = os.popen(act).read().strip()
+    print act
+    #print os.popen(act).read().strip()
+    # write colorized version to &quot;python.html&quot;
+    #Parser(source, out).format(None, None)
+    
+    #print out.getvalue()
+    &quot;&quot;&quot;
+    entryData = {&#x27;body&#x27; : out.getvalue(),
+                 &#x27;title&#x27; : filename.replace(config[&#x27;datadir&#x27;], &#x27;&#x27;)}
+    return entryData
+    &quot;&quot;&quot;
+
+
+parse(&quot;py-code-rule.t2t&quot;)
+&lt;&#x2F;pre&gt;</content>
+</entry>
+</feed>

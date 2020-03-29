@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/Zen/IOP/iop-how2-tenfold-speed-py-script-2010-05-13-19-19.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/Zen/IOP/iop-how2-tenfold-speed-py-script-2010-05-13-19-19.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/Zen/IOP/iop-how2-tenfold-speed-py-script-2010-05-13-19-19.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2010-05-13T11:19:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">IOP:实践之一</title>
+<category term="" />
+<id>/pyblosxom/2010/05/13/iop-how2-tenfold-speed-py-script-2010-05-13-19-19</id>
+<updated>2010-05-13T11:19:00Z</updated>
+<published>2010-05-13T11:19:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/Zen/IOP/iop-how2-tenfold-speed-py-script-2010-05-13-19-19.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopSkZIVkFPW&#x27; id=&#x27;toptopSkZIVkFPW&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;IOP:实践之一&lt;&#x2F;h1&gt;
+&lt;h2&gt;~ 如何令Python脚本提速100倍?!&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0IyR&quot;&gt;背景&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc2R0VYRENMU&quot;&gt;1.1. 预案&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc3R0lYQ0FTS&quot;&gt;IOP的加速技巧&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc4R0lYRENMU&quot;&gt;2.1. 10万:170+4秒&lt;&#x2F;a&gt;
+      &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#toc5R0lYRENMU&quot;&gt;2.1.1. code&lt;&#x2F;a&gt;
+      &lt;&#x2F;li&gt;
+      &lt;li&gt;&lt;a href=&quot;#toc6R0lYRENMU&quot;&gt;2.1.2. speed&lt;&#x2F;a&gt;
+      &lt;&#x2F;li&gt;
+      &lt;li&gt;&lt;a href=&quot;#toc7R0lYRENMU&quot;&gt;2.1.3. improve&lt;&#x2F;a&gt;
+      &lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc8R0lYREVMU&quot;&gt;2.2. 10万:150+10秒&lt;&#x2F;a&gt;
+      &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#toc9R0lYREVMU&quot;&gt;2.2.1. thinking&lt;&#x2F;a&gt;
+      &lt;&#x2F;li&gt;
+      &lt;li&gt;&lt;a href=&quot;#toc10R0lYREVMU&quot;&gt;2.2.2. code&lt;&#x2F;a&gt;
+      &lt;&#x2F;li&gt;
+      &lt;li&gt;&lt;a href=&quot;#toc11R0lYREVMU&quot;&gt;2.2.3. improve&lt;&#x2F;a&gt;
+      &lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc12R0lYREdMU&quot;&gt;2.3. 10万:100+200秒?!&lt;&#x2F;a&gt;
+      &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#toc13R0lYREdMU&quot;&gt;2.3.1. thinking&lt;&#x2F;a&gt;
+      &lt;&#x2F;li&gt;
+      &lt;li&gt;&lt;a href=&quot;#toc14R0lYREdMU&quot;&gt;2.3.2. code&lt;&#x2F;a&gt;
+      &lt;&#x2F;li&gt;
+      &lt;li&gt;&lt;a href=&quot;#toc15R0lYREdMU&quot;&gt;2.3.3. speed&lt;&#x2F;a&gt;
+      &lt;&#x2F;li&gt;
+      &lt;li&gt;&lt;a href=&quot;#toc16R0lYREdMU&quot;&gt;2.3.4. improve&lt;&#x2F;a&gt;
+      &lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc17R0lYRElMU&quot;&gt;2.4. 1000万:1100秒+480秒&lt;&#x2F;a&gt;
+      &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#toc18R0lYRElMU&quot;&gt;2.4.1. thinking&lt;&#x2F;a&gt;
+      &lt;&#x2F;li&gt;
+      &lt;li&gt;&lt;a href=&quot;#toc19R0lYRElMU&quot;&gt;2.4.2. code&lt;&#x2F;a&gt;
+      &lt;&#x2F;li&gt;
+      &lt;li&gt;&lt;a href=&quot;#toc20R0lYRElMU&quot;&gt;2.4.3. improve&lt;&#x2F;a&gt;
+      &lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc21R0lYREtMU&quot;&gt;2.5. 小记&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc22R01YQ0JaV&quot;&gt;提速100倍&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0IyR&quot; name=&quot;toc1R0VYQ0IyR&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopSkZIVkFPW&#x27;&gt; 1. 背景 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+什么事儿呢?
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;在一高压力服务环境中,需要加速系统的响应
+&lt;&#x2F;li&gt;
+&lt;li&gt;现行系统对于数据查询要尝试三种数据库源:
+ &lt;ol&gt;
+ &lt;li&gt;memcache
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;redis
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;MySQL
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ol&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;期望查询加速至少 300%
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;运行环境&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;pre&gt;
+客户机:
+    - 俺的Laptop HP 520
+    - 双核CPU 2G内存
+    - Ubuntu 9.10
+DB主机:
+    - CentOS 5.0
+    - 单核CPU 4G 内存
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc2R0VYRENMU&quot; name=&quot;toc2R0VYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopSkZIVkFPW&#x27;&gt; 1.1. 预案 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+这事儿,一想,简单哪,都放内存就好的哪
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;统计了一下需要用来查询的数据不到2千万条
+&lt;&#x2F;li&gt;
+&lt;li&gt;折算成文件不过1G
+&lt;&#x2F;li&gt;
+&lt;li&gt;加载到内存中,使用 Python 字典结构的话,也最多涨一倍,也完全可以接受
+&lt;&#x2F;li&gt;
+&lt;li&gt;速度?!
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;yongsun.me&#x2F;2007&#x2F;11&#x2F;python-rbtree%e5%92%8c%e5%86%85%e5%bb%badict%e7%9a%84%e6%80%a7%e8%83%bd%e6%af%94%e8%be%83&#x2F;&quot;&gt;python-rbtree和内建dict的性能比较&lt;&#x2F;a&gt;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;那绝对不是问题!
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc3R0lYQ0FTS&quot; name=&quot;toc3R0lYQ0FTS&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopSkZIVkFPW&#x27;&gt; 2. IOP的加速技巧 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+&lt;code&gt;没有想到,加速,只要不断将代码住短里面写就好!&lt;&#x2F;code&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+不知道什么是 IOP?
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;PyIOP&quot;&gt;PyIOP&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;咔咔咔,沈游侠总结的编程态度&amp;gt;...
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc4R0lYRENMU&quot; name=&quot;toc4R0lYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopSkZIVkFPW&#x27;&gt; 2.1. 10万:170+4秒 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;最直接的实现&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;ul&gt;
+&lt;li&gt;从redis 读
+&lt;&#x2F;li&gt;
+&lt;li&gt;生成 dict 对象
+&lt;&#x2F;li&gt;
+&lt;li&gt;以pickle dump 出序列化文件
+&lt;&#x2F;li&gt;
+&lt;li&gt;用pickle load 加载成dict对象
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc5R0lYRENMU&quot; name=&quot;toc5R0lYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h3&gt;&lt;A href=&#x27;#toptopSkZIVkFPW&#x27;&gt; 2.1.1. code &lt;&#x2F;A&gt;&lt;&#x2F;h3&gt;
+&lt;dl&gt;
+&lt;dt&gt;代码:&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  python&quot;&gt;
+
+#!&#x2F;usr&#x2F;bin&#x2F;python 
+# -*- coding: utf-8 -*-
+import struct,sys,time
+import cPickle as pickle
+import redis
+REVERSION = &quot;r2d.py v10.5.7&quot;
+def _push2dict(dictall,key,smembers):
+    dictall[struct.pack(&#x27;I&#x27;,int(key[1:]))]=[s.split(&quot;|&quot;) for s in rb.smembers(k)]    
+    return dictall
+if __name__ == &#x27;__main__&#x27;:      # this way the module can be
+    if 3 != len(sys.argv):
+        print &quot;&quot;&quot; %s usage::
+$ python r2d.py redistIP limitnumber [like 10000]
+        &quot;&quot;&quot; % REVERSION
+    else:
+        hostIP = sys.argv[1]
+        limitn = sys.argv[2]
+        rb = redis.Redis(host=hostIP, port=6379, db=9)
+        rbkeys = rb.keys().split()
+        loop = int(limitn)
+        s4dict={}
+        for k in rbkeys:
+            if 0 == loop:
+                break
+            else:
+                loop -=1
+                _push2dict(s4dict,k,rb.smembers(k))
+        pickle.dump(s4dict, open(&#x27;r4d.dump&#x27;, &#x27;wb&#x27;))
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc6R0lYRENMU&quot; name=&quot;toc6R0lYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h3&gt;&lt;A href=&#x27;#toptopSkZIVkFPW&#x27;&gt; 2.1.2. speed &lt;&#x2F;A&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;代码足够简单了,单函式,20行
+&lt;&#x2F;li&gt;
+&lt;li&gt;速度测试::
+ &lt;ul&gt;
+ &lt;li&gt;10W 值对导出 &amp;gt;170秒,导入&amp;gt;4秒;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;100W 值对导出 &amp;gt;500秒,导入&amp;gt;25秒;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;1000W 值对导出 &lt;b&gt;失败! 内存提前耗光!&lt;&#x2F;b&gt;
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc7R0lYRENMU&quot; name=&quot;toc7R0lYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h3&gt;&lt;A href=&#x27;#toptopSkZIVkFPW&#x27;&gt; 2.1.3. improve &lt;&#x2F;A&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;
+这完全无法接受哪...
+&lt;&#x2F;p&gt;
+&lt;dl&gt;
+&lt;dt&gt;加速尝试::&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;ol&gt;
+&lt;li&gt;根据 IOP 尽量不用函式,将那个一行函式清除,代码填回循环 ~ &lt;i&gt;立即获得几秒的加速&lt;&#x2F;i&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;本来用的就是cPickle 了,模块效率没有办法了
+&lt;&#x2F;li&gt;
+&lt;li&gt;嗯嗯嗯,可以不用 cPickle卟?
+ &lt;ul&gt;
+ &lt;li&gt;直接输出自然 .py 哈?!
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+
+&lt;pre class=&quot;brush:  python&quot;&gt;
+
+
+# 使用 str() 将字典对象用文本的方式记入 .py 
+vdf = open(&quot;r2d.define.py&quot;,&quot;wa&quot;)
+vdf.write(&quot;s4dict=&quot;)
+vdf.write(str(s4dict))
+vdf.close()
+# 使用时直接 import 就好
+
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;改进后测试::
+ &lt;ul&gt;
+ &lt;li&gt;10W 值对导出 &amp;gt;160秒,导入&amp;gt;3秒;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;100W 值对导出 &amp;gt;400秒,导入&amp;gt;19秒;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;1000W 值对导出 &lt;b&gt;依然杯具&lt;&#x2F;b&gt;
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;加速不明显:
+ &lt;ul&gt;
+ &lt;li&gt;导出时速度变化很小
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;载入时速度有提升
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;进一步观察到,导出时内存飞速增长:
+ &lt;ul&gt;
+ &lt;li&gt;100W级别,要食掉1.6G左右的内存
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;redis 本身也很占内存,千万级别时,也要占上G (当然这和条目数量&#x2F;内容有关)
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;这对于服务器是个不可接受的方式
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc8R0lYREVMU&quot; name=&quot;toc8R0lYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopSkZIVkFPW&#x27;&gt; 2.2. 10万:150+10秒 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;改进中间数据格式:&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;ul&gt;
+&lt;li&gt;从redis 读
+&lt;&#x2F;li&gt;
+&lt;li&gt;生成 中间log文件
+&lt;&#x2F;li&gt;
+&lt;li&gt;导入成 字典对象
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc9R0lYREVMU&quot; name=&quot;toc9R0lYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h3&gt;&lt;A href=&#x27;#toptopSkZIVkFPW&#x27;&gt; 2.2.1. thinking &lt;&#x2F;A&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;
+因为有这些现实:
+&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;想输出不论 pickle 或是 .py 的字典对象,都得先在内存中构造出这一对象
+&lt;&#x2F;li&gt;
+&lt;li&gt;随着字典对象的规模增加,必然导致这一构建过程的时间加长
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+
+&lt;p&gt;
+经沈游侠提醒,发现字典对象其实是可以线性输出的:
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;比如说,字典结构如:
+&lt;pre&gt;
+{key:[(v1,v2,v3),..]
+,...
+}
+&lt;&#x2F;pre&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;code&gt;K:[list]&lt;&#x2F;code&gt; 形式的两层结构
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;那么,就可以通过中间数据文本:
+&lt;pre&gt;
+(&#x27;key&#x27;, [(v1, &#x27;v2&#x27;, v3)])
+...
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;进行线性加载,e.g:
+&lt;pre class=&quot;brush:  python&quot;&gt;
+
+for l in open(&quot;r2d.define.py.log&quot;,&quot;r&quot;).readlines():
+    dd = eval(l)
+    if dd[0] in s4d:
+        s4d[dd[0]].append((dd[1],dd[2],dd[3]))
+    else:
+        s4d[dd[0]]=[(dd[1],dd[2],dd[3])]
+
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc10R0lYREVMU&quot; name=&quot;toc10R0lYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h3&gt;&lt;A href=&#x27;#toptopSkZIVkFPW&#x27;&gt; 2.2.2. code &lt;&#x2F;A&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;
+快速修订对应行动代码:
+&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  python&quot;&gt;
+
+#!&#x2F;usr&#x2F;bin&#x2F;python 
+# -*- coding: utf-8 -*-
+import struct,sys,time
+import redis
+REVERSION = &quot;r2d.py v10.5.8&quot;
+if __name__ == &#x27;__main__&#x27;:      # this way the module can be
+    if 3 != len(sys.argv):
+        print &quot;&quot;&quot; %s usage::
+$ python r2d.py redistIP limitnumber [like 10000] &amp;gt; mid-data.log
+        &quot;&quot;&quot; % REVERSION
+    else:
+        hostIP = sys.argv[1]
+        limitn = sys.argv[2]
+        rb = redis.Redis(host=hostIP, port=6379, db=9)
+        rbkeys = rb.keys().split()
+        loop = int(limitn)
+        for k in rbkeys:
+            if 0 == loop:
+                break
+            else:
+                loop -=1
+                dictkey = struct.pack(&#x27;I&#x27;,int(k[1:]))
+                sli = []
+                for s in rb.smembers(k):
+                    rli = s.split(&quot;|&quot;)[:3]
+                    if rli:
+                        rli[0] = int(rli[0])
+                        rli[1] = struct.pack(&#x27;I&#x27;,int(rli[1]))
+                        rli[2] = int(rli[2])
+                        sli.append(tuple(rli))
+                print &amp;gt;&amp;gt; d2f,`dictkey,sli`
+                #注意: `obj` 等同 repr(obj)  
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc11R0lYREVMU&quot; name=&quot;toc11R0lYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h3&gt;&lt;A href=&#x27;#toptopSkZIVkFPW&#x27;&gt; 2.2.3. improve &lt;&#x2F;A&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;
+代码依然简单了,无函式,30行
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;速度测试::
+ &lt;ul&gt;
+ &lt;li&gt;10W 值对导出 &amp;gt;150秒,导入&amp;gt;10秒;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;100W 值对导出 &amp;gt;500秒,导入&amp;gt;20秒;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;1000W 值对导出 &amp;gt;1300秒,导入&amp;gt;90秒;
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;速度看起来没有什么明显的提高
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;b&gt;不过!&lt;&#x2F;b&gt;
+ &lt;ol&gt;
+ &lt;li&gt;千万级别的数据可以在低配置环境中跑完了!
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;内存占用很稳定永远90M左右,不会随字典对象的增长而增长!
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ol&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;p&gt;
+嗯嗯嗯,这算是可用了...
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc12R0lYREdMU&quot; name=&quot;toc12R0lYREdMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopSkZIVkFPW&#x27;&gt; 2.3. 10万:100+200秒?! &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;继续改进:&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;ul&gt;
+&lt;li&gt;放弃 redis 直接从MySQL 读
+&lt;&#x2F;li&gt;
+&lt;li&gt;生成 中间日志
+&lt;&#x2F;li&gt;
+&lt;li&gt;导入成 dict 文件
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc13R0lYREdMU&quot; name=&quot;toc13R0lYREdMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h3&gt;&lt;A href=&#x27;#toptopSkZIVkFPW&#x27;&gt; 2.3.1. thinking &lt;&#x2F;A&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;
+虽然redis 是号称最快的 K&#x2F;V 数据库产品，但是，明显就是它将整个业务响应速度拖慢了..
+&lt;&#x2F;p&gt;
+&lt;dl&gt;
+&lt;dt&gt;为什么呢？&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;ul&gt;
+&lt;li&gt;服务器程序和本地程序面对的环境是不同的
+&lt;&#x2F;li&gt;
+&lt;li&gt;高压力服务器程序和小压力服务器程序也是不同的
+&lt;&#x2F;li&gt;
+&lt;li&gt;简单来说:
+ &lt;ol&gt;
+ &lt;li&gt;小型服务~=每秒&amp;lt;C60
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;中型服务~=每秒&amp;lt;C600
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;大型服务~=每秒&amp;gt;C1000
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ol&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;面对的矛盾是完全不同的:
+ &lt;ol&gt;
+ &lt;li&gt;小型服务-&amp;gt;语言执行效率
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;中型服务-&amp;gt;框架执行效率
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;大型服务-&amp;gt;I&#x2F;O 响应速度
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ol&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;所以，对于面向Web 的查询服务，不论 Redis&#x2F;MySQL 对于业务系统，都是进程间通讯!
+&lt;&#x2F;li&gt;
+&lt;li&gt;每次跨进程通讯，都意味着至少四次I&#x2F;O操作！
+&lt;&#x2F;li&gt;
+&lt;li&gt;所以，当前 Redis-&amp;gt;log-&amp;gt;内存字典的转换流程，其实包含了 MySQL-&amp;gt;Redis 的进程操作
+&lt;&#x2F;li&gt;
+&lt;li&gt;另外:
+ &lt;ul&gt;
+ &lt;li&gt;遍查 Redis 文档，居然没有 &lt;code&gt;iterkeys()&lt;&#x2F;code&gt; 类似的操作！
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;每次不论转换多少 Redis 的值对，都得使用&lt;code&gt;keys()&lt;&#x2F;code&gt; 将键先取出来然后再逐一匹配处理
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;怪不得使用 Redis 测试用小仓库(包含20万值对)时，脚本运行速度和使用全数据Redis(千万值对)时速度要相差5倍以上！内存也占用多几倍!
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;p&gt;
+&lt;b&gt;所以!要直接从 MySQL 相关表中读取&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc14R0lYREdMU&quot; name=&quot;toc14R0lYREdMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h3&gt;&lt;A href=&#x27;#toptopSkZIVkFPW&#x27;&gt; 2.3.2. code &lt;&#x2F;A&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;
+配合一SQL 模板:
+&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  sql&quot;&gt;
+
+-- _tpl&#x2F;all_black.tpl
+SELECT v1,v2,v3,v4,id FROM t_black LIMIT %(limitMAX)s;
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;
+核心代码:
+&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  python&quot;&gt;
+
+#!&#x2F;usr&#x2F;bin&#x2F;python 
+# -*- coding: utf-8 -*-
+REVERSION = &quot;m2d.py v10.5.9&quot;
+import struct,sys,time
+
+if __name__ == &#x27;__main__&#x27;:      # this way the module can be
+    &quot;&quot;&quot;usage:
+$ python m2d.py limit [such as 100] |\
+  mysql -h xx.xx.xx.xx -u User -D --password=***  |\
+  python m2d.py &amp;gt; m2d.log
+    &quot;&quot;&quot;
+    if sys.stdin:
+        if 1 &amp;lt; len(sys.argv):
+            limit = sys.argv[1]
+            limitMAX = int(limit)
+            print &amp;gt;&amp;gt; sys.stderr, info
+            print open(&quot;_tpl&#x2F;all_black.tpl&quot;,&quot;r&quot;).read()%locals()
+        else:
+            s4dict={}
+            virusname={}
+            totalN = 0
+            for l in sys.stdin.readlines():
+                if &quot;id&quot; in l:
+                    pass
+                else:
+                    totalN += 1
+                    lkv=l.split()
+                    dictkey = struct.pack(&#x27;I&#x27;,int(lkv[0]))
+                    lkv[1] = int(lkv[1])
+                    lkv[2] = struct.pack(&#x27;I&#x27;,int(lkv[2]))
+                    lkv[3] = int(lkv[3])
+                    print &amp;gt;&amp;gt; d2f,`dictkey,tuple(lkv[1:])`
+&lt;&#x2F;pre&gt;
+ &lt;ul&gt;
+ &lt;li&gt;用是否有额外参数来判定是否生成SQL,还是进行MySQL 的输出数据处理
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;为了不影响标准输出,调试信息,输出到标准错误IO
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;调试也应该根据管道串的层级,一级级运行尝试
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;调用的shell:
+&lt;pre class=&quot;brush:  shell&quot;&gt;
+
+#!&#x2F;bin&#x2F;sh
+#   m2d.sh v10.5.9
+python m2d.py go |\
+    mysql -h xx.xx.xx.xx -u User --password=***|\
+    python mysql4dict.py $1 |\
+    mysql -h xx.xx.xx.xx -u User --password=***|\
+    python m2d.py &amp;gt; m2d.log
+&lt;&#x2F;pre&gt;
+ &lt;p&gt;&lt;&#x2F;p&gt;
+&lt;b&gt;加载时代码没有怎么变&lt;&#x2F;b&gt;
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc15R0lYREdMU&quot; name=&quot;toc15R0lYREdMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h3&gt;&lt;A href=&#x27;#toptopSkZIVkFPW&#x27;&gt; 2.3.3. speed &lt;&#x2F;A&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;速度测试::
+ &lt;ul&gt;
+ &lt;li&gt;0.1W 值对导出 &amp;lt;5秒,导入&amp;lt;1秒;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;10W 值对导出 &amp;gt;300秒,导入&amp;gt;10秒;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;100W 值对导出 杯具鸟
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;1000W 值对导出 杯具鸟
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;速度怎么和查询的条目多少有关? 而且一大MySQL 就拒绝服务?
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc16R0lYREdMU&quot; name=&quot;toc16R0lYREdMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h3&gt;&lt;A href=&#x27;#toptopSkZIVkFPW&#x27;&gt; 2.3.4. improve &lt;&#x2F;A&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;
+嗯嗯嗯,FT! 当然了,MySQL 请求响应时间是有限制的,大数据传输肯定是有问题的,
+利用 &lt;code&gt;LIMIT&lt;&#x2F;code&gt; 的切片!
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;改造前述&lt;code&gt;m2d.py v10.5.9&lt;&#x2F;code&gt; SQL生成部分的代码:
+&lt;pre class=&quot;brush:  python&quot;&gt;
+
+step = 5000.0
+limitMAX = int(limit)
+sqltpl = open(&quot;_tpl&#x2F;all_black.tpl&quot;,&quot;r&quot;).read()
+if 1 &amp;gt;= limitMAXb&#x2F;step:
+    print sqltpl%locals()
+else:
+    for i in range(int(limitMAX&#x2F;step)):
+        limitMAX = &quot;%d,%d&quot;%(step*i,int(step))
+        print sqltpl%locals()
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;以 5000 为界限,生成类似 &lt;code&gt;LIMIT 15000,5000&lt;&#x2F;code&gt; 的限制
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;ul&gt;
+&lt;li&gt;速度测试::
+ &lt;ul&gt;
+ &lt;li&gt;100W 值对导出 &amp;gt;290秒,导入&amp;gt;190秒;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;1000W 值对导出 杯具鸟
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;p&gt;
+&lt;b&gt;FT!怎么回事儿?速度意外的慢!&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc17R0lYRElMU&quot; name=&quot;toc17R0lYRElMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopSkZIVkFPW&#x27;&gt; 2.4. 1000万:1100秒+480秒 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;冷静后改进:&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;ul&gt;
+&lt;li&gt;从MySQL 读使用id 进行限制切分
+&lt;&#x2F;li&gt;
+&lt;li&gt;生成 中间日志,但是重新设计结构
+&lt;&#x2F;li&gt;
+&lt;li&gt;导入成 dict 文件
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc18R0lYRElMU&quot; name=&quot;toc18R0lYRElMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h3&gt;&lt;A href=&#x27;#toptopSkZIVkFPW&#x27;&gt; 2.4.1. thinking &lt;&#x2F;A&gt;&lt;&#x2F;h3&gt;
+&lt;dl&gt;
+&lt;dt&gt;MySQL 为什么这么慢?!&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;ul&gt;
+&lt;li&gt;嗯嗯嗯,N久没有使用过DB,这次重温了为什么远离DB的恶体验
+&lt;&#x2F;li&gt;
+&lt;li&gt;MySQL 本身就不是千万级别的产品,虽然有很多招可以应对
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.cnblogs.com&#x2F;fjytzh&#x2F;archive&#x2F;2010&#x2F;04&#x2F;02&#x2F;1702886.html&quot;&gt;mysql limit查询优化（数据量大的时候很优）&lt;&#x2F;a&gt;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;grb12508.blog.163.com&#x2F;blog&#x2F;static&#x2F;273784582009102448061&#x2F;&quot;&gt;Mysql limit 优化，百万至千万级快速分页&lt;&#x2F;a&gt;
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;不过,以上招都不好使,咨询了一下同事,直接使用ID范畴来限定就好!
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc19R0lYRElMU&quot; name=&quot;toc19R0lYRElMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h3&gt;&lt;A href=&#x27;#toptopSkZIVkFPW&#x27;&gt; 2.4.2. code &lt;&#x2F;A&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;
+SQL 模板配合改进:
+&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  sql&quot;&gt;
+
+-- _tpl&#x2F;all_black.tpl
+SELECT v1,v2,v3,v4,id FROM t_black WHERE id&amp;gt;%(LIMbwID)s AND id&amp;lt;=%(MAXbwID)s;
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;
+SQL 生成代码:
+&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  python&quot;&gt;
+
+step = 3000.0
+offset = int(step)
+# &amp;lt; &amp;lt;gen_sql_with_max&amp;gt; &amp;gt; 使用Leo 时可以定义子节点将成堆代码变成语义标记
+for l in sys.stdin.readlines():
+    if &quot;max(id)&quot; not in l:
+        amount = l.split()
+        MAXbwID = int(amount[0]
+        MINbwID = int(amount[1]
+        MAXbwA = MAXbID-MINbID
+MAXbMAX = MAXbwID
+lastID = 0
+sqltpl = open(&quot;_tpl&#x2F;all_black.tpl&quot;,&quot;r&quot;).read()
+for i in range(MAXbwA&#x2F;offset):
+    MAXbwID,LIMbwID = (MAXbMAX-offset*i,MAXbMAX-offset*(i+1))
+    print sqltpl%locals()
+    lastID = LIMbID
+MAXbID,LIMbID = lastID,MINbID   # 将切片限数之内的尾数个ID也查询出来
+print sqltpl%locals()
+&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;咔咔咔,当然的,要进行基于ID 的精确切分选择,就得先知道最大和最小的ID
+&lt;&#x2F;li&gt;
+&lt;li&gt;使用SQL &lt;code&gt;SELECT max(id),min(id) FROM t_black ;&lt;&#x2F;code&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;自然运用系统管道串接成处理过程:
+&lt;pre class=&quot;brush:  shell&quot;&gt;
+
+#!&#x2F;bin&#x2F;sh
+#   m2d.sh v10.5.9
+DATE=`date &quot;+%y%m%d-%H%M%S&quot;`
+mysql -h xx.xx.xx -u User --password=*** &amp;lt; _tpl&#x2F;total_black.sql |\
+    python m2d.py go |\
+    mysql -h xx.xx.xx -u User --password=*** |\
+    python m2d.py &amp;gt; m2d_$DATE.log
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc20R0lYRElMU&quot; name=&quot;toc20R0lYRElMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h3&gt;&lt;A href=&#x27;#toptopSkZIVkFPW&#x27;&gt; 2.4.3. improve &lt;&#x2F;A&gt;&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;速度测试::
+ &lt;ul&gt;
+ &lt;li&gt;100W 值对导出 &amp;gt;280秒,导入&amp;gt;120秒;
+  &lt;ul&gt;
+  &lt;li&gt;m2d.log &amp;gt; 150M
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;1000W 值对导出 &amp;gt;1300秒,导入&amp;gt;780秒;
+  &lt;ul&gt;
+  &lt;li&gt;m2d.log &amp;gt; 570M
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;p&gt;
+进一步的,发现业务其实可以将双层,两次查询优化成一次查询的!
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;简单的将输出字典的数据结构变成:
+&lt;pre&gt;
+{key:v,...
+}
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;将原先的2个值结合原先的key 变成键,就成为了全局唯一的key
+&lt;&#x2F;li&gt;
+&lt;li&gt;即和MySQL 每行数据完成一一对应
+&lt;&#x2F;li&gt;
+&lt;li&gt;速度再测试::
+ &lt;ul&gt;
+ &lt;li&gt;100W 值对导出 &amp;gt;250秒,导入&amp;gt;100秒;
+  &lt;ul&gt;
+  &lt;li&gt;m2d.log &amp;gt; 130M
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;1000W 值对导出 &amp;gt;1100秒,导入&amp;gt;480秒;
+  &lt;ul&gt;
+  &lt;li&gt;m2d.log &amp;gt; 490M
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;哗! 而且加载完后,字典对象所点内存体积也同样减少了 30% !
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc21R0lYREtMU&quot; name=&quot;toc21R0lYREtMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopSkZIVkFPW&#x27;&gt; 2.5. 小记 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;综上:&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;ul&gt;
+&lt;li&gt;应用 IOP 方面的主要招术:
+ &lt;ol&gt;
+ &lt;li&gt;表用 函式
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;表用 模块
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;尽量使用 OS 的标准 I&#x2F;O 进行功能串接
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ol&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;b&gt;DOP&lt;&#x2F;b&gt;~&lt;code&gt;Data Oriented Programming&lt;&#x2F;code&gt;
+ &lt;ul&gt;
+ &lt;li&gt;面向数据编程
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;归根到底,程序都得操作数据解决问题
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;服务器端,大并发压力时,最有效的节省I&#x2F;O 的方式,就是高效方式
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;压缩输入&#x2F;出的数据量自然是最好的代码!
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc22R01YQ0JaV&quot; name=&quot;toc22R01YQ0JaV&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopSkZIVkFPW&#x27;&gt; 3. 提速100倍 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+嗯嗯嗯？！怎么说到最后好象也没有加速到100倍哪？
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;是也乎，是也乎，以上分享的是内存化字典数据的转换脚本加速过程
+&lt;&#x2F;li&gt;
+&lt;li&gt;但是最后要加速的是整个查询业务哈?
+&lt;&#x2F;li&gt;
+&lt;li&gt;因为涉及公司核心服务,代码就无法展示了
+&lt;&#x2F;li&gt;
+&lt;li&gt;不过,现实是:
+ &lt;ol&gt;
+ &lt;li&gt;使用了以上 IOP 中提及的基础技巧
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;每查询业务的处理时间从原先的 0.* 秒,加速到 0.00*秒,至少100倍
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;而对应的代码从 几千行,精简到几十行
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ol&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;p&gt;
+所以,基本上可以这么理解:
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;将代码每&lt;b&gt;精简一倍体积&lt;&#x2F;b&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;运行速度就有望&lt;b&gt;提高10倍&lt;&#x2F;b&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+不相信? 尝试一哈噻...
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;ul&gt;
+&lt;li&gt;t2t渲染:: 2010-10-09 02:21:36
+&lt;&#x2F;li&gt;
+&lt;li&gt;动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;Zen&#x2F;IOP&#x2F;iop-how2-tenfold-speed-py-script-2010-05-13-19-19.t2t --&gt;
+</content>
+</entry>
+</feed>

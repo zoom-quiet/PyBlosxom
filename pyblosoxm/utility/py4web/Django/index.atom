@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/utility/py4web/Django/index.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/utility/py4web/Django/index.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/utility/py4web/Django/index.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2006-01-27T15:23:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">《Django一步接一步》中文学习教程发表！</title>
+<category term="" />
+<id>/pyblosxom/2006/01/27/django-stepbystep-2006-01-27-23-23</id>
+<updated>2006-01-27T15:23:00Z</updated>
+<published>2006-01-27T15:23:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/utility/py4web/Django/django-stepbystep-2006-01-27-23-23.html" />
+<content type="html">
+&lt;a href=&quot;http:&#x2F;&#x2F;www.djangoproject.com&#x2F;&quot;&gt;
+Djano
+&lt;&#x2F;a&gt;是&lt;a href=&quot;http:&#x2F;&#x2F;python.org&#x2F;&quot;&gt;
+Python
+&lt;&#x2F;a&gt; 世界中，类似&lt;a href=&quot;http:&#x2F;&#x2F;www.rubyonrails.org&#x2F;&quot;&gt;RoR&lt;&#x2F;a&gt; 
+的快速web 开发平台之一.它鼓励快速开发和干净的、ＭＶＣ设计。它包括一个模板系统，对象相关的映射和用于动态创建管理界面的框架。自从正式发布后在全世界受到追捧，发布的异常快速。
+
+&lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;DjanGo&quot;&gt;
+(啄木鸟社区的中文介绍)
+&lt;&#x2F;a&gt;
+&lt;br&#x2F;&gt;
+&lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;CPUG&quot;&gt;CPUG&lt;&#x2F;a&gt;
+活跃人物:
+&lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;limodou&quot;&gt;
+limodou
+&lt;&#x2F;a&gt; 刚刚在个人
+&lt;a href=&quot;http:&#x2F;&#x2F;blog.donews.com&#x2F;limodou&#x2F;archive&#x2F;2006&#x2F;01&#x2F;26&#x2F;709143.aspx&quot;&gt;
+Blog 
+&lt;&#x2F;a&gt;中 发布消息，正式发表了&lt;b&gt;
+&lt;a href=&quot;http:&#x2F;&#x2F;www.woodpecker.org.cn&#x2F;obp&#x2F;django&#x2F;django-stepbystep&#x2F;newtest&#x2F;doc&#x2F;&quot;&gt;
+《Django Step by Step》
+&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+-- 《Django一步接一步》中文学习教程！
+
+&lt;br&#x2F;&gt;
+教程整理自&lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;limodou&quot;&gt;
+limodou
+&lt;&#x2F;a&gt;的个人学习体验，以前&lt;a href=&quot;http:&#x2F;&#x2F;blog.donews.com&#x2F;limodou&#x2F;category&#x2F;65397.aspx&quot;&gt;是以连载的形式在blog中
+&lt;&#x2F;a&gt;发布的，此次，使用
+&lt;a href=&quot;http:&#x2F;&#x2F;www.czug.org&#x2F;plone&#x2F;howto&#x2F;howto-restructed-text&#x2F;&quot;&gt;
+&lt;i&gt;re&lt;&#x2F;i&gt;Structed
+&lt;&#x2F;a&gt;
+文本格式整理，组织成为正式教程，通过&lt;a href=&quot;http:&#x2F;&#x2F;www.woodpecker.org.cn&#x2F;&quot;&gt;
+啄木鸟社区
+&lt;&#x2F;a&gt;空间发布以利于中国Python 爱好者学习。
+
+
+
+
+
+
+
+
+
+
+
+</content>
+</entry>
+</feed>

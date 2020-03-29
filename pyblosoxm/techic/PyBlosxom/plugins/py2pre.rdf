@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<!DOCTYPE content [ <!ENTITY nbsp " "> ]>
+<rdf:RDF xml:base="/pyblosxom/rdf"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<rdf:Description rdf:about="/pyblosxom">
+  <dc:title> Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup> </dc:title>
+  <dc:description> Zoom.Quiet's PyBlosxom blogging </dc:description>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+</rdf:Description>
+
+<rdf:Description rdf:about="/pyblosxom/techic/PyBlosxom/plugins/py2pre">
+  <dc:title> py2pre.py </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2011-09-07T06:00:00Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <pre class="brush: python"># -*- coding: utf-8 -*-
+"""py - html Parser
+    - refactory py2pre.py from xhtml.py
+
+Copyright (c) 2011 Zoom.Quiet 
+All rights reserved.
+
+Redistribution and use in source and binary forms are permitted
+provided that the above copyright notice and this paragraph are
+duplicated in all such forms and that any documentation,
+advertising materials, and other materials related to such
+distribution and use acknowledge that the software was developed
+by the zoomquiet.org.  The name of the
+University may not be used to endorse or promote products derived
+from this software without specific prior written permission.
+THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR
+IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+
+"""
+
+
+## Leo: tab_width=-4 page_width=80
+__version__ = "v11.09.7"
+__author__ = 'Zoom.Quiet <zoomquiet+pyb at gmail dot com>'
+__url__ = "http://blog.zoomquiet.org/pyblosxom/techic/PyBlosxom/plugins/py2pre.html"
+__description__ = ".py export hmtl entry with syntaxhighlighter."
+
+#from Pyblosxom import tools
+
+def cb_entryparser(entryparsingdict):
+    """
+    Register self as plain file handler
+    """
+    entryparsingdict["py"] = parse
+    return entryparsingdict
+def parse(filename, request):
+    #import os
+    entrydata = {}
+    source = open(filename, "r").read()
+    #print filenames
+    body = '<pre class="brush: python">%s</pre>' % source
+    entrydata = {'body' : body
+                 ,'title' : filename.split("/")[-1]
+                 }
+    return entrydata
+
+</pre>
+  </content>
+
+  <rdf:Seq>
+
+  </rdf:Seq>
+</rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/2006/02/01/index.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/2006/02/01/index.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/2006/02/01/index.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2006-02-01T15:23:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">zh2utf8.py</title>
+<category term="/utility/py4zh" />
+<id>/pyblosxom/2006/02/01/zh2utf8</id>
+<updated>2006-02-01T15:23:00Z</updated>
+<published>2006-02-01T15:23:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/utility/py4zh/zh2utf8.html" />
+<content type="html">&lt;pre class=&quot;brush: python&quot;&gt;&quot;&quot;&quot;Auto converter encodings to utf8
+#tags utility,py4zh
+It will test utf8,gbk,big5,jp,kr to converter
+
+发件人: HuangJiahua &lt;jhuangjiahua@gmail.com&gt;	
+邮送域: googlegroups.com
+回复: python-cn@googlegroups.com
+收件人: &quot;python.cn&quot; &lt;python-cn@googlegroups.com&gt;
+日期: 2006-1-16 上午12:11
+主题: Re: 请问怎样得到一个文件的编码？
+http:&#x2F;&#x2F;groups.google.com&#x2F;group&#x2F;python-cn&#x2F;browse_frm&#x2F;thread&#x2F;3544d5a05783dc96
+
+&quot;&quot;&quot;
+
+#!&#x2F;usr&#x2F;bin&#x2F;python
+# coding:UTF-8
+# Author: Huang Jiahua &lt;jhuangjiahua@gmail.com&gt;
+#测试的编码类型
+encc=&#x27;&#x27;
+def zh2utf8(stri):
+       &quot;&quot;&quot;Auto converter encodings to utf8
+
+       It will test utf8,gbk,big5,jp,kr to converter&quot;&quot;&quot;
+       global encc
+       for c in (&#x27;utf-8&#x27;, &#x27;gbk&#x27;, &#x27;big5&#x27;, &#x27;jp&#x27;,
+&#x27;euc_kr&#x27;,&#x27;utf16&#x27;,&#x27;utf32&#x27;):
+               encc = c
+               try:
+                       return stri.decode(c).encode(&#x27;utf8&#x27;)
+               except:
+                       pass
+       encc = &#x27;unk&#x27;
+       return stri
+
+if __name__==&quot;__main__&quot;:
+       # 命令行测试
+       import sys
+##      sys.setappdefaultencoding(&#x27;unicode&#x27;)
+       if len(sys.argv) &gt; 1:
+               stri = sys.argv[1]
+       else:
+               stri = sys.stdin.read()
+       print zh2utf8(stri)
+       print &#x27;encc:&#x27;,encc&lt;&#x2F;pre&gt;</content>
+</entry>
+</feed>

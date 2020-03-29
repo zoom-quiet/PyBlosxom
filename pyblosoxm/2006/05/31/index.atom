@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/2006/05/31/index.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/2006/05/31/index.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/2006/05/31/index.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2006-05-31T11:00:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">从心理学角度理解Goolge模式</title>
+<category term="/internet" />
+<id>/pyblosxom/2006/05/31/psychology-google-2006-05-31-19-00</id>
+<updated>2006-05-31T11:00:00Z</updated>
+<published>2006-05-31T11:00:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/internet/psychology-google-2006-05-31-19-00.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopNFM1WTVaT&#x27; id=&#x27;toptopNFM1WTVaT&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;从心理学角度理解Goolge模式&lt;&#x2F;h1&gt;
+&lt;h2&gt;--WEB2.0到底是什么本质？&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0JaT&quot;&gt;引述&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc2R0lYQ0IyR&quot;&gt;自说&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc3R0lYRENMU&quot;&gt;2.1. 一个人...&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc4R01YQ0IyT&quot;&gt;问&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0JaT&quot; name=&quot;toc1R0VYQ0JaT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopNFM1WTVaT&#x27;&gt; 1. 引述 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;dl&gt;
+&lt;dt&gt;正看骡子:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    莫非写的亚洲史，嘿嘿...
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;p&gt;
+他说亚洲尤其是东亚季风气候的人整体文化是尊重集体力量的
+所以包括中国，日本跟朝鲜人都是集体类人群
+整体文化讲究的是人与自然的和谐
+也讲究集体的凝聚力
+处于上层金字塔顶端的人并不只是领导者与控制者
+同时还是示范者。历代皇帝都是这样的（比如唐太宗）。
+所以一个朝代的风气与文化与示范者的风格都是同样的。
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+而欧洲文化（主要是基督教）包括伊斯兰文化都是在贫瘠的土地上出生的
+依靠征服与传教来传播的（想想波斯的大流士与十字军东征）
+所以更强调英雄主义与个人努力（那边人少，一场战争可能也就几千人参加，那要是一个哥们勇点，KILL个10个8个的就是英雄了，不象中国，只能在“百万军中，还要取上将首级如探囊取物”才NB），可以想象中国人如何的难出英雄。而中国的英雄，比如董、黄，还有田横等。都是为了集体以及国家而死，几乎没有罗宾汉式的人物（梁山那帮不是，李自成之类是被党包装的）。
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc2R0lYQ0IyR&quot; name=&quot;toc2R0lYQ0IyR&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopNFM1WTVaT&#x27;&gt; 2. 自说 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;dl&gt;
+&lt;dt&gt;我们的2.0生活:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;youmeng.bokee.com&#x2F;5098596.html&quot;&gt;http:&#x2F;&#x2F;youmeng.bokee.com&#x2F;5098596.html&lt;&#x2F;a&gt;
+    得到有一个提示，
+    文化不同，但是社会活动的本质是有规律可循的，
+    就是“马斯洛的需求层次理论”
+    从安全需求以上，就是我们互联网的潜在用户的基本述求了！
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;web2.0都是个死胡同，web3.0呢？:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;ittalks.blogbus.com&#x2F;logs&#x2F;2006&#x2F;05&#x2F;2556158.html&quot;&gt;http:&#x2F;&#x2F;ittalks.blogbus.com&#x2F;logs&#x2F;2006&#x2F;05&#x2F;2556158.html&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;点出了要点：
+     &lt;ul&gt;
+     &lt;li&gt;“互联网精神的本质就是：自由，平等”
+     &lt;&#x2F;li&gt;
+     &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+IT产业的发展基础是建立在逐步划分和限制这种本质的基础上的，
+奈何技术的进化比产业的进化要快的多，
+各种分享&#x2F;发布&#x2F;组织信息&#x2F;资料&#x2F;社会关系的工具&#x2F; 服务&#x2F;技巧层出不穷,
+&lt;p&gt;&lt;&#x2F;p&gt;
+google 仅仅是认了个死理： &lt;code&gt;`不作自个儿控制不了的事儿！`&lt;&#x2F;code&gt;
+所以成功了！
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;中国IT企业:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    思想还在 Web1.0;
+    还在拼命的诱使&#x2F;迫使&#x2F;说服用户交出权力并付费，可以说 是很没前途的！
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc3R0lYRENMU&quot; name=&quot;toc3R0lYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopNFM1WTVaT&#x27;&gt; 2.1. 一个人... &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;一个人，在互联网中的天生权力&#x2F;义务有什么？:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ol&gt;
+    &lt;li&gt;有权力发布自个儿想发布的信息!
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;有义务为自个儿发布的信息负责!
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;p&gt;
+&lt;code&gt;`that all!`&lt;&#x2F;code&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+以上两方面是完全相互对应不可脱离的，任何一种缺失就会产生各种恶果:
+&lt;&#x2F;p&gt;
+ &lt;ol&gt;
+ &lt;li&gt;不能发布自个儿想发布的信息，也就不可能为自个儿发布的信息负责：
+  &lt;ul&gt;
+  &lt;li&gt;所以，有各种各样不负责任的言语在互联网中此起彼伏
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;要求为自个儿发布的信息负责，却不允许发布自个儿想发布的:
+  &lt;ul&gt;
+  &lt;li&gt;所以，实名制不论哪个国家搞都会臭！
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;可以自由发布自个儿想发布的信息时，却没有良好的监督机制：
+  &lt;ul&gt;
+  &lt;li&gt;所以，有各种哗众取宠的组织&#x2F;个人将互联网娱乐化
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;………………
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ol&gt;
+
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;
+维基百科之所以成功，就是将这种基本权力按照一种合理的模式进行了限制…… 
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc4R01YQ0IyT&quot; name=&quot;toc4R01YQ0IyT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopNFM1WTVaT&#x27;&gt; 3. 问 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+我们的IT企业应该怎么开始想了？
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+象我这样的用户应该怎么样设计新的网络生活？
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+引用好友的邮件缀语以纪:
+&lt;&#x2F;p&gt;
+&lt;pre&gt;
+从这里，到那里
+流转的不仅仅是
+生命迁徙的轨迹
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;technorati-over.gif&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;chinese&quot;&gt;chinese&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;Zen&quot;&gt;Zen&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;internet&quot;&gt;internet&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;ul&gt;
+&lt;li&gt;动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;t2t渲染:: 2010-10-09 02:21:40
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;internet&#x2F;psychology-google-2006-05-31-19-00.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">六一了！</title>
+<category term="/Quiet/nomeans" />
+<id>/pyblosxom/2006/05/31/child-day-2006-05-31-14-00</id>
+<updated>2006-05-31T06:00:00Z</updated>
+<published>2006-05-31T06:00:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/Quiet/nomeans/child-day-2006-05-31-14-00.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopNFdDMjNaR&#x27; id=&#x27;toptopNFdDMjNaR&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;六一了！&lt;&#x2F;h1&gt;
+&lt;h2&gt;--应该祝贺，如果没有忘记&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;dl&gt;
+&lt;dt&gt;同贺哪！:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    所有已经有自个儿孩子或是决定不要孩子的曾经是孩子的人们…………
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;pre&gt;
+-------- 原始信息 --------
+主题: 六一快乐
+日期: Wed, 31 May 2006 13:41:10 +0800
+
+= = = = = = 下面是转发的邮件 = = = = = = =
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+三只小蝌蚪到饭店去
+&lt;p&gt;&lt;&#x2F;p&gt;
+当服务员为隔壁桌端上一盘“红烧牛蛙”时
+&lt;p&gt;&lt;&#x2F;p&gt;
+三只小蝌蚪报在一起
+&lt;p&gt;&lt;&#x2F;p&gt;
+伤心的唱着：我不想，我不想，不想长大。。。
+&lt;p&gt;&lt;&#x2F;p&gt;
+预祝大家“六一儿童节”快乐！
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;pre&gt;
+从这里，到那里
+流转的不仅仅是
+生命迁徙的轨迹    
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;technorati-over.gif&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;Quiet&quot;&gt;Quiet&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;nomeans&quot;&gt;nomeans&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;ul&gt;
+&lt;li&gt;动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;t2t渲染:: 2010-10-09 02:21:42
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;Quiet&#x2F;nomeans&#x2F;child-day-2006-05-31-14-00.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">NOT WORD!</title>
+<category term="/oss" />
+<id>/pyblosxom/2006/05/31/not-doc-2006-05-31-12-00</id>
+<updated>2006-05-31T04:00:00Z</updated>
+<published>2006-05-31T04:00:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/oss/not-doc-2006-05-31-12-00.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopSlpIVklJQ&#x27; id=&#x27;toptopSlpIVklJQ&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;NOT WORD!&lt;&#x2F;h1&gt;
+&lt;h2&gt;--不仅仅关乎版权&lt;&#x2F;h2&gt;
+&lt;h3&gt;t2t渲染:: 2010-10-09 02:21:40&lt;&#x2F;h3&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;dl&gt;
+&lt;dt&gt;&lt;a href=&quot;http:&#x2F;&#x2F;blog.delphij.net&#x2F;archives&#x2F;001487.html&quot;&gt;几行字也发个doc??&lt;&#x2F;a&gt;:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    经常在邮件中看到朋友们将些小故事塞到 word 中分享,
+    和delphij 同样的感慨…………
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;有诗曰:&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;pre&gt;
+文本文件好 
+工具遍地跑
+程序两三行
+全部改好了
+&lt;&#x2F;pre&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;blog.cathayan.org&#x2F;item&#x2F;920&quot;&gt;文本好了歌&lt;&#x2F;a&gt; - Blog on 27th Floor
+    cathayan 的感慨
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;文可文，非常文。本可文，非常本。文本,数据之始,字符,万思之母...&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;AllAboutText&quot;&gt;结构化文本&lt;&#x2F;a&gt;才是王道！
+    呜乎矣哉!是也乎是也乎!!
+    为了我们的写作快感，抵制一切富格式化编辑器!
+    有结构化文本想怎么漂亮都成的!不用在界面中辛苦的使用mouse 永远的点击…………
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;可恨&#x2F;可叹:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    M$的市场策略，成功的将
+    &lt;code&gt;正式文档===word文档&lt;&#x2F;code&gt;
+    的概念填入了人们的头脑中，特别是在中国！
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;觉醒:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    从我作起！&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;nodoc4cn.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt; 至少从OOo 开始！
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;p&gt;
+&lt;a href=&quot;http:&#x2F;&#x2F;www.cyut.edu.tw&#x2F;~ckhung&#x2F;i&#x2F;nd&#x2F;fydoc.png&quot;&gt;抵制.doc运动&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;oss&#x2F;not-doc-2006-05-31-12-00.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">NOT WORD!</title>
+<category term="/mind" />
+<id>/pyblosxom/2006/05/31/not-doc-2006-05-31-12-00</id>
+<updated>2006-05-31T04:00:00Z</updated>
+<published>2006-05-31T04:00:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/mind/not-doc-2006-05-31-12-00.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopSlpIVklJQ&#x27; id=&#x27;toptopSlpIVklJQ&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;NOT WORD!&lt;&#x2F;h1&gt;
+&lt;h2&gt;--不仅仅关乎版权&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;dl&gt;
+&lt;dt&gt;&lt;a href=&quot;http:&#x2F;&#x2F;blog.delphij.net&#x2F;archives&#x2F;001487.html&quot;&gt;几行字也发个doc??&lt;&#x2F;a&gt;:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    经常在邮件中看到朋友们将些小故事塞到 word 中分享,
+    和delphij 同样的感慨…………
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;有诗曰:&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;pre&gt;
+文本文件好 
+工具遍地跑
+程序两三行
+全部改好了
+&lt;&#x2F;pre&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;blog.cathayan.org&#x2F;item&#x2F;920&quot;&gt;文本好了歌&lt;&#x2F;a&gt; - Blog on 27th Floor
+    cathayan 的感慨
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;文可文，非常文。本可文，非常本。文本,数据之始,字符,万思之母...&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;AllAboutText&quot;&gt;结构化文本&lt;&#x2F;a&gt;才是王道！
+    呜乎矣哉!是也乎是也乎!!
+    为了我们的写作快感，抵制一切富格式化编辑器!
+    有结构化文本想怎么漂亮都成的!不用在界面中辛苦的使用mouse 永远的点击…………
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;可恨&#x2F;可叹:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    M$的市场策略，成功的将
+    &lt;code&gt;正式文档===word文档&lt;&#x2F;code&gt;
+    的概念填入了人们的头脑中，特别是在中国！
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;觉醒:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    从我作起！&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;nodoc4cn.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt; 至少从OOo 开始！
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;p&gt;
+&lt;a href=&quot;http:&#x2F;&#x2F;www.cyut.edu.tw&#x2F;~ckhung&#x2F;i&#x2F;nd&#x2F;fydoc.png&quot;&gt;抵制.doc运动&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;ul&gt;
+&lt;li&gt;t2t渲染:: 2010-10-09 02:21:39
+&lt;&#x2F;li&gt;
+&lt;li&gt;动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;technorati-over.gif&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;Zen&quot;&gt;Zen&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;mind&#x2F;not-doc-2006-05-31-12-00.t2t --&gt;
+</content>
+</entry>
+</feed>

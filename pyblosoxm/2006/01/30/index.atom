@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/2006/01/30/index.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/2006/01/30/index.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/2006/01/30/index.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2006-01-30T06:00:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">[snap]豆瓣出错</title>
+<category term="/utility/py4web/Quixote" />
+<id>/pyblosxom/2006/01/30/doubanerror-2006-01-30-14-00</id>
+<updated>2006-01-30T06:00:00Z</updated>
+<published>2006-01-30T06:00:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/utility/py4web/Quixote/doubanerror-2006-01-30-14-00.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopTE5aVzRZT&#x27; id=&#x27;toptopTE5aVzRZT&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;[snap]豆瓣出错&lt;&#x2F;h1&gt;
+&lt;h2&gt;Python Traceback&lt;&#x2F;h2&gt;
+&lt;h3&gt;t2t渲染:: 2010-10-09 14:21:37&lt;&#x2F;h3&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0FWQ&quot;&gt;TODO&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;dl&gt;
+&lt;dt&gt;查询报怨:&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;pre&gt;
+Traceback (most recent call last):
+  File &quot;&#x2F;usr&#x2F;lib&#x2F;python2.4&#x2F;site-packages&#x2F;quixote&#x2F;publish.py&quot;, line 522, in process_request
+    output = self.try_publish(request, env.get(&#x27;PATH_INFO&#x27;, &#x27;&#x27;))
+  File &quot;&#x2F;usr&#x2F;lib&#x2F;python2.4&#x2F;site-packages&#x2F;quixote&#x2F;publish.py&quot;, line 457, in try_publish
+    output = object(request)
+  File &quot;&#x2F;var&#x2F;www&#x2F;douban&#x2F;luz&#x2F;__init__.py&quot;, line 69, in subject_search
+    return subject_search_ui(request)
+  File &quot;&#x2F;var&#x2F;www&#x2F;douban&#x2F;luz&#x2F;subject_search_ui.ptl&quot;, line 29, in subject_search_ui
+    main_layout(request, local_content, right_content,right_width=250)
+  File &quot;&#x2F;var&#x2F;www&#x2F;douban&#x2F;luz&#x2F;site_ui.ptl&quot;, line 65, in main_layout
+    &amp;lt;table class=&quot;mt&quot;&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td valign=&quot;top&quot; %s&amp;gt;
+  File &quot;&#x2F;var&#x2F;www&#x2F;douban&#x2F;luz&#x2F;subject_search_ui.ptl&quot;, line 114, in local_content
+    ns, ss = subject_search(text,_items_per_line,start,cat_id=cat_id)
+  File &quot;&#x2F;Users&#x2F;bo&#x2F;Sites&#x2F;luzong&#x2F;search.py&quot;, line 409, in subject_search
+  File &quot;&#x2F;Users&#x2F;bo&#x2F;Sites&#x2F;luzong&#x2F;search.py&quot;, line 321, in _subject_search
+  File &quot;&#x2F;var&#x2F;www&#x2F;douban&#x2F;luzong&#x2F;sqlstore.py&quot;, line 338, in subject_search
+    self.farm.execute(&quot;select id from subject_index where cat_id=%s and match (searchable) against (%s in boolean mode) order by collection_count desc&quot;,(cat_id, make_search_string(text)))
+  File &quot;&#x2F;usr&#x2F;lib&#x2F;python2.4&#x2F;site-packages&#x2F;MySQLdb&#x2F;cursors.py&quot;, line 137, in execute
+    self.errorhandler(self, exc, value)
+  File &quot;&#x2F;usr&#x2F;lib&#x2F;python2.4&#x2F;site-packages&#x2F;MySQLdb&#x2F;connections.py&quot;, line 33, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, &#x27;MySQL server has gone away&#x27;)
+
+Form:
+cat             1001
+search_text     村上纪香
+
+Cookies:
+__utma          164037162.1846512001.1132065229.1138539594.1138604874.113
+__utmb          164037162
+__utmc          164037162
+__utmz          164037162.1138361940.110.3.utmccn=(referral)|utmcsr=koudai8.com|utmcct=&#x2F;willow&#x2F;blog&#x2F;|utmcmd=referral
+dbcl            1000030:14e975e18c9cf87a
+luz_login       1000030:79376a8b2b63d6fa
+
+Environment:
+CONTENT_LENGTH  0
+DOCUMENT_ROOT   &#x2F;var&#x2F;www&#x2F;douban&#x2F;
+GATEWAY_INTERFACE CGI&#x2F;1.1
+HTTP_ACCEPT     text&#x2F;xml,application&#x2F;xml,application&#x2F;xhtml+xml,text&#x2F;html;q=0.9,text&#x2F;plain;q=0.8,image&#x2F;png,*&#x2F;*;q=0.5
+HTTP_ACCEPT_CHARSET gb2312,utf-8;q=0.7,*;q=0.7
+HTTP_ACCEPT_ENCODING gzip,deflate
+HTTP_ACCEPT_LANGUAGE zh-cn,zh;q=0.5
+HTTP_COOKIE     __utmz=164037162.1138361940.110.3.utmccn=(referral)|utmcsr=koudai8.com|utmcct=&#x2F;willow&#x2F;blog&#x2F;|utmcmd=referral; __utma=164037162.1846512001.1132065229.1138539594.1138604874.113; luz_login=&quot;1000030:79376a8b2b63d6fa&quot;; dbcl=&quot;1000030:14e975e18c9cf87a&quot;; __utmb=164037162; __utmc=164037162
+HTTP_HOST       www.douban.com
+HTTP_REFERER    http:&#x2F;&#x2F;www.douban.com&#x2F;subject_search?start=15&amp;amp;search_text=%E6%9D%91%E4%B8%8A&amp;amp;cat=1001
+HTTP_USER_AGENT Mozilla&#x2F;5.0 (Windows; U; Windows NT 5.2; zh-CN; rv:1.8) Gecko&#x2F;20051111 Firefox&#x2F;1.5
+PATH_INFO       &#x2F;subject_search
+QUERY_STRING    search_text=%E6%9D%91%E4%B8%8A%E7%BA%AA%E9%A6%99&amp;amp;cat=1001
+REDIRECT_STATUS 200
+REMOTE_ADDR     61.135.152.194
+REMOTE_PORT     3944
+REQUEST_METHOD  GET
+REQUEST_URI     &#x2F;subject_search?search_text=%E6%9D%91%E4%B8%8A%E7%BA%AA%E9%A6%99&amp;amp;cat=1001
+SCGI            1
+SCRIPT_FILENAME &#x2F;var&#x2F;www&#x2F;douban&#x2F;subject_search
+SCRIPT_NAME     
+SERVER_ADDR     61.129.113.231
+SERVER_NAME     www.douban.com
+SERVER_PORT     80
+SERVER_PROTOCOL HTTP&#x2F;1.1
+SERVER_SOFTWARE lighttpd&#x2F;1.4.8
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc1R0VYQ0FWQ&quot; name=&quot;toc1R0VYQ0FWQ&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTE5aVzRZT&#x27;&gt; 1. TODO &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+呜乎哀哉！&lt;a href=&quot;http:&#x2F;&#x2F;www.douban.com&#x2F;forum&#x2F;2&#x2F;102016&quot;&gt;赶紧报告&lt;&#x2F;a&gt;！
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+不过看豆瓣的服务架构是挻前卫的哪…………Lighttpd....
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;technorati-over.gif&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;OpenSource&quot;&gt;OpenSource&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;error&quot;&gt;error&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;Quixote&quot;&gt;Quixote&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;utility&#x2F;py4web&#x2F;Quixote&#x2F;doubanerror-2006-01-30-14-00.t2t --&gt;
+</content>
+</entry>
+</feed>

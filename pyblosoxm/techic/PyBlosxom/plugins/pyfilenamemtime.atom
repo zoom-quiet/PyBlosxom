@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/techic/PyBlosxom/plugins/pyfilenamemtime.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/techic/PyBlosxom/plugins/pyfilenamemtime.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/techic/PyBlosxom/plugins/pyfilenamemtime.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2011-08-31T15:22:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">pyfilenamemtime.py</title>
+<category term="" />
+<id>/pyblosxom/2011/08/31/pyfilenamemtime</id>
+<updated>2011-08-31T15:22:00Z</updated>
+<published>2011-08-31T15:22:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/PyBlosxom/plugins/pyfilenamemtime.html" />
+<content type="html">&lt;pre class=&quot;brush: python&quot;&gt;# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
+&quot;&quot;&quot;
+If a filename contains a timestamp in the form of YYYY-MM-DD-hh-mm,
+change the mtime to be the timestamp instead of the one kept by the
+filesystem.  For example, a valid filename would be
+foo-2002-04-01-00-00.txt for April fools day on the year 2002.
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify,
+merge, publish, distribute, sublicense, and&#x2F;or sell copies of the
+Software, and to permit persons to whom the Software is furnished
+to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Copyright 2004, 2005 Tim Roberts
+&quot;&quot;&quot;
+## Leo: tab_width=-4 page_width=80
+# vim: tabstop=4 shiftwidth=4
+import os, re, time
+
+__author__ = &#x27;Tim Roberts http:&#x2F;&#x2F;www.probo.com&#x2F;timr&#x2F;blog&#x2F;&#x27;
+__version__ = &#x27;$Id: pyfilenamemtime.py,v 2872b22e2ace 2011&#x2F;10&#x2F;27 07:08:25 zoomquiet+hg $&#x27;
+
+DAYMATCH = re.compile(&#x27;([0-9]{4})-([0-1][0-9])-([0-3][0-9])-([0-2][0-9])-([0-5][0-9]).[\w]+$&#x27;)
+
+def cb_filestat(args):
+    filename = args[&quot;filename&quot;]
+    stattuple = args[&quot;mtime&quot;]
+
+    mtime = 0
+    mtch = DAYMATCH.search(os.path.basename(filename))
+    if mtch:
+        try:
+            year = int(mtch.groups()[0])
+            mo = int(mtch.groups()[1])
+            day = int(mtch.groups()[2])
+            hr = int(mtch.groups()[3])
+            minute = int(mtch.groups()[4]) 
+            mtime = time.mktime((year,mo,day,hr,minute,0,0,0,-1))
+        except:
+            # TODO: Some sort of debugging code here?
+            pass
+
+    if mtime: 
+        args[&quot;mtime&quot;] = tuple(list(stattuple[:8]) + [mtime] + list(stattuple[9:]))
+
+    return args
+
+
+&lt;&#x2F;pre&gt;</content>
+</entry>
+</feed>

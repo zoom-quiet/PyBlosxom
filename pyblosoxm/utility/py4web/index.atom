@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/utility/py4web/index.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/utility/py4web/index.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/utility/py4web/index.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2010-07-30T07:00:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">MoinMoin插件hacking</title>
+<category term="/MoinMoin" />
+<id>/pyblosxom/2010/07/30/moin-graphviz-hack-2010-07-30-15-00</id>
+<updated>2010-07-30T07:00:00Z</updated>
+<published>2010-07-30T07:00:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/utility/py4web/MoinMoin/moin-graphviz-hack-2010-07-30-15-00.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopSlZYV1MzU&#x27; id=&#x27;toptopSlZYV1MzU&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;MoinMoin插件hacking&lt;&#x2F;h1&gt;
+&lt;h2&gt;~Graphviz 图谱可点击!&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0IyT&quot;&gt;需求&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc2R0VYRENMU&quot;&gt;1.1. Hacking&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc3R0VYREVMU&quot;&gt;1.2. jQuery&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc4R0VYREdMU&quot;&gt;1.3. 编码问题&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc5R0lYQ0JaT&quot;&gt;小结&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc6R0lYRENMU&quot;&gt;2.1. 时间清单&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0IyT&quot; name=&quot;toc1R0VYQ0IyT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopSlZYV1MzU&#x27;&gt; 1. 需求 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+&lt;a href=&quot;http:&#x2F;&#x2F;moinmo.in&#x2F;GraphVizForMoin&quot;&gt;GraphVizForMoin&lt;&#x2F;a&gt; 插件部署到MoinMoin 中之后,很爽直!
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+参考: &lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;GraphVizForMoin&quot;&gt;在维基中使用 Graphviz&lt;&#x2F;a&gt;~ 啄木鸟中的效果
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+可以说,解决了在维基中无法快速表达思维导图的问题:
+&lt;&#x2F;p&gt;
+ &lt;ul&gt;
+ &lt;li&gt;以往都是使用 FreeMind 绘制后截屏附件上来
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;或是使用插件 &lt;a href=&quot;http:&#x2F;&#x2F;moinmo.in&#x2F;ParserMarket&#x2F;FreeMind&quot;&gt;ParserMarket&#x2F;FreeMind - MoinMoin&lt;&#x2F;a&gt; 将文件使用Flash 控件就地发布出来~中文一直是个问题
+ &lt;p&gt;&lt;&#x2F;p&gt;
+但是,使用 Graphviz 的dot 图形脚本在维基中书写图谱一直以来残念的问题是无法输出可点击的有热区的导图!
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+
+&lt;ul&gt;
+&lt;li&gt;有点希望的 &lt;a href=&quot;http:&#x2F;&#x2F;moinmo.in&#x2F;ParserMarket&#x2F;ImageMap&#x2F;ReleaseNotes&quot;&gt;ParserMarket&#x2F;ImageMap&#x2F;ReleaseNotes - MoinMoin&lt;&#x2F;a&gt; 插件使用起来和 dot 命令输出的标准图片热区数据又实在相差太远...
+&lt;p&gt;&lt;&#x2F;p&gt;
+怎么整?! 自个儿来!
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc2R0VYRENMU&quot; name=&quot;toc2R0VYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopSlZYV1MzU&#x27;&gt; 1.1. Hacking &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;思路:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;hacked MoinGraphViz 令其使用&lt;code&gt;-Tcmapx -o **.mp&lt;&#x2F;code&gt;命令,输出热区定义
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;hacked MoinMoin 相关脚本令输出到HTML 的图片认识可能的热区定义
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;fxied:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;code&gt;path&#x2F;2&#x2F;moin运行实例&#x2F;data&#x2F;plugin&#x2F;parser&#x2F;MoinGraphViz&#x2F;main.py&lt;&#x2F;code&gt; 是插件的主体
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;很直白,快速就定位了具体代码进行了修订
+    &lt;p&gt;&lt;&#x2F;p&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;diff:&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  diff&quot;&gt;
+
+Index: tasks&#x2F;wiki.KUP&#x2F;MoinMoin&#x2F;parser&#x2F;MoinGraphViz&#x2F;main.py
+===================================================================
+--- tasks&#x2F;wiki.KUP&#x2F;MoinMoin&#x2F;parser&#x2F;MoinGraphViz&#x2F;main.py (revision 16946)
++++ tasks&#x2F;wiki.KUP&#x2F;MoinMoin&#x2F;parser&#x2F;MoinGraphViz&#x2F;main.py (revision 16975)
+@@ -56,4 +56,5 @@
+         p = request.formatter.page
+         self.renderer = Renderer(tool, targetdir=p.getPagePath(&#x27;attachments&#x27;), encoding=config.charset)
++        self.attapath = p.getPagePath(&#x27;attachments&#x27;)
+
+     def format(self, formatter):
+@@ -61,5 +62,10 @@
+         ##w(&#x27;&amp;lt;div style=&quot;border:3px ridge gray; padding:5px; width:95%; overflow:auto&quot;&amp;gt;&#x27;)
+         s = self.renderer.render(self.raw)
++        imgname = os.path.basename(s)
++        #s = wiki2html(self.request, &#x27;{{attachment:%s}}&#x27; % os.path.basename(s))
+         s = wiki2html(self.request, &#x27;{{attachment:%s}}&#x27; % os.path.basename(s))
++        #   100728 Zoom.Quiet fixed for include URL hotarea map define
++        pfImgMap = &quot;%s&#x2F;%s.map&quot;%(self.attapath,imgname)
++        s += fread(pfImgMap)
+         print &#x27;[TRACE] attachment URL:&#x27;, s
+         w(s)
+@@ -182,5 +193,7 @@
+
+ def renderGraphImage(tool, format, imagefilename, dotfilename):
+-    cmd = &#x27;%(tool)s -T%(format)s -o&quot;%(imagefilename)s&quot; &quot;%(dotfilename)s&quot;&#x27; % locals()
++    #100728 Zoom.Quiet fixed for export URL hotarea map export
++    cmd = &#x27;%(tool)s -T%(format)s -o&quot;%(imagefilename)s&quot; -Tcmapx -o &quot;%(imagefilename)s.map&quot; &quot;%(dotfilename)s&quot;&#x27; % locals()
++    #cmd = &#x27;%(tool)s -T%(format)s -o&quot;%(imagefilename)s&quot; &quot;%(dotfilename)s&quot;&#x27; % locals()
+     print &#x27;[TRACE] executing:&#x27;, cmd
+     os.system(cmd
+
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;html 输出:&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  html&quot;&gt;
+
+&amp;lt;img alt=&quot;graphviz-hostLegendG-a58ce04d28b92b59230a72964c27a9f8fc867de5.png&quot; 
+class=&quot;attachment&quot; 
+src=&quot;&#x2F;moin&#x2F;KupHostsMapping&#x2F;MapLegend?action=AttachFile&amp;amp;amp;do=get&amp;amp;amp;target=graphviz-hostLegendG-a58ce04d28b92b59230a72964c27a9f8fc867de5.png&quot; 
+title=&quot;graphviz-hostLegendG-a58ce04d28b92b59230a72964c27a9f8fc867de5.png&quot; &#x2F;&amp;gt; 
+&amp;lt;map id=&quot;hostLegendG&quot; name=&quot;hostLegendG&quot;&amp;gt;
+&amp;lt;area shape=&quot;rect&quot; href=&quot;http:&#x2F;&#x2F;wiki.s.kingsoft.net&#x2F;moin&#x2F;KupHosts&quot; title=&quot;普配主机&quot; alt=&quot;&quot; coords=&quot;101,36,173,63&quot;&#x2F;&amp;gt;
+&amp;lt;area shape=&quot;rect&quot; href=&quot;http:&#x2F;&#x2F;wiki.s.kingsoft.net&#x2F;moin&#x2F;KupHosts&quot; title=&quot;高配主机&quot; alt=&quot;&quot; coords=&quot;197,36,269,63&quot;&#x2F;&amp;gt;
+&amp;lt;&#x2F;map&amp;gt;
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;b&gt;注意&lt;&#x2F;b&gt;: 发现,插件是直接使用&lt;code&gt;{{attachment:导图图片名}}&lt;&#x2F;code&gt; 标准的图片附件形式来发布的!
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;ul&gt;
+&lt;li&gt;然而,HTML 中要想啓用热区图,至少要有专用属性的对应:
+&lt;pre&gt;
+&amp;lt;img usemap=&quot;#俺的ImgMap&quot; src=&quot;...&quot;&#x2F;&amp;gt;
+&amp;lt;map id=&quot;俺的ImgMap&quot; name=&quot;俺的ImgMap&quot;&amp;gt;
+&amp;lt;area shape=&quot;rect&quot; href=&quot;...&quot; title=&quot;普配主机&quot; alt=&quot;&quot; coords=&quot;101,36,173,63&quot;&#x2F;&amp;gt;
+...
+&amp;lt;&#x2F;map&amp;gt;
+&lt;&#x2F;pre&gt;
+ &lt;ul&gt;
+ &lt;li&gt;在dot 输出的map 数据中,id&#x2F;name 就是``digraph G { `` 第一行的那个G,可以任意命名,当然最好是E文
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;所以,就得找到方法来让 MoinMoin 对附件图片追加&lt;code&gt;usemap&lt;&#x2F;code&gt;属性
+&lt;p&gt;&lt;&#x2F;p&gt;
+找哈找,幸好有 &lt;a href=&quot;http:&#x2F;&#x2F;manpages.ubuntu.com&#x2F;manpages&#x2F;jaunty&#x2F;man1&#x2F;ack-grep.1p.html&quot;&gt;ack-grep&lt;&#x2F;a&gt; 快速从一堆脚本中定位到靠谱的代码段:
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;pre&gt;
+path&#x2F;2&#x2F;python2.5&#x2F;site-packages&#x2F;MoinMoin&#x2F;formatter&#x2F;text_html.py
+...
+    def attachment_image(self, url, **kw):
+        ...
+        if exists:
+            ...
+            if not &#x27;alt&#x27; in kw:
+                kw[&#x27;alt&#x27;] = kw[&#x27;title&#x27;]
+            #   100729 Zoom.Quiet fixed for support imagemap for Graphviz
+            kw[&#x27;usemap&#x27;] = &quot;#%s&quot;%kw[&#x27;alt&#x27;]
+            return self.image(**kw)
+        ...
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;
+追加一行就好...
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc3R0VYREVMU&quot; name=&quot;toc3R0VYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopSlZYV1MzU&#x27;&gt; 1.2. jQuery &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+虽然目标完成了,但是心里总感觉不好:
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;MoinMoin 本身的脚本被hacking 了,就等于,以后升級,迁移时,都要维护这一hacking
+&lt;&#x2F;li&gt;
+&lt;li&gt;很不 Pythonic 哪...
+&lt;p&gt;&lt;&#x2F;p&gt;
+怎么样脱离 MoinMoin 系统本身来给附件图片追加&lt;code&gt;usemap&lt;&#x2F;code&gt; 属性?
+&lt;&#x2F;li&gt;
+&lt;li&gt;答案,自然是的 Ajax 哪
+&lt;&#x2F;li&gt;
+&lt;li&gt;jQuery 就是为这类快速夹塞儿式行为诞生的哪...
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;部署jQuery:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;这是样式的事儿,所以:
+    &lt;p&gt;&lt;&#x2F;p&gt;
+&lt;pre&gt;
+path&#x2F;2&#x2F;moin实例&#x2F;
++-- data
+    +-- plugin
+        +-- theme
+            +-- 你的样式定义脚本
+            +-- woodpecker.py ~ 俺用的
+        def footer(self, d, **keywords):
+            ... # 追加
+            u&#x27;&amp;lt;!-- Finally, to loading jQuery Ajax Lib. --&amp;gt;&#x27;,
+            u&#x27;&amp;lt;script src=&quot;&#x2F;wiki&#x2F;common&#x2F;js&#x2F;jquery-1.4.2.min.js&quot; type=&quot;text&#x2F;javascript&quot;&amp;gt;&amp;lt;&#x2F;script&amp;gt;&#x27;,
+            u&#x27;&amp;lt;script src=&quot;&#x2F;wiki&#x2F;common&#x2F;js&#x2F;jquery-graphviz-map.js&quot; type=&quot;text&#x2F;javascript&quot;&amp;gt;&amp;lt;&#x2F;script&amp;gt;&#x27;,
+
++-- htdoc
+    +-- common
+        +-- js
+            +-- jquery-1.4.2.min.js ~ 官方运营用压缩版本
+            +-- jquery-graphviz-map.js  ~ 动态行为定义用
+&lt;&#x2F;pre&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;使用jQuery:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;看看文档,就两行搞定..
+&lt;pre class=&quot;brush:  js&quot;&gt;
+
+$(document).ready(function() {
+	$(&quot;img[class=&#x27;attachment&#x27;]&quot;).each(function(){
+	    $(this).attr(&quot;usemap&quot;,&quot;#&quot;+$(this).attr(&quot;alt&quot;));
+    });
+});
+&lt;&#x2F;pre&gt;
+     &lt;ul&gt;
+     &lt;li&gt;&lt;b&gt;特别的&lt;&#x2F;b&gt;:得考虑一页多个导图时的情况,所以是要进行 &lt;code&gt;each()&lt;&#x2F;code&gt; 循环处置
+     &lt;&#x2F;li&gt;
+     &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;当然的,需要 &lt;code&gt;MoinGraphViz&#x2F;main.py&lt;&#x2F;code&gt;插件的配合,以便从附图的 alt 中获得正确的图片热区ID
+    &lt;p&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  diff&quot;&gt;
+
+Index: tasks&#x2F;wiki.KUP&#x2F;MoinMoin&#x2F;parser&#x2F;MoinGraphViz&#x2F;main.py
+===================================================================
+--- tasks&#x2F;wiki.KUP&#x2F;MoinMoin&#x2F;parser&#x2F;MoinGraphViz&#x2F;main.py (revision 17010)
++++ tasks&#x2F;wiki.KUP&#x2F;MoinMoin&#x2F;parser&#x2F;MoinGraphViz&#x2F;main.py (revision 17013)
+@@ -65,5 +65,8 @@
+         fImgName = os.path.basename(s)
+         pfImgMap = &quot;%s&#x2F;%s.map&quot;%(self.attapath,fImgName)
+-        s = wiki2html(self.request, &#x27;{{attachment:%s}}&#x27; % os.path.basename(s))
++        #s = wiki2html(self.request, &#x27;{{attachment:%s}}&#x27; % os.path.basename(s))
++        s = wiki2html(self.request, &#x27;{{attachment:%s|%s}}&#x27; % (os.path.basename(s)
++                        ,fImgName.split(&quot;-&quot;)[1])
++                    )
+         #   100728 Zoom.Quiet appended &amp;lt;map&amp;gt; data
+         if os.path.exists(pfImgMap):
+&lt;&#x2F;pre&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc4R0VYREdMU&quot; name=&quot;toc4R0VYREdMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopSlZYV1MzU&#x27;&gt; 1.3. 编码问题 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+一切表现良好,无意间发现凡是有URL包含的 dot 图谱,被其它页面包含时就出错!
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;2010&#x2F;moin-graphviz-erro-2010-07-30-121804_780x382_scrot.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+&lt;&#x2F;p&gt;
+&lt;dl&gt;
+&lt;dt&gt;囧rz...:&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;ul&gt;
+&lt;li&gt;尝试各种编码,未果
+&lt;&#x2F;li&gt;
+&lt;li&gt;嘗試各种&amp;lt;map&amp;gt;的包装形式:
+    &lt;ol&gt;
+    &lt;li&gt;使用  &amp;lt;pre&amp;gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;使用  &amp;lt;textarea&amp;gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;都在  Include 时,可怜的出错了...
+&lt;&#x2F;li&gt;
+&lt;li&gt;实在是因为 MoinMoin 不想处理正常的 HTML 标签属性的其它编码内容
+&lt;&#x2F;li&gt;
+&lt;li&gt;好吧,俺就不给出无用的中文内容!
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;path&#x2F;2&#x2F;moin运行实例&#x2F;data&#x2F;plugin&#x2F;parser&#x2F;MoinGraphViz&#x2F;main.py&lt;&#x2F;code&gt; 追加一小段正则表达式替换
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;pre class=&quot;brush:  py&quot;&gt;
+
+    def format(self, formatter):
+        w = self.request.write
+        #...
+        #   100728 Zoom.Quiet appended &amp;lt;map&amp;gt; data
+        if os.path.exists(pfImgMap):
+            import re
+            p=re.compile( &#x27;title=\&quot;.+?\&quot;&#x27;)
+            s += p.sub(&quot;title=\&quot;\&quot;&quot;,fread(pfImgMap))
+            #s += fread(pfImgMap)
+
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;dl&gt;
+&lt;dt&gt;HTML 输出:&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  html&quot;&gt;
+
+&amp;lt;img alt=&quot;graphviz-hostLegendG-a58ce04d28b92b59230a72964c27a9f8fc867de5.png&quot; 
+class=&quot;attachment&quot; 
+src=&quot;&#x2F;moin&#x2F;KupHostsMapping&#x2F;MapLegend?action=AttachFile&amp;amp;amp;do=get&amp;amp;amp;target=graphviz-hostLegendG-a58ce04d28b92b59230a72964c27a9f8fc867de5.png&quot; 
+title=&quot;graphviz-hostLegendG-a58ce04d28b92b59230a72964c27a9f8fc867de5.png&quot; &#x2F;&amp;gt; 
+&amp;lt;map id=&quot;hostLegendG&quot; name=&quot;hostLegendG&quot;&amp;gt;
+&amp;lt;area shape=&quot;rect&quot; href=&quot;http:&#x2F;&#x2F;wiki.s.kingsoft.net&#x2F;moin&#x2F;KupHosts&quot; title=&quot;&quot; alt=&quot;&quot; coords=&quot;101,36,173,63&quot;&#x2F;&amp;gt;
+&amp;lt;area shape=&quot;rect&quot; href=&quot;http:&#x2F;&#x2F;wiki.s.kingsoft.net&#x2F;moin&#x2F;KupHosts&quot; title=&quot;&quot; alt=&quot;&quot; coords=&quot;197,36,269,63&quot;&#x2F;&amp;gt;
+&amp;lt;&#x2F;map&amp;gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;p&gt;
+一切安定了...
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc5R0lYQ0JaT&quot; name=&quot;toc5R0lYQ0JaT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopSlZYV1MzU&#x27;&gt; 2. 小结 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;思路不乱的情况下,主要问题就是定位代码段!以及测试!
+    &lt;ul&gt;
+    &lt;li&gt;面对一运行中的MoinMoin 进行测试开发时
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;使用sshfs 可以快速挂接远程服务器的任意目录,非常方便!
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;使用沙箱页面进行修订插件的测试,可以避免正常文章页面的中间调试失常..
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;在调试中,直接输出预想数据到 HTML 里看,比看系统日志,使用print 要方便
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;MoinMoin 有完备的缓冲机制,要及时看到修订效果,得重启HTTPD     
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;jQuery 真的很好用,也好学!
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;下载:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    diff: &lt;a href=&quot;&#x2F;pybnodes&#x2F;utility&#x2F;py4web&#x2F;MoinMoin&#x2F;MoinMoin_parser_MoinGraphViz_main.py-from-r16946-to-r17013.diff&quot;&gt;MoinMoin_parser_MoinGraphViz_main.py-from-r16946-to-r17013.diff&lt;&#x2F;a&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc6R0lYRENMU&quot; name=&quot;toc6R0lYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopSlZYV1MzU&#x27;&gt; 2.1. 时间清单 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;00:05 定目标
+&lt;&#x2F;li&gt;
+&lt;li&gt;00:15 准备环境
+&lt;&#x2F;li&gt;
+&lt;li&gt;01:30 探查运行环境,明确修订目标脚本
+&lt;&#x2F;li&gt;
+&lt;li&gt;01:45 插件修订完成
+&lt;&#x2F;li&gt;
+&lt;li&gt;00:15 图片应用map jQuery 嘗試
+&lt;&#x2F;li&gt;
+&lt;li&gt;00:35 图片插入系统修订完成
+&lt;&#x2F;li&gt;
+&lt;li&gt;01:00 正则表达式+jQuery 解决 Incldue() 时的编码问题
+&lt;&#x2F;li&gt;
+&lt;li&gt;00:45 整理代码,发布到Blog
+&lt;&#x2F;li&gt;
+&lt;li&gt;00:35 整理代码,反馈到MoinMoin.in
+&lt;&#x2F;li&gt;
+&lt;li&gt;00:40 8次中断,回到工作场景的心理浪费
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+
+&lt;p&gt;
+&lt;b&gt;总计:&lt;&#x2F;b&gt; ~ 6小时
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;ul&gt;
+&lt;li&gt;t2t渲染:: 2010-10-09 02:21:37
+&lt;&#x2F;li&gt;
+&lt;li&gt;动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;utility&#x2F;py4web&#x2F;MoinMoin&#x2F;moin-graphviz-hack-2010-07-30-15-00.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">MoinMoin问题</title>
+<category term="/MoinMoin" />
+<id>/pyblosxom/2006/01/31/moinerror-2006-01-31-16-00</id>
+<updated>2006-01-31T08:00:00Z</updated>
+<published>2006-01-31T08:00:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/utility/py4web/MoinMoin/moinerror-2006-01-31-16-00.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopSlZYV1MzU&#x27; id=&#x27;toptopSlZYV1MzU&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;MoinMoin问题&lt;&#x2F;h1&gt;
+&lt;h2&gt;还是中文惹的祸！&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0FaV&quot;&gt;fixed&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;snap060130-moinerror.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc1R0VYQ0FaV&quot; name=&quot;toc1R0VYQ0FaV&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopSlZYV1MzU&#x27;&gt; 1. fixed &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+接到举报，看一下子 trackback 是系统 进行字串解析时出错
+&lt;&#x2F;p&gt;
+&lt;pre&gt;
+## site-packages\MoinMoin\macro\RecentChanges.py line 29 左右
+    if line.action[:3] == &#x27;ATT&#x27;:
+        import urllib
+        try:
+            filename = urllib.unquote(line.extra)
+        except:
+            filename = &quot;filename can not display...maybe UnicodeDecodeError&quot;
+        if line.action == &#x27;ATTNEW&#x27;:
+            try:
+                comment = _(&quot;Upload of attachment &#x27;%(filename)s&#x27;.&quot;) % {&#x27;filename&#x27;: filename}
+            except:
+                comment = _(&quot;Upload of attachment &#x27;%(filename)s&#x27;.&quot;) % &quot;filename can not display...&quot;
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;
+简单过滤就成，但是问题还在…………可怜的中文…………
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;ul&gt;
+&lt;li&gt;t2t渲染:: 2010-10-09 02:21:37
+&lt;&#x2F;li&gt;
+&lt;li&gt;动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;utility&#x2F;py4web&#x2F;MoinMoin&#x2F;moinerror-2006-01-31-16-00.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">[snap]豆瓣出错</title>
+<category term="/Quixote" />
+<id>/pyblosxom/2006/01/30/doubanerror-2006-01-30-14-00</id>
+<updated>2006-01-30T06:00:00Z</updated>
+<published>2006-01-30T06:00:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/utility/py4web/Quixote/doubanerror-2006-01-30-14-00.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopTE5aVzRZT&#x27; id=&#x27;toptopTE5aVzRZT&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;[snap]豆瓣出错&lt;&#x2F;h1&gt;
+&lt;h2&gt;Python Traceback&lt;&#x2F;h2&gt;
+&lt;h3&gt;t2t渲染:: 2010-10-09 14:21:37&lt;&#x2F;h3&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0FWQ&quot;&gt;TODO&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;dl&gt;
+&lt;dt&gt;查询报怨:&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;pre&gt;
+Traceback (most recent call last):
+  File &quot;&#x2F;usr&#x2F;lib&#x2F;python2.4&#x2F;site-packages&#x2F;quixote&#x2F;publish.py&quot;, line 522, in process_request
+    output = self.try_publish(request, env.get(&#x27;PATH_INFO&#x27;, &#x27;&#x27;))
+  File &quot;&#x2F;usr&#x2F;lib&#x2F;python2.4&#x2F;site-packages&#x2F;quixote&#x2F;publish.py&quot;, line 457, in try_publish
+    output = object(request)
+  File &quot;&#x2F;var&#x2F;www&#x2F;douban&#x2F;luz&#x2F;__init__.py&quot;, line 69, in subject_search
+    return subject_search_ui(request)
+  File &quot;&#x2F;var&#x2F;www&#x2F;douban&#x2F;luz&#x2F;subject_search_ui.ptl&quot;, line 29, in subject_search_ui
+    main_layout(request, local_content, right_content,right_width=250)
+  File &quot;&#x2F;var&#x2F;www&#x2F;douban&#x2F;luz&#x2F;site_ui.ptl&quot;, line 65, in main_layout
+    &amp;lt;table class=&quot;mt&quot;&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td valign=&quot;top&quot; %s&amp;gt;
+  File &quot;&#x2F;var&#x2F;www&#x2F;douban&#x2F;luz&#x2F;subject_search_ui.ptl&quot;, line 114, in local_content
+    ns, ss = subject_search(text,_items_per_line,start,cat_id=cat_id)
+  File &quot;&#x2F;Users&#x2F;bo&#x2F;Sites&#x2F;luzong&#x2F;search.py&quot;, line 409, in subject_search
+  File &quot;&#x2F;Users&#x2F;bo&#x2F;Sites&#x2F;luzong&#x2F;search.py&quot;, line 321, in _subject_search
+  File &quot;&#x2F;var&#x2F;www&#x2F;douban&#x2F;luzong&#x2F;sqlstore.py&quot;, line 338, in subject_search
+    self.farm.execute(&quot;select id from subject_index where cat_id=%s and match (searchable) against (%s in boolean mode) order by collection_count desc&quot;,(cat_id, make_search_string(text)))
+  File &quot;&#x2F;usr&#x2F;lib&#x2F;python2.4&#x2F;site-packages&#x2F;MySQLdb&#x2F;cursors.py&quot;, line 137, in execute
+    self.errorhandler(self, exc, value)
+  File &quot;&#x2F;usr&#x2F;lib&#x2F;python2.4&#x2F;site-packages&#x2F;MySQLdb&#x2F;connections.py&quot;, line 33, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, &#x27;MySQL server has gone away&#x27;)
+
+Form:
+cat             1001
+search_text     村上纪香
+
+Cookies:
+__utma          164037162.1846512001.1132065229.1138539594.1138604874.113
+__utmb          164037162
+__utmc          164037162
+__utmz          164037162.1138361940.110.3.utmccn=(referral)|utmcsr=koudai8.com|utmcct=&#x2F;willow&#x2F;blog&#x2F;|utmcmd=referral
+dbcl            1000030:14e975e18c9cf87a
+luz_login       1000030:79376a8b2b63d6fa
+
+Environment:
+CONTENT_LENGTH  0
+DOCUMENT_ROOT   &#x2F;var&#x2F;www&#x2F;douban&#x2F;
+GATEWAY_INTERFACE CGI&#x2F;1.1
+HTTP_ACCEPT     text&#x2F;xml,application&#x2F;xml,application&#x2F;xhtml+xml,text&#x2F;html;q=0.9,text&#x2F;plain;q=0.8,image&#x2F;png,*&#x2F;*;q=0.5
+HTTP_ACCEPT_CHARSET gb2312,utf-8;q=0.7,*;q=0.7
+HTTP_ACCEPT_ENCODING gzip,deflate
+HTTP_ACCEPT_LANGUAGE zh-cn,zh;q=0.5
+HTTP_COOKIE     __utmz=164037162.1138361940.110.3.utmccn=(referral)|utmcsr=koudai8.com|utmcct=&#x2F;willow&#x2F;blog&#x2F;|utmcmd=referral; __utma=164037162.1846512001.1132065229.1138539594.1138604874.113; luz_login=&quot;1000030:79376a8b2b63d6fa&quot;; dbcl=&quot;1000030:14e975e18c9cf87a&quot;; __utmb=164037162; __utmc=164037162
+HTTP_HOST       www.douban.com
+HTTP_REFERER    http:&#x2F;&#x2F;www.douban.com&#x2F;subject_search?start=15&amp;amp;search_text=%E6%9D%91%E4%B8%8A&amp;amp;cat=1001
+HTTP_USER_AGENT Mozilla&#x2F;5.0 (Windows; U; Windows NT 5.2; zh-CN; rv:1.8) Gecko&#x2F;20051111 Firefox&#x2F;1.5
+PATH_INFO       &#x2F;subject_search
+QUERY_STRING    search_text=%E6%9D%91%E4%B8%8A%E7%BA%AA%E9%A6%99&amp;amp;cat=1001
+REDIRECT_STATUS 200
+REMOTE_ADDR     61.135.152.194
+REMOTE_PORT     3944
+REQUEST_METHOD  GET
+REQUEST_URI     &#x2F;subject_search?search_text=%E6%9D%91%E4%B8%8A%E7%BA%AA%E9%A6%99&amp;amp;cat=1001
+SCGI            1
+SCRIPT_FILENAME &#x2F;var&#x2F;www&#x2F;douban&#x2F;subject_search
+SCRIPT_NAME     
+SERVER_ADDR     61.129.113.231
+SERVER_NAME     www.douban.com
+SERVER_PORT     80
+SERVER_PROTOCOL HTTP&#x2F;1.1
+SERVER_SOFTWARE lighttpd&#x2F;1.4.8
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc1R0VYQ0FWQ&quot; name=&quot;toc1R0VYQ0FWQ&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTE5aVzRZT&#x27;&gt; 1. TODO &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+呜乎哀哉！&lt;a href=&quot;http:&#x2F;&#x2F;www.douban.com&#x2F;forum&#x2F;2&#x2F;102016&quot;&gt;赶紧报告&lt;&#x2F;a&gt;！
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+不过看豆瓣的服务架构是挻前卫的哪…………Lighttpd....
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;technorati-over.gif&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;OpenSource&quot;&gt;OpenSource&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;error&quot;&gt;error&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;Quixote&quot;&gt;Quixote&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;utility&#x2F;py4web&#x2F;Quixote&#x2F;doubanerror-2006-01-30-14-00.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">《Django一步接一步》中文学习教程发表！</title>
+<category term="/Django" />
+<id>/pyblosxom/2006/01/27/django-stepbystep-2006-01-27-23-23</id>
+<updated>2006-01-27T15:23:00Z</updated>
+<published>2006-01-27T15:23:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/utility/py4web/Django/django-stepbystep-2006-01-27-23-23.html" />
+<content type="html">
+&lt;a href=&quot;http:&#x2F;&#x2F;www.djangoproject.com&#x2F;&quot;&gt;
+Djano
+&lt;&#x2F;a&gt;是&lt;a href=&quot;http:&#x2F;&#x2F;python.org&#x2F;&quot;&gt;
+Python
+&lt;&#x2F;a&gt; 世界中，类似&lt;a href=&quot;http:&#x2F;&#x2F;www.rubyonrails.org&#x2F;&quot;&gt;RoR&lt;&#x2F;a&gt; 
+的快速web 开发平台之一.它鼓励快速开发和干净的、ＭＶＣ设计。它包括一个模板系统，对象相关的映射和用于动态创建管理界面的框架。自从正式发布后在全世界受到追捧，发布的异常快速。
+
+&lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;DjanGo&quot;&gt;
+(啄木鸟社区的中文介绍)
+&lt;&#x2F;a&gt;
+&lt;br&#x2F;&gt;
+&lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;CPUG&quot;&gt;CPUG&lt;&#x2F;a&gt;
+活跃人物:
+&lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;limodou&quot;&gt;
+limodou
+&lt;&#x2F;a&gt; 刚刚在个人
+&lt;a href=&quot;http:&#x2F;&#x2F;blog.donews.com&#x2F;limodou&#x2F;archive&#x2F;2006&#x2F;01&#x2F;26&#x2F;709143.aspx&quot;&gt;
+Blog 
+&lt;&#x2F;a&gt;中 发布消息，正式发表了&lt;b&gt;
+&lt;a href=&quot;http:&#x2F;&#x2F;www.woodpecker.org.cn&#x2F;obp&#x2F;django&#x2F;django-stepbystep&#x2F;newtest&#x2F;doc&#x2F;&quot;&gt;
+《Django Step by Step》
+&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+-- 《Django一步接一步》中文学习教程！
+
+&lt;br&#x2F;&gt;
+教程整理自&lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;limodou&quot;&gt;
+limodou
+&lt;&#x2F;a&gt;的个人学习体验，以前&lt;a href=&quot;http:&#x2F;&#x2F;blog.donews.com&#x2F;limodou&#x2F;category&#x2F;65397.aspx&quot;&gt;是以连载的形式在blog中
+&lt;&#x2F;a&gt;发布的，此次，使用
+&lt;a href=&quot;http:&#x2F;&#x2F;www.czug.org&#x2F;plone&#x2F;howto&#x2F;howto-restructed-text&#x2F;&quot;&gt;
+&lt;i&gt;re&lt;&#x2F;i&gt;Structed
+&lt;&#x2F;a&gt;
+文本格式整理，组织成为正式教程，通过&lt;a href=&quot;http:&#x2F;&#x2F;www.woodpecker.org.cn&#x2F;&quot;&gt;
+啄木鸟社区
+&lt;&#x2F;a&gt;空间发布以利于中国Python 爱好者学习。
+
+
+
+
+
+
+
+
+
+
+
+</content>
+</entry>
+</feed>

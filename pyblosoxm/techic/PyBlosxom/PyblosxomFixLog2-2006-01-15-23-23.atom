@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/techic/PyBlosxom/PyblosxomFixLog2-2006-01-15-23-23.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/techic/PyBlosxom/PyblosxomFixLog2-2006-01-15-23-23.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/techic/PyBlosxom/PyblosxomFixLog2-2006-01-15-23-23.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2006-01-15T15:23:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">[hack2]允许评注</title>
+<category term="" />
+<id>/pyblosxom/2006/01/15/PyblosxomFixLog2-2006-01-15-23-23</id>
+<updated>2006-01-15T15:23:00Z</updated>
+<published>2006-01-15T15:23:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/PyBlosxom/PyblosxomFixLog2-2006-01-15-23-23.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopTE5VR0NZM&#x27; id=&#x27;toptopTE5VR0NZM&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;[hack2]允许评注&lt;&#x2F;h1&gt;
+&lt;h2&gt;comments.py的安装&lt;&#x2F;h2&gt;
+&lt;h3&gt;t2t渲染:2010-10-09 02:21:38&lt;&#x2F;h3&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;dl&gt;
+&lt;dt&gt;&lt;a href=&quot;http:&#x2F;&#x2F;pyblosxom.sourceforge.net&#x2F;1.3&#x2F;manual&#x2F;c857.html&quot;&gt;http:&#x2F;&#x2F;pyblosxom.sourceforge.net&#x2F;1.3&#x2F;manual&#x2F;c857.html&lt;&#x2F;a&gt;&lt;&#x2F;dt&gt;&lt;dd&gt;
+  怎么着？一个最普通的评注要这么复杂才能够成功？！
+  呜乎哀哉…………
+  &lt;ul&gt;
+  &lt;li&gt;最后发现还是老实的按照说明步骤一步接一步的来才不会有&quot;惊奇&quot;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;可以参考以前
+  &lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;PyBlosxomIniComments&quot;&gt;limodou的体验&lt;&#x2F;a&gt;
+  &lt;p&gt;&lt;&#x2F;p&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;速度&lt;&#x2F;dt&gt;&lt;dd&gt;
+    为什么 PyBlxosom 的 comment 时的响应速度如此慢？！
+    &lt;ul&gt;
+    &lt;li&gt;果然不是 XML 的事儿！
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;是 smtp 发送提醒邮件时失败而长期等候,只能 不使用提醒先睹  
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;p&gt;
+草看了一下子 &lt;a href=&quot;plugins&#x2F;latest_comments.phtm&quot;&gt;comments.py&lt;&#x2F;a&gt; 真是牛哪！
+&lt;&#x2F;p&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;code&gt;from xml.sax import make_parser, SAXException&lt;&#x2F;code&gt;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;使用 sax 事务性XML解析器进行的处理，
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;作者&lt;a href=&quot;http:&#x2F;&#x2F;www.sauria.com&#x2F;blog&quot;&gt;Ted Leung&lt;&#x2F;a&gt;是&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;pyb-TedLeung.jpg&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt; &lt;a href=&quot;http:&#x2F;&#x2F;www.amazon.com&#x2F;gp&#x2F;product&#x2F;0764543555&#x2F;103-4617059-9959043?n=283155&quot;&gt;《Professional XML Development with Apache Tools》&lt;&#x2F;a&gt;的作者！怪不得使用这么专业的处理手法
+ &lt;p&gt;&lt;&#x2F;p&gt;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;情急乱投医时有邮件往来:
+&lt;pre&gt;
+发件人: Ted Leung &amp;lt;twl@sauria.com&amp;gt;	邮送域: sauria.com
+收件人: Zoom Quiet &amp;lt;zoom.quiet@gmail.com&amp;gt;
+日期: 2006-1-24 下午2:54
+主题: Re: [bug]comments recoder double info. ?
+...
+I am no longer maintaining the comments plugin.  The appropriate
+place to get the answer to your question is pyblosxom-devel.   I get
+several hundred e-mails per day, and you are doubling your share of
+the traffic by copying me personally.  I see the messages that go to
+pyblosxom-devel.  There is no need to send me an extra copy.
+&lt;&#x2F;pre&gt;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;嗬嗬 不是第一次向他批发询问邮件了，还如此好脾气的指导，大师的风范！学习之！
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;其实通过将毎条评注依照对应的目录，分布记录在文件系统中，
+ 然后使用XML集中进行处理，实在是最明快的处理方式了，只是没有提供管理的入口？
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;technorati-over.gif&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;OpenSource&quot;&gt;OpenSource&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;PyBlosxom&quot;&gt;PyBlosxom&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;hacking&quot;&gt;hacking&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;techic&#x2F;PyBlosxom&#x2F;PyblosxomFixLog2-2006-01-15-23-23.t2t --&gt;
+</content>
+</entry>
+</feed>

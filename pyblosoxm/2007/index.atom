@@ -1,0 +1,1680 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/2007/index.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/2007/index.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/2007/index.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2007-10-22T15:43:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">FF2GG</title>
+<category term="/oss/Ubuntu" />
+<id>/pyblosxom/2007/10/22/ff-to-gg-2007-10-22-23-43</id>
+<updated>2007-10-22T15:43:00Z</updated>
+<published>2007-10-22T15:43:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/oss/Ubuntu/ff-to-gg-2007-10-22-23-43.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopSVpEREVSW&#x27; id=&#x27;toptopSVpEREVSW&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;FF2GG&lt;&#x2F;h1&gt;
+&lt;h2&gt;-- 7.04 Feisty Fawn 到7.10 Gutsy Gibbon&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0JaT&quot;&gt;很好,很强大!&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc2R0VYRENMU&quot;&gt;1.1. 流水&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc3R0VYREVMU&quot;&gt;1.2. 惊喜&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc4R0lYQ0JaN&quot;&gt;结论&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc5R01YQ0FWQ&quot;&gt;TODO&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0JaT&quot; name=&quot;toc1R0VYQ0JaT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopSVpEREVSW&#x27;&gt; 1. 很好,很强大! &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+升级!需要理由嘛?
+&lt;&#x2F;p&gt;
+ &lt;ul&gt;
+ &lt;li&gt;不需要嘛?
+  &lt;ul&gt;
+  &lt;li&gt;需要嘛?! ...
+  &lt;p&gt;&lt;&#x2F;p&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;其实因为忍不住哪！&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;19号下载到CD版本的，
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;当天HP 520(GQ349AA)也配发到手里
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;为了20号的会课先忍了一下
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;21号回来就说不得要安装,将原先的 红旗Linux 洗掉~瞧着尽力伪装成M$ 的樣子就想吐
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc2R0VYRENMU&quot; name=&quot;toc2R0VYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopSVpEREVSW&#x27;&gt; 1.1. 流水 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;硬盘:&lt;&#x2F;dt&gt;&lt;dd&gt;
+ &lt;ul&gt;
+ &lt;li&gt;原来以为是简单的先清后win2k3 再Ubuntu 的事儿,结果,没有那么简单!
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;不删除 红旗,win2k3 不认硬盘,使用Ubuntu Alternate 分区重写后,依然!
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;罢了,直接来!
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;Ubuntu 7.10 GG 的Alternate 好象不完整在安装到89%时报错退出!
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;只有使用 Ubuntu 7.04 FF 的DVD 先安装成功,然后升级了 ;(
+ &lt;p&gt;&lt;&#x2F;p&gt;
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;分区,最终规划:&lt;&#x2F;dt&gt;&lt;dd&gt;
+ &lt;ul&gt;
+ &lt;li&gt;其中前200Mb 有问题,无法格式化,只好让掉...
+. &lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;2007&#x2F;2007-10-23-202858_mtab_scrot.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;;  
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;升级:&lt;&#x2F;dt&gt;&lt;dd&gt;
+ &lt;ul&gt;
+ &lt;li&gt;通过Alternate CD升级,1小时50分钟,也下载了将近100Mb的东西,平顺完成!
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;很智能,将原先的一些定制源也都自动替换成了 GG 的!!
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc3R0VYREVMU&quot; name=&quot;toc3R0VYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopSVpEREVSW&#x27;&gt; 1.2. 惊喜 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;SETI@home:&lt;&#x2F;dt&gt;&lt;dd&gt;
+ &lt;ul&gt;
+ &lt;li&gt;直接包含在源中了! 
+&lt;pre&gt;
+:~$ acs boinc
+boinc-app-seti - SETI@home application for the BOINC client
+boinc-client - core client for the BOINC distributed computing infrastructure
+boinc-dbg - debugging symbols for BOINC binaries
+boinc-dev - development files to build applications for BOINC projects
+boinc-manager - GUI to control and monitor the BOINC core client
+kboincspy - monitoring utility for the BOINC client
+kboincspy-dev - development files for KBoincSpy plugins
+.
+&lt;&#x2F;pre&gt;
+ &lt;p&gt;&lt;&#x2F;p&gt;
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;3D特效:&lt;&#x2F;dt&gt;&lt;dd&gt;
+ &lt;ul&gt;
+ &lt;li&gt;内置的非常足够 COOL 了!!
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc4R0lYQ0JaN&quot; name=&quot;toc4R0lYQ0JaN&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopSVpEREVSW&#x27;&gt; 2. 结论 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+&lt;b&gt;Ubuntu 越來越贴近用户的实际需求了,反应的快,强大的趋势明显&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+ &lt;ul&gt;
+ &lt;li&gt;期待 &lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;2007&#x2F;gobuntu-med.jpg&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt; 的快速成长!
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.ubuntu.com&#x2F;products&#x2F;whatisubuntu&#x2F;gobuntu&quot;&gt;http:&#x2F;&#x2F;www.ubuntu.com&#x2F;products&#x2F;whatisubuntu&#x2F;gobuntu&lt;&#x2F;a&gt;
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc5R01YQ0FWQ&quot; name=&quot;toc5R01YQ0FWQ&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopSVpEREVSW&#x27;&gt; 3. TODO &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+ &lt;ol&gt;
+ &lt;li&gt;WiFi 怎么也不能连接到公司的AP中,研究中;家里的 6.06 也得整了...p2p下载已经停了些日子了...
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;VBox 带个能用网银的系统,也得整! 不想再多系统启动了,就Ubuntu!
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.ibm.com&#x2F;developerworks&#x2F;cn&#x2F;linux&#x2F;l-jfs&#x2F;&quot;&gt;XFS 是个蒙事儿的主&lt;&#x2F;a&gt;,还是得经典的FS才成哪! 周末准备回写成 ReiserFS
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ol&gt;
+
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;ul&gt;
+&lt;li&gt;t2t渲染:: 2010-10-09 02:21:41
+&lt;&#x2F;li&gt;
+&lt;li&gt;动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;oss&#x2F;Ubuntu&#x2F;ff-to-gg-2007-10-22-23-43.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">SVN 无法识别的url方案 </title>
+<category term="/utility/Subversion" />
+<id>/pyblosxom/2007/10/15/ra_dev-svn-2007-10-15-11-33</id>
+<updated>2007-10-15T03:33:00Z</updated>
+<published>2007-10-15T03:33:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/utility/Subversion/ra_dev-svn-2007-10-15-11-33.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopS05MRTRJS&#x27; id=&#x27;toptopS05MRTRJS&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;SVN 无法识别的url方案 &lt;&#x2F;h1&gt;
+&lt;h2&gt;-- 解决...记要&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0JaN&quot;&gt;现象&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc2R0VYRENMU&quot;&gt;1.1. 原因&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc3R0VYREVMU&quot;&gt;1.2. 解决&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc4R0VYREdMU&quot;&gt;1.3. 心得&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0JaN&quot; name=&quot;toc1R0VYQ0JaN&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopS05MRTRJS&#x27;&gt; 1. 现象 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;dl&gt;
+&lt;dt&gt;突然之间访问不能:&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;pre&gt;
+svn: 无法识别的URL方案(一般需要svn:&#x2F;&#x2F;，http:&#x2F;&#x2F;，file:&#x2F;&#x2F;等开头)
+“http:&#x2F;&#x2F;svn.rdev.kingsoft.net&#x2F;kdoc&#x2F;tangle&#x2F;KsPIG&#x2F;Zoom.Quiet&#x2F;S5”
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc2R0VYRENMU&quot; name=&quot;toc2R0VYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopS05MRTRJS&#x27;&gt; 1.1. 原因 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;根据:&lt;&#x2F;dt&gt;&lt;dd&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;blog.yesky.com&#x2F;223&#x2F;sxy519&#x2F;1716723.shtml&quot;&gt;http:&#x2F;&#x2F;blog.yesky.com&#x2F;223&#x2F;sxy519&#x2F;1716723.shtml&lt;&#x2F;a&gt; 建议的一看才知道...
+&lt;pre&gt;
+$ svn --version
+svn，版本 1.4.3 (r23084)
+   编译于 Oct 12 2007，13:28:55
+
+版权所有 (C) 2000-2007 CollabNet。
+Subversion 是开放源代码软件，请参阅 http:&#x2F;&#x2F;subversion.tigris.org&#x2F;
+此产品包含由 CollabNet (http:&#x2F;&#x2F;www.Collab.Net&#x2F;)开发的软件。
+
+可使用以下的仓库存取 (RA) 模块:
+
+* ra_svn : 使用svn网络协议访问仓库的模块。
+  - 处理“svn”方案
+* ra_local : 访问本地磁盘的仓库模块。
+  - 处理“file”方案
+&lt;&#x2F;pre&gt;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;FT! Ubuntu自动升级时，没有完整的升级SVN哪！
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc3R0VYREVMU&quot; name=&quot;toc3R0VYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopS05MRTRJS&#x27;&gt; 1.2. 解决 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;使用新立得:&lt;&#x2F;dt&gt;&lt;dd&gt;
+ &lt;ul&gt;
+ &lt;li&gt;重新安装SVN 相关所有 
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;问题依然...
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;编译!&lt;&#x2F;dt&gt;&lt;dd&gt;
+ &lt;ul&gt;
+ &lt;li&gt;GNU&#x2F;Linux 下面一般就这板斧招了!
+&lt;pre&gt;
+$ wget -c http:&#x2F;&#x2F;subversion.tigris.org&#x2F;downloads&#x2F;subversion-deps-1.4.5.tar.bz2 &amp;amp;
+$ wget -c http:&#x2F;&#x2F;subversion.tigris.org&#x2F;downloads&#x2F;subversion-1.4.5.tar.bz2 &amp;amp;
+$ tar xjvf subversion-1.4.5.tar.bz2 
+$ tar xjvf subversion-deps-1.4.5.tar.bz2 
+$ cd subversion-1.4.5
+$ .&#x2F;configure
+$ make
+$ sudo make install clean
+...
+&lt;&#x2F;pre&gt;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;FT!!怎么还是没有&lt;code&gt;ra_dav&lt;&#x2F;code&gt;模块?! 
+&lt;pre&gt;
+$ whereis svn
+svn: &#x2F;usr&#x2F;bin&#x2F;svn &#x2F;usr&#x2F;X11R6&#x2F;bin&#x2F;svn &#x2F;usr&#x2F;bin&#x2F;X11&#x2F;svn &#x2F;usr&#x2F;local&#x2F;bin&#x2F;svn &#x2F;usr&#x2F;share&#x2F;man&#x2F;man1&#x2F;svn.1.gz
+$ &#x2F;usr&#x2F;local&#x2F;bin&#x2F;svn --version
+svn，版本 1.4.5 (r25188)
+   编译于 Oct 15 2007，11:03:39
+
+版权所有 (C) 2000-2007 CollabNet。
+Subversion 是开放源代码软件，请参阅 http:&#x2F;&#x2F;subversion.tigris.org&#x2F;
+此产品包含由 CollabNet (http:&#x2F;&#x2F;www.Collab.Net&#x2F;)开发的软件。
+
+可使用以下的仓库访问模块: 
+
+* ra_dav : 通过WebDAV(DeltaV)协议访问仓库的模块。
+  - 处理“http”方案
+* ra_svn : 使用svn网络协议访问仓库的模块。
+  - 处理“svn”方案
+* ra_local : 访问本地磁盘的仓库模块。
+  - 处理“file”方案
+&lt;&#x2F;pre&gt;
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;解决:&lt;&#x2F;dt&gt;&lt;dd&gt;
+ &lt;ul&gt;
+ &lt;li&gt;原来默认的&lt;code&gt;&#x2F;usr&#x2F;bin&#x2F;svn&lt;&#x2F;code&gt; 还是原先安装的 1.4.3 版本
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;手工处理一下
+&lt;pre&gt;
+$ sudo mv &#x2F;usr&#x2F;bin&#x2F;svn &#x2F;usr&#x2F;bin&#x2F;svn143
+$ sudo ln -s &#x2F;usr&#x2F;local&#x2F;bin&#x2F;svn &#x2F;usr&#x2F;bin&#x2F;svn
+&lt;&#x2F;pre&gt;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;哗,世界恢复正当!
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc4R0VYREdMU&quot; name=&quot;toc4R0VYREdMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopS05MRTRJS&#x27;&gt; 1.3. 心得 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;确认现象
+&lt;&#x2F;li&gt;
+&lt;li&gt;搜索资料
+&lt;&#x2F;li&gt;
+&lt;li&gt;编译
+&lt;&#x2F;li&gt;
+&lt;li&gt;测试调整
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;code&gt;嗯嗯嗯~自由世界中的不二法典哪!解决问题的...&lt;&#x2F;code&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;technorati-over.gif&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;FLOSS&quot;&gt;OpenSource&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;Subversion&quot;&gt;Subversion&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;utility&#x2F;Subversion&#x2F;ra_dev-svn-2007-10-15-11-33.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">文件系统惊魂</title>
+<category term="/oss/Ubuntu" />
+<id>/pyblosxom/2007/06/15/terror-fs-luckly-reiserfs-2007-06-15-23-43</id>
+<updated>2007-06-15T15:43:00Z</updated>
+<published>2007-06-15T15:43:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/oss/Ubuntu/terror-fs-luckly-reiserfs-2007-06-15-23-43.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopNDJMSVBaR&#x27; id=&#x27;toptopNDJMSVBaR&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;文件系统惊魂&lt;&#x2F;h1&gt;
+&lt;h2&gt;-- 幸运的Reiserfs选择！&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0JaR&quot;&gt;事件&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc2R0VYRENMU&quot;&gt;1.1. 处理&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc3R0VYREVMU&quot;&gt;1.2. fsck&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc4R0VYREdMU&quot;&gt;1.3. 幸运ReiserFS&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc5R0lYQ0JaN&quot;&gt;经验.教训&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0JaR&quot; name=&quot;toc1R0VYQ0JaR&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopNDJMSVBaR&#x27;&gt; 1. 事件 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+&lt;code&gt;* Mounting local filesystem....&lt;&#x2F;code&gt;
+&lt;&#x2F;p&gt;
+&lt;dl&gt;
+&lt;dt&gt;惊慌:&lt;&#x2F;dt&gt;&lt;dd&gt;
+ &lt;ul&gt;
+ &lt;li&gt;稳定运行一周的DELL D620 Laptop under Ubuntu7.04
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;一回到家开机就停在上述情况不再有反应
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc2R0VYRENMU&quot; name=&quot;toc2R0VYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopNDJMSVBaR&#x27;&gt; 1.1. 处理 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;幸好有系统管理员的朋友依然在线
+&lt;&#x2F;li&gt;
+&lt;li&gt;幸好家里的 AMD 兼容机 under Ubuntu 6.04 依然工作
+&lt;&#x2F;li&gt;
+&lt;li&gt;询问,得知得&lt;code&gt;fsck&lt;&#x2F;code&gt; 一下
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc3R0VYREVMU&quot; name=&quot;toc3R0VYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopNDJMSVBaR&#x27;&gt; 1.2. fsck &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;幸好随身带着Ubuntu 的DVD!
+&lt;&#x2F;li&gt;
+&lt;li&gt;启动进入后:
+&lt;pre&gt;
+$sudo su -
+#ls &#x2F;dev | grep sda
+sda 
+...
+sda11
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;幸好重装机器时详细的记录了分区信息:
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;ZoomQuiet&#x2F;2007-05-08&quot;&gt;升级Ubuntu&lt;&#x2F;a&gt;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;FLOSS&#x2F;Ubuntu&#x2F;upgrade-into-feisty-2007-05-11-13-43&quot;&gt;从Dapper到Feisty 的征程&lt;&#x2F;a&gt;
+  &lt;ul&gt;
+  &lt;li&gt;&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;070511_myUbuntu_partition_scrot.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;所以优先檢查对启动有影响的 &lt;b&gt;&#x2F;&lt;&#x2F;b&gt;; &lt;b&gt;&#x2F;usr&lt;&#x2F;b&gt; ;&lt;b&gt;&#x2F;home&lt;&#x2F;b&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc4R0VYREdMU&quot; name=&quot;toc4R0VYREdMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopNDJMSVBaR&#x27;&gt; 1.3. 幸运ReiserFS &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;pre&gt;
+#fsck -t reiserfs &#x2F;dev&#x2F;sda2
+#fsck -t reiserfs &#x2F;dev&#x2F;sda11
+&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;果然 &lt;code&gt;&#x2F;usr&lt;&#x2F;code&gt; 檢查出问题提示进行&lt;code&gt;--rebuild-tree&lt;&#x2F;code&gt;
+&lt;pre&gt;
+#fsck -t reiserfs --rebuild-tree &#x2F;dev&#x2F;sda11
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;结果不行?! Google 一下,晕的!原来有专用的
+&lt;pre&gt;
+reiserfsck 
+Usage: reiserfsck [mode] [options]  device
+
+Modes:
+  --check                       consistency checking (default)
+  --fix-fixable                 fix corruptions which can be fixed without 
+                                --rebuild-tree
+  --rebuild-sb                  super block checking and rebuilding if needed
+                                (may require --rebuild-tree afterwards)
+  --rebuild-tree                force fsck to rebuild filesystem from scratch
+                                (takes a long time)
+  --clean-attributes            clean garbage in reserved fields in StatDatas 
+Options:
+  -j | --journal device         specify journal if relocated
+  -B | --badblocks file         file with list of all bad blocks on the fs
+  -l | --logfile file           make fsck to complain to specifed file
+  -n | --nolog                  make fsck to not complain
+  -z | --adjust-size            fix file sizes to real size
+  -q | --quiet                  no speed info
+  -y | --yes                    no confirmations
+  -V                            prints version and exits
+  -a and -p                     some light-weight auto checks for bootup
+  -f and -r                     ignored
+Expert options:
+  --no-journal-available        do not open nor replay journal
+  -S | --scan-whole-partition   build tree of all blocks of the device
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;KO! 经过检测,恢复目录树,再小心检查其它目录,没有隐患...
+&lt;&#x2F;li&gt;
+&lt;li&gt;reboot! 熟悉的界面回来了,没有任何不稳....
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc5R0lYQ0JaN&quot; name=&quot;toc5R0lYQ0JaN&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopNDJMSVBaR&#x27;&gt; 2. 经验.教训 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;ol&gt;
+&lt;li&gt;在GNU&#x2F;Linux 中千万别慌!一切都有着的！
+&lt;&#x2F;li&gt;
+&lt;li&gt;不论作者如何&lt;code&gt;ReiserFS&lt;&#x2F;code&gt; 绝对是个人用户的守护神哪！
+&lt;&#x2F;li&gt;
+&lt;li&gt;不论多没可能使用，系统的DVD 光盘一定要带在身边！特别是Ubuntu 系统安装DVD，紧急情况下可以作为LiveCD 直接进行工作的！
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;ul&gt;
+&lt;li&gt;t2t渲染:: 2010-10-09 02:21:41
+&lt;&#x2F;li&gt;
+&lt;li&gt;动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;technorati-over.gif&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;OpenSource&quot;&gt;OpenSource&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;Ubuntu&quot;&gt;Ubuntu&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;oss&#x2F;Ubuntu&#x2F;terror-fs-luckly-reiserfs-2007-06-15-23-43.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">ZARD消逝了</title>
+<category term="/easy/music" />
+<id>/pyblosxom/2007/05/28/ZARD-leaved-2007-05-28-16-00</id>
+<updated>2007-05-28T08:00:00Z</updated>
+<published>2007-05-28T08:00:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/easy/music/ZARD-leaved-2007-05-28-16-00.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopTEpBVkVSS&#x27; id=&#x27;toptopTEpBVkVSS&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;ZARD消逝了&lt;&#x2F;h1&gt;
+&lt;h2&gt;-- 坂井泉水(Izumi Sakai)！世上又少了名认真歌唱的人...&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0FXU&quot;&gt;ZARD!&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc2R0VYRENMU&quot;&gt;1.1. 心痛...&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc3R0VYREVMU&quot;&gt;1.2. 无言以叙,无从表达&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0FXU&quot; name=&quot;toc1R0VYQ0FXU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTEpBVkVSS&#x27;&gt; 1. ZARD! &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&quot;&lt;a href=&quot;http:&#x2F;&#x2F;ent.sina.com.cn&#x2F;y&#x2F;2007-05-28&#x2F;13131573628.html&quot;&gt;歌手坂井泉水病逝 曾为《灌篮高手》演唱片尾曲&lt;&#x2F;a&gt;&quot; 
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;img align=&quot;left&quot; src=&quot;&#x2F;pybimage&#x2F;ZARD1999.jpg&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc2R0VYRENMU&quot; name=&quot;toc2R0VYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTEpBVkVSS&#x27;&gt; 1.1. 心痛... &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;国人一般只知道神秘乐团ZARD 给某动画片唱过片尾曲；
+&lt;&#x2F;li&gt;
+&lt;li&gt;我迷过一段时间的日本流行乐,听到最后,集中到少数创作型音乐人身上并坚持不在变了:
+ &lt;ol&gt;
+ &lt;li&gt;激越火热几十年不变的 大黑摩季(MAKI OHGURO)
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;音乐风格千变万化永远无止境的 菅野洋子(YokoKanno)
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;流行教主同时轻柔绵长的 今井.美樹(Miki Imai)
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;声线特殊摇滚流行融合极好的 松任谷由実(Matsutoya.Yumi)
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;JAZZ到骨头里的 加藤登纪子(Kato.Tokiko) -- 红猪的片尾曲听10年不厌！
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;永远与时俱进佳品不断的 D.C.T--美梦成真
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;风骨卓然的 Garnet.Crow
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ol&gt;
+ ....
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;ul&gt;
+&lt;li&gt;但是最让我心牵神绕的还是 &lt;code&gt;ZARD===坂井泉水&lt;&#x2F;code&gt;
+ &lt;ul&gt;
+ &lt;li&gt;作为松田圣子 的堂妹
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;拥有比一切偶像歌手都出色的外貌条件
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;却长久的低调的坚持创作
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;偶然出现在各种影视作品中的歌曲总是那样温柔而又淡定!
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;从来没有任何绯闻炒作
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;真正的音乐人!
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;在商业世界中,这般的人物可以存在实在是无数ZARD 乐迷的支持,以及ZARD 作品不断的实力成就的
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;ZARD同 D.C.T Bz S.A.S 等怪兽级超长寿乐团一样成为日本乐坛不可动摇的中坚创作力量
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;(中国对等的乐团几乎找不出来)
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;但是... 还是在风华正茂的年岁被病魔打倒了,
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;自此,可以期待的声音,又少了一种...
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc3R0VYREVMU&quot; name=&quot;toc3R0VYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTEpBVkVSS&#x27;&gt; 1.2. 无言以叙,无从表达 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+ &lt;ul&gt;
+ &lt;li&gt;只能祝 ZARD 走好,象翁美玲 成为永远的蓉儿 一般,成为永远的传说永不被遗忘
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;愿ZARD 走好,音乐作品可以长久发行,更加有遗作发掘出来...
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;愿ZARD 走好,认真音乐的精神可以改变一些人对音乐的态度吧...
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;愿ZARD 在天之灵可以保祐中国也能出几个长气的认真音乐人
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;technorati-over.gif&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;OpenSource&quot;&gt;OpenSource&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;Ubuntu&quot;&gt;Ubuntu&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;easy&#x2F;music&#x2F;ZARD-leaved-2007-05-28-16-00.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">从Dapper到Feisty 的征程</title>
+<category term="/oss/Ubuntu" />
+<id>/pyblosxom/2007/05/11/upgrade-into-feisty-2007-05-11-13-43</id>
+<updated>2007-05-11T05:43:00Z</updated>
+<published>2007-05-11T05:43:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/oss/Ubuntu/upgrade-into-feisty-2007-05-11-13-43.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopNFM1WTRSR&#x27; id=&#x27;toptopNFM1WTRSR&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;从Dapper到Feisty 的征程&lt;&#x2F;h1&gt;
+&lt;h2&gt;-- 直接升级?那是谣传!但是...&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0JaR&quot;&gt;为什么要升级&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc2R0lYQ0JaT&quot;&gt;升级?!&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc3R01YQ0IyT&quot;&gt;重装升级!&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc4R01YRENMU&quot;&gt;3.1. 流水&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc5R01YREVMU&quot;&gt;3.2. 惊喜&lt;&#x2F;a&gt;
+      &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#toc6R01YREVMU&quot;&gt;3.2.1. 但是...&lt;&#x2F;a&gt;
+      &lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc7R1FYQ0JaN&quot;&gt;结论&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0JaR&quot; name=&quot;toc1R0VYQ0JaR&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopNFM1WTRSR&#x27;&gt; 1. 为什么要升级 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+升级!需要理由嘛?
+&lt;&#x2F;p&gt;
+ &lt;ul&gt;
+ &lt;li&gt;不需要嘛?
+  &lt;ul&gt;
+  &lt;li&gt;需要嘛?! ...
+  &lt;p&gt;&lt;&#x2F;p&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;其实俺是被廹的...&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;原本Dapper 使用的非常的好,而且进行了巨量的配置,根本不想升级的
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;但是,人在江湖身不由已哪...
+&lt;pre&gt;
+E: Problem with MergeList &#x2F;var&#x2F;lib&#x2F;apt&#x2F;lists&#x2F; \
+    ubuntu.cn99.com_ubuntu-cn_dists_dapper_main_binary-i386_Packages
+E: 无法解析或打开软件包的列表或是状态文件。
+&lt;&#x2F;pre&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;这种软件包重新时的错误已经烦了快一个月了
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;为了稳定高效的考虑,还是要升级
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;而且!&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.osxcn.com&#x2F;ubuntu&#x2F;linux-desktop-imitating-osx.html&quot;&gt;把你的 Ubuntu 打造为 OSX&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;呜乎矣哉! 有人能够抵製这种诱惑嘛?!
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc2R0lYQ0JaT&quot; name=&quot;toc2R0lYQ0JaT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopNFM1WTRSR&#x27;&gt; 2. 升级?! &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;dl&gt;
+&lt;dt&gt;但是!&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;经过&lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;ZoomQuiet&#x2F;2007-05-08&quot;&gt;48小时的尝试&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;以及&lt;a href=&quot;http:&#x2F;&#x2F;nicholasdsj.blogspot.com&#x2F;2007&#x2F;04&#x2F;ubuntu-704-feisty-fawn.html&quot;&gt;友人的马后炮&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;死了逐步升级的心..
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc3R01YQ0IyT&quot; name=&quot;toc3R01YQ0IyT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopNFM1WTRSR&#x27;&gt; 3. 重装升级! &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+幸好相关DVD早就准备好,而且对于分区也有万全的策略,重装非常顺畅
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc4R01YRENMU&quot; name=&quot;toc4R01YRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopNFM1WTRSR&#x27;&gt; 3.1. 流水 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;重启,安装!值得注意的是将分区根据过往使用体验进一步合理化:
+ &lt;ul&gt;
+ &lt;li&gt;&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;070511_myUbuntu_partition_scrot.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;50分钟快速从DVD 就安装完成了Gnome 环境,因为保存了&lt;code&gt;&#x2F;home&lt;&#x2F;code&gt;以及&lt;code&gt;&#x2F;opt&lt;&#x2F;code&gt;目录,90%的定制就继承了下来,笑;-)
+&lt;&#x2F;li&gt;
+&lt;li&gt;重新进入桌面后进行后期定制,1小时以内恢复工作状态:
+    &lt;ol&gt;
+    &lt;li&gt;更新源
+&lt;pre&gt;
+# beryl release
+### wget http:&#x2F;&#x2F;ubuntu.beryl-project.org&#x2F;root@lupine.me.uk.gpg -O- | sudo apt-key add -
+deb http:&#x2F;&#x2F;ubuntu.beryl-project.org feisty main
+deb-src http:&#x2F;&#x2F;ubuntu.beryl-project.org feisty main
+
+### zoomq::070510 for ies4linux
+# wget -q http:&#x2F;&#x2F;wine.budgetdedicated.com&#x2F;apt&#x2F;387EE263.gpg -O- | sudo apt-key add -
+deb http:&#x2F;&#x2F;us.archive.ubuntu.com&#x2F;ubuntu feisty universe
+deb http:&#x2F;&#x2F;wine.budgetdedicated.com&#x2F;apt feisty main
+
+# 电信用户首选国内源--cn99!
+deb http:&#x2F;&#x2F;ubuntu.cn99.com&#x2F;ubuntu&#x2F; feisty main restricted universe multiverse
+deb http:&#x2F;&#x2F;ubuntu.cn99.com&#x2F;ubuntu&#x2F; feisty-security main restricted universe multiverse
+deb http:&#x2F;&#x2F;ubuntu.cn99.com&#x2F;ubuntu&#x2F; feisty-updates main restricted universe multiverse
+deb http:&#x2F;&#x2F;ubuntu.cn99.com&#x2F;ubuntu&#x2F; feisty-proposed main restricted universe multiverse
+deb http:&#x2F;&#x2F;ubuntu.cn99.com&#x2F;ubuntu&#x2F; feisty-backports main restricted universe multiverse
+deb-src http:&#x2F;&#x2F;ubuntu.cn99.com&#x2F;ubuntu&#x2F; feisty main restricted universe multiverse
+deb-src http:&#x2F;&#x2F;ubuntu.cn99.com&#x2F;ubuntu&#x2F; feisty-security main restricted universe multiverse
+deb-src http:&#x2F;&#x2F;ubuntu.cn99.com&#x2F;ubuntu&#x2F; feisty-updates main restricted universe multiverse
+deb-src http:&#x2F;&#x2F;ubuntu.cn99.com&#x2F;ubuntu&#x2F; feisty-proposed main restricted universe multiverse
+deb-src http:&#x2F;&#x2F;ubuntu.cn99.com&#x2F;ubuntu&#x2F; feisty-backports main restricted universe multiverse
+&lt;&#x2F;pre&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;sudo 化:
+&lt;pre&gt;
+#修订&#x2F;etc&#x2F;sudoers 相关行为
+%admin ALL=(ALL) NOPASSWD:ALL
+&lt;&#x2F;pre&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;显示及数字板支持:&lt;code&gt;WACOM,915resolution&lt;&#x2F;code&gt; 都是源自有的,直接安装就好
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;字体美化!
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+. &lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;070511_yuanti_cfg_scrot.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;;
+    &lt;ol&gt;
+    &lt;li&gt;SCIM 配置并加载最爱的&lt;a href=&quot;http:&#x2F;&#x2F;share.zoomquiet.org&#x2F;tools&#x2F;zqBXM2006.7z&quot;&gt;zqBXM2006&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;多媒体配置,安装最爱的 &lt;a href=&quot;http:&#x2F;&#x2F;moc.daper.net&#x2F;&quot;&gt;mocp&lt;&#x2F;a&gt;^在命令行播放音乐^ + &lt;a href=&quot;http:&#x2F;&#x2F;www.mplayerhq.hu&#x2F;design7&#x2F;news.html&quot;&gt;mplayer&lt;&#x2F;a&gt;^全能媒体播放^ 立即就可以恢复音乐背景环境了!
+. &lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;070511_mocp_zh_scrot.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;;    
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+
+&lt;p&gt;
+&lt;b&gt;KO!其它的就可以随用随装了,已经可以投入到无限的为人民服务的日常生活中了,是也乎^__^&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc5R01YREVMU&quot; name=&quot;toc5R01YREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopNFM1WTRSR&#x27;&gt; 3.2. 惊喜 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Gnome 2.18.1 果然强悍的多,不用什么 Xfce4 ,本身就非常快速了...
+&lt;&#x2F;li&gt;
+&lt;li&gt;默认是Python2.5了! 而且配合的Tk8.4 居然也可以支持中文输入了
+. &lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;070511_ubuntu704_leoZhKO_scrot.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;;
+ &lt;ul&gt;
+ &lt;li&gt;单为这,也值得重装了哪!
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;另外 &lt;code&gt;inkscape&lt;&#x2F;code&gt; 也终于可以保存了 -- &lt;a href=&quot;http:&#x2F;&#x2F;ubuntuforums.org&#x2F;showthread.php?t=294093&quot;&gt;crash in dapper when read file&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;最大的惊喜是桌面特效的稳定丰富爽直的获取!
+&lt;&#x2F;li&gt;
+&lt;li&gt;终于可以正常&lt;code&gt;挂起&lt;&#x2F;code&gt;了!
+    &lt;ul&gt;
+    &lt;li&gt;不过,默认配置,笔记本屏幕关上后过段时间就会关闭显示，而且无法重新激活！
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;基于前人的经验 &lt;a href=&quot;http:&#x2F;&#x2F;www.linuxsky.net&#x2F;html&#x2F;200606&#x2F;3560.html&quot;&gt;Thinkpad上安装Ubuntu笔记&lt;&#x2F;a&gt;配置后问题依然
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;最后使用&lt;code&gt;Ctrl+Alt+l&lt;&#x2F;code&gt; 手工锁屏幕就好
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;另外电源配置时使用 &lt;code&gt;挂起&lt;&#x2F;code&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+
+&lt;a id=&quot;toc6R01YREVMU&quot; name=&quot;toc6R01YREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h3&gt;&lt;A href=&#x27;#toptopNFM1WTRSR&#x27;&gt; 3.2.1. 但是... &lt;&#x2F;A&gt;&lt;&#x2F;h3&gt;
+&lt;dl&gt;
+&lt;dt&gt;键盘布局&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;根据&lt;a href=&quot;http:&#x2F;&#x2F;forum.ubuntu.org.cn&#x2F;about51819.html&amp;amp;sid=eb5fea294a839836417ebf76d62ee221&quot;&gt;安装fesity 后的键盘问题&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;快速配置就好,而且针对Dell Laptop 居然有专门的预设
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;070511_dell_keylayout_scrot.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    &lt;ul&gt;
+    &lt;li&gt;但是,没有左边的&lt;code&gt;Alt,Ctrl&lt;&#x2F;code&gt; 支持...
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;多媒体支持:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;著名的&lt;code&gt;w32codes&lt;&#x2F;code&gt; 最终还是从源里清除了...
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;有人贡献了经验:&lt;a href=&quot;http:&#x2F;&#x2F;blog.chinaunix.net&#x2F;u1&#x2F;34834&#x2F;showart.php?id=291548&quot;&gt;ubuntu 7.04 下播放rm&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;快速解决之!
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;字体惊魂&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;原先以上的字体设定是为了追求象OSX环境，结果发现有中文标点被显示为类似阿位伯文字的现象
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;又受到友人蛊惑尝试&lt;a href=&quot;http:&#x2F;&#x2F;www.osxcn.com&#x2F;ubuntu&#x2F;edgy-stheiti.html#comment-15473&quot;&gt;黑体解决方案&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;结果X 都启动不起来了
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;寒了半天恢复后,发现被Session 过的程序菜单都出不来了,折腾半天才发现,不能使用字体配置中的&lt;code&gt;LCD&lt;&#x2F;code&gt; 专用配置!! 最好的配置如下
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;070514_Beryl-ZHfonts_510X295_scrot.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc7R1FYQ0JaN&quot; name=&quot;toc7R1FYQ0JaN&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopNFM1WTRSR&#x27;&gt; 4. 结论 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+&lt;b&gt;GNU&#x2F;Linux 下面的重装和M$的重装云泥之差哪!&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+ &lt;ul&gt;
+ &lt;li&gt;没有注册表,都是配置文件,只要配置文件在,一切都在
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;没有分区,只有目录,只要系统是同一系列的,各种软件都在固定的地方,不用重新配置什么,重装后,原先的配置直接可用!
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;但是!毕竟每个发行版本以及自个儿的定制差别是极其大的,每周积累的升级也是非常多的,不破不立,该重装时就重装!
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;ul&gt;
+&lt;li&gt;t2t渲染:: 2010-10-09 02:21:41
+&lt;&#x2F;li&gt;
+&lt;li&gt;动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;oss&#x2F;Ubuntu&#x2F;upgrade-into-feisty-2007-05-11-13-43.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">leo在Py2.5中的失败尝试</title>
+<category term="/Zen/pythonic" />
+<id>/pyblosxom/2007/04/27/leo-py25-bad-chinese-2007-04-27-18-00</id>
+<updated>2007-04-27T10:00:00Z</updated>
+<published>2007-04-27T10:00:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/Zen/pythonic/leo-py25-bad-chinese-2007-04-27-18-00.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopTlJTVzdaT&#x27; id=&#x27;toptopTlJTVzdaT&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;leo在Py2.5中的失败尝试&lt;&#x2F;h1&gt;
+&lt;h2&gt;-- 中文应用问题是国人永远的心痛哪&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0IyR&quot;&gt;背景&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc2R0VYRENMU&quot;&gt;1.1. 思路&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc3R0VYREVMU&quot;&gt;1.2. 安装步骤&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc4R0VYREdMU&quot;&gt;1.3. 失败的结果&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0IyR&quot; name=&quot;toc1R0VYQ0IyR&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTlJTVzdaT&#x27;&gt; 1. 背景 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;折腾了两天将Python2.5 编译了5回也没有搞定,询问大家是否有经验了!
+&lt;&#x2F;li&gt;
+&lt;li&gt;一直知道 LEO 在Linux 下面的中文支持问题是Tk 造的孽
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;linux.ccidnet.com&#x2F;art&#x2F;738&#x2F;20060430&#x2F;545737_1.html&quot;&gt;http:&#x2F;&#x2F;linux.ccidnet.com&#x2F;art&#x2F;738&#x2F;20060430&#x2F;545737_1.html&lt;&#x2F;a&gt;
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;ul&gt;
+&lt;li&gt;但是这两日怎么搞都不成！
+&lt;&#x2F;li&gt;
+&lt;li&gt;详细记录在&lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;ZoomQuiet&#x2F;2007-04-27&quot;&gt;啄木鸟维基-ZoomQuiet&#x2F;2007-04-27&lt;&#x2F;a&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;b&gt;请大家给点建议吧&lt;&#x2F;b&gt;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;sourceforge.net&#x2F;forum&#x2F;forum.php?thread_id=1724164&amp;amp;forum_id=10227&quot;&gt;leo sf.net 讨论&lt;&#x2F;a&gt;
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc2R0VYRENMU&quot; name=&quot;toc2R0VYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTlJTVzdaT&#x27;&gt; 1.1. 思路 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+我的步骤和思路:
+&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;不能影响现存的Py2.4 环境
+&lt;&#x2F;li&gt;
+&lt;li&gt;使用Py2.5 进行尝试
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;因为: &lt;&#x2F;dt&gt;&lt;dd&gt;
+  LEO 仅仅需要Python with Tk+Pwm
+  &lt;ul&gt;
+  &lt;li&gt;(不过要求Tcl 不能使用线程支持参数)
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;所以:&lt;&#x2F;dt&gt;&lt;dd&gt;
+  只要安装好Py2.5 就可以:
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc3R0VYREVMU&quot; name=&quot;toc3R0VYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTlJTVzdaT&#x27;&gt; 1.2. 安装步骤 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;安装最新 Tcl&#x2F;Tk 
+&lt;pre&gt;
+download cvs snapshots from ftp:&#x2F;&#x2F;ftp.tcl.tk&#x2F;pub&#x2F;tcl&#x2F;nightly-cvs&#x2F;
+tcl&#x2F;unix$ .&#x2F;configure --enable-shared --enable-gcc
+$ make clean &amp;amp;&amp;amp; make 
+$ sudo make install
+...
+&#x2F;tk&#x2F;unix$ .&#x2F;configure --enable-xft
+$ make clean &amp;amp;&amp;amp; make 
+$ sudo make install
+...
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;安装Python2.5 并绑定Tk8.5&lt;&#x2F;dt&gt;&lt;dd&gt;
+  根据&lt;a href=&quot;http:&#x2F;&#x2F;blog.csdn.net&#x2F;fyzhao&#x2F;archive&#x2F;2006&#x2F;12&#x2F;27&#x2F;1464614.aspx&quot;&gt;前人Py2.5安装经验&lt;&#x2F;a&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;pre&gt;
+$ sudo cp path&#x2F;to&#x2F;libtcl8.5.so &#x2F;usr&#x2F;lib&#x2F;
+$ sudo cp path&#x2F;to&#x2F;libtk8.5.so &#x2F;usr&#x2F;lib&#x2F;
+...
+&#x2F;python2.5-2.5.1.orig$ .&#x2F;configure --enable-unicode=ucs4 \
+  --with-tk   --with-tk-library=&#x2F;usr&#x2F;local&#x2F;lib --with-tk-include=&#x2F;usr&#x2F;local&#x2F;include&#x2F;tcl8.5 \
+  --with-tcl-library=&#x2F;usr&#x2F;local&#x2F;lib --with-tcl-include=&#x2F;usr&#x2F;local&#x2F;include&#x2F;tcl8.5 
+$  make clean &amp;amp;&amp;amp; make
+$  make test
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;安装 LEO&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;pre&gt;
+cp -r Pmw &#x2F;usr&#x2F;local&#x2F;lib&#x2F;python2.5&#x2F;site-packages&#x2F;
+cp -r leo-4-4-3-alpha-2 &#x2F;opt&#x2F;bin&#x2F;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc4R0VYREdMU&quot; name=&quot;toc4R0VYREdMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTlJTVzdaT&#x27;&gt; 1.3. 失败的结果 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;OK,结果 在 &lt;code&gt;&#x2F;opt&#x2F;bin&#x2F;leo-4-4-3-alpha-2&#x2F;src&lt;&#x2F;code&gt; 中直接调用leo.py 可以运行;
+&lt;&#x2F;li&gt;
+&lt;li&gt;但是LEO 不能正當影响 Ctrl+c|v|s 等等各种操作;直接就死了...
+&lt;pre&gt;
+&#x2F;opt&#x2F;bin&#x2F;leo-4.4.3a2&#x2F;src$ python2.5 leo.py
+reading settings in &#x2F;opt&#x2F;bin&#x2F;leo-4.4.3a2&#x2F;config&#x2F;leoSettings.leo
+reading &#x2F;home&#x2F;zoomq&#x2F;.leoRecentFiles.txt
+rst3 plugin: SilverCity not loaded
+rst3 plugin not loaded: can not load docutils
+Traceback (most recent call last):
+
+  File &#x27;&#x27;&#x2F;opt&#x2F;bin&#x2F;leo-4.4.3a2&#x2F;src&#x2F;leoEditCommands.py&#x27;&#x27;, line 7903, in getAspellWithCtypes
+    self.aspell = aspell = ctypes.CDLL(g.os_path_join(self.aspell_bin_dir, &#x27;&#x27;aspell-15.dll&#x27;&#x27;))
+
+  File &#x27;&#x27;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python2.5&#x2F;ctypes&#x2F;__init__.py&#x27;&#x27;, line 340, in __init__
+    self._handle = _dlopen(self._name, mode)
+
+OSError: &#x2F;opt&#x2F;bin&#x2F;leo-4.4.3a2&#x2F;src&#x2F;c:\aspell\bin&#x2F;aspell-15.dll: cannot open shared object file: No such file or directory
+
+Traceback (most recent call last):
+  File &#x27;&#x27;leo.py&#x27;&#x27;, line 353, in &amp;lt;module&amp;gt;
+    run()
+  File &#x27;&#x27;leo.py&#x27;&#x27;, line 138, in run
+    g.app.gui.runMainLoop()
+  File &#x27;&#x27;&#x2F;opt&#x2F;bin&#x2F;leo-4.4.3a2&#x2F;src&#x2F;leoTkinterGui.py&#x27;&#x27;, line 186, in runMainLoop
+    self.root.mainloop()
+  File &#x27;&#x27;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python2.5&#x2F;lib-tk&#x2F;Tkinter.py&#x27;&#x27;, line 1023, in mainloop
+    self.tk.mainloop(n)
+  File &#x27;&#x27;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python2.5&#x2F;site-packages&#x2F;Pmw&#x2F;Pmw_1_2&#x2F;lib&#x2F;PmwBase.py&#x27;&#x27;, line 1751, in __call__
+    _reporterror(self.func, args)
+  File &#x27;&#x27;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python2.5&#x2F;site-packages&#x2F;Pmw&#x2F;Pmw_1_2&#x2F;lib&#x2F;PmwBase.py&#x27;&#x27;, line 1777, in _reporterror
+    msg = exc_type + &#x27; Exception in Tk callback\n&#x27;
+TypeError: unsupported operand type(s) for +: &#x27;type&#x27; and &#x27;str&#x27;
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;b&gt;到底咋回事儿泥？！&lt;&#x2F;b&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;ul&gt;
+&lt;li&gt;t2t渲染:: 2010-10-09 02:21:36
+&lt;&#x2F;li&gt;
+&lt;li&gt;动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;Zen&#x2F;pythonic&#x2F;leo-py25-bad-chinese-2007-04-27-18-00.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">[FW]学习笔记</title>
+<category term="/techic/Emacs" />
+<id>/pyblosxom/2007/03/08/fw_learning_emacs_notes-2007-03-08-18-00</id>
+<updated>2007-03-08T10:00:00Z</updated>
+<published>2007-03-08T10:00:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/Emacs/fw_learning_emacs_notes-2007-03-08-18-00.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopTE5ERk9YU&#x27; id=&#x27;toptopTE5ERk9YU&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;[FW]学习笔记&lt;&#x2F;h1&gt;
+&lt;h2&gt;参考O&#x27;reilly的&amp;lt; &amp;lt;学习 GNU Emacs&amp;gt; &amp;gt;&lt;&#x2F;h2&gt;
+&lt;h3&gt;t2t渲染:2010-10-09 02:21:39&lt;&#x2F;h3&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0FRM&quot;&gt;Chapter 2 文件编辑&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc2R0VYRENMU&quot;&gt;1.1. 一，移动光标&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc3R0VYREVMU&quot;&gt;1.2. 二，文本的删除&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc4R0VYREdMU&quot;&gt;1.3. 三，编辑技巧&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc5R0VYRElMU&quot;&gt;1.4. 四，修改的撤销&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc6R0lYQ0FRM&quot;&gt;Chapter 3 查找和替换&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc7R0lYRENMU&quot;&gt;2.1. 一，查找&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc8R0lYREVMU&quot;&gt;2.2. 二, 查找和替换&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc9R0lYREdMU&quot;&gt;2.3. 三，拼写检查&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc10R0lYRElMU&quot;&gt;2.4. 四，单词简写模式&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc11R01YQ0FRM&quot;&gt;Chapter 4 编辑缓冲区和窗口&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc12R01YRENMU&quot;&gt;3.1. 一，Buffer&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc13R01YREVMU&quot;&gt;3.2. 二，窗口&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc14R01YREdMU&quot;&gt;3.3. 三，书签&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc15R01YRElMU&quot;&gt;3.4. 四，窗格&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc16R1FYQ0FRM&quot;&gt;Chapter 5 Emacs工作环境&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc17R1FYRENMU&quot;&gt;4.1. 一, 执行UNIX命令&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc18R1FYREVMU&quot;&gt;4.2. 二，文件和目录操作&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc19R1FYREdMU&quot;&gt;4.3. 三，查阅unix在线手册&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc20R1FYRElMU&quot;&gt;4.4. 四，日历与日记&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc21R1VYQ0FRM&quot;&gt;Chapter 6 宏&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc22R1lYQ0FRM&quot;&gt;Chapter 7 Emacs进行编程&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc23R1lYRENMU&quot;&gt;6.1. 一，各语言通用&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc24R1lYREVMU&quot;&gt;6.2. 二，C&#x2F;C++&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc25R1lYREdMU&quot;&gt;6.3. 三，编译&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc26RzRYQ0FRM&quot;&gt;Chapter 7 帮助&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc27RzRYRENMU&quot;&gt;7.1. 一，自动完成&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc28RzRYREVMU&quot;&gt;7.2. 二，帮助&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;dl&gt;
+&lt;dt&gt;FW:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    同事LiLu:
+&lt;pre&gt;
+最近学习了一下Emacs，把重点的概念和操作简单做了笔记如下，有兴趣的同学一
+起学习探讨啊
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+= Chapter 1 基本文件操作 =
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;pre&gt;
+概念：
+文件
+编辑缓冲区(buffer)
+窗口
+模式（主模式，辅模式)
+
+C-x C-f 查找文件并打开
+C-x C-v 读入另外一个文件替换
+C-x i 插入文件到光标处
+C-x C-s 保存文件
+C-x C-w 把缓冲区内容写入文件
+C-x C-c 推出
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc1R0VYQ0FRM&quot; name=&quot;toc1R0VYQ0FRM&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTE5ERk9YU&#x27;&gt; 1. Chapter 2 文件编辑 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;a id=&quot;toc2R0VYRENMU&quot; name=&quot;toc2R0VYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTE5ERk9YU&#x27;&gt; 1.1. 一，移动光标 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;pre&gt;
+C-f,C-b,C-p,C-n 上下左右
+M-f,M-b 左右移动(单词)
+C-a,C-e 行首和行尾
+M-a,M-e 左右移动(句子）
+M-{,M-} 上下移动（段落)
+C-v,M-v 上下翻动(翻屏)
+C-x [,C-x ] 上下翻页(有分页符)
+M-&amp;lt;,M-&amp;gt; 缓冲区开头和结尾
+M-g g
+M-x goto-line n
+去到第n行
+M-x goto-char n
+去到第n个字符
+C-l 重绘屏显
+
+重复执行命令：
+C-u n C-u默认4次，C-u,C-u16次，。。。。4的幂次方
+M-100 100次执行
+
+Mode:
+自动换行辅模式 auto-fill-mode
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc3R0VYREVMU&quot; name=&quot;toc3R0VYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTE5ERk9YU&#x27;&gt; 1.2. 二，文本的删除 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;pre&gt;
+C-x u undo操作
+M - 加在这些命令前边，都是行首到光标，不然都是光标到行尾
+
+删除
+C-d 删除当前字符
+M-d 删除当前单词
+C-k 删除行
+M-k 删除句子
+
+恢复
+C-y 除了C-d和del删除的都能召回,（kill类指令)，召回最新
+M-y 把删除环中以前的一次次召回
+
+文本块处理
+
+C-@ Mark文本标记
+M-@ Mark文本，当前到词尾
+C-w 文本块删除(剪切)
+M-w 文本块复制
+C-x,C-x 检查文本标记位置
+M-h 标记整段
+C-x h 标记整buffer
+
+Mode:
+临时标记模式 transient-mode
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc4R0VYREdMU&quot; name=&quot;toc4R0VYREdMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTE5ERk9YU&#x27;&gt; 1.3. 三，编辑技巧 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;pre&gt;
+M-q 段落重排
+
+交换
+
+C-t 交换两个字符的位置
+M-t 交换两个单词的位置
+C-x,C-t 交换两行
+
+大小写
+
+M-c 单词首字母大写
+M-u 单词全字母大写
+M-l 单词全字母小写
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc5R0VYRElMU&quot; name=&quot;toc5R0VYRElMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTE5ERk9YU&#x27;&gt; 1.4. 四，修改的撤销 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;pre&gt;
+C-x,u undo
+M-x revert-buffer 回复缓冲区
+可以返回文件的备份版本 filename~
+可以从自动保存的文件恢复
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc6R0lYQ0FRM&quot; name=&quot;toc6R0lYQ0FRM&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTE5ERk9YU&#x27;&gt; 2. Chapter 3 查找和替换 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;pre&gt;
+C-x ESC ESC 寻找以前执行过的命令
+M-p&#x2F;M-n 命令区条目查看
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc7R0lYRENMU&quot; name=&quot;toc7R0lYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTE5ERk9YU&#x27;&gt; 2.1. 一，查找 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;pre&gt;
+C-s 递增查找
+C-r 反向递增查找
+C-s,C-w 复制单词
+C-s,C-y 复制句子
+C-s,M-y 删除环文本复制
+C-s
+非递增查找
+C-s
+C-w 单词查找
+都有对应C-r
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc8R0lYREVMU&quot; name=&quot;toc8R0lYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTE5ERk9YU&#x27;&gt; 2.2. 二, 查找和替换 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;pre&gt;
+M-x replace-string 替换
+M-% 查询-替换
+space or y 替换
+del or n 不替换
+, 替换了看看情况
+! 替换之后所有
+
+递归编辑
+在查询-替换操作中C-r
+推出递归编辑
+M-C-c
+随时递归编辑
+M-x recursive-edit
+
+大小写字母的问题
+默认不区分大小写，且按照原来大小写情况匹配
+编程时可能需要调整
+M-x set-variable
+设case-fold-search变量的值 查找时是否大小写敏感 t变为nil
+设case-replace的值 是否按照原大小写匹配
+
+正则表达式查找替换
+各命令和M一同使用
+替换
+C-M-%
+query-replace-regexp
+在目标串中的表示
+\&amp;amp; 整字串
+\N 部分字串，N为第N个()
+\# replace多少次
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc9R0lYREdMU&quot; name=&quot;toc9R0lYREdMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTE5ERk9YU&#x27;&gt; 2.3. 三，拼写检查 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;pre&gt;
+Ispell
+M-x ispell-buffer 检查整个buffer
+强大的拼写检查器，可替换
+M-$ 检查当前单词
+M-Tab 自动补全单词
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc10R0lYRElMU&quot; name=&quot;toc10R0lYRElMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTE5ERk9YU&#x27;&gt; 2.4. 四，单词简写模式 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+简写词作用范围是模式
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc11R01YQ0FRM&quot; name=&quot;toc11R01YQ0FRM&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTE5ERk9YU&#x27;&gt; 3. Chapter 4 编辑缓冲区和窗口 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;a id=&quot;toc12R01YRENMU&quot; name=&quot;toc12R01YRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTE5ERk9YU&#x27;&gt; 3.1. 一，Buffer &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;pre&gt;
+C-x b 切换Buffer
+C-x C-b 调出buffer列表
+C-x s 保存多个Buffer
+y,n,!,q,C-r(查看当前buffer),C-c(退出C-r的查看)
+C-x k 删除当前Buffer
+C-x C-v 找到另一个文件代替当前的文件
+C-x C-q 切换当前buffer是否只读
+
+Buffer List:
+状态：
+. 已显示
+* 已修改
+D 待删除
+&amp;gt; &amp;gt; 待显示
+S 待存盘
+% 只读
+操作：
+x 执行操作
+d 删除
+del 去除上一步操作
+s 存盘
+% 只读
+1 满凭显示buffer
+f 当前buffer替代buffer list
+o 另外一个窗口打开buffer
+m 待显示
+v 显示
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc13R01YREVMU&quot; name=&quot;toc13R01YREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTE5ERk9YU&#x27;&gt; 3.2. 二，窗口 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;pre&gt;
+C-x 2 水平分割窗口
+C-x 3 垂直分割窗口
+C-x N .....多窗口
+C-x o 窗口间的移动
+C-x 0 关闭当前窗口
+C-x 1 只保留当前窗口
+C-x ^ 加高当前窗口
+C-x } 加宽当前窗口
+C-x - 窗口变为buffer大小
+C-x + 多窗口同样大小
+M-C-v&#x2F;Shift-M-C-v 卷动其他窗口内容
+
+C-x 4 f 自动在新窗口里打开文件
+类似的还有C-x 4 b等等。。。
+C-x 4 r 只读方式打开
+
+对比两文件的不同
+compare-window命令
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc14R01YREdMU&quot; name=&quot;toc14R01YREdMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTE5ERk9YU&#x27;&gt; 3.3. 三，书签 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;pre&gt;
+C-x r m 在当前光标位置设置书签
+C-x r b 打开书签
+为书签改名：
+bookmark-rename
+删除书签
+bookmark-delete
+
+C-x r l 打开书签清单
+书签清单操作 同buffer
+特殊
+r 重命名
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc15R01YRElMU&quot; name=&quot;toc15R01YRElMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTE5ERk9YU&#x27;&gt; 3.4. 四，窗格 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;操作大多同窗口
+&lt;&#x2F;li&gt;
+&lt;li&gt;4换成5
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc16R1FYQ0FRM&quot; name=&quot;toc16R1FYQ0FRM&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTE5ERk9YU&#x27;&gt; 4. Chapter 5 Emacs工作环境 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;M-p&#x2F;M-n 历史记录查询，适用于大多数需要输入的地方
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc17R1FYRENMU&quot; name=&quot;toc17R1FYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTE5ERk9YU&#x27;&gt; 4.1. 一, 执行UNIX命令 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;pre&gt;
+M-! 执行UNIX命令
+默认结果进Shell Command Output缓冲区
+C-u M-! 结果进当前编辑缓冲区
+M-| 将标记文本块作为shell command的输入
+
+可以修改变量shell-file-name指定使用shell的名字
+
+M-x shell 执行unix命令交互式功能
+C-c 加在unix快捷键前，如C-z
+C-c C-o 不显示上条命令的输入结果
+C-c C-r 输出放到窗口顶
+C-c C-e 输出放到窗口底
+C-c C-p 查看上一输出组
+C-c C-n 查看下一输出组
+
+cd时会改变查找文件的默认目录
+(setq-default shell-popd-regexp nil)这样就不变了
+
+可以让输入的口令不可见
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc18R1FYREVMU&quot; name=&quot;toc18R1FYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTE5ERk9YU&#x27;&gt; 4.2. 二，文件和目录操作 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;pre&gt;
+Dired模式
+
+C-x C-f&#x2F;C-x d&#x2F;启动emacs dir 都可以进入此模式
+s 切换文件排序方法
+buffer中的操作方法依然适用
+在命令前加数字可以同时对N个文件作操作
+v 进入view mode，只能看
+q 回到目录
+f 可以改
+d 待删除
+# 删除所有自动保存文件
+~ 删除所有备份文件
+D 真正删除
+C 复制文件
+R 重命名&#x2F;移动文件
+Z 压缩&#x2F;解压缩（只有gz)
+= 比较两文件
+M-= 比较备份文件
+! 执行任何unix命令
+* 标记待操作文件
+u 去掉标记
+g 刷新屏显的目录情况
+% 后面跟的命令对文件进行正则选取
++ 创建目录
+Q 可以进行对多文件内容的查询和替换
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;还有很多命令，请参考手册
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc19R1FYREdMU&quot; name=&quot;toc19R1FYREdMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTE5ERk9YU&#x27;&gt; 4.3. 三，查阅unix在线手册 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+M-x man
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc20R1FYRElMU&quot; name=&quot;toc20R1FYRElMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTE5ERk9YU&#x27;&gt; 4.4. 四，日历与日记 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+M-x calendar
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc21R1VYQ0FRM&quot; name=&quot;toc21R1VYQ0FRM&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTE5ERk9YU&#x27;&gt; 5. Chapter 6 宏 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;pre&gt;
+C-x ( 录制宏
+C-x ) 退出宏
+C-x e 执行宏，前边可以加C-u
+C-u C-x( 为以前的宏添加动作
+M-x name-last-kbd-macro 保存最后一个宏
+之后用M-x macroname使用即可,前边加M-n执行n次
+M-x insert-kbd-macro
+macroname
+
+打开一个文件后执行，即可把宏的lisp代码保存入文件
+M-x load-file filename
+加载宏定义文件，也可以加载任何lisp定制文件
+C-u C-x q 录制宏时进行递归编辑
+M-C-c 退出递归编辑
+C-x q 让宏停下来进行询问
+同查找替换
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc22R1lYQ0FRM&quot; name=&quot;toc22R1lYQ0FRM&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTE5ERk9YU&#x27;&gt; 6. Chapter 7 Emacs进行编程 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;a id=&quot;toc23R1lYRENMU&quot; name=&quot;toc23R1lYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTE5ERk9YU&#x27;&gt; 6.1. 一，各语言通用 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;pre&gt;
+(autoload &#x27;function &quot;filename&quot;)
+为某个mod增加关联程序包
+变量：
+auto-mode-alist
+自动将模式与特定后缀文件做关联
+
+M-C-\ 对文本块缩进
+M-m 光标移到当前行第一个非空白字符
+M-^ 当前行合并到上一行
+M-; 增加注释
+M-j 为注释增加新行
+变量comment-multi-line控制
+
+命令：
+comment-region 把文本块标为注释
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc24R1lYREVMU&quot; name=&quot;toc24R1lYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTE5ERk9YU&#x27;&gt; 6.2. 二，C&#x2F;C++ &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;pre&gt;
+模式：
+c-mode
+c++mode
+perl和c大同小异
+
+M-a 移动到语句开头
+M-e 移动到语句结尾
+M-q 注释文本段落重排
+M-C-a 移动到函数开头
+M-C-e 移动到函数末尾
+M-C-h 把函数选为文本块
+C-c C-q 函数整体缩进
+C-c C-u 预处理条件开始
+C-c C-p 上一个预处理条件
+C-c C-n 下一个预处理条件
+
+命令：
+c-set-style 选一种缩进样式
+
+C-c C-a 自动新行功能
+C-c C-d 饥饿的删除键
+
+设定：
+(add-hook &#x27;c-mode-hook
+&#x27;(lambda ()
+(c-set-style &quot; stylename &quot;)
+(c-toggle-auto-state)
+(c-toggle-auto-hungry-state)))
+C-c C-e 将预处理块送入实际预处理器执行
+
+etags：
+强大的函数search工具
+调用:
+etags *.[ch] 这样为所有.c,.h建立函数标签
+emacs调用：
+命令
+visit-tags-table
+函数标签命令：
+M-. 查找匹配某字符串的函数,默认是光标当前字符串
+C-x 4 . 使用一个新窗口打开M-.
+M-, 查找下一个函数
+命令
+tags-search 正则搜TAGS包括文件的一切内容
+tags-query-replace
+查找和替换，加C-u完全匹配单词
+tags-apropos
+打开匹配的tag list
+list-tags 把给定文件的标签都列出来
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc25R1lYREdMU&quot; name=&quot;toc25R1lYREdMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTE5ERk9YU&#x27;&gt; 6.3. 三，编译 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;pre&gt;
+模式：
+编译模式
+命令：
+compile
+变量：
+compile-command
+C-x ` 来到出错信息所在位置
+加C-u 到第一条出错信息所在
+M-n&#x2F;M-p 向上&#x2F;下找错误信息
+C-c C-c 访问对应于当前错误信息的源代码
+
+调用grep工具：
+命令grep
+可以用编译模式的命令
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc26RzRYQ0FRM&quot; name=&quot;toc26RzRYQ0FRM&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTE5ERk9YU&#x27;&gt; 7. Chapter 7 帮助 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;a id=&quot;toc27RzRYRENMU&quot; name=&quot;toc27RzRYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTE5ERk9YU&#x27;&gt; 7.1. 一，自动完成 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;pre&gt;
+变量:
+completion-ignored-extension
+把一些后缀的文件或命令加入不自动补完列表
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc28RzRYREVMU&quot; name=&quot;toc28RzRYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTE5ERk9YU&#x27;&gt; 7.2. 二，帮助 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;pre&gt;
+C-h ? 帮助的帮助
+C-h a 这个概念涉及哪些命令
+apropos 这个概念涉及哪些函数和变量
+super-apropos 哪些文档提到此概念
+都可用正则
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;techic&#x2F;Emacs&#x2F;fw_learning_emacs_notes-2007-03-08-18-00.t2t --&gt;
+</content>
+</entry>
+</feed>

@@ -1,0 +1,804 @@
+<head>
+  <title>Zoom.Quiet's PyBlosxom blogging</title>
+<!--
+  <title>Zoom.Quiet's PyBlosxom blogging    by pyblosxom1.5.2</title>
+-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/pybstyle/pyblosxom.ico" type="image/x-icon" />
+<link rel="icon" href="/pybstyle/pyblosxom.ico" type="image/x-icon" />
+
+<link rel="stylesheet" type="text/css"  href="/pybstyle/html.flav/style.css" />
+<link rel="stylesheet" type="text/css"  media="print" href="/pybstyle/html.flav/print.css" />
+
+</head>
+<body>
+
+<div class="container"> 
+<table><!-- main page structure-->
+<tr>
+<td><!-- id="head" 
+    <div id="header" class="g33"> 
+        <h2><a href="/pyblosxom">
+        <img src="/pybstyle/zoomquiet-means-100414_h90.png" alt="Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup>">
+        </a>
+        </h2> 
+    </div> 
+
+    <div id="top" class="g33"> 
+        <div id="description" class="g16 alpha"> 
+        <h3>Zoom.Quiet's PyBlosxom blogging
+        </h3>
+        </div>
+-->
+    <div id="top" class="g33"> 
+        <div id="description" class="g16 alpha"> 
+            <h3><a href="/pyblosxom">
+            <img src="/pybstyle/zoomquiet-pyb-110831.png" alt="Zoom.Quiet's PyBlosxom blogging">
+            </a>
+            </h3>
+        </div>
+
+        <div id="feeds"> 
+        <!-- rss-popup usage div... 
+<div id="feeds" class="g16 omega" style="text-align:right;"> 
+<div class="rss-popup">
+        <a href="/pyblosxom/index.atom" id="rss-icon">RSS Feed</a>
+        <em>Subscribe the RSS Feed</em>
+</div>        
+        -->
+        <span class="feeds">
+            <a href="/pyblosxom/index.atom" alt="atom"><img src="/pybstyle/rss-16x16.png"/></a>
+        </span>
+        <sup>
+        <a href="/pyblosxom/category-index.html">树</a>
+        </sup><sub>
+        <a style="text-decoration=none" href="/pyblosxom/site-index.html">引</a>
+        </sub>
+
+        </div> <!--id="feeds"-->
+    </div> <!--id="top" class="g33"-->
+
+<hr id="split"/>
+
+
+<!--
+    <div class="clear"></div> 
+<p>-- </p>
+-->    
+</td><!-- id="head" -->
+</tr>
+<tr><td><!-- id="main" -->
+
+<div id="content" class="g33">
+<div id="main" class="g29">
+
+<!--<h2>Sat, 21 Jan 2006</h2>-->
+<!--for firstdaydiv.py 
+    <span class="blosxomDate">Sat, 21 Jan 2006</span>
+-->
+<div class="post"> 
+<div id="page-content">
+
+    <div class="pt">
+        <h1>&para; [hack4]SVN集成</h1>
+        <h2 class="permanentURL">
+        <a href="/pyblosxom/techic/PyBlosxom/PyblosxomFixLog4-2006-01-21-23-23.html">2006-01-21 23:23</a>
+        </h2>
+        <!--Sat, 21 Jan 2006-->
+    </div>
+
+    <div class="text">
+        <div class="blosxomStory">
+        <div class="header" id="header">
+<a name='toptopTE5VR0NZM' id='toptopTE5VR0NZM'></a><h1>[hack4]SVN集成</h1>
+<h2>通过SVN来发布Blog</h2>
+<h3>t2t渲染:2010-10-09 02:21:39</h3>
+</div>
+
+<div class="toc" id="toc">
+  <ol>
+  <li><a href="#toc1R0VYQ0JaT">好坏</a>
+  </li>
+  <li><a href="#toc2R0lYQ0JaT">实施</a>
+    <ul>
+    <li><a href="#toc3R0lYRENMU">2.1. 配合</a>
+    </li>
+    </ul>
+  </li>
+  <li><a href="#toc4R01YQ0FWQ">TODO</a>
+    <ul>
+    <li><a href="#toc5R01YRENMU">3.1. 技术文档</a>
+    </li>
+    </ul>
+  </li>
+  </ol>
+
+</div>
+<div class="body" id="body">
+<a id="toc1R0VYQ0JaT" name="toc1R0VYQ0JaT"></a>
+<h1><A href='#toptopTE5VR0NZM'> 1. 好坏 </A></h1>
+<p>
+在本地使用自个儿习惯的格式来写，通过SVN 自动版本同步到PyBlsxom发布！
+</p>
+<dl>
+<dt>好处：</dt><dd>
+    <ol>
+    <li>天然的备份！
+    </li>
+    <li>离线写作！
+    </li>
+    <li>本地搜索！
+    </li>
+    <li>自然备份！
+    </li>
+    <li>强力版本管理！
+    </li>
+    <li>灾难恢复简单
+    </li>
+    <li>Blog系统定制权限容易管理
+    </li>
+    <li>...
+    </li>
+    </ol>
+</dd>
+<dt>坏处:</dt><dd>
+    <ul>
+    <li>要学习TortoiseSVN 的使用
+    </li>
+    <li>要修正Blogging 习惯..
+    </li>
+    </ul>
+</dd>
+</dl>
+
+<a id="toc2R0lYQ0JaT" name="toc2R0lYQ0JaT"></a>
+<h1><A href='#toptopTE5VR0NZM'> 2. 实施 </A></h1>
+<dl>
+<dt>幸好有积累:</dt><dd>
+    <ul>
+    <li>曾经<a href="http://wiki.woodpecker.org.cn/moin/CvsRootHook">透过CVS进行内容维护</a>
+    </li>
+    <li>后来同理推导出:<a href="http://wiki.woodpecker.org.cn/moin/SubversionHooks">透过SVN进行内容维护</a>
+    <p></p>
+    </li>
+    </ul>
+</dd>
+<dt>HOOKs 脚本:</dt><dd>
+    <ul>
+    <li>关键代码:
+<pre>
+在post-commit 事务中插入:
+    ...
+        upsvn = "%s update %s"%(self.SVN,(aim+mod) )
+        fup = os.popen(upsvn)
+        up = fup.read().strip()
+        self.chkpybt2t(up
+                        ,"pyblosxom/zoomquiet/data/")
+</pre>
+    </li>
+    <li>专用t2t 处理函式:
+<pre>
+def chkpybt2t(self,dirs,mark):
+    """auto check PyBlosxom .t2t blog
+    """
+    for l in dirs.split():
+        if mark in l:
+            self.autot2t(l)
+def autot2t(self,upath):
+    """自动处理t2t 到对应PyBlosxom 目录
+        - upath svnlook 出来的对应更新记录
+        - t2t 文件本身输出 xhtml ，cp为txt 由PyBlosxom 显示
+        - 另外输出为.moin 的wiki 文件
+        --target moin
+    """    
+    t2txhtml = "%s %s"%(self.T2T,upath)
+    t2tmoin = "%s %s %s"%(self.T2T," --target moin ",upath)
+    try:
+        r, w, e = popen2.popen3(t2txhtml)
+        r, w, e = popen2.popen3(t2tmoin)
+        r.close()
+        e.close()
+        w.close()        
+    except:
+        # 日志处理
+        print &gt;&gt; self.f,"~"*7+"t2t::popen2.popen3() ::crash"    
+</pre>
+    </li>
+    <li>通过标准的t2t 命令行来输出两种格式的文件 .xhtml和.moin 的
+    </li>
+    <li><b>特别的</b> 为了定制方便，将 txt2tags 的执行文件专用化:
+    </li>
+    <li><code>self.T2T = "/path/to/my/PyBlosxom/plugins/preformatters/txt2tags"</code>
+    以便进行定制修改
+        <ul>
+        <li><b>完全是因为t2t 太精巧了，就一个文件哪！</b>
+        </li>
+        </ul>
+    </li>
+    </ul>
+</dd>
+</dl>
+
+<a id="toc3R0lYRENMU" name="toc3R0lYRENMU"></a>
+<h2><A href='#toptopTE5VR0NZM'> 2.1. 配合 </A></h2>
+<dl>
+<dt>已经完成的:</dt><dd>
+    <ol>
+    <li>由 SVN hooks 在每次检入时，自动检测是否为指定模块中的 .t2t 文件?
+    </li>
+    <li>如果是:
+        <ul>
+        <li>自动更新指定目录
+        </li>
+        <li><code>svn up</code>
+        </li>
+        </ul>
+    </li>
+    <li>再调用t2t 输出两种格式的文件
+        <ul>
+        <li><code>txt2tags /path/to/the/.t2t</code>
+        </li>
+        <li><code>txt2tags  --target moin  /path/to/the/.t2t</code>
+        </li>
+        </ul>
+    </li>
+    </ol>
+</dd>
+<dt>现在要最终处理的:</dt><dd>
+    <ul>
+    <li>如何令PyBlosxom 解析 .xhtml 到页面中?
+    </li>
+    <li>默许的是仅仅识别 html/纯文本格式的 .txt 文件的
+    </li>
+    <li>参照已有的<a href="plugins/py.phtm">py.py</a> 预格式脚本:
+        <ul>
+        <li>hack 出 <a href="plugins/xhtml.phtm">xhtml.py</a>
+        </li>
+        <li>配置文件中打开此插件
+<pre>
+config.py 中
+...
+py['load_plugins'] = ["pycalendar"
+                      , "py"
+                      ,"xhtml"
+                      ...
+</pre>
+        </li>
+        <li>搞掂！
+        </li>
+        </ul>
+    </li>
+    </ul>
+</dd>
+<dt>特别的:</dt><dd>
+    <ul>
+    <li>文章标题的抓取:
+<pre>
+
+    for line in open(filename,"r").readlines():
+        if "&lt;title&gt;" in line:
+            title=line[7:].replace("&lt;/title&gt;","")
+            break
+</pre>
+    </li>
+    <li>一般性的，PyBlosxom 是从原文头行取，但是 xhtml 中有HTML 的格式标识字串，所以，要从<code>&lt;title&gt;</code> 标签中抓，
+    </li>
+    <li>这里不使用 正则表达式，是为了加速，简单的行读取，
+    比在内存中分析整个文件要Pythonic 哪!
+    </li>
+    </ul>
+</dd>
+</dl>
+
+<a id="toc4R01YQ0FWQ" name="toc4R01YQ0FWQ"></a>
+<h1><A href='#toptopTE5VR0NZM'> 3. TODO </A></h1>
+<p>
+<b>没有最好，只有更好！</b>
+</p>
+<dl>
+<dt>现在:</dt><dd>
+    <ol>
+    <li>通过 SVN 在本地使用t2t 格式来写作
+    </li>
+    <li>通过 SVN hooks 自动处理服务端的文章输出
+    </li>
+    <li>PyBlosxom 中的专用格式处理脚本，识别并辅助处理了 xhtml 输出!
+    </li>
+    </ol>
+</dd>
+<dt>但是:</dt><dd>
+    不能聪明的识别不同的原始文件来提供下载哪！
+    如果是 .py 的，在 <i>永久链接 .t2t .moin</i> 处的其它链接就有问题！
+    <ul>
+    <li>询问列表，却没有人回答:
+<pre>
+发件人: will guaraldi &lt;willg@bluesock.org&gt;	邮送域: lists.sourceforge.net
+收件人: pyblosxom-devel@lists.sourceforge.net
+日期: 2006-1-25 上午12:15
+主题: [Pyblosxom-devel] will's status
+
+Just as an fyi, my email client is still having problems with Zoom's
+emails so I haven't read any of them yet.
+
+I also started classes a week and a half ago and I'm working part time
+this semester.  As such, I'm going to be laying low on PyBlosxom stuff
+including fielding user requests and help for a while.  I'll try to get to
+bugs and user isues at least once a month.
+
+I am also still sitting on a contributed plugins release--that's first
+priority.  I need to go through and fix the logging issues on plugins I
+don't use.
+
+/will
+
+</pre>
+    </li>
+    <li>呜乎哀哉！看来 Gmail 并不是完美的哪！俺的询问邮件没有中文字符的哪！
+    连标点也不敢使用中文的...
+    </li>
+    </ul>
+</dd>
+</dl>
+
+<a id="toc5R01YRENMU" name="toc5R01YRENMU"></a>
+<h2><A href='#toptopTE5VR0NZM'> 3.1. 技术文档 </A></h2>
+<dl>
+<dt><a href="http://pyblosxom.sourceforge.net/1.3/manual/x307.html#AEN356">PyBlosoxm模板中有效变量</a></dt><dd>
+    但是！
+    <ul>
+    <li><b>file_path</b> just the filename and extensions of the entry
+     <ul>
+     <li>就是仅仅输出了文件名儿，没有后缀的说
+     </li>
+     <li>开源项目的文档是极其重要的组成部分，有多少项目是因为文档不全而自然消亡的哪…………
+     </li>
+     </ul>
+    </li>
+    </ul>
+</dd>
+</dl>
+
+<dl>
+<dt>技术文档樣文:</dt><dd>
+    日本人作的就是要好些:
+        <ul>
+        <li><b><a href="../060117-OSSdocDemoJPS.phtm">FreeBSD unionfsの改善提案</a></b>
+        </li>
+        </ul>
+</dd>
+</dl>
+
+<hr class="light" />
+<p>
+动力源自::<b><a href="http://txt2tags.sf.net">txt2tags</a></b>
+</p>
+<p>
+<img align="middle" src="/pybimage/technorati-over.gif" border="0" alt=""/>
+    <a href="http://www.technorati.com/tags/OpenSource">OpenSource</a>
+    ,<a href="http://www.technorati.com/tags/PyBlosxom">PyBlosxom</a>
+    ,<a href="http://www.technorati.com/tags/hacking">hacking</a>
+</p>
+</div>
+
+<!-- xhtml code generated by txt2tags 2.4 (http://txt2tags.sf.net) -->
+<!-- cmdline: txt2tags ./techic/PyBlosxom/PyblosxomFixLog4-2006-01-21-23-23.t2t -->
+
+        </div>
+
+<br/>
+        <div class="meta"> &sect; 
+写于: Sat, 21 Jan 2006 | <a href="/pyblosxom/techic/PyBlosxom/PyblosxomFixLog4-2006-01-21-23-23.html">永久链接</a>;源文:
+<a href="/pyblosxom/techic/PyBlosxom/PyblosxomFixLog4-2006-01-21-23-23.rdf">rdf</a>
+,<a href="/pyblosxom/techic/PyBlosxom/PyblosxomFixLog4-2006-01-21-23-23.atom">rss</a>
+,<a href="/pybnodes/techic/PyBlosxom/PyblosxomFixLog4-2006-01-21-23-23.t2t">raw</a>
+| 分类: <a href="/pyblosxom/techic/PyBlosxom" title="path">/techic/PyBlosxom</a>
+&sect;
+<br/>
+<a href="mailto:zoomquiet+blog@gmail.com?subject={PyBlosxom}[hack4]SVN集成&body=abt. techic/PyBlosxom/PyblosxomFixLog4-2006-01-21-23-23">[MailMe]</a>
+<a href="javascript:window.print()">[Print]</a>
+ <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.5/cn/">
+<img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/2.5/cn/80x15.png" /></a>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="E73UR2XVSP7US">
+<input type="image" src="http://blog.zoomquiet.org/pybimage/icon/dollar_32.png" border="0" name="submit" alt="PayPal——最安全便捷的在线支付方式！">
+<img alt="" border="0" src="https://www.paypalobjects.com/zh_XC/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+<br/>
+<span class="cclicence">
+    &#26412;<span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/Text" rel="dc:type">&#20316;&#21697;</span>&#30001;<span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Zoom.Quiet</span>&#21019;&#20316;&#65292;&#37319;&#29992;<a rel="license" href="http://creativecommons.org/licenses/by-sa/2.5/cn/">&#30693;&#35782;&#20849;&#20139;&#32626;&#21517;-&#30456;&#21516;&#26041;&#24335;&#20849;&#20139; 2.5 &#20013;&#22269;&#22823;&#38470;&#35768;&#21487;&#21327;&#35758;</a>&#36827;&#34892;&#35768;&#21487;&#12290;
+&#22522;&#20110;<a xmlns:dc="http://purl.org/dc/elements/1.1/" href="/pyblosxom/techic/PyBlosxom/PyblosxomFixLog4-2006-01-21-23-23.html" rel="dc:source">zoomquiet.org</a>&#19978;&#30340;&#20316;&#21697;&#21019;&#20316;&#12290;
+</span>
+
+<br/>
+<!-- for Disqus actions -->
+<div id="disqus_thread"></div>
+<!-- for Disqus actions -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'zoomquietpyblosxomblogging'; // required: replace example with your forum shortname
+    // The following are highly recommended additional parameters. Remove the slashes in front to use.
+    var disqus_identifier = "techic/PyBlosxom/PyblosxomFixLog4-2006-01-21-23-23.html";
+    var disqus_url = "http://blog.zoomquiet.org/pyblosxom/techic/PyBlosxom/PyblosxomFixLog4-2006-01-21-23-23.html";
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<!--<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+<center id="pyentrynavi">
+    
+</center>
+-->
+    </div> <!--class="meta"-->
+
+    </div> <!-- class="text"-->
+
+</div> <!-- id="page-content"-->
+</div> <!-- class="post"-->
+<hr/> 
+
+</div><!-- id="content" class="g33"-->
+</div><!-- id="main" class="g25"-->
+</td><!-- id="main" -->
+</tr>
+<tr><td><!-- id="footer" -->
+
+<div id="funcbarnner">
+
+<!-- foot function barnners -->
+    <table class="funcbarnner" align="CENTER" border="0">
+    <tr><td>
+        <!-- LEFT function barnners -->
+        <div id="footeractions" class="sidebar">
+
+          <!-- used in the search text box -->
+          <script type="text/javascript">
+          function set_if(id, if_value, set_value) {
+            field = document.getElementById(id);
+            if (field.value == if_value)
+              field.value = set_value;
+          }
+          </script>
+        <h3>Search</h3>
+        <form class="form" method="get" action="http://www.google.com/search"
+          onsubmit="new site_search('zoomquiet.org', q.value); return false;">
+          <input type="hidden" name="sitesearch" value="zoomquiet.org" />
+          <input type="text" size="18" name="q" id="query" value="Search" 
+                onfocus="set_if('query', 'Search', '')"
+                onblur="set_if('query', '', 'Search') " />
+        </form>
+
+        <script type="text/javascript"
+           src="http://www.google.com.hk/uds/api?file=uds.js&v=1.0&key=ABQIAAAAlv7iO6iSrWdXLWy2P0ESwxQsUXuTv2eYBKPcreHKOEV8Fxl8CRT7Gxa-7r7kr05t4FDbQimxwYwf_w">
+        </script>
+        <script type="text/javascript" src="/pybshare/ajax_search.js"></script>
+
+        <h3>abt.</h3>
+        <ul id="Blogroll">
+
+        <li>reading.
+            <ul id="BlogrollSubTopic">
+                <li><a href="http://techparty.org/">珠三角技术沙龙</a>
+                <br/><a href="http://timyang.net/">Tim</a>
+                <br/><a href="http://www.czug.org/blog/panjy/">潘俊勇</a>
+                <br/><a href="http://blog.laiyonghao.com/">赖勇浩</a>
+                <br/><a href="http://march-liu.blogspot.com/">刘鑫</a>
+                <br/><a href="http://www.jeffkit.info/">Jeff</a>
+                <br/><a href="http://blog.linluxiang.info/">林路翔</a>
+                </li>
+                <li><a href="http://blog.gasolin.idv.tw/">INET6</a>
+                <br/><a href="http://www.feime.net/">Albertlee</a>
+                </li>
+                <li><a href="http://anzhu.net/feed/">安猪</a>
+                <br/><a href="http://tonyyet.com/">Tony yet</a>
+                </li>
+
+            </ul><!--id="BlogrollSubTopic"-->
+            </li>
+        <li>sys.
+            <ul id="BlogrollSubTopic">
+                <li><b><a href="/pyblosxom/recent.html">recents</a></b></li>
+                <li><a href="/pyblosxom/plugin_info/">plugins</a></li>
+
+            </ul><!--id="BlogrollSubTopic"-->
+            </li>
+
+            <li>livin
+                <ul id="BlogrollSubTopic">    
+                <li>
+        <a href="/pyblosxom/Zen/Chinese/918-2006-09-18-10-30.html"><img alt="i Chinese!" src="/pybimage/icon/china.png"/></a>
+        <br/>
+        <a href="http://www.google.com/talk/"><img alt="i in GTalking!" src="/pybimage/icon/gtalk.png"/></a>
+        <br/>
+        <a href="https://mail.google.com"><img alt="i livin GMail!" src="/pybimage/icon/gmail.png"/></a>
+        <br/>
+        <a href="http://zoomq.livejournal.com/"><img alt="i in livejournal.com" src="/pybimage/icon/lj.png"/></a>
+        <br/>
+                </li>
+
+                <li>
+        <a href="http://www.catb.org/hacker-emblem/"><img alt="happy hacking"  src="/pybimage/icon/hacker.png"/></a>
+        <br/>
+        <a href="http://webpages.charter.net/edreamleo/front.html"><img alt="Get LEO -- z Great Literate Programming Env."  src="/pybimage/icon/button-leo.png"/></a>
+        <br/>
+        <a href="http://www.spreadfirefox.com/?q=affiliates&id=0&t=85"><img alt="Get z Great FireFox!" src="/pybimage/icon/getfirefox.png"/></a>
+        <br/>
+        <a href="http://browsehappy.com/why/"><img alt="i hate IE!" src="/pybimage/icon/no_ie_80x15_2.png"/></a>
+        <br/>
+                </li>
+                <li>
+        <!--
+        <a href="http://www.7-zip.org/"><img alt="i enjoy 7-zip" src="/pybimage/icon/7zip.png"/></a>
+        <br/>
+        -->        
+        <a href="http://www.gimp.org/"><img alt="Get z Great GIMP!"  src="/pybimage/icon/getgimp.png"/></a>
+        <br/>
+        <a href="http://www.inkscape.org/"><img alt="Get z Great Inkscape!"  src="/pybimage/icon/getinkscape.png"/></a>
+        <br/>
+        <a href="http://www.openoffice.org/"><img alt="Get z Great OOo!"  src="/pybimage/icon/ooo.png"/></a>
+        <br/>
+                </li>
+                <li>
+        <a href="http://www.onlineghibli.com/"><img alt="i watch GHIBLI mov." src="/pybimage/icon/ghibli.png"/></a>
+        <br/>   
+        <a href="http://www.thematrix101.com/"><img alt="i watch The Matrix" src="/pybimage/icon/martix.png"/></a>
+        <!--<br/>   
+        <a href="http://www.fifthelement.com/"><img alt="i watch 第五元素" src="/pybimage/icon/fifthelemen.png"/></a>
+        -->
+        <br/>   
+        <a href="http://www.xfiles.com/"><img alt="i watch X-FILES" src="/pybimage/icon/xfiles.png"/></a>
+        <br/>   
+        <a href="http://www.startrek.com/startrek/view/series/ENT/"><img alt="i watch StarTrek" src="/pybimage/icon/tng.png"/></a>
+        <br/>   
+        <a href="http://www.syfy.com/battlestar/"><img alt="i watch Battlestar Galactica" src="/pybimage/icon/galactica.png"/></a>
+        <br/>   
+                </li>
+                <li>
+        <a href="http://www.douban.com/group/rock/"><img alt="i listen ROCK!" src="/pybimage/icon/rock.png"/></a>
+        <br/>
+                </li>
+                </ul><!--id="BlogrollSubTopic"-->  
+            </li><!-- livin -->
+            <li>powered
+                <ul id="BlogrollSubTopic">
+                <li>
+        <a href="http://txt2tags.sourceforge.net"><img  alt="Get z Great t2t!" src="/pybimage/icon/t2tpowered-white.png"/></a>
+        <br/>
+        <a href="http://wacom.com.cn"><img alt="i usage WACOM replace mouse" src="/pybimage/icon/wacom.png"/></a>
+        <br/>
+        <a href="http://www.w3.org/TR/xhtml1/"><img alt="i export XHTML" src="/pybimage/icon/xhtml.png"/></a>
+        <br/>
+        <a href="http://www.w3.org/Style/CSS/"><img alt="i usage CSS2" src="/pybimage/icon/css2.png"/></a>
+        <br/>
+                </li>
+                </ul><!--id="BlogrollSubTopic"-->
+            </li><!-- powered -->
+
+            <li>
+<script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js"></script>
+                </li>
+
+        </ul><!-- id="Blogroll" -->
+
+            </div><!-- id="footeractions" class="sidebar"-->
+    </td><td>
+        <!-- MID function barnners -->
+        <div id="zqcategories" class="sidebar">
+            <h3>Category</h3>
+            <!--
+            <a href="/pyblosxom/category-index.html">.:总索引:.</a>
+            -->
+            <ul class="categorygroup">
+<li><ul class="categorygroup">
+<li><a href="/pyblosxom/Zen/" class='rootcategory'>Zen/</a><sup>(12)</sup><a href="/pyblosxom/Zen//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/Zen/Chinese/">Chinese/</a><sup>(4)</sup><a href="/pyblosxom/Zen/Chinese//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/Zen/Google/">Google/</a><sup>(2)</sup><a href="/pyblosxom/Zen/Google//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/Zen/IOP/">IOP/</a><sup>(1)</sup><a href="/pyblosxom/Zen/IOP//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/Zen/haskell/">haskell/</a><sup>(1)</sup><a href="/pyblosxom/Zen/haskell//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/Zen/pythonic/">pythonic/</a><sup>(4)</sup><a href="/pyblosxom/Zen/pythonic//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+</ul></li>
+</ul><ul class="categorygroup">
+<li><ul class="categorygroup">
+<li><a href="/pyblosxom/oss/" class='rootcategory'>oss/</a><sup>(13)</sup><a href="/pyblosxom/oss//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/oss/FreeBSD/">FreeBSD/</a><sup>(1)</sup><a href="/pyblosxom/oss/FreeBSD//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/oss/Mozilla/">Mozilla/</a><sup>(2)</sup><a href="/pyblosxom/oss/Mozilla//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><ul class="categorygroup">
+<li><a href="/pyblosxom/oss/Mozilla/FireFox/">FireFox/</a><sup>(2)</sup><a href="/pyblosxom/oss/Mozilla/FireFox//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+</ul></li>
+<li><a href="/pyblosxom/oss/Ubuntu/">Ubuntu/</a><sup>(5)</sup><a href="/pyblosxom/oss/Ubuntu//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+</ul></li>
+</ul><ul class="categorygroup">
+<li><ul class="categorygroup">
+<li><a href="/pyblosxom/opening/" class='rootcategory'>opening/</a><sup>(1)</sup><a href="/pyblosxom/opening//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/opening/OpenBookProj/">OpenBookProj/</a><sup>(1)</sup><a href="/pyblosxom/opening/OpenBookProj//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+</ul></li>
+</ul><ul class="categorygroup">
+<li><ul class="categorygroup">
+<li><a href="/pyblosxom/mind/" class='rootcategory'>mind/</a><sup>(2)</sup><a href="/pyblosxom/mind//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+</ul></li>
+</ul><ul class="categorygroup">
+<li><ul class="categorygroup">
+<li><a href="/pyblosxom/Quiet/" class='rootcategory'>Quiet/</a><sup>(10)</sup><a href="/pyblosxom/Quiet//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/Quiet/SiFi/">SiFi/</a><sup>(1)</sup><a href="/pyblosxom/Quiet/SiFi//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/Quiet/living/">living/</a><sup>(4)</sup><a href="/pyblosxom/Quiet/living//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/Quiet/nomeans/">nomeans/</a><sup>(5)</sup><a href="/pyblosxom/Quiet/nomeans//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+</ul></li>
+</ul><ul class="categorygroup">
+<li><ul class="categorygroup">
+<li><a href="/pyblosxom/utility/" class='rootcategory'>utility/</a><sup>(16)</sup><a href="/pyblosxom/utility//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/utility/Subversion/">Subversion/</a><sup>(4)</sup><a href="/pyblosxom/utility/Subversion//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><ul class="categorygroup">
+<li><a href="/pyblosxom/utility/Subversion/hooks/">hooks/</a><sup>(1)</sup><a href="/pyblosxom/utility/Subversion/hooks//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+</ul></li>
+<li><a href="/pyblosxom/utility/py4str/">py4str/</a><sup>(2)</sup><a href="/pyblosxom/utility/py4str//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><ul class="categorygroup">
+<li><a href="/pyblosxom/utility/py4str/StructuredText/">StructuredText/</a><sup>(2)</sup><a href="/pyblosxom/utility/py4str/StructuredText//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+</ul></li>
+<li><a href="/pyblosxom/utility/py4sys/">py4sys/</a><sup>(2)</sup><a href="/pyblosxom/utility/py4sys//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/utility/py4web/">py4web/</a><sup>(4)</sup><a href="/pyblosxom/utility/py4web//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><ul class="categorygroup">
+<li><a href="/pyblosxom/utility/py4web/Django/">Django/</a><sup>(1)</sup><a href="/pyblosxom/utility/py4web/Django//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/utility/py4web/MoinMoin/">MoinMoin/</a><sup>(2)</sup><a href="/pyblosxom/utility/py4web/MoinMoin//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/utility/py4web/Quixote/">Quixote/</a><sup>(1)</sup><a href="/pyblosxom/utility/py4web/Quixote//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+</ul></li>
+<li><a href="/pyblosxom/utility/py4xml/">py4xml/</a><sup>(1)</sup><a href="/pyblosxom/utility/py4xml//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/utility/py4zh/">py4zh/</a><sup>(2)</sup><a href="/pyblosxom/utility/py4zh//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/utility/zqlib/">zqlib/</a><sup>(1)</sup><a href="/pyblosxom/utility/zqlib//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+</ul></li>
+</ul><ul class="categorygroup">
+<li><ul class="categorygroup">
+<li><a href="/pyblosxom/internet/" class='rootcategory'>internet/</a><sup>(7)</sup><a href="/pyblosxom/internet//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/internet/Folksonomy/">Folksonomy/</a><sup>(1)</sup><a href="/pyblosxom/internet/Folksonomy//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+</ul></li>
+</ul><ul class="categorygroup">
+<li><ul class="categorygroup">
+<li><a href="/pyblosxom/easy/" class='rootcategory'>easy/</a><sup>(3)</sup><a href="/pyblosxom/easy//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/easy/movie/">movie/</a><sup>(1)</sup><a href="/pyblosxom/easy/movie//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/easy/music/">music/</a><sup>(2)</sup><a href="/pyblosxom/easy/music//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+</ul></li>
+</ul><ul class="categorygroup">
+<li><ul class="categorygroup">
+<li><a href="/pyblosxom/techic/" class='rootcategory'>techic/</a><sup>(27)</sup><a href="/pyblosxom/techic//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/techic/Emacs/">Emacs/</a><sup>(1)</sup><a href="/pyblosxom/techic/Emacs//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/techic/Mac/">Mac/</a><sup>(1)</sup><a href="/pyblosxom/techic/Mac//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/techic/PyBlosxom/">PyBlosxom/</a><sup>(24)</sup><a href="/pyblosxom/techic/PyBlosxom//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><ul class="categorygroup">
+<li><a href="/pyblosxom/techic/PyBlosxom/blosxom/">blosxom/</a><sup>(1)</sup><a href="/pyblosxom/techic/PyBlosxom/blosxom//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/techic/PyBlosxom/plugins/">plugins/</a><sup>(10)</sup><a href="/pyblosxom/techic/PyBlosxom/plugins//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+</ul></li></ul></li>
+</ul>
+
+        </div>
+    </td><td>
+        <!-- RIGHT function barnners -->
+        <div id="montharchives" class="sidebar">
+        <h3>Archives</h3>
+        <ul class="montharchives">
+            <li class='yearchives'><a href='/pyblosxom/2012'>2012</a><sup>(4)</sup></li>
+<li><a href="/pyblosxom/2012/06">12.06</a><sup>(1)</sup><li>
+<li><a href="/pyblosxom/2012/04">12.04</a><sup>(1)</sup><li>
+<li><a href="/pyblosxom/2012/03">12.03</a><sup>(1)</sup><li>
+<li><a href="/pyblosxom/2012/02">12.02</a><sup>(1)</sup><li>
+<li class='yearchives'><a href='/pyblosxom/2011'>2011</a><sup>(9)</sup></li>
+<li><a href="/pyblosxom/2011/10">11.10</a><sup>(2)</sup><li>
+<li><a href="/pyblosxom/2011/09">11.09</a><sup>(3)</sup><li>
+<li><a href="/pyblosxom/2011/08">11.08</a><sup>(4)</sup><li>
+<li class='yearchives'><a href='/pyblosxom/2010'>2010</a><sup>(12)</sup></li>
+<li><a href="/pyblosxom/2010/10">10.10</a><sup>(1)</sup><li>
+<li><a href="/pyblosxom/2010/09">10.09</a><sup>(1)</sup><li>
+<li><a href="/pyblosxom/2010/08">10.08</a><sup>(1)</sup><li>
+<li><a href="/pyblosxom/2010/07">10.07</a><sup>(3)</sup><li>
+<li><a href="/pyblosxom/2010/05">10.05</a><sup>(4)</sup><li>
+<li><a href="/pyblosxom/2010/04">10.04</a><sup>(1)</sup><li>
+<li><a href="/pyblosxom/2010/01">10.01</a><sup>(1)</sup><li>
+<li class='yearchives'><a href='/pyblosxom/2009'>2009</a><sup>(1)</sup></li>
+<li><a href="/pyblosxom/2009/06">09.06</a><sup>(1)</sup><li>
+<li class='yearchives'><a href='/pyblosxom/2008'>2008</a><sup>(5)</sup></li>
+<li><a href="/pyblosxom/2008/05">08.05</a><sup>(1)</sup><li>
+<li><a href="/pyblosxom/2008/04">08.04</a><sup>(4)</sup><li>
+<li class='yearchives'><a href='/pyblosxom/2007'>2007</a><sup>(7)</sup></li>
+<li><a href="/pyblosxom/2007/10">07.10</a><sup>(2)</sup><li>
+<li><a href="/pyblosxom/2007/06">07.06</a><sup>(1)</sup><li>
+<li><a href="/pyblosxom/2007/05">07.05</a><sup>(2)</sup><li>
+<li><a href="/pyblosxom/2007/04">07.04</a><sup>(1)</sup><li>
+<li><a href="/pyblosxom/2007/03">07.03</a><sup>(1)</sup><li>
+<li class='yearchives'><a href='/pyblosxom/2006'>2006</a><sup>(50)</sup></li>
+<li><a href="/pyblosxom/2006/11">06.11</a><sup>(1)</sup><li>
+<li><a href="/pyblosxom/2006/09">06.09</a><sup>(2)</sup><li>
+<li><a href="/pyblosxom/2006/06">06.06</a><sup>(3)</sup><li>
+<li><a href="/pyblosxom/2006/05">06.05</a><sup>(10)</sup><li>
+<li><a href="/pyblosxom/2006/04">06.04</a><sup>(2)</sup><li>
+<li><a href="/pyblosxom/2006/03">06.03</a><sup>(5)</sup><li>
+<li><a href="/pyblosxom/2006/02">06.02</a><sup>(4)</sup><li>
+<li><a href="/pyblosxom/2006/01">06.01</a><sup>(23)</sup><li>
+<li class='yearchives'><a href='/pyblosxom/2005'>2005</a><sup>(3)</sup></li>
+<li><a href="/pyblosxom/2005/06">05.06</a><sup>(1)</sup><li>
+<li><a href="/pyblosxom/2005/04">05.04</a><sup>(2)</sup><li>
+<li class='yearchives'><a href='/pyblosxom/2004'>2004</a><sup>(1)</sup></li>
+<li><a href="/pyblosxom/2004/04">04.04</a><sup>(1)</sup><li>
+        </ul>
+        </div>
+    </td></tr>
+<!--<div id="cloudtags" class="sidebar">
+<h3>tags Cloud</h3>
+
+-->
+    </table> <!-- class="funcbarnner" -->
+<!-- END foot function barnners -->
+</div><!-- id="funcbarnner"-->
+
+<div id="footer" class="g33">
+&sect;
+<a href="#">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></a> powered by 
+<a href="http://pyblosxom.bluesock.org">
+    <img src="http://pyblosxom.bluesock.org/images/pb_pyblosxom.gif" alt="Made with PyBlosxom" border="0" /></a>
+v1.5-rc3
+|
+theme design base <a href="http://www.bestwpthemes.com/doc/">"Doc"</a>
+&sect;
+<br/>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/2.5/cn/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/2.5/cn/88x31.png" /></a>
+<br />&#26412;<span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/Text" rel="dc:type">&#20316;&#21697;</span>&#30001;<span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Zoom.Quiet</span>&#21019;&#20316;&#65292;&#37319;&#29992;<a rel="license" href="http://creativecommons.org/licenses/by-sa/2.5/cn/">&#30693;&#35782;&#20849;&#20139;&#32626;&#21517;-&#30456;&#21516;&#26041;&#24335;&#20849;&#20139; 2.5 &#20013;&#22269;&#22823;&#38470;&#35768;&#21487;&#21327;&#35758;</a>&#36827;&#34892;&#35768;&#21487;&#12290;
+<!--<br />-->&#22522;&#20110;<a xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://blog.zoomquiet.org" rel="dc:source">blog.zoomquiet.org</a>&#19978;&#30340;&#20316;&#21697;&#21019;&#20316;&#12290;
+
+</div> <!-- id="footer" -->
+
+    <div class="clear"></div> 
+
+</td><!-- id="footer" -->
+</tr>
+</table><!-- main page structure-->
+
+</div> <!--end for class="container"-->
+</body>
+
+<!-- for syntaxhighlighter-->
+<link rel="stylesheet" type="text/css" href="/pybshare/syntaxhighlighter_3.0.83/styles/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="/pybshare/syntaxhighlighter_3.0.83/styles/shThemeRDark.css"/>
+<!-- for syntaxhighlighter required JS files -->
+<script type="text/javascript" src="/pybshare/syntaxhighlighter_3.0.83/scripts/shCore.js"></script>
+<script type="text/javascript" src="/pybshare/syntaxhighlighter_3.0.83/scripts/shAutoloader.js"></script>
+<!-- Finally, to actually run the highlighter, you need to include this JS on your page -->
+<script type="text/javascript">
+function path(){
+    var args = arguments;
+    var result = [];
+    for(var i = 0; i < args.length; i++){
+      result.push(args[i].replace('@', '/pybshare/syntaxhighlighter_3.0.83/scripts/'));
+      };
+    return result;
+    };
+SyntaxHighlighter.autoloader.apply(null, path(
+    'applescript            @shBrushAppleScript.js',
+    'bash shell             @shBrushBash.js',
+    'css                    @shBrushCss.js',
+    'diff patch pas         @shBrushDiff.js',
+    'erl erlang             @shBrushErlang.js',
+    'js jscript javascript  @shBrushJScript.js',
+    'text plain             @shBrushPlain.js',
+    'py python              @shBrushPython.js',
+    'rb ruby                @shBrushRuby.js',
+    'sass scss              @shBrushSass.js',
+    'sql                    @shBrushSql.js',
+    'xml xhtml xslt html    @shBrushXml.js'
+    ));
+
+SyntaxHighlighter.all()
+</script>
+
+<!-- Include the jQuery usage css 
+href="http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css"/>
+<link rel="stylesheet" type="text/css"  media="print" href="/pybstyle/jQrssPopupBubble.css" />
+-->
+<!-- Finally, to loading jQuery Ajax Lib. -->
+<script type="text/javascript" src="/pybshare/jquery-1.6.2.min.js"></script>
+<script src="/pybshare/jquery-pybactions.js" type="text/javascript"></script>
+
+
+</html>

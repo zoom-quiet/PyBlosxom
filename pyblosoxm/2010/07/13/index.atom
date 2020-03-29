@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/2010/07/13/index.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/2010/07/13/index.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/2010/07/13/index.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2010-07-13T14:02:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">[Py4SA]批量文件重命名</title>
+<category term="/utility/py4sys" />
+<id>/pyblosxom/2010/07/13/py4sa-rename-mp3s-2010-07-13-22-02</id>
+<updated>2010-07-13T14:02:00Z</updated>
+<published>2010-07-13T14:02:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/utility/py4sys/py4sa-rename-mp3s-2010-07-13-22-02.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopTE5JSFNOQ&#x27; id=&#x27;toptopTE5JSFNOQ&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;[Py4SA]批量文件重命名&lt;&#x2F;h1&gt;
+&lt;h2&gt;--远离Shell 的试探&lt;&#x2F;h2&gt;
+&lt;h3&gt;t2t渲染:: 2010-10-09 14:21:37&lt;&#x2F;h3&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0IyT&quot;&gt;问题&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc2R0lYQ0JaT&quot;&gt;尝试&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc3R01YQ0FVR&quot;&gt;Py之&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0IyT&quot; name=&quot;toc1R0VYQ0IyT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTE5JSFNOQ&#x27;&gt; 1. 问题 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+嗯嗯嗯,最近从 六哥的 DUKU 重新激发了评书的记忆,下载了全本 袁阔成(40回)红岩魂的mp3 ;-)
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+可是解开都是乱码文件名:
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;:&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;2010&#x2F;zoomq-2010-07-14-105626_446x300_scrot.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;;
+&lt;&#x2F;li&gt;
+&lt;li&gt;可恶的中文编码! 一定是在XP 中使用CP936 压出来的
+&lt;&#x2F;li&gt;
+&lt;li&gt;怎么整呢?
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;Python在Unix和Linux系统管理中的应用(影印版):&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;a href=&quot;http:&#x2F;&#x2F;book.douban.com&#x2F;subject&#x2F;3767034&#x2F;&quot;&gt;&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;2010&#x2F;s3876423-py4unix-linux-sa.jpg&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;&lt;&#x2F;a&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;ul&gt;
+&lt;li&gt;绝对好书! 值得慢慢看,E文的也非常简洁,Py 清明的代码,直接看,尝试就可以体会到本意了...
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc2R0lYQ0JaT&quot; name=&quot;toc2R0lYQ0JaT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTE5JSFNOQ&#x27;&gt; 2. 尝试 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+&lt;code&gt;已知有很多途径...&lt;&#x2F;code&gt;参考:&lt;a href=&quot;http:&#x2F;&#x2F;hi.baidu.com&#x2F;sdusoul&#x2F;blog&#x2F;item&#x2F;16f81a9508a1d640d0135ede.html&quot;&gt;linux下批量修改文件名_乌哥的家常菜_百度空间&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;使用find、awk&#x2F;grep&#x2F;sed、mv等命令组合来实现
+    &lt;ul&gt;
+    &lt;li&gt;俺都不熟练,而且要串很多步操作，忒不直爽了..
+    &lt;p&gt;&lt;&#x2F;p&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;编写Shell脚本运行~ 不就是命令组合嘛,,.,
+&lt;&#x2F;li&gt;
+&lt;li&gt;rename ... NGU&#x2F;Linux 中的标准化重命名工具,但是,怎么可以将批量文件中指定前几个字符替换成指定字符?
+&lt;pre class=&quot;brush:  shell&quot;&gt;
+
+~&#x2F;media&#x2F;4talking&#x2F;袁阔诚&#x2F;try&amp;gt; rename -n &#x27;s&#x2F;^.{6}&#x2F;红岩魂&#x2F;&#x27; *.mp3
+...
+���һ�38.mp3 renamed as 红岩魂38.mp3
+���һ�39.mp3 renamed as 红岩魂39.mp3
+���һ�40.mp3 renamed as 红岩魂40.mp3
+&lt;&#x2F;pre&gt;
+    &lt;ul&gt;
+    &lt;li&gt;反复尝试半小时才获得满意的...
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+
+&lt;a id=&quot;toc3R01YQ0FVR&quot; name=&quot;toc3R01YQ0FVR&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTE5JSFNOQ&#x27;&gt; 3. Py之 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+想嘗試Py 的思路...
+&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  py&quot;&gt;
+
+import sys,shutil
+if __name__ == &#x27;__main__&#x27;:      # this way the module can be
+    &#x27;&#x27;&#x27;usage:
+        $ ls *.mp3 | python rename-zh.py
+    &#x27;&#x27;&#x27;
+    if sys.stdin:
+        for l in sys.stdin.readlines():
+            shutil.copyfile(l[:-1], &quot;redStoneSoul-%s&quot;%l[6:-1])
+&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;好的,没有尝试,随手写来,3分钟搞掂
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;Python在Unix和Linux系统管理中的应用(影印版):&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;a href=&quot;http:&#x2F;&#x2F;book.douban.com&#x2F;subject&#x2F;3767034&#x2F;&quot;&gt;&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;2010&#x2F;s3876423-py4unix-linux-sa.jpg&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;&lt;&#x2F;a&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;ul&gt;
+&lt;li&gt;绝对好书! 值得慢慢看,E文非常简洁,Py清明的代码,直接看&#x2F;尝试就可以体会到本意了...
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;utility&#x2F;py4sys&#x2F;py4sa-rename-mp3s-2010-07-13-22-02.t2t --&gt;
+</content>
+</entry>
+</feed>

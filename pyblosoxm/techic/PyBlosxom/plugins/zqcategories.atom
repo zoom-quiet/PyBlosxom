@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/techic/PyBlosxom/plugins/zqcategories.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/techic/PyBlosxom/plugins/zqcategories.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/techic/PyBlosxom/plugins/zqcategories.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2011-08-31T15:22:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">zqcategories.py</title>
+<category term="" />
+<id>/pyblosxom/2011/08/31/zqcategories</id>
+<updated>2011-08-31T15:22:00Z</updated>
+<published>2011-08-31T15:22:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/PyBlosxom/plugins/zqcategories.html" />
+<content type="html">&lt;pre class=&quot;brush: python&quot;&gt;# -*- coding: utf-8 -*-
+# vim: tabstop=4 shiftwidth=4
+&quot;&quot;&quot;
+- 仅仅要求可以根据指定顺序输出分类目录
+
+Walks through your blog root figuring out all the categories you have
+and how many entries are in each category.  It generates html with
+this information and stores it in the $categorylinks variable which
+you can use in your head or foot templates.
+
+You can format the output by setting &quot;category_begin&quot;, &quot;category_item&quot;,
+&quot;category_end&quot; and properties.
+
+Categories exist in a hierarchy.  &quot;category_start&quot; starts the category listing
+and is only used at the very beginning.  The &quot;category_begin&quot; property begins a 
+new category group and the &quot;category_end&quot; property ends that category group.  
+The &quot;category_item&quot; property is the template for each category item.  Then
+after all the categories are printed, &quot;category_finish&quot; ends the category
+listing.
+
+For example, the following properties will use &lt;ul&gt; to open a category, &lt;&#x2F;ul&gt;
+to close a category and &lt;li&gt; for each item:
+
+py[&quot;category_start&quot;] = &quot;&lt;ul&gt;&quot;
+py[&quot;category_begin&quot;] = &quot;&lt;li&gt;&lt;ul&gt;&quot;
+py[&quot;category_item&quot;] = r&#x27;&lt;li&gt;&lt;a href=&quot;%(base_url)s&#x2F;%(category_urlencoded)sindex&quot;&gt;%(category)s&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;&#x27;
+py[&quot;category_end&quot;] = &quot;&lt;&#x2F;li&gt;&lt;&#x2F;ul&gt;&quot;
+py[&quot;category_finish&quot;] = &quot;&lt;&#x2F;ul&gt;&quot;
+
+
+Another example, the following properties don&#x27;t have a begin or an end but
+instead use indentation for links and displays the number of entries in that
+category:
+
+py[&quot;category_start&quot;] = &quot;&quot;
+py[&quot;category_begin&quot;] = &quot;&quot;
+py[&quot;category_item&quot;] = r&#x27;%(indent)s&lt;a href=&quot;%(base_url)s&#x2F;%(category_urlencoded)sindex&quot;&gt;%(category)s&lt;&#x2F;a&gt; (%(count)d)&lt;br &#x2F;&gt;&#x27;
+py[&quot;category_end&quot;] = &quot;&quot;
+py[&quot;category_finish&quot;] = &quot;&quot;
+
+There are no variables available in the category_begin or category_end 
+templates.
+
+Available variables in the category_item template:
+
+  variable                 example                      datatype
+  ========                 =======                      ========
+  base_url                 http:&#x2F;&#x2F;joe.com&#x2F;blog&#x2F;         string
+  fullcategory_urlencoded  &#x27;dev&#x2F;pyblosxom&#x2F;status&#x2F;&#x27;      string
+  fullcategory             &#x27;dev&#x2F;pyblosxom&#x2F;status&#x2F;&#x27;      string (urlencoded)
+  category                 &#x27;status&#x2F;&#x27;                    string
+  category_urlencoded      &#x27;status&#x2F;&#x27;                    string (urlencoed)
+  flavour                  &#x27;html&#x27;                       string
+  count                    70                           int
+  indent                   &#x27;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&#x27;   string
+
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify,
+merge, publish, distribute, sublicense, and&#x2F;or sell copies of the
+Software, and to permit persons to whom the Software is furnished
+to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Copyright 2004, 2005, 2006 Will Guaraldi
+&quot;&quot;&quot;
+__author__ = &quot;Will Guaraldi - willg at bluesock dot org&quot;
+__version__ = &quot;$Id: zqcategories.py,v 2872b22e2ace 2011&#x2F;10&#x2F;27 07:08:25 zoomquiet+hg $&quot;
+__url__ = &quot;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;techic&#x2F;PyBlosxom&#x2F;plugins&#x2F;zqcategories.html&quot;
+#__url__ = &quot;http:&#x2F;&#x2F;pyblosxom.sourceforge.net&#x2F;&quot;
+__description__ = &quot;Builds a list of categories.&quot;
+
+from Pyblosxom import tools
+import re, os
+
+DEFAULT_START = r&#x27;&lt;ul class=&quot;categorygroup&quot;&gt;&#x27;
+DEFAULT_BEGIN = r&#x27;&lt;li&gt;&lt;ul class=&quot;categorygroup&quot;&gt;&#x27;
+DEFAULT_ITEM = r&#x27;&lt;li&gt;&lt;a href=&quot;%(base_url)s&#x2F;%(fullcategory_urlencoded)sindex.%(flavour)s&quot;&gt;%(category)s&lt;&#x2F;a&gt; (%(count)d)&lt;&#x2F;li&gt;&#x27;
+DEFAULT_END = &quot;&lt;&#x2F;ul&gt;&lt;&#x2F;li&gt;&quot;
+DEFAULT_FINISH = &quot;&lt;&#x2F;ul&gt;&quot;
+DEFAULT_ROOT = []
+
+def verify_installation(request):
+    config = request.getConfiguration()
+    if not config.has_key(&quot;category_template&quot;):
+        print &quot;missing optional config property &#x27;category_template&#x27; which allows &quot;
+        print &quot;you to specify how the category hierarchy is rendered.  see&quot;
+        print &quot;the documentation at the top of the pycategories plugin code &quot;
+        print &quot;file for more details.&quot;
+    return 1
+
+class PyblCategories:
+    def __init__(self, request):
+        self._request = request
+        self._categories = None
+        config = self._request.getConfiguration()
+        self._baseurl = config.get(&quot;base_url&quot;, &quot;&quot;)
+
+        self.genCategories()
+
+
+    def __str__(self):
+        if self._categories == None:
+            self.genCategories()
+        return self._categories
+
+    def genCategories(self):
+        config = self._request.getConfiguration()
+        root = config[&quot;datadir&quot;]
+
+        start_t = config.get(&quot;category_start&quot;, DEFAULT_START)
+        begin_t = config.get(&quot;category_begin&quot;, DEFAULT_BEGIN)
+        item_t = config.get(&quot;category_item&quot;, DEFAULT_ITEM)
+        end_t = config.get(&quot;category_end&quot;, DEFAULT_END)
+        finish_t = config.get(&quot;category_finish&quot;, DEFAULT_FINISH)
+        #zoomq: configed order by mind the catrgorise
+        root_path_list = config.get(&quot;category_root_list&quot;, DEFAULT_ROOT)
+
+        cfgBaseUrl = config.get(&quot;base_url&quot;, &quot;&quot;)
+
+        form = self._request.getForm()
+        flavour = (form.has_key(&#x27;flav&#x27;) and form[&#x27;flav&#x27;].value or 
+            config.get(&#x27;default_flavour&#x27;, &#x27;html&#x27;))
+        #print flavour
+
+        # build the list of all entries in the datadir
+        output = &quot;&quot;
+        #@others
+        if 0==len(root_path_list):  #as default walk and export Categories as word order 
+            elist = tools.Walk(self._request, root)
+            output += self._subCategories(elist,root,&quot;&quot;)
+        else:
+            for rootCategory in root_path_list:
+                subroot = &quot;%s&#x2F;%s&quot;%(root,rootCategory)
+                self._baseurl = &quot;%s&#x2F;%s&quot;%(cfgBaseUrl,rootCategory)
+                elist = tools.Walk(self._request, subroot)
+                output += self._subCategories(elist,subroot,rootCategory)
+
+        # then we join the list and that&#x27;s the final string
+        #self._categories = &quot;\n&quot;.join(output)
+        self._categories = output
+
+    def _subCategories(self,elist,root,rootname):
+        config = self._request.getConfiguration()
+        form = self._request.getForm()
+        flavour = (form.has_key(&#x27;flav&#x27;) and form[&#x27;flav&#x27;].value or 
+            config.get(&#x27;default_flavour&#x27;, &#x27;html&#x27;))
+        start_t = config.get(&quot;category_start&quot;, DEFAULT_START)
+        begin_t = config.get(&quot;category_begin&quot;, DEFAULT_BEGIN)
+        item_t = config.get(&quot;category_item&quot;, DEFAULT_ITEM)
+        end_t = config.get(&quot;category_end&quot;, DEFAULT_END)
+        finish_t = config.get(&quot;category_finish&quot;, DEFAULT_FINISH)
+
+        # peel off the root dir from the list of entries
+        elist = [mem[len(root)+1:] for mem in elist]
+
+        # go through the list of entries and build a map that
+        # maintains a count of how many entries are in each 
+        # category
+        elistmap = {}
+        for mem in elist:
+            mem = os.path.dirname(mem)
+            elistmap[mem] = 1 + elistmap.get(mem, 0)
+        self._elistmap = elistmap
+        #print self._elistmap
+        # go through the elistmap keys (which is the list of
+        # categories) and for each piece in the key (i.e. the key
+        # could be &quot;dev&#x2F;pyblosxom&#x2F;releases&quot; and the pieces would
+        # be &quot;dev&quot;, &quot;pyblosxom&quot;, and &quot;releases&quot;) we build keys
+        # for the category list map (i.e. &quot;dev&quot;, &quot;dev&#x2F;pyblosxom&quot;,
+        # &quot;dev&#x2F;pyblosxom&#x2F;releases&quot;)
+        clistmap = {}
+        for mem in elistmap.keys():
+            mem = mem.split(os.sep)
+            for index in range(len(mem)+1):
+                p = os.sep.join(mem[0:index])
+                clistmap[p] = 0
+
+        # then we take the category list from the clistmap and
+        # sort it alphabetically
+        clist = clistmap.keys()
+        clist.sort()
+
+        output = []
+        indent = 0
+
+        output.append(start_t)
+        # then we generate each item in the list
+        for item in clist:
+            itemlist = item.split(os.sep)
+
+            num = 0
+            for key in self._elistmap.keys():
+                if item == &#x27;&#x27; or key == item or key.startswith(item + os.sep):
+                    num = num + self._elistmap[key]
+
+            if not item:
+                tab = &quot;&quot;
+            else:
+                tab = len(itemlist) * &quot;&amp;nbsp;&amp;nbsp;&quot;
+
+            if indent &gt; len(itemlist):
+                for i in range(indent - len(itemlist)):
+                    output.append(end_t)
+
+            elif indent &lt; len(itemlist):
+                for i in range(len(itemlist) - indent):
+                    output.append(begin_t)
+
+            # now we build the dict with the values for substitution
+            d = { &quot;base_url&quot;:     self._baseurl, 
+                  &quot;fullcategory&quot;: item + &quot;&#x2F;&quot;, 
+                  &quot;category&quot;:     itemlist[-1] + &quot;&#x2F;&quot;, 
+                  &quot;flavour&quot;:      flavour,
+                  &quot;count&quot;:        num,
+                  &quot;indent&quot;:       tab }
+
+            # this prevents a double &#x2F; in the root category url
+            if item == &quot;&quot;:
+                d[&quot;fullcategory&quot;] = item
+            #print d
+            # this adds urlencoded versions
+            d[&quot;fullcategory_urlencoded&quot;] = tools.urlencode_text(d[&quot;fullcategory&quot;])
+            d[&quot;category_urlencoded&quot;] = tools.urlencode_text(d[&quot;category&quot;])
+
+            # and we toss it in the thing
+            output.append(item_t % d)
+
+            indent = len(itemlist)
+
+        output.append(end_t * indent)
+        output.append(finish_t)
+        # export define item&#x27;s name
+        output[2] = output[2].replace(&quot;&gt;&#x2F;&lt;&#x2F;a&gt;&quot;,&quot; class=&#x27;rootcategory&#x27;&gt;%s&#x2F;&lt;&#x2F;a&gt;&quot;%rootname)
+        return &quot;\n&quot;.join(output)
+def cb_prepare(args):
+    request = args[&quot;request&quot;]
+    data = request.getData()
+    data[&quot;categorylinks&quot;] = PyblCategories(request)
+
+&lt;&#x2F;pre&gt;</content>
+</entry>
+</feed>

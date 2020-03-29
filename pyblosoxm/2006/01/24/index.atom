@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/2006/01/24/index.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/2006/01/24/index.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/2006/01/24/index.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2006-01-24T15:23:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">[hack6]SNS化</title>
+<category term="/techic/PyBlosxom" />
+<id>/pyblosxom/2006/01/24/PyblosxomFixLog6-2006-01-24-23-23</id>
+<updated>2006-01-24T15:23:00Z</updated>
+<published>2006-01-24T15:23:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/PyBlosxom/PyblosxomFixLog6-2006-01-24-23-23.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopTE5VR0NZM&#x27; id=&#x27;toptopTE5VR0NZM&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;[hack6]SNS化&lt;&#x2F;h1&gt;
+&lt;h2&gt;社会化软件增强&lt;&#x2F;h2&gt;
+&lt;h3&gt;t2t渲染:2010-10-09 02:21:38&lt;&#x2F;h3&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;dl&gt;
+&lt;dt&gt;火热的 Web2.0beta&lt;&#x2F;dt&gt;&lt;dd&gt;
+    有定义图&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;web2.0defining.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;;来自&lt;a href=&quot;http:&#x2F;&#x2F;www.flickr.com&#x2F;photos&#x2F;kosmar&#x2F;88198896&#x2F;&quot;&gt;kosmar&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;嗬嗬！还有&lt;a href=&quot;http:&#x2F;&#x2F;www.flickr.com&#x2F;photos&#x2F;kosmar&#x2F;62381076&#x2F;in&#x2F;set-1371686&#x2F;&quot;&gt;标记版本的Web2.0&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;新版本的::&lt;a href=&quot;http:&#x2F;&#x2F;www.flickr.com&#x2F;photos&#x2F;kosmar&#x2F;88198896&#x2F;in&#x2F;set-1371686&#x2F;&quot;&gt;Netz2.0&lt;&#x2F;a&gt;
+    &lt;p&gt;&lt;&#x2F;p&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;&lt;a href=&quot;http:&#x2F;&#x2F;blog.timetide.net&#x2F;archives&#x2F;2005&#x2F;01&#x2F;15&#x2F;20050115015808.php&quot;&gt;Folksonomy&lt;&#x2F;a&gt;&lt;&#x2F;dt&gt;&lt;dd&gt;
+  分众分类！
+  &lt;ul&gt;
+  &lt;li&gt;PyBlosxom 如何支持呢？
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;Google it!::&lt;a href=&quot;http:&#x2F;&#x2F;www.timfanelli.com&#x2F;item&#x2F;42&quot;&gt;Folksonomy 1.2&lt;&#x2F;a&gt;
+   &lt;ul&gt;
+   &lt;li&gt;很中意哪！类似del.icio.us 的TAGs 分重效果哪！
+   &lt;&#x2F;li&gt;
+   &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;唉呀呀？！作者的Blog 怎么是&lt;a href=&quot;http:&#x2F;&#x2F;blosxonomy.com&#x2F;&quot;&gt;&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;pb_blosxonomy.gif&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;&lt;&#x2F;a&gt; ,还以为是PyBlosxom的,
+  又一个Ruby 的&lt;a href=&quot;http:&#x2F;&#x2F;blosxom.com&#x2F;&quot;&gt;blosxom&lt;&#x2F;a&gt; clone!
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;看来 &lt;a href=&quot;http:&#x2F;&#x2F;blosxom.com&#x2F;&quot;&gt;blosxom&lt;&#x2F;a&gt;&lt;b&gt;“简单即是美”&lt;&#x2F;b&gt;
+  的设计感化了不少程序员哪！
+   &lt;ul&gt;
+   &lt;li&gt;&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;blosxonomy.com&#x2F;&quot;&gt;Simply put: It&#x27;s a Zen thing...&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+   &lt;&#x2F;li&gt;
+   &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;可惜，安装失败！ N多的报错！想来此次PyBlosxom 的升级造成的修改还要有段时间的磨合
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;再Google!::从&lt;a href=&quot;http:&#x2F;&#x2F;copia.ogbuji.net&#x2F;blog&#x2F;Keywords_on_Copia&quot;&gt;Keywords on Copia&lt;&#x2F;a&gt;知道了&lt;a href=&quot;http:&#x2F;&#x2F;llimllib.f2o.org&#x2F;blog&#x2F;serve&#x2F;entry&#x2F;keyword_update.html&quot;&gt;Keywords Plugin&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;依然安装不能！呜乎哀哉…………
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;technorati-over.gif&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;OpenSource&quot;&gt;OpenSource&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;PyBlosxom&quot;&gt;PyBlosxom&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;hacking&quot;&gt;hacking&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;SNS&quot;&gt;SNS&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;techic&#x2F;PyBlosxom&#x2F;PyblosxomFixLog6-2006-01-24-23-23.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">MD5使用快记</title>
+<category term="/utility/zqlib" />
+<id>/pyblosxom/2006/01/24/MD5-2006-01-24-23-23</id>
+<updated>2006-01-24T15:23:00Z</updated>
+<published>2006-01-24T15:23:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/utility/zqlib/MD5-2006-01-24-23-23.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopSlZDRExaR&#x27; id=&#x27;toptopSlZDRExaR&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;MD5使用快记&lt;&#x2F;h1&gt;
+&lt;h2&gt;ZoomQuiet&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;dl&gt;
+&lt;dt&gt;&lt;a href=&quot;http:&#x2F;&#x2F;a-010.cyut.edu.tw&#x2F;~vote&#x2F;md5.php&quot;&gt;MD5&lt;&#x2F;a&gt;&lt;&#x2F;dt&gt;&lt;dd&gt;
+  ( Message-Digest algorithm 5) 
+  MD5作为一个单向混淆算法，即不易以逆向运算得到原始资料
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;b&gt;Pythonic 的使用:&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  shell&quot;&gt;
+
+Python 2.4.1 (#65, Mar 30 2005, 09:13:57) [MSC v.1310 32 bit (Intel)] on win32
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&amp;gt;&amp;gt;&amp;gt; import md5
+&amp;gt;&amp;gt;&amp;gt; dir(md5)
+[&#x27;MD5Type&#x27;, &#x27;__doc__&#x27;, &#x27;__name__&#x27;, &#x27;digest_size&#x27;, &#x27;md5&#x27;, &#x27;new&#x27;]
+&amp;gt;&amp;gt;&amp;gt; md5.md5(文件)
+&amp;lt;md5.md5 object at 0x00B83800&amp;gt;
+&amp;gt;&amp;gt;&amp;gt; md=md5.md5(文件)
+&amp;gt;&amp;gt;&amp;gt; dir(md)
+[&#x27;copy&#x27;, &#x27;digest&#x27;, &#x27;hexdigest&#x27;, &#x27;update&#x27;]
+&amp;gt;&amp;gt;&amp;gt; md.hexdigest()
+&#x27;50235d71d6aa33a2be8d8bfbb1e87b91&#x27;
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;
+嗯哪……
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;ul&gt;
+&lt;li&gt;动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;t2t渲染:: 2011-09-07 03:51:34
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;technorati-over.gif&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;chinese&quot;&gt;chinese&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;OpenSource&quot;&gt;OpenSource&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;pythonic&quot;&gt;pythonic&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;md5&quot;&gt;md5&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags MD5-2006-01-24-23-23.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">[hack5]样式！</title>
+<category term="/techic/PyBlosxom" />
+<id>/pyblosxom/2006/01/24/PyblosxomFixLog5-2006-01-24-23-23</id>
+<updated>2006-01-24T15:23:00Z</updated>
+<published>2006-01-24T15:23:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/PyBlosxom/PyblosxomFixLog5-2006-01-24-23-23.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopTE5VR0NZM&#x27; id=&#x27;toptopTE5VR0NZM&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;[hack5]样式！&lt;&#x2F;h1&gt;
+&lt;h2&gt;颜色系统...FT!&lt;&#x2F;h2&gt;
+&lt;h3&gt;t2t渲染:2010-10-09 02:21:38&lt;&#x2F;h3&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0IyR&quot;&gt;设计&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc2R0lYQ0IyR&quot;&gt;进行&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc3R01YQ0JaV&quot;&gt;教训&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc4R1FYQ0FWQ&quot;&gt;TODO&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0IyR&quot; name=&quot;toc1R0VYQ0IyR&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTE5VR0NZM&#x27;&gt; 1. 设计 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+VI系统现在已经算是门手艺了！在下不行！
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+但是可以偷哪！
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+以往各种喜欢的网站，都不太吻合心目中的Blogging space ..
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+原先想直接 clone Vim 的 desert 颜色系统的…………
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+但是突然记起了:&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;services.deviantart.com&#x2F;&quot;&gt;deviantart&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;snap060126-deviantart-top.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;snap060126-deviantart-abt.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+所以....
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc2R0lYQ0IyR&quot; name=&quot;toc2R0lYQ0IyR&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTE5VR0NZM&#x27;&gt; 2. 进行 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;dl&gt;
+&lt;dt&gt;抓取颜色！&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;www.redalt.com&#x2F;Tools&#x2F;ilyc.php&quot;&gt;I Like Your Colors!&lt;&#x2F;a&gt; 
+    塞上CSS的URL;
+    自动获取&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;snap060126-ilikeurcolor.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt; 颜色列表,
+    然后就挥舞CSS就好！
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;Flavours的配合&lt;&#x2F;dt&gt;&lt;dd&gt;
+    这个比较自然，就是在&lt;b&gt;适当的&lt;&#x2F;b&gt;地方，加上&lt;b&gt;适当的&lt;&#x2F;b&gt;
+    &lt;b&gt;class 或是 id&lt;&#x2F;b&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;适当的……&lt;&#x2F;dt&gt;&lt;dd&gt;
+    怎么样是适当的呢？
+    &lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;plone.org&#x2F;&quot;&gt;Plone&lt;&#x2F;a&gt;&lt;&#x2F;b&gt; 模板的DIV 层叠设计就非常的合理，
+    以前设计过 &lt;a href=&quot;http:&#x2F;&#x2F;www.czug.org&#x2F;about&#x2F;art&#x2F;zoomq&quot;&gt;CZUG.org&lt;&#x2F;a&gt; 的样式
+    ，所以有些体会…………
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;p&gt;
+&lt;i&gt;但是………………&lt;&#x2F;i&gt;
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc3R01YQ0JaV&quot; name=&quot;toc3R01YQ0JaV&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTE5VR0NZM&#x27;&gt; 3. 教训 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;dl&gt;
+&lt;dt&gt;&lt;a href=&quot;http:&#x2F;&#x2F;pyblosxom.sourceforge.net&#x2F;blog&#x2F;registry&#x2F;flavours&#x2F;MainlyGreen&quot;&gt;MainlyGreen&lt;&#x2F;a&gt;&lt;&#x2F;dt&gt;&lt;dd&gt;
+    此样式，的排版非常古怪，折腾了半天，越调越乱；
+    最后还是调出&lt;a href=&quot;http:&#x2F;&#x2F;www.donews.net&#x2F;ZoomQuiet&quot;&gt;自个儿donews&lt;&#x2F;a&gt; 的样式
+    , 使用 69%-25% 的百分比来组织版块。
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;教训:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ol&gt;
+    &lt;li&gt;CSS 和代码开发一样，没有理解就不能尝试
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;CSS 的增长比代码还要快,所以最后应该进行精简
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;CSS2 对IE的兼容性，就不要折腾了，先调试FireFox 再 Opera,最后看IE 再不成，就直接禁止IE访问吧…………
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc4R1FYQ0FWQ&quot; name=&quot;toc4R1FYQ0FWQ&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTE5VR0NZM&#x27;&gt; 4. TODO &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;dl&gt;
+&lt;dt&gt;&lt;a href=&quot;http:&#x2F;&#x2F;diveintoaccessibility.org&#x2F;&quot;&gt;Dive Into Accessibility&lt;&#x2F;a&gt;&lt;&#x2F;dt&gt;&lt;dd&gt;
+    中文版本:&lt;a href=&quot;http:&#x2F;&#x2F;dia.z6i.org&#x2F;cn&#x2F;&quot;&gt;网站亲和力&lt;&#x2F;a&gt;;
+    &lt;ul&gt;
+    &lt;li&gt;网站可访问性的官方网站
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;还要继续优化VI
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;现在的问题主要在于:
+        &lt;ol&gt;
+        &lt;li&gt;颜色太个性，没有考虑到 弱视力访问者
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;导航太个性，没有考虑到 特殊访问者
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;功能没有完全，不能整体来调优 VI
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ol&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;p&gt;
+&lt;b&gt;VI 是艺术性科学,是挑战，要学习……&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;technorati-over.gif&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;OpenSource&quot;&gt;OpenSource&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;PyBlosxom&quot;&gt;PyBlosxom&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;hacking&quot;&gt;hacking&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;techic&#x2F;PyBlosxom&#x2F;PyblosxomFixLog5-2006-01-24-23-23.t2t --&gt;
+</content>
+</entry>
+</feed>

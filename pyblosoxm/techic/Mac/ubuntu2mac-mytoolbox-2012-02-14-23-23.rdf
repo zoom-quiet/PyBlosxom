@@ -1,0 +1,356 @@
+<?xml version="1.0"?>
+<!DOCTYPE content [ <!ENTITY nbsp " "> ]>
+<rdf:RDF xml:base="/pyblosxom/rdf"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<rdf:Description rdf:about="/pyblosxom">
+  <dc:title> Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup> </dc:title>
+  <dc:description> Zoom.Quiet's PyBlosxom blogging </dc:description>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+</rdf:Description>
+
+<rdf:Description rdf:about="/pyblosxom/techic/Mac/ubuntu2mac-mytoolbox-2012-02-14-23-23">
+  <dc:title> 从 Ubuntu 到 MBP </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2012-02-14T15:23:00Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <div class="header" id="header">
+<a name='toptopNFM1WTRJQ' id='toptopNFM1WTRJQ'></a><h1>从 Ubuntu 到 MBP</h1>
+<h2>--我的工具箱迁移</h2>
+</div>
+
+<div class="toc" id="toc">
+</div>
+<div class="body" id="body">
+<p>
+是也乎, Ubuntu 和 MBP 不是同种事物吼
+</p>
+<ul>
+<li>不过 Ubuntu 作为操作系统,可以安装在几乎任何硬件中
+</li>
+<li>但是, OS X 只有在 Apple 硬件上,才真心自在
+<p></p>
+所以,,,,
+<p></p>
+出于各种原因, 111216 在澳门专卖店,老婆赞助之下,入手俺第一台个人笔记本:
+<p></p>
+</li>
+<li>MacBook Pro(15吋)
+</li>
+<li>2.2 GHz 四核 Intel Core i7
+</li>
+<li>8 GB 1333 MHz DDR3(自购4G)
+</li>
+<li>500GB 5400-rpm
+</li>
+<li>Mac OS X Lion 10.7.3 Lion (自动从10.7.2升级的)
+</li>
+</ul>
+
+<p>
+而之前使用的是公司配置的 联想 x200商用笔记本,安装的是 Ubunru 10.04.4 LTS(Gutsy Gibbon);
+更早先,2006年之前,是Dell 的商务本,安装windows2003服务器版;
+</p>
+<p>
+虽然作的事儿一直没有怎么变化,但是,日用环境的变迁,令俺对工具箱有着不同的选择.
+因为,很早水决心迁移出 M$ 环境的,所以,软件的组合,一直偏向跨平台,FLOSS软件;
+</p>
+<p>
+倒是入 MAC 完全有点意外,工具的迁移有点小波折,特此,以系列文章形式记要一下;
+</p>
+<table border="1">
+<tr>
+<th>对比\内容</th>
+<th>~2006</th>
+<th>~2011</th>
+<th>2012~</th>
+</tr>
+<tr>
+<th>OS</th>
+<th>Windows</th>
+<th>Ubuntu</th>
+<th>MAC</th>
+</tr>
+<tr>
+<td align="center" colspan="4">&gt;&gt;&gt; abt.输入 &lt;&lt;&lt;</td>
+</tr>
+<tr>
+<td align="right">浏览器</td>
+<td>SwiftFox</td>
+<td>SwiftFox</td>
+<td>FireFox</td>
+</tr>
+<tr>
+<td align="right">资料收集</td>
+<td>ScrapBook</td>
+<td>ScrapBook</td>
+<td>ScrapBook</td>
+</tr>
+<tr>
+<td align="right">视频回放</td>
+<td>MPlayer</td>
+<td>MPlayer</td>
+<td>MPlayer</td>
+</tr>
+<tr>
+<td align="right">email</td>
+<td>Thunderbird+Gmail</td>
+<td>Thunderbird+Gmail</td>
+<td>Gmail</td>
+</tr>
+<tr>
+<td align="right"><b>pdf</b></td>
+<td>FoxitReader</td>
+<td>Document View</td>
+<td>Skim</td>
+</tr>
+<tr>
+<td align="right"><b>chm</b></td>
+<td>内置</td>
+<td>CHM Reader(FF插件)</td>
+<td>Enolsoft CHM View|</td>
+</tr>
+<tr>
+<td align="right"><b>漫画阅读</b></td>
+<td>ComicsViewer</td>
+<td>Comix</td>
+<td>Simple Comic</td>
+</tr>
+<tr>
+<td align="right"><b>文本阅读</b></td>
+<td>ReadBook</td>
+<td>LiteBook2</td>
+<td>EPUBReader</td>
+</tr>
+<tr>
+<td align="right"><b>音乐播放</b></td>
+<td>foobar2000</td>
+<td>Moc</td>
+<td>Cmus</td>
+</tr>
+<tr>
+<td align="right"><b>图片浏览</b></td>
+<td>IrfanView</td>
+<td>Geeqie</td>
+<td>Xee</td>
+</tr>
+<tr>
+<td align="right"><b>笔记</b></td>
+<td>Leo</td>
+<td>Zim+Leo</td>
+<td>Notational Velocity+Leo</td>
+</tr>
+<tr>
+<td align="right"><b>辞典</b></td>
+<td>星际译王</td>
+<td>星际译王</td>
+<td>内置(外挂星际译王词库)</td>
+</tr>
+<tr>
+<td align="center" colspan="4">&gt;&gt;&gt; abt.思考 &lt;&lt;&lt;</td>
+</tr>
+<tr>
+<td align="right">思维导图</td>
+<td>FreeMind</td>
+<td>XMind</td>
+<td>Xmind</td>
+</tr>
+<tr>
+<td align="right">关系图谱</td>
+<td>Graphviz</td>
+<td>Graphviz</td>
+<td>Graphviz</td>
+</tr>
+<tr>
+<td align="right"><b>UML</b></td>
+<td>JUDE</td>
+<td>JUDE</td>
+<td>websequencediagrams.com</td>
+</tr>
+<tr>
+<td align="right"><b>antiRSI</b></td>
+<td>Workrave</td>
+<td>Workrave</td>
+<td>focus booster</td>
+</tr>
+<tr>
+<td align="center" colspan="4">&gt;&gt;&gt; abt.系统管理 &lt;&lt;&lt;</td>
+</tr>
+<tr>
+<td align="right">虚拟机</td>
+<td>NULL</td>
+<td>VirtualBox</td>
+<td>VirtualBox</td>
+</tr>
+<tr>
+<td align="right"><b>软件仓库</b></td>
+<td>NULL(可悲!)</td>
+<td>apt</td>
+<td>brew</td>
+</tr>
+<tr>
+<td align="right"><b>版本管理</b></td>
+<td>CVS+SVN</td>
+<td>SVN+Hg</td>
+<td>Hg+git</td>
+</tr>
+<tr>
+<td align="right"><b>输入法</b></td>
+<td>BXM</td>
+<td>SCIM(外挂BXM)</td>
+<td>IMKQIM(外挂BXM)</td>
+</tr>
+<tr>
+<td align="right"><b>终端</b></td>
+<td>Putty</td>
+<td>Gnome 终端</td>
+<td>iTerm 2</td>
+</tr>
+<tr>
+<td align="right"><b>文件管理</b></td>
+<td>Total Commander</td>
+<td>gnome-commder</td>
+<td>muCommander</td>
+</tr>
+<tr>
+<td align="right"><b>CPU分享</b></td>
+<td>BINC</td>
+<td>BINC</td>
+<td>BINC</td>
+</tr>
+<tr>
+<td align="center" colspan="4">&gt;&gt;&gt; abt.输出 &lt;&lt;&lt;</td>
+</tr>
+<tr>
+<td align="right">办公</td>
+<td>OOo</td>
+<td>OOo</td>
+<td>OOo</td>
+</tr>
+<tr>
+<td align="right">幻灯</td>
+<td>OOo</td>
+<td>S5</td>
+<td>rst2S5</td>
+</tr>
+<tr>
+<td align="right">文档</td>
+<td>t2t/rst</td>
+<td>t2t/rst</td>
+<td>t2t/rst</td>
+</tr>
+<tr>
+<td align="right"><b>在线写作</b></td>
+<td><a href="http://docwhat.org/2007/03/its_all_text_v06/">It’s All Text!</a></td>
+<td><a href="http://docwhat.org/2007/03/its_all_text_v06/">It’s All Text!</a></td>
+<td><a href="http://docwhat.org/2007/03/its_all_text_v06/">It’s All Text!</a></td>
+</tr>
+<tr>
+<td align="right">图片管理</td>
+<td>Picasa</td>
+<td>Picasa</td>
+<td>Picasa</td>
+</tr>
+<tr>
+<td align="right">图形设计</td>
+<td>Inkscape</td>
+<td>Inkscape</td>
+<td>Inkscape</td>
+</tr>
+<tr>
+<td align="right">图像处理</td>
+<td>GIMP</td>
+<td>GIMP</td>
+<td>GIMP</td>
+</tr>
+<tr>
+<td align="right">视频处理</td>
+<td>ffmpeg</td>
+<td>ffmpeg</td>
+<td>ffmpeg</td>
+</tr>
+<tr>
+<td align="right">音频编辑</td>
+<td>Audacity</td>
+<td>Audacity</td>
+<td>Audacity</td>
+</tr>
+<tr>
+<td align="right">视频编辑</td>
+<td>-</td>
+<td>Avidemux2</td>
+<td>Avidemux2</td>
+</tr>
+<tr>
+<td align="right">系统监察</td>
+<td>内置(弱!)</td>
+<td>内置+htop</td>
+<td>内置+atMonitor</td>
+</tr>
+<tr>
+<td align="right">中文字体</td>
+<td>wqy</td>
+<td>wqy</td>
+<td>wqy</td>
+</tr>
+<tr>
+<td align="right">编程字体</td>
+<td>Courier</td>
+<td>Monaco</td>
+<td>Incosolata</td>
+</tr>
+<tr>
+<td align="right"><b>编程</b></td>
+<td>UltraEdit+Leo</td>
+<td>GEdit+Leo</td>
+<td>Sublime Text2 / Emacs +Leo</td>
+</tr>
+<tr>
+<td align="right">IM</td>
+<td>Pidgin+Skype</td>
+<td>Pidgin+Skype</td>
+<td>Aduim+QQ</td>
+</tr>
+</table>
+
+<p>
+可以看到,近7成的软件,根本不用迁移,可以直接使用!-)
+</p>
+<ul>
+<li>这就是开源的伟力之一!
+</li>
+<li>当然,有几个核心常用软件是有一定挣扎才迁移过来的,,,
+</li>
+</ul>
+
+<p>
+接下来,将对其中比较折腾的进行逐一回顾,,,
+</p>
+<hr class="light" />
+<ul>
+<li>动力源自::<b><a href="http://txt2tags.sf.net">txt2tags</a></b>
+</li>
+<li>t2t渲染:: 2012-03-19 04:28:55
+</li>
+</ul>
+
+</div>
+
+<!-- xhtml code generated by txt2tags 2.4 (http://txt2tags.sf.net) -->
+<!-- cmdline: txt2tags ubuntu2mac-mytoolbox-2012-02-14-23-23.t2t -->
+
+  </content>
+
+  <rdf:Seq>
+
+  </rdf:Seq>
+</rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/2006/09/16/index.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/2006/09/16/index.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/2006/09/16/index.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2006-09-16T05:30:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">“国际自由软件日”之头脑风暴</title>
+<category term="/Zen/Chinese" />
+<id>/pyblosxom/2006/09/16/OFSFD06-2006-09-16-13-30</id>
+<updated>2006-09-16T05:30:00Z</updated>
+<published>2006-09-16T05:30:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/Zen/Chinese/OFSFD06-2006-09-16-13-30.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopNEtBSlpaT&#x27; id=&#x27;toptopNEtBSlpaT&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;“国际自由软件日”之头脑风暴&lt;&#x2F;h1&gt;
+&lt;h2&gt;--没有风暴起来的OFSFDay&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0JaT&quot;&gt;动机&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc2R0lYQ0JaV&quot;&gt;流水账&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc3R0lYRENMU&quot;&gt;2.1. 体验&lt;&#x2F;a&gt;
+      &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#toc4R0lYRENMU&quot;&gt;2.1.1. 个人观点&lt;&#x2F;a&gt;
+      &lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc5R0lYREVMU&quot;&gt;2.2. 照片&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;p&gt;
+&lt;a href=&quot;http:&#x2F;&#x2F;it.solidot.org&#x2F;article.pl?sid=06&#x2F;09&#x2F;11&#x2F;0635236&quot;&gt;9月16日，世界“软件自由日”&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+ &lt;ul&gt;
+ &lt;li&gt;中国第一次由CSDN 组织:&lt;a href=&quot;http:&#x2F;&#x2F;news.csdn.net&#x2F;n&#x2F;20060911&#x2F;94604.html&quot;&gt;CSDN F2F俱乐部活动&lt;&#x2F;a&gt;
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+
+&lt;p&gt;
+无责任报道 060916 13:30~17:43 如下:
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc1R0VYQ0JaT&quot; name=&quot;toc1R0VYQ0JaT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopNEtBSlpaT&#x27;&gt; 1. 动机 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+俺是怀着以下疑问来参加活动的:
+&lt;&#x2F;p&gt;
+    &lt;ol&gt;
+    &lt;li&gt;&quot;软件自由日&quot;可观察到政府的态度？
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;CSDN 对FLOSS 的态度？
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;北京大学这样的中国最高学府对FLOSS 的态度？
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+
+&lt;a id=&quot;toc2R0lYQ0JaV&quot; name=&quot;toc2R0lYQ0JaV&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopNEtBSlpaT&#x27;&gt; 2. 流水账 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;12:35出发,自行车
+&lt;&#x2F;li&gt;
+&lt;li&gt;12:55到理想国际，修整一下
+&lt;&#x2F;li&gt;
+&lt;li&gt;13:15 到达会场
+&lt;&#x2F;li&gt;
+&lt;li&gt;13:30～13:50　　陆首群主席主题演讲
+&lt;pre&gt;
+  什么是OSS  严重的南方口音
+  &quot;业余软件工程师的聚集成果...&quot;
+  美国80%的公司使用OSS
+  欧洲70%的政府使用OSS
+  动员志愿者...
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;13:50~   北京大学软件与微电子学院 陈钟院长
+&lt;pre&gt;
+  去德国和全球开源软件开发者交流大会
+  IBM 组织的,体会到各种新奇的思想和成果
+  Google 等等大公司使用开源软件结构,令竞争对手难以评估负荷能力...
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;14:00~  OSFD 发起人,CSDN总裁 将涛:
+&lt;pre&gt;
+  CSDN 的目标,为中国程序员创立一个友好的信息交互平台
+  最好的学习方式,就是实践-&amp;gt; OSDN
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;14:20~　　袁萌教授主题演讲
+&lt;pre&gt;
+  OSS主席 语气激昂 近70岁!
+  &quot;自由软件在中国不能搞!只能开源软件!&quot; -- 2005年
+  自由软件日,10*10平方米就可以
+  开源软件有些商业味道
+  自由软件才是真正可以自由使用的软件
+  Ubuntu 的&quot;三要&quot;:
+    要为他人着想
+	要有礼貌
+	有有协作精神
+  软件的价值在于使用,使用的人越多价值才大
+  软件作为商品是种发明,但是对社会是有损
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;14:50～　　宫敏博士主题演讲
+&lt;pre&gt;
+  Turb0Linux 总裁
+  自由软件的精神....
+  如果一个公司可以对一个国家施加压力,这就是一种殖民行为!
+  关注软件的知识属性:
+    0: 软件是物化的知识
+	1: 知识有其发展的自我规律
+	2: ...
+  kernal 编译器 shell 等等的工作原理,在中国如果没有大量的人才积累,
+  就只能拉美化,印度化....
+  人民大学交流时的学生问题:
+    自由软件程序员的生存问题
+	...能力和影响力的成本问题
+	自由软件是民族国家独立发展的重要契机!
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;15:10～15:20　　休息　抽奖
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;15:20~  CSIP 陈伟
+&lt;pre&gt;
+  chenwei@csip.org.cn 13601136160
+  第三个国际软件自由日
+  软件独立供应商的开创,造就了现在80% 的垄断现象
+  FLOSS 统一名称 Free&#x2F;Libre&#x2F;OSS
+  自由与创新的精神:
+    专利通过独占利润,鼓励创新
+	自由通过交流促进创新
+  E-learnning : Moodel
+  知识产权问题:
+    专利,版权,商标,商业秘密,著作权
+  自由软件的国家之路:
+    国家态度! 国家级的策略
+	企业支持的环境
+	社区环境的促进:
+	  是开源软件的主要场所
+	  政府通过中立机制进行促进自由软件工程师的生存条件
+  自由&#x2F;开源软件产业化思考:
+    产业链的构筑 社区;分发者;捐助者...
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;16:30～　　自由软件协会联盟ubuntu计划介绍
+ &lt;ul&gt;
+ &lt;li&gt;linux.pku.edu.cn 以及海淀多个院校的FLOSS学生组织
+   &lt;ul&gt;
+   &lt;li&gt;有古老和经典的&lt;code&gt;`Lilnux Install Party`&lt;&#x2F;code&gt; 活动!
+   &lt;&#x2F;li&gt;
+   &lt;li&gt;但是从安装的系统看远没有进入 LFS&#x2F;Gentoo 等等Linux 核心系统的体验境界...
+   &lt;p&gt;&lt;&#x2F;p&gt;
+   &lt;&#x2F;li&gt;
+   &lt;&#x2F;ul&gt;
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;17:45 离开，没有等到传说中的 “国际软件自由日”头脑风暴——为中国自由软件献计献策！
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc3R0lYRENMU&quot; name=&quot;toc3R0lYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopNEtBSlpaT&#x27;&gt; 2.1. 体验 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;活动组织实体:&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;pre&gt;
+主办单位:
+  北京大学软件与微电子学院
+  OSS 中国开源软件推进联盟
+  程序員 杂志
+  OSDN社区
+支持单位:
+  SCIP信息产业部软件与集成电路促进中心
+  共创软件联盟
+  北京软件行业协会
+  CSDN网站
+&lt;&#x2F;pre&gt;
+  &lt;ul&gt;
+  &lt;li&gt;从背景的大幕布可以体味出，此次所谓 &lt;code&gt;`Software Freedom Day06`&lt;&#x2F;code&gt; --“国际软件自由日”
+    &lt;ul&gt;
+    &lt;li&gt;是政府背景的宣传活动
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+	&lt;blockquote&gt;
+	- 中国的民间自由&#x2F;开源组织根本没有被邀请和通知
+	&lt;&#x2F;blockquote&gt;
+  &lt;ul&gt;
+  &lt;li&gt;从活动的组织和进程看也和 &lt;code&gt;`SFDay`&lt;&#x2F;code&gt; 的原旨-- 向民众展示自由&#x2F;开源软件,没有关系
+    &lt;ul&gt;
+    &lt;li&gt;标准的中国式会议日程
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+
+	&lt;blockquote&gt;
+	- 主持方式还是综艺节目式的
+	- 只讲Linux&#x2F;Ubunt ,BSD 系列以及开发语言没有任何涉及...
+	&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;dl&gt;
+&lt;dt&gt;学者的风范:&lt;&#x2F;dt&gt;&lt;dd&gt;
+  &lt;ul&gt;
+  &lt;li&gt;先后8位人士的主题演讲,风格上有非常明显的差异:
+    &lt;ul&gt;
+    &lt;li&gt;语速和占用时间与演说者的身份地位呈严格的反比
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+	&lt;blockquote&gt;
+	- 凡是学识年龄越长的,语速越平和,内容也精小,偏向文化和精神探讨,旨才充分调动听众的思考
+	- 凡是年轻的,语速越快,内容也越丰富,有大量的资料辅助展示,偏向使用数据来吓唬住听众
+	&lt;&#x2F;blockquote&gt;
+  &lt;ul&gt;
+  &lt;li&gt;自由和开源
+    &lt;ul&gt;
+    &lt;li&gt;先后演讲过程中,以开源软件的市场发展为中心来强调的有6人
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+
+	&lt;blockquote&gt;
+	  - 其中再有2人提及自由软件和开源软件
+	&lt;&#x2F;blockquote&gt;
+    &lt;ul&gt;
+    &lt;li&gt;只有两位以自由软件的精神本质和国家核心竞争力来讲述自由&#x2F;开源软件活动的重要性
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+
+	&lt;blockquote&gt;
+	  - 袁萌教授,一直不懈的向各界说明自由的重要性,但是无法调合开源的可操作性竞争
+	  - 宫敏博士,作为程序员出身,从自身深切的感触强调自由开发的重要性,
+	  但是无法改变中国程序员的生存环境
+	&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;dl&gt;
+&lt;dt&gt;政府的态度:&lt;&#x2F;dt&gt;&lt;dd&gt;
+  &lt;ul&gt;
+  &lt;li&gt;CSIP -- &lt;code&gt;`信息产业部软件与集成电路促进中心`&lt;&#x2F;code&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;从名称上看,国家是软硬都渴望独立研发的,但是没敢说硬件,操作系统也没敢说,
+  仅仅强调了整个生态的支持
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc4R0lYRENMU&quot; name=&quot;toc4R0lYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h3&gt;&lt;A href=&#x27;#toptopNEtBSlpaT&#x27;&gt; 2.1.1. 个人观点 &lt;&#x2F;A&gt;&lt;&#x2F;h3&gt;
+&lt;dl&gt;
+&lt;dt&gt;自由和开源:&lt;&#x2F;dt&gt;&lt;dd&gt;
+  &lt;ul&gt;
+  &lt;li&gt;尽管国人意识到在自由软件运动方面中国迟了20年,但是并不关心自由和开源的差异,
+  仅仅是想趁FLOSS的东风,建立自个儿的软件体系
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;这只能是无源之泉:
+    &lt;ul&gt;
+    &lt;li&gt;只能理解开源模式的组织
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+	&lt;blockquote&gt;
+	- 是永远无法获得自由软件的动力的...
+	&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;dl&gt;
+&lt;dt&gt;中国的软件生态环境:&lt;&#x2F;dt&gt;&lt;dd&gt;
+  &lt;ul&gt;
+  &lt;li&gt;不论国家的策略&#x2F;政策&#x2F;机构等等是否积极支持,想简单的得到改善,是基本不可能的!
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;code&gt;`一切的根源在教育!`&lt;&#x2F;code&gt;
+    &lt;ul&gt;
+    &lt;li&gt;没有合理的教育机制
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;无法得到一定数量的合格程序员
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;没有足够数量的有能力的程序员就没有中国的核心软件企业群
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;没有核心软件企业群就没有中国的核心软件研发环境
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;没有中国的核心软件研发环境中国就只能永远作简单的应用软件研发
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;永远作应用软件研发的中国软件行业环境就不可能需要软件基础研发人员
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;不需要软件基础研发的行业环境怎么可能产生软件基础构件程序员?!
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;没有软件基础构件程序员的中国如何支撺的了良好的国家软件生态环境?!!!
+    &lt;p&gt;&lt;&#x2F;p&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;而且中国的民间自由软件社区从来没有进入国家的法眼怎么可能起到积极作用?!
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc5R0lYREVMU&quot; name=&quot;toc5R0lYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopNEtBSlpaT&#x27;&gt; 2.2. 照片 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;凤凰205E拍摄，需要冲印扫描，才可以发布，耐心准备ing...
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;technorati-over.gif&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;Zen&quot;&gt;Zen&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;Chinese&quot;&gt;Chinese&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;ul&gt;
+&lt;li&gt;t2t渲染:: 2010-10-09 02:21:35
+&lt;&#x2F;li&gt;
+&lt;li&gt;动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;Zen&#x2F;Chinese&#x2F;OFSFD06-2006-09-16-13-30.t2t --&gt;
+</content>
+</entry>
+</feed>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/2008/04/21/index.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/2008/04/21/index.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/2008/04/21/index.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2008-04-21T04:33:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">FF3</title>
+<category term="/oss/Mozilla/FireFox" />
+<id>/pyblosxom/2008/04/21/ff3pre-upgrade-ko-2008-04-21-12-33</id>
+<updated>2008-04-21T04:33:00Z</updated>
+<published>2008-04-21T04:33:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/oss/Mozilla/FireFox/ff3pre-upgrade-ko-2008-04-21-12-33.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopSVpEQT09P&#x27; id=&#x27;toptopSVpEQT09P&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;FF3&lt;&#x2F;h1&gt;
+&lt;h2&gt;--Ubuntu7.10 中使用 3.0pre&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0FSU&quot;&gt;FF3&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc2R0VYRENMU&quot;&gt;1.1. SwiftFox 3.0pre&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc3R0VYREVMU&quot;&gt;1.2. 探查&lt;&#x2F;a&gt;
+      &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#toc4R0VYREVMU&quot;&gt;1.2.1. 配置&lt;&#x2F;a&gt;
+      &lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc5R0VYREdMU&quot;&gt;1.3. 成了！&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0FSU&quot; name=&quot;toc1R0VYQ0FSU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopSVpEQT09P&#x27;&gt; 1. FF3 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+看周围M$ 用户都主动升迁到 FF2.0.0.14 超级稳定版本了，
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+但是Ubuntu7.10 的源中依然是 2.0.0.13+,有点郁rz..
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc2R0VYRENMU&quot; name=&quot;toc2R0VYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopSVpEQT09P&#x27;&gt; 1.1. SwiftFox 3.0pre &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+不过 SwiftFox 已到了 3.0pre!
+通过 apt 立即可以使用:
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc3R0VYREVMU&quot; name=&quot;toc3R0VYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopSVpEQT09P&#x27;&gt; 1.2. 探查 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+但是插件不能使用&lt;code&gt;Nightly Tester Tools&lt;&#x2F;code&gt; 轻易全开...
+ 使用 安全模式::
+&lt;&#x2F;p&gt;
+&lt;pre&gt;
+swiftfox -safe-mode
+&lt;&#x2F;pre&gt;
+ &lt;ul&gt;
+ &lt;li&gt;关闭所有 扩展和插件后，逐一尝试，确认最小可用组合::
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc4R0VYREVMU&quot; name=&quot;toc4R0VYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h3&gt;&lt;A href=&#x27;#toptopSVpEQT09P&#x27;&gt; 1.2.1. 配置 &lt;&#x2F;A&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;
+启用扩展： [16]
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Adblock Plus 0.7.5.4: &lt;a href=&quot;http:&#x2F;&#x2F;adblockplus.org&#x2F;&quot;&gt;http:&#x2F;&#x2F;adblockplus.org&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;CHM Reader 0.2.1.1: &lt;a href=&quot;http:&#x2F;&#x2F;sourceforge.net&#x2F;projects&#x2F;chmreader&#x2F;&quot;&gt;http:&#x2F;&#x2F;sourceforge.net&#x2F;projects&#x2F;chmreader&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Copy Link Name 1.2.5: &lt;a href=&quot;http:&#x2F;&#x2F;www.captaincaveman.nl&quot;&gt;http:&#x2F;&#x2F;www.captaincaveman.nl&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;DownThemAll! 1.0.1: &lt;a href=&quot;http:&#x2F;&#x2F;downthemall.net&#x2F;&quot;&gt;http:&#x2F;&#x2F;downthemall.net&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;FEBE 5.3.1: &lt;a href=&quot;http:&#x2F;&#x2F;customsoftwareconsult.com&#x2F;extensions&quot;&gt;http:&#x2F;&#x2F;customsoftwareconsult.com&#x2F;extensions&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Firefox Universal Uploader (fireuploader) 0.3.2: &lt;a href=&quot;http:&#x2F;&#x2F;www.fireuploader.com&quot;&gt;http:&#x2F;&#x2F;www.fireuploader.com&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;MLdonkey Protocol Handler 2.0: &lt;a href=&quot;http:&#x2F;&#x2F;www.informatik.uni-oldenburg.de&#x2F;~dyna&#x2F;mldonkey&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.informatik.uni-oldenburg.de&#x2F;~dyna&#x2F;mldonkey&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Nightly Tester Tools 1.3: &lt;a href=&quot;http:&#x2F;&#x2F;www.oxymoronical.com&#x2F;web&#x2F;firefox&#x2F;nightly&quot;&gt;http:&#x2F;&#x2F;www.oxymoronical.com&#x2F;web&#x2F;firefox&#x2F;nightly&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;NoScript 1.6: &lt;a href=&quot;http:&#x2F;&#x2F;noscript.net&quot;&gt;http:&#x2F;&#x2F;noscript.net&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;PDF Download 1.0.1.1: &lt;a href=&quot;http:&#x2F;&#x2F;www.pdfdownload.org&quot;&gt;http:&#x2F;&#x2F;www.pdfdownload.org&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Right Encoding 0.2.2: &lt;a href=&quot;http:&#x2F;&#x2F;heygom.com&#x2F;extensions&#x2F;&quot;&gt;http:&#x2F;&#x2F;heygom.com&#x2F;extensions&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;ScrapBook 1.3.3.2: &lt;a href=&quot;http:&#x2F;&#x2F;amb.vis.ne.jp&#x2F;mozilla&#x2F;scrapbook&#x2F;&quot;&gt;http:&#x2F;&#x2F;amb.vis.ne.jp&#x2F;mozilla&#x2F;scrapbook&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;SwiftTabs 0.3.3.1: &lt;a href=&quot;http:&#x2F;&#x2F;heygom.com&#x2F;extensions&#x2F;&quot;&gt;http:&#x2F;&#x2F;heygom.com&#x2F;extensions&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Tab Mix Plus 0.3.6.1.080416: &lt;a href=&quot;http:&#x2F;&#x2F;tmp.garyr.net&quot;&gt;http:&#x2F;&#x2F;tmp.garyr.net&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;ubufox 0.4~beta1: &lt;a href=&quot;http:&#x2F;&#x2F;www.google.com&#x2F;search?q=Firefox%20ubufox&quot;&gt;http:&#x2F;&#x2F;www.google.com&#x2F;search?q=Firefox%20ubufox&lt;&#x2F;a&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+禁用扩展： [35]
+&lt;&#x2F;li&gt;
+&lt;li&gt;Access Flickr! 1.71: &lt;a href=&quot;http:&#x2F;&#x2F;flickr.com&#x2F;photos&#x2F;hamed&quot;&gt;http:&#x2F;&#x2F;flickr.com&#x2F;photos&#x2F;hamed&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Add to Search Bar 1.7: &lt;a href=&quot;http:&#x2F;&#x2F;maltekraus.de&#x2F;Firefox&#x2F;search-tools&quot;&gt;http:&#x2F;&#x2F;maltekraus.de&#x2F;Firefox&#x2F;search-tools&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Autohide 1.1.5: &lt;a href=&quot;http:&#x2F;&#x2F;www.krickelkrackel.de&#x2F;autohide&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.krickelkrackel.de&#x2F;autohide&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Brookstone 0.0.2: &lt;a href=&quot;http:&#x2F;&#x2F;www.mobilebrook.com&quot;&gt;http:&#x2F;&#x2F;www.mobilebrook.com&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Chinese Simplified (zh-CN) Language Pack 2.0.0.7: &lt;a href=&quot;http:&#x2F;&#x2F;www.google.com&#x2F;search?q=Firefox%20Chinese%20Simplified%20%28zh-CN%29%20Language%20Pack&quot;&gt;http:&#x2F;&#x2F;www.google.com&#x2F;search?q=Firefox%20Chinese%20Simplified%20%28zh-CN%29%20Language%20Pack&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Classic Compact 3.0.6: &lt;a href=&quot;http:&#x2F;&#x2F;blog.environmentalchemistry.com&#x2F;2008&#x2F;03&#x2F;firefox-theme-classic-compact.html&quot;&gt;http:&#x2F;&#x2F;blog.environmentalchemistry.com&#x2F;2008&#x2F;03&#x2F;firefox-theme-classic-compact.html&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;ColorZilla 1.9: &lt;a href=&quot;http:&#x2F;&#x2F;www.colorzilla.com&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.colorzilla.com&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Compact Menu 2 2.0.3: &lt;a href=&quot;https:&#x2F;&#x2F;addons.mozilla.org&#x2F;firefox&#x2F;108029&#x2F;author&#x2F;&quot;&gt;https:&#x2F;&#x2F;addons.mozilla.org&#x2F;firefox&#x2F;108029&#x2F;author&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Copy Plain Text 0.3.3: &lt;a href=&quot;http:&#x2F;&#x2F;mozmonkey.com&#x2F;&quot;&gt;http:&#x2F;&#x2F;mozmonkey.com&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;CSSViewer 1.0.2: &lt;a href=&quot;http:&#x2F;&#x2F;www.google.com&#x2F;search?q=Firefox%20CSSViewer&quot;&gt;http:&#x2F;&#x2F;www.google.com&#x2F;search?q=Firefox%20CSSViewer&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;CustomizeGoogle 0.71: &lt;a href=&quot;http:&#x2F;&#x2F;www.customizegoogle.com&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.customizegoogle.com&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Fasterfox 2.0.0: &lt;a href=&quot;http:&#x2F;&#x2F;fasterfox.mozdev.org&#x2F;&quot;&gt;http:&#x2F;&#x2F;fasterfox.mozdev.org&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Firebug 1.05: &lt;a href=&quot;http:&#x2F;&#x2F;www.getfirebug.com&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.getfirebug.com&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;FlickrFox 1.3.0: &lt;a href=&quot;http:&#x2F;&#x2F;philmccluskey.com&#x2F;projects&#x2F;flickrfox&#x2F;&quot;&gt;http:&#x2F;&#x2F;philmccluskey.com&#x2F;projects&#x2F;flickrfox&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;FoxyTunes 2.9.5.31: &lt;a href=&quot;http:&#x2F;&#x2F;www.foxytunes.com&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.foxytunes.com&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Gmail Skins 0.9.8: &lt;a href=&quot;http:&#x2F;&#x2F;gmailskins.mozdev.org&quot;&gt;http:&#x2F;&#x2F;gmailskins.mozdev.org&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Google Gears 0.3.14.0: &lt;a href=&quot;http:&#x2F;&#x2F;gears.google.com&#x2F;&quot;&gt;http:&#x2F;&#x2F;gears.google.com&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Google Toolbar for Firefox 3.0.20070525L: &lt;a href=&quot;http:&#x2F;&#x2F;www.google.com&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.google.com&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Google Web Comments 1.4.20070529.0: &lt;a href=&quot;http:&#x2F;&#x2F;toolbar.google.com&#x2F;firefox&#x2F;extensions&#x2F;webcomments&#x2F;&quot;&gt;http:&#x2F;&#x2F;toolbar.google.com&#x2F;firefox&#x2F;extensions&#x2F;webcomments&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Greasemonkey 0.7.20080121.0: &lt;a href=&quot;http:&#x2F;&#x2F;www.greasespot.net&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.greasespot.net&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Hide Menubar 1.0.20080310: &lt;a href=&quot;http:&#x2F;&#x2F;forum.moztw.org&#x2F;viewtopic.php?t=15303&quot;&gt;http:&#x2F;&#x2F;forum.moztw.org&#x2F;viewtopic.php?t=15303&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;It&#x27;s All Text! 0.8.4: &lt;a href=&quot;http:&#x2F;&#x2F;addons.mozilla.org&#x2F;firefox&#x2F;4125&quot;&gt;http:&#x2F;&#x2F;addons.mozilla.org&#x2F;firefox&#x2F;4125&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Locale Switcher 2.1: &lt;a href=&quot;http:&#x2F;&#x2F;benjamin.smedbergs.us&#x2F;switch-locales&#x2F;&quot;&gt;http:&#x2F;&#x2F;benjamin.smedbergs.us&#x2F;switch-locales&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;MeasureIt 0.3.6: &lt;a href=&quot;http:&#x2F;&#x2F;www.kevinfreitas.net&#x2F;pro&#x2F;extensions&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.kevinfreitas.net&#x2F;pro&#x2F;extensions&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Modify Headers 0.6.4: &lt;a href=&quot;http:&#x2F;&#x2F;www.garethhunt.com&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.garethhunt.com&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Mozilla XForms 0.8.5: &lt;a href=&quot;http:&#x2F;&#x2F;www.mozilla.org&#x2F;projects&#x2F;xforms&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.mozilla.org&#x2F;projects&#x2F;xforms&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;MR Tech Local Install 5.3.2.3: &lt;a href=&quot;http:&#x2F;&#x2F;www.mrtech.com&#x2F;extensions&#x2F;local_install&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.mrtech.com&#x2F;extensions&#x2F;local_install&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Ook? Video Ook! 0.6.6: &lt;a href=&quot;http:&#x2F;&#x2F;ook.dedos.net&#x2F;&quot;&gt;http:&#x2F;&#x2F;ook.dedos.net&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Pearl Crescent Page Saver Basic 1.7: &lt;a href=&quot;http:&#x2F;&#x2F;pearlcrescent.com&#x2F;products&#x2F;pagesaver&#x2F;&quot;&gt;http:&#x2F;&#x2F;pearlcrescent.com&#x2F;products&#x2F;pagesaver&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Resizeable Textarea 0.1d: &lt;a href=&quot;http:&#x2F;&#x2F;www.google.com&#x2F;search?q=Firefox%20Resizeable%20Textarea&quot;&gt;http:&#x2F;&#x2F;www.google.com&#x2F;search?q=Firefox%20Resizeable%20Textarea&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Screen grab! 0.93: &lt;a href=&quot;http:&#x2F;&#x2F;andy.5263.org&#x2F;screengrab&#x2F;&quot;&gt;http:&#x2F;&#x2F;andy.5263.org&#x2F;screengrab&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;ScribeFire 1.4.8: &lt;a href=&quot;http:&#x2F;&#x2F;www.scribefire.com&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.scribefire.com&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Split Browser 0.4.2007120601: &lt;a href=&quot;http:&#x2F;&#x2F;piro.sakura.ne.jp&#x2F;xul&#x2F;_splitbrowser.html.en&quot;&gt;http:&#x2F;&#x2F;piro.sakura.ne.jp&#x2F;xul&#x2F;_splitbrowser.html.en&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;TwittyTunes 0.5.3.1: &lt;a href=&quot;http:&#x2F;&#x2F;www.foxytunes.com&#x2F;twittytunes&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.foxytunes.com&#x2F;twittytunes&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Web Developer 1.1.5: &lt;a href=&quot;http:&#x2F;&#x2F;chrispederick.com&#x2F;work&#x2F;web-developer&#x2F;&quot;&gt;http:&#x2F;&#x2F;chrispederick.com&#x2F;work&#x2F;web-developer&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;wmlbrowser 0.7.17: &lt;a href=&quot;http:&#x2F;&#x2F;wmlbrowser.mozdev.org&quot;&gt;http:&#x2F;&#x2F;wmlbrowser.mozdev.org&lt;&#x2F;a&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+全部扩展： 51
+&lt;p&gt;&lt;&#x2F;p&gt;
+已安装主题： [8]
+&lt;&#x2F;li&gt;
+&lt;li&gt;azureFox 0.96.1: &lt;a href=&quot;http:&#x2F;&#x2F;www.radar.250x.com&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.radar.250x.com&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Firefox (default): &lt;a href=&quot;http:&#x2F;&#x2F;www.mozilla.org&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.mozilla.org&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Human Theme 0.5: &lt;a href=&quot;http:&#x2F;&#x2F;www.ffnn.nl&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.ffnn.nl&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;iFox 2.5.1: &lt;a href=&quot;http:&#x2F;&#x2F;www.radar.250x.com&quot;&gt;http:&#x2F;&#x2F;www.radar.250x.com&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;miniFox 0.8.2: &lt;a href=&quot;http:&#x2F;&#x2F;membres.lycos.fr&#x2F;sethnakht&quot;&gt;http:&#x2F;&#x2F;membres.lycos.fr&#x2F;sethnakht&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Pinstripe 5.0: &lt;a href=&quot;http:&#x2F;&#x2F;www.webether.com&quot;&gt;http:&#x2F;&#x2F;www.webether.com&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Tangerine Theme 0.5: &lt;a href=&quot;http:&#x2F;&#x2F;www.ffnn.nl&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.ffnn.nl&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Tango Theme 0.5: &lt;a href=&quot;http:&#x2F;&#x2F;www.ffnn.nl&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.ffnn.nl&#x2F;&lt;&#x2F;a&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+已安装插件： (12)
+&lt;&#x2F;li&gt;
+&lt;li&gt;DivX Browser Plug-In
+&lt;&#x2F;li&gt;
+&lt;li&gt;DivX® Web Player
+&lt;&#x2F;li&gt;
+&lt;li&gt;Java(TM) Plug-in 1.6.0_03-b05
+&lt;&#x2F;li&gt;
+&lt;li&gt;MozPlugger 1.8.0 handles QuickTime and Windows Media Player Plugin
+&lt;&#x2F;li&gt;
+&lt;li&gt;mplayerplug-in 3.40
+&lt;&#x2F;li&gt;
+&lt;li&gt;QuickTime Plug-in 6.0 &#x2F; 7
+&lt;&#x2F;li&gt;
+&lt;li&gt;QuickTime Plug-in 7.2.0
+&lt;&#x2F;li&gt;
+&lt;li&gt;RealPlayer 9
+&lt;&#x2F;li&gt;
+&lt;li&gt;Shockwave Flash
+&lt;&#x2F;li&gt;
+&lt;li&gt;Totem Web Browser Plugin 2.20.0
+&lt;&#x2F;li&gt;
+&lt;li&gt;Windows Media Player Plug-in 10 (compatible; Totem)
+&lt;&#x2F;li&gt;
+&lt;li&gt;Windows Media Player Plugin
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc5R0VYREdMU&quot; name=&quot;toc5R0VYREdMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopSVpEQT09P&#x27;&gt; 1.3. 成了！ &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+开始快乐的使用！
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+. &lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;2008&#x2F;2008-04-21-144725_685x652_scrot.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;;  
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;ul&gt;
+&lt;li&gt;t2t渲染:: 2010-10-09 02:21:41
+&lt;&#x2F;li&gt;
+&lt;li&gt;动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;oss&#x2F;Mozilla&#x2F;FireFox&#x2F;ff3pre-upgrade-ko-2008-04-21-12-33.t2t --&gt;
+</content>
+</entry>
+</feed>

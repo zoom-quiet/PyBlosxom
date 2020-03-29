@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/techic/PyBlosxom/plugins/hardcodedates.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/techic/PyBlosxom/plugins/hardcodedates.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/techic/PyBlosxom/plugins/hardcodedates.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2010-05-31T03:10:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">hardcodedates.py</title>
+<category term="" />
+<id>/pyblosxom/2010/05/31/hardcodedates</id>
+<updated>2010-05-31T03:10:00Z</updated>
+<published>2010-05-31T03:10:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/PyBlosxom/plugins/hardcodedates.html" />
+<content type="html">&lt;pre class=&quot;brush: python&quot;&gt;# -*- coding: utf-8 -*-
+from Pyblosxom import tools
+import os, os.path, posix, re, stat, time
+
+FILETIME = re.compile(&#x27;^([0-9]{4})-([0-1][0-9])-([0-3][0-9])-([0-2][0-9])-([0-5][0-9]) +(.*)$&#x27;)
+
+all_timestamps = {}
+extensions = []
+timestamps_to_save = {}
+
+
+#mode: python; indent-tabs-mode: t, tab-width: 4 
+&quot;&quot;&quot;
+This allows the user to create a file &quot;timestamps&quot; in their datadir,
+that will override the timestamp of any given blog entry. Each line
+in this file should be of the form &quot;YYYY-MM-DD-hh-mm file-name&quot;.
+Then for any entry that one of these lines exist the system will use
+that timestamp instead of the actual files modification time.
+
+Note: the filename is relative to your data-dir.
+Example of a line for the file &#x2F;var&#x2F;data-dir&#x2F;school&#x2F;abc.txt
+   where the datadir is &quot;&#x2F;var&#x2F;data-dir&#x2F;&quot; and the date is Aug 9, 2004.
+
+2004-08-09-00-00 school&#x2F;abc.txt
+&quot;&quot;&quot;
+__author__ = &#x27;Nathan Kent Bullock, Ryan Barrett&#x27;
+__homepage__ = &#x27;http:&#x2F;&#x2F;snarfed.org&#x2F;space&#x2F;hardcodedates&#x27;
+__email__ = &#x27;nathan_kent_bullock -at- yahoo.ca, hardcodedates -at- ryanb.org&#x27;
+__version__ = &#x27;1.4&#x27;
+def init(request):
+    if all_timestamps:
+        return  # already initialized
+
+    datadir = request.getConfiguration()[&#x27;datadir&#x27;]
+    timestamp_file = os.path.join(datadir, &#x27;timestamps&#x27;)
+
+    if os.path.isfile(timestamp_file):
+        f = file(timestamp_file)
+        for str in f.readlines():
+            m = FILETIME.search(str.strip())
+            if m:
+                year = int(m.group(1))
+                mo = int(m.group(2))
+                day = int(m.group(3))
+                hr = int(m.group(4))
+                minute = int(m.group(5))
+                mtime = time.mktime((year,mo,day,hr,minute,0,0,0,-1))
+                filename = os.path.join(datadir, m.group(6))
+                all_timestamps[filename] = mtime
+
+        f.close()
+
+    extensions.extend(request.getData()[&#x27;extensions&#x27;].keys())
+    extensions.append(request.getConfiguration().get(&#x27;comment_ext&#x27;, &#x27;cmt&#x27;))
+
+def cb_filestat(args):
+    request = args[&#x27;request&#x27;]
+    init(request)
+
+    filename = args[&#x27;filename&#x27;]
+    extension = os.path.splitext(filename)[1][1:]
+    datadir = request.getConfiguration()[&#x27;datadir&#x27;]
+
+    if all_timestamps.has_key(filename):
+        # we know this file&#x27;s timestamp
+        mtime = args[&#x27;mtime&#x27;]
+        assert isinstance(mtime, (tuple, posix.stat_result))
+        args[&#x27;mtime&#x27;] = (mtime[0:stat.ST_MTIME] + (all_timestamps[filename],) +
+                         mtime[stat.ST_MTIME + 1:])
+
+    elif extension in extensions and filename.startswith(datadir):
+        # we don&#x27;t know it, but we should. ask the os for it, and remember it.
+        args[&#x27;mtime&#x27;] = os.stat(filename)
+        all_timestamps[filename] = args[&#x27;mtime&#x27;][stat.ST_MTIME]
+        timestamps_to_save[filename] = args[&#x27;mtime&#x27;][stat.ST_MTIME]
+
+    return args
+
+def cb_end(args):
+    if timestamps_to_save:
+        datadir = args[&#x27;request&#x27;].getConfiguration()[&#x27;datadir&#x27;]
+        datadir = os.path.normpath(datadir)
+        tsfile = file(os.path.join(datadir, &#x27;timestamps&#x27;), &#x27;a&#x27;)
+        for filename, mtime in timestamps_to_save.items():
+            time_str = time.strftime(&#x27;%Y-%m-%d-%H-%M&#x27;, time.localtime(mtime))
+            # strip the datadir prefix and directory separator slash
+            filename = filename[len(datadir) + 1:]
+            tsfile.write(&#x27;%s %s\n&#x27; % (time_str, filename))
+            tools.getLogger().info(&#x27;Saved mtime %s for %s&#x27; % (time_str, filename))
+        tsfile.close()
+        timestamps_to_save.clear()
+
+&lt;&#x2F;pre&gt;</content>
+</entry>
+</feed>

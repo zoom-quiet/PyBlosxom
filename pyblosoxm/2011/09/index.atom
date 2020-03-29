@@ -1,0 +1,979 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/2011/09/index.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/2011/09/index.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/2011/09/index.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2011-09-08T05:13:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">ScrapBook辅助工具之expidxlevels</title>
+<category term="/utility/py4xml" />
+<id>/pyblosxom/2011/09/08/scrapbook-expidxlevels-2011-09-08-13-13</id>
+<updated>2011-09-08T05:13:00Z</updated>
+<published>2011-09-08T05:13:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/utility/py4xml/scrapbook-expidxlevels-2011-09-08-13-13.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopS05SWEVZT&#x27; id=&#x27;toptopS05SWEVZT&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;ScrapBook辅助工具之expidxlevels&lt;&#x2F;h1&gt;
+&lt;h2&gt;~ 坑爹的RDF乱斗!&lt;&#x2F;h2&gt;
+&lt;h3&gt;t2t渲染:2011-09-08 04:54:24&lt;&#x2F;h3&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0JaR&quot;&gt;不折腾要死星人&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc2R0VYRENMU&quot;&gt;1.1. scraptools&lt;&#x2F;a&gt;
+      &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#toc3R0VYRENMU&quot;&gt;1.1.1. RDF&lt;&#x2F;a&gt;
+      &lt;&#x2F;li&gt;
+      &lt;li&gt;&lt;a href=&quot;#toc4R0VYRENMU&quot;&gt;1.1.2. yeild&lt;&#x2F;a&gt;
+      &lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc5R0VYREVMU&quot;&gt;1.2. TODO&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc6R0lYQ0JaV&quot;&gt;时间帐单&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0JaR&quot; name=&quot;toc1R0VYQ0JaR&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopS05SWEVZT&#x27;&gt; 1. 不折腾要死星人 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+嗯嗯嗯，从,,, 20041214101930 开始,坚持使用&lt;a href=&quot;http:&#x2F;&#x2F;amb.vis.ne.jp&#x2F;mozilla&#x2F;scrapbook&#x2F;&quot;&gt;SCRAPBOOK :: Firefox Extension&lt;&#x2F;a&gt; 进行离线网页的收集和整理了;
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;一直很爽,而且内置的导出功能,可以一键将本地收集的网页通过一个标准的框架页面,用树状索引进行发布;
+&lt;&#x2F;li&gt;
+&lt;li&gt;使用 rsync 等等文件同步小工具,就可以发布一个静态的表述自个儿关注领域技术的纯资料网站了!
+&lt;&#x2F;li&gt;
+&lt;li&gt;其实一直以来就发布有这类两个网站:
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;floss.zoomquiet.org&quot;&gt;http:&#x2F;&#x2F;floss.zoomquiet.org&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;skm.zoomquiet.org&quot;&gt;http:&#x2F;&#x2F;skm.zoomquiet.org&lt;&#x2F;a&gt;
+    &lt;p&gt;&lt;&#x2F;p&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;好处是那些优秀的文章,即使原文网站死了,依然在俺这儿原样可查,
+&lt;&#x2F;li&gt;
+&lt;li&gt;问题是:
+    &lt;ul&gt;
+    &lt;li&gt;&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;2011&#x2F;zq_2011-09-08-154005_577x344_scrot.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;导出的那个索引树,随着时间的积累,已经大到无法忍受了!
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;比如说, floss.zoomquiet.org 的树,包含 2万多节点,自身体积已经超过5M
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;有网友吼,用 Chrome 都无法打开!
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;  所以:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;得想招精简如此多节点的索引树了,,,
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;为了时不时，在俺这儿打捞历史文章的亲们...
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc2R0VYRENMU&quot; name=&quot;toc2R0VYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopS05SWEVZT&#x27;&gt; 1.1. scraptools &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+所以,有了 &lt;a href=&quot;https:&#x2F;&#x2F;bitbucket.org&#x2F;ZoomQuiet&#x2F;scraptools&#x2F;wiki&#x2F;Home&quot;&gt;ZoomQuiet &#x2F; scraptools — Bitbucket&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+其中的 expidxlevels.py 就是专门进行自动索引化简的...
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc3R0VYRENMU&quot; name=&quot;toc3R0VYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h3&gt;&lt;A href=&#x27;#toptopS05SWEVZT&#x27;&gt; 1.1.1. RDF &lt;&#x2F;A&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;
+以前在相关讲演中吼过,选择 &lt;a href=&quot;http:&#x2F;&#x2F;amb.vis.ne.jp&#x2F;mozilla&#x2F;scrapbook&#x2F;&quot;&gt;SCRAPBOOK :: Firefox Extension&lt;&#x2F;a&gt;的好点之一,就是有标准的XML 数据输出,好进行二次处理
+&lt;&#x2F;p&gt;
+    &lt;ul&gt;
+    &lt;li&gt;幻灯: &lt;a href=&quot;http:&#x2F;&#x2F;zoomquiet.org&#x2F;res&#x2F;s5&#x2F;100918-MyTools&#x2F;rst2s5&#x2F;&quot;&gt;http:&#x2F;&#x2F;zoomquiet.org&#x2F;res&#x2F;s5&#x2F;100918-MyTools&#x2F;rst2s5&#x2F;&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;录音: &lt;a href=&quot;http:&#x2F;&#x2F;zoomquiet.org&#x2F;res&#x2F;m&#x2F;r&#x2F;wav4zoomq&#x2F;100930-snda-mytools&#x2F;&quot;&gt;http:&#x2F;&#x2F;zoomquiet.org&#x2F;res&#x2F;m&#x2F;r&#x2F;wav4zoomq&#x2F;100930-snda-mytools&#x2F;&lt;&#x2F;a&gt;
+    &lt;p&gt;&lt;&#x2F;p&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;设想:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;将 &lt;code&gt;scrapbook.rdf&lt;&#x2F;code&gt; (自动生成的记录树关系的RDF)进行合理解析
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;整理成分级索引页面就可以解决单一索引的巨大加载问题了
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;杯具:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;TMD没有一种XML解析库对付的了RDF!
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;p&gt;
+&lt;code&gt;scrapbook.rdf&lt;&#x2F;code&gt; 的设计很简洁:
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;根节点,索引各个 &lt;code&gt;li&lt;&#x2F;code&gt;
+&lt;pre class=&quot;brush:  xml&quot;&gt;
+
+  &amp;lt;RDF:Seq RDF:about=&quot;urn:scrapbook:root&quot;&amp;gt;
+    &amp;lt;RDF:li RDF:resource=&quot;urn:scrapbook:item20091114162455&quot;&#x2F;&amp;gt;
+    &amp;lt;RDF:li RDF:resource=&quot;urn:scrapbook:item20050206112141&quot;&#x2F;&amp;gt;
+  &amp;lt;&#x2F;RDF:Seq&amp;gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;每个 &lt;code&gt;li&lt;&#x2F;code&gt; 也可能是一组 &lt;code&gt;Seq&lt;&#x2F;code&gt;
+&lt;pre class=&quot;brush:  xml&quot;&gt;
+
+  &amp;lt;RDF:Seq RDF:about=&quot;urn:scrapbook:item20070212000600&quot;&amp;gt;
+    &amp;lt;RDF:li RDF:resource=&quot;urn:scrapbook:item20070212000504&quot;&#x2F;&amp;gt;
+    &amp;lt;RDF:li RDF:resource=&quot;urn:scrapbook:item20070212000555&quot;&#x2F;&amp;gt;
+  &amp;lt;&#x2F;RDF:Seq&amp;gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;不论 &lt;code&gt;Seq&lt;&#x2F;code&gt; 自身,还是真正的页面,都有一个描述节点来记录详情
+&lt;pre class=&quot;brush:  xml&quot;&gt;
+
+  &amp;lt;RDF:Description RDF:about=&quot;urn:scrapbook:item20051216104753&quot;
+                   NS2:id=&quot;20051216104753&quot;
+                   NS2:type=&quot;&quot;
+                   NS2:title=&quot;吉卜力的新作也用blog宣傳&quot;
+                   NS2:chars=&quot;UTF-8&quot;
+                   NS2:comment=&quot;&quot;
+                   NS2:icon=&quot;&quot;
+                   NS2:source=&quot;http:&#x2F;&#x2F;www.bigsound.org&#x2F;portnoy&#x2F;weblog&#x2F;001318.html&quot; &#x2F;&amp;gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;如果只是分隔线，就是:
+&lt;pre class=&quot;brush:  xml&quot;&gt;
+
+  &amp;lt;NC:BookmarkSeparator RDF:about=&quot;urn:scrapbook:item20091113232313&quot;
+                   NS2:id=&quot;20091113232313&quot;
+                   NS2:type=&quot;separator&quot;
+                   NS2:title=&quot;&quot;
+                   NS2:chars=&quot;&quot;
+                   NS2:comment=&quot;&quot;
+                   NS2:icon=&quot;&quot;
+                   NS2:source=&quot;&quot; &#x2F;&amp;gt;
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+那么一切就应该从 &lt;code&gt;&amp;lt;RDF:Seq RDF:about=&quot;urn:scrapbook:root&quot;&amp;gt;&lt;&#x2F;code&gt; 节点开始爬就好的了,,,
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;FT!:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;不论内置的 &lt;code&gt;xml.dom&lt;&#x2F;code&gt; &#x2F; &lt;code&gt;xml.etree.ElementTree&lt;&#x2F;code&gt; 还是伟大的 &lt;a href=&quot;http:&#x2F;&#x2F;lxml.de&#x2F;&quot;&gt;lxml&lt;&#x2F;a&gt;
+        &lt;ul&gt;
+        &lt;li&gt;都不支持根据 XML 节点的属性进行搜索！
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;即使可以用 XPath 的算子过滤:&lt;code&gt;&#x2F;&#x2F;NC[@RDF:about = &quot;urn:scrapbook:root&quot;]&lt;&#x2F;code&gt; ，但是，没有库支持完全功能的XPath!
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;俺总不能用 XSLT 先写好过滤，然后再调用支持 XSLT 的浏览器获得中间结果給 Py 用吧？！
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;好的，有一堆 RDF 专用解析器
+        &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;redfoot.sourceforge.net&#x2F;&quot;&gt;Redfoot&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.openvest.com&#x2F;trac&#x2F;wiki&#x2F;RDFAlchemy&quot;&gt;RDFAlchemy&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;code.google.com&#x2F;p&#x2F;rdflib&#x2F;wiki&#x2F;ExampleFoafSmushing&quot;&gt;rdflib&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;infomesh.net&#x2F;pyrple&#x2F;&quot;&gt;pyrple - An RDF API in Python&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;librdf.org&#x2F;raptor&#x2F;&quot;&gt;Raptor&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;packages.python.org&#x2F;SuRF&#x2F;&quot;&gt;SuRF – Object RDF mapper&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;...可是！那个复杂哪！居然要在使用前,从相关 XSD 网址下载 Scheme 的!
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;也都没有简单的方式,可以让俺搜索到那个该死的  &lt;code&gt;&amp;lt;RDF:Seq RDF:about=&quot;urn:scrapbook:root&quot;&amp;gt;&lt;&#x2F;code&gt; 节点
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;不过,也算开了眼,居然有 &lt;a href=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;Submission&#x2F;2004&#x2F;SUBM-RDQL-20040109&#x2F;&quot;&gt;RDQL&lt;&#x2F;a&gt; &#x2F; &lt;a href=&quot;http:&#x2F;&#x2F;www.ibm.com&#x2F;developerworks&#x2F;cn&#x2F;education&#x2F;xml&#x2F;x-sparql&#x2F;index.html&quot;&gt;SPARQL&lt;&#x2F;a&gt; 等专用 RDF 解析语言!
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;看来当年的 &lt;a href=&quot;http:&#x2F;&#x2F;www.ibm.com&#x2F;developerworks&#x2F;cn&#x2F;grid&#x2F;gr-semgrid&#x2F;index.html&quot;&gt;Semantic Web&lt;&#x2F;a&gt; 的确玩到了很 HIGH 的程序...
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;可是,对于俺,这么简单的需求,就是没有简单的处置方法嘛?!
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;解决:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;冷静了一下,俺只是要进行简单的数据处理,并不一定要真的对 RDF 进行语义上的理解哪?!
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;XML 自古就有一种原始的,条带化基于事件的处理模型,曰 SAX
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;Py 内置有最简单的 expat库:
+        &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;docs.python.org&#x2F;library&#x2F;pyexpat.html#example&quot;&gt;19.5. xml.parsers.expat — Fast XML parsing using Expat — Python v2.7.2 documentation&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;跟着样例快速完成了处理部分,速度也非常的快
+    &lt;p&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  python ; highlight: [5,17,24]&quot;&gt;
+
+def start_element(name, attrs):
+    if &quot;RDF:Seq&quot; == name:
+        CF.IS_SEQ = 1
+        CF.IS_DESC = 0
+        if &quot;urn:scrapbook:root&quot; == attrs[&#x27;RDF:about&#x27;]:
+            #print &#x27;ROOT element:&#x27;, name, attrs
+            CF.IS_ROOT = 1
+            CF.DICTRDF[&#x27;ROOT&#x27;][&#x27;id&#x27;] = attrs[&#x27;RDF:about&#x27;].split(&quot;:&quot;)[-1]
+            CF.CRTID = attrs[&#x27;RDF:about&#x27;].split(&quot;:&quot;)[-1]
+            CF.DICTRDF[&#x27;ROOT&#x27;][&#x27;li&#x27;] = []
+        else:
+            CF.IS_ROOT = 0
+            CF.CRTID = attrs[&#x27;RDF:about&#x27;].split(&quot;:&quot;)[-1]
+            CF.DICTRDF[&#x27;SEQ&#x27;][CF.CRTID] = []
+    else:
+        CF.IS_SEQ = 0
+        if &quot;RDF:li&quot; == name:
+            CF.IS_DESC = 0
+            CF.IS_LI = 1
+            if CF.IS_ROOT:
+                CF.DICTRDF[&#x27;ROOT&#x27;][&#x27;li&#x27;].append(attrs[&#x27;RDF:resource&#x27;].split(&quot;:&quot;)[-1])
+            else:
+                CF.DICTRDF[&#x27;SEQ&#x27;][CF.CRTID].append(attrs[&#x27;RDF:resource&#x27;].split(&quot;:&quot;)[-1])
+        elif &quot;RDF:Description&quot; == name:
+            CF.IS_DESC = 1
+            CF.IS_LI = 0
+            CF.CRTID = attrs[&#x27;RDF:about&#x27;].split(&quot;:&quot;)[-1]
+            CF.DICTRDF[&#x27;DESC&#x27;][CF.CRTID] = {
+                &#x27;id&#x27;:attrs[&#x27;NS2:id&#x27;]
+                ,&#x27;type&#x27;:attrs[&#x27;NS2:type&#x27;]
+                ,&#x27;title&#x27;:attrs[&#x27;NS2:title&#x27;]
+                ,&#x27;source&#x27;:attrs[&#x27;NS2:source&#x27;]
+                ,&#x27;chars&#x27;:attrs[&#x27;NS2:chars&#x27;]
+                ,&#x27;icon&#x27;:attrs[&#x27;NS2:icon&#x27;]
+                ,&#x27;comment&#x27;:attrs[&#x27;NS2:comment&#x27;]
+                }
+
+&lt;&#x2F;pre&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;技巧:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;就是用一堆判定,将有限的情况进行区分
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;然后丢到个字典中,供给后续处理
+    &lt;p&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  python ; highlight: [1,2,4]&quot;&gt;
+
+{&quot;ROOT&quot;:{&#x27;id&#x27;:&#x27;&#x27;,&#x27;li&#x27;:[]}
+,&quot;SEQ&quot;:{&#x27;item...&#x27;:[]
+    ,,,}
+,&quot;DESC&quot;:{&#x27;item...&#x27;:{&#x27;id&#x27;:&#x27;&#x27;
+        ,&#x27;type&#x27;:&quot;&quot; # folder||separator
+        ,&#x27;icon&#x27;:&#x27;&#x27;
+        ,&#x27;title&#x27;:&#x27;&#x27;
+        ,&#x27;source&#x27;:&#x27;&#x27;
+        ,&#x27;chars&#x27;:&#x27;&#x27;
+        ,&#x27;comment&#x27;:&#x27;&#x27;
+        }
+    ,,,
+    }
+}
+&lt;&#x2F;pre&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc4R0VYRENMU&quot; name=&quot;toc4R0VYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h3&gt;&lt;A href=&#x27;#toptopS05SWEVZT&#x27;&gt; 1.1.2. yeild &lt;&#x2F;A&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;
+好的,有了 RDF 正确的结构关系数据后,怎么优雅的输出成分层的索引页面?!
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;俺习惯用内置的文本模板功能,通过纯文本的嵌套完成 html 的输出
+&lt;&#x2F;li&gt;
+&lt;li&gt;结果,发现,俺的网页整理到不同深度的目录中
+    &lt;ul&gt;
+    &lt;li&gt;要想进行递归式的树状生成,很容易引发递归过深,Py 崩溃的现象
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;pre class=&quot;brush:  js ; highlight: [2,12]&quot;&gt;
+
+&#x2F;&#x2F; scrapbook&#x2F;chrome&#x2F;scrapbook.jar-&amp;gt;content&#x2F;scrapbook&#x2F;output.js 中
+	processRescursively : function(aContRes)
+	{
+		this.depth++;
+		var id = ScrapBookData.getProperty(aContRes, &quot;id&quot;) || &quot;root&quot;;
+		this.content += &#x27;&amp;lt;ul id=&quot;folder-&#x27; + id + &#x27;&quot;&amp;gt;\n&#x27;;
+		var resList = ScrapBookData.flattenResources(aContRes, 0, false);
+		for (var i = 1; i &amp;lt; resList.length; i++) {
+			this.content += &#x27;&amp;lt;li class=&quot;depth&#x27; + String(this.depth) + &#x27;&quot;&amp;gt;&#x27;;
+			this.content += this.getHTMLBody(resList[i]);
+			if (ScrapBookData.isContainer(resList[i]))
+				this.processRescursively(resList[i]);
+			this.content += &quot;&amp;lt;&#x2F;li&amp;gt;\n&quot;;
+		}
+		this.content += &quot;&amp;lt;&#x2F;ul&amp;gt;\n&quot;;
+		this.depth--;
+	},
+
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;amb.vis.ne.jp&#x2F;mozilla&#x2F;scrapbook&#x2F;&quot;&gt;SCRAPBOOK&lt;&#x2F;a&gt;中的原生处理是硬递归的哪,,,
+&lt;&#x2F;li&gt;
+&lt;li&gt;Py 有优雅的迭代式，但是不那么容易用起来:
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;MiscItems&#x2F;2011-08-25&quot;&gt;yeild 的递归输出问题&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;引发了社区列表讨论，结果获得的经验很简单:
+        &lt;ul&gt;
+        &lt;li&gt;&lt;b&gt;所有想返回的，都用 yeild 包装上！&lt;&#x2F;b&gt;
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;p&gt;
+于是，一切安定团结了,,,
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+用 shell 包装个命令，想发布本地 &lt;a href=&quot;http:&#x2F;&#x2F;amb.vis.ne.jp&#x2F;mozilla&#x2F;scrapbook&#x2F;&quot;&gt;SCRAPBOOK&lt;&#x2F;a&gt; 仓库时，一键完成！
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc5R0VYREVMU&quot; name=&quot;toc5R0VYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopS05SWEVZT&#x27;&gt; 1.2. TODO &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+当然总是有不如意的,留存以后,或是有心人完善了:
+&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;美化平面索引页面
+    &lt;ol&gt;
+    &lt;li&gt;排版和颜色
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;CSS 限宽效果用JS 进行动态扩展 
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;自动对所有抓取的页面,嵌入原始链接的提示
+&lt;&#x2F;li&gt;
+&lt;li&gt;对整体仓库生成 site map 帮助 google 收录 ... 
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+
+&lt;a id=&quot;toc6R0lYQ0JaV&quot; name=&quot;toc6R0lYQ0JaV&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopS05SWEVZT&#x27;&gt; 2. 时间帐单 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;ol&gt;
+&lt;li&gt;~0.01h    起意，要折腾
+&lt;&#x2F;li&gt;
+&lt;li&gt;0.5h      rdf 理解
+&lt;&#x2F;li&gt;
+&lt;li&gt;1h        ElementTree 尝试
+&lt;&#x2F;li&gt;
+&lt;li&gt;1h        lxml 尝试
+&lt;&#x2F;li&gt;
+&lt;li&gt;~2h       RDF 解析模块收集
+&lt;&#x2F;li&gt;
+&lt;li&gt;~1h       rdflib 尝试
+&lt;&#x2F;li&gt;
+&lt;li&gt;~0.5h     冷静
+&lt;&#x2F;li&gt;
+&lt;li&gt;~0.5h     expat完成解析
+&lt;&#x2F;li&gt;
+&lt;li&gt;~1h       根索引页面输出
+&lt;&#x2F;li&gt;
+&lt;li&gt;~2.5h     递归和迭代尝试
+&lt;&#x2F;li&gt;
+&lt;li&gt;~2h       获得社区反馈，完成所有功能
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+
+&lt;p&gt;
+合计,~13小时,哗,,,,大大超出原先半天的预计,纠其原因:
+&lt;&#x2F;p&gt;
+    &lt;ol&gt;
+    &lt;li&gt;对XML体系的变态缺乏足够的敬畏
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;对递归的理解一直不扎实
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+
+&lt;p&gt;
+事实证明:&lt;b&gt;嘦不经过真实编程的理解，基本都是误解&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags utility&#x2F;py4xml&#x2F;scrapbook-expidxlevels-2011-09-08-13-13.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">py2pre.py</title>
+<category term="/techic/PyBlosxom/plugins" />
+<id>/pyblosxom/2011/09/07/py2pre</id>
+<updated>2011-09-07T06:00:00Z</updated>
+<published>2011-09-07T06:00:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/PyBlosxom/plugins/py2pre.html" />
+<content type="html">&lt;pre class=&quot;brush: python&quot;&gt;# -*- coding: utf-8 -*-
+&quot;&quot;&quot;py - html Parser
+    - refactory py2pre.py from xhtml.py
+
+Copyright (c) 2011 Zoom.Quiet 
+All rights reserved.
+
+Redistribution and use in source and binary forms are permitted
+provided that the above copyright notice and this paragraph are
+duplicated in all such forms and that any documentation,
+advertising materials, and other materials related to such
+distribution and use acknowledge that the software was developed
+by the zoomquiet.org.  The name of the
+University may not be used to endorse or promote products derived
+from this software without specific prior written permission.
+THIS SOFTWARE IS PROVIDED ``AS IS&#x27;&#x27; AND WITHOUT ANY EXPRESS OR
+IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+
+&quot;&quot;&quot;
+
+
+## Leo: tab_width=-4 page_width=80
+__version__ = &quot;v11.09.7&quot;
+__author__ = &#x27;Zoom.Quiet &lt;zoomquiet+pyb at gmail dot com&gt;&#x27;
+__url__ = &quot;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;techic&#x2F;PyBlosxom&#x2F;plugins&#x2F;py2pre.html&quot;
+__description__ = &quot;.py export hmtl entry with syntaxhighlighter.&quot;
+
+#from Pyblosxom import tools
+
+def cb_entryparser(entryparsingdict):
+    &quot;&quot;&quot;
+    Register self as plain file handler
+    &quot;&quot;&quot;
+    entryparsingdict[&quot;py&quot;] = parse
+    return entryparsingdict
+def parse(filename, request):
+    #import os
+    entrydata = {}
+    source = open(filename, &quot;r&quot;).read()
+    #print filenames
+    body = &#x27;&lt;pre class=&quot;brush: python&quot;&gt;%s&lt;&#x2F;pre&gt;&#x27; % source
+    entrydata = {&#x27;body&#x27; : body
+                 ,&#x27;title&#x27; : filename.split(&quot;&#x2F;&quot;)[-1]
+                 }
+    return entrydata
+
+&lt;&#x2F;pre&gt;</content>
+</entry>
+
+<entry>
+<title type="html">升级到PyBlosxom 1.5rc3</title>
+<category term="/techic/PyBlosxom" />
+<id>/pyblosxom/2011/09/07/upinto-pyblosxom15rc3-2011-09-07-12-23</id>
+<updated>2011-09-07T04:23:00Z</updated>
+<published>2011-09-07T04:23:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/PyBlosxom/upinto-pyblosxom15rc3-2011-09-07-12-23.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopNFdHWVBaN&#x27; id=&#x27;toptopNFdHWVBaN&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;升级到PyBlosxom 1.5rc3&lt;&#x2F;h1&gt;
+&lt;h2&gt;~ hack 几点&lt;&#x2F;h2&gt;
+&lt;h3&gt;t2t渲染:2012-03-29 03:37:40&lt;&#x2F;h3&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0JaR&quot;&gt;不折腾要死星人&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc2R0VYRENMU&quot;&gt;1.1. 评注&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc3R0VYREVMU&quot;&gt;1.2. SyntaxHighlighter&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc4R0VYREdMU&quot;&gt;1.3. 插件&lt;&#x2F;a&gt;
+      &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#toc5R0VYREdMU&quot;&gt;1.3.1. py2pre.py&lt;&#x2F;a&gt;
+      &lt;&#x2F;li&gt;
+      &lt;li&gt;&lt;a href=&quot;#toc6R0VYREdMU&quot;&gt;1.3.2. cp4idx2category.py&lt;&#x2F;a&gt;
+      &lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc7R0VYRElMU&quot;&gt;1.4. TODO&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc8R0lYQ0JaV&quot;&gt;时间帐单&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0JaR&quot; name=&quot;toc1R0VYQ0JaR&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopNFdHWVBaN&#x27;&gt; 1. 不折腾要死星人 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+嗯嗯嗯，一清点，居然这么长时间没有发布正式点的 blog 了哪！
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;想恢复每周的心得汇报，但是，俺有强迫症！
+    &lt;ul&gt;
+    &lt;li&gt;PyBloxom 非常好玩，好用
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;但是，一直不甚完美
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;不过，这也是俺喜欢她的原因～ &lt;code&gt;所有不完美之处，都可以自行 hacking!&lt;&#x2F;code&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;  所以:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;安装了 Disqus
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;升級了 SyntaxHighlighter
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;修复了 py.py
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;修复了内置的分类索引
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc2R0VYRENMU&quot; name=&quot;toc2R0VYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopNFdHWVBaN&#x27;&gt; 1.1. 评注 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+一直以来,PyBlosxom 没有内置一个靠谱的评注系统,是个囧事儿,
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;现在,官方也想明白了,都 2.0时代了,不纠结了
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;pyblosxom.bluesock.org&#x2F;1.5&#x2F;comments.html#disqus&quot;&gt;Comments — PyBlosxom v1.5 documentation&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;直接建议上 &lt;a href=&quot;http:&#x2F;&#x2F;disqus.com&#x2F;&quot;&gt;DISQUS&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;为什么不呢?
+&lt;pre&gt;
+好:
+    + 安装简单
+    + 内置spam 管理
+    + 支持提醒,回答,以及其它功能
+坏:
+    - 作为web服务,没有全权控制
+    - 可能难以迁移到其它服务&#x2F;插件 ~ 虽然有评注的导出功能
+&lt;&#x2F;pre&gt;
+    &lt;p&gt;&lt;&#x2F;p&gt;
+反正,俺用了,,很轻松,,而且支持多种 SSO 认证!
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc3R0VYREVMU&quot; name=&quot;toc3R0VYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopNFdHWVBaN&#x27;&gt; 1.2. SyntaxHighlighter &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+之前,俺为了节省流量,使用了 官方提供的 hosting...
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;结果伟大的功夫网,总是令展示效果不理想!
+&lt;&#x2F;li&gt;
+&lt;li&gt;现在想通了,直接升级 到 SyntaxHighlighter 3.0.83 
+&lt;&#x2F;li&gt;
+&lt;li&gt;并指向本地的各种资源
+&lt;&#x2F;li&gt;
+&lt;li&gt;比较贴心的是,这次有了 &lt;a href=&quot;http:&#x2F;&#x2F;alexgorbatchev.com&#x2F;SyntaxHighlighter&#x2F;manual&#x2F;api&#x2F;autoloader.html&quot;&gt;Dynamic Brush Loading&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;不用象以往,逐一JS 的加载了
+    &lt;p&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  js ; highlight: [1,5,9]&quot;&gt;
+
+function path(){
+    var args = arguments;
+    var result = [];
+    for(var i = 0; i &amp;lt; args.length; i++){
+      result.push(args[i].replace(&#x27;@&#x27;, &#x27;&#x2F;pybshare&#x2F;syntaxhighlighter_3.0.83&#x2F;scripts&#x2F;&#x27;));
+      };
+    return result;
+    };
+SyntaxHighlighter.autoloader.apply(null, path(
+    &#x27;applescript            @shBrushAppleScript.js&#x27;,
+    &#x27;bash shell             @shBrushBash.js&#x27;,
+    &#x27;css                    @shBrushCss.js&#x27;,
+    &#x27;diff patch pas         @shBrushDiff.js&#x27;,
+    &#x27;erl erlang             @shBrushErlang.js&#x27;,
+    &#x27;js jscript javascript  @shBrushJScript.js&#x27;,
+    &#x27;text plain             @shBrushPlain.js&#x27;,
+    &#x27;py python              @shBrushPython.js&#x27;,
+    &#x27;sass scss              @shBrushSass.js&#x27;,
+    &#x27;sql                    @shBrushSql.js&#x27;,
+    &#x27;xml xhtml xslt html    @shBrushXml.js&#x27;
+    ));
+
+SyntaxHighlighter.all()
+&lt;&#x2F;pre&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;  PS:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;也有更加轻量的 &lt;a href=&quot;http:&#x2F;&#x2F;code.google.com&#x2F;p&#x2F;google-code-prettify&#x2F;&quot;&gt;prettify&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;但是,没有 SyntaxHighlighter 的高亮功能
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;而且,已经和 t2t 深度定制过,使用很好,也就不追赶了,,,
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc4R0VYREdMU&quot; name=&quot;toc4R0VYREdMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopNFdHWVBaN&#x27;&gt; 1.3. 插件 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+1.5 的插件体系好象有所变化,不那么简单的可以理解了,,,
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc5R0VYREdMU&quot; name=&quot;toc5R0VYREdMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h3&gt;&lt;A href=&#x27;#toptopNFdHWVBaN&#x27;&gt; 1.3.1. py2pre.py &lt;&#x2F;A&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;
+&lt;a href=&quot;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;techic&#x2F;PyBlosxom&#x2F;plugins&#x2F;py2pre.html&quot;&gt;py2pre.py&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;dl&gt;
+&lt;dt&gt;意图:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;简单的将目录中的 .py 脚本渲染成合适的 html 展示
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;问题:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;pyblosxom.bluesock.org&#x2F;registry&#x2F;text&#x2F;py.html&quot;&gt;PyBlosxom - main site - py&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;原先的老插件已经失效,在静态渲染时不触发了
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;解决:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;根据1.5.* 的文档 &lt;a href=&quot;http:&#x2F;&#x2F;pyblosxom.bluesock.org&#x2F;1.5&#x2F;dev_writing_plugins.html#writing-an-entryparser&quot;&gt;Writing an entryparser — PyBlosxom v1.5 documentation&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;快速山寨了一个 &lt;a href=&quot;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;techic&#x2F;PyBlosxom&#x2F;plugins&#x2F;py2pre.html&quot;&gt;py2pre.py&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;技巧:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;直接复用 SyntaxHighlighter 的效能
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;将所有脚本内容丢到约定的 &lt;code&gt;&amp;lt;pre&amp;gt;&lt;&#x2F;code&gt; 中就好
+    &lt;p&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  python ; highlight: [5]&quot;&gt;
+
+#...
+def parse(filename, request):
+    entrydata = {}
+    source = open(filename, &quot;r&quot;).read()
+    body = &#x27;&amp;lt;pre class=&quot;brush: python&quot;&amp;gt;%s&amp;lt;&#x2F;pre&amp;gt;&#x27; % source
+    entrydata = {&#x27;body&#x27; : body
+                 ,&#x27;title&#x27; : filename.split(&quot;&#x2F;&quot;)[-1]
+                 }
+    return entrydata
+
+&lt;&#x2F;pre&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc6R0VYREdMU&quot; name=&quot;toc6R0VYREdMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h3&gt;&lt;A href=&#x27;#toptopNFdHWVBaN&#x27;&gt; 1.3.2. cp4idx2category.py &lt;&#x2F;A&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;
+这货不是 PyBlosxom 标准插件,只是发布辅助脚本
+&lt;&#x2F;p&gt;
+&lt;dl&gt;
+&lt;dt&gt;问题:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;发现使用 &lt;code&gt;pyblosxom-cmd staticrender --config &amp;lt;&#x2F;path&#x2F;2&#x2F;config.py&amp;gt;&lt;&#x2F;code&gt; 生成的静态页面,分类索引页面有问题:
+        &lt;ul&gt;
+        &lt;li&gt;正常的分类索引中,只包含目录中一个文章
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;如果是 非内容目录,比如说py 脚本目录,倒是可以包含所有内容,可页面输出又有乱码
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;尝试:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;吼了列表,没人理
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;也忘记以前是否正当了
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;追踪代码:
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;pre class=&quot;brush:  shell&quot;&gt;
+
+Traceback (most recent call last):
+  File &quot;&#x2F;usr&#x2F;local&#x2F;bin&#x2F;pyblosxom-cmd&quot;, line 25, in &amp;lt;module&amp;gt;
+    sys.exit(command_line_handler(&quot;pyblosxom-cmd&quot;, sys.argv))
+  File &quot;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python2.6&#x2F;dist-packages&#x2F;Pyblosxom&#x2F;commandline.py&quot;, line 466, in command_line_handler
+    return f(command, argv)
+  File &quot;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python2.6&#x2F;dist-packages&#x2F;Pyblosxom&#x2F;commandline.py&quot;, line 362, in run_static_renderer
+    return p.run_static_renderer(options.incremental)
+  File &quot;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python2.6&#x2F;dist-packages&#x2F;Pyblosxom&#x2F;pyblosxom.py&quot;, line 409, in run_static_renderer
+    tools.render_url_statically(config, url, q)
+  File &quot;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python2.6&#x2F;dist-packages&#x2F;Pyblosxom&#x2F;tools.py&quot;, line 940, in render_url_statically
+    response = render_url(cdict, url, querystring)
+  File &quot;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python2.6&#x2F;dist-packages&#x2F;Pyblosxom&#x2F;tools.py&quot;, line 983, in render_url
+    p.run(static=True)
+  File &quot;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python2.6&#x2F;dist-packages&#x2F;Pyblosxom&#x2F;pyblosxom.py&quot;, line 182, in run
+    blosxom_handler(self._request)
+  File &quot;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python2.6&#x2F;dist-packages&#x2F;Pyblosxom&#x2F;pyblosxom.py&quot;, line 947, in blosxom_handler
+    renderer.render()
+  File &quot;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python2.6&#x2F;dist-packages&#x2F;Pyblosxom&#x2F;renderers&#x2F;blosxom.py&quot;, line 330, in render
+    content = self.render_content(self._content)
+  File &quot;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python2.6&#x2F;dist-packages&#x2F;Pyblosxom&#x2F;renderers&#x2F;blosxom.py&quot;, line 273, in render_content
+    self.render_template(parse_vars, &quot;story&quot;, override=1))
+  File &quot;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python2.6&#x2F;dist-packages&#x2F;Pyblosxom&#x2F;renderers&#x2F;blosxom.py&quot;, line 370, in render_template
+    {&quot;entry&quot;: entry, &quot;template&quot;: template})
+  File &quot;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python2.6&#x2F;dist-packages&#x2F;Pyblosxom&#x2F;renderers&#x2F;blosxom.py&quot;, line 405, in _run_callback
+    defaultfunc=lambda x:x)
+  File &quot;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python2.6&#x2F;dist-packages&#x2F;Pyblosxom&#x2F;tools.py&quot;, line 780, in run_callback
+    output = func(input)
+  File &quot;&#x2F;home&#x2F;zoomq&#x2F;workspace&#x2F;3hg&#x2F;zoomquiet-default&#x2F;pyblosoxm&#x2F;zoomquiet&#x2F;plugins&#x2F;preformatter&#x2F;markdown-plugin.py&quot;, line 44, in cb_story
+...
+
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;
+日!这么深的调用栈?!
+&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  text&quot;&gt;
+
+pyblosxom-cmd   命令工具
+    |
+    +-&amp;gt; commandline.py  解析参数,准备环境
+        |
+        +-&amp;gt; pyblosxom.py    调用工具
+             ^      |
+             |      +-&amp;gt; tools.py    组织插件,参数
+             |          |
+             +----&amp;lt;-----+   嗯嗯嗯?!回调 pyblosxom.py 
+             使用 renderer.render() 和动态网站流程一样,输出内容
+
+&lt;&#x2F;pre&gt;
+    &lt;ul&gt;
+    &lt;li&gt;FT! 具体分类目录在哪个环节生成基本找遍不到了,,,因为将所有需要渲染的,都丢到一个列表中了,,
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;解决:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;其实复杂的技术问题,总是有很2的解决方案的
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;既然难以解决原有的渲染问题,那么 &lt;b&gt;使用期待的页面替换有问题的就KO的哈!&lt;&#x2F;b&gt;
+        &lt;ul&gt;
+        &lt;li&gt;俺的 &lt;a href=&quot;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;techic&#x2F;PyBlosxom&#x2F;plugins&#x2F;category_static.html&quot;&gt;category_static.py&lt;&#x2F;a&gt; 插件生成的树状索引: &lt;a href=&quot;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;category-index.html&quot;&gt;category-index.html&lt;&#x2F;a&gt; 很可以
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;那么对其进行相关裁剪,复制到对应目录中不就得了!?
+        &lt;p&gt;&lt;&#x2F;p&gt;
+先小小的增补一下&lt;a href=&quot;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;techic&#x2F;PyBlosxom&#x2F;plugins&#x2F;category_static.html&quot;&gt;category_static.py&lt;&#x2F;a&gt;
+&lt;pre class=&quot;brush:  python ; highlight: [3,4]&quot;&gt;
+
+# ...
+for e in etree[p][1:]:
+    body += &#x27;&amp;lt;span id=&quot;%s&quot; class=&quot;indents&quot;&amp;gt;%s&amp;lt;&#x2F;span&amp;gt;&amp;lt;a href=&quot;%s%s.html&quot;&amp;gt;%s&amp;lt;&#x2F;a&amp;gt;&amp;lt;br&amp;gt;\n&#x27;%(
+            &quot;&#x2F;&quot;.join(etree[p][0])
+            ,&quot;...&quot;*len(etree[p][0])
+            ,_baseurl
+            ,e[1]
+            ,e[0]
+            )
+
+
+&lt;&#x2F;pre&gt;
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;在前导空间的span 中增加代表文章所在分类目录的 id
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;p&gt;
+那么 &lt;code&gt;cp4idx2category.py&lt;&#x2F;code&gt;就可以简单的完成了:
+&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  python&quot;&gt;
+
+# -*- coding: utf-8 -*-
+&#x27;&#x27;&#x27;
+将 category_static.py 生成的树状分类索引页面，复制并修订为各个目录中的 index.html
+&#x27;&#x27;&#x27;
+__version__ = &#x27;cp4idx2category v11.09.7&#x27;
+__author__ = &#x27;Zoom.Quiet &amp;lt;zoomquiet+pyb at gmail dot com&amp;gt;&#x27;
+
+import os
+import sys
+import re
+import shutil
+
+def cp4gen(path):
+    IDX = &quot;%s&#x2F;category-index.html&quot;% path
+    p = re.compile(&quot;%s\&#x2F;\d{4}&quot;%path )
+    for root, dirs, files in os.walk(path):
+        if path == root:
+            pass
+        elif p.match(root):
+            pass
+        elif &quot;plugin_info&quot; in root:
+            pass
+        else:
+            aimpath = root.replace(path,&quot;&quot;)
+            exp = &quot;&quot;
+            for i in open(IDX,&#x27;r&#x27;):
+                if &#x27;&amp;lt;span id=&quot;&#x27; in i:
+                    if aimpath in i:
+                        exp += i
+                else:
+                    exp += i
+            open(&quot;%s&#x2F;index.html&quot;% root,&quot;w&quot;).write(exp)
+    return
+
+if __name__ == &#x27;__main__&#x27;:      # this way the module can be
+    if 2 != len(sys.argv):
+        print &quot;&quot;&quot; %s usage::
+$ python cp4idx2category.py path&#x2F;2&#x2F;_static
+            |               +- 生成的静态页面入口
+            +- 脚本自身
+        &quot;&quot;&quot; % VERSION
+    else:
+        path = sys.argv[1]
+        cp4gen(path)
+
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;b&gt;只要每次,完成静态整站渲染后,用cp4idx2category.py刷一下,就KO!&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc7R0VYRElMU&quot; name=&quot;toc7R0VYRElMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopNFdHWVBaN&#x27;&gt; 1.4. TODO &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+&lt;code&gt;不断维护的完美之折腾...&lt;&#x2F;code&gt;
+&lt;&#x2F;p&gt;
+&lt;dl&gt;
+&lt;dt&gt;  PyBlosxom 静态化发布体系:&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Hg&#x2F;Git 的 hooks 开发部署
+&lt;&#x2F;li&gt;
+&lt;li&gt;dot 的自动包含图片热区定义的 t2t 处理
+&lt;&#x2F;li&gt;
+&lt;li&gt;Leo 中的自动化发布脚本按钮
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+
+&lt;a id=&quot;toc8R0lYQ0JaV&quot; name=&quot;toc8R0lYQ0JaV&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopNFdHWVBaN&#x27;&gt; 2. 时间帐单 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;ol&gt;
+&lt;li&gt;~0.01h    起意，要折腾
+&lt;&#x2F;li&gt;
+&lt;li&gt;~.5h      SyntaxHighlighter升級
+&lt;&#x2F;li&gt;
+&lt;li&gt;~2.5h     DISQUS 加装,主要是注册和文档查阅耗时
+&lt;&#x2F;li&gt;
+&lt;li&gt;~1h       列表吼,E文真的很难以表述清楚...
+&lt;&#x2F;li&gt;
+&lt;li&gt;~1h       py2pre.py 重构完成
+&lt;&#x2F;li&gt;
+&lt;li&gt;~1h       cp4idx2category.py 山寨完成
+&lt;&#x2F;li&gt;
+&lt;li&gt;~1.5h     记录成文
+&lt;p&gt;&lt;&#x2F;p&gt;
+合计,7小时,哗,,,,
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags upinto-pyblosxom15rc3-2011-09-07-12-23.t2t --&gt;
+</content>
+</entry>
+</feed>

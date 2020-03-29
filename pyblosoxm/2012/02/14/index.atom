@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/2012/02/14/index.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/2012/02/14/index.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/2012/02/14/index.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2012-02-14T15:23:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">从 Ubuntu 到 MBP</title>
+<category term="/techic/Mac" />
+<id>/pyblosxom/2012/02/14/ubuntu2mac-mytoolbox-2012-02-14-23-23</id>
+<updated>2012-02-14T15:23:00Z</updated>
+<published>2012-02-14T15:23:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/Mac/ubuntu2mac-mytoolbox-2012-02-14-23-23.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopNFM1WTRJQ&#x27; id=&#x27;toptopNFM1WTRJQ&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;从 Ubuntu 到 MBP&lt;&#x2F;h1&gt;
+&lt;h2&gt;--我的工具箱迁移&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;p&gt;
+是也乎, Ubuntu 和 MBP 不是同种事物吼
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;不过 Ubuntu 作为操作系统,可以安装在几乎任何硬件中
+&lt;&#x2F;li&gt;
+&lt;li&gt;但是, OS X 只有在 Apple 硬件上,才真心自在
+&lt;p&gt;&lt;&#x2F;p&gt;
+所以,,,,
+&lt;p&gt;&lt;&#x2F;p&gt;
+出于各种原因, 111216 在澳门专卖店,老婆赞助之下,入手俺第一台个人笔记本:
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;MacBook Pro(15吋)
+&lt;&#x2F;li&gt;
+&lt;li&gt;2.2 GHz 四核 Intel Core i7
+&lt;&#x2F;li&gt;
+&lt;li&gt;8 GB 1333 MHz DDR3(自购4G)
+&lt;&#x2F;li&gt;
+&lt;li&gt;500GB 5400-rpm
+&lt;&#x2F;li&gt;
+&lt;li&gt;Mac OS X Lion 10.7.3 Lion (自动从10.7.2升级的)
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;p&gt;
+而之前使用的是公司配置的 联想 x200商用笔记本,安装的是 Ubunru 10.04.4 LTS(Gutsy Gibbon);
+更早先,2006年之前,是Dell 的商务本,安装windows2003服务器版;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+虽然作的事儿一直没有怎么变化,但是,日用环境的变迁,令俺对工具箱有着不同的选择.
+因为,很早水决心迁移出 M$ 环境的,所以,软件的组合,一直偏向跨平台,FLOSS软件;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+倒是入 MAC 完全有点意外,工具的迁移有点小波折,特此,以系列文章形式记要一下;
+&lt;&#x2F;p&gt;
+&lt;table border=&quot;1&quot;&gt;
+&lt;tr&gt;
+&lt;th&gt;对比\内容&lt;&#x2F;th&gt;
+&lt;th&gt;~2006&lt;&#x2F;th&gt;
+&lt;th&gt;~2011&lt;&#x2F;th&gt;
+&lt;th&gt;2012~&lt;&#x2F;th&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;th&gt;OS&lt;&#x2F;th&gt;
+&lt;th&gt;Windows&lt;&#x2F;th&gt;
+&lt;th&gt;Ubuntu&lt;&#x2F;th&gt;
+&lt;th&gt;MAC&lt;&#x2F;th&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot; colspan=&quot;4&quot;&gt;&amp;gt;&amp;gt;&amp;gt; abt.输入 &amp;lt;&amp;lt;&amp;lt;&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;浏览器&lt;&#x2F;td&gt;
+&lt;td&gt;SwiftFox&lt;&#x2F;td&gt;
+&lt;td&gt;SwiftFox&lt;&#x2F;td&gt;
+&lt;td&gt;FireFox&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;资料收集&lt;&#x2F;td&gt;
+&lt;td&gt;ScrapBook&lt;&#x2F;td&gt;
+&lt;td&gt;ScrapBook&lt;&#x2F;td&gt;
+&lt;td&gt;ScrapBook&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;视频回放&lt;&#x2F;td&gt;
+&lt;td&gt;MPlayer&lt;&#x2F;td&gt;
+&lt;td&gt;MPlayer&lt;&#x2F;td&gt;
+&lt;td&gt;MPlayer&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;email&lt;&#x2F;td&gt;
+&lt;td&gt;Thunderbird+Gmail&lt;&#x2F;td&gt;
+&lt;td&gt;Thunderbird+Gmail&lt;&#x2F;td&gt;
+&lt;td&gt;Gmail&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;&lt;b&gt;pdf&lt;&#x2F;b&gt;&lt;&#x2F;td&gt;
+&lt;td&gt;FoxitReader&lt;&#x2F;td&gt;
+&lt;td&gt;Document View&lt;&#x2F;td&gt;
+&lt;td&gt;Skim&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;&lt;b&gt;chm&lt;&#x2F;b&gt;&lt;&#x2F;td&gt;
+&lt;td&gt;内置&lt;&#x2F;td&gt;
+&lt;td&gt;CHM Reader(FF插件)&lt;&#x2F;td&gt;
+&lt;td&gt;Enolsoft CHM View|&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;&lt;b&gt;漫画阅读&lt;&#x2F;b&gt;&lt;&#x2F;td&gt;
+&lt;td&gt;ComicsViewer&lt;&#x2F;td&gt;
+&lt;td&gt;Comix&lt;&#x2F;td&gt;
+&lt;td&gt;Simple Comic&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;&lt;b&gt;文本阅读&lt;&#x2F;b&gt;&lt;&#x2F;td&gt;
+&lt;td&gt;ReadBook&lt;&#x2F;td&gt;
+&lt;td&gt;LiteBook2&lt;&#x2F;td&gt;
+&lt;td&gt;EPUBReader&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;&lt;b&gt;音乐播放&lt;&#x2F;b&gt;&lt;&#x2F;td&gt;
+&lt;td&gt;foobar2000&lt;&#x2F;td&gt;
+&lt;td&gt;Moc&lt;&#x2F;td&gt;
+&lt;td&gt;Cmus&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;&lt;b&gt;图片浏览&lt;&#x2F;b&gt;&lt;&#x2F;td&gt;
+&lt;td&gt;IrfanView&lt;&#x2F;td&gt;
+&lt;td&gt;Geeqie&lt;&#x2F;td&gt;
+&lt;td&gt;Xee&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;&lt;b&gt;笔记&lt;&#x2F;b&gt;&lt;&#x2F;td&gt;
+&lt;td&gt;Leo&lt;&#x2F;td&gt;
+&lt;td&gt;Zim+Leo&lt;&#x2F;td&gt;
+&lt;td&gt;Notational Velocity+Leo&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;&lt;b&gt;辞典&lt;&#x2F;b&gt;&lt;&#x2F;td&gt;
+&lt;td&gt;星际译王&lt;&#x2F;td&gt;
+&lt;td&gt;星际译王&lt;&#x2F;td&gt;
+&lt;td&gt;内置(外挂星际译王词库)&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot; colspan=&quot;4&quot;&gt;&amp;gt;&amp;gt;&amp;gt; abt.思考 &amp;lt;&amp;lt;&amp;lt;&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;思维导图&lt;&#x2F;td&gt;
+&lt;td&gt;FreeMind&lt;&#x2F;td&gt;
+&lt;td&gt;XMind&lt;&#x2F;td&gt;
+&lt;td&gt;Xmind&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;关系图谱&lt;&#x2F;td&gt;
+&lt;td&gt;Graphviz&lt;&#x2F;td&gt;
+&lt;td&gt;Graphviz&lt;&#x2F;td&gt;
+&lt;td&gt;Graphviz&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;&lt;b&gt;UML&lt;&#x2F;b&gt;&lt;&#x2F;td&gt;
+&lt;td&gt;JUDE&lt;&#x2F;td&gt;
+&lt;td&gt;JUDE&lt;&#x2F;td&gt;
+&lt;td&gt;websequencediagrams.com&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;&lt;b&gt;antiRSI&lt;&#x2F;b&gt;&lt;&#x2F;td&gt;
+&lt;td&gt;Workrave&lt;&#x2F;td&gt;
+&lt;td&gt;Workrave&lt;&#x2F;td&gt;
+&lt;td&gt;focus booster&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot; colspan=&quot;4&quot;&gt;&amp;gt;&amp;gt;&amp;gt; abt.系统管理 &amp;lt;&amp;lt;&amp;lt;&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;虚拟机&lt;&#x2F;td&gt;
+&lt;td&gt;NULL&lt;&#x2F;td&gt;
+&lt;td&gt;VirtualBox&lt;&#x2F;td&gt;
+&lt;td&gt;VirtualBox&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;&lt;b&gt;软件仓库&lt;&#x2F;b&gt;&lt;&#x2F;td&gt;
+&lt;td&gt;NULL(可悲!)&lt;&#x2F;td&gt;
+&lt;td&gt;apt&lt;&#x2F;td&gt;
+&lt;td&gt;brew&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;&lt;b&gt;版本管理&lt;&#x2F;b&gt;&lt;&#x2F;td&gt;
+&lt;td&gt;CVS+SVN&lt;&#x2F;td&gt;
+&lt;td&gt;SVN+Hg&lt;&#x2F;td&gt;
+&lt;td&gt;Hg+git&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;&lt;b&gt;输入法&lt;&#x2F;b&gt;&lt;&#x2F;td&gt;
+&lt;td&gt;BXM&lt;&#x2F;td&gt;
+&lt;td&gt;SCIM(外挂BXM)&lt;&#x2F;td&gt;
+&lt;td&gt;IMKQIM(外挂BXM)&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;&lt;b&gt;终端&lt;&#x2F;b&gt;&lt;&#x2F;td&gt;
+&lt;td&gt;Putty&lt;&#x2F;td&gt;
+&lt;td&gt;Gnome 终端&lt;&#x2F;td&gt;
+&lt;td&gt;iTerm 2&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;&lt;b&gt;文件管理&lt;&#x2F;b&gt;&lt;&#x2F;td&gt;
+&lt;td&gt;Total Commander&lt;&#x2F;td&gt;
+&lt;td&gt;gnome-commder&lt;&#x2F;td&gt;
+&lt;td&gt;muCommander&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;&lt;b&gt;CPU分享&lt;&#x2F;b&gt;&lt;&#x2F;td&gt;
+&lt;td&gt;BINC&lt;&#x2F;td&gt;
+&lt;td&gt;BINC&lt;&#x2F;td&gt;
+&lt;td&gt;BINC&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot; colspan=&quot;4&quot;&gt;&amp;gt;&amp;gt;&amp;gt; abt.输出 &amp;lt;&amp;lt;&amp;lt;&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;办公&lt;&#x2F;td&gt;
+&lt;td&gt;OOo&lt;&#x2F;td&gt;
+&lt;td&gt;OOo&lt;&#x2F;td&gt;
+&lt;td&gt;OOo&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;幻灯&lt;&#x2F;td&gt;
+&lt;td&gt;OOo&lt;&#x2F;td&gt;
+&lt;td&gt;S5&lt;&#x2F;td&gt;
+&lt;td&gt;rst2S5&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;文档&lt;&#x2F;td&gt;
+&lt;td&gt;t2t&#x2F;rst&lt;&#x2F;td&gt;
+&lt;td&gt;t2t&#x2F;rst&lt;&#x2F;td&gt;
+&lt;td&gt;t2t&#x2F;rst&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;&lt;b&gt;在线写作&lt;&#x2F;b&gt;&lt;&#x2F;td&gt;
+&lt;td&gt;&lt;a href=&quot;http:&#x2F;&#x2F;docwhat.org&#x2F;2007&#x2F;03&#x2F;its_all_text_v06&#x2F;&quot;&gt;It’s All Text!&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;
+&lt;td&gt;&lt;a href=&quot;http:&#x2F;&#x2F;docwhat.org&#x2F;2007&#x2F;03&#x2F;its_all_text_v06&#x2F;&quot;&gt;It’s All Text!&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;
+&lt;td&gt;&lt;a href=&quot;http:&#x2F;&#x2F;docwhat.org&#x2F;2007&#x2F;03&#x2F;its_all_text_v06&#x2F;&quot;&gt;It’s All Text!&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;图片管理&lt;&#x2F;td&gt;
+&lt;td&gt;Picasa&lt;&#x2F;td&gt;
+&lt;td&gt;Picasa&lt;&#x2F;td&gt;
+&lt;td&gt;Picasa&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;图形设计&lt;&#x2F;td&gt;
+&lt;td&gt;Inkscape&lt;&#x2F;td&gt;
+&lt;td&gt;Inkscape&lt;&#x2F;td&gt;
+&lt;td&gt;Inkscape&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;图像处理&lt;&#x2F;td&gt;
+&lt;td&gt;GIMP&lt;&#x2F;td&gt;
+&lt;td&gt;GIMP&lt;&#x2F;td&gt;
+&lt;td&gt;GIMP&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;视频处理&lt;&#x2F;td&gt;
+&lt;td&gt;ffmpeg&lt;&#x2F;td&gt;
+&lt;td&gt;ffmpeg&lt;&#x2F;td&gt;
+&lt;td&gt;ffmpeg&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;音频编辑&lt;&#x2F;td&gt;
+&lt;td&gt;Audacity&lt;&#x2F;td&gt;
+&lt;td&gt;Audacity&lt;&#x2F;td&gt;
+&lt;td&gt;Audacity&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;视频编辑&lt;&#x2F;td&gt;
+&lt;td&gt;-&lt;&#x2F;td&gt;
+&lt;td&gt;Avidemux2&lt;&#x2F;td&gt;
+&lt;td&gt;Avidemux2&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;系统监察&lt;&#x2F;td&gt;
+&lt;td&gt;内置(弱!)&lt;&#x2F;td&gt;
+&lt;td&gt;内置+htop&lt;&#x2F;td&gt;
+&lt;td&gt;内置+atMonitor&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;中文字体&lt;&#x2F;td&gt;
+&lt;td&gt;wqy&lt;&#x2F;td&gt;
+&lt;td&gt;wqy&lt;&#x2F;td&gt;
+&lt;td&gt;wqy&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;编程字体&lt;&#x2F;td&gt;
+&lt;td&gt;Courier&lt;&#x2F;td&gt;
+&lt;td&gt;Monaco&lt;&#x2F;td&gt;
+&lt;td&gt;Incosolata&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;&lt;b&gt;编程&lt;&#x2F;b&gt;&lt;&#x2F;td&gt;
+&lt;td&gt;UltraEdit+Leo&lt;&#x2F;td&gt;
+&lt;td&gt;GEdit+Leo&lt;&#x2F;td&gt;
+&lt;td&gt;Sublime Text2 &#x2F; Emacs +Leo&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;right&quot;&gt;IM&lt;&#x2F;td&gt;
+&lt;td&gt;Pidgin+Skype&lt;&#x2F;td&gt;
+&lt;td&gt;Pidgin+Skype&lt;&#x2F;td&gt;
+&lt;td&gt;Aduim+QQ&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;&#x2F;table&gt;
+
+&lt;p&gt;
+可以看到,近7成的软件,根本不用迁移,可以直接使用!-)
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;这就是开源的伟力之一!
+&lt;&#x2F;li&gt;
+&lt;li&gt;当然,有几个核心常用软件是有一定挣扎才迁移过来的,,,
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;p&gt;
+接下来,将对其中比较折腾的进行逐一回顾,,,
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;ul&gt;
+&lt;li&gt;动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;t2t渲染:: 2012-03-19 04:28:55
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags ubuntu2mac-mytoolbox-2012-02-14-23-23.t2t --&gt;
+</content>
+</entry>
+</feed>

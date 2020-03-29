@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/2007/05/11/index.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/2007/05/11/index.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/2007/05/11/index.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2007-05-11T05:43:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">从Dapper到Feisty 的征程</title>
+<category term="/oss/Ubuntu" />
+<id>/pyblosxom/2007/05/11/upgrade-into-feisty-2007-05-11-13-43</id>
+<updated>2007-05-11T05:43:00Z</updated>
+<published>2007-05-11T05:43:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/oss/Ubuntu/upgrade-into-feisty-2007-05-11-13-43.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopNFM1WTRSR&#x27; id=&#x27;toptopNFM1WTRSR&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;从Dapper到Feisty 的征程&lt;&#x2F;h1&gt;
+&lt;h2&gt;-- 直接升级?那是谣传!但是...&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0JaR&quot;&gt;为什么要升级&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc2R0lYQ0JaT&quot;&gt;升级?!&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc3R01YQ0IyT&quot;&gt;重装升级!&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc4R01YRENMU&quot;&gt;3.1. 流水&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc5R01YREVMU&quot;&gt;3.2. 惊喜&lt;&#x2F;a&gt;
+      &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#toc6R01YREVMU&quot;&gt;3.2.1. 但是...&lt;&#x2F;a&gt;
+      &lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc7R1FYQ0JaN&quot;&gt;结论&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0JaR&quot; name=&quot;toc1R0VYQ0JaR&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopNFM1WTRSR&#x27;&gt; 1. 为什么要升级 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+升级!需要理由嘛?
+&lt;&#x2F;p&gt;
+ &lt;ul&gt;
+ &lt;li&gt;不需要嘛?
+  &lt;ul&gt;
+  &lt;li&gt;需要嘛?! ...
+  &lt;p&gt;&lt;&#x2F;p&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;其实俺是被廹的...&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;原本Dapper 使用的非常的好,而且进行了巨量的配置,根本不想升级的
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;但是,人在江湖身不由已哪...
+&lt;pre&gt;
+E: Problem with MergeList &#x2F;var&#x2F;lib&#x2F;apt&#x2F;lists&#x2F; \
+    ubuntu.cn99.com_ubuntu-cn_dists_dapper_main_binary-i386_Packages
+E: 无法解析或打开软件包的列表或是状态文件。
+&lt;&#x2F;pre&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;这种软件包重新时的错误已经烦了快一个月了
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;为了稳定高效的考虑,还是要升级
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;而且!&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.osxcn.com&#x2F;ubuntu&#x2F;linux-desktop-imitating-osx.html&quot;&gt;把你的 Ubuntu 打造为 OSX&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;呜乎矣哉! 有人能够抵製这种诱惑嘛?!
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc2R0lYQ0JaT&quot; name=&quot;toc2R0lYQ0JaT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopNFM1WTRSR&#x27;&gt; 2. 升级?! &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;dl&gt;
+&lt;dt&gt;但是!&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;经过&lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;ZoomQuiet&#x2F;2007-05-08&quot;&gt;48小时的尝试&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;以及&lt;a href=&quot;http:&#x2F;&#x2F;nicholasdsj.blogspot.com&#x2F;2007&#x2F;04&#x2F;ubuntu-704-feisty-fawn.html&quot;&gt;友人的马后炮&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;死了逐步升级的心..
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc3R01YQ0IyT&quot; name=&quot;toc3R01YQ0IyT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopNFM1WTRSR&#x27;&gt; 3. 重装升级! &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+幸好相关DVD早就准备好,而且对于分区也有万全的策略,重装非常顺畅
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc4R01YRENMU&quot; name=&quot;toc4R01YRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopNFM1WTRSR&#x27;&gt; 3.1. 流水 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;重启,安装!值得注意的是将分区根据过往使用体验进一步合理化:
+ &lt;ul&gt;
+ &lt;li&gt;&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;070511_myUbuntu_partition_scrot.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;50分钟快速从DVD 就安装完成了Gnome 环境,因为保存了&lt;code&gt;&#x2F;home&lt;&#x2F;code&gt;以及&lt;code&gt;&#x2F;opt&lt;&#x2F;code&gt;目录,90%的定制就继承了下来,笑;-)
+&lt;&#x2F;li&gt;
+&lt;li&gt;重新进入桌面后进行后期定制,1小时以内恢复工作状态:
+    &lt;ol&gt;
+    &lt;li&gt;更新源
+&lt;pre&gt;
+# beryl release
+### wget http:&#x2F;&#x2F;ubuntu.beryl-project.org&#x2F;root@lupine.me.uk.gpg -O- | sudo apt-key add -
+deb http:&#x2F;&#x2F;ubuntu.beryl-project.org feisty main
+deb-src http:&#x2F;&#x2F;ubuntu.beryl-project.org feisty main
+
+### zoomq::070510 for ies4linux
+# wget -q http:&#x2F;&#x2F;wine.budgetdedicated.com&#x2F;apt&#x2F;387EE263.gpg -O- | sudo apt-key add -
+deb http:&#x2F;&#x2F;us.archive.ubuntu.com&#x2F;ubuntu feisty universe
+deb http:&#x2F;&#x2F;wine.budgetdedicated.com&#x2F;apt feisty main
+
+# 电信用户首选国内源--cn99!
+deb http:&#x2F;&#x2F;ubuntu.cn99.com&#x2F;ubuntu&#x2F; feisty main restricted universe multiverse
+deb http:&#x2F;&#x2F;ubuntu.cn99.com&#x2F;ubuntu&#x2F; feisty-security main restricted universe multiverse
+deb http:&#x2F;&#x2F;ubuntu.cn99.com&#x2F;ubuntu&#x2F; feisty-updates main restricted universe multiverse
+deb http:&#x2F;&#x2F;ubuntu.cn99.com&#x2F;ubuntu&#x2F; feisty-proposed main restricted universe multiverse
+deb http:&#x2F;&#x2F;ubuntu.cn99.com&#x2F;ubuntu&#x2F; feisty-backports main restricted universe multiverse
+deb-src http:&#x2F;&#x2F;ubuntu.cn99.com&#x2F;ubuntu&#x2F; feisty main restricted universe multiverse
+deb-src http:&#x2F;&#x2F;ubuntu.cn99.com&#x2F;ubuntu&#x2F; feisty-security main restricted universe multiverse
+deb-src http:&#x2F;&#x2F;ubuntu.cn99.com&#x2F;ubuntu&#x2F; feisty-updates main restricted universe multiverse
+deb-src http:&#x2F;&#x2F;ubuntu.cn99.com&#x2F;ubuntu&#x2F; feisty-proposed main restricted universe multiverse
+deb-src http:&#x2F;&#x2F;ubuntu.cn99.com&#x2F;ubuntu&#x2F; feisty-backports main restricted universe multiverse
+&lt;&#x2F;pre&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;sudo 化:
+&lt;pre&gt;
+#修订&#x2F;etc&#x2F;sudoers 相关行为
+%admin ALL=(ALL) NOPASSWD:ALL
+&lt;&#x2F;pre&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;显示及数字板支持:&lt;code&gt;WACOM,915resolution&lt;&#x2F;code&gt; 都是源自有的,直接安装就好
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;字体美化!
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+. &lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;070511_yuanti_cfg_scrot.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;;
+    &lt;ol&gt;
+    &lt;li&gt;SCIM 配置并加载最爱的&lt;a href=&quot;http:&#x2F;&#x2F;share.zoomquiet.org&#x2F;tools&#x2F;zqBXM2006.7z&quot;&gt;zqBXM2006&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;多媒体配置,安装最爱的 &lt;a href=&quot;http:&#x2F;&#x2F;moc.daper.net&#x2F;&quot;&gt;mocp&lt;&#x2F;a&gt;^在命令行播放音乐^ + &lt;a href=&quot;http:&#x2F;&#x2F;www.mplayerhq.hu&#x2F;design7&#x2F;news.html&quot;&gt;mplayer&lt;&#x2F;a&gt;^全能媒体播放^ 立即就可以恢复音乐背景环境了!
+. &lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;070511_mocp_zh_scrot.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;;    
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+
+&lt;p&gt;
+&lt;b&gt;KO!其它的就可以随用随装了,已经可以投入到无限的为人民服务的日常生活中了,是也乎^__^&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc5R01YREVMU&quot; name=&quot;toc5R01YREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopNFM1WTRSR&#x27;&gt; 3.2. 惊喜 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Gnome 2.18.1 果然强悍的多,不用什么 Xfce4 ,本身就非常快速了...
+&lt;&#x2F;li&gt;
+&lt;li&gt;默认是Python2.5了! 而且配合的Tk8.4 居然也可以支持中文输入了
+. &lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;070511_ubuntu704_leoZhKO_scrot.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;;
+ &lt;ul&gt;
+ &lt;li&gt;单为这,也值得重装了哪!
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;另外 &lt;code&gt;inkscape&lt;&#x2F;code&gt; 也终于可以保存了 -- &lt;a href=&quot;http:&#x2F;&#x2F;ubuntuforums.org&#x2F;showthread.php?t=294093&quot;&gt;crash in dapper when read file&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;最大的惊喜是桌面特效的稳定丰富爽直的获取!
+&lt;&#x2F;li&gt;
+&lt;li&gt;终于可以正常&lt;code&gt;挂起&lt;&#x2F;code&gt;了!
+    &lt;ul&gt;
+    &lt;li&gt;不过,默认配置,笔记本屏幕关上后过段时间就会关闭显示，而且无法重新激活！
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;基于前人的经验 &lt;a href=&quot;http:&#x2F;&#x2F;www.linuxsky.net&#x2F;html&#x2F;200606&#x2F;3560.html&quot;&gt;Thinkpad上安装Ubuntu笔记&lt;&#x2F;a&gt;配置后问题依然
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;最后使用&lt;code&gt;Ctrl+Alt+l&lt;&#x2F;code&gt; 手工锁屏幕就好
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;另外电源配置时使用 &lt;code&gt;挂起&lt;&#x2F;code&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+
+&lt;a id=&quot;toc6R01YREVMU&quot; name=&quot;toc6R01YREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h3&gt;&lt;A href=&#x27;#toptopNFM1WTRSR&#x27;&gt; 3.2.1. 但是... &lt;&#x2F;A&gt;&lt;&#x2F;h3&gt;
+&lt;dl&gt;
+&lt;dt&gt;键盘布局&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;根据&lt;a href=&quot;http:&#x2F;&#x2F;forum.ubuntu.org.cn&#x2F;about51819.html&amp;amp;sid=eb5fea294a839836417ebf76d62ee221&quot;&gt;安装fesity 后的键盘问题&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;快速配置就好,而且针对Dell Laptop 居然有专门的预设
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;070511_dell_keylayout_scrot.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    &lt;ul&gt;
+    &lt;li&gt;但是,没有左边的&lt;code&gt;Alt,Ctrl&lt;&#x2F;code&gt; 支持...
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;多媒体支持:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;著名的&lt;code&gt;w32codes&lt;&#x2F;code&gt; 最终还是从源里清除了...
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;有人贡献了经验:&lt;a href=&quot;http:&#x2F;&#x2F;blog.chinaunix.net&#x2F;u1&#x2F;34834&#x2F;showart.php?id=291548&quot;&gt;ubuntu 7.04 下播放rm&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;快速解决之!
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;字体惊魂&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;原先以上的字体设定是为了追求象OSX环境，结果发现有中文标点被显示为类似阿位伯文字的现象
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;又受到友人蛊惑尝试&lt;a href=&quot;http:&#x2F;&#x2F;www.osxcn.com&#x2F;ubuntu&#x2F;edgy-stheiti.html#comment-15473&quot;&gt;黑体解决方案&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;结果X 都启动不起来了
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;寒了半天恢复后,发现被Session 过的程序菜单都出不来了,折腾半天才发现,不能使用字体配置中的&lt;code&gt;LCD&lt;&#x2F;code&gt; 专用配置!! 最好的配置如下
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;070514_Beryl-ZHfonts_510X295_scrot.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc7R1FYQ0JaN&quot; name=&quot;toc7R1FYQ0JaN&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopNFM1WTRSR&#x27;&gt; 4. 结论 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+&lt;b&gt;GNU&#x2F;Linux 下面的重装和M$的重装云泥之差哪!&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+ &lt;ul&gt;
+ &lt;li&gt;没有注册表,都是配置文件,只要配置文件在,一切都在
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;没有分区,只有目录,只要系统是同一系列的,各种软件都在固定的地方,不用重新配置什么,重装后,原先的配置直接可用!
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;但是!毕竟每个发行版本以及自个儿的定制差别是极其大的,每周积累的升级也是非常多的,不破不立,该重装时就重装!
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;ul&gt;
+&lt;li&gt;t2t渲染:: 2010-10-09 02:21:41
+&lt;&#x2F;li&gt;
+&lt;li&gt;动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;oss&#x2F;Ubuntu&#x2F;upgrade-into-feisty-2007-05-11-13-43.t2t --&gt;
+</content>
+</entry>
+</feed>

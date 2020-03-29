@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/utility/Subversion/ra_dev-svn-2007-10-15-11-33.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/utility/Subversion/ra_dev-svn-2007-10-15-11-33.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/utility/Subversion/ra_dev-svn-2007-10-15-11-33.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2007-10-15T03:33:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">SVN 无法识别的url方案 </title>
+<category term="" />
+<id>/pyblosxom/2007/10/15/ra_dev-svn-2007-10-15-11-33</id>
+<updated>2007-10-15T03:33:00Z</updated>
+<published>2007-10-15T03:33:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/utility/Subversion/ra_dev-svn-2007-10-15-11-33.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopS05MRTRJS&#x27; id=&#x27;toptopS05MRTRJS&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;SVN 无法识别的url方案 &lt;&#x2F;h1&gt;
+&lt;h2&gt;-- 解决...记要&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0JaN&quot;&gt;现象&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc2R0VYRENMU&quot;&gt;1.1. 原因&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc3R0VYREVMU&quot;&gt;1.2. 解决&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc4R0VYREdMU&quot;&gt;1.3. 心得&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0JaN&quot; name=&quot;toc1R0VYQ0JaN&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopS05MRTRJS&#x27;&gt; 1. 现象 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;dl&gt;
+&lt;dt&gt;突然之间访问不能:&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;pre&gt;
+svn: 无法识别的URL方案(一般需要svn:&#x2F;&#x2F;，http:&#x2F;&#x2F;，file:&#x2F;&#x2F;等开头)
+“http:&#x2F;&#x2F;svn.rdev.kingsoft.net&#x2F;kdoc&#x2F;tangle&#x2F;KsPIG&#x2F;Zoom.Quiet&#x2F;S5”
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc2R0VYRENMU&quot; name=&quot;toc2R0VYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopS05MRTRJS&#x27;&gt; 1.1. 原因 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;根据:&lt;&#x2F;dt&gt;&lt;dd&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;blog.yesky.com&#x2F;223&#x2F;sxy519&#x2F;1716723.shtml&quot;&gt;http:&#x2F;&#x2F;blog.yesky.com&#x2F;223&#x2F;sxy519&#x2F;1716723.shtml&lt;&#x2F;a&gt; 建议的一看才知道...
+&lt;pre&gt;
+$ svn --version
+svn，版本 1.4.3 (r23084)
+   编译于 Oct 12 2007，13:28:55
+
+版权所有 (C) 2000-2007 CollabNet。
+Subversion 是开放源代码软件，请参阅 http:&#x2F;&#x2F;subversion.tigris.org&#x2F;
+此产品包含由 CollabNet (http:&#x2F;&#x2F;www.Collab.Net&#x2F;)开发的软件。
+
+可使用以下的仓库存取 (RA) 模块:
+
+* ra_svn : 使用svn网络协议访问仓库的模块。
+  - 处理“svn”方案
+* ra_local : 访问本地磁盘的仓库模块。
+  - 处理“file”方案
+&lt;&#x2F;pre&gt;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;FT! Ubuntu自动升级时，没有完整的升级SVN哪！
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc3R0VYREVMU&quot; name=&quot;toc3R0VYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopS05MRTRJS&#x27;&gt; 1.2. 解决 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;使用新立得:&lt;&#x2F;dt&gt;&lt;dd&gt;
+ &lt;ul&gt;
+ &lt;li&gt;重新安装SVN 相关所有 
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;问题依然...
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;编译!&lt;&#x2F;dt&gt;&lt;dd&gt;
+ &lt;ul&gt;
+ &lt;li&gt;GNU&#x2F;Linux 下面一般就这板斧招了!
+&lt;pre&gt;
+$ wget -c http:&#x2F;&#x2F;subversion.tigris.org&#x2F;downloads&#x2F;subversion-deps-1.4.5.tar.bz2 &amp;amp;
+$ wget -c http:&#x2F;&#x2F;subversion.tigris.org&#x2F;downloads&#x2F;subversion-1.4.5.tar.bz2 &amp;amp;
+$ tar xjvf subversion-1.4.5.tar.bz2 
+$ tar xjvf subversion-deps-1.4.5.tar.bz2 
+$ cd subversion-1.4.5
+$ .&#x2F;configure
+$ make
+$ sudo make install clean
+...
+&lt;&#x2F;pre&gt;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;FT!!怎么还是没有&lt;code&gt;ra_dav&lt;&#x2F;code&gt;模块?! 
+&lt;pre&gt;
+$ whereis svn
+svn: &#x2F;usr&#x2F;bin&#x2F;svn &#x2F;usr&#x2F;X11R6&#x2F;bin&#x2F;svn &#x2F;usr&#x2F;bin&#x2F;X11&#x2F;svn &#x2F;usr&#x2F;local&#x2F;bin&#x2F;svn &#x2F;usr&#x2F;share&#x2F;man&#x2F;man1&#x2F;svn.1.gz
+$ &#x2F;usr&#x2F;local&#x2F;bin&#x2F;svn --version
+svn，版本 1.4.5 (r25188)
+   编译于 Oct 15 2007，11:03:39
+
+版权所有 (C) 2000-2007 CollabNet。
+Subversion 是开放源代码软件，请参阅 http:&#x2F;&#x2F;subversion.tigris.org&#x2F;
+此产品包含由 CollabNet (http:&#x2F;&#x2F;www.Collab.Net&#x2F;)开发的软件。
+
+可使用以下的仓库访问模块: 
+
+* ra_dav : 通过WebDAV(DeltaV)协议访问仓库的模块。
+  - 处理“http”方案
+* ra_svn : 使用svn网络协议访问仓库的模块。
+  - 处理“svn”方案
+* ra_local : 访问本地磁盘的仓库模块。
+  - 处理“file”方案
+&lt;&#x2F;pre&gt;
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;解决:&lt;&#x2F;dt&gt;&lt;dd&gt;
+ &lt;ul&gt;
+ &lt;li&gt;原来默认的&lt;code&gt;&#x2F;usr&#x2F;bin&#x2F;svn&lt;&#x2F;code&gt; 还是原先安装的 1.4.3 版本
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;手工处理一下
+&lt;pre&gt;
+$ sudo mv &#x2F;usr&#x2F;bin&#x2F;svn &#x2F;usr&#x2F;bin&#x2F;svn143
+$ sudo ln -s &#x2F;usr&#x2F;local&#x2F;bin&#x2F;svn &#x2F;usr&#x2F;bin&#x2F;svn
+&lt;&#x2F;pre&gt;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;哗,世界恢复正当!
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc4R0VYREdMU&quot; name=&quot;toc4R0VYREdMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopS05MRTRJS&#x27;&gt; 1.3. 心得 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;确认现象
+&lt;&#x2F;li&gt;
+&lt;li&gt;搜索资料
+&lt;&#x2F;li&gt;
+&lt;li&gt;编译
+&lt;&#x2F;li&gt;
+&lt;li&gt;测试调整
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;code&gt;嗯嗯嗯~自由世界中的不二法典哪!解决问题的...&lt;&#x2F;code&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;technorati-over.gif&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;FLOSS&quot;&gt;OpenSource&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;Subversion&quot;&gt;Subversion&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;utility&#x2F;Subversion&#x2F;ra_dev-svn-2007-10-15-11-33.t2t --&gt;
+</content>
+</entry>
+</feed>

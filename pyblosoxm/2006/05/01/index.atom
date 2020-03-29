@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/2006/05/01/index.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/2006/05/01/index.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/2006/05/01/index.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2006-05-01T15:23:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">post-commit.py</title>
+<category term="/utility/Subversion/hooks" />
+<id>/pyblosxom/2006/05/01/post-commit</id>
+<updated>2006-05-01T15:23:00Z</updated>
+<published>2006-05-01T15:23:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/utility/Subversion/hooks/post-commit.html" />
+<content type="html">&lt;pre class=&quot;brush: python&quot;&gt;#!&#x2F;usr&#x2F;local&#x2F;bin&#x2F;python
+#tags utility,Subversion,hooks
+#coding=utf-8
+&quot;&quot;&quot;
+SVN 事务日志处理
+    - 使用固定的参数来自动响应检入后续操作:
+        - 记录检入活动信息到每日log文件
+&quot;&quot;&quot;
+##  Zoomq::060110 fixed log exp. esp. for woodpecker repo.
+## only record commit-log of woodpecker
+
+
+import sys,os,time
+
+CHMOD = &quot;&#x2F;bin&#x2F;chmod&quot;
+CHOWN = &quot;&#x2F;usr&#x2F;sbin&#x2F;chown&quot;
+LOOK = &quot;&#x2F;usr&#x2F;local&#x2F;bin&#x2F;svnlook&quot;
+SVN = &quot;&#x2F;usr&#x2F;local&#x2F;bin&#x2F;svn&quot;
+log=&quot;&#x2F;var&#x2F;log&#x2F;svn&#x2F;woodpecker-ci.log&quot;
+daylog = &quot;%s-%s.log&quot;%(log[:-4]
+                    ,time.strftime(&quot;%y%m%d&quot;,
+                                    time.localtime()))
+LOGFILE = daylog
+f = open( LOGFILE, &quot;a+&quot; )
+TSTAMP = &quot;%s&quot;%time.strftime(&quot;%y-%m-%d %H:%M:%S&quot;, time.localtime())
+
+### hook matter
+MARK = &quot;woodpecker&quot;
+MOD = &quot;woodpecker&quot;
+AIM = &quot;&#x2F;path&#x2F;to&#x2F;woodpecker&#x2F;repos&#x2F;&quot;
+def autoco(dirs,svn,mark,aim,mod):
+    &quot;&quot;&quot;auto co all matter files:
+        - svn SVNLOOK where
+        - mark the mark of matter
+        - aim where want to co
+        - mod 指定的模块
+    &quot;&quot;&quot;
+    print &gt;&gt; f,dirs
+    if mark in dirs:
+        print &gt;&gt; f,TSTAMP+&quot; marked::OK! up::&quot;+aim+mod
+        upsvn = svn+&quot; update %s&quot;%(aim+mod)
+        print &gt;&gt; f,TSTAMP+upsvn
+        up = os.popen(upsvn).read().strip()
+        print &gt;&gt; f,up
+    else:
+        print &gt;&gt; f,TSTAMP+&quot; marked::NO! up::nothing&quot;
+def changedirs(look,rev,repos):
+    &quot;&quot;&quot;list all changed dir
+    &quot;&quot;&quot;
+    dirs = os.popen( look+&quot; changed -r &quot;+ rev + &quot; &quot; + repos).read().strip()
+    return dirs
+def chkdirmod(cmod,cown,path,umark):
+    &quot;&quot;&quot;chmod and chown the aim path
+    &quot;&quot;&quot;
+    exp = os.popen(cmod+&quot; -R &quot;+umark+&quot; &quot;+path).read().strip()
+    exp += os.popen(cown+&quot; -R www:www &quot;+path).read().strip()    
+    return exp
+def logcommit(look,rev,repos):
+    &quot;&quot;&quot;log commit info...
+    &quot;&quot;&quot;
+    log = os.popen( look+&quot; author -r &quot;+ rev + &quot; &quot;+ repos).read().strip()
+    print &gt;&gt; f,&quot; &quot;*4+&quot;%s commited;%s&quot;%(str(log),repos)
+    #return log..
+    
+def usage():
+    print &quot;Usage: &quot; + sys.argv[0] + &quot; REPOS REV\n&quot;
+    print &gt;&gt; f,TSTAMP+&quot;Usage: &quot; + sys.argv[0] + &quot; REPOS REV&quot;
+    sys.exit(0)
+
+if __name__ == &#x27;__main__&#x27;:
+    if len(sys.argv) != 3:
+        usage()
+    # start hook matter...
+    repos = sys.argv[1]
+    rev = sys.argv[2]        
+    print &gt;&gt; f,TSTAMP+&quot; &gt;&gt;&gt;&gt;&gt;&gt; woodpecker up rev::&quot;+rev
+    print &gt;&gt; f,changedirs(LOOK,rev,repos)
+    logcommit(LOOK,rev,repos)
+    
+    print &gt;&gt; f,TSTAMP+&quot; &lt;&lt;&lt;&lt;&lt;&lt; woodpecker repo commit DONE! &quot;
+    &lt;&#x2F;pre&gt;</content>
+</entry>
+</feed>

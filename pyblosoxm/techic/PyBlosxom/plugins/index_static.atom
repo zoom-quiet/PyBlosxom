@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/techic/PyBlosxom/plugins/index_static.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/techic/PyBlosxom/plugins/index_static.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/techic/PyBlosxom/plugins/index_static.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2010-05-31T03:10:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">index_static.py</title>
+<category term="" />
+<id>/pyblosxom/2010/05/31/index_static</id>
+<updated>2010-05-31T03:10:00Z</updated>
+<published>2010-05-31T03:10:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/PyBlosxom/plugins/index_static.html" />
+<content type="html">&lt;pre class=&quot;brush: python&quot;&gt;# -*- coding: utf-8 -*-
+&quot;&quot;&quot;
+index_static.py
+    - just fixed for pyblosxom-cmd  staticrender export all .html links
+base index.py from:
+http:&#x2F;&#x2F;snarfed.org&#x2F;space&#x2F;pyblosxom+index
+Ryan Barrett &lt;pyblosxom@ryanb.org&gt;
+
+This plugin displays an alphabetical index of all entries. It uses these
+optional config variables from config.py, shown here with their defaults:
+
+py[&#x27;index_trigger&#x27;]            = &#x27;&#x2F;site-index&#x27;
+py[&#x27;index_num_columns&#x27;]        = 2
+py[&#x27;index_letters_first&#x27;]      = True
+py[&#x27;index_title&#x27;]              = &#x27;index&#x27;
+py[&#x27;index_use_story_template&#x27;] = True
+
+
+VERSION:
+0.2
+
+TODO:
+- use a template instead of hard-coded HTML
+
+Copyright 2006 Ryan Barrett
+
+This program is free software; you can redistribute it and&#x2F;or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+&quot;&quot;&quot;
+import math
+import os.path
+import time
+from Pyblosxom import tools
+import Pyblosxom.entries
+
+__author__ = &#x27;Ryan Barrett&#x27;
+__version__ = &#x27;0.2&#x27;
+__url__ = &#x27;http:&#x2F;&#x2F;snarfed.org&#x2F;space&#x2F;pyblosxom+index&#x27;
+__description__ = &#x27;Displays an alphabetical index of all entries.&#x27;
+
+
+def verify_installation(request):
+  return 1
+
+def cb_filelist(args):
+  request = args[&#x27;request&#x27;]
+  http = request.getHttp()
+  data = request.getData()
+  config = request.getConfiguration()
+
+  trigger = config.get(&#x27;index_trigger&#x27;, &#x27;site-index&#x27;)
+  if http[&#x27;PATH_INFO&#x27;] != trigger:
+    return
+
+  # get the entries
+  datadir = config[&#x27;datadir&#x27;]
+  files = tools.Walk(request, datadir)
+  files.sort()
+
+  # sort into sections, one for each letter. the dictionary is 
+  # letter =&gt; (entry name, path) where path is the relative to datadir.
+  sections = {}
+  entry_extensions = data[&#x27;extensions&#x27;].keys()
+
+  for file in files:
+    assert file.startswith(datadir)
+    path, ext = os.path.splitext(file[len(datadir):])
+    if ext[1:] in entry_extensions:  # strip the leading period from ext
+      entry_name = os.path.basename(path)
+      sections.setdefault(entry_name[0].upper(), []).append((entry_name, path))
+
+  # extract the first letters. sort as usual, except that numbers and other
+  # non-letters go *after* letters. 
+  def letters_before_symbols(a, b):
+    if a.isalpha() and not b.isalpha():
+      return -1
+    elif not a.isalpha() and b.isalpha():
+      return 1
+    else:
+      return cmp(a, b)
+
+  letters = sections.keys()
+  if config.get(&#x27;index_letters_first&#x27;, 1):
+    letters.sort(letters_before_symbols)
+  else:
+    letters.sort()
+
+  # add the header with links to each section
+  body = &#x27;&lt;p class=&quot;index-header&quot;&gt;&#x27;
+  letter_links = [&#x27;&lt;a href=&quot;#%s&quot;&gt;%s&lt;&#x2F;a&gt;&#x27; % (l, l) for l in letters]
+  body += &#x27; |\n&#x27;.join(letter_links)
+  body += &#x27;&lt;&#x2F;p&gt;\n&lt;hr class=&quot;index&quot;&#x2F;&gt;\n\n&#x27;
+
+  # add the sections themselves, with one link per entry, in a table. the
+  # number of columns is taken from the index_num_columns config variable.
+  # entries are ordered down each column, in order.
+  num_cols = config.get(&#x27;index_num_columns&#x27;, 2)
+
+  for l in letters:
+    body += &#x27;&lt;h3 class=&quot;index&quot;&gt;%s&lt;&#x2F;h3&gt; &lt;a name=&quot;%s&quot;&gt;&lt;&#x2F;a n&gt;\n&#x27; % (l, l)
+    body += &#x27;&lt;table class=&quot;index&quot;&gt;\n&#x27;
+
+    entries = sections[l]
+    entries.sort()
+    num_rows = int(math.ceil(float(len(entries)) &#x2F; num_cols))
+
+    for row in range(0, num_rows):
+      # alternate the &lt;tr&gt; tags&#x27; class between index-row-stripe-0 and
+      # index-row-stripe-1, so you can use CSS to alternate their color for
+      # readability, if you want.
+      body += &#x27;&lt;tr class=&quot;index-row-stripe-%d&quot;&gt;\n&#x27; % (row % 2)
+      for col in range(0, num_cols):
+        entry_index = col * num_rows + row
+        if entry_index &lt; len(entries):
+          entry_name, path = entries[entry_index]
+        else:
+          entry_name = path = &#x27;&#x27;
+        body += &#x27;&lt;td&gt;&lt;a href=&quot;%s.html&quot;&gt;%s&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;\n&#x27; % (path[1:], entry_name)
+      body += &#x27;&lt;&#x2F;tr&gt;\n&#x27;
+
+    body += &#x27;&lt;&#x2F;table&gt;\n&lt;hr class=&quot;index&quot;&#x2F;&gt;\n\n&#x27;
+
+  data = {&#x27;title&#x27;: config.get(&#x27;index_title&#x27;, &#x27;index&#x27;)}
+  # use the epoch for mtime. otherwise, pyblosxom uses the current time, which
+  # makes other plugins (like weblogsping) think this is a new entry.
+  epoch = time.localtime(0)
+  fe = Pyblosxom.entries.base.generate_entry(request, data, body, epoch)
+  return [fe]
+
+def cb_story(args):
+  request = args[&#x27;request&#x27;]
+  http = request.getHttp()
+  config = request.getConfiguration()
+  trigger = config.get(&#x27;index_trigger&#x27;, &#x27;site-index&#x27;)
+
+  if (http[&#x27;PATH_INFO&#x27;] == trigger and
+      not config.get(&#x27;index_use_story_template&#x27;, 1)):
+    title = config.get(&#x27;index_title&#x27;, &#x27;index&#x27;)
+    args[&#x27;template&#x27;] = &#x27;&lt;h1 class=&quot;index&quot;&gt;%s&lt;&#x2F;h1&gt;\n&lt;hr &#x2F;&gt;\n$body&#x27; % title
+
+  return args
+&lt;&#x2F;pre&gt;</content>
+</entry>
+</feed>

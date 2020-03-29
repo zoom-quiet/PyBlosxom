@@ -1,0 +1,923 @@
+<?xml version="1.0"?>
+<!DOCTYPE content [ <!ENTITY nbsp " "> ]>
+<rdf:RDF xml:base="/pyblosxom/rdf"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<rdf:Description rdf:about="/pyblosxom">
+  <dc:title> Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup> </dc:title>
+  <dc:description> Zoom.Quiet's PyBlosxom blogging </dc:description>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+</rdf:Description>
+
+<rdf:Description rdf:about="/pyblosxom/utility/py4str/StructuredText/rst2s5-usage-2010-09-18-23-23">
+  <dc:title> rst2s5 </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2010-09-18T15:23:00Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <div class="header" id="header">
+<a name='toptopT0paWElNV' id='toptopT0paWElNV'></a><h1>rst2s5</h1>
+<h2>~ 好用的S5生成宏</h2>
+</div>
+
+<div class="toc" id="toc">
+  <ol>
+  <li><a href="#toc1R0VYQ0JaN">缘起</a>
+  </li>
+  <li><a href="#toc2R0lYQ0IyR">运用</a>
+    <ul>
+    <li><a href="#toc3R0lYRENMU">2.1. 初步</a>
+    </li>
+    <li><a href="#toc4R0lYREVMU">2.2. rst</a>
+    </li>
+    <li><a href="#toc5R0lYREdMU">2.3. 定制</a>
+    </li>
+    </ul>
+  </li>
+  <li><a href="#toc6R01YQ0JaV">时间帐单</a>
+  </li>
+  </ol>
+
+</div>
+<div class="body" id="body">
+<a id="toc1R0VYQ0JaN" name="toc1R0VYQ0JaN"></a>
+<h1><A href='#toptopT0paWElNV'> 1. 缘起 </A></h1>
+<p>
+最近讲演频繁:
+</p>
+<ol>
+<li>100820: <a href="http://wiki.woodpecker.org.cn/moin/IntroPy">IntroPy - Woodpecker Wiki for CPUG</a>
+</li>
+<li>100826: <a href="http://wiki.woodpecker.org.cn/moin/TDD4Py">TDD4Py - Woodpecker Wiki for CPUG</a>
+</li>
+<li>100918: <a href="file:///home/zoomq/zdata/zScrapBook/ZqFLOSS/data/20100817125828/index.html">Software Freedom Day 2010 - SZLUG</a>
+</li>
+<li>...
+<p></p>
+俺在 <b><a href="http://meyerweb.com/eric/tools/s5/">S5: A Simple Standards-Based Slide Show System</a></b> 中使用高桥流，幻灯页码轻易超过100! 即使有 Leo 帮助也感觉吃不住，
+主要原因是直接写 HTML 太多标签干扰思維了...
+<p></p>
+其实早就知道有 rst-&gt;s5 的工具:
+</li>
+</ol>
+
+<ul>
+<li><a href="http://inet6.blogspot.com/2007/03/rsts5.html">結構文本(rst)轉網頁投影片(s5)</a>
+</li>
+<li><a href="http://docutils.sourceforge.net/docs/user/slide-shows.html">Easy Slide Shows With reST &amp; S5</a>
+<p></p>
+但是因为自个儿的s5 样式进行了深入定制，不知道是否容易迁移;
+<p></p>
+可是实在幻灯稿多了受不住，就迁移了...
+</li>
+</ul>
+
+<a id="toc2R0lYQ0IyR" name="toc2R0lYQ0IyR"></a>
+<h1><A href='#toptopT0paWElNV'> 2. 运用 </A></h1>
+<p>
+文档的确不多,中文的就找到上述 Inet6 兄的，但是和谐后，也无法方便的直接咨询
+</p>
+<p>
+仔细看了哈文档，发现的确不复杂;
+</p>
+<p>
+之于俺，只是要引用原先的样式，只要:
+</p>
+<pre class="brush:  shell; highlight: [3,5]">
+
+#   先随便生成个默认工程
+rst2s5.py --theme &lt;base-theme&gt; &lt;doc&gt;.txt &lt;doc&gt;.html
+#   再复制原先样式过来
+ui/&lt;base-theme&gt; to ui/&lt;new-theme&gt;.
+#   然后聲明使用新样式就好:
+rst2s5.py --theme-url ui/&lt;new-theme&gt; &lt;doc&gt;.txt &lt;doc&gt;.html
+
+#   俺在对应目录中的实际命令就是:
+python rst2s5-Pygments.py  --current-slide --theme-url=ui/freedom index.rst index.html
+</pre>
+    <ul>
+    <li><code>--current-slide</code> 是要求生成页码的开关参数
+    </li>
+    <li><code>rst2s5 --help</code> 居然看到有几十种参数,才发现
+    </li>
+    <li><a href="http://docutils.sourceforge.net/docs/user/tools.html">Docutils Front-End Tools</a>  实在是个丰富的工具集!
+    </li>
+    <li><a href="http://matt-good.net/files/software-dev-with-trac/rst2s5">rst2s5-Pygments.py</a> 是定制过的支持 Pygments 语法颜色的 rst2s5 转换脚本!
+    </li>
+    </ul>
+
+<p>
+最后发布时的 s5演示目录分布是:
+</p>
+<pre class="brush:  text">
+
+http://zoomquiet.org/res/s5/100918-MyTools/rst2s5/
++-- i                   资源目录(图片什么的...)
+|-- index.html          S5
+|-- index.rst           rst撰写原文稿
+|-- rst2s5-Pygments.py  定制支持 Pygments 语法颜色渲染的s5生成脚本
+|-- s5defs.txt          rst2s5引用的 s5 配置文件
+`-- ui                  样式入口
+    +-- default         默认样式
+    `-- freedom         定制样式 
+</pre>
+<p></p>
+<a id="toc3R0lYRENMU" name="toc3R0lYRENMU"></a>
+<h2><A href='#toptopT0paWElNV'> 2.1. 初步 </A></h2>
+<p>
+和S5 幻灯组织是完全对等的撰写:
+</p>
+<ul>
+<li>HTML 首页:
+<pre class="brush:  html ; highlight: [1]">
+
+&lt;div class="slide" id="slide0"&gt;
+Blalala
+&lt;/div&gt;
+</pre>
+</li>
+<li>rST首页:
+<pre class="brush:  text ; highlight: [2]">
+
+==================================================================
+我的工具箱
+==================================================================
+</pre>
+</li>
+<li>HTML幻灯页:
+<pre class="brush:  html ; highlight: [1,2,4]">
+
+&lt;div class="slide"&gt;
+&lt;h1&gt;标题&lt;/h1&gt;
+内容
+    &lt;div class="handout"&gt;
+    隐藏提示
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+</li>
+<li>rST幻灯页:
+<pre class="brush:  html ; highlight: [2,4]">
+
+标题
+=========
+
+.. container:: handout
+
+   隐藏提示
+
+内容
+</pre>
+<p></p>
+</li>
+</ul>
+
+<dl>
+<dt>唯一注意:</dt><dd>
+ <ul>
+ <li>是要在文件头部引入 <a href="http://docutils.sourceforge.net/docutils/parsers/rst/include/s5defs.txt">s5defs.txt</a> 专用配置文本:
+<pre class="brush:  text">
+
+.. include:: &lt;s5defs.txt&gt;
+</pre>
+ </li>
+ <li>参考: <a href="http://docutils.sourceforge.net/docs/ref/rst/substitutions.html">reStructuredText Standard Substitution Definition Sets</a>
+ </li>
+ </ul>
+</dd>
+</dl>
+
+<a id="toc4R0lYREVMU" name="toc4R0lYREVMU"></a>
+<h2><A href='#toptopT0paWElNV'> 2.2. rst </A></h2>
+<p>
+html-&gt;rst 的撰写只有更加 <a href="http://wiki.woodpecker.org.cn/moin/WyTiWyG">WYTIWYG</a> 很容易习惯;
+</p>
+<p>
+参考: <a href="reStructuredText">http://docutils.sourceforge.net/docs/user/rst/quickref.html Quick</a>
+</p>
+<p>
+主要得习惯的只有:
+</p>
+<ol>
+<li>标题和 MoinMoin 语法不同使用 <code>==================</code>独立的标题引用行来聲明第几层的标题
+ <ul>
+ <li>建议顺序是:<code>= - ` : ' " ~ ^ _ * + # &lt; &gt;</code>
+ </li>
+ <li>一般就用到前4个:
+<pre class="brush:  text">
+
+
+大标题
+======
+小标题
+------
+次标题
+''''''
+小节标
+""""""
+</pre>
+ </li>
+ </ul>
+</li>
+<li>列表项更加简单可以使用 <code>+</code> 以及 <code>-</code> 相比<code>*</code> 要少按个键 ;-)
+</li>
+<li>链接更加灵活了:
+ <ul>
+ <li>就地链接: <code>是也乎,是也乎`显示文字 &lt;http://foo.org&gt;`__ 是也乎</code>
+ </li>
+ <li>匿名链接: 
+<pre class="brush:  text">
+
+是也乎,是也乎`显示文字`__ 是也乎
+
+__  http://foo.org
+</pre>
+    <ul>
+    <li>和行内链接聲明最近的独立URL 定义进行自动匹配
+    </li>
+    </ul>
+ </li>
+ <li>全局链接:
+<pre class="brush:  text ; highlight: [1,5]">
+
+.. _Zoom.Quiet:
+    http://code.google.com/p/openbookproject/wiki/ZoomQuiet
+
+...
+是也乎,是也乎`Zoom.Quiet`_ 是也乎
+
+</pre>
+ </li>
+ </ul>
+</li>
+<li>就地图片:
+<pre class="brush:  text ; highlight: [2,3,5]">
+
+.. image:: pix/Takahashi-method.jpg
+    :align: center
+    :scale: 150 %
+    :alt: 高橋流
+    :target: http://blog.derjohng.com/2006/04/12/takahashi-method-%E7%B0%A1%E5%A0%B1/
+</pre>
+    <ul>
+    <li>这个 target 就是链接! 文档中没有例子,找了半天...
+    </li>
+    </ul>
+</li>
+<li>全局图片:
+<pre class="brush:  text ; highlight: [2]">
+
+.. |Takahashi| image:: pix/Takahashi-method.jpg
+    :align: top
+    :scale: 150 %
+    :alt: 高橋流
+    :target: http://blog.derjohng.com/2006/04/12/takahashi-method-%E7%B0%A1%E5%A0%B1/
+
+...
+
+任意文字中 |Takahashi| 嵌入图片...
+</pre>
+    <ul>
+    <li><code>align</code> 这时,就是图片和文字流的行内相对位置,而不是图片在整个页面的排版,所以,只能有"top", "middle", "bottom"
+    </li>
+    <li>其实不用专门记忆,每次渲染时, rst2s5 会进行检查,比如说:
+<pre class="brush:  shell ; highlight: [3,4]">
+
+$ python rst2s5-Pygments.py  --current-slide --theme-url=ui/freedom index.rst index.html
+index.rst:34: (ERROR/3) Error in "image" directive: 
+"center" is not a valid value for the "align" option within a substitution definition.  
+Valid values for "align" are: "top", "middle", "bottom".
+index.rst:34: (WARNING/2) Substitution definition "S5icon" empty or invalid.
+
+.. |S5icon| image:: pix/S5icon.GIF
+    :align: center
+    :scale: 100 %
+    :target: http://www.meyerweb.com/eric/tools/s5/
+index.rst:1284: (ERROR/3) Undefined substitution referenced: "S5icon".
+</pre>
+    </li>
+    </ul>
+</li>
+</ol>
+
+<p>
+嗯嗯嗯, 使用 rst 进行 s5 撰写,完全是脚本组织的感觉了...连输出时的交互 error 通告都是 Python 味的..
+</p>
+<a id="toc5R0lYREdMU" name="toc5R0lYREdMU"></a>
+<h2><A href='#toptopT0paWElNV'> 2.3. 定制 </A></h2>
+<p>
+比较囧是只有俺习惯并坚持的样式很搞:
+</p>
+<dl>
+<dt>默认的样式排版:</dt><dd>
+    <dl>
+    <dt><img align="middle" src="/pybimage/2010/rst2st-theme-default.png" border="0" alt=""/></dt><dd>
+    </dd>
+    </dl>
+    <ul>
+    <li>和 s5 的默认样式100% 一致!
+    <p></p>
+    </li>
+    </ul>
+</dd>
+<dt>定制的<code>Freedome</code>样式:</dt><dd>
+    <dl>
+    <dt><img align="middle" src="/pybimage/2010/ZQshutter_100920-151219_html.png" border="0" alt=""/></dt><dd>
+    主要的设计:
+     <ul>
+     <li>A: 表格3栏格式的作者和版权聲明
+<pre class="brush:  html ; highlight: [6]">
+
+&lt;div id="footer"&gt;
+&lt;table&gt;&lt;tr&gt;&lt;td&gt;
+&lt;a target="_blank"  href="http://code.google.com/p/openbookproject/wiki/ZoomQuiet"&gt;
+Zoom.Quiet&lt;/a&gt;&lt;br/&gt;v10.8.17
+&lt;/td&gt;
+&lt;td rowspan="2"&gt;
+&lt;a  target="_blank" style="background-color:;" href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh"&gt;
+&lt;img src="icon/cc-byncnd-88x31.png"/&gt;
+&lt;/a&gt;Recommend &lt;a  target="_blank"
+href="http://www.mozilla.org.cn"&gt;FireFox&lt;/a&gt; for the best experience!
+&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+    &lt;div id="controls"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+     </li>
+     <li>B: 页码/页数 提示
+     </li>
+     <li>C: 当页内容提示
+<pre class="brush:  html ; highlight: [4]">
+
+&lt;div class="slide"&gt;
+&lt;h1&gt;
+标题
+&lt;div id="sup"&gt;
+    mov-&gt;时间-&gt;效能工具
+&lt;/div&gt;
+&lt;/h1&gt;
+...
+</pre>
+     <p></p>
+     </li>
+     </ul>
+    </dd>
+    </dl>
+</dd>
+<dt>对应的rst2s5 效果:</dt><dd>
+    <dl>
+    <dt><img align="middle" src="/pybimage/2010/ZQshutter_100920-151709_rst2s4.png" border="0" alt=""/></dt><dd>
+    <p></p>
+    对应的设计:
+     <ul>
+     <li>A: 表格的作者和版权聲明
+<pre class="brush:  text ; highlight: [1,2]">
+
+.. footer:: 
+   .. class:: borderless
+
+   =============  ====================================
+   `Zoom.Quiet`_  |cc-byncsa15|
+   -------------  ------------------------------------
+   v10.09.16      推荐用 `FireFox`_ 获得最佳游览效果
+   =============  ====================================
+</pre>
+     </li>
+     <li>B: 页码/页数 提示
+     </li>
+     <li>C: 当页内容提示
+<pre class="brush:  text ; highlight: [4]">
+
+标题
+=========
+
+.. container:: handout
+
+   俺-&gt;工具-&gt;持续完善 |zqeye|
+
+...
+</pre>
+        <ul>
+        <li>嗯嗯嗯,当然的得配合CSS:
+        </li>
+        <li>注释掉默认样式<code>ui/&lt;theme&gt;/s5-core.css</code> 中的
+<pre class="brush:  css">
+
+.handout {display: none;}
+</pre>
+        </li>
+        <li>在专用CSS<code>ui/&lt;theme&gt;/takahashi.css</code>中定制
+<pre class="brush:  css">
+
+div.handout{
+    float: right;
+    top:0;
+    margin-top: -85px;
+    margin-right: -30px;
+    font-size: 16px; font-style : italic ;
+    color: #385775;
+}
+div.handout a{
+    color: #385775;
+}
+
+div.handout a:hover{
+    color: orange;
+    font-style : bold ;
+}
+
+</pre>
+        </li>
+        <li>还得在默认的样式调配文件<code>ui/&lt;theme&gt;/slides.css</code>中引入自个儿定制的:
+<pre class="brush:  css ; highlight: [4,5]">
+
+@import url(s5-core.css); /* required to make the slide show run at all */
+@import url(framing.css); /* sets basic placement and size of slide components */
+@import url(pretty.css);  /* stuff that makes the slides look better than blah */
+@import url(takahashi.css);  /* stuff that makes the takahashi style slides */
+@import url(rst2s5.css);  /* stuff that support slides gen. by rst2s5 */
+</pre>
+        </li>
+        </ul>
+     </li>
+     <li>D: 专用高桥流样式, 在s5专用子聲明文件:<a href="http://docutils.sourceforge.net/docutils/parsers/rst/include/s5defs.txt">s5defs.txt</a>  中追加俺习惯的CSS类名:
+<pre class="brush:  text ; highlight: [1,8,9]">
+
+.. Text Sizes
+   ==========
+
+.. role:: huge
+.. role:: big
+.. role:: small
+.. role:: tiny
+.. role:: takahashi0
+.. role:: takahashi1
+.. role:: takahashi2
+...
+</pre>
+     </li>
+     </ul>
+    </dd>
+    </dl>
+</dd>
+</dl>
+
+<dl>
+<dt>成果对比:</dt><dd>
+ <ul>
+ <li>手写HTML幻灯 
+  <ul>
+  <li>45Kb
+  </li>
+  <li><a href="http://zoomquiet.org/res/s5/100918-MyTools/html-s5/index.html">index.html</a>
+  </li>
+  </ul>
+ </li>
+ <li>手写rST生成S5幻灯 
+  <ul>
+  <li>38Kb
+  </li>
+  <li><a href="http://zoomquiet.org/res/s5/100918-MyTools/rst2s5/index.rst">index.rst</a>
+  </li>
+  </ul>
+ </li>
+ </ul>
+</dd>
+</dl>
+
+<a id="toc6R01YQ0JaV" name="toc6R01YQ0JaV"></a>
+<h1><A href='#toptopT0paWElNV'> 3. 时间帐单 </A></h1>
+<p>
+<code>小结这次迁移的时间消耗</code>
+</p>
+<ol>
+<li>0.5h  试用 rst2s5
+</li>
+<li>0.5h  接入样式
+</li>
+<li>0.5h  重构Leo 模式
+</li>
+<li>2h    定制基于 rst2s5 的样式
+</li>
+<li>3h    逐一页面重写
+</li>
+<li>1h    修订发布
+<p></p>
+共计 <b>7.5h</b>
+ <ul>
+ <li>嗯嗯嗯,主要是在重过过程中,反复调整了对应的 CSS 样式...
+ </li>
+ <li>好在一切可以快速复用到其它幻灯中了...
+ </li>
+ </ul>
+</li>
+</ol>
+
+<hr class="light" />
+<ul>
+<li>t2t渲染:: 2010-10-09 02:21:37
+</li>
+<li>动力源自::<b><a href="http://txt2tags.sf.net">txt2tags</a></b>
+</li>
+</ul>
+
+</div>
+
+<!-- xhtml code generated by txt2tags 2.4 (http://txt2tags.sf.net) -->
+<!-- cmdline: txt2tags ./utility/py4str/StructuredText/rst2s5-usage-2010-09-18-23-23.t2t -->
+
+  </content>
+
+  <rdf:Seq>
+
+<rdf:Description rdf:about="/pyblosxom/utility/py4str/StructuredText/t2tdemo-2005-04-01-23-23">
+  <dc:title> TXT2TAGS 示例 </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2005-04-01T15:23:00Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <div class="header" id="header">
+<a name='toptopS1JNRklNU' id='toptopS1JNRklNU'></a><h1>TXT2TAGS 示例</h1>
+<h2>~ by ZoomQuiet</h2>
+</div>
+
+<div class="toc" id="toc">
+  <ol>
+  <li><a href="#toc1R0VYQ0JaR">介绍 Intro.</a>
+    <ul>
+    <li><a href="#toc2R0VYRENMU">1.1. 文档声明</a>
+    </li>
+    </ul>
+  </li>
+  <li><a href="#toc3R0lYQ0JaT">字体与美化 Fonts and Beautifiers</a>
+    <ul>
+    <li><a href="#toc4R0lYRENMU">2.1. 美化 Beautifiers</a>
+    </li>
+    <li><a href="#toc5R0lYREVMU">2.2. 更多的装饰 More Cosmetics</a>
+    </li>
+    </ul>
+  </li>
+  <li><a href="#toc6R01YQ0JaT">列表</a>
+    <ul>
+    <li><a href="#toc7R01YRENMU">3.1. 普通列表 Plain List</a>
+    </li>
+    <li><a href="#toc8R01YREVMU">3.2. 数字列表 Numbered List</a>
+    </li>
+    <li><a href="#toc9R01YREdMU">3.3. 定义列表 Definition List</a>
+    </li>
+    </ul>
+  </li>
+  <li><a href="#toc10R1FYQ0IyR">表格 Tables</a>
+  </li>
+  <li><a href="#toc11R1VYQ0JaN">特殊实体 Special Entities</a>
+    <ul>
+    <li><a href="#toc12R1VYRENMU">5.1. 图片 Images</a>
+    </li>
+    <li><a href="#toc13R1VYREVMU">5.2. 其它 Other</a>
+    </li>
+    </ul>
+  </li>
+  </ol>
+
+</div>
+<div class="body" id="body">
+<a id="toc1R0VYQ0JaR" name="toc1R0VYQ0JaR"></a>
+<h1><A href='#toptopS1JNRklNU'> 1. 介绍 Intro. </A></h1>
+<p>
+欢迎阅读 txt2tags 示例文件！
+</p>
+<p>
+这里你可以看到常用的所有 t2t 使用
+</p>
+<p>
+文件的头二行是文档的基本信息，
+按照以下顺序填写:
+</p>
+<pre>
+行 1: 文档标题
+行 2: 作者名，邮箱
+行 3: 日期，时间
+</pre>
+<p></p>
+<p>
+空行，是自然段间的分隔
+</p>
+<p>
+中文用户，一般要再单另一行声明编码:
+</p>
+<pre>
+%!encoding: gb2312
+</pre>
+<p>
+最好使用更加通用的Unicode 编码:
+</p>
+<pre>
+%!encoding: UTF-8
+</pre>
+<p></p>
+<a id="toc2R0VYRENMU" name="toc2R0VYRENMU"></a>
+<h2><A href='#toptopS1JNRklNU'> 1.1. 文档声明 </A></h2>
+<p>
+使用编辑环境时最好加入类似文档声明:
+</p>
+<pre>
+%! Target  : html
+%! Options : --toc --css-inside
+%! Options : --css-sugar
+%! Style   : css/moin.css
+
+</pre>
+<p>
+说明本文输出时的重要参数:
+</p>
+ <ol>
+ <li>输出为标准HTML标签格式
+ </li>
+ <li>要文档标题索引，并将CSS形式表包含在文档内
+ </li>
+ <li>将文章按照结构使用 DIV 层来分离，以便使用CSS来进行美化
+  <ul>
+  <li>就象sample中展示的modern 效果
+  </li>
+  </ul>
+ </li>
+ <li>使用外部指定的一个CSS定义 
+ </li>
+ </ol>
+
+<a id="toc3R0lYQ0JaT" name="toc3R0lYQ0JaT"></a>
+<h1><A href='#toptopS1JNRklNU'> 2. 字体与美化 Fonts and Beautifiers </A></h1>
+<p>
+整体上来说t2t 使用两种字体设定:
+</p>
+<p>
+正常 字体可以使用各种美化处理
+</p>
+<p>
+<code>打印机字体</code> 即“等宽体” 是被预格式化处理的不能被美化处理
+</p>
+<p>
+现在进入详细章节...
+</p>
+<a id="toc4R0lYRENMU" name="toc4R0lYRENMU"></a>
+<h2><A href='#toptopS1JNRklNU'> 2.1. 美化 Beautifiers </A></h2>
+<p>
+就象你在 email 中定义文本样式一样，t2t 可以简单的快速美化字样
+</p>
+<ul>
+<li>双* 产生 <b>加重</b>效果
+</li>
+<li>双/ 产生 <i>斜体</i>效果
+</li>
+<li>双_ 产生 <u>下线</u>
+<p></p>
+并且<i>可以<b>混合</b>使用</i>！
+</li>
+</ul>
+
+<a id="toc5R0lYREVMU" name="toc5R0lYREVMU"></a>
+<h2><A href='#toptopS1JNRklNU'> 2.2. 更多的装饰 More Cosmetics </A></h2>
+<p>
+特殊的内容，比如说 email (<a href="mailto:duh@somewhere.com">duh@somewhere.com</a>) 和
+URL (<a href="http://www.duh.com">http://www.duh.com</a>) 会自动处理
+还有横线:
+</p>
+<hr class="light" />
+<p>
+^ 细的 或是 粗的 v
+</p>
+<hr class="heavy" />
+<p></p>
+<p>
+你也可以定义带URL的标签<a href="http://duh.org">外部链接</a>
+</p>
+<p>
+并且记住,
+</p>
+	<blockquote>
+	在一行前缀一个制表符将产生引用, A TAB in front of the line does a quotation.
+		<blockquote>
+		而且可以嵌套使用用 More TABs, more depth (if allowed).
+		</blockquote>
+	</blockquote>
+<p>
+非常好用的！.
+</p>
+<a id="toc6R01YQ0JaT" name="toc6R01YQ0JaT"></a>
+<h1><A href='#toptopS1JNRklNU'> 3. 列表 </A></h1>
+<p>
+形成一个列表非常的自然，只要在行前使用 <b>减号</b> 或是 <b>加号</b> 
+</p>
+<a id="toc7R01YRENMU" name="toc7R01YRENMU"></a>
+<h2><A href='#toptopS1JNRklNU'> 3.1. 普通列表 Plain List </A></h2>
+<p>
+减号 用来标识默许的列表. 对于嵌套列表只要在行前加 <b>空格</b> ,
+并且很自然的，越多的空格，层次就越深
+</p>
+<ul>
+<li>地球
+  <ul>
+  <li>中国
+    <ul>
+    <li>北京
+      <ul>
+      <li>海淀
+        <ul>
+        <li>还要多深？
+        </li>
+        </ul>
+      </li>
+      </ul>
+    </li>
+    </ul>
+  </li>
+  <li>朝鲜
+    <ul>
+    <li>更多的国家
+    </li>
+    </ul>
+  </li>
+  </ul>
+</li>
+<li>火星
+  <ul>
+  <li>上面有谁？
+  </li>
+  </ul>
+</li>
+</ul>
+
+<p>
+想结束列表，只要使用连续<b>两个空行</b>
+</p>
+<a id="toc8R01YREVMU" name="toc8R01YREVMU"></a>
+<h2><A href='#toptopS1JNRklNU'> 3.2. 数字列表 Numbered List </A></h2>
+<p>
+同样的规则，只是使用 加号，则自动处理为数字式的列表
+</p>
+<ol>
+<li>甲 one
+</li>
+<li>乙 two
+</li>
+<li>丙 three
+  <ul>
+  <li>混合普通列表 mixed lists!
+  </li>
+  <li>没有关系 
+    <ol>
+    <li>继续数字式的 counting again
+    </li>
+    <li>...
+    </li>
+    </ol>
+  </li>
+  </ul>
+</li>
+<li>丁 four
+</li>
+</ol>
+
+<a id="toc9R01YREdMU" name="toc9R01YREdMU"></a>
+<h2><A href='#toptopS1JNRklNU'> 3.3. 定义列表 Definition List </A></h2>
+<p>
+使用冒号，可以引出词典式的列表. 内容是在紧接的下一行
+</p>
+<dl>
+<dt>桔 orange</dt><dd>
+  黄色的水果 a yellow fruit
+</dd>
+<dt>苹果 apple</dt><dd>
+  绿色或是红色的 a green or red fruit
+</dd>
+<dt>其它 other fruits</dt><dd>
+  <ul>
+  <li>嗬嗬 wee!
+  </li>
+  <li>当然可以混合 mixing lists
+    <ol>
+    <li>数字式的 again!
+    </li>
+    <li>带来 and again!
+    </li>
+    </ol>
+  </li>
+  </ul>
+</dd>
+</dl>
+
+<a id="toc10R1FYQ0IyR" name="toc10R1FYQ0IyR"></a>
+<h1><A href='#toptopS1JNRklNU'> 4. 表格 Tables </A></h1>
+<p>
+使用竖线来组成表格,
+双线开始，表示将解析表格，并作为表头
+使用空格对齐来标识每个表格项
+</p>
+<table align="center" border="1">
+<tr>
+<th>表头 1</th>
+<th>表头 2</th>
+<th>表头 3</th>
+</tr>
+<tr>
+<td>内文 1.1</td>
+<td align="center">内文 1.2</td>
+<td align="right">内文 1.3</td>
+</tr>
+<tr>
+<td>内文 2.1</td>
+<td align="center">内文 2.2</td>
+<td align="right">内文 2.3</td>
+</tr>
+</table>
+
+<p>
+没有最后的竖线，则没有边框:
+</p>
+<table align="center">
+<tr>
+<th>表头 1</th>
+<th>表头 2</th>
+<th>表头 3</th>
+</tr>
+<tr>
+<td>内文 1.1</td>
+<td align="center">内文 1.2</td>
+<td align="center">内文 1.3</td>
+</tr>
+<tr>
+<td>内文 2.1</td>
+<td align="center">内文 2.2</td>
+<td align="center">内文 2.3</td>
+</tr>
+</table>
+
+<a id="toc11R1VYQ0JaN" name="toc11R1VYQ0JaN"></a>
+<h1><A href='#toptopS1JNRklNU'> 5. 特殊实体 Special Entities </A></h1>
+<p>
+让事儿都简单哪！
+</p>
+<a id="toc12R1VYRENMU" name="toc12R1VYRENMU"></a>
+<h2><A href='#toptopS1JNRklNU'> 5.1. 图片 Images </A></h2>
+<p>
+非常简单的图片引用方式: <code>[filename]</code>.
+</p>
+                      <center><img align="middle" src="../img/photo.jpg" border="0" alt=""/></center>  
+<ul>
+<li>文件必须是 PNG, JPG, GIF 格式
+</li>
+<li>方框内不能有空格
+</li>
+</ul>
+
+<a id="toc13R1VYREVMU" name="toc13R1VYREVMU"></a>
+<h2><A href='#toptopS1JNRklNU'> 5.2. 其它 Other </A></h2>
+<p>
+<b><code>%%date</code></b> 宏会输出当前日期
+</p>
+<p>
+是标准的ISO <code>YYYYMMDD</code> 格式 20101009 
+</p>
+<p>
+当然可以声明特殊的输出方式
+比如说: <code>%%date(%m-%d-%Y)</code> 会形成: 10-09-2010.
+</p>
+<p>
+That's all ! 现在你知道的足够开始使用 <b>t2t</b> 组织文档了！.
+</p>
+<hr class="light" />
+<p>
+Translated to Chinese by Zoom.Quiet(<a href="http://wiki.woodpecker.org.cn/moin/ZoomQuiet">Zoom Quiet</a>).
+</p>
+<hr class="light" />
+<p></p>
+<hr class="light" />
+<ul>
+<li>t2t渲染:: 2010-10-09 02:21:37
+</li>
+<li>动力源自::<b><a href="http://txt2tags.sf.net">txt2tags</a></b>
+</li>
+</ul>
+
+</div>
+
+<!-- xhtml code generated by txt2tags 2.4 (http://txt2tags.sf.net) -->
+<!-- cmdline: txt2tags ./utility/py4str/StructuredText/t2tdemo-2005-04-01-23-23.t2t -->
+
+  </content>
+
+  <rdf:Seq>
+
+  </rdf:Seq>
+</rdf:Description>
+</rdf:RDF>

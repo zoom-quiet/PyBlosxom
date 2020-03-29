@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/techic/PyBlosxom/plugins/py2pre.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/techic/PyBlosxom/plugins/py2pre.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/techic/PyBlosxom/plugins/py2pre.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2011-09-07T06:00:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">py2pre.py</title>
+<category term="" />
+<id>/pyblosxom/2011/09/07/py2pre</id>
+<updated>2011-09-07T06:00:00Z</updated>
+<published>2011-09-07T06:00:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/PyBlosxom/plugins/py2pre.html" />
+<content type="html">&lt;pre class=&quot;brush: python&quot;&gt;# -*- coding: utf-8 -*-
+&quot;&quot;&quot;py - html Parser
+    - refactory py2pre.py from xhtml.py
+
+Copyright (c) 2011 Zoom.Quiet 
+All rights reserved.
+
+Redistribution and use in source and binary forms are permitted
+provided that the above copyright notice and this paragraph are
+duplicated in all such forms and that any documentation,
+advertising materials, and other materials related to such
+distribution and use acknowledge that the software was developed
+by the zoomquiet.org.  The name of the
+University may not be used to endorse or promote products derived
+from this software without specific prior written permission.
+THIS SOFTWARE IS PROVIDED ``AS IS&#x27;&#x27; AND WITHOUT ANY EXPRESS OR
+IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+
+&quot;&quot;&quot;
+
+
+## Leo: tab_width=-4 page_width=80
+__version__ = &quot;v11.09.7&quot;
+__author__ = &#x27;Zoom.Quiet &lt;zoomquiet+pyb at gmail dot com&gt;&#x27;
+__url__ = &quot;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;techic&#x2F;PyBlosxom&#x2F;plugins&#x2F;py2pre.html&quot;
+__description__ = &quot;.py export hmtl entry with syntaxhighlighter.&quot;
+
+#from Pyblosxom import tools
+
+def cb_entryparser(entryparsingdict):
+    &quot;&quot;&quot;
+    Register self as plain file handler
+    &quot;&quot;&quot;
+    entryparsingdict[&quot;py&quot;] = parse
+    return entryparsingdict
+def parse(filename, request):
+    #import os
+    entrydata = {}
+    source = open(filename, &quot;r&quot;).read()
+    #print filenames
+    body = &#x27;&lt;pre class=&quot;brush: python&quot;&gt;%s&lt;&#x2F;pre&gt;&#x27; % source
+    entrydata = {&#x27;body&#x27; : body
+                 ,&#x27;title&#x27; : filename.split(&quot;&#x2F;&quot;)[-1]
+                 }
+    return entrydata
+
+&lt;&#x2F;pre&gt;</content>
+</entry>
+</feed>

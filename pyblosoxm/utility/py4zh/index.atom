@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/utility/py4zh/index.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/utility/py4zh/index.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/utility/py4zh/index.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2006-04-04T15:23:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">autoDetectXMLEncoding.py</title>
+<category term="" />
+<id>/pyblosxom/2006/04/04/autoDetectXMLEncoding</id>
+<updated>2006-04-04T15:23:00Z</updated>
+<published>2006-04-04T15:23:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/utility/py4zh/autoDetectXMLEncoding.html" />
+<content type="html">&lt;pre class=&quot;brush: python&quot;&gt;&quot;&quot;&quot;http:&#x2F;&#x2F;aspn.activestate.com&#x2F;ASPN&#x2F;Cookbook&#x2F;Python&#x2F;Recipe&#x2F;52257
+#tags utility,py4zh
+Title: Auto-detect XML encoding
+Submitter: Paul Prescod (other recipes)
+Last Updated: 2001&#x2F;03&#x2F;14
+Version no: 1.0
+Category: XML
+推荐:: 发件人: 清风 &lt;paradise.qingfeng@gmail.com&gt;	
+回复: python-chinese@lists.python.cn
+收件人: python-chinese@lists.python.cn
+日期: 2006-1-18 上午1:27
+主题: Re: [python-chinese] 如何取得一个文本的编码格式？
+&quot;&quot;&quot;
+import codecs, encodings
+
+&quot;&quot;&quot;Caller will hand this library a buffer and ask it to either convert
+it or auto-detect the type.&quot;&quot;&quot;
+
+# None represents a potentially variable byte. &quot;##&quot; in the XML spec... 
+autodetect_dict={ # bytepattern     : (&quot;name&quot;,              
+                (0x00, 0x00, 0xFE, 0xFF) : (&quot;ucs4_be&quot;),        
+                (0xFF, 0xFE, 0x00, 0x00) : (&quot;ucs4_le&quot;),
+                (0xFE, 0xFF, None, None) : (&quot;utf_16_be&quot;), 
+                (0xFF, 0xFE, None, None) : (&quot;utf_16_le&quot;), 
+                (0x00, 0x3C, 0x00, 0x3F) : (&quot;utf_16_be&quot;),
+                (0x3C, 0x00, 0x3F, 0x00) : (&quot;utf_16_le&quot;),
+                (0x3C, 0x3F, 0x78, 0x6D): (&quot;utf_8&quot;),
+                (0x4C, 0x6F, 0xA7, 0x94): (&quot;EBCDIC&quot;)
+                 }
+
+def autoDetectXMLEncoding(buffer):
+    &quot;&quot;&quot; buffer -&gt; encoding_name
+    The buffer should be at least 4 bytes long.
+        Returns None if encoding cannot be detected.
+        Note that encoding_name might not have an installed
+        decoder (e.g. EBCDIC)
+    &quot;&quot;&quot;
+    # a more efficient implementation would not decode the whole
+    # buffer at once but otherwise we&#x27;d have to decode a character at
+    # a time looking for the quote character...that&#x27;s a pain
+
+    encoding = &quot;utf_8&quot; # according to the XML spec, this is the default
+                          # this code successively tries to refine the default
+                          # whenever it fails to refine, it falls back to 
+                          # the last place encoding was set.
+    bytes = (byte1, byte2, byte3, byte4) = tuple(map(ord, buffer[0:4]))
+    enc_info = autodetect_dict.get(bytes, None)
+
+    if not enc_info: # try autodetection again removing potentially 
+                     # variable bytes
+        bytes = (byte1, byte2, None, None)
+        enc_info = autodetect_dict.get(bytes)
+
+        
+    if enc_info:
+        encoding = enc_info # we&#x27;ve got a guess... these are
+                            #the new defaults
+
+        # try to find a more precise encoding using xml declaration
+        secret_decoder_ring = codecs.lookup(encoding)[1]
+        (decoded,length) = secret_decoder_ring(buffer) 
+        first_line = decoded.split(&quot;\n&quot;)[0]
+        if first_line and first_line.startswith(u&quot;&lt;?xml&quot;):
+            encoding_pos = first_line.find(u&quot;encoding&quot;)
+            if encoding_pos!=-1:
+                # look for double quote
+                quote_pos=first_line.find(&#x27;&quot;&#x27;, encoding_pos) 
+
+                if quote_pos==-1:                 # look for single quote
+                    quote_pos=first_line.find(&quot;&#x27;&quot;, encoding_pos) 
+
+                if quote_pos&gt;-1:
+                    quote_char,rest=(first_line[quote_pos],
+                                                first_line[quote_pos+1:])
+                    encoding=rest[:rest.find(quote_char)]
+
+    return encoding
+
+&lt;&#x2F;pre&gt;</content>
+</entry>
+
+<entry>
+<title type="html">zh2utf8.py</title>
+<category term="" />
+<id>/pyblosxom/2006/02/01/zh2utf8</id>
+<updated>2006-02-01T15:23:00Z</updated>
+<published>2006-02-01T15:23:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/utility/py4zh/zh2utf8.html" />
+<content type="html">&lt;pre class=&quot;brush: python&quot;&gt;&quot;&quot;&quot;Auto converter encodings to utf8
+#tags utility,py4zh
+It will test utf8,gbk,big5,jp,kr to converter
+
+发件人: HuangJiahua &lt;jhuangjiahua@gmail.com&gt;	
+邮送域: googlegroups.com
+回复: python-cn@googlegroups.com
+收件人: &quot;python.cn&quot; &lt;python-cn@googlegroups.com&gt;
+日期: 2006-1-16 上午12:11
+主题: Re: 请问怎样得到一个文件的编码？
+http:&#x2F;&#x2F;groups.google.com&#x2F;group&#x2F;python-cn&#x2F;browse_frm&#x2F;thread&#x2F;3544d5a05783dc96
+
+&quot;&quot;&quot;
+
+#!&#x2F;usr&#x2F;bin&#x2F;python
+# coding:UTF-8
+# Author: Huang Jiahua &lt;jhuangjiahua@gmail.com&gt;
+#测试的编码类型
+encc=&#x27;&#x27;
+def zh2utf8(stri):
+       &quot;&quot;&quot;Auto converter encodings to utf8
+
+       It will test utf8,gbk,big5,jp,kr to converter&quot;&quot;&quot;
+       global encc
+       for c in (&#x27;utf-8&#x27;, &#x27;gbk&#x27;, &#x27;big5&#x27;, &#x27;jp&#x27;,
+&#x27;euc_kr&#x27;,&#x27;utf16&#x27;,&#x27;utf32&#x27;):
+               encc = c
+               try:
+                       return stri.decode(c).encode(&#x27;utf8&#x27;)
+               except:
+                       pass
+       encc = &#x27;unk&#x27;
+       return stri
+
+if __name__==&quot;__main__&quot;:
+       # 命令行测试
+       import sys
+##      sys.setappdefaultencoding(&#x27;unicode&#x27;)
+       if len(sys.argv) &gt; 1:
+               stri = sys.argv[1]
+       else:
+               stri = sys.stdin.read()
+       print zh2utf8(stri)
+       print &#x27;encc:&#x27;,encc&lt;&#x2F;pre&gt;</content>
+</entry>
+</feed>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/techic/PyBlosxom/plugins/zqarchives.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/techic/PyBlosxom/plugins/zqarchives.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/techic/PyBlosxom/plugins/zqarchives.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2011-08-31T15:22:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">zqarchives.py</title>
+<category term="" />
+<id>/pyblosxom/2011/08/31/zqarchives</id>
+<updated>2011-08-31T15:22:00Z</updated>
+<published>2011-08-31T15:22:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/PyBlosxom/plugins/zqarchives.html" />
+<content type="html">&lt;pre class=&quot;brush: python&quot;&gt;# -*- coding: utf-8 -*-
+
+# vim: tabstop=4 shiftwidth=4
+&quot;&quot;&quot;
+- zoomq 100419 fixed for export month&#x2F;year with count
+Walks through your blog root figuring out all the available monthly archives in
+your blogs.  It generates html with this information and stores it in the
+$archivelinks variable which you can use in your head or foot templates.
+
+You can format the output with the key &quot;archive_template&quot;.
+
+A config.py example:
+
+    py[&#x27;archive_template&#x27;] = &#x27;&lt;li&gt;&lt;a href=&quot;%(base_url)s&#x2F;%(Y)s&#x2F;%(b)s&quot;&gt;%(m)s&#x2F;%(y)s&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;&#x27;
+
+Displays the archives as list items, with a month number slash year number, like 06&#x2F;78.
+
+The vars available with typical example values are:
+    b      &#x27;Jun&#x27;
+    m      &#x27;6&#x27;
+    Y      &#x27;1978&#x27;
+    y      &#x27;78&#x27;
+
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify,
+merge, publish, distribute, sublicense, and&#x2F;or sell copies of the
+Software, and to permit persons to whom the Software is furnished
+to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Copyright 2004, 2005 Wari Wahab
+&quot;&quot;&quot;
+__author__ = &quot;Wari Wahab - wari at wari dot per dot sg&quot;
+__version__ = &quot;$Id: zqarchives.py,v 2872b22e2ace 2011&#x2F;10&#x2F;27 07:08:25 zoomquiet+hg $&quot;
+__url__ = &quot;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;techic&#x2F;PyBlosxom&#x2F;plugins&#x2F;zqarchives.html&quot;
+
+from Pyblosxom import tools
+import time, os
+
+def verify_installation(request):
+    config = request.get_configuration()
+    if not config.has_key(&quot;archive_template&quot;):
+        print &quot;missing optional config property &#x27;archive_template&#x27; which &quot;
+        print &quot;allows you to specify how the archive links are created.  &quot;
+        print &quot;refer to pyarchive plugin documentation for more details.&quot;
+    return 1
+
+class PyblArchives:
+    def __init__(self, request):
+        self._request = request
+        self._archives = None
+
+    def __str__(self):
+        if self._archives == None:
+            self.gen_linear_archive()
+        return self._archives
+
+    def gen_linear_archive(self):
+        config = self._request.get_configuration()
+        data = self._request.get_data()
+        root = config[&quot;datadir&quot;]
+        archives = {}
+        archive_list = tools.walk(self._request, root)
+        fulldict = {}
+        fulldict.update(config)
+        fulldict.update(data)
+        template = config.get(&#x27;archive_template&#x27;, 
+                    &#x27;&lt;a href=&quot;%(base_url)s&#x2F;%(Y)s&#x2F;%(m)s&quot;&gt;%(y)s.%(m)s&lt;&#x2F;a&gt;&#x27;)
+        #&lt;a href=&quot;%(base_url)s&#x2F;%(Y)s&#x2F;%(b)s&quot;&gt;%(Y)s-%(b)s&lt;&#x2F;a&gt;
+        #print fulldict[&quot;base_url&quot;]
+        for mem in archive_list:
+            timetuple = tools.filestat(self._request, mem)
+            timedict = {}
+            for x in [&quot;B&quot;, &quot;b&quot;, &quot;m&quot;, &quot;Y&quot;, &quot;y&quot;]:
+                timedict[x] = time.strftime(&quot;%&quot; + x, timetuple)
+            fulldict.update(timedict)
+            if not archives.has_key(timedict[&#x27;Y&#x27;] + timedict[&#x27;m&#x27;]):
+                archives[timedict[&#x27;Y&#x27;] + timedict[&#x27;m&#x27;]] = [template % fulldict,1]
+            else:
+                archives[timedict[&#x27;Y&#x27;] + timedict[&#x27;m&#x27;]][1] += 1
+                archives[timedict[&#x27;Y&#x27;] + timedict[&#x27;m&#x27;]][0] = template % fulldict
+        #print archives
+        #return
+        arc_keys = archives.keys()
+        arc_keys.sort()
+        arc_keys.reverse()
+        yearmonth = {}
+        result = []
+        #base archives walk and count every year&#x27;s mounth
+        for key in arc_keys:
+            yearname = key[:-2]
+            if yearname in yearmonth.keys():
+                yearmonth[yearname][0] += archives[key][1]
+                yearmonth[yearname][1].append(archives[key])
+            else:
+                yearmonth[yearname] = [archives[key][1],[]]
+                yearmonth[yearname][1].append(archives[key])
+        #print yearmonth[&quot;2007&quot;]
+        mon_keys = yearmonth.keys()
+        mon_keys.sort()
+        mon_keys.reverse()
+        #print mon_keys
+        for year in mon_keys:
+            #print &quot;%s&lt;sup&gt;%s&lt;sup&gt;&quot;%(year,yearmonth[year][0])
+            monode = yearmonth[year][1]
+            result.append(&quot;&lt;li class=&#x27;yearchives&#x27;&gt;&lt;a href=&#x27;%s&#x2F;%s&#x27;&gt;%s&lt;&#x2F;a&gt;&lt;sup&gt;(%d)&lt;&#x2F;sup&gt;&lt;&#x2F;li&gt;&quot;%(fulldict[&quot;base_url&quot;],year,year,yearmonth[year][0]))
+            if 1==len(monode):
+                #print &quot;%s&lt;sup&gt;%s&lt;sup&gt;&quot;%(monode[0][0],monode[0][1])
+                result.append(&quot;&lt;li&gt;%s&lt;sup&gt;(%d)&lt;&#x2F;sup&gt;&lt;li&gt;&quot;%(monode[0][0],monode[0][1]))
+            else:
+                for m in monode:
+                    #print m
+                    #print &quot;%s&lt;sup&gt;%s&lt;sup&gt;&quot;%(m[0],m[1])
+                    result.append(&quot;&lt;li&gt;%s&lt;sup&gt;(%d)&lt;&#x2F;sup&gt;&lt;li&gt;&quot;%(m[0],m[1]))
+                    #result.append(&quot;%s&lt;sup&gt;%s&lt;sup&gt;&quot;%(month[0],month[1]))
+
+        #print result
+        self._archives = &#x27;\n&#x27;.join(result)
+
+def cb_prepare(args):
+    request = args[&quot;request&quot;]
+    data = request.get_data()
+    data[&quot;archivelinks&quot;] = PyblArchives(request)
+
+&lt;&#x2F;pre&gt;</content>
+</entry>
+</feed>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/2009/06/13/index.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/2009/06/13/index.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/2009/06/13/index.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2009-06-13T10:23:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">wbgrecent.py</title>
+<category term="/techic/PyBlosxom/plugins" />
+<id>/pyblosxom/2009/06/13/wbgrecent</id>
+<updated>2009-06-13T10:23:00Z</updated>
+<published>2009-06-13T10:23:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/PyBlosxom/plugins/wbgrecent.html" />
+<content type="html">&lt;pre class=&quot;brush: python&quot;&gt;&quot;&quot;&quot;
+Summary
+=======
+
+Walks through all your blog entries and comments and makes a list of
+all the entries that were either written in the last 14 days or have
+comments written in the last 14 days.  It then generates a very
+hard-coded html representation of them and semi-abuses the 
+flavour template yearmonthsummary which I use for my wbgarchives
+plugin.
+
+This plugin requires no installation.  Just drop it in and the url
+will be::
+
+   $baseurl&#x2F;recent
+
+to see the recent activity.
+
+----
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify,
+merge, publish, distribute, sublicense, and&#x2F;or sell copies of the
+Software, and to permit persons to whom the Software is furnished
+to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Copyright 2004-2007 Will Guaraldi
+
+SUBVERSION VERSION: $Id: wbgrecent.py,v 2872b22e2ace 2011&#x2F;10&#x2F;27 07:08:25 zoomquiet+hg $
+
+Revisions:
+2007-07-07 - Converted documentation to reST.
+2005-11-11 - Pulled into new VCS.
+1.5 - (26 October, 2005) pulled into new VCS
+1.1 - (09 December, 2004) fixed the timestamp and date_head issues
+1.0 - (31 August, 2004) initial writing
+&quot;&quot;&quot;
+__author__ = &quot;Will Guaraldi - willg at bluesock dot org&quot;
+__version__ = &quot;$Date: 2011&#x2F;10&#x2F;27 07:08:25 $&quot;
+__url__ = &quot;http:&#x2F;&#x2F;www.bluesock.org&#x2F;~willg&#x2F;pyblosxom&#x2F;&quot;
+__description__ = &quot;Summary of recent blog activity.&quot;
+
+from Pyblosxom import tools, entries
+import time, os, glob, urllib
+
+def verify_installation(request):
+    return 1
+
+
+def new_entry(request, title, body):
+    &quot;&quot;&quot;
+    Takes a bunch of variables and generates an entry out of it.  It creates
+    a timestamp so that conditionalhttp can handle it without getting
+    all fussy.
+    &quot;&quot;&quot;
+    entry = entries.base.EntryBase(request)
+
+    entry[&#x27;title&#x27;] = title
+    entry[&#x27;filename&#x27;] = title + &quot;&#x2F;recent&quot;
+    entry[&#x27;file_path&#x27;] = title
+    entry._id = title + &quot;::recent&quot;
+
+    entry[&quot;template_name&quot;] = &quot;yearsummarystory&quot;
+    entry[&quot;nocomments&quot;] = &quot;yes&quot;
+
+    entry.setTime(time.localtime())
+    entry.setData(body)
+
+    return entry
+
+
+INIT_KEY = &quot;wbgrecent_initiated&quot;
+
+def cb_date_head(args):
+    request = args[&quot;request&quot;]
+    data = request.getData()
+
+    if data.has_key(INIT_KEY):
+        args[&quot;template&quot;] = &quot;&quot;
+    return args
+
+def get_comment_text(cmt):
+    f = open(cmt[1], &quot;r&quot;)
+    lines = f.readlines()
+    title = &quot;No title&quot;
+    author = &quot;Unknown&quot;
+    for mem in lines:
+        mem = mem.rstrip()
+        if mem.find(&quot;&lt;title&gt;&quot;) == 0:
+            title = mem.replace(&quot;&lt;title&gt;&quot;, &quot;&quot;).replace(&quot;&lt;&#x2F;title&gt;&quot;, &quot;&quot;)
+            title = urllib.unquote(title)
+        elif mem.find(&quot;&lt;author&gt;&quot;) == 0:
+            author = mem.replace(&quot;&lt;author&gt;&quot;, &quot;&quot;).replace(&quot;&lt;&#x2F;author&gt;&quot;, &quot;&quot;)
+            author = urllib.unquote(author)
+
+    return &quot;(%s) comment from %s&quot; % \
+           (time.strftime(&quot;%m&#x2F;%d&#x2F;%Y %H:%M&quot;, time.localtime(cmt[0])), \
+            author)
+
+def cb_filelist(args):
+    request = args[&quot;request&quot;]
+    pyhttp = request.getHttp()
+    data = request.getData()
+    config = request.getConfiguration()
+
+    if not pyhttp[&quot;PATH_INFO&quot;].startswith(&quot;&#x2F;recent&quot;):
+        return
+
+    datadir = config[&quot;datadir&quot;]
+    baseurl = config.get(&quot;base_url&quot;, &quot;&quot;)
+    cmntdir = config.get(&quot;comment_dir&quot;, datadir + os.sep + &quot;comments&quot;)
+    cmntext = config.get(&quot;comment_ext&quot;, &quot;.cmt&quot;)
+
+    data[&quot;blog_title&quot;] = config.get(&quot;blog_title&quot;, &quot;&quot;) + &quot; - recent activity&quot;
+    data[INIT_KEY] = 1
+    config[&#x27;num_entries&#x27;] = 9999
+
+    marker = time.time() - (60 * 60 * 24 * 14)
+
+    # get all the entries
+    allentries = tools.Walk(request, datadir)
+
+    debug = []
+    stuff = []
+
+    for mem in allentries:
+        timetuple = tools.filestat(request, mem)
+        entrytstamp = time.mktime(timetuple)
+        tstamp = entrytstamp
+
+        absolute_path = mem[len(datadir):mem.rfind(os.sep)]
+        fn = mem[mem.rfind(os.sep)+1:mem.rfind(&quot;.&quot;)]
+
+        cmtexpr = os.path.join(cmntdir + absolute_path, fn + &#x27;-*.&#x27; + cmntext)
+        cmtlist = glob.glob(cmtexpr)
+        cmtlist = [ (os.stat(m)[8], m) for m in cmtlist]
+        cmtlist.sort()
+        cmtlist.reverse()
+
+        # we want the most recent mtime from either the entry or
+        # any of its comments
+        if len(cmtlist) &gt; 0:
+            if tstamp &lt; cmtlist[0][0]:
+                tstamp = cmtlist[0][0]
+
+        # if the mtime is more recent than our marker, we toss the
+        # stuff into our list of things to look at.
+        if tstamp &gt; marker:
+            stuff.append( [tstamp, entrytstamp, mem, cmtlist] )
+
+
+    stuff.sort()
+    stuff.reverse()
+
+    # time stamp and blog entry
+    e = &quot;&lt;tr&gt;\n&lt;td valign=\&quot;top\&quot; align=\&quot;left\&quot;&gt;%s:&lt;&#x2F;td&gt;\n&quot; \
+        &quot;&lt;td&gt;&lt;a href=\&quot;%s&#x2F;%s\&quot;&gt;%s&lt;&#x2F;a&gt; (%s)&lt;br &#x2F;&gt;%s&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;\n&quot;
+
+    entrylist = []
+    output = []
+    for mem in stuff:
+        entry = entries.fileentry.FileEntry(request, mem[2], config[&quot;datadir&quot;])
+        tstamp = time.strftime(&quot;%m&#x2F;%d&#x2F;%Y&quot;, time.localtime(mem[1]))
+
+        temp = e % (tstamp, \
+                    baseurl, \
+                    entry[&quot;file_path&quot;], \
+                    entry[&quot;title&quot;], \
+                    entry[&quot;path&quot;], \
+                    &quot;&quot;.join( [get_comment_text(c) + &quot;&lt;br &#x2F;&gt;&quot; for c in mem[3]]))
+        output.append(temp)
+
+    entrylist.append(new_entry(request, &quot;Recent activity:&quot;, &quot;&lt;tr&gt;&lt;td colspan=2&gt;&amp;nbsp;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;\n&quot;.join(output)))
+
+    return entrylist
+&lt;&#x2F;pre&gt;</content>
+</entry>
+</feed>

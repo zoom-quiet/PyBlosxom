@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/2006/01/17/index.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/2006/01/17/index.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/2006/01/17/index.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2006-01-17T15:23:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">[樣文]FreeBSD unionfsの改善提案</title>
+<category term="/oss" />
+<id>/pyblosxom/2006/01/17/OSSdocDemoJPS-2006-01-17-23-23</id>
+<updated>2006-01-17T15:23:00Z</updated>
+<published>2006-01-17T15:23:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/oss/OSSdocDemoJPS-2006-01-17-23-23.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopTFBUS1JJN&#x27; id=&#x27;toptopTFBUS1JJN&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;[樣文]FreeBSD unionfsの改善提案&lt;&#x2F;h1&gt;
+&lt;h2&gt;开源项目文档范例&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0JaV&quot;&gt;标题&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc2R0VYRENMU&quot;&gt;1.1. 概要&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc3R0VYREVMU&quot;&gt;1.2. unionfs介绍&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc4R0VYREdMU&quot;&gt;1.3. 以往问题&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc5R0VYRElMU&quot;&gt;1.4. 增进提案&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc6R0VYREtMU&quot;&gt;1.5. 实施&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc7R0VYRE1MU&quot;&gt;1.6. 使用方法&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc8R0VYRE9MU&quot;&gt;1.7. 补丁&lt;&#x2F;a&gt;
+      &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#toc9R0VYRE9MU&quot;&gt;1.7.1. unionfs-p5.diff变更说明&lt;&#x2F;a&gt;
+      &lt;&#x2F;li&gt;
+      &lt;li&gt;&lt;a href=&quot;#toc10R0VYRE9MU&quot;&gt;1.7.2. unionfs-p4.diff变更说明&lt;&#x2F;a&gt;
+      &lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc11R0VYRFFMU&quot;&gt;1.8. 现在问题&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc12R0lYQ0IyT&quot;&gt;附录&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc13R0lYRENMU&quot;&gt;2.1. FAQ&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc14R0lYREVMU&quot;&gt;2.2. 联系方法&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc15R01YQ0FWQ&quot;&gt;TODO&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;dl&gt;
+&lt;dt&gt;发现:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    中国FreeBSD commiter 之一的 delphij 发现吿之的
+    &lt;ul&gt;
+    &lt;li&gt;范文哪！
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;people.freebsd.org&#x2F;~daichi&#x2F;unionfs&#x2F;index-ja.html&quot;&gt;FreeBSD unionfsの改善提案&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;真应了&lt;i&gt;世上无难事，只怕有心人&lt;&#x2F;i&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;p&gt;
+&lt;b&gt;简单列一下子文档结构&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc1R0VYQ0JaV&quot; name=&quot;toc1R0VYQ0JaV&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTFBUS1JJN&#x27;&gt; 1. 标题 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;pre&gt;
+作者
+修改log
+
+其它版本链接[English]
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc2R0VYRENMU&quot; name=&quot;toc2R0VYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTFBUS1JJN&#x27;&gt; 1.1. 概要 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+文档本身的简单述
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc3R0VYREVMU&quot; name=&quot;toc3R0VYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTFBUS1JJN&#x27;&gt; 1.2. unionfs介绍 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+简介讨论主体本身
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc4R0VYREdMU&quot; name=&quot;toc4R0VYREdMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTFBUS1JJN&#x27;&gt; 1.3. 以往问题 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+简述已知问题
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc5R0VYRElMU&quot; name=&quot;toc5R0VYRElMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTFBUS1JJN&#x27;&gt; 1.4. 增进提案 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+描述如何改善
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc6R0VYREtMU&quot; name=&quot;toc6R0VYREtMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTFBUS1JJN&#x27;&gt; 1.5. 实施 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+说明如何升级
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc7R0VYRE1MU&quot; name=&quot;toc7R0VYRE1MU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTFBUS1JJN&#x27;&gt; 1.6. 使用方法 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+说明新环境如何使用
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc8R0VYRE9MU&quot; name=&quot;toc8R0VYRE9MU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTFBUS1JJN&#x27;&gt; 1.7. 补丁 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+说明对以往系统的补丁发布情况
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc9R0VYRE9MU&quot; name=&quot;toc9R0VYRE9MU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h3&gt;&lt;A href=&#x27;#toptopTFBUS1JJN&#x27;&gt; 1.7.1. unionfs-p5.diff变更说明 &lt;&#x2F;A&gt;&lt;&#x2F;h3&gt;
+&lt;a id=&quot;toc10R0VYRE9MU&quot; name=&quot;toc10R0VYRE9MU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h3&gt;&lt;A href=&#x27;#toptopTFBUS1JJN&#x27;&gt; 1.7.2. unionfs-p4.diff变更说明 &lt;&#x2F;A&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;
+...
+具体说明每次更新的变化
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc11R0VYRFFMU&quot; name=&quot;toc11R0VYRFFMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTFBUS1JJN&#x27;&gt; 1.8. 现在问题 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+还有什么不足?
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc12R0lYQ0IyT&quot; name=&quot;toc12R0lYQ0IyT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTFBUS1JJN&#x27;&gt; 2. 附录 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;a id=&quot;toc13R0lYRENMU&quot; name=&quot;toc13R0lYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTFBUS1JJN&#x27;&gt; 2.1. FAQ &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;a id=&quot;toc14R0lYREVMU&quot; name=&quot;toc14R0lYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTFBUS1JJN&#x27;&gt; 2.2. 联系方法 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;a id=&quot;toc15R01YQ0FWQ&quot; name=&quot;toc15R01YQ0FWQ&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTFBUS1JJN&#x27;&gt; 3. TODO &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+呜乎哀哉！标准的一次软件升级，就应该为用户负责道明白前因后果；
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+我们呢…………?
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;ul&gt;
+&lt;li&gt;t2t渲染:: 2010-10-09 02:21:41
+&lt;&#x2F;li&gt;
+&lt;li&gt;动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;oss&#x2F;OSSdocDemoJPS-2006-01-17-23-23.t2t --&gt;
+</content>
+</entry>
+</feed>

@@ -1,0 +1,1577 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/techic/PyBlosxom/plugins/index.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/techic/PyBlosxom/plugins/index.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/techic/PyBlosxom/plugins/index.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2011-09-07T06:00:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">py2pre.py</title>
+<category term="" />
+<id>/pyblosxom/2011/09/07/py2pre</id>
+<updated>2011-09-07T06:00:00Z</updated>
+<published>2011-09-07T06:00:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/PyBlosxom/plugins/py2pre.html" />
+<content type="html">&lt;pre class=&quot;brush: python&quot;&gt;# -*- coding: utf-8 -*-
+&quot;&quot;&quot;py - html Parser
+    - refactory py2pre.py from xhtml.py
+
+Copyright (c) 2011 Zoom.Quiet 
+All rights reserved.
+
+Redistribution and use in source and binary forms are permitted
+provided that the above copyright notice and this paragraph are
+duplicated in all such forms and that any documentation,
+advertising materials, and other materials related to such
+distribution and use acknowledge that the software was developed
+by the zoomquiet.org.  The name of the
+University may not be used to endorse or promote products derived
+from this software without specific prior written permission.
+THIS SOFTWARE IS PROVIDED ``AS IS&#x27;&#x27; AND WITHOUT ANY EXPRESS OR
+IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+
+&quot;&quot;&quot;
+
+
+## Leo: tab_width=-4 page_width=80
+__version__ = &quot;v11.09.7&quot;
+__author__ = &#x27;Zoom.Quiet &lt;zoomquiet+pyb at gmail dot com&gt;&#x27;
+__url__ = &quot;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;techic&#x2F;PyBlosxom&#x2F;plugins&#x2F;py2pre.html&quot;
+__description__ = &quot;.py export hmtl entry with syntaxhighlighter.&quot;
+
+#from Pyblosxom import tools
+
+def cb_entryparser(entryparsingdict):
+    &quot;&quot;&quot;
+    Register self as plain file handler
+    &quot;&quot;&quot;
+    entryparsingdict[&quot;py&quot;] = parse
+    return entryparsingdict
+def parse(filename, request):
+    #import os
+    entrydata = {}
+    source = open(filename, &quot;r&quot;).read()
+    #print filenames
+    body = &#x27;&lt;pre class=&quot;brush: python&quot;&gt;%s&lt;&#x2F;pre&gt;&#x27; % source
+    entrydata = {&#x27;body&#x27; : body
+                 ,&#x27;title&#x27; : filename.split(&quot;&#x2F;&quot;)[-1]
+                 }
+    return entrydata
+
+&lt;&#x2F;pre&gt;</content>
+</entry>
+
+<entry>
+<title type="html">plugininfo.py</title>
+<category term="" />
+<id>/pyblosxom/2011/08/31/plugininfo</id>
+<updated>2011-08-31T15:22:00Z</updated>
+<published>2011-08-31T15:22:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/PyBlosxom/plugins/plugininfo.html" />
+<content type="html">&lt;pre class=&quot;brush: python&quot;&gt;&quot;&quot;&quot;
+Summary
+=======
+
+This plugin is maintained at::
+
+   http:&#x2F;&#x2F;www.bluesock.org&#x2F;~willg&#x2F;pyblosxom&#x2F;
+
+Check that URL for new versions, better documentation, and submitting
+bug reports and feature requests.
+
+
+Usage
+=====
+
+This plugin goes through all the plugins you have installed on your blog
+and extracts information about the plugin.
+
+To kick it off, the url starts with ``&#x2F;plugin_info`` .
+
+If there are plugins you want to run that you don&#x27;t want showing up,
+list them in the ``plugininfo_hide`` property of your ``config.py`` file::
+
+   py[&quot;plugininfo_hide&quot;] = [&quot;myplugin&quot;, &quot;myotherplugin&quot;]
+
+It takes a list of strings.
+
+----
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify,
+merge, publish, distribute, sublicense, and&#x2F;or sell copies of the
+Software, and to permit persons to whom the Software is furnished
+to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Copyright 2002-2007 Will Guaraldi
+
+SUBVERSION VERSION: $Id: plugininfo.py,v 2872b22e2ace 2011&#x2F;10&#x2F;27 07:08:25 zoomquiet+hg $
+
+Revisions:
+2007-07-07 - Converted documentation to restructured text.
+2007-05-19 - Brushed up the code, fixed documentation, ...
+2005-11-11 - Pulled into another new version control system
+1.8 - (26 October, 2005) pulled into new version control system
+1.7 - (09 December, 2004) fixed date_head issue and stopped showing 
+      docstrings
+1.6 - (04 May 2004) added comment handling
+1.5 - (18 February 2004) added the ability to &quot;hide&quot; plugins so that
+      we don&#x27;t talk about them
+1.4 - (17 February 2004) added alphabetical sorting of plugins and fixed
+      num_entries issue
+1.3 - (14 July 2003) added $plugincount variable
+1.2 - (5&#x2F;27&#x2F;2003) minor fixes in the build_entry
+&quot;&quot;&quot;
+import Pyblosxom.plugin_utils
+import Pyblosxom.entries.base
+import time
+import os.path
+
+__author__  = &quot;Will Guaraldi - willg at bluesock dot org&quot;
+__version__ = &quot;$Date: 2011&#x2F;10&#x2F;27 07:08:25 $&quot;
+__url__     = &quot;http:&#x2F;&#x2F;www.bluesock.org&#x2F;~willg&#x2F;pyblosxom&#x2F;&quot;
+__description__ = &quot;Shows information about plugins that you&#x27;re running.&quot;
+
+TRIGGER = &quot;&#x2F;plugin_info&quot;
+
+def verify_installation(request):
+    config = request.getConfiguration()
+
+    # check to see if the user has specified the &quot;plugininfo_hide&quot; 
+    # property
+    if not config.has_key(&quot;plugininfo_hide&quot;):
+        # the user doesn&#x27;t have the property set, so we let them know
+        # they can set it and it prevents specified plugins from showing
+        # up.
+        print &quot;Note: You can set &#x27;plugininfo_hide&#x27; to hide plugins you &quot; + \
+              &quot;don&#x27;t want showing up.&quot;
+
+    else:
+        # they do have plugininfo_hide set, so we verify that the value
+        # is valid-ish.
+        val = config[&quot;plugininfo_hide&quot;]
+
+        if not type(val) in [ list, tuple ]:
+            print &quot;&#x27;plugininfo_hide&#x27; must be a list of strings.&quot;
+            return 0
+
+        for mem in val:
+            if not type(mem) == str:
+                print &quot;&#x27;plugininfo_hide&#x27; must be a list of strings.&quot;
+                return 0
+    return 1
+
+def build_entry(request, mem):
+    &quot;&quot;&quot;build_entry(Request, plugin) -&gt; PyBlosxom.entries.base.BaseEntry
+
+    Takes a plugin, extracts information from it, and builds a PyBlosxom
+    entry from the results.  It returns the BaseEntry object.
+    &quot;&quot;&quot;
+    plugindata = []
+    plugindata.append(&quot;&lt;pre&gt;&quot;)
+
+    # previously we pulled __doc__, but more and more people are storing
+    # documentation for the plugin as well as license information--which
+    # isn&#x27;t really what we want to show.  we really want the author, version,
+    # and url for the plugin.  currently these are stored in __author__,
+    # __version__, and __url__ (though those should be changed to something
+    # like VERSION, AUTHOR, and URL so as to avoid confusion with Python
+    # special things.
+    plugindata.append(&quot;AUTHOR: &quot; + str(getattr(mem, &quot;__author__&quot;, None)) + &quot;\n&quot;)
+    plugindata.append(&quot;VERSION: &quot; + str(getattr(mem, &quot;__version__&quot;, None)) + &quot;\n&quot;)
+    if hasattr(mem, &quot;__url__&quot;):
+        plugindata.append(&quot;URL: &lt;a href=\&quot;%s\&quot;&gt;%s&lt;&#x2F;a&gt;\n&quot; % \
+                          (str(mem.__url__), str(mem.__url__)))
+
+    plugindata.append(&quot;&lt;&#x2F;pre&gt;&quot;)
+
+    # build a dict of the metadata that generate_entry needs
+    d = { &quot;title&quot;: mem.__name__,
+          &quot;absolute_path&quot;: TRIGGER[1:],
+          &quot;fn&quot;: mem.__name__,
+          &quot;file_path&quot;: TRIGGER[1:] + &quot;&#x2F;&quot; + mem.__name__ }
+
+    # build the body of the entry
+    body = &quot;&quot;.join(plugindata)
+
+    entry = Pyblosxom.entries.base.generate_entry(request, d, body, None)
+    return entry
+
+def cb_prepare(args):
+    request = args[&quot;request&quot;]
+    data = request.getData()
+    config = request.getConfiguration()
+    antiplugins = config.get(&quot;plugininfo_hide&quot;, [])
+
+    plugins = Pyblosxom.plugin_utils.plugins
+    plugins = [m for m in plugins if m.__name__ not in antiplugins]
+
+    data[&quot;plugincount&quot;] = len(plugins)
+
+
+INIT_KEY = &quot;plugininfo_initiated&quot;
+
+def cb_date_head(args):
+    &quot;&quot;&quot;
+    If we&#x27;re showing plugins, then we don&#x27;t want the date_head templates
+    kicking in--so we block that.
+    &quot;&quot;&quot;
+    request = args[&quot;request&quot;]
+    data = request.getData()
+
+    if data.has_key(INIT_KEY):
+        args[&quot;template&quot;] = &quot;&quot;
+    return args
+
+def cb_staticrender_filelist(args):
+    &quot;&quot;&quot;
+    This is test code--trying to work additional bits into the static
+    renderer.
+    &quot;&quot;&quot;
+    request = args[&quot;request&quot;]
+    filelist = args[&quot;filelist&quot;]
+    flavours = args[&quot;flavours&quot;]
+
+    config = request.getConfiguration()
+
+    antiplugins = config.get(&quot;plugininfo_hide&quot;, [])
+
+    plugins = Pyblosxom.plugin_utils.plugins
+    plugins = [m for m in plugins if m.__name__ not in antiplugins]
+
+    if plugins:
+        for mem in plugins:
+            url = os.path.normpath(TRIGGER + &quot;&#x2F;&quot; + mem.__name__ + &quot;.&quot;)
+            for f in flavours:
+                filelist.append( (url + f, &quot;&quot;) )
+        for f in flavours:
+            filelist.append( (os.path.normpath(TRIGGER + &quot;&#x2F;index.&quot; + f), &quot;&quot;) )
+
+
+def cb_filelist(args):
+    request = args[&quot;request&quot;]
+    pyhttp = request.getHttp()
+    data = request.getData()
+    config = request.getConfiguration()
+
+    if not pyhttp[&quot;PATH_INFO&quot;].startswith(TRIGGER):
+        return
+
+    data[INIT_KEY] = 1
+    data[&#x27;root_datadir&#x27;] = config[&#x27;datadir&#x27;]
+    config[&#x27;num_entries&#x27;] = 9999
+    entry_list = []
+
+    antiplugins = config.get(&quot;plugininfo_hide&quot;, [])
+
+    plugins = Pyblosxom.plugin_utils.plugins
+    plugins = [m for m in plugins if m.__name__ not in antiplugins]
+
+    pathinfo = pyhttp[&quot;PATH_INFO&quot;]
+
+    # if the browser requested the TRIGGER or TRiGGER&#x2F;index, then we
+    # kick in and show plugin information for all plugins.
+    if pathinfo == TRIGGER or pathinfo.startswith(TRIGGER + &quot;&#x2F;index&quot;):
+        plugins.sort(lambda x,y: cmp(x.__name__, y.__name__))
+        for mem in plugins:
+            entry_list.append(build_entry(request, mem))
+        return entry_list
+
+    # the browser requested to see information on a specific plugin.
+
+    # we need to pull off the flavour that was requested
+    # (if there was one).  FIXME - this is a good candidate for a tools
+    # function.
+    pathinfo = pathinfo[len(TRIGGER):]
+
+    if pathinfo.startswith(&quot;&#x2F;&quot;): pathinfo = pathinfo[1:]
+    if pathinfo.endswith(&quot;&#x2F;&quot;): pathinfo = pathinfo[:-1]
+
+    filename, ext = os.path.splitext(pathinfo)
+    if ext[1:]:
+        data[&quot;flavour&quot;] = ext[1:]
+
+    d = {}
+    for mem in plugins:
+        d[mem.__name__] = mem
+
+    # if the browser requested to look at a specific plugin, then
+    # we only show that one.
+    if d.has_key(filename):
+        return [build_entry(request, d[filename])]
+
+    # if the plugin the browser requested isn&#x27;t in the list of
+    # plugins, then we return an empty list of entries--PyBlosxom
+    # will show a &quot;that doesn&#x27;t exist&quot; message for that.
+    return []
+
+# vim: tabstop=4 shiftwidth=4
+&lt;&#x2F;pre&gt;</content>
+</entry>
+
+<entry>
+<title type="html">pyfilenamemtime.py</title>
+<category term="" />
+<id>/pyblosxom/2011/08/31/pyfilenamemtime</id>
+<updated>2011-08-31T15:22:00Z</updated>
+<published>2011-08-31T15:22:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/PyBlosxom/plugins/pyfilenamemtime.html" />
+<content type="html">&lt;pre class=&quot;brush: python&quot;&gt;# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
+&quot;&quot;&quot;
+If a filename contains a timestamp in the form of YYYY-MM-DD-hh-mm,
+change the mtime to be the timestamp instead of the one kept by the
+filesystem.  For example, a valid filename would be
+foo-2002-04-01-00-00.txt for April fools day on the year 2002.
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify,
+merge, publish, distribute, sublicense, and&#x2F;or sell copies of the
+Software, and to permit persons to whom the Software is furnished
+to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Copyright 2004, 2005 Tim Roberts
+&quot;&quot;&quot;
+## Leo: tab_width=-4 page_width=80
+# vim: tabstop=4 shiftwidth=4
+import os, re, time
+
+__author__ = &#x27;Tim Roberts http:&#x2F;&#x2F;www.probo.com&#x2F;timr&#x2F;blog&#x2F;&#x27;
+__version__ = &#x27;$Id: pyfilenamemtime.py,v 2872b22e2ace 2011&#x2F;10&#x2F;27 07:08:25 zoomquiet+hg $&#x27;
+
+DAYMATCH = re.compile(&#x27;([0-9]{4})-([0-1][0-9])-([0-3][0-9])-([0-2][0-9])-([0-5][0-9]).[\w]+$&#x27;)
+
+def cb_filestat(args):
+    filename = args[&quot;filename&quot;]
+    stattuple = args[&quot;mtime&quot;]
+
+    mtime = 0
+    mtch = DAYMATCH.search(os.path.basename(filename))
+    if mtch:
+        try:
+            year = int(mtch.groups()[0])
+            mo = int(mtch.groups()[1])
+            day = int(mtch.groups()[2])
+            hr = int(mtch.groups()[3])
+            minute = int(mtch.groups()[4]) 
+            mtime = time.mktime((year,mo,day,hr,minute,0,0,0,-1))
+        except:
+            # TODO: Some sort of debugging code here?
+            pass
+
+    if mtime: 
+        args[&quot;mtime&quot;] = tuple(list(stattuple[:8]) + [mtime] + list(stattuple[9:]))
+
+    return args
+
+
+&lt;&#x2F;pre&gt;</content>
+</entry>
+
+<entry>
+<title type="html">zqcategories.py</title>
+<category term="" />
+<id>/pyblosxom/2011/08/31/zqcategories</id>
+<updated>2011-08-31T15:22:00Z</updated>
+<published>2011-08-31T15:22:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/PyBlosxom/plugins/zqcategories.html" />
+<content type="html">&lt;pre class=&quot;brush: python&quot;&gt;# -*- coding: utf-8 -*-
+# vim: tabstop=4 shiftwidth=4
+&quot;&quot;&quot;
+- 仅仅要求可以根据指定顺序输出分类目录
+
+Walks through your blog root figuring out all the categories you have
+and how many entries are in each category.  It generates html with
+this information and stores it in the $categorylinks variable which
+you can use in your head or foot templates.
+
+You can format the output by setting &quot;category_begin&quot;, &quot;category_item&quot;,
+&quot;category_end&quot; and properties.
+
+Categories exist in a hierarchy.  &quot;category_start&quot; starts the category listing
+and is only used at the very beginning.  The &quot;category_begin&quot; property begins a 
+new category group and the &quot;category_end&quot; property ends that category group.  
+The &quot;category_item&quot; property is the template for each category item.  Then
+after all the categories are printed, &quot;category_finish&quot; ends the category
+listing.
+
+For example, the following properties will use &lt;ul&gt; to open a category, &lt;&#x2F;ul&gt;
+to close a category and &lt;li&gt; for each item:
+
+py[&quot;category_start&quot;] = &quot;&lt;ul&gt;&quot;
+py[&quot;category_begin&quot;] = &quot;&lt;li&gt;&lt;ul&gt;&quot;
+py[&quot;category_item&quot;] = r&#x27;&lt;li&gt;&lt;a href=&quot;%(base_url)s&#x2F;%(category_urlencoded)sindex&quot;&gt;%(category)s&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;&#x27;
+py[&quot;category_end&quot;] = &quot;&lt;&#x2F;li&gt;&lt;&#x2F;ul&gt;&quot;
+py[&quot;category_finish&quot;] = &quot;&lt;&#x2F;ul&gt;&quot;
+
+
+Another example, the following properties don&#x27;t have a begin or an end but
+instead use indentation for links and displays the number of entries in that
+category:
+
+py[&quot;category_start&quot;] = &quot;&quot;
+py[&quot;category_begin&quot;] = &quot;&quot;
+py[&quot;category_item&quot;] = r&#x27;%(indent)s&lt;a href=&quot;%(base_url)s&#x2F;%(category_urlencoded)sindex&quot;&gt;%(category)s&lt;&#x2F;a&gt; (%(count)d)&lt;br &#x2F;&gt;&#x27;
+py[&quot;category_end&quot;] = &quot;&quot;
+py[&quot;category_finish&quot;] = &quot;&quot;
+
+There are no variables available in the category_begin or category_end 
+templates.
+
+Available variables in the category_item template:
+
+  variable                 example                      datatype
+  ========                 =======                      ========
+  base_url                 http:&#x2F;&#x2F;joe.com&#x2F;blog&#x2F;         string
+  fullcategory_urlencoded  &#x27;dev&#x2F;pyblosxom&#x2F;status&#x2F;&#x27;      string
+  fullcategory             &#x27;dev&#x2F;pyblosxom&#x2F;status&#x2F;&#x27;      string (urlencoded)
+  category                 &#x27;status&#x2F;&#x27;                    string
+  category_urlencoded      &#x27;status&#x2F;&#x27;                    string (urlencoed)
+  flavour                  &#x27;html&#x27;                       string
+  count                    70                           int
+  indent                   &#x27;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&#x27;   string
+
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify,
+merge, publish, distribute, sublicense, and&#x2F;or sell copies of the
+Software, and to permit persons to whom the Software is furnished
+to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Copyright 2004, 2005, 2006 Will Guaraldi
+&quot;&quot;&quot;
+__author__ = &quot;Will Guaraldi - willg at bluesock dot org&quot;
+__version__ = &quot;$Id: zqcategories.py,v 2872b22e2ace 2011&#x2F;10&#x2F;27 07:08:25 zoomquiet+hg $&quot;
+__url__ = &quot;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;techic&#x2F;PyBlosxom&#x2F;plugins&#x2F;zqcategories.html&quot;
+#__url__ = &quot;http:&#x2F;&#x2F;pyblosxom.sourceforge.net&#x2F;&quot;
+__description__ = &quot;Builds a list of categories.&quot;
+
+from Pyblosxom import tools
+import re, os
+
+DEFAULT_START = r&#x27;&lt;ul class=&quot;categorygroup&quot;&gt;&#x27;
+DEFAULT_BEGIN = r&#x27;&lt;li&gt;&lt;ul class=&quot;categorygroup&quot;&gt;&#x27;
+DEFAULT_ITEM = r&#x27;&lt;li&gt;&lt;a href=&quot;%(base_url)s&#x2F;%(fullcategory_urlencoded)sindex.%(flavour)s&quot;&gt;%(category)s&lt;&#x2F;a&gt; (%(count)d)&lt;&#x2F;li&gt;&#x27;
+DEFAULT_END = &quot;&lt;&#x2F;ul&gt;&lt;&#x2F;li&gt;&quot;
+DEFAULT_FINISH = &quot;&lt;&#x2F;ul&gt;&quot;
+DEFAULT_ROOT = []
+
+def verify_installation(request):
+    config = request.getConfiguration()
+    if not config.has_key(&quot;category_template&quot;):
+        print &quot;missing optional config property &#x27;category_template&#x27; which allows &quot;
+        print &quot;you to specify how the category hierarchy is rendered.  see&quot;
+        print &quot;the documentation at the top of the pycategories plugin code &quot;
+        print &quot;file for more details.&quot;
+    return 1
+
+class PyblCategories:
+    def __init__(self, request):
+        self._request = request
+        self._categories = None
+        config = self._request.getConfiguration()
+        self._baseurl = config.get(&quot;base_url&quot;, &quot;&quot;)
+
+        self.genCategories()
+
+
+    def __str__(self):
+        if self._categories == None:
+            self.genCategories()
+        return self._categories
+
+    def genCategories(self):
+        config = self._request.getConfiguration()
+        root = config[&quot;datadir&quot;]
+
+        start_t = config.get(&quot;category_start&quot;, DEFAULT_START)
+        begin_t = config.get(&quot;category_begin&quot;, DEFAULT_BEGIN)
+        item_t = config.get(&quot;category_item&quot;, DEFAULT_ITEM)
+        end_t = config.get(&quot;category_end&quot;, DEFAULT_END)
+        finish_t = config.get(&quot;category_finish&quot;, DEFAULT_FINISH)
+        #zoomq: configed order by mind the catrgorise
+        root_path_list = config.get(&quot;category_root_list&quot;, DEFAULT_ROOT)
+
+        cfgBaseUrl = config.get(&quot;base_url&quot;, &quot;&quot;)
+
+        form = self._request.getForm()
+        flavour = (form.has_key(&#x27;flav&#x27;) and form[&#x27;flav&#x27;].value or 
+            config.get(&#x27;default_flavour&#x27;, &#x27;html&#x27;))
+        #print flavour
+
+        # build the list of all entries in the datadir
+        output = &quot;&quot;
+        #@others
+        if 0==len(root_path_list):  #as default walk and export Categories as word order 
+            elist = tools.Walk(self._request, root)
+            output += self._subCategories(elist,root,&quot;&quot;)
+        else:
+            for rootCategory in root_path_list:
+                subroot = &quot;%s&#x2F;%s&quot;%(root,rootCategory)
+                self._baseurl = &quot;%s&#x2F;%s&quot;%(cfgBaseUrl,rootCategory)
+                elist = tools.Walk(self._request, subroot)
+                output += self._subCategories(elist,subroot,rootCategory)
+
+        # then we join the list and that&#x27;s the final string
+        #self._categories = &quot;\n&quot;.join(output)
+        self._categories = output
+
+    def _subCategories(self,elist,root,rootname):
+        config = self._request.getConfiguration()
+        form = self._request.getForm()
+        flavour = (form.has_key(&#x27;flav&#x27;) and form[&#x27;flav&#x27;].value or 
+            config.get(&#x27;default_flavour&#x27;, &#x27;html&#x27;))
+        start_t = config.get(&quot;category_start&quot;, DEFAULT_START)
+        begin_t = config.get(&quot;category_begin&quot;, DEFAULT_BEGIN)
+        item_t = config.get(&quot;category_item&quot;, DEFAULT_ITEM)
+        end_t = config.get(&quot;category_end&quot;, DEFAULT_END)
+        finish_t = config.get(&quot;category_finish&quot;, DEFAULT_FINISH)
+
+        # peel off the root dir from the list of entries
+        elist = [mem[len(root)+1:] for mem in elist]
+
+        # go through the list of entries and build a map that
+        # maintains a count of how many entries are in each 
+        # category
+        elistmap = {}
+        for mem in elist:
+            mem = os.path.dirname(mem)
+            elistmap[mem] = 1 + elistmap.get(mem, 0)
+        self._elistmap = elistmap
+        #print self._elistmap
+        # go through the elistmap keys (which is the list of
+        # categories) and for each piece in the key (i.e. the key
+        # could be &quot;dev&#x2F;pyblosxom&#x2F;releases&quot; and the pieces would
+        # be &quot;dev&quot;, &quot;pyblosxom&quot;, and &quot;releases&quot;) we build keys
+        # for the category list map (i.e. &quot;dev&quot;, &quot;dev&#x2F;pyblosxom&quot;,
+        # &quot;dev&#x2F;pyblosxom&#x2F;releases&quot;)
+        clistmap = {}
+        for mem in elistmap.keys():
+            mem = mem.split(os.sep)
+            for index in range(len(mem)+1):
+                p = os.sep.join(mem[0:index])
+                clistmap[p] = 0
+
+        # then we take the category list from the clistmap and
+        # sort it alphabetically
+        clist = clistmap.keys()
+        clist.sort()
+
+        output = []
+        indent = 0
+
+        output.append(start_t)
+        # then we generate each item in the list
+        for item in clist:
+            itemlist = item.split(os.sep)
+
+            num = 0
+            for key in self._elistmap.keys():
+                if item == &#x27;&#x27; or key == item or key.startswith(item + os.sep):
+                    num = num + self._elistmap[key]
+
+            if not item:
+                tab = &quot;&quot;
+            else:
+                tab = len(itemlist) * &quot;&amp;nbsp;&amp;nbsp;&quot;
+
+            if indent &gt; len(itemlist):
+                for i in range(indent - len(itemlist)):
+                    output.append(end_t)
+
+            elif indent &lt; len(itemlist):
+                for i in range(len(itemlist) - indent):
+                    output.append(begin_t)
+
+            # now we build the dict with the values for substitution
+            d = { &quot;base_url&quot;:     self._baseurl, 
+                  &quot;fullcategory&quot;: item + &quot;&#x2F;&quot;, 
+                  &quot;category&quot;:     itemlist[-1] + &quot;&#x2F;&quot;, 
+                  &quot;flavour&quot;:      flavour,
+                  &quot;count&quot;:        num,
+                  &quot;indent&quot;:       tab }
+
+            # this prevents a double &#x2F; in the root category url
+            if item == &quot;&quot;:
+                d[&quot;fullcategory&quot;] = item
+            #print d
+            # this adds urlencoded versions
+            d[&quot;fullcategory_urlencoded&quot;] = tools.urlencode_text(d[&quot;fullcategory&quot;])
+            d[&quot;category_urlencoded&quot;] = tools.urlencode_text(d[&quot;category&quot;])
+
+            # and we toss it in the thing
+            output.append(item_t % d)
+
+            indent = len(itemlist)
+
+        output.append(end_t * indent)
+        output.append(finish_t)
+        # export define item&#x27;s name
+        output[2] = output[2].replace(&quot;&gt;&#x2F;&lt;&#x2F;a&gt;&quot;,&quot; class=&#x27;rootcategory&#x27;&gt;%s&#x2F;&lt;&#x2F;a&gt;&quot;%rootname)
+        return &quot;\n&quot;.join(output)
+def cb_prepare(args):
+    request = args[&quot;request&quot;]
+    data = request.getData()
+    data[&quot;categorylinks&quot;] = PyblCategories(request)
+
+&lt;&#x2F;pre&gt;</content>
+</entry>
+
+<entry>
+<title type="html">zqarchives.py</title>
+<category term="" />
+<id>/pyblosxom/2011/08/31/zqarchives</id>
+<updated>2011-08-31T15:22:00Z</updated>
+<published>2011-08-31T15:22:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/PyBlosxom/plugins/zqarchives.html" />
+<content type="html">&lt;pre class=&quot;brush: python&quot;&gt;# -*- coding: utf-8 -*-
+
+# vim: tabstop=4 shiftwidth=4
+&quot;&quot;&quot;
+- zoomq 100419 fixed for export month&#x2F;year with count
+Walks through your blog root figuring out all the available monthly archives in
+your blogs.  It generates html with this information and stores it in the
+$archivelinks variable which you can use in your head or foot templates.
+
+You can format the output with the key &quot;archive_template&quot;.
+
+A config.py example:
+
+    py[&#x27;archive_template&#x27;] = &#x27;&lt;li&gt;&lt;a href=&quot;%(base_url)s&#x2F;%(Y)s&#x2F;%(b)s&quot;&gt;%(m)s&#x2F;%(y)s&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;&#x27;
+
+Displays the archives as list items, with a month number slash year number, like 06&#x2F;78.
+
+The vars available with typical example values are:
+    b      &#x27;Jun&#x27;
+    m      &#x27;6&#x27;
+    Y      &#x27;1978&#x27;
+    y      &#x27;78&#x27;
+
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify,
+merge, publish, distribute, sublicense, and&#x2F;or sell copies of the
+Software, and to permit persons to whom the Software is furnished
+to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Copyright 2004, 2005 Wari Wahab
+&quot;&quot;&quot;
+__author__ = &quot;Wari Wahab - wari at wari dot per dot sg&quot;
+__version__ = &quot;$Id: zqarchives.py,v 2872b22e2ace 2011&#x2F;10&#x2F;27 07:08:25 zoomquiet+hg $&quot;
+__url__ = &quot;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;techic&#x2F;PyBlosxom&#x2F;plugins&#x2F;zqarchives.html&quot;
+
+from Pyblosxom import tools
+import time, os
+
+def verify_installation(request):
+    config = request.get_configuration()
+    if not config.has_key(&quot;archive_template&quot;):
+        print &quot;missing optional config property &#x27;archive_template&#x27; which &quot;
+        print &quot;allows you to specify how the archive links are created.  &quot;
+        print &quot;refer to pyarchive plugin documentation for more details.&quot;
+    return 1
+
+class PyblArchives:
+    def __init__(self, request):
+        self._request = request
+        self._archives = None
+
+    def __str__(self):
+        if self._archives == None:
+            self.gen_linear_archive()
+        return self._archives
+
+    def gen_linear_archive(self):
+        config = self._request.get_configuration()
+        data = self._request.get_data()
+        root = config[&quot;datadir&quot;]
+        archives = {}
+        archive_list = tools.walk(self._request, root)
+        fulldict = {}
+        fulldict.update(config)
+        fulldict.update(data)
+        template = config.get(&#x27;archive_template&#x27;, 
+                    &#x27;&lt;a href=&quot;%(base_url)s&#x2F;%(Y)s&#x2F;%(m)s&quot;&gt;%(y)s.%(m)s&lt;&#x2F;a&gt;&#x27;)
+        #&lt;a href=&quot;%(base_url)s&#x2F;%(Y)s&#x2F;%(b)s&quot;&gt;%(Y)s-%(b)s&lt;&#x2F;a&gt;
+        #print fulldict[&quot;base_url&quot;]
+        for mem in archive_list:
+            timetuple = tools.filestat(self._request, mem)
+            timedict = {}
+            for x in [&quot;B&quot;, &quot;b&quot;, &quot;m&quot;, &quot;Y&quot;, &quot;y&quot;]:
+                timedict[x] = time.strftime(&quot;%&quot; + x, timetuple)
+            fulldict.update(timedict)
+            if not archives.has_key(timedict[&#x27;Y&#x27;] + timedict[&#x27;m&#x27;]):
+                archives[timedict[&#x27;Y&#x27;] + timedict[&#x27;m&#x27;]] = [template % fulldict,1]
+            else:
+                archives[timedict[&#x27;Y&#x27;] + timedict[&#x27;m&#x27;]][1] += 1
+                archives[timedict[&#x27;Y&#x27;] + timedict[&#x27;m&#x27;]][0] = template % fulldict
+        #print archives
+        #return
+        arc_keys = archives.keys()
+        arc_keys.sort()
+        arc_keys.reverse()
+        yearmonth = {}
+        result = []
+        #base archives walk and count every year&#x27;s mounth
+        for key in arc_keys:
+            yearname = key[:-2]
+            if yearname in yearmonth.keys():
+                yearmonth[yearname][0] += archives[key][1]
+                yearmonth[yearname][1].append(archives[key])
+            else:
+                yearmonth[yearname] = [archives[key][1],[]]
+                yearmonth[yearname][1].append(archives[key])
+        #print yearmonth[&quot;2007&quot;]
+        mon_keys = yearmonth.keys()
+        mon_keys.sort()
+        mon_keys.reverse()
+        #print mon_keys
+        for year in mon_keys:
+            #print &quot;%s&lt;sup&gt;%s&lt;sup&gt;&quot;%(year,yearmonth[year][0])
+            monode = yearmonth[year][1]
+            result.append(&quot;&lt;li class=&#x27;yearchives&#x27;&gt;&lt;a href=&#x27;%s&#x2F;%s&#x27;&gt;%s&lt;&#x2F;a&gt;&lt;sup&gt;(%d)&lt;&#x2F;sup&gt;&lt;&#x2F;li&gt;&quot;%(fulldict[&quot;base_url&quot;],year,year,yearmonth[year][0]))
+            if 1==len(monode):
+                #print &quot;%s&lt;sup&gt;%s&lt;sup&gt;&quot;%(monode[0][0],monode[0][1])
+                result.append(&quot;&lt;li&gt;%s&lt;sup&gt;(%d)&lt;&#x2F;sup&gt;&lt;li&gt;&quot;%(monode[0][0],monode[0][1]))
+            else:
+                for m in monode:
+                    #print m
+                    #print &quot;%s&lt;sup&gt;%s&lt;sup&gt;&quot;%(m[0],m[1])
+                    result.append(&quot;&lt;li&gt;%s&lt;sup&gt;(%d)&lt;&#x2F;sup&gt;&lt;li&gt;&quot;%(m[0],m[1]))
+                    #result.append(&quot;%s&lt;sup&gt;%s&lt;sup&gt;&quot;%(month[0],month[1]))
+
+        #print result
+        self._archives = &#x27;\n&#x27;.join(result)
+
+def cb_prepare(args):
+    request = args[&quot;request&quot;]
+    data = request.get_data()
+    data[&quot;archivelinks&quot;] = PyblArchives(request)
+
+&lt;&#x2F;pre&gt;</content>
+</entry>
+
+<entry>
+<title type="html">index_static.py</title>
+<category term="" />
+<id>/pyblosxom/2010/05/31/index_static</id>
+<updated>2010-05-31T03:10:00Z</updated>
+<published>2010-05-31T03:10:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/PyBlosxom/plugins/index_static.html" />
+<content type="html">&lt;pre class=&quot;brush: python&quot;&gt;# -*- coding: utf-8 -*-
+&quot;&quot;&quot;
+index_static.py
+    - just fixed for pyblosxom-cmd  staticrender export all .html links
+base index.py from:
+http:&#x2F;&#x2F;snarfed.org&#x2F;space&#x2F;pyblosxom+index
+Ryan Barrett &lt;pyblosxom@ryanb.org&gt;
+
+This plugin displays an alphabetical index of all entries. It uses these
+optional config variables from config.py, shown here with their defaults:
+
+py[&#x27;index_trigger&#x27;]            = &#x27;&#x2F;site-index&#x27;
+py[&#x27;index_num_columns&#x27;]        = 2
+py[&#x27;index_letters_first&#x27;]      = True
+py[&#x27;index_title&#x27;]              = &#x27;index&#x27;
+py[&#x27;index_use_story_template&#x27;] = True
+
+
+VERSION:
+0.2
+
+TODO:
+- use a template instead of hard-coded HTML
+
+Copyright 2006 Ryan Barrett
+
+This program is free software; you can redistribute it and&#x2F;or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+&quot;&quot;&quot;
+import math
+import os.path
+import time
+from Pyblosxom import tools
+import Pyblosxom.entries
+
+__author__ = &#x27;Ryan Barrett&#x27;
+__version__ = &#x27;0.2&#x27;
+__url__ = &#x27;http:&#x2F;&#x2F;snarfed.org&#x2F;space&#x2F;pyblosxom+index&#x27;
+__description__ = &#x27;Displays an alphabetical index of all entries.&#x27;
+
+
+def verify_installation(request):
+  return 1
+
+def cb_filelist(args):
+  request = args[&#x27;request&#x27;]
+  http = request.getHttp()
+  data = request.getData()
+  config = request.getConfiguration()
+
+  trigger = config.get(&#x27;index_trigger&#x27;, &#x27;site-index&#x27;)
+  if http[&#x27;PATH_INFO&#x27;] != trigger:
+    return
+
+  # get the entries
+  datadir = config[&#x27;datadir&#x27;]
+  files = tools.Walk(request, datadir)
+  files.sort()
+
+  # sort into sections, one for each letter. the dictionary is 
+  # letter =&gt; (entry name, path) where path is the relative to datadir.
+  sections = {}
+  entry_extensions = data[&#x27;extensions&#x27;].keys()
+
+  for file in files:
+    assert file.startswith(datadir)
+    path, ext = os.path.splitext(file[len(datadir):])
+    if ext[1:] in entry_extensions:  # strip the leading period from ext
+      entry_name = os.path.basename(path)
+      sections.setdefault(entry_name[0].upper(), []).append((entry_name, path))
+
+  # extract the first letters. sort as usual, except that numbers and other
+  # non-letters go *after* letters. 
+  def letters_before_symbols(a, b):
+    if a.isalpha() and not b.isalpha():
+      return -1
+    elif not a.isalpha() and b.isalpha():
+      return 1
+    else:
+      return cmp(a, b)
+
+  letters = sections.keys()
+  if config.get(&#x27;index_letters_first&#x27;, 1):
+    letters.sort(letters_before_symbols)
+  else:
+    letters.sort()
+
+  # add the header with links to each section
+  body = &#x27;&lt;p class=&quot;index-header&quot;&gt;&#x27;
+  letter_links = [&#x27;&lt;a href=&quot;#%s&quot;&gt;%s&lt;&#x2F;a&gt;&#x27; % (l, l) for l in letters]
+  body += &#x27; |\n&#x27;.join(letter_links)
+  body += &#x27;&lt;&#x2F;p&gt;\n&lt;hr class=&quot;index&quot;&#x2F;&gt;\n\n&#x27;
+
+  # add the sections themselves, with one link per entry, in a table. the
+  # number of columns is taken from the index_num_columns config variable.
+  # entries are ordered down each column, in order.
+  num_cols = config.get(&#x27;index_num_columns&#x27;, 2)
+
+  for l in letters:
+    body += &#x27;&lt;h3 class=&quot;index&quot;&gt;%s&lt;&#x2F;h3&gt; &lt;a name=&quot;%s&quot;&gt;&lt;&#x2F;a n&gt;\n&#x27; % (l, l)
+    body += &#x27;&lt;table class=&quot;index&quot;&gt;\n&#x27;
+
+    entries = sections[l]
+    entries.sort()
+    num_rows = int(math.ceil(float(len(entries)) &#x2F; num_cols))
+
+    for row in range(0, num_rows):
+      # alternate the &lt;tr&gt; tags&#x27; class between index-row-stripe-0 and
+      # index-row-stripe-1, so you can use CSS to alternate their color for
+      # readability, if you want.
+      body += &#x27;&lt;tr class=&quot;index-row-stripe-%d&quot;&gt;\n&#x27; % (row % 2)
+      for col in range(0, num_cols):
+        entry_index = col * num_rows + row
+        if entry_index &lt; len(entries):
+          entry_name, path = entries[entry_index]
+        else:
+          entry_name = path = &#x27;&#x27;
+        body += &#x27;&lt;td&gt;&lt;a href=&quot;%s.html&quot;&gt;%s&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;\n&#x27; % (path[1:], entry_name)
+      body += &#x27;&lt;&#x2F;tr&gt;\n&#x27;
+
+    body += &#x27;&lt;&#x2F;table&gt;\n&lt;hr class=&quot;index&quot;&#x2F;&gt;\n\n&#x27;
+
+  data = {&#x27;title&#x27;: config.get(&#x27;index_title&#x27;, &#x27;index&#x27;)}
+  # use the epoch for mtime. otherwise, pyblosxom uses the current time, which
+  # makes other plugins (like weblogsping) think this is a new entry.
+  epoch = time.localtime(0)
+  fe = Pyblosxom.entries.base.generate_entry(request, data, body, epoch)
+  return [fe]
+
+def cb_story(args):
+  request = args[&#x27;request&#x27;]
+  http = request.getHttp()
+  config = request.getConfiguration()
+  trigger = config.get(&#x27;index_trigger&#x27;, &#x27;site-index&#x27;)
+
+  if (http[&#x27;PATH_INFO&#x27;] == trigger and
+      not config.get(&#x27;index_use_story_template&#x27;, 1)):
+    title = config.get(&#x27;index_title&#x27;, &#x27;index&#x27;)
+    args[&#x27;template&#x27;] = &#x27;&lt;h1 class=&quot;index&quot;&gt;%s&lt;&#x2F;h1&gt;\n&lt;hr &#x2F;&gt;\n$body&#x27; % title
+
+  return args
+&lt;&#x2F;pre&gt;</content>
+</entry>
+
+<entry>
+<title type="html">category_static.py</title>
+<category term="" />
+<id>/pyblosxom/2010/05/31/category_static</id>
+<updated>2010-05-31T03:10:00Z</updated>
+<published>2010-05-31T03:10:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/PyBlosxom/plugins/category_static.html" />
+<content type="html">&lt;pre class=&quot;brush: python&quot;&gt;# -*- coding: utf-8 -*-
+&quot;&quot;&quot;
+category_static.py
+    - just fixed for pyblosxom-cmd  staticrender export all .html links
+base index.py from:
+http:&#x2F;&#x2F;snarfed.org&#x2F;space&#x2F;pyblosxom+index
+Ryan Barrett &lt;pyblosxom@ryanb.org&gt;
+    - Zoom.Quiet 100401
+
+This plugin displays an alphabetical index of all entries. It uses these
+optional config variables from config.py, shown here with their defaults:
+
+py[&#x27;cindex_trigger&#x27;]            = &#x27;&#x2F;site-index&#x27;
+py[&#x27;cindex_num_columns&#x27;]        = 2
+py[&#x27;cindex_letters_first&#x27;]      = True
+py[&#x27;cindex_title&#x27;]              = &#x27;index&#x27;
+py[&#x27;cindex_use_story_template&#x27;] = True
+
+
+VERSION:
+0.2
+
+TODO:
+- use a template instead of hard-coded HTML
+
+Copyright 2006 Ryan Barrett
+
+This program is free software; you can redistribute it and&#x2F;or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+&quot;&quot;&quot;
+
+
+import math
+import os.path
+import time
+from operator import itemgetter
+from Pyblosxom import tools
+import Pyblosxom.entries
+#import re
+
+__author__ = &#x27;Zoom.Quiet &lt;zoomquiet+pyb at gmail dot com&gt;&#x27;
+__version__ = &#x27;11.09.7&#x27;
+__url__ = &quot;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;techic&#x2F;PyBlosxom&#x2F;plugins&#x2F;category_static.html&quot;
+__description__ = &#x27;Displays an Category index as Tree for all entries. in one page&#x27;
+DEFAULT_ROOT = []
+def verify_installation(request):
+  return 1
+
+def cb_filelist(args):
+    request = args[&#x27;request&#x27;]
+    http = request.getHttp()
+    data = request.getData()
+    config = request.getConfiguration()
+    _baseurl = config.get(&quot;base_url&quot;, &quot;&quot;)
+
+    trigger = config.get(&#x27;cindex_trigger&#x27;, &#x27;site-index&#x27;)
+    if http[&#x27;PATH_INFO&#x27;] != trigger:
+        return
+
+    # get the entries
+    datadir = config[&#x27;datadir&#x27;]
+    files = tools.Walk(request, datadir)
+    files.sort()
+
+    body = &#x27;&lt;div id=&quot;categoriselist&quot;&gt;&#x27;
+    #print files
+    # sort into sections, one for each letter. the dictionary is 
+    # letter =&gt; (entry name, path) where path is the relative to datadir.
+    #sections = {}
+    #   the entrise dictionary is 
+    # path =&gt; (entry name, 0) 
+    entrise = []
+
+    entry_extensions = data[&#x27;extensions&#x27;].keys()
+
+    for file in files:
+        #objEntry = entries.fileentry.FileEntry(request, file,datadir)
+        #print objEntry.keys()  
+        assert file.startswith(datadir)
+        path, ext = os.path.splitext(file[len(datadir):])
+        if ext[1:] in entry_extensions:  # strip the leading period from ext
+            entry_name = os.path.basename(path)
+            #sections.setdefault(entry_name[0].upper(), []).append((entry_name, path))
+            entrise.append((entry_name,path,file))
+    #print entrise
+    #sortPaths = sorted(entrise.iteritems(), key=itemgetter(1), reverse=True)
+    #print sortPaths
+    #print _baseurl
+    etree = {}
+    &quot;&quot;&quot;{
+    &quot;pathID&quot;:[(path.split()),&quot;title&quot;,...]
+    ,
+    }
+    &quot;&quot;&quot;
+    for entry in entrise:
+        e = Pyblosxom.entries.fileentry.FileEntry(request, entry[2], entry[1])
+        deeps = entry[1].split(&quot;&#x2F;&quot;)[:-1]
+        pathID = &quot;&quot;.join(deeps)
+        if pathID in etree:
+            etree[pathID].append((e[&#x27;title&#x27;],entry[1]))
+        else:
+            etree[pathID]= [tuple(deeps),(e[&#x27;title&#x27;],entry[1])]
+    #print etree.keys()
+    root_path_list = config.get(&quot;category_root_list&quot;, DEFAULT_ROOT)
+    root_entry_list = []
+    for opath in root_path_list:
+        #print opath
+        crtRoot = []
+        for k in etree.keys():
+            if opath in k:
+                crtRoot.append(k)
+        crtRoot.sort()
+        root_entry_list.append((opath,crtRoot))
+
+    &#x27;&#x27;&#x27;root_entry_list as::
+    [(&#x27;Zen&#x27;, [&#x27;ZenChinese&#x27;, &#x27;ZenGoogle&#x27;, &#x27;Zenpythonic&#x27;]), (&#x27;oss&#x27;, [&#x27;oss&#x27;, &#x27;ossFreeBSD&#x27;, &#x27;ossMozillaFireFox&#x27;, &#x27;ossUbuntu&#x27;]), (&#x27;opening&#x27;, []), (&#x27;mind&#x27;, [&#x27;mind&#x27;]), (&#x27;Quiet&#x27;, [&#x27;Quietliving&#x27;, &#x27;Quietnomeans&#x27;]), (&#x27;utility&#x27;, [&#x27;utilitySubversion&#x27;, &#x27;utilitySubversionhooks&#x27;, &#x27;utilitypy4strStructuredText&#x27;, &#x27;utilitypy4webDjango&#x27;, &#x27;utilitypy4webMoinMoin&#x27;, &#x27;utilitypy4webQuixote&#x27;, &#x27;utilitypy4zh&#x27;, &#x27;utilityzqlib&#x27;]), (&#x27;internet&#x27;, [&#x27;internet&#x27;, &#x27;internetFolksonomy&#x27;]), (&#x27;easy&#x27;, [&#x27;easymovie&#x27;, &#x27;easymusic&#x27;]), (&#x27;techic&#x27;, [&#x27;techic&#x27;, &#x27;techicEmacs&#x27;, &#x27;techicPyBlosxom&#x27;, &#x27;techicPyBlosxomblosxom&#x27;, &#x27;techicPyBlosxomplugins&#x27;])]
+    &#x27;&#x27;&#x27;
+    body += &#x27;&lt;h3&gt;&#x2F;&lt;&#x2F;h3&gt;&#x27;
+    for e in etree[&#x27;&#x27;][1:]:
+        #print &quot;etree[&#x27;&#x27;] include::&quot;,e
+        body += &#x27;&lt;span class=&quot;indents&quot;&gt;%s&lt;&#x2F;span&gt;&lt;a href=&quot;%s%s.html&quot;&gt;%s&lt;&#x2F;a&gt;&lt;br&gt;\n&#x27;%(
+            &quot;....&quot;
+            ,_baseurl
+            ,e[1]
+            ,e[0]
+            )
+    #print root_entry_list
+
+    for k in root_entry_list:
+        #[&#x27;techic&#x27;, &#x27;techicEmacs&#x27;, &#x27;techicPyBlosxom&#x27;, &#x27;techicPyBlosxomblosxom&#x27;, &#x27;techicPyBlosxomplugins&#x27;]
+        body += &#x27;&lt;h4&gt;%s&#x2F;&lt;&#x2F;h4&gt;&#x27;%k[0]
+        cpath = &quot;&quot;
+        for p in k[1]:
+            #print etree[p]
+            #[(&#x27;&#x27;, &#x27;Zen&#x27;, &#x27;Chinese&#x27;), &#x27;9.18&#x27;, &#x27;CC Salon BJ&#x27;, &#x27;\xe2\x80\x9c\xe5\x9b\xbd\xe9\x99\x85\xe8\x87\xaa\xe7\x94\xb1\xe8\xbd\xaf\xe4\xbb\xb6\xe6\x97\xa5\xe2\x80\x9d\xe4\xb9\x8b\xe5\xa4\xb4\xe8\x84\x91\xe9\xa3\x8e\xe6\x9a\xb4&#x27;, &#x27;\xe8\xa1\xa8\xe5\xbd\xa2\xe7\xa0\x81\xe7\x9a\x84\xe6\xb6\x88\xe4\xba\xa1\xe8\x83\x8c\xe6\x99\xaf\xef\xbc\x81&#x27;]
+            epath = &quot;&#x2F;&quot;.join(etree[p][0][2:])
+            if k[0] != &quot;&quot;.join(etree[p][0]):
+                if cpath != epath:
+                    cpath = epath
+                    ldeep = len(etree[p][0][1:])
+                    if 3 &gt; ldeep:
+                        body += &#x27;&lt;H5&gt;%s&#x2F;&lt;&#x2F;H5&gt;&#x27;%&quot;&#x2F;&quot;.join(etree[p][0][2:])
+                    else:
+                        body += &#x27;&lt;H6&gt;%s&#x2F;&lt;&#x2F;H6&gt;&#x27;%&quot;&#x2F;&quot;.join(etree[p][0][3:])
+            for e in etree[p][1:]:
+                body += &#x27;&lt;span id=&quot;%s&quot; class=&quot;indents&quot;&gt;%s&lt;&#x2F;span&gt;&lt;a href=&quot;%s%s.html&quot;&gt;%s&lt;&#x2F;a&gt;&lt;br&gt;\n&#x27;%(
+                        &quot;&#x2F;&quot;.join(etree[p][0])
+                        ,&quot;...&quot;*len(etree[p][0])
+                        ,_baseurl
+                        ,e[1]
+                        ,e[0]
+                        )
+
+    &#x27;&#x27;&#x27;
+    [(&#x27;&#x27;, &#x27;easy&#x27;, &#x27;movie&#x27;), &#x27;\xe4\xb8\x96\xe9\x97\xb4\xe5\xae\x89\xe5\xbe\x97\xe5\x8f\x8c\xe5\x85\xa8\xe6\xb3\x95,\xe4\xb8\x8d\xe8\xb4\x9f\xe5\xa6\x82\xe6\x9d\xa5\xe4\xb8\x8d\xe8\xb4\x9f\xe5\x8d\xbf!&#x27;]
+    [(&#x27;&#x27;, &#x27;easy&#x27;, &#x27;music&#x27;), &#x27;ZARD\xe6\xb6\x88\xe9\x80\x9d\xe4\xba\x86&#x27;]
+
+    for entry in entrise:
+        e = Pyblosxom.entries.fileentry.FileEntry(request, entry[2], entry[1])
+        #print e[&#x27;title&#x27;]
+        #print entry[1].split(&quot;&#x2F;&quot;)[:-1]
+        body += &#x27;&lt;span class=&quot;indents&quot;&gt;%s&lt;&#x2F;span&gt;&lt;a href=&quot;%s%s.html&quot;&gt;%s&lt;&#x2F;a&gt;%s&lt;br&gt;\n&#x27;%(
+                &quot;....&quot;*len(entry[1].split(&quot;&#x2F;&quot;))
+                ,_baseurl
+                ,entry[1]
+                ,e[&#x27;title&#x27;] #entry[0]
+                ,entry[1]
+                )
+    &#x27;&#x27;&#x27;
+    #print body
+    body +=&quot;&lt;&#x2F;div&gt;&quot; 
+    data = {&#x27;title&#x27;: config.get(&#x27;cindex_title&#x27;, &#x27;index&#x27;)}
+    # use the epoch for mtime. otherwise, pyblosxom uses the current time, which
+    # makes other plugins (like weblogsping) think this is a new entry.
+    epoch = time.localtime(0)
+    fe = Pyblosxom.entries.base.generate_entry(request, data, body, epoch)
+    return [fe]
+
+def cb_story(args):
+  request = args[&#x27;request&#x27;]
+  http = request.getHttp()
+  config = request.getConfiguration()
+  trigger = config.get(&#x27;cindex_trigger&#x27;, &#x27;site-index&#x27;)
+
+  if (http[&#x27;PATH_INFO&#x27;] == trigger and
+      not config.get(&#x27;cindex_use_story_template&#x27;, 1)):
+    title = config.get(&#x27;cindex_title&#x27;, &#x27;index&#x27;)
+    args[&#x27;template&#x27;] = &#x27;&lt;h1 class=&quot;index&quot;&gt;%s&lt;&#x2F;h1&gt;\n&lt;hr &#x2F;&gt;\n$body&#x27; % title
+
+  return args
+&lt;&#x2F;pre&gt;</content>
+</entry>
+
+<entry>
+<title type="html">hardcodedates.py</title>
+<category term="" />
+<id>/pyblosxom/2010/05/31/hardcodedates</id>
+<updated>2010-05-31T03:10:00Z</updated>
+<published>2010-05-31T03:10:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/PyBlosxom/plugins/hardcodedates.html" />
+<content type="html">&lt;pre class=&quot;brush: python&quot;&gt;# -*- coding: utf-8 -*-
+from Pyblosxom import tools
+import os, os.path, posix, re, stat, time
+
+FILETIME = re.compile(&#x27;^([0-9]{4})-([0-1][0-9])-([0-3][0-9])-([0-2][0-9])-([0-5][0-9]) +(.*)$&#x27;)
+
+all_timestamps = {}
+extensions = []
+timestamps_to_save = {}
+
+
+#mode: python; indent-tabs-mode: t, tab-width: 4 
+&quot;&quot;&quot;
+This allows the user to create a file &quot;timestamps&quot; in their datadir,
+that will override the timestamp of any given blog entry. Each line
+in this file should be of the form &quot;YYYY-MM-DD-hh-mm file-name&quot;.
+Then for any entry that one of these lines exist the system will use
+that timestamp instead of the actual files modification time.
+
+Note: the filename is relative to your data-dir.
+Example of a line for the file &#x2F;var&#x2F;data-dir&#x2F;school&#x2F;abc.txt
+   where the datadir is &quot;&#x2F;var&#x2F;data-dir&#x2F;&quot; and the date is Aug 9, 2004.
+
+2004-08-09-00-00 school&#x2F;abc.txt
+&quot;&quot;&quot;
+__author__ = &#x27;Nathan Kent Bullock, Ryan Barrett&#x27;
+__homepage__ = &#x27;http:&#x2F;&#x2F;snarfed.org&#x2F;space&#x2F;hardcodedates&#x27;
+__email__ = &#x27;nathan_kent_bullock -at- yahoo.ca, hardcodedates -at- ryanb.org&#x27;
+__version__ = &#x27;1.4&#x27;
+def init(request):
+    if all_timestamps:
+        return  # already initialized
+
+    datadir = request.getConfiguration()[&#x27;datadir&#x27;]
+    timestamp_file = os.path.join(datadir, &#x27;timestamps&#x27;)
+
+    if os.path.isfile(timestamp_file):
+        f = file(timestamp_file)
+        for str in f.readlines():
+            m = FILETIME.search(str.strip())
+            if m:
+                year = int(m.group(1))
+                mo = int(m.group(2))
+                day = int(m.group(3))
+                hr = int(m.group(4))
+                minute = int(m.group(5))
+                mtime = time.mktime((year,mo,day,hr,minute,0,0,0,-1))
+                filename = os.path.join(datadir, m.group(6))
+                all_timestamps[filename] = mtime
+
+        f.close()
+
+    extensions.extend(request.getData()[&#x27;extensions&#x27;].keys())
+    extensions.append(request.getConfiguration().get(&#x27;comment_ext&#x27;, &#x27;cmt&#x27;))
+
+def cb_filestat(args):
+    request = args[&#x27;request&#x27;]
+    init(request)
+
+    filename = args[&#x27;filename&#x27;]
+    extension = os.path.splitext(filename)[1][1:]
+    datadir = request.getConfiguration()[&#x27;datadir&#x27;]
+
+    if all_timestamps.has_key(filename):
+        # we know this file&#x27;s timestamp
+        mtime = args[&#x27;mtime&#x27;]
+        assert isinstance(mtime, (tuple, posix.stat_result))
+        args[&#x27;mtime&#x27;] = (mtime[0:stat.ST_MTIME] + (all_timestamps[filename],) +
+                         mtime[stat.ST_MTIME + 1:])
+
+    elif extension in extensions and filename.startswith(datadir):
+        # we don&#x27;t know it, but we should. ask the os for it, and remember it.
+        args[&#x27;mtime&#x27;] = os.stat(filename)
+        all_timestamps[filename] = args[&#x27;mtime&#x27;][stat.ST_MTIME]
+        timestamps_to_save[filename] = args[&#x27;mtime&#x27;][stat.ST_MTIME]
+
+    return args
+
+def cb_end(args):
+    if timestamps_to_save:
+        datadir = args[&#x27;request&#x27;].getConfiguration()[&#x27;datadir&#x27;]
+        datadir = os.path.normpath(datadir)
+        tsfile = file(os.path.join(datadir, &#x27;timestamps&#x27;), &#x27;a&#x27;)
+        for filename, mtime in timestamps_to_save.items():
+            time_str = time.strftime(&#x27;%Y-%m-%d-%H-%M&#x27;, time.localtime(mtime))
+            # strip the datadir prefix and directory separator slash
+            filename = filename[len(datadir) + 1:]
+            tsfile.write(&#x27;%s %s\n&#x27; % (time_str, filename))
+            tools.getLogger().info(&#x27;Saved mtime %s for %s&#x27; % (time_str, filename))
+        tsfile.close()
+        timestamps_to_save.clear()
+
+&lt;&#x2F;pre&gt;</content>
+</entry>
+
+<entry>
+<title type="html">wbgrecent.py</title>
+<category term="" />
+<id>/pyblosxom/2009/06/13/wbgrecent</id>
+<updated>2009-06-13T10:23:00Z</updated>
+<published>2009-06-13T10:23:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/PyBlosxom/plugins/wbgrecent.html" />
+<content type="html">&lt;pre class=&quot;brush: python&quot;&gt;&quot;&quot;&quot;
+Summary
+=======
+
+Walks through all your blog entries and comments and makes a list of
+all the entries that were either written in the last 14 days or have
+comments written in the last 14 days.  It then generates a very
+hard-coded html representation of them and semi-abuses the 
+flavour template yearmonthsummary which I use for my wbgarchives
+plugin.
+
+This plugin requires no installation.  Just drop it in and the url
+will be::
+
+   $baseurl&#x2F;recent
+
+to see the recent activity.
+
+----
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify,
+merge, publish, distribute, sublicense, and&#x2F;or sell copies of the
+Software, and to permit persons to whom the Software is furnished
+to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Copyright 2004-2007 Will Guaraldi
+
+SUBVERSION VERSION: $Id: wbgrecent.py,v 2872b22e2ace 2011&#x2F;10&#x2F;27 07:08:25 zoomquiet+hg $
+
+Revisions:
+2007-07-07 - Converted documentation to reST.
+2005-11-11 - Pulled into new VCS.
+1.5 - (26 October, 2005) pulled into new VCS
+1.1 - (09 December, 2004) fixed the timestamp and date_head issues
+1.0 - (31 August, 2004) initial writing
+&quot;&quot;&quot;
+__author__ = &quot;Will Guaraldi - willg at bluesock dot org&quot;
+__version__ = &quot;$Date: 2011&#x2F;10&#x2F;27 07:08:25 $&quot;
+__url__ = &quot;http:&#x2F;&#x2F;www.bluesock.org&#x2F;~willg&#x2F;pyblosxom&#x2F;&quot;
+__description__ = &quot;Summary of recent blog activity.&quot;
+
+from Pyblosxom import tools, entries
+import time, os, glob, urllib
+
+def verify_installation(request):
+    return 1
+
+
+def new_entry(request, title, body):
+    &quot;&quot;&quot;
+    Takes a bunch of variables and generates an entry out of it.  It creates
+    a timestamp so that conditionalhttp can handle it without getting
+    all fussy.
+    &quot;&quot;&quot;
+    entry = entries.base.EntryBase(request)
+
+    entry[&#x27;title&#x27;] = title
+    entry[&#x27;filename&#x27;] = title + &quot;&#x2F;recent&quot;
+    entry[&#x27;file_path&#x27;] = title
+    entry._id = title + &quot;::recent&quot;
+
+    entry[&quot;template_name&quot;] = &quot;yearsummarystory&quot;
+    entry[&quot;nocomments&quot;] = &quot;yes&quot;
+
+    entry.setTime(time.localtime())
+    entry.setData(body)
+
+    return entry
+
+
+INIT_KEY = &quot;wbgrecent_initiated&quot;
+
+def cb_date_head(args):
+    request = args[&quot;request&quot;]
+    data = request.getData()
+
+    if data.has_key(INIT_KEY):
+        args[&quot;template&quot;] = &quot;&quot;
+    return args
+
+def get_comment_text(cmt):
+    f = open(cmt[1], &quot;r&quot;)
+    lines = f.readlines()
+    title = &quot;No title&quot;
+    author = &quot;Unknown&quot;
+    for mem in lines:
+        mem = mem.rstrip()
+        if mem.find(&quot;&lt;title&gt;&quot;) == 0:
+            title = mem.replace(&quot;&lt;title&gt;&quot;, &quot;&quot;).replace(&quot;&lt;&#x2F;title&gt;&quot;, &quot;&quot;)
+            title = urllib.unquote(title)
+        elif mem.find(&quot;&lt;author&gt;&quot;) == 0:
+            author = mem.replace(&quot;&lt;author&gt;&quot;, &quot;&quot;).replace(&quot;&lt;&#x2F;author&gt;&quot;, &quot;&quot;)
+            author = urllib.unquote(author)
+
+    return &quot;(%s) comment from %s&quot; % \
+           (time.strftime(&quot;%m&#x2F;%d&#x2F;%Y %H:%M&quot;, time.localtime(cmt[0])), \
+            author)
+
+def cb_filelist(args):
+    request = args[&quot;request&quot;]
+    pyhttp = request.getHttp()
+    data = request.getData()
+    config = request.getConfiguration()
+
+    if not pyhttp[&quot;PATH_INFO&quot;].startswith(&quot;&#x2F;recent&quot;):
+        return
+
+    datadir = config[&quot;datadir&quot;]
+    baseurl = config.get(&quot;base_url&quot;, &quot;&quot;)
+    cmntdir = config.get(&quot;comment_dir&quot;, datadir + os.sep + &quot;comments&quot;)
+    cmntext = config.get(&quot;comment_ext&quot;, &quot;.cmt&quot;)
+
+    data[&quot;blog_title&quot;] = config.get(&quot;blog_title&quot;, &quot;&quot;) + &quot; - recent activity&quot;
+    data[INIT_KEY] = 1
+    config[&#x27;num_entries&#x27;] = 9999
+
+    marker = time.time() - (60 * 60 * 24 * 14)
+
+    # get all the entries
+    allentries = tools.Walk(request, datadir)
+
+    debug = []
+    stuff = []
+
+    for mem in allentries:
+        timetuple = tools.filestat(request, mem)
+        entrytstamp = time.mktime(timetuple)
+        tstamp = entrytstamp
+
+        absolute_path = mem[len(datadir):mem.rfind(os.sep)]
+        fn = mem[mem.rfind(os.sep)+1:mem.rfind(&quot;.&quot;)]
+
+        cmtexpr = os.path.join(cmntdir + absolute_path, fn + &#x27;-*.&#x27; + cmntext)
+        cmtlist = glob.glob(cmtexpr)
+        cmtlist = [ (os.stat(m)[8], m) for m in cmtlist]
+        cmtlist.sort()
+        cmtlist.reverse()
+
+        # we want the most recent mtime from either the entry or
+        # any of its comments
+        if len(cmtlist) &gt; 0:
+            if tstamp &lt; cmtlist[0][0]:
+                tstamp = cmtlist[0][0]
+
+        # if the mtime is more recent than our marker, we toss the
+        # stuff into our list of things to look at.
+        if tstamp &gt; marker:
+            stuff.append( [tstamp, entrytstamp, mem, cmtlist] )
+
+
+    stuff.sort()
+    stuff.reverse()
+
+    # time stamp and blog entry
+    e = &quot;&lt;tr&gt;\n&lt;td valign=\&quot;top\&quot; align=\&quot;left\&quot;&gt;%s:&lt;&#x2F;td&gt;\n&quot; \
+        &quot;&lt;td&gt;&lt;a href=\&quot;%s&#x2F;%s\&quot;&gt;%s&lt;&#x2F;a&gt; (%s)&lt;br &#x2F;&gt;%s&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;\n&quot;
+
+    entrylist = []
+    output = []
+    for mem in stuff:
+        entry = entries.fileentry.FileEntry(request, mem[2], config[&quot;datadir&quot;])
+        tstamp = time.strftime(&quot;%m&#x2F;%d&#x2F;%Y&quot;, time.localtime(mem[1]))
+
+        temp = e % (tstamp, \
+                    baseurl, \
+                    entry[&quot;file_path&quot;], \
+                    entry[&quot;title&quot;], \
+                    entry[&quot;path&quot;], \
+                    &quot;&quot;.join( [get_comment_text(c) + &quot;&lt;br &#x2F;&gt;&quot; for c in mem[3]]))
+        output.append(temp)
+
+    entrylist.append(new_entry(request, &quot;Recent activity:&quot;, &quot;&lt;tr&gt;&lt;td colspan=2&gt;&amp;nbsp;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;\n&quot;.join(output)))
+
+    return entrylist
+&lt;&#x2F;pre&gt;</content>
+</entry>
+
+<entry>
+<title type="html">xhtml.py</title>
+<category term="" />
+<id>/pyblosxom/2005/04/01/xhtml</id>
+<updated>2005-04-01T15:23:00Z</updated>
+<published>2005-04-01T15:23:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/PyBlosxom/plugins/xhtml.html" />
+<content type="html">&lt;pre class=&quot;brush: python&quot;&gt;# -*- coding: utf-8 -*-
+&quot;&quot;&quot;XHTML - html Parser
+    - 仅仅适用于 t2t 输出的xhtml
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify,
+merge, publish, distribute, sublicense, and&#x2F;or sell copies of the
+Software, and to permit persons to whom the Software is furnished
+to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Copyleft 2005, 2006 Zoom.Quiet
+
+&quot;&quot;&quot;
+
+
+## Leo: tab_width=-4 page_width=80
+PREFORMATTER_ID = &#x27;xhtml&#x27;
+FILE_EXT = &#x27;xhtml&#x27;
+__version__ = &quot;v10.4.14&quot;
+__author__ = &#x27;Zoom.Quiet &lt;Zoom.Quiet at gmail.com&gt;&#x27;
+#__url__ = &quot;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;OpenSource&#x2F;PyBlosxom&#x2F;plugins&#x2F;xhtml.phtm&quot;
+__url__ = &quot;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;techic&#x2F;PyBlosxom&#x2F;plugins&#x2F;xhtml.html&quot;
+
+__description__ = &quot;txt2tags export xhmtl entry - Pyblosxom Parser.&quot;
+
+from Pyblosxom import tools
+
+def cb_entryparser(args):
+    args[&#x27;xhtml&#x27;] = parse
+    return args
+def parse(filename, request):
+    import os, sys
+    config = request.getConfiguration()
+    ## 简单处理,基于 t2t 2.4.3
+    source = open(filename,&quot;r&quot;).readlines()
+    body = &quot;&quot;.join(source[11:-1])
+    #print source[6]
+    title = source[6][7:-9]
+    #print source[14]
+    #tags = source[14][4:-6]
+    #print tags
+    &#x27;&#x27;&#x27;
+    title = &quot;&quot;
+    for line in open(filename,&quot;r&quot;).readlines():
+        if &quot;&lt;title&gt;&quot; in line:
+            title=line[7:].replace(&quot;&lt;&#x2F;title&gt;&quot;,&quot;&quot;)
+            break
+    if &quot;&quot; == title:
+        title = filename.replace(config[&#x27;datadir&#x27;], &#x27;&#x27;)
+    &#x27;&#x27;&#x27;
+    entryData = {&#x27;body&#x27; : body
+                 ,&#x27;title&#x27; : title
+                 #,&#x27;tags&#x27; : tags
+                 #filename.replace(config[&#x27;datadir&#x27;], &#x27;&#x27;)
+                 }
+
+    return entryData
+
+&lt;&#x2F;pre&gt;</content>
+</entry>
+</feed>

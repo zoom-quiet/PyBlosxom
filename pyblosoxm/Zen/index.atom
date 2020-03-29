@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/Zen/index.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/Zen/index.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/Zen/index.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2012-04-19T10:18:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">Haskell.cn 冲哪!</title>
+<category term="/haskell" />
+<id>/pyblosxom/2012/04/19/haskell-cn-run-2012-04-19-18-18</id>
+<updated>2012-04-19T10:18:00Z</updated>
+<published>2012-04-19T10:18:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/Zen/haskell/haskell-cn-run-2012-04-19-18-18.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopSkJRWEcyM&#x27; id=&#x27;toptopSkJRWEcyM&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;Haskell.cn 冲哪!&lt;&#x2F;h1&gt;
+&lt;h2&gt;~ 小记Haskell 中国社区启动&lt;&#x2F;h2&gt;
+&lt;h3&gt;t2t渲染:2012-04-19 06:05:27&lt;&#x2F;h3&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1RURTTFhKU&quot;&gt;以前&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc2RURUWTVNS&quot;&gt;现在&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc3RURTTFhKU&quot;&gt;以后&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc4RURVTDdHN&quot;&gt;进展&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1NFM1MkxaT&quot; name=&quot;toc1NFM1MkxaT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopSkJRWEcyM&#x27;&gt; 以前 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;在各种想象不到的地方,有各种隐士在快乐的学习以及使用 Haskell
+&lt;&#x2F;li&gt;
+&lt;li&gt;甚至于,图书都有慢慢在翻译的,,,
+&lt;p&gt;&lt;&#x2F;p&gt;
+但是,到底有多少中国人,在学习,使用 Haskell ?
+&lt;p&gt;&lt;&#x2F;p&gt;
+真心不知道,好象也没有人知道...
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc2NDZITEJaT&quot; name=&quot;toc2NDZITEJaT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopSkJRWEcyM&#x27;&gt; 现在 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.qconbeijing.com&#x2F;news.php?id=37&quot;&gt;QCon北京2012大会&lt;&#x2F;a&gt; &quot;编写显然正确的代码&quot; ~ 黄毅,已经首次,公开吼 Haskell 了
+&lt;&#x2F;li&gt;
+&lt;li&gt;当然,其实,以前在沙龙就吼过... &lt;a href=&quot;http:&#x2F;&#x2F;yi-programmer.com&#x2F;slide&#x2F;haskell-intro&#x2F;&quot;&gt;Haskell介绍&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;好象,各种媒体,慢慢的因为多核,因为并发,重新关注起来了 Haskell
+&lt;&#x2F;li&gt;
+&lt;li&gt;豆瓣小组里终于:
+&lt;p&gt;&lt;&#x2F;p&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.douban.com&#x2F;group&#x2F;topic&#x2F;28920097&#x2F;&quot;&gt;关于建立Haskell中文(社区)的一点想法&lt;&#x2F;a&gt;
+    &lt;p&gt;&lt;&#x2F;p&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;好事儿呢! 相关 Google groups 也创立几年了,只是一定没有什么热闹的讨论
+&lt;&#x2F;li&gt;
+&lt;li&gt;因为没有什么大家都可以掺合的 hs 实践,除了自学,写点片段自娱自乐...
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc3NFM1MkxaT&quot; name=&quot;toc3NFM1MkxaT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopSkJRWEcyM&#x27;&gt; 以后 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;有了社区,就聚集了人
+&lt;&#x2F;li&gt;
+&lt;li&gt;有了人,就应该有很 COOL 的项目
+&lt;&#x2F;li&gt;
+&lt;li&gt;有了项目就有了代码,将代码运行起来,服务我们自个儿,,,
+&lt;&#x2F;li&gt;
+&lt;li&gt;社区就活跃了呢...
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc4NUM3WlhaT&quot; name=&quot;toc4NUM3WlhaT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopSkJRWEcyM&#x27;&gt; 进展 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;haskell.cn&quot;&gt;http:&#x2F;&#x2F;haskell.cn&lt;&#x2F;a&gt; 域名已经找到主持人
+&lt;&#x2F;li&gt;
+&lt;li&gt;大妈聚集起来了: &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;HaskellCNOrg&quot;&gt;https:&#x2F;&#x2F;github.com&#x2F;HaskellCNOrg&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;应用仓库也有了: &lt;a href=&quot;https:&#x2F;&#x2F;bitbucket.org&#x2F;ZoomQuiet&#x2F;haskell2cn&quot;&gt;https:&#x2F;&#x2F;bitbucket.org&#x2F;ZoomQuiet&#x2F;haskell2cn&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;p&gt;
+然后? 我们需要什么社区功能?!
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;俺习惯性的部署了: &lt;a href=&quot;http:&#x2F;&#x2F;haskell.cn&#x2F;rss&#x2F;&quot;&gt;Haskell.cn 聚合&lt;&#x2F;a&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+...
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags haskell-cn-run-2012-04-19-18-18.t2t --&gt;
+</content>
+</entry>
+</feed>

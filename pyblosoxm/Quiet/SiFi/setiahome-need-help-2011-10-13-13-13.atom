@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/Quiet/SiFi/setiahome-need-help-2011-10-13-13-13.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/Quiet/SiFi/setiahome-need-help-2011-10-13-13-13.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/Quiet/SiFi/setiahome-need-help-2011-10-13-13-13.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2011-10-13T05:13:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">在家寻找外星人寻求帮助</title>
+<category term="" />
+<id>/pyblosxom/2011/10/13/setiahome-need-help-2011-10-13-13-13</id>
+<updated>2011-10-13T05:13:00Z</updated>
+<published>2011-10-13T05:13:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/Quiet/SiFi/setiahome-need-help-2011-10-13-13-13.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopNFdPS1JaT&#x27; id=&#x27;toptopNFdPS1JaT&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;在家寻找外星人寻求帮助&lt;&#x2F;h1&gt;
+&lt;h2&gt;~ 可怜的科学项目&lt;&#x2F;h2&gt;
+&lt;h3&gt;t2t渲染:2011-10-19 09:35:28&lt;&#x2F;h3&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1RURUSTVKU&quot;&gt;接触未来的现实版&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc2RUJKVUtWQ&quot;&gt;SETI@home needs your help!&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc3RURVTDdON&quot;&gt;迷妄&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1NDJIS0wyR&quot; name=&quot;toc1NDJIS0wyR&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopNFdPS1JaT&#x27;&gt; 接触未来的现实版 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;2011&#x2F;setiahome-big-logo.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+俺收到了这封信:
+&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  txt&quot;&gt;
+
+SETI@home donors@ssl.berkeley.edu
+发件人当地时间	发送时间 17:24 (GMT-07:00)。发送地当前时间：上午6:17。 ✆
+回复	donors@ssl.berkeley.edu
+主题	SETI@home Needs Your Help
+&lt;&#x2F;pre&gt;
+&lt;p&gt;
+Dear Zoom.Quiet:
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc2S05DVklTS&quot; name=&quot;toc2S05DVklTS&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopNFdPS1JaT&#x27;&gt; SETI@home needs your help! &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;2011&#x2F;seti-gbt2sm.jpg&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+Green Bank Telescope In the last year, SETI@home has made great steps forward thanks to the generosity of volunteers like you. Earlier this year we were able to use the Green Bank Telescope (pictured) in West Virginia to expand our search to include the nearly 100 potentially habitable planets found by the Kepler Mission. We&#x27;ve also re-observed seventy two of the 102 sources of unidentified radio pulses found with our Astropulse search. We hope to observe the remaining sources soon. While it&#x27;s likely that these pulses are a natural phenomenon, we don&#x27;t yet know what we will find. Data from both these projects have arrived or are on their way to Berkeley and will be sent to our volunteers in the coming months. Without the support of &lt;a href=&quot;http:&#x2F;&#x2F;setiathome.berkeley.edu&#x2F;sah_donate.php&quot;&gt;user donations&lt;&#x2F;a&gt;, these major new extensions to the SETI@home experiment would not have been possible.
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+Though the SETI@home experiment has been active for over eleven years, we are still branching out and exploring new scientific directions. As you may know, the data that your computer analyzes comes principally from the Arecibo radio telescope in Puerto Rico. While Arecibo is an immensely powerful telescope, it cannot see the entire sky. In the past we have been able to perform short duration observations at the Green Bank Telescope. But in the coming year, we plan to start continuous collection of data at the Green Bank Telescope, allowing us to listen in on parts of the sky that, up until now, we have not been able to reach.
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+We&#x27;re also in the process of adding a new search algorithm to the SETI@home application. This new algorithm, called autocorrelation, will make us sensitive to certain broad band or spread spectrum transmissions without predicting their characteristics beforehand. No SETI sky survey has utilized this type of algorithm before.
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+SETI@home has always been a collaborative effort on a global scale; there is no other project on Earth that is quite as dependent on the help and contributions of the citizens of Earth at-large. In order to keep SETI@home up and running, as well as accomplish this year&#x27;s scientific goals, we need your help. To make a secure tax-deductible donation &lt;a href=&quot;http:&#x2F;&#x2F;setiathome.berkeley.edu&#x2F;sah_donate.php&quot;&gt;click here&lt;&#x2F;a&gt;, which will take you to a page of instructions on how to donate online or through mail via check. Any amount that you are willing to donate this holiday season would be a great help. Your contribution will not only allow SETI@home to continue to run as it has for the past eleven years, but also provide the opportunity to expand the search for intelligent life in exciting new directions. These efforts represent our best chance at answering the ever-elusive question: Are we alone?
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+Thank you for your support and continuing dedication to SETI@Home.
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+Sincerely,
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+Dr. Eric Korpela, Project Scientist
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc3NUM3M1BaT&quot; name=&quot;toc3NUM3M1BaT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopNFdPS1JaT&#x27;&gt; 迷妄 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+SETI@home 这是多么浪漫的项目哪,都出现在不少网络小说中的科学项目;
+就这么没了,卡尔小说中那些私人赞助并没有如期出现...
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+强大如美国,也要放弃科学的终极追求了嘛...
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+好在科学家有无数方法可以渡过经济危机,&lt;a href=&quot;http:&#x2F;&#x2F;setiathome.berkeley.edu&#x2F;sah_donate.php&quot;&gt;点击捐助&lt;&#x2F;a&gt;
+目前只要几万刀,就可以低烈度的继续寻找外星人了...
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags Quiet&#x2F;SiFi&#x2F;setiahome-need-help-2011-10-13-13-13.t2t --&gt;
+</content>
+</entry>
+</feed>

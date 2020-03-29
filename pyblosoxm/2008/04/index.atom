@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/2008/04/index.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/2008/04/index.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/2008/04/index.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2008-04-23T13:43:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">文件系统选择</title>
+<category term="/oss" />
+<id>/pyblosxom/2008/04/23/solaris-fs-choice-2008-04-23-21-43</id>
+<updated>2008-04-23T13:43:00Z</updated>
+<published>2008-04-23T13:43:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/oss/solaris-fs-choice-2008-04-23-21-43.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopNDJMSVBaR&#x27; id=&#x27;toptopNDJMSVBaR&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;文件系统选择&lt;&#x2F;h1&gt;
+&lt;h2&gt;-- 译文 Solaris Filesystem Choices&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0FVM&quot;&gt;Solaris 的FS决择&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc2R0VYRENMU&quot;&gt;1.1. UFS&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc3R0VYREVMU&quot;&gt;1.2. ZFS&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc4R0VYREdMU&quot;&gt;1.3. SAM and QFS&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc5R0VYRElMU&quot;&gt;1.4. VxFS&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc6R0lYQ0JaN&quot;&gt;结论&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc7R01YQ0FWQ&quot;&gt;TODO&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0FVM&quot; name=&quot;toc1R0VYQ0FVM&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopNDJMSVBaR&#x27;&gt; 1. Solaris 的FS决择 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+节译:&lt;a href=&quot;http:&#x2F;&#x2F;www.osnews.com&#x2F;story&#x2F;19665&#x2F;Solaris_Filesystem_Choices&quot;&gt;Solaris Filesystem Choices&lt;&#x2F;a&gt; 50%
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+OpenSolaris 10 已经给用户提供了一大堆存储相关的支持，而且秉承UNIX的一贯习俗，
+都是经过严格测试了的,这里就四种通用文件系统进行分析，希望可以就部署方面给读者提供足够的信息以便最终选择:
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc2R0VYRENMU&quot; name=&quot;toc2R0VYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopNDJMSVBaR&#x27;&gt; 1.1. UFS &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+UFS 忒有历史凫，从80年代开始就是BSD等UNIX系統的默认FS；
+类似于 ext3 在 GNU&#x2F;Linux 体系中的地位;
+Solaris 中的UFS来自 SunOS,而SunOS 中的UFS来自 BSD;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+不久前，UFS还是Solaris 中唯一的FS，不同于HP, IBM, SGI, 以及 DEC；
+SUN直到90年代也没有自主发展下一代的FS；
+原因有两:
+&lt;&#x2F;p&gt;
+ &lt;ol&gt;
+ &lt;li&gt;多数情况下开发者需要第三方代码来支持新FS，而这需要许可
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;多数可以交易来的FS都是 Veritas 许可的(嘛意思?)
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ol&gt;
+
+&lt;p&gt;
+Solaris10 只能从UFS启动,未来将允许从ZFS启动;在OpenSolaris 已经可以了;
+但是当前,所有Solaris 还是得至少有一个UFS分区;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+UFS虽然是个技术,但是贵在稳定和足够快;
+而且Sun 在其最后基础上进行了多方的优化；
+从Solaris 7 开始支持日志，进入本世纪，从Solaris 9 开始成为了默认特性；
+原先卷級日志是种效率不好的模型,但是有趣的是FreeBSD又重新加入了这种特性.
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+UFS已经加入了对RAID支持良好的Solaris卷管理.
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+2008UFSd准备进行什么修订?
+除作启动之外,UFS足够好用了,将来可由ZFS替代,
+当然看,UFS 对于数据库是个好选择(有普遍的基于文件系统权限控制的DB);
+同时对于保守的有固定工作且不想花时间太多时间配置的SA也是个好选择;
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc3R0VYREVMU&quot; name=&quot;toc3R0VYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopNDJMSVBaR&#x27;&gt; 1.2. ZFS &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+对ZFS 已经有N多报道了,同时也收到了从Linux 阵营习惯性的嘲笑.
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+ZFS 不是魔法,但是足够COOL 了.
+我喜欢将 UFS&#x2F;ext3 视作首代UNIX文件系统,
+而 VxFS和XFS 视作二代FS,
+那未 ZFS 就是第一个三代UNIX FS!
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+ZFS已不仅仅是个文件系统了.
+实际算是混合文件系统+卷管理器.
+以上功能的集成赋予了ZFS极大的灵活性.
+同时也是著名的&quot;rampant layering violation&quot;来源.
+不过千万记住,这只是开发特性.我从来没有在打开文件时见过&quot;layering violation&quot;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+ZFS的混合意味着你可以管理不同传统方案中的存储.
+你能将文件系统映射到分区,同时可以将另一个映射成逻辑巻,每个逻辑巻又涉及一个或是多个硬盘.
+在ZFS 中所有硬盘分配在一个存储池中.
+每个ZFS文件系统从池中使用所有硬盘,且文件系统不分卷,可以使用全部空间.
+这样没有重定分区大小的烦恼，一切是自动调整的，
+不断增长&#x2F;收缩的文件系统不是靠谱的管理方式。
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+ZFS同时在文件系统级别提供了可靠性检验.
+所有数据读&#x2F;写都可以使用认证(提供了最严厉的SHA256),
+失败时双备份是支持的(元数据是在单一硬盘,而数据是经典的RAID结构),
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+ZFS provides the most robust error checking of any filesystem available. All data and metadata is checksummed (SHA256 is available for the paranoid), and the checksum is validated on every read and write. If it fails and a second copy is available (metadata blocks are replicated even on single disk pools, and data is typically replicated by RAID), the second block is fetched and the corrupted block is replaced. This protects against not just bad disks, but bad controllers and fibre paths. On-disk changes are committed transactionally, so although traditional journaling is not used, on-disk state is always valid. There is no ZFS fsck program. ZFS pools may be scrubbed for errors (logical and checksum) without unmounting them.
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+The copy-on-write nature of ZFS provides for nearly free snapshot and clone functionality. Snapshotting a filesystem creates a point in time image of that filesystem, mounted on a dot directory in the filesystem&#x27;s root. Any number of different snapshots may be mounted, and no separate logical volume is needed, as would be for LVM style snapshots. Unless disk space becomes tight, there is no reason not to keep your snapshots forever. A clone is essentially a writable snapshot and may be mounted anywhere. Thus, multiple filesystems may be created based on the same dataset and may then diverge from the base. This is useful for creating a dozen virtual machines in a second or two from an image. Each new VM will take up no space at all until it is changed.
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+These are just a few interesting features of ZFS. ZFS is not a perfect replacement for traditional filesystems yet - it lacks per-user quota support and performs differently than the usual UFS profile. But for typical applications, I think it is now the best option. Its administrative features and self-healing capability (especially when its built in RAID is used) are hard to beat. 
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc4R0VYREdMU&quot; name=&quot;toc4R0VYREdMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopNDJMSVBaR&#x27;&gt; 1.3. SAM and QFS &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+SAM and QFS are different things but are closely coupled. QFS is Sun&#x27;s cluster filesystem, meaning that the same filesystem may be simultaneously mounted by multiple systems. SAM is a hierarchical storage manager; it allows a set of disks to be used as a cache for a tape library. SAM and QFS are designed to work together, but each may be used separately.
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+QFS has some interesting features. A QFS filesystem may span multiple disks with no extra LVM needed to do striping or concatenation. When multiple disks are used, data may be striped or round-robined. Round-robin allocation means that each file is written to one or two disks in the set. This is useful since, unlike striping, participation by all disks is not needed to fetch a file - each disk may seek totally independently. QFS also allows metadata to be separated from data. In this way, a few disks may serve the random metadata workload while the rest serve a sequential data workload. Finally, as mentioned before, QFS is an asymmetric cluster filesystem.
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+QFS cannot manage its own RAID, besides striping. For this, you need a hardware controller, a traditional volume manager, or a raw ZFS volume.
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+SAM makes a much larger backing store (typically a tape library) look like a regular UNIX filesystem. This is accomplished by storing metadata and often-referenced data on disk, and migrating infrequently used data in and out of the disk cache as needed. SAM can be configured so that all data is staged out to tape, so that if the disk cache fails, the tapes may be used like a backup. Files staged off of the disk cache are stored in tar-like archives, so that potentially random access of small files can become sequential. This can make further backups much faster.
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+QFS may be used as a local or cluster filesystem for large-file intensive workloads like Oracle. SAM and QFS are often used for huge data sets such as those encountered in supercomputing. SAM and QFS are optional products and are not cheap, but they have recently been released into OpenSolaris. 
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc5R0VYRElMU&quot; name=&quot;toc5R0VYRElMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopNDJMSVBaR&#x27;&gt; 1.4. VxFS &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+The Veritas filesystem and volume manager have their roots in a fault-tolerant proprietary minicomputer built by Veritas in the 1980s. They have been available for Solaris since at least 1993 and have been ported to AIX and Linux. They are integrated into HP-UX and SCO UNIX, and Veritas Volume Manager code has been used (and extensively modified) in Tru64 UNIX and even in Windows. Over the years, Veritas has made a lot of money licensing their tech, and not because it is cheap, but because it works.
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+VxFS has never been part of Solaris but, when UFS was the only option, it was a popular addition. VxVM and VxFS are tightly integrated. Through vxassist, one may shrink and grow filesystems and their underlying volumes with minimal trouble. VxVM provides online RAID relayout. If you have a RAID5 and want to turn it into a RAID10, no problem, no downtime. If you need more space, just convert it back to a RAID5. VxVM has a reputation for being cryptic, and to some extent it is, but it&#x27;s not so bad and the flexibility is impressive.
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+VxFS is a fast, extent based, journaled, clusterable filesystem. In fact, it essentially introduced these features to the world, along with direct IO. Newer versions of VxFS and VxVM have the ability to do cross-platform disk sharing. If you ever wanted to unmount a volume from your AIX box and mount it on Linux or Solaris, now you can.
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+VxFS and VxVM are still closed source. A version is available from Symantec that is free on small servers, with limitations, but I imagine that most users still pay. Pricing starts around $2500 and can be shocking for larger machines. VxFS and VxVM are solid choices for critical infrastructure workloads, including databases.
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc6R0lYQ0JaN&quot; name=&quot;toc6R0lYQ0JaN&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopNDJMSVBaR&#x27;&gt; 2. 结论 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+Conclusion
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+These are the four major choices in the Solaris on-disk filesystem world. Other filesystems, such as ext2, have some degree of support in OpenSolaris, and FUSE is also being worked on. But if you are deploying a Solaris server, you are going to be using one or more of these four. I hope that you enjoyed this overview, and if you have any corrections or tales of UNIX filesystem history, please let me know.
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+About the Author
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+John Finigan is a Computer Science graduate student and IT professional specializing in backup and recovery technology. He is especially interested in the history of enterprise computing and in Cold War technology. 
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc7R01YQ0FWQ&quot; name=&quot;toc7R01YQ0FWQ&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopNDJMSVBaR&#x27;&gt; 3. TODO &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;ul&gt;
+&lt;li&gt;t2t渲染:: 2010-10-09 02:21:41
+&lt;&#x2F;li&gt;
+&lt;li&gt;动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;oss&#x2F;solaris-fs-choice-2008-04-23-21-43.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">FF3</title>
+<category term="/oss/Mozilla/FireFox" />
+<id>/pyblosxom/2008/04/21/ff3pre-upgrade-ko-2008-04-21-12-33</id>
+<updated>2008-04-21T04:33:00Z</updated>
+<published>2008-04-21T04:33:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/oss/Mozilla/FireFox/ff3pre-upgrade-ko-2008-04-21-12-33.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopSVpEQT09P&#x27; id=&#x27;toptopSVpEQT09P&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;FF3&lt;&#x2F;h1&gt;
+&lt;h2&gt;--Ubuntu7.10 中使用 3.0pre&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0FSU&quot;&gt;FF3&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc2R0VYRENMU&quot;&gt;1.1. SwiftFox 3.0pre&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc3R0VYREVMU&quot;&gt;1.2. 探查&lt;&#x2F;a&gt;
+      &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#toc4R0VYREVMU&quot;&gt;1.2.1. 配置&lt;&#x2F;a&gt;
+      &lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc5R0VYREdMU&quot;&gt;1.3. 成了！&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0FSU&quot; name=&quot;toc1R0VYQ0FSU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopSVpEQT09P&#x27;&gt; 1. FF3 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+看周围M$ 用户都主动升迁到 FF2.0.0.14 超级稳定版本了，
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+但是Ubuntu7.10 的源中依然是 2.0.0.13+,有点郁rz..
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc2R0VYRENMU&quot; name=&quot;toc2R0VYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopSVpEQT09P&#x27;&gt; 1.1. SwiftFox 3.0pre &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+不过 SwiftFox 已到了 3.0pre!
+通过 apt 立即可以使用:
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc3R0VYREVMU&quot; name=&quot;toc3R0VYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopSVpEQT09P&#x27;&gt; 1.2. 探查 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+但是插件不能使用&lt;code&gt;Nightly Tester Tools&lt;&#x2F;code&gt; 轻易全开...
+ 使用 安全模式::
+&lt;&#x2F;p&gt;
+&lt;pre&gt;
+swiftfox -safe-mode
+&lt;&#x2F;pre&gt;
+ &lt;ul&gt;
+ &lt;li&gt;关闭所有 扩展和插件后，逐一尝试，确认最小可用组合::
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc4R0VYREVMU&quot; name=&quot;toc4R0VYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h3&gt;&lt;A href=&#x27;#toptopSVpEQT09P&#x27;&gt; 1.2.1. 配置 &lt;&#x2F;A&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;
+启用扩展： [16]
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Adblock Plus 0.7.5.4: &lt;a href=&quot;http:&#x2F;&#x2F;adblockplus.org&#x2F;&quot;&gt;http:&#x2F;&#x2F;adblockplus.org&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;CHM Reader 0.2.1.1: &lt;a href=&quot;http:&#x2F;&#x2F;sourceforge.net&#x2F;projects&#x2F;chmreader&#x2F;&quot;&gt;http:&#x2F;&#x2F;sourceforge.net&#x2F;projects&#x2F;chmreader&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Copy Link Name 1.2.5: &lt;a href=&quot;http:&#x2F;&#x2F;www.captaincaveman.nl&quot;&gt;http:&#x2F;&#x2F;www.captaincaveman.nl&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;DownThemAll! 1.0.1: &lt;a href=&quot;http:&#x2F;&#x2F;downthemall.net&#x2F;&quot;&gt;http:&#x2F;&#x2F;downthemall.net&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;FEBE 5.3.1: &lt;a href=&quot;http:&#x2F;&#x2F;customsoftwareconsult.com&#x2F;extensions&quot;&gt;http:&#x2F;&#x2F;customsoftwareconsult.com&#x2F;extensions&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Firefox Universal Uploader (fireuploader) 0.3.2: &lt;a href=&quot;http:&#x2F;&#x2F;www.fireuploader.com&quot;&gt;http:&#x2F;&#x2F;www.fireuploader.com&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;MLdonkey Protocol Handler 2.0: &lt;a href=&quot;http:&#x2F;&#x2F;www.informatik.uni-oldenburg.de&#x2F;~dyna&#x2F;mldonkey&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.informatik.uni-oldenburg.de&#x2F;~dyna&#x2F;mldonkey&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Nightly Tester Tools 1.3: &lt;a href=&quot;http:&#x2F;&#x2F;www.oxymoronical.com&#x2F;web&#x2F;firefox&#x2F;nightly&quot;&gt;http:&#x2F;&#x2F;www.oxymoronical.com&#x2F;web&#x2F;firefox&#x2F;nightly&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;NoScript 1.6: &lt;a href=&quot;http:&#x2F;&#x2F;noscript.net&quot;&gt;http:&#x2F;&#x2F;noscript.net&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;PDF Download 1.0.1.1: &lt;a href=&quot;http:&#x2F;&#x2F;www.pdfdownload.org&quot;&gt;http:&#x2F;&#x2F;www.pdfdownload.org&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Right Encoding 0.2.2: &lt;a href=&quot;http:&#x2F;&#x2F;heygom.com&#x2F;extensions&#x2F;&quot;&gt;http:&#x2F;&#x2F;heygom.com&#x2F;extensions&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;ScrapBook 1.3.3.2: &lt;a href=&quot;http:&#x2F;&#x2F;amb.vis.ne.jp&#x2F;mozilla&#x2F;scrapbook&#x2F;&quot;&gt;http:&#x2F;&#x2F;amb.vis.ne.jp&#x2F;mozilla&#x2F;scrapbook&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;SwiftTabs 0.3.3.1: &lt;a href=&quot;http:&#x2F;&#x2F;heygom.com&#x2F;extensions&#x2F;&quot;&gt;http:&#x2F;&#x2F;heygom.com&#x2F;extensions&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Tab Mix Plus 0.3.6.1.080416: &lt;a href=&quot;http:&#x2F;&#x2F;tmp.garyr.net&quot;&gt;http:&#x2F;&#x2F;tmp.garyr.net&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;ubufox 0.4~beta1: &lt;a href=&quot;http:&#x2F;&#x2F;www.google.com&#x2F;search?q=Firefox%20ubufox&quot;&gt;http:&#x2F;&#x2F;www.google.com&#x2F;search?q=Firefox%20ubufox&lt;&#x2F;a&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+禁用扩展： [35]
+&lt;&#x2F;li&gt;
+&lt;li&gt;Access Flickr! 1.71: &lt;a href=&quot;http:&#x2F;&#x2F;flickr.com&#x2F;photos&#x2F;hamed&quot;&gt;http:&#x2F;&#x2F;flickr.com&#x2F;photos&#x2F;hamed&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Add to Search Bar 1.7: &lt;a href=&quot;http:&#x2F;&#x2F;maltekraus.de&#x2F;Firefox&#x2F;search-tools&quot;&gt;http:&#x2F;&#x2F;maltekraus.de&#x2F;Firefox&#x2F;search-tools&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Autohide 1.1.5: &lt;a href=&quot;http:&#x2F;&#x2F;www.krickelkrackel.de&#x2F;autohide&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.krickelkrackel.de&#x2F;autohide&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Brookstone 0.0.2: &lt;a href=&quot;http:&#x2F;&#x2F;www.mobilebrook.com&quot;&gt;http:&#x2F;&#x2F;www.mobilebrook.com&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Chinese Simplified (zh-CN) Language Pack 2.0.0.7: &lt;a href=&quot;http:&#x2F;&#x2F;www.google.com&#x2F;search?q=Firefox%20Chinese%20Simplified%20%28zh-CN%29%20Language%20Pack&quot;&gt;http:&#x2F;&#x2F;www.google.com&#x2F;search?q=Firefox%20Chinese%20Simplified%20%28zh-CN%29%20Language%20Pack&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Classic Compact 3.0.6: &lt;a href=&quot;http:&#x2F;&#x2F;blog.environmentalchemistry.com&#x2F;2008&#x2F;03&#x2F;firefox-theme-classic-compact.html&quot;&gt;http:&#x2F;&#x2F;blog.environmentalchemistry.com&#x2F;2008&#x2F;03&#x2F;firefox-theme-classic-compact.html&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;ColorZilla 1.9: &lt;a href=&quot;http:&#x2F;&#x2F;www.colorzilla.com&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.colorzilla.com&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Compact Menu 2 2.0.3: &lt;a href=&quot;https:&#x2F;&#x2F;addons.mozilla.org&#x2F;firefox&#x2F;108029&#x2F;author&#x2F;&quot;&gt;https:&#x2F;&#x2F;addons.mozilla.org&#x2F;firefox&#x2F;108029&#x2F;author&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Copy Plain Text 0.3.3: &lt;a href=&quot;http:&#x2F;&#x2F;mozmonkey.com&#x2F;&quot;&gt;http:&#x2F;&#x2F;mozmonkey.com&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;CSSViewer 1.0.2: &lt;a href=&quot;http:&#x2F;&#x2F;www.google.com&#x2F;search?q=Firefox%20CSSViewer&quot;&gt;http:&#x2F;&#x2F;www.google.com&#x2F;search?q=Firefox%20CSSViewer&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;CustomizeGoogle 0.71: &lt;a href=&quot;http:&#x2F;&#x2F;www.customizegoogle.com&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.customizegoogle.com&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Fasterfox 2.0.0: &lt;a href=&quot;http:&#x2F;&#x2F;fasterfox.mozdev.org&#x2F;&quot;&gt;http:&#x2F;&#x2F;fasterfox.mozdev.org&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Firebug 1.05: &lt;a href=&quot;http:&#x2F;&#x2F;www.getfirebug.com&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.getfirebug.com&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;FlickrFox 1.3.0: &lt;a href=&quot;http:&#x2F;&#x2F;philmccluskey.com&#x2F;projects&#x2F;flickrfox&#x2F;&quot;&gt;http:&#x2F;&#x2F;philmccluskey.com&#x2F;projects&#x2F;flickrfox&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;FoxyTunes 2.9.5.31: &lt;a href=&quot;http:&#x2F;&#x2F;www.foxytunes.com&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.foxytunes.com&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Gmail Skins 0.9.8: &lt;a href=&quot;http:&#x2F;&#x2F;gmailskins.mozdev.org&quot;&gt;http:&#x2F;&#x2F;gmailskins.mozdev.org&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Google Gears 0.3.14.0: &lt;a href=&quot;http:&#x2F;&#x2F;gears.google.com&#x2F;&quot;&gt;http:&#x2F;&#x2F;gears.google.com&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Google Toolbar for Firefox 3.0.20070525L: &lt;a href=&quot;http:&#x2F;&#x2F;www.google.com&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.google.com&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Google Web Comments 1.4.20070529.0: &lt;a href=&quot;http:&#x2F;&#x2F;toolbar.google.com&#x2F;firefox&#x2F;extensions&#x2F;webcomments&#x2F;&quot;&gt;http:&#x2F;&#x2F;toolbar.google.com&#x2F;firefox&#x2F;extensions&#x2F;webcomments&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Greasemonkey 0.7.20080121.0: &lt;a href=&quot;http:&#x2F;&#x2F;www.greasespot.net&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.greasespot.net&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Hide Menubar 1.0.20080310: &lt;a href=&quot;http:&#x2F;&#x2F;forum.moztw.org&#x2F;viewtopic.php?t=15303&quot;&gt;http:&#x2F;&#x2F;forum.moztw.org&#x2F;viewtopic.php?t=15303&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;It&#x27;s All Text! 0.8.4: &lt;a href=&quot;http:&#x2F;&#x2F;addons.mozilla.org&#x2F;firefox&#x2F;4125&quot;&gt;http:&#x2F;&#x2F;addons.mozilla.org&#x2F;firefox&#x2F;4125&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Locale Switcher 2.1: &lt;a href=&quot;http:&#x2F;&#x2F;benjamin.smedbergs.us&#x2F;switch-locales&#x2F;&quot;&gt;http:&#x2F;&#x2F;benjamin.smedbergs.us&#x2F;switch-locales&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;MeasureIt 0.3.6: &lt;a href=&quot;http:&#x2F;&#x2F;www.kevinfreitas.net&#x2F;pro&#x2F;extensions&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.kevinfreitas.net&#x2F;pro&#x2F;extensions&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Modify Headers 0.6.4: &lt;a href=&quot;http:&#x2F;&#x2F;www.garethhunt.com&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.garethhunt.com&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Mozilla XForms 0.8.5: &lt;a href=&quot;http:&#x2F;&#x2F;www.mozilla.org&#x2F;projects&#x2F;xforms&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.mozilla.org&#x2F;projects&#x2F;xforms&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;MR Tech Local Install 5.3.2.3: &lt;a href=&quot;http:&#x2F;&#x2F;www.mrtech.com&#x2F;extensions&#x2F;local_install&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.mrtech.com&#x2F;extensions&#x2F;local_install&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Ook? Video Ook! 0.6.6: &lt;a href=&quot;http:&#x2F;&#x2F;ook.dedos.net&#x2F;&quot;&gt;http:&#x2F;&#x2F;ook.dedos.net&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Pearl Crescent Page Saver Basic 1.7: &lt;a href=&quot;http:&#x2F;&#x2F;pearlcrescent.com&#x2F;products&#x2F;pagesaver&#x2F;&quot;&gt;http:&#x2F;&#x2F;pearlcrescent.com&#x2F;products&#x2F;pagesaver&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Resizeable Textarea 0.1d: &lt;a href=&quot;http:&#x2F;&#x2F;www.google.com&#x2F;search?q=Firefox%20Resizeable%20Textarea&quot;&gt;http:&#x2F;&#x2F;www.google.com&#x2F;search?q=Firefox%20Resizeable%20Textarea&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Screen grab! 0.93: &lt;a href=&quot;http:&#x2F;&#x2F;andy.5263.org&#x2F;screengrab&#x2F;&quot;&gt;http:&#x2F;&#x2F;andy.5263.org&#x2F;screengrab&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;ScribeFire 1.4.8: &lt;a href=&quot;http:&#x2F;&#x2F;www.scribefire.com&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.scribefire.com&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Split Browser 0.4.2007120601: &lt;a href=&quot;http:&#x2F;&#x2F;piro.sakura.ne.jp&#x2F;xul&#x2F;_splitbrowser.html.en&quot;&gt;http:&#x2F;&#x2F;piro.sakura.ne.jp&#x2F;xul&#x2F;_splitbrowser.html.en&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;TwittyTunes 0.5.3.1: &lt;a href=&quot;http:&#x2F;&#x2F;www.foxytunes.com&#x2F;twittytunes&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.foxytunes.com&#x2F;twittytunes&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Web Developer 1.1.5: &lt;a href=&quot;http:&#x2F;&#x2F;chrispederick.com&#x2F;work&#x2F;web-developer&#x2F;&quot;&gt;http:&#x2F;&#x2F;chrispederick.com&#x2F;work&#x2F;web-developer&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;wmlbrowser 0.7.17: &lt;a href=&quot;http:&#x2F;&#x2F;wmlbrowser.mozdev.org&quot;&gt;http:&#x2F;&#x2F;wmlbrowser.mozdev.org&lt;&#x2F;a&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+全部扩展： 51
+&lt;p&gt;&lt;&#x2F;p&gt;
+已安装主题： [8]
+&lt;&#x2F;li&gt;
+&lt;li&gt;azureFox 0.96.1: &lt;a href=&quot;http:&#x2F;&#x2F;www.radar.250x.com&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.radar.250x.com&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Firefox (default): &lt;a href=&quot;http:&#x2F;&#x2F;www.mozilla.org&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.mozilla.org&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Human Theme 0.5: &lt;a href=&quot;http:&#x2F;&#x2F;www.ffnn.nl&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.ffnn.nl&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;iFox 2.5.1: &lt;a href=&quot;http:&#x2F;&#x2F;www.radar.250x.com&quot;&gt;http:&#x2F;&#x2F;www.radar.250x.com&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;miniFox 0.8.2: &lt;a href=&quot;http:&#x2F;&#x2F;membres.lycos.fr&#x2F;sethnakht&quot;&gt;http:&#x2F;&#x2F;membres.lycos.fr&#x2F;sethnakht&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Pinstripe 5.0: &lt;a href=&quot;http:&#x2F;&#x2F;www.webether.com&quot;&gt;http:&#x2F;&#x2F;www.webether.com&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Tangerine Theme 0.5: &lt;a href=&quot;http:&#x2F;&#x2F;www.ffnn.nl&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.ffnn.nl&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Tango Theme 0.5: &lt;a href=&quot;http:&#x2F;&#x2F;www.ffnn.nl&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.ffnn.nl&#x2F;&lt;&#x2F;a&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+已安装插件： (12)
+&lt;&#x2F;li&gt;
+&lt;li&gt;DivX Browser Plug-In
+&lt;&#x2F;li&gt;
+&lt;li&gt;DivX® Web Player
+&lt;&#x2F;li&gt;
+&lt;li&gt;Java(TM) Plug-in 1.6.0_03-b05
+&lt;&#x2F;li&gt;
+&lt;li&gt;MozPlugger 1.8.0 handles QuickTime and Windows Media Player Plugin
+&lt;&#x2F;li&gt;
+&lt;li&gt;mplayerplug-in 3.40
+&lt;&#x2F;li&gt;
+&lt;li&gt;QuickTime Plug-in 6.0 &#x2F; 7
+&lt;&#x2F;li&gt;
+&lt;li&gt;QuickTime Plug-in 7.2.0
+&lt;&#x2F;li&gt;
+&lt;li&gt;RealPlayer 9
+&lt;&#x2F;li&gt;
+&lt;li&gt;Shockwave Flash
+&lt;&#x2F;li&gt;
+&lt;li&gt;Totem Web Browser Plugin 2.20.0
+&lt;&#x2F;li&gt;
+&lt;li&gt;Windows Media Player Plug-in 10 (compatible; Totem)
+&lt;&#x2F;li&gt;
+&lt;li&gt;Windows Media Player Plugin
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc5R0VYREdMU&quot; name=&quot;toc5R0VYREdMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopSVpEQT09P&#x27;&gt; 1.3. 成了！ &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+开始快乐的使用！
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+. &lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;2008&#x2F;2008-04-21-144725_685x652_scrot.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;;  
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;ul&gt;
+&lt;li&gt;t2t渲染:: 2010-10-09 02:21:41
+&lt;&#x2F;li&gt;
+&lt;li&gt;动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;oss&#x2F;Mozilla&#x2F;FireFox&#x2F;ff3pre-upgrade-ko-2008-04-21-12-33.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">Hardy Heron</title>
+<category term="/oss/Ubuntu" />
+<id>/pyblosxom/2008/04/15/hardy-heron-9day-2008-04-15-10-15</id>
+<updated>2008-04-15T02:15:00Z</updated>
+<published>2008-04-15T02:15:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/oss/Ubuntu/hardy-heron-9day-2008-04-15-10-15.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopSkJRWEVaR&#x27; id=&#x27;toptopSkJRWEVaR&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;Hardy Heron&lt;&#x2F;h1&gt;
+&lt;h2&gt;-- 8.04 强鹭还有9天&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0JaV&quot;&gt;期待，但不等待&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0JaV&quot; name=&quot;toc1R0VYQ0JaV&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopSkJRWEVaR&#x27;&gt; 1. 期待，但不等待 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+升级!需要理由嘛?
+&lt;&#x2F;p&gt;
+ &lt;ul&gt;
+ &lt;li&gt;不需要嘛?
+  &lt;ul&gt;
+  &lt;li&gt;需要嘛?! ...
+  &lt;p&gt;&lt;&#x2F;p&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;其实只是心理原因;-)&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;7.10 使用非常舒服
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;8.04 也没有ZFS哪
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;考虑FreeBSD ing..
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;不过，不跳票的 Ubuntu HH 还是非常想的，如果:
+     &lt;ul&gt;
+     &lt;li&gt;字体更加好了
+     &lt;&#x2F;li&gt;
+     &lt;li&gt;FF3支持所有主要插件了
+     &lt;&#x2F;li&gt;
+     &lt;li&gt;输入法默认是 bridge-scim 了
+     &lt;&#x2F;li&gt;
+     &lt;li&gt;...
+     &lt;p&gt;&lt;&#x2F;p&gt;
+. &lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;2008&#x2F;804UbuntuCountdown_09days.jpg&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;;  
+     &lt;&#x2F;li&gt;
+     &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;ul&gt;
+&lt;li&gt;t2t渲染:: 2010-10-09 02:21:41
+&lt;&#x2F;li&gt;
+&lt;li&gt;动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;oss&#x2F;Ubuntu&#x2F;hardy-heron-9day-2008-04-15-10-15.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">[LvL]对错录</title>
+<category term="/Quiet/living" />
+<id>/pyblosxom/2008/04/08/lone-vs-love-2008-04-07-24-21</id>
+<updated>2008-04-07T16:21:00Z</updated>
+<published>2008-04-07T16:21:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/Quiet/living/lone-vs-love-2008-04-07-24-21.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopTE5HSE1UQ&#x27; id=&#x27;toptopTE5HSE1UQ&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;[LvL]对错录&lt;&#x2F;h1&gt;
+&lt;h2&gt;...via life&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0JaT&quot;&gt;冇好错&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc2R0VYRENMU&quot;&gt;1.1. 相识&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc3R0VYREVMU&quot;&gt;1.2. 相试&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc4R0VYREdMU&quot;&gt;1.3. 相望&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc5R0VYRElMU&quot;&gt;1.4. 相示&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc6R0VYREtMU&quot;&gt;1.5. 相世&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc7R0VYRE1MU&quot;&gt;1.6. 相逝&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0JaT&quot; name=&quot;toc1R0VYQ0JaT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTE5HSE1UQ&#x27;&gt; 1. 冇好错 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+真的哪,放开心灵去想和感受的话的确的哪...
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc2R0VYRENMU&quot; name=&quot;toc2R0VYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTE5HSE1UQ&#x27;&gt; 1.1. 相识 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;妳冇错: 追求想要的快乐
+&lt;&#x2F;li&gt;
+&lt;li&gt;愿妳好: 妳应该享受快乐
+&lt;&#x2F;li&gt;
+&lt;li&gt;错在我: 没有及时明确我的态度,暧昧是至高技巧,不是我们可以消受的..
+&lt;&#x2F;li&gt;
+&lt;li&gt;呔！  都这会儿了,早过暧昧阶段了,一起快乐就好!
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;妳冇错: 追求想要的关爱
+&lt;&#x2F;li&gt;
+&lt;li&gt;愿妳好: 妳应该得到关爱
+&lt;&#x2F;li&gt;
+&lt;li&gt;错在我: 除了技术&#x2F;知识,没有受到过关怀人的训练,作不出来..
+&lt;&#x2F;li&gt;
+&lt;li&gt;呔！  都这会儿了,跟着我一起作关怀的事儿就好!
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;妳冇错: 追求渴望的爱情
+&lt;&#x2F;li&gt;
+&lt;li&gt;愿妳好: 妳应该拥有爱情
+&lt;&#x2F;li&gt;
+&lt;li&gt;错在我: 理工的训练让我们不相信爱情,不相信爱情的人无法创造爱情的吧?
+&lt;&#x2F;li&gt;
+&lt;li&gt;呔！  都这会儿了,谁问这种小姑娘的问题,你只准和我在一起就好!
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc3R0VYREVMU&quot; name=&quot;toc3R0VYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTE5HSE1UQ&#x27;&gt; 1.2. 相试 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;妳冇错: 追求想要的性爱
+&lt;&#x2F;li&gt;
+&lt;li&gt;愿妳好: 妳应该体验高潮
+&lt;&#x2F;li&gt;
+&lt;li&gt;错在我: 从来关注自个儿的感觉,真正要配合体验时,无从下手哪~怎么读懂妳?
+&lt;&#x2F;li&gt;
+&lt;li&gt;呔！  都这会儿了,这有手册,一起来尝试就好!
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;妳冇错: 追求亲昵的厮守
+&lt;&#x2F;li&gt;
+&lt;li&gt;愿妳好: 妳应该有人陪伴
+&lt;&#x2F;li&gt;
+&lt;li&gt;错在我: 享受惯了孤独,无法想象有人分享独处时的自在..
+&lt;&#x2F;li&gt;
+&lt;li&gt;呔！  都这会儿了,还装,在一起时只要你讲,我不来打挠就好!
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;妳冇错: 追求不再有寂寞
+&lt;&#x2F;li&gt;
+&lt;li&gt;愿妳好: 妳应该快乐平和
+&lt;&#x2F;li&gt;
+&lt;li&gt;错在我: 不相信寂寞的人,无法理解这种感受,就算是担心也不知道怎么作..
+&lt;&#x2F;li&gt;
+&lt;li&gt;呔！  都这会儿了,只要你陪我就好!
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc4R0VYREdMU&quot; name=&quot;toc4R0VYREdMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTE5HSE1UQ&#x27;&gt; 1.3. 相望 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;妳冇错: 追求相互的守望
+&lt;&#x2F;li&gt;
+&lt;li&gt;愿妳好: 妳应被认真守望
+&lt;&#x2F;li&gt;
+&lt;li&gt;错在我: 守望需要距离,这么接近,守望只是表演了吧
+&lt;&#x2F;li&gt;
+&lt;li&gt;呔！  都这会儿了,常常短信我就好!
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;妳冇错: 追求全天的挂念
+&lt;&#x2F;li&gt;
+&lt;li&gt;愿妳好: 妳的确值得挂念
+&lt;&#x2F;li&gt;
+&lt;li&gt;错在我: 我有我生活,必须奋斗关注的事儿太多,何时挂念?
+&lt;&#x2F;li&gt;
+&lt;li&gt;呔！  都这会儿了,到处有网络你逃不了就好!
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;妳冇错: 追求琐细的呵护
+&lt;&#x2F;li&gt;
+&lt;li&gt;愿妳好: 妳应被温柔呵护
+&lt;&#x2F;li&gt;
+&lt;li&gt;错在我: 对自个儿都执行放养政策的,如何学会呵护?
+&lt;&#x2F;li&gt;
+&lt;li&gt;呔！  都这会儿了,听众命令就好!
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc5R0VYRElMU&quot; name=&quot;toc5R0VYRElMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTE5HSE1UQ&#x27;&gt; 1.4. 相示 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;妳冇错: 追求平静的照顾
+&lt;&#x2F;li&gt;
+&lt;li&gt;愿妳好: 妳应该得到照顾
+&lt;&#x2F;li&gt;
+&lt;li&gt;错在我: 人在江湖身不由己!工作日之外就是加班日!只享受妳的照顾的话,又与心何忍?
+&lt;&#x2F;li&gt;
+&lt;li&gt;呔！  都这会儿了,我喜欢照顾你就好!
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;妳冇错: 追求游玩的畅快
+&lt;&#x2F;li&gt;
+&lt;li&gt;愿妳好: 妳应该享受生活
+&lt;&#x2F;li&gt;
+&lt;li&gt;错在我: 在生存中挣扎习惯了,没有享受过生活的我,如何配合妳?
+&lt;&#x2F;li&gt;
+&lt;li&gt;呔！  都这会儿了,放开心情一起来体验就好!
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;妳冇错: 追求公开的相守
+&lt;&#x2F;li&gt;
+&lt;li&gt;愿妳好: 妳应被正大相守
+&lt;&#x2F;li&gt;
+&lt;li&gt;错在我: 正大光明的被所有人监察,已经吓退过无数的人了,留白天地才宽..
+&lt;&#x2F;li&gt;
+&lt;li&gt;呔！  都这会儿了,只要你心里有我就好!
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc6R0VYREtMU&quot; name=&quot;toc6R0VYREtMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTE5HSE1UQ&#x27;&gt; 1.5. 相世 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;妳冇错: 追求永久的承诺
+&lt;&#x2F;li&gt;
+&lt;li&gt;愿妳好: 妳应该得到承诺
+&lt;&#x2F;li&gt;
+&lt;li&gt;错在我: 不相信永久的我,如何给出承诺?
+&lt;&#x2F;li&gt;
+&lt;li&gt;呔！  都这会儿了,作到以上几点就好!
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;妳冇错: 追求永恒的认可
+&lt;&#x2F;li&gt;
+&lt;li&gt;愿妳好: 妳应该获得认可
+&lt;&#x2F;li&gt;
+&lt;li&gt;错在我: 不相信永恒的我,在被BS后,如何生存下去?
+&lt;&#x2F;li&gt;
+&lt;li&gt;呔！  都这会儿了,担心也是以后就好!
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;妳冇错: 追求永远的想念
+&lt;&#x2F;li&gt;
+&lt;li&gt;愿妳好: 妳应该受到想念
+&lt;&#x2F;li&gt;
+&lt;li&gt;错在我: 没有想念过谁的我,怎么知道哪种感觉是想念?
+&lt;&#x2F;li&gt;
+&lt;li&gt;呔！  都这会儿了,管什么感觉,在一起就好!
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc7R0VYRE1MU&quot; name=&quot;toc7R0VYRE1MU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTE5HSE1UQ&#x27;&gt; 1.6. 相逝 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;妳冇错: 追求甜蜜的关怀
+&lt;&#x2F;li&gt;
+&lt;li&gt;愿妳好: 妳的甜蜜必有回报
+&lt;&#x2F;li&gt;
+&lt;li&gt;错在我: 习惯苦熬的我如何回报甜蜜?
+&lt;&#x2F;li&gt;
+&lt;li&gt;呔！  都这会儿了,什么是你的甜蜜我来发现就好!
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;妳冇错: 追求舒心的生活
+&lt;&#x2F;li&gt;
+&lt;li&gt;愿妳好: 妳的生活必能舒畅
+&lt;&#x2F;li&gt;
+&lt;li&gt;错在我: 一向被生活享受的我,从何舒畅你的生活?
+&lt;&#x2F;li&gt;
+&lt;li&gt;呔！  都这会儿了,笨!有你就好!
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;妳冇错: 追求无悔的逝去
+&lt;&#x2F;li&gt;
+&lt;li&gt;愿妳好: 妳的一生必应无悔
+&lt;&#x2F;li&gt;
+&lt;li&gt;错在我: 但是怎么保证不在你之前逝去?
+&lt;&#x2F;li&gt;
+&lt;li&gt;呔！  都这会儿了,猪!那我自杀就好!
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;p&gt;
+.. .. ..
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;b&gt;火星人和水星人的碰面,只会令地球更加危险&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;technorati-over.gif&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;living&quot;&gt;living&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;Quiet&quot;&gt;Quiet&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;Quiet&#x2F;living&#x2F;lone-vs-love-2008-04-07-24-21.t2t --&gt;
+</content>
+</entry>
+</feed>

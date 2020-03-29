@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/Zen/pythonic/pycon2011china-2011-10-10-10-10.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/Zen/pythonic/pycon2011china-2011-10-10-10-10.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/Zen/pythonic/pycon2011china-2011-10-10-10-10.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2011-10-10T02:10:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">首届PyCon中国大会发动！</title>
+<category term="" />
+<id>/pyblosxom/2011/10/10/pycon2011china-2011-10-10-10-10</id>
+<updated>2011-10-10T02:10:00Z</updated>
+<published>2011-10-10T02:10:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/Zen/pythonic/pycon2011china-2011-10-10-10-10.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopNUdUSk5aT&#x27; id=&#x27;toptopNUdUSk5aT&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;首届PyCon中国大会发动！&lt;&#x2F;h1&gt;
+&lt;h2&gt;~ 让我们聚首上海&lt;&#x2F;h2&gt;
+&lt;h3&gt;t2t渲染:2011-10-20 03:17:22&lt;&#x2F;h3&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1RURTMkpKN&quot;&gt;大会&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc2RURUSUpIN&quot;&gt;感思&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1NFdTS1BaR&quot; name=&quot;toc1NFdTS1BaR&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopNUdUSk5aT&#x27;&gt; 大会 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+&lt;a href=&quot;http:&#x2F;&#x2F;cn.pycon.org&#x2F;2011&#x2F;&quot;&gt;&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;2011&#x2F;PyConChina.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;&lt;&#x2F;a&gt; 世界 Python 爱好者的顶级盛会 —— PyCon 大会将首次在中国举办！本次大会由（Python 软件基金会下的）PyCon.Org 正式授权 GTUG、TopGeek、CPyUG 等社区联合举办，由 Python 作者 Guido van Rossum 及其所在的 Google 公司提供关键支持。
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+本次大会云集了国内外最为杰出的 Python 开发者，国内 Python 领域的领军人物几乎悉数到场、作为 Python 重镇的各大知名公司几乎无一缺席，所有嘉宾都承诺将自己压箱底的 Python 绝活呈现给大家！&lt;a href=&quot;http:&#x2F;&#x2F;eishn.blog.163.com&#x2F;blog&#x2F;static&#x2F;652318201191381314841&#x2F;&quot;&gt;沈游侠&lt;&#x2F;a&gt;也会在大会上进行题为《Python，通向未来之路》的纯技术演讲，欢迎捧场。
+12 月，让我们聚首上海！
+大会订票已经开始 &lt;a href=&quot;http:&#x2F;&#x2F;pycon.51qiangzuo.com&quot;&gt;http:&#x2F;&#x2F;pycon.51qiangzuo.com&lt;&#x2F;a&gt; 手速一定要快哦！
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+会议为期两天（12 月 3 日至 4 日），票价 60￥，全部用于会议期间的就餐费用，其余大会所有费用及礼品主要由 Google 等公司承担赞助。作为国内最大的赞助者，我们也同样很荣幸能够服务于广大中国 Python 爱好者。
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+ps:
+&lt;&#x2F;p&gt;
+    &lt;ul&gt;
+    &lt;li&gt;以上内容全文抄录自 &lt;a href=&quot;http:&#x2F;&#x2F;eishn.blog.163.com&#x2F;blog&#x2F;static&#x2F;652318201191381314841&#x2F;&quot;&gt;首届中国 PyCon 大会！让我们聚首上海 - 沈崴的日志 - 网易博客&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc2NDJDSjdaV&quot; name=&quot;toc2NDJDSjdaV&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopNUdUSk5aT&#x27;&gt; 感思 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+N久前就开始义务的狂热的不断的推广 Python 了:
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;zoomquiet.org&#x2F;res&#x2F;s5&#x2F;070322-introPy&#x2F;&quot;&gt;070322-introPy&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;zoomquiet.org&#x2F;res&#x2F;s5&#x2F;100820-introPy&#x2F;&quot;&gt;100820-introPy&#x2F;&lt;&#x2F;a&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;a href=&quot;http:&#x2F;&#x2F;wiki.python.org&#x2F;moin&#x2F;PyCon&quot;&gt;PyCon - PythonInfo Wiki&lt;&#x2F;a&gt; 2003开始，每年举行一次,
+后来，随着 Python 的发展，Google 的崛起，每年一次，已经无法满足全球 Python 程序猿的现摆了，
+于是，每年，各国都有 PyCon 授权的正式大会来Party HIGH 一下,
+&lt;a href=&quot;http:&#x2F;&#x2F;pycon.sit.rp.sg&#x2F;&quot;&gt;Pycon Asia Pacific&lt;&#x2F;a&gt;2010 在新加坡也整起来了，亲历了一下，很爽；
+只是没想到，今年，中国说搞就搞起来了！
+&lt;p&gt;&lt;&#x2F;p&gt;
+虽然 Python 在中国，社区不少，但是没有 JAVA&#x2F;.NET&#x2F;Ruby 等那么趁钱，光鲜，
+大家都在自个儿happy 的用，不怎么出来吼;
+但是，在中国的 Python 程序猿真的都很NB 哪，
+不出来吼，整得是个NB社区样儿，学生们可不屑来学习的哪.
+&lt;p&gt;&lt;&#x2F;p&gt;
+好了,夸了 &lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;2011&#x2F;cpyug.gif&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt; 的定期FB聚会,
+大家一喝高了,就有了冲动,一冲动就成了...
+&lt;p&gt;&lt;&#x2F;p&gt;
+其实我们玩的真不差了,相比国际上的玩法,有正式舞台了,多吼一吼,有益身心的!
+&lt;p&gt;&lt;&#x2F;p&gt;
+反正,俺一定要出台了,大家也尽力来哈!
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags Zen&#x2F;pythonic&#x2F;pycon2011china-2011-10-10-10-10.t2t --&gt;
+</content>
+</entry>
+</feed>

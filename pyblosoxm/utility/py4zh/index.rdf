@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<!DOCTYPE content [ <!ENTITY nbsp " "> ]>
+<rdf:RDF xml:base="/pyblosxom/rdf"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<rdf:Description rdf:about="/pyblosxom">
+  <dc:title> Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup> </dc:title>
+  <dc:description> Zoom.Quiet's PyBlosxom blogging </dc:description>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+</rdf:Description>
+
+<rdf:Description rdf:about="/pyblosxom/utility/py4zh/autoDetectXMLEncoding">
+  <dc:title> autoDetectXMLEncoding.py </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2006-04-04T15:23:00Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <pre class="brush: python">"""http://aspn.activestate.com/ASPN/Cookbook/Python/Recipe/52257
+#tags utility,py4zh
+Title: Auto-detect XML encoding
+Submitter: Paul Prescod (other recipes)
+Last Updated: 2001/03/14
+Version no: 1.0
+Category: XML
+推荐:: 发件人: 清风 <paradise.qingfeng@gmail.com>	
+回复: python-chinese@lists.python.cn
+收件人: python-chinese@lists.python.cn
+日期: 2006-1-18 上午1:27
+主题: Re: [python-chinese] 如何取得一个文本的编码格式？
+"""
+import codecs, encodings
+
+"""Caller will hand this library a buffer and ask it to either convert
+it or auto-detect the type."""
+
+# None represents a potentially variable byte. "##" in the XML spec... 
+autodetect_dict={ # bytepattern     : ("name",              
+                (0x00, 0x00, 0xFE, 0xFF) : ("ucs4_be"),        
+                (0xFF, 0xFE, 0x00, 0x00) : ("ucs4_le"),
+                (0xFE, 0xFF, None, None) : ("utf_16_be"), 
+                (0xFF, 0xFE, None, None) : ("utf_16_le"), 
+                (0x00, 0x3C, 0x00, 0x3F) : ("utf_16_be"),
+                (0x3C, 0x00, 0x3F, 0x00) : ("utf_16_le"),
+                (0x3C, 0x3F, 0x78, 0x6D): ("utf_8"),
+                (0x4C, 0x6F, 0xA7, 0x94): ("EBCDIC")
+                 }
+
+def autoDetectXMLEncoding(buffer):
+    """ buffer -> encoding_name
+    The buffer should be at least 4 bytes long.
+        Returns None if encoding cannot be detected.
+        Note that encoding_name might not have an installed
+        decoder (e.g. EBCDIC)
+    """
+    # a more efficient implementation would not decode the whole
+    # buffer at once but otherwise we'd have to decode a character at
+    # a time looking for the quote character...that's a pain
+
+    encoding = "utf_8" # according to the XML spec, this is the default
+                          # this code successively tries to refine the default
+                          # whenever it fails to refine, it falls back to 
+                          # the last place encoding was set.
+    bytes = (byte1, byte2, byte3, byte4) = tuple(map(ord, buffer[0:4]))
+    enc_info = autodetect_dict.get(bytes, None)
+
+    if not enc_info: # try autodetection again removing potentially 
+                     # variable bytes
+        bytes = (byte1, byte2, None, None)
+        enc_info = autodetect_dict.get(bytes)
+
+        
+    if enc_info:
+        encoding = enc_info # we've got a guess... these are
+                            #the new defaults
+
+        # try to find a more precise encoding using xml declaration
+        secret_decoder_ring = codecs.lookup(encoding)[1]
+        (decoded,length) = secret_decoder_ring(buffer) 
+        first_line = decoded.split("\n")[0]
+        if first_line and first_line.startswith(u"<?xml"):
+            encoding_pos = first_line.find(u"encoding")
+            if encoding_pos!=-1:
+                # look for double quote
+                quote_pos=first_line.find('"', encoding_pos) 
+
+                if quote_pos==-1:                 # look for single quote
+                    quote_pos=first_line.find("'", encoding_pos) 
+
+                if quote_pos>-1:
+                    quote_char,rest=(first_line[quote_pos],
+                                                first_line[quote_pos+1:])
+                    encoding=rest[:rest.find(quote_char)]
+
+    return encoding
+
+</pre>
+  </content>
+
+  <rdf:Seq>
+
+<rdf:Description rdf:about="/pyblosxom/utility/py4zh/zh2utf8">
+  <dc:title> zh2utf8.py </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2006-02-01T15:23:00Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <pre class="brush: python">"""Auto converter encodings to utf8
+#tags utility,py4zh
+It will test utf8,gbk,big5,jp,kr to converter
+
+发件人: HuangJiahua <jhuangjiahua@gmail.com>	
+邮送域: googlegroups.com
+回复: python-cn@googlegroups.com
+收件人: "python.cn" <python-cn@googlegroups.com>
+日期: 2006-1-16 上午12:11
+主题: Re: 请问怎样得到一个文件的编码？
+http://groups.google.com/group/python-cn/browse_frm/thread/3544d5a05783dc96
+
+"""
+
+#!/usr/bin/python
+# coding:UTF-8
+# Author: Huang Jiahua <jhuangjiahua@gmail.com>
+#测试的编码类型
+encc=''
+def zh2utf8(stri):
+       """Auto converter encodings to utf8
+
+       It will test utf8,gbk,big5,jp,kr to converter"""
+       global encc
+       for c in ('utf-8', 'gbk', 'big5', 'jp',
+'euc_kr','utf16','utf32'):
+               encc = c
+               try:
+                       return stri.decode(c).encode('utf8')
+               except:
+                       pass
+       encc = 'unk'
+       return stri
+
+if __name__=="__main__":
+       # 命令行测试
+       import sys
+##      sys.setappdefaultencoding('unicode')
+       if len(sys.argv) > 1:
+               stri = sys.argv[1]
+       else:
+               stri = sys.stdin.read()
+       print zh2utf8(stri)
+       print 'encc:',encc</pre>
+  </content>
+
+  <rdf:Seq>
+
+  </rdf:Seq>
+</rdf:Description>
+</rdf:RDF>

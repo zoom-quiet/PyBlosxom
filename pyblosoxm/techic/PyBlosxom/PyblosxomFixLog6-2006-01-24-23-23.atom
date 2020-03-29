@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/techic/PyBlosxom/PyblosxomFixLog6-2006-01-24-23-23.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/techic/PyBlosxom/PyblosxomFixLog6-2006-01-24-23-23.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/techic/PyBlosxom/PyblosxomFixLog6-2006-01-24-23-23.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2006-01-24T15:23:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">[hack6]SNS化</title>
+<category term="" />
+<id>/pyblosxom/2006/01/24/PyblosxomFixLog6-2006-01-24-23-23</id>
+<updated>2006-01-24T15:23:00Z</updated>
+<published>2006-01-24T15:23:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/PyBlosxom/PyblosxomFixLog6-2006-01-24-23-23.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopTE5VR0NZM&#x27; id=&#x27;toptopTE5VR0NZM&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;[hack6]SNS化&lt;&#x2F;h1&gt;
+&lt;h2&gt;社会化软件增强&lt;&#x2F;h2&gt;
+&lt;h3&gt;t2t渲染:2010-10-09 02:21:38&lt;&#x2F;h3&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;dl&gt;
+&lt;dt&gt;火热的 Web2.0beta&lt;&#x2F;dt&gt;&lt;dd&gt;
+    有定义图&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;web2.0defining.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;;来自&lt;a href=&quot;http:&#x2F;&#x2F;www.flickr.com&#x2F;photos&#x2F;kosmar&#x2F;88198896&#x2F;&quot;&gt;kosmar&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;嗬嗬！还有&lt;a href=&quot;http:&#x2F;&#x2F;www.flickr.com&#x2F;photos&#x2F;kosmar&#x2F;62381076&#x2F;in&#x2F;set-1371686&#x2F;&quot;&gt;标记版本的Web2.0&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;新版本的::&lt;a href=&quot;http:&#x2F;&#x2F;www.flickr.com&#x2F;photos&#x2F;kosmar&#x2F;88198896&#x2F;in&#x2F;set-1371686&#x2F;&quot;&gt;Netz2.0&lt;&#x2F;a&gt;
+    &lt;p&gt;&lt;&#x2F;p&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;&lt;a href=&quot;http:&#x2F;&#x2F;blog.timetide.net&#x2F;archives&#x2F;2005&#x2F;01&#x2F;15&#x2F;20050115015808.php&quot;&gt;Folksonomy&lt;&#x2F;a&gt;&lt;&#x2F;dt&gt;&lt;dd&gt;
+  分众分类！
+  &lt;ul&gt;
+  &lt;li&gt;PyBlosxom 如何支持呢？
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;Google it!::&lt;a href=&quot;http:&#x2F;&#x2F;www.timfanelli.com&#x2F;item&#x2F;42&quot;&gt;Folksonomy 1.2&lt;&#x2F;a&gt;
+   &lt;ul&gt;
+   &lt;li&gt;很中意哪！类似del.icio.us 的TAGs 分重效果哪！
+   &lt;&#x2F;li&gt;
+   &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;唉呀呀？！作者的Blog 怎么是&lt;a href=&quot;http:&#x2F;&#x2F;blosxonomy.com&#x2F;&quot;&gt;&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;pb_blosxonomy.gif&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;&lt;&#x2F;a&gt; ,还以为是PyBlosxom的,
+  又一个Ruby 的&lt;a href=&quot;http:&#x2F;&#x2F;blosxom.com&#x2F;&quot;&gt;blosxom&lt;&#x2F;a&gt; clone!
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;看来 &lt;a href=&quot;http:&#x2F;&#x2F;blosxom.com&#x2F;&quot;&gt;blosxom&lt;&#x2F;a&gt;&lt;b&gt;“简单即是美”&lt;&#x2F;b&gt;
+  的设计感化了不少程序员哪！
+   &lt;ul&gt;
+   &lt;li&gt;&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;blosxonomy.com&#x2F;&quot;&gt;Simply put: It&#x27;s a Zen thing...&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+   &lt;&#x2F;li&gt;
+   &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;可惜，安装失败！ N多的报错！想来此次PyBlosxom 的升级造成的修改还要有段时间的磨合
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;再Google!::从&lt;a href=&quot;http:&#x2F;&#x2F;copia.ogbuji.net&#x2F;blog&#x2F;Keywords_on_Copia&quot;&gt;Keywords on Copia&lt;&#x2F;a&gt;知道了&lt;a href=&quot;http:&#x2F;&#x2F;llimllib.f2o.org&#x2F;blog&#x2F;serve&#x2F;entry&#x2F;keyword_update.html&quot;&gt;Keywords Plugin&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;依然安装不能！呜乎哀哉…………
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;technorati-over.gif&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;OpenSource&quot;&gt;OpenSource&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;PyBlosxom&quot;&gt;PyBlosxom&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;hacking&quot;&gt;hacking&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;SNS&quot;&gt;SNS&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;techic&#x2F;PyBlosxom&#x2F;PyblosxomFixLog6-2006-01-24-23-23.t2t --&gt;
+</content>
+</entry>
+</feed>

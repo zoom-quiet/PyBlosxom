@@ -1,0 +1,684 @@
+<head>
+  <title>Zoom.Quiet's PyBlosxom blogging</title>
+<!--
+  <title>Zoom.Quiet's PyBlosxom blogging    by pyblosxom1.5.2</title>
+-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/pybstyle/pyblosxom.ico" type="image/x-icon" />
+<link rel="icon" href="/pybstyle/pyblosxom.ico" type="image/x-icon" />
+
+<link rel="stylesheet" type="text/css"  href="/pybstyle/html.flav/style.css" />
+<link rel="stylesheet" type="text/css"  media="print" href="/pybstyle/html.flav/print.css" />
+
+</head>
+<body>
+
+<div class="container"> 
+<table><!-- main page structure-->
+<tr>
+<td><!-- id="head" 
+    <div id="header" class="g33"> 
+        <h2><a href="/pyblosxom">
+        <img src="/pybstyle/zoomquiet-means-100414_h90.png" alt="Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup>">
+        </a>
+        </h2> 
+    </div> 
+
+    <div id="top" class="g33"> 
+        <div id="description" class="g16 alpha"> 
+        <h3>Zoom.Quiet's PyBlosxom blogging
+        </h3>
+        </div>
+-->
+    <div id="top" class="g33"> 
+        <div id="description" class="g16 alpha"> 
+            <h3><a href="/pyblosxom">
+            <img src="/pybstyle/zoomquiet-pyb-110831.png" alt="Zoom.Quiet's PyBlosxom blogging">
+            </a>
+            </h3>
+        </div>
+
+        <div id="feeds"> 
+        <!-- rss-popup usage div... 
+<div id="feeds" class="g16 omega" style="text-align:right;"> 
+<div class="rss-popup">
+        <a href="/pyblosxom/index.atom" id="rss-icon">RSS Feed</a>
+        <em>Subscribe the RSS Feed</em>
+</div>        
+        -->
+        <span class="feeds">
+            <a href="/pyblosxom/index.atom" alt="atom"><img src="/pybstyle/rss-16x16.png"/></a>
+        </span>
+        <sup>
+        <a href="/pyblosxom/category-index.html">树</a>
+        </sup><sub>
+        <a style="text-decoration=none" href="/pyblosxom/site-index.html">引</a>
+        </sub>
+
+        </div> <!--id="feeds"-->
+    </div> <!--id="top" class="g33"-->
+
+<hr id="split"/>
+
+
+<!--
+    <div class="clear"></div> 
+<p>-- </p>
+-->    
+</td><!-- id="head" -->
+</tr>
+<tr><td><!-- id="main" -->
+
+<div id="content" class="g33">
+<div id="main" class="g29">
+
+<!--<h2>Wed, 23 Apr 2008</h2>-->
+<!--for firstdaydiv.py 
+    <span class="blosxomDate">Wed, 23 Apr 2008</span>
+-->
+<div class="post"> 
+<div id="page-content">
+
+    <div class="pt">
+        <h1>&para; 文件系统选择</h1>
+        <h2 class="permanentURL">
+        <a href="/pyblosxom/oss/solaris-fs-choice-2008-04-23-21-43.html">2008-04-23 21:43</a>
+        </h2>
+        <!--Wed, 23 Apr 2008-->
+    </div>
+
+    <div class="text">
+        <div class="blosxomStory">
+        <div class="header" id="header">
+<a name='toptopNDJMSVBaR' id='toptopNDJMSVBaR'></a><h1>文件系统选择</h1>
+<h2>-- 译文 Solaris Filesystem Choices</h2>
+</div>
+
+<div class="toc" id="toc">
+  <ol>
+  <li><a href="#toc1R0VYQ0FVM">Solaris 的FS决择</a>
+    <ul>
+    <li><a href="#toc2R0VYRENMU">1.1. UFS</a>
+    </li>
+    <li><a href="#toc3R0VYREVMU">1.2. ZFS</a>
+    </li>
+    <li><a href="#toc4R0VYREdMU">1.3. SAM and QFS</a>
+    </li>
+    <li><a href="#toc5R0VYRElMU">1.4. VxFS</a>
+    </li>
+    </ul>
+  </li>
+  <li><a href="#toc6R0lYQ0JaN">结论</a>
+  </li>
+  <li><a href="#toc7R01YQ0FWQ">TODO</a>
+  </li>
+  </ol>
+
+</div>
+<div class="body" id="body">
+<a id="toc1R0VYQ0FVM" name="toc1R0VYQ0FVM"></a>
+<h1><A href='#toptopNDJMSVBaR'> 1. Solaris 的FS决择 </A></h1>
+<p>
+节译:<a href="http://www.osnews.com/story/19665/Solaris_Filesystem_Choices">Solaris Filesystem Choices</a> 50%
+</p>
+<p>
+OpenSolaris 10 已经给用户提供了一大堆存储相关的支持，而且秉承UNIX的一贯习俗，
+都是经过严格测试了的,这里就四种通用文件系统进行分析，希望可以就部署方面给读者提供足够的信息以便最终选择:
+</p>
+<a id="toc2R0VYRENMU" name="toc2R0VYRENMU"></a>
+<h2><A href='#toptopNDJMSVBaR'> 1.1. UFS </A></h2>
+<p>
+UFS 忒有历史凫，从80年代开始就是BSD等UNIX系統的默认FS；
+类似于 ext3 在 GNU/Linux 体系中的地位;
+Solaris 中的UFS来自 SunOS,而SunOS 中的UFS来自 BSD;
+</p>
+<p>
+不久前，UFS还是Solaris 中唯一的FS，不同于HP, IBM, SGI, 以及 DEC；
+SUN直到90年代也没有自主发展下一代的FS；
+原因有两:
+</p>
+ <ol>
+ <li>多数情况下开发者需要第三方代码来支持新FS，而这需要许可
+ </li>
+ <li>多数可以交易来的FS都是 Veritas 许可的(嘛意思?)
+ </li>
+ </ol>
+
+<p>
+Solaris10 只能从UFS启动,未来将允许从ZFS启动;在OpenSolaris 已经可以了;
+但是当前,所有Solaris 还是得至少有一个UFS分区;
+</p>
+<p>
+UFS虽然是个技术,但是贵在稳定和足够快;
+而且Sun 在其最后基础上进行了多方的优化；
+从Solaris 7 开始支持日志，进入本世纪，从Solaris 9 开始成为了默认特性；
+原先卷級日志是种效率不好的模型,但是有趣的是FreeBSD又重新加入了这种特性.
+</p>
+<p>
+UFS已经加入了对RAID支持良好的Solaris卷管理.
+</p>
+<p>
+2008UFSd准备进行什么修订?
+除作启动之外,UFS足够好用了,将来可由ZFS替代,
+当然看,UFS 对于数据库是个好选择(有普遍的基于文件系统权限控制的DB);
+同时对于保守的有固定工作且不想花时间太多时间配置的SA也是个好选择;
+</p>
+<a id="toc3R0VYREVMU" name="toc3R0VYREVMU"></a>
+<h2><A href='#toptopNDJMSVBaR'> 1.2. ZFS </A></h2>
+<p>
+对ZFS 已经有N多报道了,同时也收到了从Linux 阵营习惯性的嘲笑.
+</p>
+<p>
+ZFS 不是魔法,但是足够COOL 了.
+我喜欢将 UFS/ext3 视作首代UNIX文件系统,
+而 VxFS和XFS 视作二代FS,
+那未 ZFS 就是第一个三代UNIX FS!
+</p>
+<p>
+ZFS已不仅仅是个文件系统了.
+实际算是混合文件系统+卷管理器.
+以上功能的集成赋予了ZFS极大的灵活性.
+同时也是著名的"rampant layering violation"来源.
+不过千万记住,这只是开发特性.我从来没有在打开文件时见过"layering violation"
+</p>
+<p>
+ZFS的混合意味着你可以管理不同传统方案中的存储.
+你能将文件系统映射到分区,同时可以将另一个映射成逻辑巻,每个逻辑巻又涉及一个或是多个硬盘.
+在ZFS 中所有硬盘分配在一个存储池中.
+每个ZFS文件系统从池中使用所有硬盘,且文件系统不分卷,可以使用全部空间.
+这样没有重定分区大小的烦恼，一切是自动调整的，
+不断增长/收缩的文件系统不是靠谱的管理方式。
+</p>
+<p>
+ZFS同时在文件系统级别提供了可靠性检验.
+所有数据读/写都可以使用认证(提供了最严厉的SHA256),
+失败时双备份是支持的(元数据是在单一硬盘,而数据是经典的RAID结构),
+</p>
+<p>
+ZFS provides the most robust error checking of any filesystem available. All data and metadata is checksummed (SHA256 is available for the paranoid), and the checksum is validated on every read and write. If it fails and a second copy is available (metadata blocks are replicated even on single disk pools, and data is typically replicated by RAID), the second block is fetched and the corrupted block is replaced. This protects against not just bad disks, but bad controllers and fibre paths. On-disk changes are committed transactionally, so although traditional journaling is not used, on-disk state is always valid. There is no ZFS fsck program. ZFS pools may be scrubbed for errors (logical and checksum) without unmounting them.
+</p>
+<p>
+The copy-on-write nature of ZFS provides for nearly free snapshot and clone functionality. Snapshotting a filesystem creates a point in time image of that filesystem, mounted on a dot directory in the filesystem's root. Any number of different snapshots may be mounted, and no separate logical volume is needed, as would be for LVM style snapshots. Unless disk space becomes tight, there is no reason not to keep your snapshots forever. A clone is essentially a writable snapshot and may be mounted anywhere. Thus, multiple filesystems may be created based on the same dataset and may then diverge from the base. This is useful for creating a dozen virtual machines in a second or two from an image. Each new VM will take up no space at all until it is changed.
+</p>
+<p>
+These are just a few interesting features of ZFS. ZFS is not a perfect replacement for traditional filesystems yet - it lacks per-user quota support and performs differently than the usual UFS profile. But for typical applications, I think it is now the best option. Its administrative features and self-healing capability (especially when its built in RAID is used) are hard to beat. 
+</p>
+<a id="toc4R0VYREdMU" name="toc4R0VYREdMU"></a>
+<h2><A href='#toptopNDJMSVBaR'> 1.3. SAM and QFS </A></h2>
+<p>
+SAM and QFS are different things but are closely coupled. QFS is Sun's cluster filesystem, meaning that the same filesystem may be simultaneously mounted by multiple systems. SAM is a hierarchical storage manager; it allows a set of disks to be used as a cache for a tape library. SAM and QFS are designed to work together, but each may be used separately.
+</p>
+<p>
+QFS has some interesting features. A QFS filesystem may span multiple disks with no extra LVM needed to do striping or concatenation. When multiple disks are used, data may be striped or round-robined. Round-robin allocation means that each file is written to one or two disks in the set. This is useful since, unlike striping, participation by all disks is not needed to fetch a file - each disk may seek totally independently. QFS also allows metadata to be separated from data. In this way, a few disks may serve the random metadata workload while the rest serve a sequential data workload. Finally, as mentioned before, QFS is an asymmetric cluster filesystem.
+</p>
+<p>
+QFS cannot manage its own RAID, besides striping. For this, you need a hardware controller, a traditional volume manager, or a raw ZFS volume.
+</p>
+<p>
+SAM makes a much larger backing store (typically a tape library) look like a regular UNIX filesystem. This is accomplished by storing metadata and often-referenced data on disk, and migrating infrequently used data in and out of the disk cache as needed. SAM can be configured so that all data is staged out to tape, so that if the disk cache fails, the tapes may be used like a backup. Files staged off of the disk cache are stored in tar-like archives, so that potentially random access of small files can become sequential. This can make further backups much faster.
+</p>
+<p>
+QFS may be used as a local or cluster filesystem for large-file intensive workloads like Oracle. SAM and QFS are often used for huge data sets such as those encountered in supercomputing. SAM and QFS are optional products and are not cheap, but they have recently been released into OpenSolaris. 
+</p>
+<a id="toc5R0VYRElMU" name="toc5R0VYRElMU"></a>
+<h2><A href='#toptopNDJMSVBaR'> 1.4. VxFS </A></h2>
+<p>
+The Veritas filesystem and volume manager have their roots in a fault-tolerant proprietary minicomputer built by Veritas in the 1980s. They have been available for Solaris since at least 1993 and have been ported to AIX and Linux. They are integrated into HP-UX and SCO UNIX, and Veritas Volume Manager code has been used (and extensively modified) in Tru64 UNIX and even in Windows. Over the years, Veritas has made a lot of money licensing their tech, and not because it is cheap, but because it works.
+</p>
+<p>
+VxFS has never been part of Solaris but, when UFS was the only option, it was a popular addition. VxVM and VxFS are tightly integrated. Through vxassist, one may shrink and grow filesystems and their underlying volumes with minimal trouble. VxVM provides online RAID relayout. If you have a RAID5 and want to turn it into a RAID10, no problem, no downtime. If you need more space, just convert it back to a RAID5. VxVM has a reputation for being cryptic, and to some extent it is, but it's not so bad and the flexibility is impressive.
+</p>
+<p>
+VxFS is a fast, extent based, journaled, clusterable filesystem. In fact, it essentially introduced these features to the world, along with direct IO. Newer versions of VxFS and VxVM have the ability to do cross-platform disk sharing. If you ever wanted to unmount a volume from your AIX box and mount it on Linux or Solaris, now you can.
+</p>
+<p>
+VxFS and VxVM are still closed source. A version is available from Symantec that is free on small servers, with limitations, but I imagine that most users still pay. Pricing starts around $2500 and can be shocking for larger machines. VxFS and VxVM are solid choices for critical infrastructure workloads, including databases.
+</p>
+<a id="toc6R0lYQ0JaN" name="toc6R0lYQ0JaN"></a>
+<h1><A href='#toptopNDJMSVBaR'> 2. 结论 </A></h1>
+<p>
+Conclusion
+</p>
+<p>
+These are the four major choices in the Solaris on-disk filesystem world. Other filesystems, such as ext2, have some degree of support in OpenSolaris, and FUSE is also being worked on. But if you are deploying a Solaris server, you are going to be using one or more of these four. I hope that you enjoyed this overview, and if you have any corrections or tales of UNIX filesystem history, please let me know.
+</p>
+<p>
+About the Author
+</p>
+<p>
+John Finigan is a Computer Science graduate student and IT professional specializing in backup and recovery technology. He is especially interested in the history of enterprise computing and in Cold War technology. 
+</p>
+<a id="toc7R01YQ0FWQ" name="toc7R01YQ0FWQ"></a>
+<h1><A href='#toptopNDJMSVBaR'> 3. TODO </A></h1>
+<hr class="light" />
+<ul>
+<li>t2t渲染:: 2010-10-09 02:21:41
+</li>
+<li>动力源自::<b><a href="http://txt2tags.sf.net">txt2tags</a></b>
+</li>
+</ul>
+
+</div>
+
+<!-- xhtml code generated by txt2tags 2.4 (http://txt2tags.sf.net) -->
+<!-- cmdline: txt2tags ./oss/solaris-fs-choice-2008-04-23-21-43.t2t -->
+
+        </div>
+
+<br/>
+        <div class="meta"> &sect; 
+写于: Wed, 23 Apr 2008 | <a href="/pyblosxom/oss/solaris-fs-choice-2008-04-23-21-43.html">永久链接</a>;源文:
+<a href="/pyblosxom/oss/solaris-fs-choice-2008-04-23-21-43.rdf">rdf</a>
+,<a href="/pyblosxom/oss/solaris-fs-choice-2008-04-23-21-43.atom">rss</a>
+,<a href="/pybnodes/oss/solaris-fs-choice-2008-04-23-21-43.t2t">raw</a>
+| 分类: <a href="/pyblosxom/oss" title="path">/oss</a>
+&sect;
+<br/>
+<a href="mailto:zoomquiet+blog@gmail.com?subject={PyBlosxom}文件系统选择&body=abt. oss/solaris-fs-choice-2008-04-23-21-43">[MailMe]</a>
+<a href="javascript:window.print()">[Print]</a>
+ <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.5/cn/">
+<img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/2.5/cn/80x15.png" /></a>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="E73UR2XVSP7US">
+<input type="image" src="http://blog.zoomquiet.org/pybimage/icon/dollar_32.png" border="0" name="submit" alt="PayPal——最安全便捷的在线支付方式！">
+<img alt="" border="0" src="https://www.paypalobjects.com/zh_XC/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+<br/>
+<span class="cclicence">
+    &#26412;<span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/Text" rel="dc:type">&#20316;&#21697;</span>&#30001;<span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Zoom.Quiet</span>&#21019;&#20316;&#65292;&#37319;&#29992;<a rel="license" href="http://creativecommons.org/licenses/by-sa/2.5/cn/">&#30693;&#35782;&#20849;&#20139;&#32626;&#21517;-&#30456;&#21516;&#26041;&#24335;&#20849;&#20139; 2.5 &#20013;&#22269;&#22823;&#38470;&#35768;&#21487;&#21327;&#35758;</a>&#36827;&#34892;&#35768;&#21487;&#12290;
+&#22522;&#20110;<a xmlns:dc="http://purl.org/dc/elements/1.1/" href="/pyblosxom/oss/solaris-fs-choice-2008-04-23-21-43.html" rel="dc:source">zoomquiet.org</a>&#19978;&#30340;&#20316;&#21697;&#21019;&#20316;&#12290;
+</span>
+
+<br/>
+<!-- for Disqus actions -->
+<div id="disqus_thread"></div>
+<!-- for Disqus actions -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'zoomquietpyblosxomblogging'; // required: replace example with your forum shortname
+    // The following are highly recommended additional parameters. Remove the slashes in front to use.
+    var disqus_identifier = "oss/solaris-fs-choice-2008-04-23-21-43.html";
+    var disqus_url = "http://blog.zoomquiet.org/pyblosxom/oss/solaris-fs-choice-2008-04-23-21-43.html";
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<!--<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+<center id="pyentrynavi">
+    
+</center>
+-->
+    </div> <!--class="meta"-->
+
+    </div> <!-- class="text"-->
+
+</div> <!-- id="page-content"-->
+</div> <!-- class="post"-->
+<hr/> 
+
+</div><!-- id="content" class="g33"-->
+</div><!-- id="main" class="g25"-->
+</td><!-- id="main" -->
+</tr>
+<tr><td><!-- id="footer" -->
+
+<div id="funcbarnner">
+
+<!-- foot function barnners -->
+    <table class="funcbarnner" align="CENTER" border="0">
+    <tr><td>
+        <!-- LEFT function barnners -->
+        <div id="footeractions" class="sidebar">
+
+          <!-- used in the search text box -->
+          <script type="text/javascript">
+          function set_if(id, if_value, set_value) {
+            field = document.getElementById(id);
+            if (field.value == if_value)
+              field.value = set_value;
+          }
+          </script>
+        <h3>Search</h3>
+        <form class="form" method="get" action="http://www.google.com/search"
+          onsubmit="new site_search('zoomquiet.org', q.value); return false;">
+          <input type="hidden" name="sitesearch" value="zoomquiet.org" />
+          <input type="text" size="18" name="q" id="query" value="Search" 
+                onfocus="set_if('query', 'Search', '')"
+                onblur="set_if('query', '', 'Search') " />
+        </form>
+
+        <script type="text/javascript"
+           src="http://www.google.com.hk/uds/api?file=uds.js&v=1.0&key=ABQIAAAAlv7iO6iSrWdXLWy2P0ESwxQsUXuTv2eYBKPcreHKOEV8Fxl8CRT7Gxa-7r7kr05t4FDbQimxwYwf_w">
+        </script>
+        <script type="text/javascript" src="/pybshare/ajax_search.js"></script>
+
+        <h3>abt.</h3>
+        <ul id="Blogroll">
+
+        <li>reading.
+            <ul id="BlogrollSubTopic">
+                <li><a href="http://techparty.org/">珠三角技术沙龙</a>
+                <br/><a href="http://timyang.net/">Tim</a>
+                <br/><a href="http://www.czug.org/blog/panjy/">潘俊勇</a>
+                <br/><a href="http://blog.laiyonghao.com/">赖勇浩</a>
+                <br/><a href="http://march-liu.blogspot.com/">刘鑫</a>
+                <br/><a href="http://www.jeffkit.info/">Jeff</a>
+                <br/><a href="http://blog.linluxiang.info/">林路翔</a>
+                </li>
+                <li><a href="http://blog.gasolin.idv.tw/">INET6</a>
+                <br/><a href="http://www.feime.net/">Albertlee</a>
+                </li>
+                <li><a href="http://anzhu.net/feed/">安猪</a>
+                <br/><a href="http://tonyyet.com/">Tony yet</a>
+                </li>
+
+            </ul><!--id="BlogrollSubTopic"-->
+            </li>
+        <li>sys.
+            <ul id="BlogrollSubTopic">
+                <li><b><a href="/pyblosxom/recent.html">recents</a></b></li>
+                <li><a href="/pyblosxom/plugin_info/">plugins</a></li>
+
+            </ul><!--id="BlogrollSubTopic"-->
+            </li>
+
+            <li>livin
+                <ul id="BlogrollSubTopic">    
+                <li>
+        <a href="/pyblosxom/Zen/Chinese/918-2006-09-18-10-30.html"><img alt="i Chinese!" src="/pybimage/icon/china.png"/></a>
+        <br/>
+        <a href="http://www.google.com/talk/"><img alt="i in GTalking!" src="/pybimage/icon/gtalk.png"/></a>
+        <br/>
+        <a href="https://mail.google.com"><img alt="i livin GMail!" src="/pybimage/icon/gmail.png"/></a>
+        <br/>
+        <a href="http://zoomq.livejournal.com/"><img alt="i in livejournal.com" src="/pybimage/icon/lj.png"/></a>
+        <br/>
+                </li>
+
+                <li>
+        <a href="http://www.catb.org/hacker-emblem/"><img alt="happy hacking"  src="/pybimage/icon/hacker.png"/></a>
+        <br/>
+        <a href="http://webpages.charter.net/edreamleo/front.html"><img alt="Get LEO -- z Great Literate Programming Env."  src="/pybimage/icon/button-leo.png"/></a>
+        <br/>
+        <a href="http://www.spreadfirefox.com/?q=affiliates&id=0&t=85"><img alt="Get z Great FireFox!" src="/pybimage/icon/getfirefox.png"/></a>
+        <br/>
+        <a href="http://browsehappy.com/why/"><img alt="i hate IE!" src="/pybimage/icon/no_ie_80x15_2.png"/></a>
+        <br/>
+                </li>
+                <li>
+        <!--
+        <a href="http://www.7-zip.org/"><img alt="i enjoy 7-zip" src="/pybimage/icon/7zip.png"/></a>
+        <br/>
+        -->        
+        <a href="http://www.gimp.org/"><img alt="Get z Great GIMP!"  src="/pybimage/icon/getgimp.png"/></a>
+        <br/>
+        <a href="http://www.inkscape.org/"><img alt="Get z Great Inkscape!"  src="/pybimage/icon/getinkscape.png"/></a>
+        <br/>
+        <a href="http://www.openoffice.org/"><img alt="Get z Great OOo!"  src="/pybimage/icon/ooo.png"/></a>
+        <br/>
+                </li>
+                <li>
+        <a href="http://www.onlineghibli.com/"><img alt="i watch GHIBLI mov." src="/pybimage/icon/ghibli.png"/></a>
+        <br/>   
+        <a href="http://www.thematrix101.com/"><img alt="i watch The Matrix" src="/pybimage/icon/martix.png"/></a>
+        <!--<br/>   
+        <a href="http://www.fifthelement.com/"><img alt="i watch 第五元素" src="/pybimage/icon/fifthelemen.png"/></a>
+        -->
+        <br/>   
+        <a href="http://www.xfiles.com/"><img alt="i watch X-FILES" src="/pybimage/icon/xfiles.png"/></a>
+        <br/>   
+        <a href="http://www.startrek.com/startrek/view/series/ENT/"><img alt="i watch StarTrek" src="/pybimage/icon/tng.png"/></a>
+        <br/>   
+        <a href="http://www.syfy.com/battlestar/"><img alt="i watch Battlestar Galactica" src="/pybimage/icon/galactica.png"/></a>
+        <br/>   
+                </li>
+                <li>
+        <a href="http://www.douban.com/group/rock/"><img alt="i listen ROCK!" src="/pybimage/icon/rock.png"/></a>
+        <br/>
+                </li>
+                </ul><!--id="BlogrollSubTopic"-->  
+            </li><!-- livin -->
+            <li>powered
+                <ul id="BlogrollSubTopic">
+                <li>
+        <a href="http://txt2tags.sourceforge.net"><img  alt="Get z Great t2t!" src="/pybimage/icon/t2tpowered-white.png"/></a>
+        <br/>
+        <a href="http://wacom.com.cn"><img alt="i usage WACOM replace mouse" src="/pybimage/icon/wacom.png"/></a>
+        <br/>
+        <a href="http://www.w3.org/TR/xhtml1/"><img alt="i export XHTML" src="/pybimage/icon/xhtml.png"/></a>
+        <br/>
+        <a href="http://www.w3.org/Style/CSS/"><img alt="i usage CSS2" src="/pybimage/icon/css2.png"/></a>
+        <br/>
+                </li>
+                </ul><!--id="BlogrollSubTopic"-->
+            </li><!-- powered -->
+
+            <li>
+<script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js"></script>
+                </li>
+
+        </ul><!-- id="Blogroll" -->
+
+            </div><!-- id="footeractions" class="sidebar"-->
+    </td><td>
+        <!-- MID function barnners -->
+        <div id="zqcategories" class="sidebar">
+            <h3>Category</h3>
+            <!--
+            <a href="/pyblosxom/category-index.html">.:总索引:.</a>
+            -->
+            <ul class="categorygroup">
+<li><ul class="categorygroup">
+<li><a href="/pyblosxom/Zen/" class='rootcategory'>Zen/</a><sup>(12)</sup><a href="/pyblosxom/Zen//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/Zen/Chinese/">Chinese/</a><sup>(4)</sup><a href="/pyblosxom/Zen/Chinese//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/Zen/Google/">Google/</a><sup>(2)</sup><a href="/pyblosxom/Zen/Google//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/Zen/IOP/">IOP/</a><sup>(1)</sup><a href="/pyblosxom/Zen/IOP//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/Zen/haskell/">haskell/</a><sup>(1)</sup><a href="/pyblosxom/Zen/haskell//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/Zen/pythonic/">pythonic/</a><sup>(4)</sup><a href="/pyblosxom/Zen/pythonic//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+</ul></li>
+</ul><ul class="categorygroup">
+<li><ul class="categorygroup">
+<li><a href="/pyblosxom/oss/" class='rootcategory'>oss/</a><sup>(13)</sup><a href="/pyblosxom/oss//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/oss/FreeBSD/">FreeBSD/</a><sup>(1)</sup><a href="/pyblosxom/oss/FreeBSD//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/oss/Mozilla/">Mozilla/</a><sup>(2)</sup><a href="/pyblosxom/oss/Mozilla//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><ul class="categorygroup">
+<li><a href="/pyblosxom/oss/Mozilla/FireFox/">FireFox/</a><sup>(2)</sup><a href="/pyblosxom/oss/Mozilla/FireFox//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+</ul></li>
+<li><a href="/pyblosxom/oss/Ubuntu/">Ubuntu/</a><sup>(5)</sup><a href="/pyblosxom/oss/Ubuntu//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+</ul></li>
+</ul><ul class="categorygroup">
+<li><ul class="categorygroup">
+<li><a href="/pyblosxom/opening/" class='rootcategory'>opening/</a><sup>(1)</sup><a href="/pyblosxom/opening//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/opening/OpenBookProj/">OpenBookProj/</a><sup>(1)</sup><a href="/pyblosxom/opening/OpenBookProj//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+</ul></li>
+</ul><ul class="categorygroup">
+<li><ul class="categorygroup">
+<li><a href="/pyblosxom/mind/" class='rootcategory'>mind/</a><sup>(2)</sup><a href="/pyblosxom/mind//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+</ul></li>
+</ul><ul class="categorygroup">
+<li><ul class="categorygroup">
+<li><a href="/pyblosxom/Quiet/" class='rootcategory'>Quiet/</a><sup>(10)</sup><a href="/pyblosxom/Quiet//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/Quiet/SiFi/">SiFi/</a><sup>(1)</sup><a href="/pyblosxom/Quiet/SiFi//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/Quiet/living/">living/</a><sup>(4)</sup><a href="/pyblosxom/Quiet/living//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/Quiet/nomeans/">nomeans/</a><sup>(5)</sup><a href="/pyblosxom/Quiet/nomeans//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+</ul></li>
+</ul><ul class="categorygroup">
+<li><ul class="categorygroup">
+<li><a href="/pyblosxom/utility/" class='rootcategory'>utility/</a><sup>(16)</sup><a href="/pyblosxom/utility//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/utility/Subversion/">Subversion/</a><sup>(4)</sup><a href="/pyblosxom/utility/Subversion//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><ul class="categorygroup">
+<li><a href="/pyblosxom/utility/Subversion/hooks/">hooks/</a><sup>(1)</sup><a href="/pyblosxom/utility/Subversion/hooks//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+</ul></li>
+<li><a href="/pyblosxom/utility/py4str/">py4str/</a><sup>(2)</sup><a href="/pyblosxom/utility/py4str//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><ul class="categorygroup">
+<li><a href="/pyblosxom/utility/py4str/StructuredText/">StructuredText/</a><sup>(2)</sup><a href="/pyblosxom/utility/py4str/StructuredText//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+</ul></li>
+<li><a href="/pyblosxom/utility/py4sys/">py4sys/</a><sup>(2)</sup><a href="/pyblosxom/utility/py4sys//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/utility/py4web/">py4web/</a><sup>(4)</sup><a href="/pyblosxom/utility/py4web//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><ul class="categorygroup">
+<li><a href="/pyblosxom/utility/py4web/Django/">Django/</a><sup>(1)</sup><a href="/pyblosxom/utility/py4web/Django//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/utility/py4web/MoinMoin/">MoinMoin/</a><sup>(2)</sup><a href="/pyblosxom/utility/py4web/MoinMoin//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/utility/py4web/Quixote/">Quixote/</a><sup>(1)</sup><a href="/pyblosxom/utility/py4web/Quixote//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+</ul></li>
+<li><a href="/pyblosxom/utility/py4xml/">py4xml/</a><sup>(1)</sup><a href="/pyblosxom/utility/py4xml//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/utility/py4zh/">py4zh/</a><sup>(2)</sup><a href="/pyblosxom/utility/py4zh//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/utility/zqlib/">zqlib/</a><sup>(1)</sup><a href="/pyblosxom/utility/zqlib//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+</ul></li>
+</ul><ul class="categorygroup">
+<li><ul class="categorygroup">
+<li><a href="/pyblosxom/internet/" class='rootcategory'>internet/</a><sup>(7)</sup><a href="/pyblosxom/internet//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/internet/Folksonomy/">Folksonomy/</a><sup>(1)</sup><a href="/pyblosxom/internet/Folksonomy//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+</ul></li>
+</ul><ul class="categorygroup">
+<li><ul class="categorygroup">
+<li><a href="/pyblosxom/easy/" class='rootcategory'>easy/</a><sup>(3)</sup><a href="/pyblosxom/easy//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/easy/movie/">movie/</a><sup>(1)</sup><a href="/pyblosxom/easy/movie//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/easy/music/">music/</a><sup>(2)</sup><a href="/pyblosxom/easy/music//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+</ul></li>
+</ul><ul class="categorygroup">
+<li><ul class="categorygroup">
+<li><a href="/pyblosxom/techic/" class='rootcategory'>techic/</a><sup>(27)</sup><a href="/pyblosxom/techic//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/techic/Emacs/">Emacs/</a><sup>(1)</sup><a href="/pyblosxom/techic/Emacs//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/techic/Mac/">Mac/</a><sup>(1)</sup><a href="/pyblosxom/techic/Mac//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/techic/PyBlosxom/">PyBlosxom/</a><sup>(24)</sup><a href="/pyblosxom/techic/PyBlosxom//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><ul class="categorygroup">
+<li><a href="/pyblosxom/techic/PyBlosxom/blosxom/">blosxom/</a><sup>(1)</sup><a href="/pyblosxom/techic/PyBlosxom/blosxom//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+<li><a href="/pyblosxom/techic/PyBlosxom/plugins/">plugins/</a><sup>(10)</sup><a href="/pyblosxom/techic/PyBlosxom/plugins//index.atom"><img src="/pybstyle/rss12x12.png"/></a></li>
+</ul></li></ul></li>
+</ul>
+
+        </div>
+    </td><td>
+        <!-- RIGHT function barnners -->
+        <div id="montharchives" class="sidebar">
+        <h3>Archives</h3>
+        <ul class="montharchives">
+            <li class='yearchives'><a href='/pyblosxom/2012'>2012</a><sup>(4)</sup></li>
+<li><a href="/pyblosxom/2012/06">12.06</a><sup>(1)</sup><li>
+<li><a href="/pyblosxom/2012/04">12.04</a><sup>(1)</sup><li>
+<li><a href="/pyblosxom/2012/03">12.03</a><sup>(1)</sup><li>
+<li><a href="/pyblosxom/2012/02">12.02</a><sup>(1)</sup><li>
+<li class='yearchives'><a href='/pyblosxom/2011'>2011</a><sup>(9)</sup></li>
+<li><a href="/pyblosxom/2011/10">11.10</a><sup>(2)</sup><li>
+<li><a href="/pyblosxom/2011/09">11.09</a><sup>(3)</sup><li>
+<li><a href="/pyblosxom/2011/08">11.08</a><sup>(4)</sup><li>
+<li class='yearchives'><a href='/pyblosxom/2010'>2010</a><sup>(12)</sup></li>
+<li><a href="/pyblosxom/2010/10">10.10</a><sup>(1)</sup><li>
+<li><a href="/pyblosxom/2010/09">10.09</a><sup>(1)</sup><li>
+<li><a href="/pyblosxom/2010/08">10.08</a><sup>(1)</sup><li>
+<li><a href="/pyblosxom/2010/07">10.07</a><sup>(3)</sup><li>
+<li><a href="/pyblosxom/2010/05">10.05</a><sup>(4)</sup><li>
+<li><a href="/pyblosxom/2010/04">10.04</a><sup>(1)</sup><li>
+<li><a href="/pyblosxom/2010/01">10.01</a><sup>(1)</sup><li>
+<li class='yearchives'><a href='/pyblosxom/2009'>2009</a><sup>(1)</sup></li>
+<li><a href="/pyblosxom/2009/06">09.06</a><sup>(1)</sup><li>
+<li class='yearchives'><a href='/pyblosxom/2008'>2008</a><sup>(5)</sup></li>
+<li><a href="/pyblosxom/2008/05">08.05</a><sup>(1)</sup><li>
+<li><a href="/pyblosxom/2008/04">08.04</a><sup>(4)</sup><li>
+<li class='yearchives'><a href='/pyblosxom/2007'>2007</a><sup>(7)</sup></li>
+<li><a href="/pyblosxom/2007/10">07.10</a><sup>(2)</sup><li>
+<li><a href="/pyblosxom/2007/06">07.06</a><sup>(1)</sup><li>
+<li><a href="/pyblosxom/2007/05">07.05</a><sup>(2)</sup><li>
+<li><a href="/pyblosxom/2007/04">07.04</a><sup>(1)</sup><li>
+<li><a href="/pyblosxom/2007/03">07.03</a><sup>(1)</sup><li>
+<li class='yearchives'><a href='/pyblosxom/2006'>2006</a><sup>(50)</sup></li>
+<li><a href="/pyblosxom/2006/11">06.11</a><sup>(1)</sup><li>
+<li><a href="/pyblosxom/2006/09">06.09</a><sup>(2)</sup><li>
+<li><a href="/pyblosxom/2006/06">06.06</a><sup>(3)</sup><li>
+<li><a href="/pyblosxom/2006/05">06.05</a><sup>(10)</sup><li>
+<li><a href="/pyblosxom/2006/04">06.04</a><sup>(2)</sup><li>
+<li><a href="/pyblosxom/2006/03">06.03</a><sup>(5)</sup><li>
+<li><a href="/pyblosxom/2006/02">06.02</a><sup>(4)</sup><li>
+<li><a href="/pyblosxom/2006/01">06.01</a><sup>(23)</sup><li>
+<li class='yearchives'><a href='/pyblosxom/2005'>2005</a><sup>(3)</sup></li>
+<li><a href="/pyblosxom/2005/06">05.06</a><sup>(1)</sup><li>
+<li><a href="/pyblosxom/2005/04">05.04</a><sup>(2)</sup><li>
+<li class='yearchives'><a href='/pyblosxom/2004'>2004</a><sup>(1)</sup></li>
+<li><a href="/pyblosxom/2004/04">04.04</a><sup>(1)</sup><li>
+        </ul>
+        </div>
+    </td></tr>
+<!--<div id="cloudtags" class="sidebar">
+<h3>tags Cloud</h3>
+
+-->
+    </table> <!-- class="funcbarnner" -->
+<!-- END foot function barnners -->
+</div><!-- id="funcbarnner"-->
+
+<div id="footer" class="g33">
+&sect;
+<a href="#">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></a> powered by 
+<a href="http://pyblosxom.bluesock.org">
+    <img src="http://pyblosxom.bluesock.org/images/pb_pyblosxom.gif" alt="Made with PyBlosxom" border="0" /></a>
+v1.5-rc3
+|
+theme design base <a href="http://www.bestwpthemes.com/doc/">"Doc"</a>
+&sect;
+<br/>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/2.5/cn/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/2.5/cn/88x31.png" /></a>
+<br />&#26412;<span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/Text" rel="dc:type">&#20316;&#21697;</span>&#30001;<span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Zoom.Quiet</span>&#21019;&#20316;&#65292;&#37319;&#29992;<a rel="license" href="http://creativecommons.org/licenses/by-sa/2.5/cn/">&#30693;&#35782;&#20849;&#20139;&#32626;&#21517;-&#30456;&#21516;&#26041;&#24335;&#20849;&#20139; 2.5 &#20013;&#22269;&#22823;&#38470;&#35768;&#21487;&#21327;&#35758;</a>&#36827;&#34892;&#35768;&#21487;&#12290;
+<!--<br />-->&#22522;&#20110;<a xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://blog.zoomquiet.org" rel="dc:source">blog.zoomquiet.org</a>&#19978;&#30340;&#20316;&#21697;&#21019;&#20316;&#12290;
+
+</div> <!-- id="footer" -->
+
+    <div class="clear"></div> 
+
+</td><!-- id="footer" -->
+</tr>
+</table><!-- main page structure-->
+
+</div> <!--end for class="container"-->
+</body>
+
+<!-- for syntaxhighlighter-->
+<link rel="stylesheet" type="text/css" href="/pybshare/syntaxhighlighter_3.0.83/styles/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="/pybshare/syntaxhighlighter_3.0.83/styles/shThemeRDark.css"/>
+<!-- for syntaxhighlighter required JS files -->
+<script type="text/javascript" src="/pybshare/syntaxhighlighter_3.0.83/scripts/shCore.js"></script>
+<script type="text/javascript" src="/pybshare/syntaxhighlighter_3.0.83/scripts/shAutoloader.js"></script>
+<!-- Finally, to actually run the highlighter, you need to include this JS on your page -->
+<script type="text/javascript">
+function path(){
+    var args = arguments;
+    var result = [];
+    for(var i = 0; i < args.length; i++){
+      result.push(args[i].replace('@', '/pybshare/syntaxhighlighter_3.0.83/scripts/'));
+      };
+    return result;
+    };
+SyntaxHighlighter.autoloader.apply(null, path(
+    'applescript            @shBrushAppleScript.js',
+    'bash shell             @shBrushBash.js',
+    'css                    @shBrushCss.js',
+    'diff patch pas         @shBrushDiff.js',
+    'erl erlang             @shBrushErlang.js',
+    'js jscript javascript  @shBrushJScript.js',
+    'text plain             @shBrushPlain.js',
+    'py python              @shBrushPython.js',
+    'rb ruby                @shBrushRuby.js',
+    'sass scss              @shBrushSass.js',
+    'sql                    @shBrushSql.js',
+    'xml xhtml xslt html    @shBrushXml.js'
+    ));
+
+SyntaxHighlighter.all()
+</script>
+
+<!-- Include the jQuery usage css 
+href="http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css"/>
+<link rel="stylesheet" type="text/css"  media="print" href="/pybstyle/jQrssPopupBubble.css" />
+-->
+<!-- Finally, to loading jQuery Ajax Lib. -->
+<script type="text/javascript" src="/pybshare/jquery-1.6.2.min.js"></script>
+<script src="/pybshare/jquery-pybactions.js" type="text/javascript"></script>
+
+
+</html>

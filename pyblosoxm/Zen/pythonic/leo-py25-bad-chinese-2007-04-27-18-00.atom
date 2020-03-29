@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/Zen/pythonic/leo-py25-bad-chinese-2007-04-27-18-00.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/Zen/pythonic/leo-py25-bad-chinese-2007-04-27-18-00.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/Zen/pythonic/leo-py25-bad-chinese-2007-04-27-18-00.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2007-04-27T10:00:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">leo在Py2.5中的失败尝试</title>
+<category term="" />
+<id>/pyblosxom/2007/04/27/leo-py25-bad-chinese-2007-04-27-18-00</id>
+<updated>2007-04-27T10:00:00Z</updated>
+<published>2007-04-27T10:00:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/Zen/pythonic/leo-py25-bad-chinese-2007-04-27-18-00.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopTlJTVzdaT&#x27; id=&#x27;toptopTlJTVzdaT&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;leo在Py2.5中的失败尝试&lt;&#x2F;h1&gt;
+&lt;h2&gt;-- 中文应用问题是国人永远的心痛哪&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0IyR&quot;&gt;背景&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc2R0VYRENMU&quot;&gt;1.1. 思路&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc3R0VYREVMU&quot;&gt;1.2. 安装步骤&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc4R0VYREdMU&quot;&gt;1.3. 失败的结果&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0IyR&quot; name=&quot;toc1R0VYQ0IyR&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTlJTVzdaT&#x27;&gt; 1. 背景 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;折腾了两天将Python2.5 编译了5回也没有搞定,询问大家是否有经验了!
+&lt;&#x2F;li&gt;
+&lt;li&gt;一直知道 LEO 在Linux 下面的中文支持问题是Tk 造的孽
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;linux.ccidnet.com&#x2F;art&#x2F;738&#x2F;20060430&#x2F;545737_1.html&quot;&gt;http:&#x2F;&#x2F;linux.ccidnet.com&#x2F;art&#x2F;738&#x2F;20060430&#x2F;545737_1.html&lt;&#x2F;a&gt;
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;ul&gt;
+&lt;li&gt;但是这两日怎么搞都不成！
+&lt;&#x2F;li&gt;
+&lt;li&gt;详细记录在&lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;ZoomQuiet&#x2F;2007-04-27&quot;&gt;啄木鸟维基-ZoomQuiet&#x2F;2007-04-27&lt;&#x2F;a&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;b&gt;请大家给点建议吧&lt;&#x2F;b&gt;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;sourceforge.net&#x2F;forum&#x2F;forum.php?thread_id=1724164&amp;amp;forum_id=10227&quot;&gt;leo sf.net 讨论&lt;&#x2F;a&gt;
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc2R0VYRENMU&quot; name=&quot;toc2R0VYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTlJTVzdaT&#x27;&gt; 1.1. 思路 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+我的步骤和思路:
+&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;不能影响现存的Py2.4 环境
+&lt;&#x2F;li&gt;
+&lt;li&gt;使用Py2.5 进行尝试
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;因为: &lt;&#x2F;dt&gt;&lt;dd&gt;
+  LEO 仅仅需要Python with Tk+Pwm
+  &lt;ul&gt;
+  &lt;li&gt;(不过要求Tcl 不能使用线程支持参数)
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;所以:&lt;&#x2F;dt&gt;&lt;dd&gt;
+  只要安装好Py2.5 就可以:
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc3R0VYREVMU&quot; name=&quot;toc3R0VYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTlJTVzdaT&#x27;&gt; 1.2. 安装步骤 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;安装最新 Tcl&#x2F;Tk 
+&lt;pre&gt;
+download cvs snapshots from ftp:&#x2F;&#x2F;ftp.tcl.tk&#x2F;pub&#x2F;tcl&#x2F;nightly-cvs&#x2F;
+tcl&#x2F;unix$ .&#x2F;configure --enable-shared --enable-gcc
+$ make clean &amp;amp;&amp;amp; make 
+$ sudo make install
+...
+&#x2F;tk&#x2F;unix$ .&#x2F;configure --enable-xft
+$ make clean &amp;amp;&amp;amp; make 
+$ sudo make install
+...
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;安装Python2.5 并绑定Tk8.5&lt;&#x2F;dt&gt;&lt;dd&gt;
+  根据&lt;a href=&quot;http:&#x2F;&#x2F;blog.csdn.net&#x2F;fyzhao&#x2F;archive&#x2F;2006&#x2F;12&#x2F;27&#x2F;1464614.aspx&quot;&gt;前人Py2.5安装经验&lt;&#x2F;a&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;pre&gt;
+$ sudo cp path&#x2F;to&#x2F;libtcl8.5.so &#x2F;usr&#x2F;lib&#x2F;
+$ sudo cp path&#x2F;to&#x2F;libtk8.5.so &#x2F;usr&#x2F;lib&#x2F;
+...
+&#x2F;python2.5-2.5.1.orig$ .&#x2F;configure --enable-unicode=ucs4 \
+  --with-tk   --with-tk-library=&#x2F;usr&#x2F;local&#x2F;lib --with-tk-include=&#x2F;usr&#x2F;local&#x2F;include&#x2F;tcl8.5 \
+  --with-tcl-library=&#x2F;usr&#x2F;local&#x2F;lib --with-tcl-include=&#x2F;usr&#x2F;local&#x2F;include&#x2F;tcl8.5 
+$  make clean &amp;amp;&amp;amp; make
+$  make test
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;安装 LEO&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;pre&gt;
+cp -r Pmw &#x2F;usr&#x2F;local&#x2F;lib&#x2F;python2.5&#x2F;site-packages&#x2F;
+cp -r leo-4-4-3-alpha-2 &#x2F;opt&#x2F;bin&#x2F;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc4R0VYREdMU&quot; name=&quot;toc4R0VYREdMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopTlJTVzdaT&#x27;&gt; 1.3. 失败的结果 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;OK,结果 在 &lt;code&gt;&#x2F;opt&#x2F;bin&#x2F;leo-4-4-3-alpha-2&#x2F;src&lt;&#x2F;code&gt; 中直接调用leo.py 可以运行;
+&lt;&#x2F;li&gt;
+&lt;li&gt;但是LEO 不能正當影响 Ctrl+c|v|s 等等各种操作;直接就死了...
+&lt;pre&gt;
+&#x2F;opt&#x2F;bin&#x2F;leo-4.4.3a2&#x2F;src$ python2.5 leo.py
+reading settings in &#x2F;opt&#x2F;bin&#x2F;leo-4.4.3a2&#x2F;config&#x2F;leoSettings.leo
+reading &#x2F;home&#x2F;zoomq&#x2F;.leoRecentFiles.txt
+rst3 plugin: SilverCity not loaded
+rst3 plugin not loaded: can not load docutils
+Traceback (most recent call last):
+
+  File &#x27;&#x27;&#x2F;opt&#x2F;bin&#x2F;leo-4.4.3a2&#x2F;src&#x2F;leoEditCommands.py&#x27;&#x27;, line 7903, in getAspellWithCtypes
+    self.aspell = aspell = ctypes.CDLL(g.os_path_join(self.aspell_bin_dir, &#x27;&#x27;aspell-15.dll&#x27;&#x27;))
+
+  File &#x27;&#x27;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python2.5&#x2F;ctypes&#x2F;__init__.py&#x27;&#x27;, line 340, in __init__
+    self._handle = _dlopen(self._name, mode)
+
+OSError: &#x2F;opt&#x2F;bin&#x2F;leo-4.4.3a2&#x2F;src&#x2F;c:\aspell\bin&#x2F;aspell-15.dll: cannot open shared object file: No such file or directory
+
+Traceback (most recent call last):
+  File &#x27;&#x27;leo.py&#x27;&#x27;, line 353, in &amp;lt;module&amp;gt;
+    run()
+  File &#x27;&#x27;leo.py&#x27;&#x27;, line 138, in run
+    g.app.gui.runMainLoop()
+  File &#x27;&#x27;&#x2F;opt&#x2F;bin&#x2F;leo-4.4.3a2&#x2F;src&#x2F;leoTkinterGui.py&#x27;&#x27;, line 186, in runMainLoop
+    self.root.mainloop()
+  File &#x27;&#x27;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python2.5&#x2F;lib-tk&#x2F;Tkinter.py&#x27;&#x27;, line 1023, in mainloop
+    self.tk.mainloop(n)
+  File &#x27;&#x27;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python2.5&#x2F;site-packages&#x2F;Pmw&#x2F;Pmw_1_2&#x2F;lib&#x2F;PmwBase.py&#x27;&#x27;, line 1751, in __call__
+    _reporterror(self.func, args)
+  File &#x27;&#x27;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python2.5&#x2F;site-packages&#x2F;Pmw&#x2F;Pmw_1_2&#x2F;lib&#x2F;PmwBase.py&#x27;&#x27;, line 1777, in _reporterror
+    msg = exc_type + &#x27; Exception in Tk callback\n&#x27;
+TypeError: unsupported operand type(s) for +: &#x27;type&#x27; and &#x27;str&#x27;
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;b&gt;到底咋回事儿泥？！&lt;&#x2F;b&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;ul&gt;
+&lt;li&gt;t2t渲染:: 2010-10-09 02:21:36
+&lt;&#x2F;li&gt;
+&lt;li&gt;动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;Zen&#x2F;pythonic&#x2F;leo-py25-bad-chinese-2007-04-27-18-00.t2t --&gt;
+</content>
+</entry>
+</feed>

@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<!DOCTYPE content [ <!ENTITY nbsp " "> ]>
+<rdf:RDF xml:base="/pyblosxom/rdf"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<rdf:Description rdf:about="/pyblosxom">
+  <dc:title> Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup> </dc:title>
+  <dc:description> Zoom.Quiet's PyBlosxom blogging </dc:description>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+</rdf:Description>
+
+<rdf:Description rdf:about="/pyblosxom/Zen/pythonic/tryt2t">
+  <dc:title> tryt2t.py </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2006-01-21T15:23:00Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <pre class="brush: python">PREFORMATTER_ID = 'txt2tags'
+#tags Zen,pythonic
+FILE_EXT = 't2t'
+__version__ = '$Id: tryt2t.py,v 2872b22e2ace 2011/10/27 07:08:25 zoomquiet+hg $'
+__author__ = 'Zoom.Quiet <Zoom dot Quiet  at gmail.com>'
+#T2T = "/usr/local/bin/txt2tags"
+T2T = "t2t"
+
+
+def cb_entryparser(args):
+    args['t2t'] = parse
+    #args[FILE_EXT] = readfile
+    return args
+
+
+"""
+def parse(filename):
+    #html = publish_string(story, writer_name='html')
+    import os
+    act = T2T+" -t html -H --toc %s"%filename
+    html = act
+    html += os.popen(act).read().strip()
+    #return html[html.find('<body>') + 6:html.find('</body>')]
+    return html
+"""
+#def parse(filename, request):
+def parse(filename):
+    import os, sys
+    from StringIO import StringIO
+    # open own source
+    #config = request.getConfiguration()
+    act = T2T+" -t html -H --toc -o - %s"%filename
+    #source = open(filename).read()
+    #out = StringIO()
+    
+    #html = os.popen(act).read().strip()
+    print act
+    #print os.popen(act).read().strip()
+    # write colorized version to "python.html"
+    #Parser(source, out).format(None, None)
+    
+    #print out.getvalue()
+    """
+    entryData = {'body' : out.getvalue(),
+                 'title' : filename.replace(config['datadir'], '')}
+    return entryData
+    """
+
+
+parse("py-code-rule.t2t")
+</pre>
+  </content>
+
+  <rdf:Seq>
+
+  </rdf:Seq>
+</rdf:Description>
+</rdf:RDF>

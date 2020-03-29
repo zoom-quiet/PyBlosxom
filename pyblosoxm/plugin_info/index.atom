@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/plugin_info/index</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/plugin_info/index" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/plugin_info/index</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2013-12-13T06:42:28Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">category_static</title>
+<category term="path" />
+<id>/pyblosxom/2013/12/13/category_static</id>
+<updated>2013-12-13T06:42:28Z</updated>
+<published>2013-12-13T06:42:28Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/plugin_info/category_static.html" />
+<content type="html">&lt;pre&gt;AUTHOR: Zoom.Quiet &lt;zoomquiet+pyb at gmail dot com&gt;
+VERSION: 11.09.7
+URL: &lt;a href=&quot;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;techic&#x2F;PyBlosxom&#x2F;plugins&#x2F;category_static.html&quot;&gt;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;techic&#x2F;PyBlosxom&#x2F;plugins&#x2F;category_static.html&lt;&#x2F;a&gt;
+&lt;&#x2F;pre&gt;</content>
+</entry>
+
+<entry>
+<title type="html">hardcodedates</title>
+<category term="path" />
+<id>/pyblosxom/2013/12/13/hardcodedates</id>
+<updated>2013-12-13T06:42:28Z</updated>
+<published>2013-12-13T06:42:28Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/plugin_info/hardcodedates.html" />
+<content type="html">&lt;pre&gt;AUTHOR: Nathan Kent Bullock, Ryan Barrett
+VERSION: 1.4
+&lt;&#x2F;pre&gt;</content>
+</entry>
+
+<entry>
+<title type="html">index_static</title>
+<category term="path" />
+<id>/pyblosxom/2013/12/13/index_static</id>
+<updated>2013-12-13T06:42:28Z</updated>
+<published>2013-12-13T06:42:28Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/plugin_info/index_static.html" />
+<content type="html">&lt;pre&gt;AUTHOR: Ryan Barrett
+VERSION: 0.2
+URL: &lt;a href=&quot;http:&#x2F;&#x2F;snarfed.org&#x2F;space&#x2F;pyblosxom+index&quot;&gt;http:&#x2F;&#x2F;snarfed.org&#x2F;space&#x2F;pyblosxom+index&lt;&#x2F;a&gt;
+&lt;&#x2F;pre&gt;</content>
+</entry>
+
+<entry>
+<title type="html">plugininfo</title>
+<category term="path" />
+<id>/pyblosxom/2013/12/13/plugininfo</id>
+<updated>2013-12-13T06:42:28Z</updated>
+<published>2013-12-13T06:42:28Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/plugin_info/plugininfo.html" />
+<content type="html">&lt;pre&gt;AUTHOR: Will Guaraldi - willg at bluesock dot org
+VERSION: $Date: 2010&#x2F;10&#x2F;26 23:00:07 $
+URL: &lt;a href=&quot;http:&#x2F;&#x2F;www.bluesock.org&#x2F;~willg&#x2F;pyblosxom&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.bluesock.org&#x2F;~willg&#x2F;pyblosxom&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;pre&gt;</content>
+</entry>
+
+<entry>
+<title type="html">py2pre</title>
+<category term="path" />
+<id>/pyblosxom/2013/12/13/py2pre</id>
+<updated>2013-12-13T06:42:28Z</updated>
+<published>2013-12-13T06:42:28Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/plugin_info/py2pre.html" />
+<content type="html">&lt;pre&gt;AUTHOR: Zoom.Quiet &lt;zoomquiet+pyb at gmail dot com&gt;
+VERSION: v11.09.7
+URL: &lt;a href=&quot;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;techic&#x2F;PyBlosxom&#x2F;plugins&#x2F;py2pre.html&quot;&gt;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;techic&#x2F;PyBlosxom&#x2F;plugins&#x2F;py2pre.html&lt;&#x2F;a&gt;
+&lt;&#x2F;pre&gt;</content>
+</entry>
+
+<entry>
+<title type="html">pyfilenamemtime</title>
+<category term="path" />
+<id>/pyblosxom/2013/12/13/pyfilenamemtime</id>
+<updated>2013-12-13T06:42:28Z</updated>
+<published>2013-12-13T06:42:28Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/plugin_info/pyfilenamemtime.html" />
+<content type="html">&lt;pre&gt;AUTHOR: Tim Roberts http:&#x2F;&#x2F;www.probo.com&#x2F;timr&#x2F;blog&#x2F;
+VERSION: $Id: pyfilenamemtime.py,v d3884047bbb9 2010&#x2F;10&#x2F;26 23:00:07 zoomquiet+hg $
+&lt;&#x2F;pre&gt;</content>
+</entry>
+
+<entry>
+<title type="html">wbgrecent</title>
+<category term="path" />
+<id>/pyblosxom/2013/12/13/wbgrecent</id>
+<updated>2013-12-13T06:42:28Z</updated>
+<published>2013-12-13T06:42:28Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/plugin_info/wbgrecent.html" />
+<content type="html">&lt;pre&gt;AUTHOR: Will Guaraldi - willg at bluesock dot org
+VERSION: $Date: 2011&#x2F;09&#x2F;07 09:27:50 $
+URL: &lt;a href=&quot;http:&#x2F;&#x2F;www.bluesock.org&#x2F;~willg&#x2F;pyblosxom&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.bluesock.org&#x2F;~willg&#x2F;pyblosxom&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;pre&gt;</content>
+</entry>
+
+<entry>
+<title type="html">xhtml</title>
+<category term="path" />
+<id>/pyblosxom/2013/12/13/xhtml</id>
+<updated>2013-12-13T06:42:28Z</updated>
+<published>2013-12-13T06:42:28Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/plugin_info/xhtml.html" />
+<content type="html">&lt;pre&gt;AUTHOR: Zoom.Quiet &lt;Zoom.Quiet at gmail.com&gt;
+VERSION: v10.4.14
+URL: &lt;a href=&quot;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;techic&#x2F;PyBlosxom&#x2F;plugins&#x2F;xhtml.html&quot;&gt;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;techic&#x2F;PyBlosxom&#x2F;plugins&#x2F;xhtml.html&lt;&#x2F;a&gt;
+&lt;&#x2F;pre&gt;</content>
+</entry>
+
+<entry>
+<title type="html">zqarchives</title>
+<category term="path" />
+<id>/pyblosxom/2013/12/13/zqarchives</id>
+<updated>2013-12-13T06:42:28Z</updated>
+<published>2013-12-13T06:42:28Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/plugin_info/zqarchives.html" />
+<content type="html">&lt;pre&gt;AUTHOR: Wari Wahab - wari at wari dot per dot sg
+VERSION: $Id: zqarchives.py,v 7f6c62eaa2db 2011&#x2F;09&#x2F;07 08:52:46 zoomquiet+hg $
+URL: &lt;a href=&quot;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;techic&#x2F;PyBlosxom&#x2F;plugins&#x2F;zqarchives.html&quot;&gt;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;techic&#x2F;PyBlosxom&#x2F;plugins&#x2F;zqarchives.html&lt;&#x2F;a&gt;
+&lt;&#x2F;pre&gt;</content>
+</entry>
+
+<entry>
+<title type="html">zqcategories</title>
+<category term="path" />
+<id>/pyblosxom/2013/12/13/zqcategories</id>
+<updated>2013-12-13T06:42:28Z</updated>
+<published>2013-12-13T06:42:28Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/plugin_info/zqcategories.html" />
+<content type="html">&lt;pre&gt;AUTHOR: Will Guaraldi - willg at bluesock dot org
+VERSION: $Id: zqcategories.py,v 7f6c62eaa2db 2011&#x2F;09&#x2F;07 08:52:46 zoomquiet+hg $
+URL: &lt;a href=&quot;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;techic&#x2F;PyBlosxom&#x2F;plugins&#x2F;zqcategories.html&quot;&gt;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;techic&#x2F;PyBlosxom&#x2F;plugins&#x2F;zqcategories.html&lt;&#x2F;a&gt;
+&lt;&#x2F;pre&gt;</content>
+</entry>
+</feed>

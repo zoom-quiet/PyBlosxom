@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/2011/09/08/index.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/2011/09/08/index.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/2011/09/08/index.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2011-09-08T05:13:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">ScrapBook辅助工具之expidxlevels</title>
+<category term="/utility/py4xml" />
+<id>/pyblosxom/2011/09/08/scrapbook-expidxlevels-2011-09-08-13-13</id>
+<updated>2011-09-08T05:13:00Z</updated>
+<published>2011-09-08T05:13:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/utility/py4xml/scrapbook-expidxlevels-2011-09-08-13-13.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopS05SWEVZT&#x27; id=&#x27;toptopS05SWEVZT&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;ScrapBook辅助工具之expidxlevels&lt;&#x2F;h1&gt;
+&lt;h2&gt;~ 坑爹的RDF乱斗!&lt;&#x2F;h2&gt;
+&lt;h3&gt;t2t渲染:2011-09-08 04:54:24&lt;&#x2F;h3&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0JaR&quot;&gt;不折腾要死星人&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc2R0VYRENMU&quot;&gt;1.1. scraptools&lt;&#x2F;a&gt;
+      &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#toc3R0VYRENMU&quot;&gt;1.1.1. RDF&lt;&#x2F;a&gt;
+      &lt;&#x2F;li&gt;
+      &lt;li&gt;&lt;a href=&quot;#toc4R0VYRENMU&quot;&gt;1.1.2. yeild&lt;&#x2F;a&gt;
+      &lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc5R0VYREVMU&quot;&gt;1.2. TODO&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc6R0lYQ0JaV&quot;&gt;时间帐单&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0JaR&quot; name=&quot;toc1R0VYQ0JaR&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopS05SWEVZT&#x27;&gt; 1. 不折腾要死星人 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+嗯嗯嗯，从,,, 20041214101930 开始,坚持使用&lt;a href=&quot;http:&#x2F;&#x2F;amb.vis.ne.jp&#x2F;mozilla&#x2F;scrapbook&#x2F;&quot;&gt;SCRAPBOOK :: Firefox Extension&lt;&#x2F;a&gt; 进行离线网页的收集和整理了;
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;一直很爽,而且内置的导出功能,可以一键将本地收集的网页通过一个标准的框架页面,用树状索引进行发布;
+&lt;&#x2F;li&gt;
+&lt;li&gt;使用 rsync 等等文件同步小工具,就可以发布一个静态的表述自个儿关注领域技术的纯资料网站了!
+&lt;&#x2F;li&gt;
+&lt;li&gt;其实一直以来就发布有这类两个网站:
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;floss.zoomquiet.org&quot;&gt;http:&#x2F;&#x2F;floss.zoomquiet.org&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;skm.zoomquiet.org&quot;&gt;http:&#x2F;&#x2F;skm.zoomquiet.org&lt;&#x2F;a&gt;
+    &lt;p&gt;&lt;&#x2F;p&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;好处是那些优秀的文章,即使原文网站死了,依然在俺这儿原样可查,
+&lt;&#x2F;li&gt;
+&lt;li&gt;问题是:
+    &lt;ul&gt;
+    &lt;li&gt;&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;2011&#x2F;zq_2011-09-08-154005_577x344_scrot.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;导出的那个索引树,随着时间的积累,已经大到无法忍受了!
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;比如说, floss.zoomquiet.org 的树,包含 2万多节点,自身体积已经超过5M
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;有网友吼,用 Chrome 都无法打开!
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;  所以:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;得想招精简如此多节点的索引树了,,,
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;为了时不时，在俺这儿打捞历史文章的亲们...
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc2R0VYRENMU&quot; name=&quot;toc2R0VYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopS05SWEVZT&#x27;&gt; 1.1. scraptools &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+所以,有了 &lt;a href=&quot;https:&#x2F;&#x2F;bitbucket.org&#x2F;ZoomQuiet&#x2F;scraptools&#x2F;wiki&#x2F;Home&quot;&gt;ZoomQuiet &#x2F; scraptools — Bitbucket&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+其中的 expidxlevels.py 就是专门进行自动索引化简的...
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc3R0VYRENMU&quot; name=&quot;toc3R0VYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h3&gt;&lt;A href=&#x27;#toptopS05SWEVZT&#x27;&gt; 1.1.1. RDF &lt;&#x2F;A&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;
+以前在相关讲演中吼过,选择 &lt;a href=&quot;http:&#x2F;&#x2F;amb.vis.ne.jp&#x2F;mozilla&#x2F;scrapbook&#x2F;&quot;&gt;SCRAPBOOK :: Firefox Extension&lt;&#x2F;a&gt;的好点之一,就是有标准的XML 数据输出,好进行二次处理
+&lt;&#x2F;p&gt;
+    &lt;ul&gt;
+    &lt;li&gt;幻灯: &lt;a href=&quot;http:&#x2F;&#x2F;zoomquiet.org&#x2F;res&#x2F;s5&#x2F;100918-MyTools&#x2F;rst2s5&#x2F;&quot;&gt;http:&#x2F;&#x2F;zoomquiet.org&#x2F;res&#x2F;s5&#x2F;100918-MyTools&#x2F;rst2s5&#x2F;&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;录音: &lt;a href=&quot;http:&#x2F;&#x2F;zoomquiet.org&#x2F;res&#x2F;m&#x2F;r&#x2F;wav4zoomq&#x2F;100930-snda-mytools&#x2F;&quot;&gt;http:&#x2F;&#x2F;zoomquiet.org&#x2F;res&#x2F;m&#x2F;r&#x2F;wav4zoomq&#x2F;100930-snda-mytools&#x2F;&lt;&#x2F;a&gt;
+    &lt;p&gt;&lt;&#x2F;p&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;设想:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;将 &lt;code&gt;scrapbook.rdf&lt;&#x2F;code&gt; (自动生成的记录树关系的RDF)进行合理解析
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;整理成分级索引页面就可以解决单一索引的巨大加载问题了
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;杯具:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;TMD没有一种XML解析库对付的了RDF!
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;p&gt;
+&lt;code&gt;scrapbook.rdf&lt;&#x2F;code&gt; 的设计很简洁:
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;根节点,索引各个 &lt;code&gt;li&lt;&#x2F;code&gt;
+&lt;pre class=&quot;brush:  xml&quot;&gt;
+
+  &amp;lt;RDF:Seq RDF:about=&quot;urn:scrapbook:root&quot;&amp;gt;
+    &amp;lt;RDF:li RDF:resource=&quot;urn:scrapbook:item20091114162455&quot;&#x2F;&amp;gt;
+    &amp;lt;RDF:li RDF:resource=&quot;urn:scrapbook:item20050206112141&quot;&#x2F;&amp;gt;
+  &amp;lt;&#x2F;RDF:Seq&amp;gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;每个 &lt;code&gt;li&lt;&#x2F;code&gt; 也可能是一组 &lt;code&gt;Seq&lt;&#x2F;code&gt;
+&lt;pre class=&quot;brush:  xml&quot;&gt;
+
+  &amp;lt;RDF:Seq RDF:about=&quot;urn:scrapbook:item20070212000600&quot;&amp;gt;
+    &amp;lt;RDF:li RDF:resource=&quot;urn:scrapbook:item20070212000504&quot;&#x2F;&amp;gt;
+    &amp;lt;RDF:li RDF:resource=&quot;urn:scrapbook:item20070212000555&quot;&#x2F;&amp;gt;
+  &amp;lt;&#x2F;RDF:Seq&amp;gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;不论 &lt;code&gt;Seq&lt;&#x2F;code&gt; 自身,还是真正的页面,都有一个描述节点来记录详情
+&lt;pre class=&quot;brush:  xml&quot;&gt;
+
+  &amp;lt;RDF:Description RDF:about=&quot;urn:scrapbook:item20051216104753&quot;
+                   NS2:id=&quot;20051216104753&quot;
+                   NS2:type=&quot;&quot;
+                   NS2:title=&quot;吉卜力的新作也用blog宣傳&quot;
+                   NS2:chars=&quot;UTF-8&quot;
+                   NS2:comment=&quot;&quot;
+                   NS2:icon=&quot;&quot;
+                   NS2:source=&quot;http:&#x2F;&#x2F;www.bigsound.org&#x2F;portnoy&#x2F;weblog&#x2F;001318.html&quot; &#x2F;&amp;gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;如果只是分隔线，就是:
+&lt;pre class=&quot;brush:  xml&quot;&gt;
+
+  &amp;lt;NC:BookmarkSeparator RDF:about=&quot;urn:scrapbook:item20091113232313&quot;
+                   NS2:id=&quot;20091113232313&quot;
+                   NS2:type=&quot;separator&quot;
+                   NS2:title=&quot;&quot;
+                   NS2:chars=&quot;&quot;
+                   NS2:comment=&quot;&quot;
+                   NS2:icon=&quot;&quot;
+                   NS2:source=&quot;&quot; &#x2F;&amp;gt;
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+那么一切就应该从 &lt;code&gt;&amp;lt;RDF:Seq RDF:about=&quot;urn:scrapbook:root&quot;&amp;gt;&lt;&#x2F;code&gt; 节点开始爬就好的了,,,
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;FT!:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;不论内置的 &lt;code&gt;xml.dom&lt;&#x2F;code&gt; &#x2F; &lt;code&gt;xml.etree.ElementTree&lt;&#x2F;code&gt; 还是伟大的 &lt;a href=&quot;http:&#x2F;&#x2F;lxml.de&#x2F;&quot;&gt;lxml&lt;&#x2F;a&gt;
+        &lt;ul&gt;
+        &lt;li&gt;都不支持根据 XML 节点的属性进行搜索！
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;即使可以用 XPath 的算子过滤:&lt;code&gt;&#x2F;&#x2F;NC[@RDF:about = &quot;urn:scrapbook:root&quot;]&lt;&#x2F;code&gt; ，但是，没有库支持完全功能的XPath!
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;俺总不能用 XSLT 先写好过滤，然后再调用支持 XSLT 的浏览器获得中间结果給 Py 用吧？！
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;好的，有一堆 RDF 专用解析器
+        &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;redfoot.sourceforge.net&#x2F;&quot;&gt;Redfoot&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.openvest.com&#x2F;trac&#x2F;wiki&#x2F;RDFAlchemy&quot;&gt;RDFAlchemy&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;code.google.com&#x2F;p&#x2F;rdflib&#x2F;wiki&#x2F;ExampleFoafSmushing&quot;&gt;rdflib&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;infomesh.net&#x2F;pyrple&#x2F;&quot;&gt;pyrple - An RDF API in Python&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;librdf.org&#x2F;raptor&#x2F;&quot;&gt;Raptor&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;packages.python.org&#x2F;SuRF&#x2F;&quot;&gt;SuRF – Object RDF mapper&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;...可是！那个复杂哪！居然要在使用前,从相关 XSD 网址下载 Scheme 的!
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;也都没有简单的方式,可以让俺搜索到那个该死的  &lt;code&gt;&amp;lt;RDF:Seq RDF:about=&quot;urn:scrapbook:root&quot;&amp;gt;&lt;&#x2F;code&gt; 节点
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;不过,也算开了眼,居然有 &lt;a href=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;Submission&#x2F;2004&#x2F;SUBM-RDQL-20040109&#x2F;&quot;&gt;RDQL&lt;&#x2F;a&gt; &#x2F; &lt;a href=&quot;http:&#x2F;&#x2F;www.ibm.com&#x2F;developerworks&#x2F;cn&#x2F;education&#x2F;xml&#x2F;x-sparql&#x2F;index.html&quot;&gt;SPARQL&lt;&#x2F;a&gt; 等专用 RDF 解析语言!
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;看来当年的 &lt;a href=&quot;http:&#x2F;&#x2F;www.ibm.com&#x2F;developerworks&#x2F;cn&#x2F;grid&#x2F;gr-semgrid&#x2F;index.html&quot;&gt;Semantic Web&lt;&#x2F;a&gt; 的确玩到了很 HIGH 的程序...
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;可是,对于俺,这么简单的需求,就是没有简单的处置方法嘛?!
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;解决:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;冷静了一下,俺只是要进行简单的数据处理,并不一定要真的对 RDF 进行语义上的理解哪?!
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;XML 自古就有一种原始的,条带化基于事件的处理模型,曰 SAX
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;Py 内置有最简单的 expat库:
+        &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;docs.python.org&#x2F;library&#x2F;pyexpat.html#example&quot;&gt;19.5. xml.parsers.expat — Fast XML parsing using Expat — Python v2.7.2 documentation&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;跟着样例快速完成了处理部分,速度也非常的快
+    &lt;p&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  python ; highlight: [5,17,24]&quot;&gt;
+
+def start_element(name, attrs):
+    if &quot;RDF:Seq&quot; == name:
+        CF.IS_SEQ = 1
+        CF.IS_DESC = 0
+        if &quot;urn:scrapbook:root&quot; == attrs[&#x27;RDF:about&#x27;]:
+            #print &#x27;ROOT element:&#x27;, name, attrs
+            CF.IS_ROOT = 1
+            CF.DICTRDF[&#x27;ROOT&#x27;][&#x27;id&#x27;] = attrs[&#x27;RDF:about&#x27;].split(&quot;:&quot;)[-1]
+            CF.CRTID = attrs[&#x27;RDF:about&#x27;].split(&quot;:&quot;)[-1]
+            CF.DICTRDF[&#x27;ROOT&#x27;][&#x27;li&#x27;] = []
+        else:
+            CF.IS_ROOT = 0
+            CF.CRTID = attrs[&#x27;RDF:about&#x27;].split(&quot;:&quot;)[-1]
+            CF.DICTRDF[&#x27;SEQ&#x27;][CF.CRTID] = []
+    else:
+        CF.IS_SEQ = 0
+        if &quot;RDF:li&quot; == name:
+            CF.IS_DESC = 0
+            CF.IS_LI = 1
+            if CF.IS_ROOT:
+                CF.DICTRDF[&#x27;ROOT&#x27;][&#x27;li&#x27;].append(attrs[&#x27;RDF:resource&#x27;].split(&quot;:&quot;)[-1])
+            else:
+                CF.DICTRDF[&#x27;SEQ&#x27;][CF.CRTID].append(attrs[&#x27;RDF:resource&#x27;].split(&quot;:&quot;)[-1])
+        elif &quot;RDF:Description&quot; == name:
+            CF.IS_DESC = 1
+            CF.IS_LI = 0
+            CF.CRTID = attrs[&#x27;RDF:about&#x27;].split(&quot;:&quot;)[-1]
+            CF.DICTRDF[&#x27;DESC&#x27;][CF.CRTID] = {
+                &#x27;id&#x27;:attrs[&#x27;NS2:id&#x27;]
+                ,&#x27;type&#x27;:attrs[&#x27;NS2:type&#x27;]
+                ,&#x27;title&#x27;:attrs[&#x27;NS2:title&#x27;]
+                ,&#x27;source&#x27;:attrs[&#x27;NS2:source&#x27;]
+                ,&#x27;chars&#x27;:attrs[&#x27;NS2:chars&#x27;]
+                ,&#x27;icon&#x27;:attrs[&#x27;NS2:icon&#x27;]
+                ,&#x27;comment&#x27;:attrs[&#x27;NS2:comment&#x27;]
+                }
+
+&lt;&#x2F;pre&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;技巧:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;就是用一堆判定,将有限的情况进行区分
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;然后丢到个字典中,供给后续处理
+    &lt;p&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  python ; highlight: [1,2,4]&quot;&gt;
+
+{&quot;ROOT&quot;:{&#x27;id&#x27;:&#x27;&#x27;,&#x27;li&#x27;:[]}
+,&quot;SEQ&quot;:{&#x27;item...&#x27;:[]
+    ,,,}
+,&quot;DESC&quot;:{&#x27;item...&#x27;:{&#x27;id&#x27;:&#x27;&#x27;
+        ,&#x27;type&#x27;:&quot;&quot; # folder||separator
+        ,&#x27;icon&#x27;:&#x27;&#x27;
+        ,&#x27;title&#x27;:&#x27;&#x27;
+        ,&#x27;source&#x27;:&#x27;&#x27;
+        ,&#x27;chars&#x27;:&#x27;&#x27;
+        ,&#x27;comment&#x27;:&#x27;&#x27;
+        }
+    ,,,
+    }
+}
+&lt;&#x2F;pre&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc4R0VYRENMU&quot; name=&quot;toc4R0VYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h3&gt;&lt;A href=&#x27;#toptopS05SWEVZT&#x27;&gt; 1.1.2. yeild &lt;&#x2F;A&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;
+好的,有了 RDF 正确的结构关系数据后,怎么优雅的输出成分层的索引页面?!
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;俺习惯用内置的文本模板功能,通过纯文本的嵌套完成 html 的输出
+&lt;&#x2F;li&gt;
+&lt;li&gt;结果,发现,俺的网页整理到不同深度的目录中
+    &lt;ul&gt;
+    &lt;li&gt;要想进行递归式的树状生成,很容易引发递归过深,Py 崩溃的现象
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;pre class=&quot;brush:  js ; highlight: [2,12]&quot;&gt;
+
+&#x2F;&#x2F; scrapbook&#x2F;chrome&#x2F;scrapbook.jar-&amp;gt;content&#x2F;scrapbook&#x2F;output.js 中
+	processRescursively : function(aContRes)
+	{
+		this.depth++;
+		var id = ScrapBookData.getProperty(aContRes, &quot;id&quot;) || &quot;root&quot;;
+		this.content += &#x27;&amp;lt;ul id=&quot;folder-&#x27; + id + &#x27;&quot;&amp;gt;\n&#x27;;
+		var resList = ScrapBookData.flattenResources(aContRes, 0, false);
+		for (var i = 1; i &amp;lt; resList.length; i++) {
+			this.content += &#x27;&amp;lt;li class=&quot;depth&#x27; + String(this.depth) + &#x27;&quot;&amp;gt;&#x27;;
+			this.content += this.getHTMLBody(resList[i]);
+			if (ScrapBookData.isContainer(resList[i]))
+				this.processRescursively(resList[i]);
+			this.content += &quot;&amp;lt;&#x2F;li&amp;gt;\n&quot;;
+		}
+		this.content += &quot;&amp;lt;&#x2F;ul&amp;gt;\n&quot;;
+		this.depth--;
+	},
+
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;amb.vis.ne.jp&#x2F;mozilla&#x2F;scrapbook&#x2F;&quot;&gt;SCRAPBOOK&lt;&#x2F;a&gt;中的原生处理是硬递归的哪,,,
+&lt;&#x2F;li&gt;
+&lt;li&gt;Py 有优雅的迭代式，但是不那么容易用起来:
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;MiscItems&#x2F;2011-08-25&quot;&gt;yeild 的递归输出问题&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;引发了社区列表讨论，结果获得的经验很简单:
+        &lt;ul&gt;
+        &lt;li&gt;&lt;b&gt;所有想返回的，都用 yeild 包装上！&lt;&#x2F;b&gt;
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;p&gt;
+于是，一切安定团结了,,,
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+用 shell 包装个命令，想发布本地 &lt;a href=&quot;http:&#x2F;&#x2F;amb.vis.ne.jp&#x2F;mozilla&#x2F;scrapbook&#x2F;&quot;&gt;SCRAPBOOK&lt;&#x2F;a&gt; 仓库时，一键完成！
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc5R0VYREVMU&quot; name=&quot;toc5R0VYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopS05SWEVZT&#x27;&gt; 1.2. TODO &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+当然总是有不如意的,留存以后,或是有心人完善了:
+&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;美化平面索引页面
+    &lt;ol&gt;
+    &lt;li&gt;排版和颜色
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;CSS 限宽效果用JS 进行动态扩展 
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;自动对所有抓取的页面,嵌入原始链接的提示
+&lt;&#x2F;li&gt;
+&lt;li&gt;对整体仓库生成 site map 帮助 google 收录 ... 
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+
+&lt;a id=&quot;toc6R0lYQ0JaV&quot; name=&quot;toc6R0lYQ0JaV&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopS05SWEVZT&#x27;&gt; 2. 时间帐单 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;ol&gt;
+&lt;li&gt;~0.01h    起意，要折腾
+&lt;&#x2F;li&gt;
+&lt;li&gt;0.5h      rdf 理解
+&lt;&#x2F;li&gt;
+&lt;li&gt;1h        ElementTree 尝试
+&lt;&#x2F;li&gt;
+&lt;li&gt;1h        lxml 尝试
+&lt;&#x2F;li&gt;
+&lt;li&gt;~2h       RDF 解析模块收集
+&lt;&#x2F;li&gt;
+&lt;li&gt;~1h       rdflib 尝试
+&lt;&#x2F;li&gt;
+&lt;li&gt;~0.5h     冷静
+&lt;&#x2F;li&gt;
+&lt;li&gt;~0.5h     expat完成解析
+&lt;&#x2F;li&gt;
+&lt;li&gt;~1h       根索引页面输出
+&lt;&#x2F;li&gt;
+&lt;li&gt;~2.5h     递归和迭代尝试
+&lt;&#x2F;li&gt;
+&lt;li&gt;~2h       获得社区反馈，完成所有功能
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+
+&lt;p&gt;
+合计,~13小时,哗,,,,大大超出原先半天的预计,纠其原因:
+&lt;&#x2F;p&gt;
+    &lt;ol&gt;
+    &lt;li&gt;对XML体系的变态缺乏足够的敬畏
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;对递归的理解一直不扎实
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+
+&lt;p&gt;
+事实证明:&lt;b&gt;嘦不经过真实编程的理解，基本都是误解&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags utility&#x2F;py4xml&#x2F;scrapbook-expidxlevels-2011-09-08-13-13.t2t --&gt;
+</content>
+</entry>
+</feed>

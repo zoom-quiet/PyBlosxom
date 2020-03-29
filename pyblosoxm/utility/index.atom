@@ -1,0 +1,3112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/utility/index.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/utility/index.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/utility/index.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2011-09-08T05:13:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">ScrapBook辅助工具之expidxlevels</title>
+<category term="/py4xml" />
+<id>/pyblosxom/2011/09/08/scrapbook-expidxlevels-2011-09-08-13-13</id>
+<updated>2011-09-08T05:13:00Z</updated>
+<published>2011-09-08T05:13:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/utility/py4xml/scrapbook-expidxlevels-2011-09-08-13-13.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopS05SWEVZT&#x27; id=&#x27;toptopS05SWEVZT&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;ScrapBook辅助工具之expidxlevels&lt;&#x2F;h1&gt;
+&lt;h2&gt;~ 坑爹的RDF乱斗!&lt;&#x2F;h2&gt;
+&lt;h3&gt;t2t渲染:2011-09-08 04:54:24&lt;&#x2F;h3&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0JaR&quot;&gt;不折腾要死星人&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc2R0VYRENMU&quot;&gt;1.1. scraptools&lt;&#x2F;a&gt;
+      &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#toc3R0VYRENMU&quot;&gt;1.1.1. RDF&lt;&#x2F;a&gt;
+      &lt;&#x2F;li&gt;
+      &lt;li&gt;&lt;a href=&quot;#toc4R0VYRENMU&quot;&gt;1.1.2. yeild&lt;&#x2F;a&gt;
+      &lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc5R0VYREVMU&quot;&gt;1.2. TODO&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc6R0lYQ0JaV&quot;&gt;时间帐单&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0JaR&quot; name=&quot;toc1R0VYQ0JaR&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopS05SWEVZT&#x27;&gt; 1. 不折腾要死星人 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+嗯嗯嗯，从,,, 20041214101930 开始,坚持使用&lt;a href=&quot;http:&#x2F;&#x2F;amb.vis.ne.jp&#x2F;mozilla&#x2F;scrapbook&#x2F;&quot;&gt;SCRAPBOOK :: Firefox Extension&lt;&#x2F;a&gt; 进行离线网页的收集和整理了;
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;一直很爽,而且内置的导出功能,可以一键将本地收集的网页通过一个标准的框架页面,用树状索引进行发布;
+&lt;&#x2F;li&gt;
+&lt;li&gt;使用 rsync 等等文件同步小工具,就可以发布一个静态的表述自个儿关注领域技术的纯资料网站了!
+&lt;&#x2F;li&gt;
+&lt;li&gt;其实一直以来就发布有这类两个网站:
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;floss.zoomquiet.org&quot;&gt;http:&#x2F;&#x2F;floss.zoomquiet.org&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;skm.zoomquiet.org&quot;&gt;http:&#x2F;&#x2F;skm.zoomquiet.org&lt;&#x2F;a&gt;
+    &lt;p&gt;&lt;&#x2F;p&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;好处是那些优秀的文章,即使原文网站死了,依然在俺这儿原样可查,
+&lt;&#x2F;li&gt;
+&lt;li&gt;问题是:
+    &lt;ul&gt;
+    &lt;li&gt;&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;2011&#x2F;zq_2011-09-08-154005_577x344_scrot.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;导出的那个索引树,随着时间的积累,已经大到无法忍受了!
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;比如说, floss.zoomquiet.org 的树,包含 2万多节点,自身体积已经超过5M
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;有网友吼,用 Chrome 都无法打开!
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;  所以:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;得想招精简如此多节点的索引树了,,,
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;为了时不时，在俺这儿打捞历史文章的亲们...
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc2R0VYRENMU&quot; name=&quot;toc2R0VYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopS05SWEVZT&#x27;&gt; 1.1. scraptools &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+所以,有了 &lt;a href=&quot;https:&#x2F;&#x2F;bitbucket.org&#x2F;ZoomQuiet&#x2F;scraptools&#x2F;wiki&#x2F;Home&quot;&gt;ZoomQuiet &#x2F; scraptools — Bitbucket&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+其中的 expidxlevels.py 就是专门进行自动索引化简的...
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc3R0VYRENMU&quot; name=&quot;toc3R0VYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h3&gt;&lt;A href=&#x27;#toptopS05SWEVZT&#x27;&gt; 1.1.1. RDF &lt;&#x2F;A&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;
+以前在相关讲演中吼过,选择 &lt;a href=&quot;http:&#x2F;&#x2F;amb.vis.ne.jp&#x2F;mozilla&#x2F;scrapbook&#x2F;&quot;&gt;SCRAPBOOK :: Firefox Extension&lt;&#x2F;a&gt;的好点之一,就是有标准的XML 数据输出,好进行二次处理
+&lt;&#x2F;p&gt;
+    &lt;ul&gt;
+    &lt;li&gt;幻灯: &lt;a href=&quot;http:&#x2F;&#x2F;zoomquiet.org&#x2F;res&#x2F;s5&#x2F;100918-MyTools&#x2F;rst2s5&#x2F;&quot;&gt;http:&#x2F;&#x2F;zoomquiet.org&#x2F;res&#x2F;s5&#x2F;100918-MyTools&#x2F;rst2s5&#x2F;&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;录音: &lt;a href=&quot;http:&#x2F;&#x2F;zoomquiet.org&#x2F;res&#x2F;m&#x2F;r&#x2F;wav4zoomq&#x2F;100930-snda-mytools&#x2F;&quot;&gt;http:&#x2F;&#x2F;zoomquiet.org&#x2F;res&#x2F;m&#x2F;r&#x2F;wav4zoomq&#x2F;100930-snda-mytools&#x2F;&lt;&#x2F;a&gt;
+    &lt;p&gt;&lt;&#x2F;p&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;设想:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;将 &lt;code&gt;scrapbook.rdf&lt;&#x2F;code&gt; (自动生成的记录树关系的RDF)进行合理解析
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;整理成分级索引页面就可以解决单一索引的巨大加载问题了
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;杯具:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;TMD没有一种XML解析库对付的了RDF!
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;p&gt;
+&lt;code&gt;scrapbook.rdf&lt;&#x2F;code&gt; 的设计很简洁:
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;根节点,索引各个 &lt;code&gt;li&lt;&#x2F;code&gt;
+&lt;pre class=&quot;brush:  xml&quot;&gt;
+
+  &amp;lt;RDF:Seq RDF:about=&quot;urn:scrapbook:root&quot;&amp;gt;
+    &amp;lt;RDF:li RDF:resource=&quot;urn:scrapbook:item20091114162455&quot;&#x2F;&amp;gt;
+    &amp;lt;RDF:li RDF:resource=&quot;urn:scrapbook:item20050206112141&quot;&#x2F;&amp;gt;
+  &amp;lt;&#x2F;RDF:Seq&amp;gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;每个 &lt;code&gt;li&lt;&#x2F;code&gt; 也可能是一组 &lt;code&gt;Seq&lt;&#x2F;code&gt;
+&lt;pre class=&quot;brush:  xml&quot;&gt;
+
+  &amp;lt;RDF:Seq RDF:about=&quot;urn:scrapbook:item20070212000600&quot;&amp;gt;
+    &amp;lt;RDF:li RDF:resource=&quot;urn:scrapbook:item20070212000504&quot;&#x2F;&amp;gt;
+    &amp;lt;RDF:li RDF:resource=&quot;urn:scrapbook:item20070212000555&quot;&#x2F;&amp;gt;
+  &amp;lt;&#x2F;RDF:Seq&amp;gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;不论 &lt;code&gt;Seq&lt;&#x2F;code&gt; 自身,还是真正的页面,都有一个描述节点来记录详情
+&lt;pre class=&quot;brush:  xml&quot;&gt;
+
+  &amp;lt;RDF:Description RDF:about=&quot;urn:scrapbook:item20051216104753&quot;
+                   NS2:id=&quot;20051216104753&quot;
+                   NS2:type=&quot;&quot;
+                   NS2:title=&quot;吉卜力的新作也用blog宣傳&quot;
+                   NS2:chars=&quot;UTF-8&quot;
+                   NS2:comment=&quot;&quot;
+                   NS2:icon=&quot;&quot;
+                   NS2:source=&quot;http:&#x2F;&#x2F;www.bigsound.org&#x2F;portnoy&#x2F;weblog&#x2F;001318.html&quot; &#x2F;&amp;gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;如果只是分隔线，就是:
+&lt;pre class=&quot;brush:  xml&quot;&gt;
+
+  &amp;lt;NC:BookmarkSeparator RDF:about=&quot;urn:scrapbook:item20091113232313&quot;
+                   NS2:id=&quot;20091113232313&quot;
+                   NS2:type=&quot;separator&quot;
+                   NS2:title=&quot;&quot;
+                   NS2:chars=&quot;&quot;
+                   NS2:comment=&quot;&quot;
+                   NS2:icon=&quot;&quot;
+                   NS2:source=&quot;&quot; &#x2F;&amp;gt;
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+那么一切就应该从 &lt;code&gt;&amp;lt;RDF:Seq RDF:about=&quot;urn:scrapbook:root&quot;&amp;gt;&lt;&#x2F;code&gt; 节点开始爬就好的了,,,
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;FT!:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;不论内置的 &lt;code&gt;xml.dom&lt;&#x2F;code&gt; &#x2F; &lt;code&gt;xml.etree.ElementTree&lt;&#x2F;code&gt; 还是伟大的 &lt;a href=&quot;http:&#x2F;&#x2F;lxml.de&#x2F;&quot;&gt;lxml&lt;&#x2F;a&gt;
+        &lt;ul&gt;
+        &lt;li&gt;都不支持根据 XML 节点的属性进行搜索！
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;即使可以用 XPath 的算子过滤:&lt;code&gt;&#x2F;&#x2F;NC[@RDF:about = &quot;urn:scrapbook:root&quot;]&lt;&#x2F;code&gt; ，但是，没有库支持完全功能的XPath!
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;俺总不能用 XSLT 先写好过滤，然后再调用支持 XSLT 的浏览器获得中间结果給 Py 用吧？！
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;好的，有一堆 RDF 专用解析器
+        &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;redfoot.sourceforge.net&#x2F;&quot;&gt;Redfoot&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.openvest.com&#x2F;trac&#x2F;wiki&#x2F;RDFAlchemy&quot;&gt;RDFAlchemy&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;code.google.com&#x2F;p&#x2F;rdflib&#x2F;wiki&#x2F;ExampleFoafSmushing&quot;&gt;rdflib&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;infomesh.net&#x2F;pyrple&#x2F;&quot;&gt;pyrple - An RDF API in Python&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;librdf.org&#x2F;raptor&#x2F;&quot;&gt;Raptor&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;packages.python.org&#x2F;SuRF&#x2F;&quot;&gt;SuRF – Object RDF mapper&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;...可是！那个复杂哪！居然要在使用前,从相关 XSD 网址下载 Scheme 的!
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;也都没有简单的方式,可以让俺搜索到那个该死的  &lt;code&gt;&amp;lt;RDF:Seq RDF:about=&quot;urn:scrapbook:root&quot;&amp;gt;&lt;&#x2F;code&gt; 节点
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;不过,也算开了眼,居然有 &lt;a href=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;Submission&#x2F;2004&#x2F;SUBM-RDQL-20040109&#x2F;&quot;&gt;RDQL&lt;&#x2F;a&gt; &#x2F; &lt;a href=&quot;http:&#x2F;&#x2F;www.ibm.com&#x2F;developerworks&#x2F;cn&#x2F;education&#x2F;xml&#x2F;x-sparql&#x2F;index.html&quot;&gt;SPARQL&lt;&#x2F;a&gt; 等专用 RDF 解析语言!
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;看来当年的 &lt;a href=&quot;http:&#x2F;&#x2F;www.ibm.com&#x2F;developerworks&#x2F;cn&#x2F;grid&#x2F;gr-semgrid&#x2F;index.html&quot;&gt;Semantic Web&lt;&#x2F;a&gt; 的确玩到了很 HIGH 的程序...
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;可是,对于俺,这么简单的需求,就是没有简单的处置方法嘛?!
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;解决:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;冷静了一下,俺只是要进行简单的数据处理,并不一定要真的对 RDF 进行语义上的理解哪?!
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;XML 自古就有一种原始的,条带化基于事件的处理模型,曰 SAX
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;Py 内置有最简单的 expat库:
+        &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;docs.python.org&#x2F;library&#x2F;pyexpat.html#example&quot;&gt;19.5. xml.parsers.expat — Fast XML parsing using Expat — Python v2.7.2 documentation&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;跟着样例快速完成了处理部分,速度也非常的快
+    &lt;p&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  python ; highlight: [5,17,24]&quot;&gt;
+
+def start_element(name, attrs):
+    if &quot;RDF:Seq&quot; == name:
+        CF.IS_SEQ = 1
+        CF.IS_DESC = 0
+        if &quot;urn:scrapbook:root&quot; == attrs[&#x27;RDF:about&#x27;]:
+            #print &#x27;ROOT element:&#x27;, name, attrs
+            CF.IS_ROOT = 1
+            CF.DICTRDF[&#x27;ROOT&#x27;][&#x27;id&#x27;] = attrs[&#x27;RDF:about&#x27;].split(&quot;:&quot;)[-1]
+            CF.CRTID = attrs[&#x27;RDF:about&#x27;].split(&quot;:&quot;)[-1]
+            CF.DICTRDF[&#x27;ROOT&#x27;][&#x27;li&#x27;] = []
+        else:
+            CF.IS_ROOT = 0
+            CF.CRTID = attrs[&#x27;RDF:about&#x27;].split(&quot;:&quot;)[-1]
+            CF.DICTRDF[&#x27;SEQ&#x27;][CF.CRTID] = []
+    else:
+        CF.IS_SEQ = 0
+        if &quot;RDF:li&quot; == name:
+            CF.IS_DESC = 0
+            CF.IS_LI = 1
+            if CF.IS_ROOT:
+                CF.DICTRDF[&#x27;ROOT&#x27;][&#x27;li&#x27;].append(attrs[&#x27;RDF:resource&#x27;].split(&quot;:&quot;)[-1])
+            else:
+                CF.DICTRDF[&#x27;SEQ&#x27;][CF.CRTID].append(attrs[&#x27;RDF:resource&#x27;].split(&quot;:&quot;)[-1])
+        elif &quot;RDF:Description&quot; == name:
+            CF.IS_DESC = 1
+            CF.IS_LI = 0
+            CF.CRTID = attrs[&#x27;RDF:about&#x27;].split(&quot;:&quot;)[-1]
+            CF.DICTRDF[&#x27;DESC&#x27;][CF.CRTID] = {
+                &#x27;id&#x27;:attrs[&#x27;NS2:id&#x27;]
+                ,&#x27;type&#x27;:attrs[&#x27;NS2:type&#x27;]
+                ,&#x27;title&#x27;:attrs[&#x27;NS2:title&#x27;]
+                ,&#x27;source&#x27;:attrs[&#x27;NS2:source&#x27;]
+                ,&#x27;chars&#x27;:attrs[&#x27;NS2:chars&#x27;]
+                ,&#x27;icon&#x27;:attrs[&#x27;NS2:icon&#x27;]
+                ,&#x27;comment&#x27;:attrs[&#x27;NS2:comment&#x27;]
+                }
+
+&lt;&#x2F;pre&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;技巧:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;就是用一堆判定,将有限的情况进行区分
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;然后丢到个字典中,供给后续处理
+    &lt;p&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  python ; highlight: [1,2,4]&quot;&gt;
+
+{&quot;ROOT&quot;:{&#x27;id&#x27;:&#x27;&#x27;,&#x27;li&#x27;:[]}
+,&quot;SEQ&quot;:{&#x27;item...&#x27;:[]
+    ,,,}
+,&quot;DESC&quot;:{&#x27;item...&#x27;:{&#x27;id&#x27;:&#x27;&#x27;
+        ,&#x27;type&#x27;:&quot;&quot; # folder||separator
+        ,&#x27;icon&#x27;:&#x27;&#x27;
+        ,&#x27;title&#x27;:&#x27;&#x27;
+        ,&#x27;source&#x27;:&#x27;&#x27;
+        ,&#x27;chars&#x27;:&#x27;&#x27;
+        ,&#x27;comment&#x27;:&#x27;&#x27;
+        }
+    ,,,
+    }
+}
+&lt;&#x2F;pre&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc4R0VYRENMU&quot; name=&quot;toc4R0VYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h3&gt;&lt;A href=&#x27;#toptopS05SWEVZT&#x27;&gt; 1.1.2. yeild &lt;&#x2F;A&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;
+好的,有了 RDF 正确的结构关系数据后,怎么优雅的输出成分层的索引页面?!
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;俺习惯用内置的文本模板功能,通过纯文本的嵌套完成 html 的输出
+&lt;&#x2F;li&gt;
+&lt;li&gt;结果,发现,俺的网页整理到不同深度的目录中
+    &lt;ul&gt;
+    &lt;li&gt;要想进行递归式的树状生成,很容易引发递归过深,Py 崩溃的现象
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;pre class=&quot;brush:  js ; highlight: [2,12]&quot;&gt;
+
+&#x2F;&#x2F; scrapbook&#x2F;chrome&#x2F;scrapbook.jar-&amp;gt;content&#x2F;scrapbook&#x2F;output.js 中
+	processRescursively : function(aContRes)
+	{
+		this.depth++;
+		var id = ScrapBookData.getProperty(aContRes, &quot;id&quot;) || &quot;root&quot;;
+		this.content += &#x27;&amp;lt;ul id=&quot;folder-&#x27; + id + &#x27;&quot;&amp;gt;\n&#x27;;
+		var resList = ScrapBookData.flattenResources(aContRes, 0, false);
+		for (var i = 1; i &amp;lt; resList.length; i++) {
+			this.content += &#x27;&amp;lt;li class=&quot;depth&#x27; + String(this.depth) + &#x27;&quot;&amp;gt;&#x27;;
+			this.content += this.getHTMLBody(resList[i]);
+			if (ScrapBookData.isContainer(resList[i]))
+				this.processRescursively(resList[i]);
+			this.content += &quot;&amp;lt;&#x2F;li&amp;gt;\n&quot;;
+		}
+		this.content += &quot;&amp;lt;&#x2F;ul&amp;gt;\n&quot;;
+		this.depth--;
+	},
+
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;amb.vis.ne.jp&#x2F;mozilla&#x2F;scrapbook&#x2F;&quot;&gt;SCRAPBOOK&lt;&#x2F;a&gt;中的原生处理是硬递归的哪,,,
+&lt;&#x2F;li&gt;
+&lt;li&gt;Py 有优雅的迭代式，但是不那么容易用起来:
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;MiscItems&#x2F;2011-08-25&quot;&gt;yeild 的递归输出问题&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;引发了社区列表讨论，结果获得的经验很简单:
+        &lt;ul&gt;
+        &lt;li&gt;&lt;b&gt;所有想返回的，都用 yeild 包装上！&lt;&#x2F;b&gt;
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;p&gt;
+于是，一切安定团结了,,,
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+用 shell 包装个命令，想发布本地 &lt;a href=&quot;http:&#x2F;&#x2F;amb.vis.ne.jp&#x2F;mozilla&#x2F;scrapbook&#x2F;&quot;&gt;SCRAPBOOK&lt;&#x2F;a&gt; 仓库时，一键完成！
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc5R0VYREVMU&quot; name=&quot;toc5R0VYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopS05SWEVZT&#x27;&gt; 1.2. TODO &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+当然总是有不如意的,留存以后,或是有心人完善了:
+&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;美化平面索引页面
+    &lt;ol&gt;
+    &lt;li&gt;排版和颜色
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;CSS 限宽效果用JS 进行动态扩展 
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;自动对所有抓取的页面,嵌入原始链接的提示
+&lt;&#x2F;li&gt;
+&lt;li&gt;对整体仓库生成 site map 帮助 google 收录 ... 
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+
+&lt;a id=&quot;toc6R0lYQ0JaV&quot; name=&quot;toc6R0lYQ0JaV&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopS05SWEVZT&#x27;&gt; 2. 时间帐单 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;ol&gt;
+&lt;li&gt;~0.01h    起意，要折腾
+&lt;&#x2F;li&gt;
+&lt;li&gt;0.5h      rdf 理解
+&lt;&#x2F;li&gt;
+&lt;li&gt;1h        ElementTree 尝试
+&lt;&#x2F;li&gt;
+&lt;li&gt;1h        lxml 尝试
+&lt;&#x2F;li&gt;
+&lt;li&gt;~2h       RDF 解析模块收集
+&lt;&#x2F;li&gt;
+&lt;li&gt;~1h       rdflib 尝试
+&lt;&#x2F;li&gt;
+&lt;li&gt;~0.5h     冷静
+&lt;&#x2F;li&gt;
+&lt;li&gt;~0.5h     expat完成解析
+&lt;&#x2F;li&gt;
+&lt;li&gt;~1h       根索引页面输出
+&lt;&#x2F;li&gt;
+&lt;li&gt;~2.5h     递归和迭代尝试
+&lt;&#x2F;li&gt;
+&lt;li&gt;~2h       获得社区反馈，完成所有功能
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+
+&lt;p&gt;
+合计,~13小时,哗,,,,大大超出原先半天的预计,纠其原因:
+&lt;&#x2F;p&gt;
+    &lt;ol&gt;
+    &lt;li&gt;对XML体系的变态缺乏足够的敬畏
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;对递归的理解一直不扎实
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+
+&lt;p&gt;
+事实证明:&lt;b&gt;嘦不经过真实编程的理解，基本都是误解&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags utility&#x2F;py4xml&#x2F;scrapbook-expidxlevels-2011-09-08-13-13.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">rst2s5</title>
+<category term="/py4str/StructuredText" />
+<id>/pyblosxom/2010/09/18/rst2s5-usage-2010-09-18-23-23</id>
+<updated>2010-09-18T15:23:00Z</updated>
+<published>2010-09-18T15:23:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/utility/py4str/StructuredText/rst2s5-usage-2010-09-18-23-23.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopT0paWElNV&#x27; id=&#x27;toptopT0paWElNV&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;rst2s5&lt;&#x2F;h1&gt;
+&lt;h2&gt;~ 好用的S5生成宏&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0JaN&quot;&gt;缘起&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc2R0lYQ0IyR&quot;&gt;运用&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc3R0lYRENMU&quot;&gt;2.1. 初步&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc4R0lYREVMU&quot;&gt;2.2. rst&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc5R0lYREdMU&quot;&gt;2.3. 定制&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc6R01YQ0JaV&quot;&gt;时间帐单&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0JaN&quot; name=&quot;toc1R0VYQ0JaN&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopT0paWElNV&#x27;&gt; 1. 缘起 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+最近讲演频繁:
+&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;100820: &lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;IntroPy&quot;&gt;IntroPy - Woodpecker Wiki for CPUG&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;100826: &lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;TDD4Py&quot;&gt;TDD4Py - Woodpecker Wiki for CPUG&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;100918: &lt;a href=&quot;file:&#x2F;&#x2F;&#x2F;home&#x2F;zoomq&#x2F;zdata&#x2F;zScrapBook&#x2F;ZqFLOSS&#x2F;data&#x2F;20100817125828&#x2F;index.html&quot;&gt;Software Freedom Day 2010 - SZLUG&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;...
+&lt;p&gt;&lt;&#x2F;p&gt;
+俺在 &lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;meyerweb.com&#x2F;eric&#x2F;tools&#x2F;s5&#x2F;&quot;&gt;S5: A Simple Standards-Based Slide Show System&lt;&#x2F;a&gt;&lt;&#x2F;b&gt; 中使用高桥流，幻灯页码轻易超过100! 即使有 Leo 帮助也感觉吃不住，
+主要原因是直接写 HTML 太多标签干扰思維了...
+&lt;p&gt;&lt;&#x2F;p&gt;
+其实早就知道有 rst-&amp;gt;s5 的工具:
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;inet6.blogspot.com&#x2F;2007&#x2F;03&#x2F;rsts5.html&quot;&gt;結構文本(rst)轉網頁投影片(s5)&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;docutils.sourceforge.net&#x2F;docs&#x2F;user&#x2F;slide-shows.html&quot;&gt;Easy Slide Shows With reST &amp;amp; S5&lt;&#x2F;a&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+但是因为自个儿的s5 样式进行了深入定制，不知道是否容易迁移;
+&lt;p&gt;&lt;&#x2F;p&gt;
+可是实在幻灯稿多了受不住，就迁移了...
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc2R0lYQ0IyR&quot; name=&quot;toc2R0lYQ0IyR&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopT0paWElNV&#x27;&gt; 2. 运用 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+文档的确不多,中文的就找到上述 Inet6 兄的，但是和谐后，也无法方便的直接咨询
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+仔细看了哈文档，发现的确不复杂;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+之于俺，只是要引用原先的样式，只要:
+&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  shell; highlight: [3,5]&quot;&gt;
+
+#   先随便生成个默认工程
+rst2s5.py --theme &amp;lt;base-theme&amp;gt; &amp;lt;doc&amp;gt;.txt &amp;lt;doc&amp;gt;.html
+#   再复制原先样式过来
+ui&#x2F;&amp;lt;base-theme&amp;gt; to ui&#x2F;&amp;lt;new-theme&amp;gt;.
+#   然后聲明使用新样式就好:
+rst2s5.py --theme-url ui&#x2F;&amp;lt;new-theme&amp;gt; &amp;lt;doc&amp;gt;.txt &amp;lt;doc&amp;gt;.html
+
+#   俺在对应目录中的实际命令就是:
+python rst2s5-Pygments.py  --current-slide --theme-url=ui&#x2F;freedom index.rst index.html
+&lt;&#x2F;pre&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;code&gt;--current-slide&lt;&#x2F;code&gt; 是要求生成页码的开关参数
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;code&gt;rst2s5 --help&lt;&#x2F;code&gt; 居然看到有几十种参数,才发现
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;docutils.sourceforge.net&#x2F;docs&#x2F;user&#x2F;tools.html&quot;&gt;Docutils Front-End Tools&lt;&#x2F;a&gt;  实在是个丰富的工具集!
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;matt-good.net&#x2F;files&#x2F;software-dev-with-trac&#x2F;rst2s5&quot;&gt;rst2s5-Pygments.py&lt;&#x2F;a&gt; 是定制过的支持 Pygments 语法颜色的 rst2s5 转换脚本!
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+
+&lt;p&gt;
+最后发布时的 s5演示目录分布是:
+&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  text&quot;&gt;
+
+http:&#x2F;&#x2F;zoomquiet.org&#x2F;res&#x2F;s5&#x2F;100918-MyTools&#x2F;rst2s5&#x2F;
++-- i                   资源目录(图片什么的...)
+|-- index.html          S5
+|-- index.rst           rst撰写原文稿
+|-- rst2s5-Pygments.py  定制支持 Pygments 语法颜色渲染的s5生成脚本
+|-- s5defs.txt          rst2s5引用的 s5 配置文件
+`-- ui                  样式入口
+    +-- default         默认样式
+    `-- freedom         定制样式 
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc3R0lYRENMU&quot; name=&quot;toc3R0lYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopT0paWElNV&#x27;&gt; 2.1. 初步 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+和S5 幻灯组织是完全对等的撰写:
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;HTML 首页:
+&lt;pre class=&quot;brush:  html ; highlight: [1]&quot;&gt;
+
+&amp;lt;div class=&quot;slide&quot; id=&quot;slide0&quot;&amp;gt;
+Blalala
+&amp;lt;&#x2F;div&amp;gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;rST首页:
+&lt;pre class=&quot;brush:  text ; highlight: [2]&quot;&gt;
+
+==================================================================
+我的工具箱
+==================================================================
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;HTML幻灯页:
+&lt;pre class=&quot;brush:  html ; highlight: [1,2,4]&quot;&gt;
+
+&amp;lt;div class=&quot;slide&quot;&amp;gt;
+&amp;lt;h1&amp;gt;标题&amp;lt;&#x2F;h1&amp;gt;
+内容
+    &amp;lt;div class=&quot;handout&quot;&amp;gt;
+    隐藏提示
+    &amp;lt;&#x2F;div&amp;gt;
+&amp;lt;&#x2F;div&amp;gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;rST幻灯页:
+&lt;pre class=&quot;brush:  html ; highlight: [2,4]&quot;&gt;
+
+标题
+=========
+
+.. container:: handout
+
+   隐藏提示
+
+内容
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;唯一注意:&lt;&#x2F;dt&gt;&lt;dd&gt;
+ &lt;ul&gt;
+ &lt;li&gt;是要在文件头部引入 &lt;a href=&quot;http:&#x2F;&#x2F;docutils.sourceforge.net&#x2F;docutils&#x2F;parsers&#x2F;rst&#x2F;include&#x2F;s5defs.txt&quot;&gt;s5defs.txt&lt;&#x2F;a&gt; 专用配置文本:
+&lt;pre class=&quot;brush:  text&quot;&gt;
+
+.. include:: &amp;lt;s5defs.txt&amp;gt;
+&lt;&#x2F;pre&gt;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;参考: &lt;a href=&quot;http:&#x2F;&#x2F;docutils.sourceforge.net&#x2F;docs&#x2F;ref&#x2F;rst&#x2F;substitutions.html&quot;&gt;reStructuredText Standard Substitution Definition Sets&lt;&#x2F;a&gt;
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc4R0lYREVMU&quot; name=&quot;toc4R0lYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopT0paWElNV&#x27;&gt; 2.2. rst &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+html-&amp;gt;rst 的撰写只有更加 &lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;WyTiWyG&quot;&gt;WYTIWYG&lt;&#x2F;a&gt; 很容易习惯;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+参考: &lt;a href=&quot;reStructuredText&quot;&gt;http:&#x2F;&#x2F;docutils.sourceforge.net&#x2F;docs&#x2F;user&#x2F;rst&#x2F;quickref.html Quick&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+主要得习惯的只有:
+&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;标题和 MoinMoin 语法不同使用 &lt;code&gt;==================&lt;&#x2F;code&gt;独立的标题引用行来聲明第几层的标题
+ &lt;ul&gt;
+ &lt;li&gt;建议顺序是:&lt;code&gt;= - ` : &#x27; &quot; ~ ^ _ * + # &amp;lt; &amp;gt;&lt;&#x2F;code&gt;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;一般就用到前4个:
+&lt;pre class=&quot;brush:  text&quot;&gt;
+
+
+大标题
+======
+小标题
+------
+次标题
+&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;
+小节标
+&quot;&quot;&quot;&quot;&quot;&quot;
+&lt;&#x2F;pre&gt;
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;列表项更加简单可以使用 &lt;code&gt;+&lt;&#x2F;code&gt; 以及 &lt;code&gt;-&lt;&#x2F;code&gt; 相比&lt;code&gt;*&lt;&#x2F;code&gt; 要少按个键 ;-)
+&lt;&#x2F;li&gt;
+&lt;li&gt;链接更加灵活了:
+ &lt;ul&gt;
+ &lt;li&gt;就地链接: &lt;code&gt;是也乎,是也乎`显示文字 &amp;lt;http:&#x2F;&#x2F;foo.org&amp;gt;`__ 是也乎&lt;&#x2F;code&gt;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;匿名链接: 
+&lt;pre class=&quot;brush:  text&quot;&gt;
+
+是也乎,是也乎`显示文字`__ 是也乎
+
+__  http:&#x2F;&#x2F;foo.org
+&lt;&#x2F;pre&gt;
+    &lt;ul&gt;
+    &lt;li&gt;和行内链接聲明最近的独立URL 定义进行自动匹配
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;全局链接:
+&lt;pre class=&quot;brush:  text ; highlight: [1,5]&quot;&gt;
+
+.. _Zoom.Quiet:
+    http:&#x2F;&#x2F;code.google.com&#x2F;p&#x2F;openbookproject&#x2F;wiki&#x2F;ZoomQuiet
+
+...
+是也乎,是也乎`Zoom.Quiet`_ 是也乎
+
+&lt;&#x2F;pre&gt;
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;就地图片:
+&lt;pre class=&quot;brush:  text ; highlight: [2,3,5]&quot;&gt;
+
+.. image:: pix&#x2F;Takahashi-method.jpg
+    :align: center
+    :scale: 150 %
+    :alt: 高橋流
+    :target: http:&#x2F;&#x2F;blog.derjohng.com&#x2F;2006&#x2F;04&#x2F;12&#x2F;takahashi-method-%E7%B0%A1%E5%A0%B1&#x2F;
+&lt;&#x2F;pre&gt;
+    &lt;ul&gt;
+    &lt;li&gt;这个 target 就是链接! 文档中没有例子,找了半天...
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;全局图片:
+&lt;pre class=&quot;brush:  text ; highlight: [2]&quot;&gt;
+
+.. |Takahashi| image:: pix&#x2F;Takahashi-method.jpg
+    :align: top
+    :scale: 150 %
+    :alt: 高橋流
+    :target: http:&#x2F;&#x2F;blog.derjohng.com&#x2F;2006&#x2F;04&#x2F;12&#x2F;takahashi-method-%E7%B0%A1%E5%A0%B1&#x2F;
+
+...
+
+任意文字中 |Takahashi| 嵌入图片...
+&lt;&#x2F;pre&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;code&gt;align&lt;&#x2F;code&gt; 这时,就是图片和文字流的行内相对位置,而不是图片在整个页面的排版,所以,只能有&quot;top&quot;, &quot;middle&quot;, &quot;bottom&quot;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;其实不用专门记忆,每次渲染时, rst2s5 会进行检查,比如说:
+&lt;pre class=&quot;brush:  shell ; highlight: [3,4]&quot;&gt;
+
+$ python rst2s5-Pygments.py  --current-slide --theme-url=ui&#x2F;freedom index.rst index.html
+index.rst:34: (ERROR&#x2F;3) Error in &quot;image&quot; directive: 
+&quot;center&quot; is not a valid value for the &quot;align&quot; option within a substitution definition.  
+Valid values for &quot;align&quot; are: &quot;top&quot;, &quot;middle&quot;, &quot;bottom&quot;.
+index.rst:34: (WARNING&#x2F;2) Substitution definition &quot;S5icon&quot; empty or invalid.
+
+.. |S5icon| image:: pix&#x2F;S5icon.GIF
+    :align: center
+    :scale: 100 %
+    :target: http:&#x2F;&#x2F;www.meyerweb.com&#x2F;eric&#x2F;tools&#x2F;s5&#x2F;
+index.rst:1284: (ERROR&#x2F;3) Undefined substitution referenced: &quot;S5icon&quot;.
+&lt;&#x2F;pre&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+
+&lt;p&gt;
+嗯嗯嗯, 使用 rst 进行 s5 撰写,完全是脚本组织的感觉了...连输出时的交互 error 通告都是 Python 味的..
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc5R0lYREdMU&quot; name=&quot;toc5R0lYREdMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopT0paWElNV&#x27;&gt; 2.3. 定制 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+比较囧是只有俺习惯并坚持的样式很搞:
+&lt;&#x2F;p&gt;
+&lt;dl&gt;
+&lt;dt&gt;默认的样式排版:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;dl&gt;
+    &lt;dt&gt;&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;2010&#x2F;rst2st-theme-default.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;&#x2F;dd&gt;
+    &lt;&#x2F;dl&gt;
+    &lt;ul&gt;
+    &lt;li&gt;和 s5 的默认样式100% 一致!
+    &lt;p&gt;&lt;&#x2F;p&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;定制的&lt;code&gt;Freedome&lt;&#x2F;code&gt;样式:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;dl&gt;
+    &lt;dt&gt;&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;2010&#x2F;ZQshutter_100920-151219_html.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;&lt;&#x2F;dt&gt;&lt;dd&gt;
+    主要的设计:
+     &lt;ul&gt;
+     &lt;li&gt;A: 表格3栏格式的作者和版权聲明
+&lt;pre class=&quot;brush:  html ; highlight: [6]&quot;&gt;
+
+&amp;lt;div id=&quot;footer&quot;&amp;gt;
+&amp;lt;table&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;
+&amp;lt;a target=&quot;_blank&quot;  href=&quot;http:&#x2F;&#x2F;code.google.com&#x2F;p&#x2F;openbookproject&#x2F;wiki&#x2F;ZoomQuiet&quot;&amp;gt;
+Zoom.Quiet&amp;lt;&#x2F;a&amp;gt;&amp;lt;br&#x2F;&amp;gt;v10.8.17
+&amp;lt;&#x2F;td&amp;gt;
+&amp;lt;td rowspan=&quot;2&quot;&amp;gt;
+&amp;lt;a  target=&quot;_blank&quot; style=&quot;background-color:;&quot; href=&quot;http:&#x2F;&#x2F;creativecommons.org&#x2F;licenses&#x2F;by-nc-nd&#x2F;3.0&#x2F;deed.zh&quot;&amp;gt;
+&amp;lt;img src=&quot;icon&#x2F;cc-byncnd-88x31.png&quot;&#x2F;&amp;gt;
+&amp;lt;&#x2F;a&amp;gt;Recommend &amp;lt;a  target=&quot;_blank&quot;
+href=&quot;http:&#x2F;&#x2F;www.mozilla.org.cn&quot;&amp;gt;FireFox&amp;lt;&#x2F;a&amp;gt; for the best experience!
+&amp;lt;&#x2F;td&amp;gt;&amp;lt;&#x2F;tr&amp;gt;
+&amp;lt;&#x2F;table&amp;gt;
+    &amp;lt;div id=&quot;controls&quot;&amp;gt;&amp;lt;&#x2F;div&amp;gt;
+&amp;lt;&#x2F;div&amp;gt;
+&lt;&#x2F;pre&gt;
+     &lt;&#x2F;li&gt;
+     &lt;li&gt;B: 页码&#x2F;页数 提示
+     &lt;&#x2F;li&gt;
+     &lt;li&gt;C: 当页内容提示
+&lt;pre class=&quot;brush:  html ; highlight: [4]&quot;&gt;
+
+&amp;lt;div class=&quot;slide&quot;&amp;gt;
+&amp;lt;h1&amp;gt;
+标题
+&amp;lt;div id=&quot;sup&quot;&amp;gt;
+    mov-&amp;gt;时间-&amp;gt;效能工具
+&amp;lt;&#x2F;div&amp;gt;
+&amp;lt;&#x2F;h1&amp;gt;
+...
+&lt;&#x2F;pre&gt;
+     &lt;p&gt;&lt;&#x2F;p&gt;
+     &lt;&#x2F;li&gt;
+     &lt;&#x2F;ul&gt;
+    &lt;&#x2F;dd&gt;
+    &lt;&#x2F;dl&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;对应的rst2s5 效果:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;dl&gt;
+    &lt;dt&gt;&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;2010&#x2F;ZQshutter_100920-151709_rst2s4.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;p&gt;&lt;&#x2F;p&gt;
+    对应的设计:
+     &lt;ul&gt;
+     &lt;li&gt;A: 表格的作者和版权聲明
+&lt;pre class=&quot;brush:  text ; highlight: [1,2]&quot;&gt;
+
+.. footer:: 
+   .. class:: borderless
+
+   =============  ====================================
+   `Zoom.Quiet`_  |cc-byncsa15|
+   -------------  ------------------------------------
+   v10.09.16      推荐用 `FireFox`_ 获得最佳游览效果
+   =============  ====================================
+&lt;&#x2F;pre&gt;
+     &lt;&#x2F;li&gt;
+     &lt;li&gt;B: 页码&#x2F;页数 提示
+     &lt;&#x2F;li&gt;
+     &lt;li&gt;C: 当页内容提示
+&lt;pre class=&quot;brush:  text ; highlight: [4]&quot;&gt;
+
+标题
+=========
+
+.. container:: handout
+
+   俺-&amp;gt;工具-&amp;gt;持续完善 |zqeye|
+
+...
+&lt;&#x2F;pre&gt;
+        &lt;ul&gt;
+        &lt;li&gt;嗯嗯嗯,当然的得配合CSS:
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;注释掉默认样式&lt;code&gt;ui&#x2F;&amp;lt;theme&amp;gt;&#x2F;s5-core.css&lt;&#x2F;code&gt; 中的
+&lt;pre class=&quot;brush:  css&quot;&gt;
+
+.handout {display: none;}
+&lt;&#x2F;pre&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;在专用CSS&lt;code&gt;ui&#x2F;&amp;lt;theme&amp;gt;&#x2F;takahashi.css&lt;&#x2F;code&gt;中定制
+&lt;pre class=&quot;brush:  css&quot;&gt;
+
+div.handout{
+    float: right;
+    top:0;
+    margin-top: -85px;
+    margin-right: -30px;
+    font-size: 16px; font-style : italic ;
+    color: #385775;
+}
+div.handout a{
+    color: #385775;
+}
+
+div.handout a:hover{
+    color: orange;
+    font-style : bold ;
+}
+
+&lt;&#x2F;pre&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;还得在默认的样式调配文件&lt;code&gt;ui&#x2F;&amp;lt;theme&amp;gt;&#x2F;slides.css&lt;&#x2F;code&gt;中引入自个儿定制的:
+&lt;pre class=&quot;brush:  css ; highlight: [4,5]&quot;&gt;
+
+@import url(s5-core.css); &#x2F;* required to make the slide show run at all *&#x2F;
+@import url(framing.css); &#x2F;* sets basic placement and size of slide components *&#x2F;
+@import url(pretty.css);  &#x2F;* stuff that makes the slides look better than blah *&#x2F;
+@import url(takahashi.css);  &#x2F;* stuff that makes the takahashi style slides *&#x2F;
+@import url(rst2s5.css);  &#x2F;* stuff that support slides gen. by rst2s5 *&#x2F;
+&lt;&#x2F;pre&gt;
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+     &lt;&#x2F;li&gt;
+     &lt;li&gt;D: 专用高桥流样式, 在s5专用子聲明文件:&lt;a href=&quot;http:&#x2F;&#x2F;docutils.sourceforge.net&#x2F;docutils&#x2F;parsers&#x2F;rst&#x2F;include&#x2F;s5defs.txt&quot;&gt;s5defs.txt&lt;&#x2F;a&gt;  中追加俺习惯的CSS类名:
+&lt;pre class=&quot;brush:  text ; highlight: [1,8,9]&quot;&gt;
+
+.. Text Sizes
+   ==========
+
+.. role:: huge
+.. role:: big
+.. role:: small
+.. role:: tiny
+.. role:: takahashi0
+.. role:: takahashi1
+.. role:: takahashi2
+...
+&lt;&#x2F;pre&gt;
+     &lt;&#x2F;li&gt;
+     &lt;&#x2F;ul&gt;
+    &lt;&#x2F;dd&gt;
+    &lt;&#x2F;dl&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;成果对比:&lt;&#x2F;dt&gt;&lt;dd&gt;
+ &lt;ul&gt;
+ &lt;li&gt;手写HTML幻灯 
+  &lt;ul&gt;
+  &lt;li&gt;45Kb
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;zoomquiet.org&#x2F;res&#x2F;s5&#x2F;100918-MyTools&#x2F;html-s5&#x2F;index.html&quot;&gt;index.html&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;手写rST生成S5幻灯 
+  &lt;ul&gt;
+  &lt;li&gt;38Kb
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;zoomquiet.org&#x2F;res&#x2F;s5&#x2F;100918-MyTools&#x2F;rst2s5&#x2F;index.rst&quot;&gt;index.rst&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc6R01YQ0JaV&quot; name=&quot;toc6R01YQ0JaV&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopT0paWElNV&#x27;&gt; 3. 时间帐单 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+&lt;code&gt;小结这次迁移的时间消耗&lt;&#x2F;code&gt;
+&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;0.5h  试用 rst2s5
+&lt;&#x2F;li&gt;
+&lt;li&gt;0.5h  接入样式
+&lt;&#x2F;li&gt;
+&lt;li&gt;0.5h  重构Leo 模式
+&lt;&#x2F;li&gt;
+&lt;li&gt;2h    定制基于 rst2s5 的样式
+&lt;&#x2F;li&gt;
+&lt;li&gt;3h    逐一页面重写
+&lt;&#x2F;li&gt;
+&lt;li&gt;1h    修订发布
+&lt;p&gt;&lt;&#x2F;p&gt;
+共计 &lt;b&gt;7.5h&lt;&#x2F;b&gt;
+ &lt;ul&gt;
+ &lt;li&gt;嗯嗯嗯,主要是在重过过程中,反复调整了对应的 CSS 样式...
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;好在一切可以快速复用到其它幻灯中了...
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;ul&gt;
+&lt;li&gt;t2t渲染:: 2010-10-09 02:21:37
+&lt;&#x2F;li&gt;
+&lt;li&gt;动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;utility&#x2F;py4str&#x2F;StructuredText&#x2F;rst2s5-usage-2010-09-18-23-23.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">MoinMoin插件hacking</title>
+<category term="/py4web/MoinMoin" />
+<id>/pyblosxom/2010/07/30/moin-graphviz-hack-2010-07-30-15-00</id>
+<updated>2010-07-30T07:00:00Z</updated>
+<published>2010-07-30T07:00:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/utility/py4web/MoinMoin/moin-graphviz-hack-2010-07-30-15-00.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopSlZYV1MzU&#x27; id=&#x27;toptopSlZYV1MzU&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;MoinMoin插件hacking&lt;&#x2F;h1&gt;
+&lt;h2&gt;~Graphviz 图谱可点击!&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0IyT&quot;&gt;需求&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc2R0VYRENMU&quot;&gt;1.1. Hacking&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc3R0VYREVMU&quot;&gt;1.2. jQuery&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc4R0VYREdMU&quot;&gt;1.3. 编码问题&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc5R0lYQ0JaT&quot;&gt;小结&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc6R0lYRENMU&quot;&gt;2.1. 时间清单&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0IyT&quot; name=&quot;toc1R0VYQ0IyT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopSlZYV1MzU&#x27;&gt; 1. 需求 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+&lt;a href=&quot;http:&#x2F;&#x2F;moinmo.in&#x2F;GraphVizForMoin&quot;&gt;GraphVizForMoin&lt;&#x2F;a&gt; 插件部署到MoinMoin 中之后,很爽直!
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+参考: &lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;GraphVizForMoin&quot;&gt;在维基中使用 Graphviz&lt;&#x2F;a&gt;~ 啄木鸟中的效果
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+可以说,解决了在维基中无法快速表达思维导图的问题:
+&lt;&#x2F;p&gt;
+ &lt;ul&gt;
+ &lt;li&gt;以往都是使用 FreeMind 绘制后截屏附件上来
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;或是使用插件 &lt;a href=&quot;http:&#x2F;&#x2F;moinmo.in&#x2F;ParserMarket&#x2F;FreeMind&quot;&gt;ParserMarket&#x2F;FreeMind - MoinMoin&lt;&#x2F;a&gt; 将文件使用Flash 控件就地发布出来~中文一直是个问题
+ &lt;p&gt;&lt;&#x2F;p&gt;
+但是,使用 Graphviz 的dot 图形脚本在维基中书写图谱一直以来残念的问题是无法输出可点击的有热区的导图!
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+
+&lt;ul&gt;
+&lt;li&gt;有点希望的 &lt;a href=&quot;http:&#x2F;&#x2F;moinmo.in&#x2F;ParserMarket&#x2F;ImageMap&#x2F;ReleaseNotes&quot;&gt;ParserMarket&#x2F;ImageMap&#x2F;ReleaseNotes - MoinMoin&lt;&#x2F;a&gt; 插件使用起来和 dot 命令输出的标准图片热区数据又实在相差太远...
+&lt;p&gt;&lt;&#x2F;p&gt;
+怎么整?! 自个儿来!
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc2R0VYRENMU&quot; name=&quot;toc2R0VYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopSlZYV1MzU&#x27;&gt; 1.1. Hacking &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;思路:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;hacked MoinGraphViz 令其使用&lt;code&gt;-Tcmapx -o **.mp&lt;&#x2F;code&gt;命令,输出热区定义
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;hacked MoinMoin 相关脚本令输出到HTML 的图片认识可能的热区定义
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;fxied:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;code&gt;path&#x2F;2&#x2F;moin运行实例&#x2F;data&#x2F;plugin&#x2F;parser&#x2F;MoinGraphViz&#x2F;main.py&lt;&#x2F;code&gt; 是插件的主体
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;很直白,快速就定位了具体代码进行了修订
+    &lt;p&gt;&lt;&#x2F;p&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;diff:&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  diff&quot;&gt;
+
+Index: tasks&#x2F;wiki.KUP&#x2F;MoinMoin&#x2F;parser&#x2F;MoinGraphViz&#x2F;main.py
+===================================================================
+--- tasks&#x2F;wiki.KUP&#x2F;MoinMoin&#x2F;parser&#x2F;MoinGraphViz&#x2F;main.py (revision 16946)
++++ tasks&#x2F;wiki.KUP&#x2F;MoinMoin&#x2F;parser&#x2F;MoinGraphViz&#x2F;main.py (revision 16975)
+@@ -56,4 +56,5 @@
+         p = request.formatter.page
+         self.renderer = Renderer(tool, targetdir=p.getPagePath(&#x27;attachments&#x27;), encoding=config.charset)
++        self.attapath = p.getPagePath(&#x27;attachments&#x27;)
+
+     def format(self, formatter):
+@@ -61,5 +62,10 @@
+         ##w(&#x27;&amp;lt;div style=&quot;border:3px ridge gray; padding:5px; width:95%; overflow:auto&quot;&amp;gt;&#x27;)
+         s = self.renderer.render(self.raw)
++        imgname = os.path.basename(s)
++        #s = wiki2html(self.request, &#x27;{{attachment:%s}}&#x27; % os.path.basename(s))
+         s = wiki2html(self.request, &#x27;{{attachment:%s}}&#x27; % os.path.basename(s))
++        #   100728 Zoom.Quiet fixed for include URL hotarea map define
++        pfImgMap = &quot;%s&#x2F;%s.map&quot;%(self.attapath,imgname)
++        s += fread(pfImgMap)
+         print &#x27;[TRACE] attachment URL:&#x27;, s
+         w(s)
+@@ -182,5 +193,7 @@
+
+ def renderGraphImage(tool, format, imagefilename, dotfilename):
+-    cmd = &#x27;%(tool)s -T%(format)s -o&quot;%(imagefilename)s&quot; &quot;%(dotfilename)s&quot;&#x27; % locals()
++    #100728 Zoom.Quiet fixed for export URL hotarea map export
++    cmd = &#x27;%(tool)s -T%(format)s -o&quot;%(imagefilename)s&quot; -Tcmapx -o &quot;%(imagefilename)s.map&quot; &quot;%(dotfilename)s&quot;&#x27; % locals()
++    #cmd = &#x27;%(tool)s -T%(format)s -o&quot;%(imagefilename)s&quot; &quot;%(dotfilename)s&quot;&#x27; % locals()
+     print &#x27;[TRACE] executing:&#x27;, cmd
+     os.system(cmd
+
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;html 输出:&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  html&quot;&gt;
+
+&amp;lt;img alt=&quot;graphviz-hostLegendG-a58ce04d28b92b59230a72964c27a9f8fc867de5.png&quot; 
+class=&quot;attachment&quot; 
+src=&quot;&#x2F;moin&#x2F;KupHostsMapping&#x2F;MapLegend?action=AttachFile&amp;amp;amp;do=get&amp;amp;amp;target=graphviz-hostLegendG-a58ce04d28b92b59230a72964c27a9f8fc867de5.png&quot; 
+title=&quot;graphviz-hostLegendG-a58ce04d28b92b59230a72964c27a9f8fc867de5.png&quot; &#x2F;&amp;gt; 
+&amp;lt;map id=&quot;hostLegendG&quot; name=&quot;hostLegendG&quot;&amp;gt;
+&amp;lt;area shape=&quot;rect&quot; href=&quot;http:&#x2F;&#x2F;wiki.s.kingsoft.net&#x2F;moin&#x2F;KupHosts&quot; title=&quot;普配主机&quot; alt=&quot;&quot; coords=&quot;101,36,173,63&quot;&#x2F;&amp;gt;
+&amp;lt;area shape=&quot;rect&quot; href=&quot;http:&#x2F;&#x2F;wiki.s.kingsoft.net&#x2F;moin&#x2F;KupHosts&quot; title=&quot;高配主机&quot; alt=&quot;&quot; coords=&quot;197,36,269,63&quot;&#x2F;&amp;gt;
+&amp;lt;&#x2F;map&amp;gt;
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;b&gt;注意&lt;&#x2F;b&gt;: 发现,插件是直接使用&lt;code&gt;{{attachment:导图图片名}}&lt;&#x2F;code&gt; 标准的图片附件形式来发布的!
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;ul&gt;
+&lt;li&gt;然而,HTML 中要想啓用热区图,至少要有专用属性的对应:
+&lt;pre&gt;
+&amp;lt;img usemap=&quot;#俺的ImgMap&quot; src=&quot;...&quot;&#x2F;&amp;gt;
+&amp;lt;map id=&quot;俺的ImgMap&quot; name=&quot;俺的ImgMap&quot;&amp;gt;
+&amp;lt;area shape=&quot;rect&quot; href=&quot;...&quot; title=&quot;普配主机&quot; alt=&quot;&quot; coords=&quot;101,36,173,63&quot;&#x2F;&amp;gt;
+...
+&amp;lt;&#x2F;map&amp;gt;
+&lt;&#x2F;pre&gt;
+ &lt;ul&gt;
+ &lt;li&gt;在dot 输出的map 数据中,id&#x2F;name 就是``digraph G { `` 第一行的那个G,可以任意命名,当然最好是E文
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;所以,就得找到方法来让 MoinMoin 对附件图片追加&lt;code&gt;usemap&lt;&#x2F;code&gt;属性
+&lt;p&gt;&lt;&#x2F;p&gt;
+找哈找,幸好有 &lt;a href=&quot;http:&#x2F;&#x2F;manpages.ubuntu.com&#x2F;manpages&#x2F;jaunty&#x2F;man1&#x2F;ack-grep.1p.html&quot;&gt;ack-grep&lt;&#x2F;a&gt; 快速从一堆脚本中定位到靠谱的代码段:
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;pre&gt;
+path&#x2F;2&#x2F;python2.5&#x2F;site-packages&#x2F;MoinMoin&#x2F;formatter&#x2F;text_html.py
+...
+    def attachment_image(self, url, **kw):
+        ...
+        if exists:
+            ...
+            if not &#x27;alt&#x27; in kw:
+                kw[&#x27;alt&#x27;] = kw[&#x27;title&#x27;]
+            #   100729 Zoom.Quiet fixed for support imagemap for Graphviz
+            kw[&#x27;usemap&#x27;] = &quot;#%s&quot;%kw[&#x27;alt&#x27;]
+            return self.image(**kw)
+        ...
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;
+追加一行就好...
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc3R0VYREVMU&quot; name=&quot;toc3R0VYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopSlZYV1MzU&#x27;&gt; 1.2. jQuery &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+虽然目标完成了,但是心里总感觉不好:
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;MoinMoin 本身的脚本被hacking 了,就等于,以后升級,迁移时,都要维护这一hacking
+&lt;&#x2F;li&gt;
+&lt;li&gt;很不 Pythonic 哪...
+&lt;p&gt;&lt;&#x2F;p&gt;
+怎么样脱离 MoinMoin 系统本身来给附件图片追加&lt;code&gt;usemap&lt;&#x2F;code&gt; 属性?
+&lt;&#x2F;li&gt;
+&lt;li&gt;答案,自然是的 Ajax 哪
+&lt;&#x2F;li&gt;
+&lt;li&gt;jQuery 就是为这类快速夹塞儿式行为诞生的哪...
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;部署jQuery:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;这是样式的事儿,所以:
+    &lt;p&gt;&lt;&#x2F;p&gt;
+&lt;pre&gt;
+path&#x2F;2&#x2F;moin实例&#x2F;
++-- data
+    +-- plugin
+        +-- theme
+            +-- 你的样式定义脚本
+            +-- woodpecker.py ~ 俺用的
+        def footer(self, d, **keywords):
+            ... # 追加
+            u&#x27;&amp;lt;!-- Finally, to loading jQuery Ajax Lib. --&amp;gt;&#x27;,
+            u&#x27;&amp;lt;script src=&quot;&#x2F;wiki&#x2F;common&#x2F;js&#x2F;jquery-1.4.2.min.js&quot; type=&quot;text&#x2F;javascript&quot;&amp;gt;&amp;lt;&#x2F;script&amp;gt;&#x27;,
+            u&#x27;&amp;lt;script src=&quot;&#x2F;wiki&#x2F;common&#x2F;js&#x2F;jquery-graphviz-map.js&quot; type=&quot;text&#x2F;javascript&quot;&amp;gt;&amp;lt;&#x2F;script&amp;gt;&#x27;,
+
++-- htdoc
+    +-- common
+        +-- js
+            +-- jquery-1.4.2.min.js ~ 官方运营用压缩版本
+            +-- jquery-graphviz-map.js  ~ 动态行为定义用
+&lt;&#x2F;pre&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;使用jQuery:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;看看文档,就两行搞定..
+&lt;pre class=&quot;brush:  js&quot;&gt;
+
+$(document).ready(function() {
+	$(&quot;img[class=&#x27;attachment&#x27;]&quot;).each(function(){
+	    $(this).attr(&quot;usemap&quot;,&quot;#&quot;+$(this).attr(&quot;alt&quot;));
+    });
+});
+&lt;&#x2F;pre&gt;
+     &lt;ul&gt;
+     &lt;li&gt;&lt;b&gt;特别的&lt;&#x2F;b&gt;:得考虑一页多个导图时的情况,所以是要进行 &lt;code&gt;each()&lt;&#x2F;code&gt; 循环处置
+     &lt;&#x2F;li&gt;
+     &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;当然的,需要 &lt;code&gt;MoinGraphViz&#x2F;main.py&lt;&#x2F;code&gt;插件的配合,以便从附图的 alt 中获得正确的图片热区ID
+    &lt;p&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  diff&quot;&gt;
+
+Index: tasks&#x2F;wiki.KUP&#x2F;MoinMoin&#x2F;parser&#x2F;MoinGraphViz&#x2F;main.py
+===================================================================
+--- tasks&#x2F;wiki.KUP&#x2F;MoinMoin&#x2F;parser&#x2F;MoinGraphViz&#x2F;main.py (revision 17010)
++++ tasks&#x2F;wiki.KUP&#x2F;MoinMoin&#x2F;parser&#x2F;MoinGraphViz&#x2F;main.py (revision 17013)
+@@ -65,5 +65,8 @@
+         fImgName = os.path.basename(s)
+         pfImgMap = &quot;%s&#x2F;%s.map&quot;%(self.attapath,fImgName)
+-        s = wiki2html(self.request, &#x27;{{attachment:%s}}&#x27; % os.path.basename(s))
++        #s = wiki2html(self.request, &#x27;{{attachment:%s}}&#x27; % os.path.basename(s))
++        s = wiki2html(self.request, &#x27;{{attachment:%s|%s}}&#x27; % (os.path.basename(s)
++                        ,fImgName.split(&quot;-&quot;)[1])
++                    )
+         #   100728 Zoom.Quiet appended &amp;lt;map&amp;gt; data
+         if os.path.exists(pfImgMap):
+&lt;&#x2F;pre&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc4R0VYREdMU&quot; name=&quot;toc4R0VYREdMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopSlZYV1MzU&#x27;&gt; 1.3. 编码问题 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+一切表现良好,无意间发现凡是有URL包含的 dot 图谱,被其它页面包含时就出错!
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;2010&#x2F;moin-graphviz-erro-2010-07-30-121804_780x382_scrot.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+&lt;&#x2F;p&gt;
+&lt;dl&gt;
+&lt;dt&gt;囧rz...:&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;ul&gt;
+&lt;li&gt;尝试各种编码,未果
+&lt;&#x2F;li&gt;
+&lt;li&gt;嘗試各种&amp;lt;map&amp;gt;的包装形式:
+    &lt;ol&gt;
+    &lt;li&gt;使用  &amp;lt;pre&amp;gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;使用  &amp;lt;textarea&amp;gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;都在  Include 时,可怜的出错了...
+&lt;&#x2F;li&gt;
+&lt;li&gt;实在是因为 MoinMoin 不想处理正常的 HTML 标签属性的其它编码内容
+&lt;&#x2F;li&gt;
+&lt;li&gt;好吧,俺就不给出无用的中文内容!
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;path&#x2F;2&#x2F;moin运行实例&#x2F;data&#x2F;plugin&#x2F;parser&#x2F;MoinGraphViz&#x2F;main.py&lt;&#x2F;code&gt; 追加一小段正则表达式替换
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;pre class=&quot;brush:  py&quot;&gt;
+
+    def format(self, formatter):
+        w = self.request.write
+        #...
+        #   100728 Zoom.Quiet appended &amp;lt;map&amp;gt; data
+        if os.path.exists(pfImgMap):
+            import re
+            p=re.compile( &#x27;title=\&quot;.+?\&quot;&#x27;)
+            s += p.sub(&quot;title=\&quot;\&quot;&quot;,fread(pfImgMap))
+            #s += fread(pfImgMap)
+
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;dl&gt;
+&lt;dt&gt;HTML 输出:&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  html&quot;&gt;
+
+&amp;lt;img alt=&quot;graphviz-hostLegendG-a58ce04d28b92b59230a72964c27a9f8fc867de5.png&quot; 
+class=&quot;attachment&quot; 
+src=&quot;&#x2F;moin&#x2F;KupHostsMapping&#x2F;MapLegend?action=AttachFile&amp;amp;amp;do=get&amp;amp;amp;target=graphviz-hostLegendG-a58ce04d28b92b59230a72964c27a9f8fc867de5.png&quot; 
+title=&quot;graphviz-hostLegendG-a58ce04d28b92b59230a72964c27a9f8fc867de5.png&quot; &#x2F;&amp;gt; 
+&amp;lt;map id=&quot;hostLegendG&quot; name=&quot;hostLegendG&quot;&amp;gt;
+&amp;lt;area shape=&quot;rect&quot; href=&quot;http:&#x2F;&#x2F;wiki.s.kingsoft.net&#x2F;moin&#x2F;KupHosts&quot; title=&quot;&quot; alt=&quot;&quot; coords=&quot;101,36,173,63&quot;&#x2F;&amp;gt;
+&amp;lt;area shape=&quot;rect&quot; href=&quot;http:&#x2F;&#x2F;wiki.s.kingsoft.net&#x2F;moin&#x2F;KupHosts&quot; title=&quot;&quot; alt=&quot;&quot; coords=&quot;197,36,269,63&quot;&#x2F;&amp;gt;
+&amp;lt;&#x2F;map&amp;gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;p&gt;
+一切安定了...
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc5R0lYQ0JaT&quot; name=&quot;toc5R0lYQ0JaT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopSlZYV1MzU&#x27;&gt; 2. 小结 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;思路不乱的情况下,主要问题就是定位代码段!以及测试!
+    &lt;ul&gt;
+    &lt;li&gt;面对一运行中的MoinMoin 进行测试开发时
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;使用sshfs 可以快速挂接远程服务器的任意目录,非常方便!
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;使用沙箱页面进行修订插件的测试,可以避免正常文章页面的中间调试失常..
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;在调试中,直接输出预想数据到 HTML 里看,比看系统日志,使用print 要方便
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;MoinMoin 有完备的缓冲机制,要及时看到修订效果,得重启HTTPD     
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;jQuery 真的很好用,也好学!
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;下载:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    diff: &lt;a href=&quot;&#x2F;pybnodes&#x2F;utility&#x2F;py4web&#x2F;MoinMoin&#x2F;MoinMoin_parser_MoinGraphViz_main.py-from-r16946-to-r17013.diff&quot;&gt;MoinMoin_parser_MoinGraphViz_main.py-from-r16946-to-r17013.diff&lt;&#x2F;a&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc6R0lYRENMU&quot; name=&quot;toc6R0lYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopSlZYV1MzU&#x27;&gt; 2.1. 时间清单 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;00:05 定目标
+&lt;&#x2F;li&gt;
+&lt;li&gt;00:15 准备环境
+&lt;&#x2F;li&gt;
+&lt;li&gt;01:30 探查运行环境,明确修订目标脚本
+&lt;&#x2F;li&gt;
+&lt;li&gt;01:45 插件修订完成
+&lt;&#x2F;li&gt;
+&lt;li&gt;00:15 图片应用map jQuery 嘗試
+&lt;&#x2F;li&gt;
+&lt;li&gt;00:35 图片插入系统修订完成
+&lt;&#x2F;li&gt;
+&lt;li&gt;01:00 正则表达式+jQuery 解决 Incldue() 时的编码问题
+&lt;&#x2F;li&gt;
+&lt;li&gt;00:45 整理代码,发布到Blog
+&lt;&#x2F;li&gt;
+&lt;li&gt;00:35 整理代码,反馈到MoinMoin.in
+&lt;&#x2F;li&gt;
+&lt;li&gt;00:40 8次中断,回到工作场景的心理浪费
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+
+&lt;p&gt;
+&lt;b&gt;总计:&lt;&#x2F;b&gt; ~ 6小时
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;ul&gt;
+&lt;li&gt;t2t渲染:: 2010-10-09 02:21:37
+&lt;&#x2F;li&gt;
+&lt;li&gt;动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;utility&#x2F;py4web&#x2F;MoinMoin&#x2F;moin-graphviz-hack-2010-07-30-15-00.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">[Py4SA]智能关闭触摸板</title>
+<category term="/py4sys" />
+<id>/pyblosxom/2010/07/14/py4sa-off-wacom-touch-2010-07-14-10-22</id>
+<updated>2010-07-14T02:22:00Z</updated>
+<published>2010-07-14T02:22:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/utility/py4sys/py4sa-off-wacom-touch-2010-07-14-10-22.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopTE5JSFNOQ&#x27; id=&#x27;toptopTE5JSFNOQ&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;[Py4SA]智能关闭触摸板&lt;&#x2F;h1&gt;
+&lt;h2&gt;--WACOM BAMBOO事务&lt;&#x2F;h2&gt;
+&lt;h3&gt;t2t渲染:: 2010-10-09 14:21:37&lt;&#x2F;h3&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0IyT&quot;&gt;问题&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc2R0lYQ0JaT&quot;&gt;尝试&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc3R01YQ0FVR&quot;&gt;Py之&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0IyT&quot; name=&quot;toc1R0VYQ0IyT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTE5JSFNOQ&#x27;&gt; 1. 问题 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+嗯嗯嗯,俺一直使用 WACOM 的数字绘图板替代鼠标的 ；－）
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;去年生日，老婆升级了俺的 &lt;a href=&quot;http:&#x2F;&#x2F;www.wacom.com.cn&#x2F;products_before_detail.php?productsid=30&quot;&gt;FAVO CTE-430&lt;&#x2F;a&gt;
+到 &lt;a href=&quot;http:&#x2F;&#x2F;www.wacom.com.cn&#x2F;bamboo&#x2F;case4-1.php&quot;&gt;BAMBOO CTH-461&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;随着 Ubuntu 10.04系统，一同升级了驱动，非常好用:
+    &lt;ol&gt;
+    &lt;li&gt;小横板 248.2 x 176.1，和屏幕 1:1 对应，不用拖动，有空间感觉了直接就可以移动到对应区域!
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;无线压感笔，直接点击就是左击鼠标
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;笔有侧键，配置默认就是原先最舒服的:
+     &lt;ul&gt;
+     &lt;li&gt;上键是右击
+     &lt;&#x2F;li&gt;
+     &lt;li&gt;下键是中击
+     &lt;&#x2F;li&gt;
+     &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;b&gt;触摸板的手指点击就不必要了&lt;&#x2F;b&gt;
+ &lt;ul&gt;
+ &lt;li&gt;如何令系统不启动触摸板的 &lt;code&gt;Touch&lt;&#x2F;code&gt; 响应?
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc2R0lYQ0JaT&quot; name=&quot;toc2R0lYQ0JaT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTE5JSFNOQ&#x27;&gt; 2. 尝试 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;linuxwacom.sourceforge.net&#x2F;index.php&#x2F;howto&#x2F;xsetwacom&quot;&gt;Command Line Configuration Interface (xsetwacom)&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;官方是有命令行级别的配置工具的
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;但是！真TMD难以看明白哈
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;广泛的搜索后，大致明白,xsetwacom 提供两种配置输出:
+        &lt;ol&gt;
+        &lt;li&gt;命令行用的执行字串
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;配置文件中使用的配置文本
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ol&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;整个使用流程是:
+        &lt;ol&gt;
+        &lt;li&gt;使用其它系统监察命令，确认 WACOM 设备USB接入后的设备号
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;使用 xsetwacom 进行模拟配置，选择输出合适的配置命令
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;然后将输出的配置内容,部署到合适的系统启动脚本或是配置文件中
+        &lt;p&gt;&lt;&#x2F;p&gt;
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ol&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;俺习惯使用命令行配置,这样可以直接测试是否靠谱,但是发现:
+&lt;pre class=&quot;brush:  shell&quot;&gt;
+
+~&amp;gt; xinput --list 
+⎡ Virtual core pointer                    	id=2	[master pointer  (3)]
+⎜   ↳ Virtual core XTEST pointer              	id=4	[slave  pointer  (2)]
+⎜   ↳ Wacom Bamboo Craft Pen eraser           	id=11	[slave  pointer  (2)]
+⎜   ↳ Wacom Bamboo Craft Pen                  	id=12	[slave  pointer  (2)]
+⎜   ↳ Wacom Bamboo Craft Finger pad           	id=13	[slave  pointer  (2)]
+⎜   ↳ Wacom Bamboo Craft Finger               	id=14	[slave  pointer  (2)]
+⎜   ↳ TPPS&#x2F;2 IBM TrackPoint                   	id=16	[slave  pointer  (2)]
+⎜   ↳ Macintosh mouse button emulation        	id=18	[slave  pointer  (2)]
+⎣ Virtual core keyboard                   	id=3	[master keyboard (2)]
+    ↳ Virtual core XTEST keyboard             	id=5	[slave  keyboard (3)]
+...
+&lt;&#x2F;pre&gt;
+    &lt;ul&gt;
+    &lt;li&gt;使用 xinput 探察出来的 &lt;b&gt;Wacom Bamboo Craft Finger&lt;&#x2F;b&gt; 触摸板设备号,每次重启系统时不一定一样!
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;FT! 那就得编程让系统重启时,自个儿探察一下设备号,然后使用固定的配置命令关闭 BAMBOO 对应设备
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;如何在Shell 中获取另外系统命令的输出并截获对应数码组合成新的命令?:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    嗯嗯嗯,,,
+    嗯嗯嗯,,,,直接囧掉!
+    俺没有这种功力!
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc3R01YQ0FVR&quot; name=&quot;toc3R01YQ0FVR&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTE5JSFNOQ&#x27;&gt; 3. Py之 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;直接使用模板记录要执行的命令,预留可能变动的设备号:
+&lt;pre class=&quot;brush:  shell&quot;&gt;
+
+#!&#x2F;bin&#x2F;sh
+### xinput4bamboo.tpl
+sleep 3 &amp;amp;&amp;amp; xsetwacom set %s Touch &quot;off&quot;
+
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;配合xinput4bamboo.py 
+&lt;pre class=&quot;brush:  py&quot;&gt;
+
+import sys,os
+if __name__ == &#x27;__main__&#x27;:      # this way the module can be
+    &quot;&quot;&quot;usage:
+    $ xinput --list | grep &quot;Wacom Bamboo Craft Finger&quot; | python .&#x2F;xinput4bamboo.py
+    &quot;&quot;&quot;
+    if sys.stdin:
+        for l in sys.stdin.readlines():
+            if &quot;pad&quot; not in l:
+                bambooid= l.split()[6].split(&quot;=&quot;)[1]
+                open(&quot;xinput4bamboo.sh&quot;,&quot;w&quot;).write(open(&quot;xinput4bamboo.tpl&quot;).read()%bambooid)
+                os.chmod(&quot;xinput4bamboo.sh&quot;,0755)
+
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;组合成启动脚本
+&lt;pre class=&quot;brush:  shell&quot;&gt;
+
+#!&#x2F;bin&#x2F;sh
+VER=&quot;main-rcloc.sh v10.7.14&quot;
+DATE=`date &quot;+%y%m%d&quot;`
+MYRC=&quot;&#x2F;home&#x2F;zoomq&#x2F;.zoomq&#x2F;rc.local&quot;
+#=========================================================== path defines
+LOGF=&quot;&#x2F;var&#x2F;log&#x2F;0day&#x2F;$DATE-myrcloc.log&quot;
+#=========================================================== action defines
+cd $MYRC
+xinput --list | grep &quot;Wacom Bamboo Craft Finger&quot; | python .&#x2F;xinput4bamboo.py  &amp;gt;&amp;gt; $LOGF 2&amp;gt;&amp;amp;1 
+.&#x2F;xinput4bamboo.sh  &amp;gt;&amp;gt; $LOGF 2&amp;gt;&amp;amp;1 
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;部属成启动应用:
+ &lt;ul&gt;
+ &lt;li&gt;&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;2010&#x2F;zoomq-2010-07-14-123737_530x267_scrot.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+ &lt;p&gt;&lt;&#x2F;p&gt;
+&lt;b&gt;齐活！&lt;&#x2F;b&gt; 没有疑惑，随手写成！ 5分钟！
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;Python在Unix和Linux系统管理中的应用(影印版):&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;a href=&quot;http:&#x2F;&#x2F;book.douban.com&#x2F;subject&#x2F;3767034&#x2F;&quot;&gt;&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;2010&#x2F;s3876423-py4unix-linux-sa.jpg&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;&lt;&#x2F;a&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;ul&gt;
+&lt;li&gt;绝对好书! 值得慢慢看,E文非常简洁,Py清明的代码,直接看&#x2F;尝试就可以体会到本意了...
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;utility&#x2F;py4sys&#x2F;py4sa-off-wacom-touch-2010-07-14-10-22.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">[Py4SA]批量文件重命名</title>
+<category term="/py4sys" />
+<id>/pyblosxom/2010/07/13/py4sa-rename-mp3s-2010-07-13-22-02</id>
+<updated>2010-07-13T14:02:00Z</updated>
+<published>2010-07-13T14:02:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/utility/py4sys/py4sa-rename-mp3s-2010-07-13-22-02.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopTE5JSFNOQ&#x27; id=&#x27;toptopTE5JSFNOQ&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;[Py4SA]批量文件重命名&lt;&#x2F;h1&gt;
+&lt;h2&gt;--远离Shell 的试探&lt;&#x2F;h2&gt;
+&lt;h3&gt;t2t渲染:: 2010-10-09 14:21:37&lt;&#x2F;h3&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0IyT&quot;&gt;问题&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc2R0lYQ0JaT&quot;&gt;尝试&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc3R01YQ0FVR&quot;&gt;Py之&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0IyT&quot; name=&quot;toc1R0VYQ0IyT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTE5JSFNOQ&#x27;&gt; 1. 问题 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+嗯嗯嗯,最近从 六哥的 DUKU 重新激发了评书的记忆,下载了全本 袁阔成(40回)红岩魂的mp3 ;-)
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+可是解开都是乱码文件名:
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;:&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;2010&#x2F;zoomq-2010-07-14-105626_446x300_scrot.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;;
+&lt;&#x2F;li&gt;
+&lt;li&gt;可恶的中文编码! 一定是在XP 中使用CP936 压出来的
+&lt;&#x2F;li&gt;
+&lt;li&gt;怎么整呢?
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;Python在Unix和Linux系统管理中的应用(影印版):&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;a href=&quot;http:&#x2F;&#x2F;book.douban.com&#x2F;subject&#x2F;3767034&#x2F;&quot;&gt;&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;2010&#x2F;s3876423-py4unix-linux-sa.jpg&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;&lt;&#x2F;a&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;ul&gt;
+&lt;li&gt;绝对好书! 值得慢慢看,E文的也非常简洁,Py 清明的代码,直接看,尝试就可以体会到本意了...
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc2R0lYQ0JaT&quot; name=&quot;toc2R0lYQ0JaT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTE5JSFNOQ&#x27;&gt; 2. 尝试 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+&lt;code&gt;已知有很多途径...&lt;&#x2F;code&gt;参考:&lt;a href=&quot;http:&#x2F;&#x2F;hi.baidu.com&#x2F;sdusoul&#x2F;blog&#x2F;item&#x2F;16f81a9508a1d640d0135ede.html&quot;&gt;linux下批量修改文件名_乌哥的家常菜_百度空间&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;使用find、awk&#x2F;grep&#x2F;sed、mv等命令组合来实现
+    &lt;ul&gt;
+    &lt;li&gt;俺都不熟练,而且要串很多步操作，忒不直爽了..
+    &lt;p&gt;&lt;&#x2F;p&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;编写Shell脚本运行~ 不就是命令组合嘛,,.,
+&lt;&#x2F;li&gt;
+&lt;li&gt;rename ... NGU&#x2F;Linux 中的标准化重命名工具,但是,怎么可以将批量文件中指定前几个字符替换成指定字符?
+&lt;pre class=&quot;brush:  shell&quot;&gt;
+
+~&#x2F;media&#x2F;4talking&#x2F;袁阔诚&#x2F;try&amp;gt; rename -n &#x27;s&#x2F;^.{6}&#x2F;红岩魂&#x2F;&#x27; *.mp3
+...
+���һ�38.mp3 renamed as 红岩魂38.mp3
+���һ�39.mp3 renamed as 红岩魂39.mp3
+���һ�40.mp3 renamed as 红岩魂40.mp3
+&lt;&#x2F;pre&gt;
+    &lt;ul&gt;
+    &lt;li&gt;反复尝试半小时才获得满意的...
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+
+&lt;a id=&quot;toc3R01YQ0FVR&quot; name=&quot;toc3R01YQ0FVR&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTE5JSFNOQ&#x27;&gt; 3. Py之 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+想嘗試Py 的思路...
+&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  py&quot;&gt;
+
+import sys,shutil
+if __name__ == &#x27;__main__&#x27;:      # this way the module can be
+    &#x27;&#x27;&#x27;usage:
+        $ ls *.mp3 | python rename-zh.py
+    &#x27;&#x27;&#x27;
+    if sys.stdin:
+        for l in sys.stdin.readlines():
+            shutil.copyfile(l[:-1], &quot;redStoneSoul-%s&quot;%l[6:-1])
+&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;好的,没有尝试,随手写来,3分钟搞掂
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;Python在Unix和Linux系统管理中的应用(影印版):&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;a href=&quot;http:&#x2F;&#x2F;book.douban.com&#x2F;subject&#x2F;3767034&#x2F;&quot;&gt;&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;2010&#x2F;s3876423-py4unix-linux-sa.jpg&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;&lt;&#x2F;a&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;ul&gt;
+&lt;li&gt;绝对好书! 值得慢慢看,E文非常简洁,Py清明的代码,直接看&#x2F;尝试就可以体会到本意了...
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;utility&#x2F;py4sys&#x2F;py4sa-rename-mp3s-2010-07-13-22-02.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">SVN 无法识别的url方案 </title>
+<category term="/Subversion" />
+<id>/pyblosxom/2007/10/15/ra_dev-svn-2007-10-15-11-33</id>
+<updated>2007-10-15T03:33:00Z</updated>
+<published>2007-10-15T03:33:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/utility/Subversion/ra_dev-svn-2007-10-15-11-33.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopS05MRTRJS&#x27; id=&#x27;toptopS05MRTRJS&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;SVN 无法识别的url方案 &lt;&#x2F;h1&gt;
+&lt;h2&gt;-- 解决...记要&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0JaN&quot;&gt;现象&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc2R0VYRENMU&quot;&gt;1.1. 原因&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc3R0VYREVMU&quot;&gt;1.2. 解决&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc4R0VYREdMU&quot;&gt;1.3. 心得&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0JaN&quot; name=&quot;toc1R0VYQ0JaN&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopS05MRTRJS&#x27;&gt; 1. 现象 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;dl&gt;
+&lt;dt&gt;突然之间访问不能:&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;pre&gt;
+svn: 无法识别的URL方案(一般需要svn:&#x2F;&#x2F;，http:&#x2F;&#x2F;，file:&#x2F;&#x2F;等开头)
+“http:&#x2F;&#x2F;svn.rdev.kingsoft.net&#x2F;kdoc&#x2F;tangle&#x2F;KsPIG&#x2F;Zoom.Quiet&#x2F;S5”
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc2R0VYRENMU&quot; name=&quot;toc2R0VYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopS05MRTRJS&#x27;&gt; 1.1. 原因 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;根据:&lt;&#x2F;dt&gt;&lt;dd&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;blog.yesky.com&#x2F;223&#x2F;sxy519&#x2F;1716723.shtml&quot;&gt;http:&#x2F;&#x2F;blog.yesky.com&#x2F;223&#x2F;sxy519&#x2F;1716723.shtml&lt;&#x2F;a&gt; 建议的一看才知道...
+&lt;pre&gt;
+$ svn --version
+svn，版本 1.4.3 (r23084)
+   编译于 Oct 12 2007，13:28:55
+
+版权所有 (C) 2000-2007 CollabNet。
+Subversion 是开放源代码软件，请参阅 http:&#x2F;&#x2F;subversion.tigris.org&#x2F;
+此产品包含由 CollabNet (http:&#x2F;&#x2F;www.Collab.Net&#x2F;)开发的软件。
+
+可使用以下的仓库存取 (RA) 模块:
+
+* ra_svn : 使用svn网络协议访问仓库的模块。
+  - 处理“svn”方案
+* ra_local : 访问本地磁盘的仓库模块。
+  - 处理“file”方案
+&lt;&#x2F;pre&gt;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;FT! Ubuntu自动升级时，没有完整的升级SVN哪！
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc3R0VYREVMU&quot; name=&quot;toc3R0VYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopS05MRTRJS&#x27;&gt; 1.2. 解决 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;dl&gt;
+&lt;dt&gt;使用新立得:&lt;&#x2F;dt&gt;&lt;dd&gt;
+ &lt;ul&gt;
+ &lt;li&gt;重新安装SVN 相关所有 
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;问题依然...
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;编译!&lt;&#x2F;dt&gt;&lt;dd&gt;
+ &lt;ul&gt;
+ &lt;li&gt;GNU&#x2F;Linux 下面一般就这板斧招了!
+&lt;pre&gt;
+$ wget -c http:&#x2F;&#x2F;subversion.tigris.org&#x2F;downloads&#x2F;subversion-deps-1.4.5.tar.bz2 &amp;amp;
+$ wget -c http:&#x2F;&#x2F;subversion.tigris.org&#x2F;downloads&#x2F;subversion-1.4.5.tar.bz2 &amp;amp;
+$ tar xjvf subversion-1.4.5.tar.bz2 
+$ tar xjvf subversion-deps-1.4.5.tar.bz2 
+$ cd subversion-1.4.5
+$ .&#x2F;configure
+$ make
+$ sudo make install clean
+...
+&lt;&#x2F;pre&gt;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;FT!!怎么还是没有&lt;code&gt;ra_dav&lt;&#x2F;code&gt;模块?! 
+&lt;pre&gt;
+$ whereis svn
+svn: &#x2F;usr&#x2F;bin&#x2F;svn &#x2F;usr&#x2F;X11R6&#x2F;bin&#x2F;svn &#x2F;usr&#x2F;bin&#x2F;X11&#x2F;svn &#x2F;usr&#x2F;local&#x2F;bin&#x2F;svn &#x2F;usr&#x2F;share&#x2F;man&#x2F;man1&#x2F;svn.1.gz
+$ &#x2F;usr&#x2F;local&#x2F;bin&#x2F;svn --version
+svn，版本 1.4.5 (r25188)
+   编译于 Oct 15 2007，11:03:39
+
+版权所有 (C) 2000-2007 CollabNet。
+Subversion 是开放源代码软件，请参阅 http:&#x2F;&#x2F;subversion.tigris.org&#x2F;
+此产品包含由 CollabNet (http:&#x2F;&#x2F;www.Collab.Net&#x2F;)开发的软件。
+
+可使用以下的仓库访问模块: 
+
+* ra_dav : 通过WebDAV(DeltaV)协议访问仓库的模块。
+  - 处理“http”方案
+* ra_svn : 使用svn网络协议访问仓库的模块。
+  - 处理“svn”方案
+* ra_local : 访问本地磁盘的仓库模块。
+  - 处理“file”方案
+&lt;&#x2F;pre&gt;
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;解决:&lt;&#x2F;dt&gt;&lt;dd&gt;
+ &lt;ul&gt;
+ &lt;li&gt;原来默认的&lt;code&gt;&#x2F;usr&#x2F;bin&#x2F;svn&lt;&#x2F;code&gt; 还是原先安装的 1.4.3 版本
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;手工处理一下
+&lt;pre&gt;
+$ sudo mv &#x2F;usr&#x2F;bin&#x2F;svn &#x2F;usr&#x2F;bin&#x2F;svn143
+$ sudo ln -s &#x2F;usr&#x2F;local&#x2F;bin&#x2F;svn &#x2F;usr&#x2F;bin&#x2F;svn
+&lt;&#x2F;pre&gt;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;哗,世界恢复正当!
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc4R0VYREdMU&quot; name=&quot;toc4R0VYREdMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopS05MRTRJS&#x27;&gt; 1.3. 心得 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;确认现象
+&lt;&#x2F;li&gt;
+&lt;li&gt;搜索资料
+&lt;&#x2F;li&gt;
+&lt;li&gt;编译
+&lt;&#x2F;li&gt;
+&lt;li&gt;测试调整
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;code&gt;嗯嗯嗯~自由世界中的不二法典哪!解决问题的...&lt;&#x2F;code&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;technorati-over.gif&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;FLOSS&quot;&gt;OpenSource&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;Subversion&quot;&gt;Subversion&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;utility&#x2F;Subversion&#x2F;ra_dev-svn-2007-10-15-11-33.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">升级SVN</title>
+<category term="/Subversion" />
+<id>/pyblosxom/2006/05/28/update-svn-2006-05-28-12-00</id>
+<updated>2006-05-28T04:00:00Z</updated>
+<published>2006-05-28T04:00:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/utility/Subversion/update-svn-2006-05-28-12-00.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopNFdHWVBaN&#x27; id=&#x27;toptopNFdHWVBaN&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;升级SVN&lt;&#x2F;h1&gt;
+&lt;h2&gt;--体验如何管理多SVN仓库&lt;&#x2F;h2&gt;
+&lt;h3&gt;t2t渲染:: 2010-10-09 02:18:13&lt;&#x2F;h3&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0JaT&quot;&gt;原因&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc2R0lYQ0IyR&quot;&gt;过程&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0JaT&quot; name=&quot;toc1R0VYQ0JaT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopNFdHWVBaN&#x27;&gt; 1. 原因 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;dl&gt;
+&lt;dt&gt;SVN新版本:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    1.3.1 VS 1.2.0 有了各种功能的提升!
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc2R0lYQ0IyR&quot; name=&quot;toc2R0lYQ0IyR&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopNFdHWVBaN&#x27;&gt; 2. 过程 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;dl&gt;
+&lt;dt&gt;规划:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ol&gt;
+    &lt;li&gt;怎么
+    &lt;p&gt;&lt;&#x2F;p&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;变化:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ol&gt;
+    &lt;li&gt;怎么
+    &lt;p&gt;&lt;&#x2F;p&gt;
+= 总结 =
+    &lt;p&gt;&lt;&#x2F;p&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;规划:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ol&gt;
+    &lt;li&gt;怎么
+    &lt;p&gt;&lt;&#x2F;p&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;变化:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ol&gt;
+    &lt;li&gt;怎么
+    &lt;p&gt;&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;technorati-over.gif&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;OpenSource&quot;&gt;OpenSource&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;Subversion&quot;&gt;Subversion&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;utility&#x2F;Subversion&#x2F;update-svn-2006-05-28-12-00.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">post-commit.py</title>
+<category term="/Subversion/hooks" />
+<id>/pyblosxom/2006/05/01/post-commit</id>
+<updated>2006-05-01T15:23:00Z</updated>
+<published>2006-05-01T15:23:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/utility/Subversion/hooks/post-commit.html" />
+<content type="html">&lt;pre class=&quot;brush: python&quot;&gt;#!&#x2F;usr&#x2F;local&#x2F;bin&#x2F;python
+#tags utility,Subversion,hooks
+#coding=utf-8
+&quot;&quot;&quot;
+SVN 事务日志处理
+    - 使用固定的参数来自动响应检入后续操作:
+        - 记录检入活动信息到每日log文件
+&quot;&quot;&quot;
+##  Zoomq::060110 fixed log exp. esp. for woodpecker repo.
+## only record commit-log of woodpecker
+
+
+import sys,os,time
+
+CHMOD = &quot;&#x2F;bin&#x2F;chmod&quot;
+CHOWN = &quot;&#x2F;usr&#x2F;sbin&#x2F;chown&quot;
+LOOK = &quot;&#x2F;usr&#x2F;local&#x2F;bin&#x2F;svnlook&quot;
+SVN = &quot;&#x2F;usr&#x2F;local&#x2F;bin&#x2F;svn&quot;
+log=&quot;&#x2F;var&#x2F;log&#x2F;svn&#x2F;woodpecker-ci.log&quot;
+daylog = &quot;%s-%s.log&quot;%(log[:-4]
+                    ,time.strftime(&quot;%y%m%d&quot;,
+                                    time.localtime()))
+LOGFILE = daylog
+f = open( LOGFILE, &quot;a+&quot; )
+TSTAMP = &quot;%s&quot;%time.strftime(&quot;%y-%m-%d %H:%M:%S&quot;, time.localtime())
+
+### hook matter
+MARK = &quot;woodpecker&quot;
+MOD = &quot;woodpecker&quot;
+AIM = &quot;&#x2F;path&#x2F;to&#x2F;woodpecker&#x2F;repos&#x2F;&quot;
+def autoco(dirs,svn,mark,aim,mod):
+    &quot;&quot;&quot;auto co all matter files:
+        - svn SVNLOOK where
+        - mark the mark of matter
+        - aim where want to co
+        - mod 指定的模块
+    &quot;&quot;&quot;
+    print &gt;&gt; f,dirs
+    if mark in dirs:
+        print &gt;&gt; f,TSTAMP+&quot; marked::OK! up::&quot;+aim+mod
+        upsvn = svn+&quot; update %s&quot;%(aim+mod)
+        print &gt;&gt; f,TSTAMP+upsvn
+        up = os.popen(upsvn).read().strip()
+        print &gt;&gt; f,up
+    else:
+        print &gt;&gt; f,TSTAMP+&quot; marked::NO! up::nothing&quot;
+def changedirs(look,rev,repos):
+    &quot;&quot;&quot;list all changed dir
+    &quot;&quot;&quot;
+    dirs = os.popen( look+&quot; changed -r &quot;+ rev + &quot; &quot; + repos).read().strip()
+    return dirs
+def chkdirmod(cmod,cown,path,umark):
+    &quot;&quot;&quot;chmod and chown the aim path
+    &quot;&quot;&quot;
+    exp = os.popen(cmod+&quot; -R &quot;+umark+&quot; &quot;+path).read().strip()
+    exp += os.popen(cown+&quot; -R www:www &quot;+path).read().strip()    
+    return exp
+def logcommit(look,rev,repos):
+    &quot;&quot;&quot;log commit info...
+    &quot;&quot;&quot;
+    log = os.popen( look+&quot; author -r &quot;+ rev + &quot; &quot;+ repos).read().strip()
+    print &gt;&gt; f,&quot; &quot;*4+&quot;%s commited;%s&quot;%(str(log),repos)
+    #return log..
+    
+def usage():
+    print &quot;Usage: &quot; + sys.argv[0] + &quot; REPOS REV\n&quot;
+    print &gt;&gt; f,TSTAMP+&quot;Usage: &quot; + sys.argv[0] + &quot; REPOS REV&quot;
+    sys.exit(0)
+
+if __name__ == &#x27;__main__&#x27;:
+    if len(sys.argv) != 3:
+        usage()
+    # start hook matter...
+    repos = sys.argv[1]
+    rev = sys.argv[2]        
+    print &gt;&gt; f,TSTAMP+&quot; &gt;&gt;&gt;&gt;&gt;&gt; woodpecker up rev::&quot;+rev
+    print &gt;&gt; f,changedirs(LOOK,rev,repos)
+    logcommit(LOOK,rev,repos)
+    
+    print &gt;&gt; f,TSTAMP+&quot; &lt;&lt;&lt;&lt;&lt;&lt; woodpecker repo commit DONE! &quot;
+    &lt;&#x2F;pre&gt;</content>
+</entry>
+
+<entry>
+<title type="html">autoDetectXMLEncoding.py</title>
+<category term="/py4zh" />
+<id>/pyblosxom/2006/04/04/autoDetectXMLEncoding</id>
+<updated>2006-04-04T15:23:00Z</updated>
+<published>2006-04-04T15:23:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/utility/py4zh/autoDetectXMLEncoding.html" />
+<content type="html">&lt;pre class=&quot;brush: python&quot;&gt;&quot;&quot;&quot;http:&#x2F;&#x2F;aspn.activestate.com&#x2F;ASPN&#x2F;Cookbook&#x2F;Python&#x2F;Recipe&#x2F;52257
+#tags utility,py4zh
+Title: Auto-detect XML encoding
+Submitter: Paul Prescod (other recipes)
+Last Updated: 2001&#x2F;03&#x2F;14
+Version no: 1.0
+Category: XML
+推荐:: 发件人: 清风 &lt;paradise.qingfeng@gmail.com&gt;	
+回复: python-chinese@lists.python.cn
+收件人: python-chinese@lists.python.cn
+日期: 2006-1-18 上午1:27
+主题: Re: [python-chinese] 如何取得一个文本的编码格式？
+&quot;&quot;&quot;
+import codecs, encodings
+
+&quot;&quot;&quot;Caller will hand this library a buffer and ask it to either convert
+it or auto-detect the type.&quot;&quot;&quot;
+
+# None represents a potentially variable byte. &quot;##&quot; in the XML spec... 
+autodetect_dict={ # bytepattern     : (&quot;name&quot;,              
+                (0x00, 0x00, 0xFE, 0xFF) : (&quot;ucs4_be&quot;),        
+                (0xFF, 0xFE, 0x00, 0x00) : (&quot;ucs4_le&quot;),
+                (0xFE, 0xFF, None, None) : (&quot;utf_16_be&quot;), 
+                (0xFF, 0xFE, None, None) : (&quot;utf_16_le&quot;), 
+                (0x00, 0x3C, 0x00, 0x3F) : (&quot;utf_16_be&quot;),
+                (0x3C, 0x00, 0x3F, 0x00) : (&quot;utf_16_le&quot;),
+                (0x3C, 0x3F, 0x78, 0x6D): (&quot;utf_8&quot;),
+                (0x4C, 0x6F, 0xA7, 0x94): (&quot;EBCDIC&quot;)
+                 }
+
+def autoDetectXMLEncoding(buffer):
+    &quot;&quot;&quot; buffer -&gt; encoding_name
+    The buffer should be at least 4 bytes long.
+        Returns None if encoding cannot be detected.
+        Note that encoding_name might not have an installed
+        decoder (e.g. EBCDIC)
+    &quot;&quot;&quot;
+    # a more efficient implementation would not decode the whole
+    # buffer at once but otherwise we&#x27;d have to decode a character at
+    # a time looking for the quote character...that&#x27;s a pain
+
+    encoding = &quot;utf_8&quot; # according to the XML spec, this is the default
+                          # this code successively tries to refine the default
+                          # whenever it fails to refine, it falls back to 
+                          # the last place encoding was set.
+    bytes = (byte1, byte2, byte3, byte4) = tuple(map(ord, buffer[0:4]))
+    enc_info = autodetect_dict.get(bytes, None)
+
+    if not enc_info: # try autodetection again removing potentially 
+                     # variable bytes
+        bytes = (byte1, byte2, None, None)
+        enc_info = autodetect_dict.get(bytes)
+
+        
+    if enc_info:
+        encoding = enc_info # we&#x27;ve got a guess... these are
+                            #the new defaults
+
+        # try to find a more precise encoding using xml declaration
+        secret_decoder_ring = codecs.lookup(encoding)[1]
+        (decoded,length) = secret_decoder_ring(buffer) 
+        first_line = decoded.split(&quot;\n&quot;)[0]
+        if first_line and first_line.startswith(u&quot;&lt;?xml&quot;):
+            encoding_pos = first_line.find(u&quot;encoding&quot;)
+            if encoding_pos!=-1:
+                # look for double quote
+                quote_pos=first_line.find(&#x27;&quot;&#x27;, encoding_pos) 
+
+                if quote_pos==-1:                 # look for single quote
+                    quote_pos=first_line.find(&quot;&#x27;&quot;, encoding_pos) 
+
+                if quote_pos&gt;-1:
+                    quote_char,rest=(first_line[quote_pos],
+                                                first_line[quote_pos+1:])
+                    encoding=rest[:rest.find(quote_char)]
+
+    return encoding
+
+&lt;&#x2F;pre&gt;</content>
+</entry>
+
+<entry>
+<title type="html">zh2utf8.py</title>
+<category term="/py4zh" />
+<id>/pyblosxom/2006/02/01/zh2utf8</id>
+<updated>2006-02-01T15:23:00Z</updated>
+<published>2006-02-01T15:23:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/utility/py4zh/zh2utf8.html" />
+<content type="html">&lt;pre class=&quot;brush: python&quot;&gt;&quot;&quot;&quot;Auto converter encodings to utf8
+#tags utility,py4zh
+It will test utf8,gbk,big5,jp,kr to converter
+
+发件人: HuangJiahua &lt;jhuangjiahua@gmail.com&gt;	
+邮送域: googlegroups.com
+回复: python-cn@googlegroups.com
+收件人: &quot;python.cn&quot; &lt;python-cn@googlegroups.com&gt;
+日期: 2006-1-16 上午12:11
+主题: Re: 请问怎样得到一个文件的编码？
+http:&#x2F;&#x2F;groups.google.com&#x2F;group&#x2F;python-cn&#x2F;browse_frm&#x2F;thread&#x2F;3544d5a05783dc96
+
+&quot;&quot;&quot;
+
+#!&#x2F;usr&#x2F;bin&#x2F;python
+# coding:UTF-8
+# Author: Huang Jiahua &lt;jhuangjiahua@gmail.com&gt;
+#测试的编码类型
+encc=&#x27;&#x27;
+def zh2utf8(stri):
+       &quot;&quot;&quot;Auto converter encodings to utf8
+
+       It will test utf8,gbk,big5,jp,kr to converter&quot;&quot;&quot;
+       global encc
+       for c in (&#x27;utf-8&#x27;, &#x27;gbk&#x27;, &#x27;big5&#x27;, &#x27;jp&#x27;,
+&#x27;euc_kr&#x27;,&#x27;utf16&#x27;,&#x27;utf32&#x27;):
+               encc = c
+               try:
+                       return stri.decode(c).encode(&#x27;utf8&#x27;)
+               except:
+                       pass
+       encc = &#x27;unk&#x27;
+       return stri
+
+if __name__==&quot;__main__&quot;:
+       # 命令行测试
+       import sys
+##      sys.setappdefaultencoding(&#x27;unicode&#x27;)
+       if len(sys.argv) &gt; 1:
+               stri = sys.argv[1]
+       else:
+               stri = sys.stdin.read()
+       print zh2utf8(stri)
+       print &#x27;encc:&#x27;,encc&lt;&#x2F;pre&gt;</content>
+</entry>
+
+<entry>
+<title type="html">MoinMoin问题</title>
+<category term="/py4web/MoinMoin" />
+<id>/pyblosxom/2006/01/31/moinerror-2006-01-31-16-00</id>
+<updated>2006-01-31T08:00:00Z</updated>
+<published>2006-01-31T08:00:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/utility/py4web/MoinMoin/moinerror-2006-01-31-16-00.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopSlZYV1MzU&#x27; id=&#x27;toptopSlZYV1MzU&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;MoinMoin问题&lt;&#x2F;h1&gt;
+&lt;h2&gt;还是中文惹的祸！&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0FaV&quot;&gt;fixed&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;snap060130-moinerror.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc1R0VYQ0FaV&quot; name=&quot;toc1R0VYQ0FaV&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopSlZYV1MzU&#x27;&gt; 1. fixed &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+接到举报，看一下子 trackback 是系统 进行字串解析时出错
+&lt;&#x2F;p&gt;
+&lt;pre&gt;
+## site-packages\MoinMoin\macro\RecentChanges.py line 29 左右
+    if line.action[:3] == &#x27;ATT&#x27;:
+        import urllib
+        try:
+            filename = urllib.unquote(line.extra)
+        except:
+            filename = &quot;filename can not display...maybe UnicodeDecodeError&quot;
+        if line.action == &#x27;ATTNEW&#x27;:
+            try:
+                comment = _(&quot;Upload of attachment &#x27;%(filename)s&#x27;.&quot;) % {&#x27;filename&#x27;: filename}
+            except:
+                comment = _(&quot;Upload of attachment &#x27;%(filename)s&#x27;.&quot;) % &quot;filename can not display...&quot;
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;
+简单过滤就成，但是问题还在…………可怜的中文…………
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;ul&gt;
+&lt;li&gt;t2t渲染:: 2010-10-09 02:21:37
+&lt;&#x2F;li&gt;
+&lt;li&gt;动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;utility&#x2F;py4web&#x2F;MoinMoin&#x2F;moinerror-2006-01-31-16-00.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">[snap]豆瓣出错</title>
+<category term="/py4web/Quixote" />
+<id>/pyblosxom/2006/01/30/doubanerror-2006-01-30-14-00</id>
+<updated>2006-01-30T06:00:00Z</updated>
+<published>2006-01-30T06:00:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/utility/py4web/Quixote/doubanerror-2006-01-30-14-00.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopTE5aVzRZT&#x27; id=&#x27;toptopTE5aVzRZT&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;[snap]豆瓣出错&lt;&#x2F;h1&gt;
+&lt;h2&gt;Python Traceback&lt;&#x2F;h2&gt;
+&lt;h3&gt;t2t渲染:: 2010-10-09 14:21:37&lt;&#x2F;h3&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0FWQ&quot;&gt;TODO&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;dl&gt;
+&lt;dt&gt;查询报怨:&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;pre&gt;
+Traceback (most recent call last):
+  File &quot;&#x2F;usr&#x2F;lib&#x2F;python2.4&#x2F;site-packages&#x2F;quixote&#x2F;publish.py&quot;, line 522, in process_request
+    output = self.try_publish(request, env.get(&#x27;PATH_INFO&#x27;, &#x27;&#x27;))
+  File &quot;&#x2F;usr&#x2F;lib&#x2F;python2.4&#x2F;site-packages&#x2F;quixote&#x2F;publish.py&quot;, line 457, in try_publish
+    output = object(request)
+  File &quot;&#x2F;var&#x2F;www&#x2F;douban&#x2F;luz&#x2F;__init__.py&quot;, line 69, in subject_search
+    return subject_search_ui(request)
+  File &quot;&#x2F;var&#x2F;www&#x2F;douban&#x2F;luz&#x2F;subject_search_ui.ptl&quot;, line 29, in subject_search_ui
+    main_layout(request, local_content, right_content,right_width=250)
+  File &quot;&#x2F;var&#x2F;www&#x2F;douban&#x2F;luz&#x2F;site_ui.ptl&quot;, line 65, in main_layout
+    &amp;lt;table class=&quot;mt&quot;&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td valign=&quot;top&quot; %s&amp;gt;
+  File &quot;&#x2F;var&#x2F;www&#x2F;douban&#x2F;luz&#x2F;subject_search_ui.ptl&quot;, line 114, in local_content
+    ns, ss = subject_search(text,_items_per_line,start,cat_id=cat_id)
+  File &quot;&#x2F;Users&#x2F;bo&#x2F;Sites&#x2F;luzong&#x2F;search.py&quot;, line 409, in subject_search
+  File &quot;&#x2F;Users&#x2F;bo&#x2F;Sites&#x2F;luzong&#x2F;search.py&quot;, line 321, in _subject_search
+  File &quot;&#x2F;var&#x2F;www&#x2F;douban&#x2F;luzong&#x2F;sqlstore.py&quot;, line 338, in subject_search
+    self.farm.execute(&quot;select id from subject_index where cat_id=%s and match (searchable) against (%s in boolean mode) order by collection_count desc&quot;,(cat_id, make_search_string(text)))
+  File &quot;&#x2F;usr&#x2F;lib&#x2F;python2.4&#x2F;site-packages&#x2F;MySQLdb&#x2F;cursors.py&quot;, line 137, in execute
+    self.errorhandler(self, exc, value)
+  File &quot;&#x2F;usr&#x2F;lib&#x2F;python2.4&#x2F;site-packages&#x2F;MySQLdb&#x2F;connections.py&quot;, line 33, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (2006, &#x27;MySQL server has gone away&#x27;)
+
+Form:
+cat             1001
+search_text     村上纪香
+
+Cookies:
+__utma          164037162.1846512001.1132065229.1138539594.1138604874.113
+__utmb          164037162
+__utmc          164037162
+__utmz          164037162.1138361940.110.3.utmccn=(referral)|utmcsr=koudai8.com|utmcct=&#x2F;willow&#x2F;blog&#x2F;|utmcmd=referral
+dbcl            1000030:14e975e18c9cf87a
+luz_login       1000030:79376a8b2b63d6fa
+
+Environment:
+CONTENT_LENGTH  0
+DOCUMENT_ROOT   &#x2F;var&#x2F;www&#x2F;douban&#x2F;
+GATEWAY_INTERFACE CGI&#x2F;1.1
+HTTP_ACCEPT     text&#x2F;xml,application&#x2F;xml,application&#x2F;xhtml+xml,text&#x2F;html;q=0.9,text&#x2F;plain;q=0.8,image&#x2F;png,*&#x2F;*;q=0.5
+HTTP_ACCEPT_CHARSET gb2312,utf-8;q=0.7,*;q=0.7
+HTTP_ACCEPT_ENCODING gzip,deflate
+HTTP_ACCEPT_LANGUAGE zh-cn,zh;q=0.5
+HTTP_COOKIE     __utmz=164037162.1138361940.110.3.utmccn=(referral)|utmcsr=koudai8.com|utmcct=&#x2F;willow&#x2F;blog&#x2F;|utmcmd=referral; __utma=164037162.1846512001.1132065229.1138539594.1138604874.113; luz_login=&quot;1000030:79376a8b2b63d6fa&quot;; dbcl=&quot;1000030:14e975e18c9cf87a&quot;; __utmb=164037162; __utmc=164037162
+HTTP_HOST       www.douban.com
+HTTP_REFERER    http:&#x2F;&#x2F;www.douban.com&#x2F;subject_search?start=15&amp;amp;search_text=%E6%9D%91%E4%B8%8A&amp;amp;cat=1001
+HTTP_USER_AGENT Mozilla&#x2F;5.0 (Windows; U; Windows NT 5.2; zh-CN; rv:1.8) Gecko&#x2F;20051111 Firefox&#x2F;1.5
+PATH_INFO       &#x2F;subject_search
+QUERY_STRING    search_text=%E6%9D%91%E4%B8%8A%E7%BA%AA%E9%A6%99&amp;amp;cat=1001
+REDIRECT_STATUS 200
+REMOTE_ADDR     61.135.152.194
+REMOTE_PORT     3944
+REQUEST_METHOD  GET
+REQUEST_URI     &#x2F;subject_search?search_text=%E6%9D%91%E4%B8%8A%E7%BA%AA%E9%A6%99&amp;amp;cat=1001
+SCGI            1
+SCRIPT_FILENAME &#x2F;var&#x2F;www&#x2F;douban&#x2F;subject_search
+SCRIPT_NAME     
+SERVER_ADDR     61.129.113.231
+SERVER_NAME     www.douban.com
+SERVER_PORT     80
+SERVER_PROTOCOL HTTP&#x2F;1.1
+SERVER_SOFTWARE lighttpd&#x2F;1.4.8
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc1R0VYQ0FWQ&quot; name=&quot;toc1R0VYQ0FWQ&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTE5aVzRZT&#x27;&gt; 1. TODO &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+呜乎哀哉！&lt;a href=&quot;http:&#x2F;&#x2F;www.douban.com&#x2F;forum&#x2F;2&#x2F;102016&quot;&gt;赶紧报告&lt;&#x2F;a&gt;！
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+不过看豆瓣的服务架构是挻前卫的哪…………Lighttpd....
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;technorati-over.gif&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;OpenSource&quot;&gt;OpenSource&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;error&quot;&gt;error&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;Quixote&quot;&gt;Quixote&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;utility&#x2F;py4web&#x2F;Quixote&#x2F;doubanerror-2006-01-30-14-00.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">《Django一步接一步》中文学习教程发表！</title>
+<category term="/py4web/Django" />
+<id>/pyblosxom/2006/01/27/django-stepbystep-2006-01-27-23-23</id>
+<updated>2006-01-27T15:23:00Z</updated>
+<published>2006-01-27T15:23:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/utility/py4web/Django/django-stepbystep-2006-01-27-23-23.html" />
+<content type="html">
+&lt;a href=&quot;http:&#x2F;&#x2F;www.djangoproject.com&#x2F;&quot;&gt;
+Djano
+&lt;&#x2F;a&gt;是&lt;a href=&quot;http:&#x2F;&#x2F;python.org&#x2F;&quot;&gt;
+Python
+&lt;&#x2F;a&gt; 世界中，类似&lt;a href=&quot;http:&#x2F;&#x2F;www.rubyonrails.org&#x2F;&quot;&gt;RoR&lt;&#x2F;a&gt; 
+的快速web 开发平台之一.它鼓励快速开发和干净的、ＭＶＣ设计。它包括一个模板系统，对象相关的映射和用于动态创建管理界面的框架。自从正式发布后在全世界受到追捧，发布的异常快速。
+
+&lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;DjanGo&quot;&gt;
+(啄木鸟社区的中文介绍)
+&lt;&#x2F;a&gt;
+&lt;br&#x2F;&gt;
+&lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;CPUG&quot;&gt;CPUG&lt;&#x2F;a&gt;
+活跃人物:
+&lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;limodou&quot;&gt;
+limodou
+&lt;&#x2F;a&gt; 刚刚在个人
+&lt;a href=&quot;http:&#x2F;&#x2F;blog.donews.com&#x2F;limodou&#x2F;archive&#x2F;2006&#x2F;01&#x2F;26&#x2F;709143.aspx&quot;&gt;
+Blog 
+&lt;&#x2F;a&gt;中 发布消息，正式发表了&lt;b&gt;
+&lt;a href=&quot;http:&#x2F;&#x2F;www.woodpecker.org.cn&#x2F;obp&#x2F;django&#x2F;django-stepbystep&#x2F;newtest&#x2F;doc&#x2F;&quot;&gt;
+《Django Step by Step》
+&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+-- 《Django一步接一步》中文学习教程！
+
+&lt;br&#x2F;&gt;
+教程整理自&lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;limodou&quot;&gt;
+limodou
+&lt;&#x2F;a&gt;的个人学习体验，以前&lt;a href=&quot;http:&#x2F;&#x2F;blog.donews.com&#x2F;limodou&#x2F;category&#x2F;65397.aspx&quot;&gt;是以连载的形式在blog中
+&lt;&#x2F;a&gt;发布的，此次，使用
+&lt;a href=&quot;http:&#x2F;&#x2F;www.czug.org&#x2F;plone&#x2F;howto&#x2F;howto-restructed-text&#x2F;&quot;&gt;
+&lt;i&gt;re&lt;&#x2F;i&gt;Structed
+&lt;&#x2F;a&gt;
+文本格式整理，组织成为正式教程，通过&lt;a href=&quot;http:&#x2F;&#x2F;www.woodpecker.org.cn&#x2F;&quot;&gt;
+啄木鸟社区
+&lt;&#x2F;a&gt;空间发布以利于中国Python 爱好者学习。
+
+
+
+
+
+
+
+
+
+
+
+</content>
+</entry>
+
+<entry>
+<title type="html">MD5使用快记</title>
+<category term="/zqlib" />
+<id>/pyblosxom/2006/01/24/MD5-2006-01-24-23-23</id>
+<updated>2006-01-24T15:23:00Z</updated>
+<published>2006-01-24T15:23:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/utility/zqlib/MD5-2006-01-24-23-23.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopSlZDRExaR&#x27; id=&#x27;toptopSlZDRExaR&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;MD5使用快记&lt;&#x2F;h1&gt;
+&lt;h2&gt;ZoomQuiet&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;dl&gt;
+&lt;dt&gt;&lt;a href=&quot;http:&#x2F;&#x2F;a-010.cyut.edu.tw&#x2F;~vote&#x2F;md5.php&quot;&gt;MD5&lt;&#x2F;a&gt;&lt;&#x2F;dt&gt;&lt;dd&gt;
+  ( Message-Digest algorithm 5) 
+  MD5作为一个单向混淆算法，即不易以逆向运算得到原始资料
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;b&gt;Pythonic 的使用:&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  shell&quot;&gt;
+
+Python 2.4.1 (#65, Mar 30 2005, 09:13:57) [MSC v.1310 32 bit (Intel)] on win32
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&amp;gt;&amp;gt;&amp;gt; import md5
+&amp;gt;&amp;gt;&amp;gt; dir(md5)
+[&#x27;MD5Type&#x27;, &#x27;__doc__&#x27;, &#x27;__name__&#x27;, &#x27;digest_size&#x27;, &#x27;md5&#x27;, &#x27;new&#x27;]
+&amp;gt;&amp;gt;&amp;gt; md5.md5(文件)
+&amp;lt;md5.md5 object at 0x00B83800&amp;gt;
+&amp;gt;&amp;gt;&amp;gt; md=md5.md5(文件)
+&amp;gt;&amp;gt;&amp;gt; dir(md)
+[&#x27;copy&#x27;, &#x27;digest&#x27;, &#x27;hexdigest&#x27;, &#x27;update&#x27;]
+&amp;gt;&amp;gt;&amp;gt; md.hexdigest()
+&#x27;50235d71d6aa33a2be8d8bfbb1e87b91&#x27;
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;
+嗯哪……
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;ul&gt;
+&lt;li&gt;动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;t2t渲染:: 2011-09-07 03:51:34
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;technorati-over.gif&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;chinese&quot;&gt;chinese&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;OpenSource&quot;&gt;OpenSource&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;pythonic&quot;&gt;pythonic&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;md5&quot;&gt;md5&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags MD5-2006-01-24-23-23.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">Subversion</title>
+<category term="/Subversion" />
+<id>/pyblosxom/2006/01/01/intoSVN-2006-01-01-23-23</id>
+<updated>2006-01-01T15:23:00Z</updated>
+<published>2006-01-01T15:23:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/utility/Subversion/intoSVN-2006-01-01-23-23.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopS04yV0U1V&#x27; id=&#x27;toptopS04yV0U1V&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;Subversion&lt;&#x2F;h1&gt;
+&lt;h2&gt;为了颠覆CVS的版本管理系统！&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0FVM&quot;&gt;SVN vs CVS&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc2R0lYQ0JaT&quot;&gt;啄木鸟的体验&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc3R01YQ0E1U&quot;&gt;v1.3.0体验&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc4R01YRENMU&quot;&gt;3.1. 继续&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0FVM&quot; name=&quot;toc1R0VYQ0FVM&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopS04yV0U1V&#x27;&gt; 1. SVN vs CVS &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+在本地使用自个儿习惯的格式来写，通过SVN 自动版本同步到PyBlsxom发布！
+&lt;&#x2F;p&gt;
+&lt;dl&gt;
+&lt;dt&gt;好处：&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ol&gt;
+    &lt;li&gt;使用DB4有事务支持
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;二进制文件可版本管理
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;速度快！
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;离线操作丰富
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;...
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;坏处:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;使用DB 数据可能&lt;i&gt;变脏&lt;&#x2F;i&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;DB4 管理复杂
+     &lt;ul&gt;
+     &lt;li&gt;不过，到了1.2.1以后也支持CVS样儿的文件型数据管理了
+    -
+     &lt;&#x2F;li&gt;
+     &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc2R0lYQ0JaT&quot; name=&quot;toc2R0lYQ0JaT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopS04yV0U1V&#x27;&gt; 2. 啄木鸟的体验 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+很早就使用SVN 进行代码管理了，统一的体验就是快！
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;a href=&quot;http:&#x2F;&#x2F;cvs.woodpecker.org.cn&#x2F;trac&#x2F;&quot;&gt;trac of 啄木鸟&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;AllAboutSubversion&quot;&gt;啄木鸟SVN使用说明&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc3R01YQ0E1U&quot; name=&quot;toc3R01YQ0E1U&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopS04yV0U1V&#x27;&gt; 3. v1.3.0体验 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;dl&gt;
+&lt;dt&gt;FreeBSD6.0 为准:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ol&gt;
+    &lt;li&gt;升级ports:
+        &lt;ul&gt;
+        &lt;li&gt;&lt;code&gt;portsnap upgrade&lt;&#x2F;code&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;比以前的什么
+        &lt;code&gt;cvsup -sgL2 &#x2F;usr&#x2F;share&#x2F;examples&#x2F;cvsup&#x2F;ports-supfile -h cvsup{,2-6}.cn.freebsd.org&lt;&#x2F;code&gt; 
+        要直接的多
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;安装SVN:
+&lt;pre&gt;
+# cd &#x2F;usr&#x2F;ports&#x2F;devel&#x2F;subversion
+# make install clean
+&lt;&#x2F;pre&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;创建SVN仓库:
+        &lt;ul&gt;
+        &lt;li&gt;&lt;code&gt;svnadmin create --fs-type fsfs &#x2F;path&#x2F;to&#x2F;ur&#x2F;svnrepo&lt;&#x2F;code&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;建立使用 &lt;a href=&quot;http:&#x2F;&#x2F;www.subversion.org.cn&#x2F;svnbook&#x2F;1.1&#x2F;svn-ch-5.html#svn-ch-5-sect-1.3&quot;&gt;FSFS 存储的仓库&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;启动服务:
+        &lt;ul&gt;
+        &lt;li&gt;选择&lt;b&gt;svnserve&lt;&#x2F;b&gt;:
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.subversion.org.cn&#x2F;svnbook&#x2F;1.1&#x2F;svn-ch-6.html#svn-ch-6-sect-1&quot;&gt;根据对比&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;b&gt;svnserve&lt;&#x2F;b&gt; 模式依赖最小,管理也方便，速度还快！
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+        &lt;ol&gt;
+        &lt;li&gt;inetd 方法启动:
+            &lt;ul&gt;
+            &lt;li&gt;确认:
+&lt;pre&gt;
+    &#x2F;etc&#x2F;services 有
+svn           3690&#x2F;tcp   # Subversion
+svn           3690&#x2F;udp   # Subversion
+    &#x2F;etc&#x2F;inetd.conf 有
+svn stream tcp nowait svnowner &#x2F;usr&#x2F;bin&#x2F;svnserve svnserve -i
+
+&lt;&#x2F;pre&gt;
+            &lt;&#x2F;li&gt;
+            &lt;li&gt;&lt;code&gt;svnserve -i&lt;&#x2F;code&gt; 命令启动
+            &lt;&#x2F;li&gt;
+            &lt;li&gt;每有请求，就会创建一个svnserve进程，处理完后自杀
+            &lt;&#x2F;li&gt;
+            &lt;&#x2F;ul&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;作为独立“守护”进程:
+            &lt;ul&gt;
+            &lt;li&gt;直接&lt;code&gt;svnserve -d --listen-port=和--listen-host=&lt;&#x2F;code&gt;
+            选项来自定义“绑定”的端口和主机名启动
+            &lt;&#x2F;li&gt;
+            &lt;li&gt;创建一个驻留内存的进程来影响SVN事务
+            &lt;&#x2F;li&gt;
+            &lt;li&gt;也可限制发布:
+&lt;pre&gt;
+svnserve -d -r &#x2F;path&#x2F;to&#x2F;ur&#x2F;svnrepos&#x2F;
+&lt;&#x2F;pre&gt;
+            仅仅发布指定的SVN仓库，这样一来访问时就不用知道服务端系统路径了
+            &lt;&#x2F;li&gt;
+            &lt;&#x2F;ul&gt;
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ol&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;权限管理:
+        &lt;ul&gt;
+        &lt;li&gt;1.3.0 的SVN提供了足够好用的默许权限控制！
+        不用什么 Apache 的额外支持就足够进行管理了!
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;i&gt;svnserve.conf&lt;&#x2F;i&gt;中指定:
+&lt;pre&gt;
+password-db = passwd
+authz-db = authz
+...
+&lt;&#x2F;pre&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;就可以在 &lt;b&gt;passwd&lt;&#x2F;b&gt; 文件中定义口令
+&lt;pre&gt;
+[users]
+harry = harryssecret
+sally = sallyssecret
+...
+&lt;&#x2F;pre&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;b&gt;authz&lt;&#x2F;b&gt; 中进行用户组，代码目录访问权限的分配了
+&lt;pre&gt;
+[groups]
+harry_and_sally = harry,sally
+[&#x2F;foo&#x2F;bar]
+harry = rw
+* = 
+[repository:&#x2F;baz&#x2F;fuz]
+@harry_and_sally = rw
+* = r
+&lt;&#x2F;pre&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;比以前的只能口令，要丰富，足够的很多了！
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;备份管理:
+        &lt;ul&gt;
+        &lt;li&gt;&lt;b&gt;hotcopy&lt;&#x2F;b&gt; 真实可用的热备！
+&lt;pre&gt;
+svnadmin hotcopy &#x2F;path&#x2F;to&#x2F;ur&#x2F;repos &#x2F;path&#x2F;to&#x2F;backup&#x2F; &amp;amp;
+&lt;&#x2F;pre&gt;
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;事务管理:
+        &lt;ul&gt;
+        &lt;li&gt;高级，但是实用有趣的 
+        &lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;SubversionHooks&quot;&gt;HOOKs&lt;&#x2F;a&gt;&lt;&#x2F;b&gt; 技术了！
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;最基础的 ，将&lt;code&gt;post-commit.tmpl&lt;&#x2F;code&gt; cp 为 post-commit,
+        加入你自个儿的事务脚本
+&lt;pre&gt;
+HOOKS=&quot;&#x2F;path&#x2F;to&#x2F;ur&#x2F;repos&#x2F;hooks&#x2F;script&quot;
+$HOOKS&#x2F;post-commit.py &quot;$REPOS&quot; &quot;$REV&quot;
+&lt;&#x2F;pre&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;啄木鸟现在使用的 &lt;a href=&quot;&#x2F;pyblosxom&#x2F;OpenSource&#x2F;Subversion&#x2F;hooks&#x2F;post-commit.phtm&quot;&gt;post-commit.py&lt;&#x2F;a&gt;自动将检入活动记录在案
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc4R01YRENMU&quot; name=&quot;toc4R01YRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopS04yV0U1V&#x27;&gt; 3.1. 继续 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+以上是快记，具体使用中的体会，妙处要长期发现记录在案 的…………
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;ul&gt;
+&lt;li&gt;动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;t2t渲染:: 2010-10-09 02:21:36
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;technorati-over.gif&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;OpenSource&quot;&gt;OpenSource&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;Subversion&quot;&gt;hacking&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;utility&#x2F;Subversion&#x2F;intoSVN-2006-01-01-23-23.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">TXT2TAGS 示例</title>
+<category term="/py4str/StructuredText" />
+<id>/pyblosxom/2005/04/01/t2tdemo-2005-04-01-23-23</id>
+<updated>2005-04-01T15:23:00Z</updated>
+<published>2005-04-01T15:23:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/utility/py4str/StructuredText/t2tdemo-2005-04-01-23-23.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopS1JNRklNU&#x27; id=&#x27;toptopS1JNRklNU&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;TXT2TAGS 示例&lt;&#x2F;h1&gt;
+&lt;h2&gt;~ by ZoomQuiet&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0JaR&quot;&gt;介绍 Intro.&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc2R0VYRENMU&quot;&gt;1.1. 文档声明&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc3R0lYQ0JaT&quot;&gt;字体与美化 Fonts and Beautifiers&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc4R0lYRENMU&quot;&gt;2.1. 美化 Beautifiers&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc5R0lYREVMU&quot;&gt;2.2. 更多的装饰 More Cosmetics&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc6R01YQ0JaT&quot;&gt;列表&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc7R01YRENMU&quot;&gt;3.1. 普通列表 Plain List&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc8R01YREVMU&quot;&gt;3.2. 数字列表 Numbered List&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc9R01YREdMU&quot;&gt;3.3. 定义列表 Definition List&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc10R1FYQ0IyR&quot;&gt;表格 Tables&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc11R1VYQ0JaN&quot;&gt;特殊实体 Special Entities&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc12R1VYRENMU&quot;&gt;5.1. 图片 Images&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc13R1VYREVMU&quot;&gt;5.2. 其它 Other&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0JaR&quot; name=&quot;toc1R0VYQ0JaR&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopS1JNRklNU&#x27;&gt; 1. 介绍 Intro. &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+欢迎阅读 txt2tags 示例文件！
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+这里你可以看到常用的所有 t2t 使用
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+文件的头二行是文档的基本信息，
+按照以下顺序填写:
+&lt;&#x2F;p&gt;
+&lt;pre&gt;
+行 1: 文档标题
+行 2: 作者名，邮箱
+行 3: 日期，时间
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;
+空行，是自然段间的分隔
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+中文用户，一般要再单另一行声明编码:
+&lt;&#x2F;p&gt;
+&lt;pre&gt;
+%!encoding: gb2312
+&lt;&#x2F;pre&gt;
+&lt;p&gt;
+最好使用更加通用的Unicode 编码:
+&lt;&#x2F;p&gt;
+&lt;pre&gt;
+%!encoding: UTF-8
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc2R0VYRENMU&quot; name=&quot;toc2R0VYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopS1JNRklNU&#x27;&gt; 1.1. 文档声明 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+使用编辑环境时最好加入类似文档声明:
+&lt;&#x2F;p&gt;
+&lt;pre&gt;
+%! Target  : html
+%! Options : --toc --css-inside
+%! Options : --css-sugar
+%! Style   : css&#x2F;moin.css
+
+&lt;&#x2F;pre&gt;
+&lt;p&gt;
+说明本文输出时的重要参数:
+&lt;&#x2F;p&gt;
+ &lt;ol&gt;
+ &lt;li&gt;输出为标准HTML标签格式
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;要文档标题索引，并将CSS形式表包含在文档内
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;将文章按照结构使用 DIV 层来分离，以便使用CSS来进行美化
+  &lt;ul&gt;
+  &lt;li&gt;就象sample中展示的modern 效果
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;使用外部指定的一个CSS定义 
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ol&gt;
+
+&lt;a id=&quot;toc3R0lYQ0JaT&quot; name=&quot;toc3R0lYQ0JaT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopS1JNRklNU&#x27;&gt; 2. 字体与美化 Fonts and Beautifiers &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+整体上来说t2t 使用两种字体设定:
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+正常 字体可以使用各种美化处理
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;code&gt;打印机字体&lt;&#x2F;code&gt; 即“等宽体” 是被预格式化处理的不能被美化处理
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+现在进入详细章节...
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc4R0lYRENMU&quot; name=&quot;toc4R0lYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopS1JNRklNU&#x27;&gt; 2.1. 美化 Beautifiers &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+就象你在 email 中定义文本样式一样，t2t 可以简单的快速美化字样
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;双* 产生 &lt;b&gt;加重&lt;&#x2F;b&gt;效果
+&lt;&#x2F;li&gt;
+&lt;li&gt;双&#x2F; 产生 &lt;i&gt;斜体&lt;&#x2F;i&gt;效果
+&lt;&#x2F;li&gt;
+&lt;li&gt;双_ 产生 &lt;u&gt;下线&lt;&#x2F;u&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+并且&lt;i&gt;可以&lt;b&gt;混合&lt;&#x2F;b&gt;使用&lt;&#x2F;i&gt;！
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc5R0lYREVMU&quot; name=&quot;toc5R0lYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopS1JNRklNU&#x27;&gt; 2.2. 更多的装饰 More Cosmetics &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+特殊的内容，比如说 email (&lt;a href=&quot;mailto:duh@somewhere.com&quot;&gt;duh@somewhere.com&lt;&#x2F;a&gt;) 和
+URL (&lt;a href=&quot;http:&#x2F;&#x2F;www.duh.com&quot;&gt;http:&#x2F;&#x2F;www.duh.com&lt;&#x2F;a&gt;) 会自动处理
+还有横线:
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+^ 细的 或是 粗的 v
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;heavy&quot; &#x2F;&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;
+你也可以定义带URL的标签&lt;a href=&quot;http:&#x2F;&#x2F;duh.org&quot;&gt;外部链接&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+并且记住,
+&lt;&#x2F;p&gt;
+	&lt;blockquote&gt;
+	在一行前缀一个制表符将产生引用, A TAB in front of the line does a quotation.
+		&lt;blockquote&gt;
+		而且可以嵌套使用用 More TABs, more depth (if allowed).
+		&lt;&#x2F;blockquote&gt;
+	&lt;&#x2F;blockquote&gt;
+&lt;p&gt;
+非常好用的！.
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc6R01YQ0JaT&quot; name=&quot;toc6R01YQ0JaT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopS1JNRklNU&#x27;&gt; 3. 列表 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+形成一个列表非常的自然，只要在行前使用 &lt;b&gt;减号&lt;&#x2F;b&gt; 或是 &lt;b&gt;加号&lt;&#x2F;b&gt; 
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc7R01YRENMU&quot; name=&quot;toc7R01YRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopS1JNRklNU&#x27;&gt; 3.1. 普通列表 Plain List &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+减号 用来标识默许的列表. 对于嵌套列表只要在行前加 &lt;b&gt;空格&lt;&#x2F;b&gt; ,
+并且很自然的，越多的空格，层次就越深
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;地球
+  &lt;ul&gt;
+  &lt;li&gt;中国
+    &lt;ul&gt;
+    &lt;li&gt;北京
+      &lt;ul&gt;
+      &lt;li&gt;海淀
+        &lt;ul&gt;
+        &lt;li&gt;还要多深？
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+      &lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;朝鲜
+    &lt;ul&gt;
+    &lt;li&gt;更多的国家
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;火星
+  &lt;ul&gt;
+  &lt;li&gt;上面有谁？
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;p&gt;
+想结束列表，只要使用连续&lt;b&gt;两个空行&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc8R01YREVMU&quot; name=&quot;toc8R01YREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopS1JNRklNU&#x27;&gt; 3.2. 数字列表 Numbered List &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+同样的规则，只是使用 加号，则自动处理为数字式的列表
+&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;甲 one
+&lt;&#x2F;li&gt;
+&lt;li&gt;乙 two
+&lt;&#x2F;li&gt;
+&lt;li&gt;丙 three
+  &lt;ul&gt;
+  &lt;li&gt;混合普通列表 mixed lists!
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;没有关系 
+    &lt;ol&gt;
+    &lt;li&gt;继续数字式的 counting again
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;...
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;丁 four
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+
+&lt;a id=&quot;toc9R01YREdMU&quot; name=&quot;toc9R01YREdMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopS1JNRklNU&#x27;&gt; 3.3. 定义列表 Definition List &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+使用冒号，可以引出词典式的列表. 内容是在紧接的下一行
+&lt;&#x2F;p&gt;
+&lt;dl&gt;
+&lt;dt&gt;桔 orange&lt;&#x2F;dt&gt;&lt;dd&gt;
+  黄色的水果 a yellow fruit
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;苹果 apple&lt;&#x2F;dt&gt;&lt;dd&gt;
+  绿色或是红色的 a green or red fruit
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;其它 other fruits&lt;&#x2F;dt&gt;&lt;dd&gt;
+  &lt;ul&gt;
+  &lt;li&gt;嗬嗬 wee!
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;当然可以混合 mixing lists
+    &lt;ol&gt;
+    &lt;li&gt;数字式的 again!
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;带来 and again!
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc10R1FYQ0IyR&quot; name=&quot;toc10R1FYQ0IyR&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopS1JNRklNU&#x27;&gt; 4. 表格 Tables &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+使用竖线来组成表格,
+双线开始，表示将解析表格，并作为表头
+使用空格对齐来标识每个表格项
+&lt;&#x2F;p&gt;
+&lt;table align=&quot;center&quot; border=&quot;1&quot;&gt;
+&lt;tr&gt;
+&lt;th&gt;表头 1&lt;&#x2F;th&gt;
+&lt;th&gt;表头 2&lt;&#x2F;th&gt;
+&lt;th&gt;表头 3&lt;&#x2F;th&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td&gt;内文 1.1&lt;&#x2F;td&gt;
+&lt;td align=&quot;center&quot;&gt;内文 1.2&lt;&#x2F;td&gt;
+&lt;td align=&quot;right&quot;&gt;内文 1.3&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td&gt;内文 2.1&lt;&#x2F;td&gt;
+&lt;td align=&quot;center&quot;&gt;内文 2.2&lt;&#x2F;td&gt;
+&lt;td align=&quot;right&quot;&gt;内文 2.3&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;&#x2F;table&gt;
+
+&lt;p&gt;
+没有最后的竖线，则没有边框:
+&lt;&#x2F;p&gt;
+&lt;table align=&quot;center&quot;&gt;
+&lt;tr&gt;
+&lt;th&gt;表头 1&lt;&#x2F;th&gt;
+&lt;th&gt;表头 2&lt;&#x2F;th&gt;
+&lt;th&gt;表头 3&lt;&#x2F;th&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td&gt;内文 1.1&lt;&#x2F;td&gt;
+&lt;td align=&quot;center&quot;&gt;内文 1.2&lt;&#x2F;td&gt;
+&lt;td align=&quot;center&quot;&gt;内文 1.3&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td&gt;内文 2.1&lt;&#x2F;td&gt;
+&lt;td align=&quot;center&quot;&gt;内文 2.2&lt;&#x2F;td&gt;
+&lt;td align=&quot;center&quot;&gt;内文 2.3&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;&#x2F;table&gt;
+
+&lt;a id=&quot;toc11R1VYQ0JaN&quot; name=&quot;toc11R1VYQ0JaN&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopS1JNRklNU&#x27;&gt; 5. 特殊实体 Special Entities &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+让事儿都简单哪！
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc12R1VYRENMU&quot; name=&quot;toc12R1VYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopS1JNRklNU&#x27;&gt; 5.1. 图片 Images &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+非常简单的图片引用方式: &lt;code&gt;[filename]&lt;&#x2F;code&gt;.
+&lt;&#x2F;p&gt;
+                      &lt;center&gt;&lt;img align=&quot;middle&quot; src=&quot;..&#x2F;img&#x2F;photo.jpg&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;&lt;&#x2F;center&gt;  
+&lt;ul&gt;
+&lt;li&gt;文件必须是 PNG, JPG, GIF 格式
+&lt;&#x2F;li&gt;
+&lt;li&gt;方框内不能有空格
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc13R1VYREVMU&quot; name=&quot;toc13R1VYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopS1JNRklNU&#x27;&gt; 5.2. 其它 Other &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+&lt;b&gt;&lt;code&gt;%%date&lt;&#x2F;code&gt;&lt;&#x2F;b&gt; 宏会输出当前日期
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+是标准的ISO &lt;code&gt;YYYYMMDD&lt;&#x2F;code&gt; 格式 20101009 
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+当然可以声明特殊的输出方式
+比如说: &lt;code&gt;%%date(%m-%d-%Y)&lt;&#x2F;code&gt; 会形成: 10-09-2010.
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+That&#x27;s all ! 现在你知道的足够开始使用 &lt;b&gt;t2t&lt;&#x2F;b&gt; 组织文档了！.
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+Translated to Chinese by Zoom.Quiet(&lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;ZoomQuiet&quot;&gt;Zoom Quiet&lt;&#x2F;a&gt;).
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;ul&gt;
+&lt;li&gt;t2t渲染:: 2010-10-09 02:21:37
+&lt;&#x2F;li&gt;
+&lt;li&gt;动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;utility&#x2F;py4str&#x2F;StructuredText&#x2F;t2tdemo-2005-04-01-23-23.t2t --&gt;
+</content>
+</entry>
+</feed>

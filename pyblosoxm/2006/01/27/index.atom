@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/2006/01/27/index.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/2006/01/27/index.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/2006/01/27/index.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2006-01-27T15:23:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">《Django一步接一步》中文学习教程发表！</title>
+<category term="/utility/py4web/Django" />
+<id>/pyblosxom/2006/01/27/django-stepbystep-2006-01-27-23-23</id>
+<updated>2006-01-27T15:23:00Z</updated>
+<published>2006-01-27T15:23:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/utility/py4web/Django/django-stepbystep-2006-01-27-23-23.html" />
+<content type="html">
+&lt;a href=&quot;http:&#x2F;&#x2F;www.djangoproject.com&#x2F;&quot;&gt;
+Djano
+&lt;&#x2F;a&gt;是&lt;a href=&quot;http:&#x2F;&#x2F;python.org&#x2F;&quot;&gt;
+Python
+&lt;&#x2F;a&gt; 世界中，类似&lt;a href=&quot;http:&#x2F;&#x2F;www.rubyonrails.org&#x2F;&quot;&gt;RoR&lt;&#x2F;a&gt; 
+的快速web 开发平台之一.它鼓励快速开发和干净的、ＭＶＣ设计。它包括一个模板系统，对象相关的映射和用于动态创建管理界面的框架。自从正式发布后在全世界受到追捧，发布的异常快速。
+
+&lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;DjanGo&quot;&gt;
+(啄木鸟社区的中文介绍)
+&lt;&#x2F;a&gt;
+&lt;br&#x2F;&gt;
+&lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;CPUG&quot;&gt;CPUG&lt;&#x2F;a&gt;
+活跃人物:
+&lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;limodou&quot;&gt;
+limodou
+&lt;&#x2F;a&gt; 刚刚在个人
+&lt;a href=&quot;http:&#x2F;&#x2F;blog.donews.com&#x2F;limodou&#x2F;archive&#x2F;2006&#x2F;01&#x2F;26&#x2F;709143.aspx&quot;&gt;
+Blog 
+&lt;&#x2F;a&gt;中 发布消息，正式发表了&lt;b&gt;
+&lt;a href=&quot;http:&#x2F;&#x2F;www.woodpecker.org.cn&#x2F;obp&#x2F;django&#x2F;django-stepbystep&#x2F;newtest&#x2F;doc&#x2F;&quot;&gt;
+《Django Step by Step》
+&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+-- 《Django一步接一步》中文学习教程！
+
+&lt;br&#x2F;&gt;
+教程整理自&lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;limodou&quot;&gt;
+limodou
+&lt;&#x2F;a&gt;的个人学习体验，以前&lt;a href=&quot;http:&#x2F;&#x2F;blog.donews.com&#x2F;limodou&#x2F;category&#x2F;65397.aspx&quot;&gt;是以连载的形式在blog中
+&lt;&#x2F;a&gt;发布的，此次，使用
+&lt;a href=&quot;http:&#x2F;&#x2F;www.czug.org&#x2F;plone&#x2F;howto&#x2F;howto-restructed-text&#x2F;&quot;&gt;
+&lt;i&gt;re&lt;&#x2F;i&gt;Structed
+&lt;&#x2F;a&gt;
+文本格式整理，组织成为正式教程，通过&lt;a href=&quot;http:&#x2F;&#x2F;www.woodpecker.org.cn&#x2F;&quot;&gt;
+啄木鸟社区
+&lt;&#x2F;a&gt;空间发布以利于中国Python 爱好者学习。
+
+
+
+
+
+
+
+
+
+
+
+</content>
+</entry>
+
+<entry>
+<title type="html">[hack7]Plugins</title>
+<category term="/techic/PyBlosxom" />
+<id>/pyblosxom/2006/01/27/PyblosxomFixLog7-2006-01-27-23-23</id>
+<updated>2006-01-27T15:23:00Z</updated>
+<published>2006-01-27T15:23:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/PyBlosxom/PyblosxomFixLog7-2006-01-27-23-23.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopTE5VR0NZM&#x27; id=&#x27;toptopTE5VR0NZM&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;[hack7]Plugins&lt;&#x2F;h1&gt;
+&lt;h2&gt;插件扩展之旅……&lt;&#x2F;h2&gt;
+&lt;h3&gt;t2t渲染:2010-10-09 02:21:39&lt;&#x2F;h3&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0JaV&quot;&gt;总体上&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc2R0lYQ0JaT&quot;&gt;已安装&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc3R01YQ0JaT&quot;&gt;垂涎的&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc4R1FYQ0JaT&quot;&gt;发布邪？&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0JaV&quot; name=&quot;toc1R0VYQ0JaV&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTE5VR0NZM&#x27;&gt; 1. 总体上 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;dl&gt;
+&lt;dt&gt;&lt;a href=&quot;http:&#x2F;&#x2F;pyblosxom.sourceforge.net&#x2F;blog&#x2F;static&#x2F;development&quot;&gt;贡献规范&lt;&#x2F;a&gt;&lt;&#x2F;dt&gt;&lt;dd&gt;
+    约定了开发插件的代码规范！
+    另外有丰富，标准的API信息:
+        &lt;ol&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;pyblosxom.sourceforge.net&#x2F;1.3&#x2F;api&#x2F;index.html&quot;&gt;1.3 API&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;pyblosxom.sourceforge.net&#x2F;1.3&#x2F;plugins&#x2F;index.html&quot;&gt;1.3 plugin API&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;pyblosxom.sourceforge.net&#x2F;1.3&#x2F;plugins&#x2F;public&#x2F;docs.ReadMeForPlugins-module.html&quot;&gt;1.3 callbacks&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ol&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;故！&lt;&#x2F;dt&gt;&lt;dd&gt;
+    可以标准化的安装，hacking 和分享！赞！
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;别传:&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;pre&gt;
+Response Headers - http:&#x2F;&#x2F;pyblosxom.sourceforge.net&#x2F;1.3&#x2F;API&#x2F;index.html
+
+Date: Fri, 27 Jan 2006 03:31:00 GMT
+Server: Apache&#x2F;1.3.33 (Unix) PHP&#x2F;4.3.10
+X-Powered-By: PHP&#x2F;4.3.10
+Connection: keep-alive
+Content-Type: text&#x2F;html
+Transfer-Encoding: chunked
+
+404 Not Found
+&lt;&#x2F;pre&gt;
+    嘿嘿嘿，无意中发现 PyBlosxom 的服务端使用的是 PHP 发布？！
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc2R0lYQ0JaT&quot; name=&quot;toc2R0lYQ0JaT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTE5VR0NZM&#x27;&gt; 2. 已安装 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;dl&gt;
+&lt;dt&gt;直接使用的&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ol&gt;
+    &lt;li&gt;&quot;pycalendar&quot; 日历
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&quot;pycategories&quot; 简要分类
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&quot;pyarchives&quot; 月度归档
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&quot;py&quot; Python 语法颜色渲染
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&quot;comments&quot; 评注
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;少量修改的:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ol&gt;
+    &lt;li&gt;&quot;latest_comments&quot; 最新评注
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;自个儿开发的:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ol&gt;
+    &lt;li&gt;&quot;xhtml&quot; 简单XHTML 文本格式
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc3R01YQ0JaT&quot; name=&quot;toc3R01YQ0JaT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTE5VR0NZM&#x27;&gt; 3. 垂涎的 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;dl&gt;
+&lt;dt&gt;安装未果的&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ol&gt;
+    &lt;li&gt;&quot;moinmoin&quot; 格式文本处理器(不支持高版本MoinMoin)
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&quot;trackback&quot; 安装文档看不明(好象也没有人使用TB 哪!)
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;&lt;b&gt;一定要安装的&lt;&#x2F;b&gt;&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ol&gt;
+    &lt;li&gt;&quot;commentAPI&quot; 嗯嗯!可以结合Greasemonkey 开发插件式的评注工具哪!
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&quot;folksonomy&quot; 呜乎哀哉!垂涎哪!象美味书签哪样儿的标签化分类
+        &lt;ul&gt;
+        &lt;li&gt;&quot;keywords&quot; 同上,类似
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.codeape.org&#x2F;blog&#x2F;static&#x2F;download&quot;&gt;pyguest&lt;&#x2F;a&gt; 
+    简单留言板
+    &lt;p&gt;&lt;&#x2F;p&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;bluesock.org&#x2F;~willg&#x2F;cgi-bin&#x2F;pybltrac.cgi&#x2F;wiki&quot;&gt;Will&#x27;s 系列插件&lt;&#x2F;a&gt;
+        &lt;ol&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;bluesock.org&#x2F;~willg&#x2F;cgi-bin&#x2F;pybltrac.cgi&#x2F;wiki&#x2F;plugininfo&quot;&gt;plugininfo&lt;&#x2F;a&gt; 自动汇报使用插件情况
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;bluesock.org&#x2F;~willg&#x2F;cgi-bin&#x2F;pybltrac.cgi&#x2F;wiki&#x2F;pystaticfile&quot;&gt;pystaticfile&lt;&#x2F;a&gt;发布静态说明性文章;类似 aboutme 之类的...
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;bluesock.org&#x2F;~willg&#x2F;cgi-bin&#x2F;pybltrac.cgi&#x2F;wiki&#x2F;wbgarchives&quot;&gt;wbgarchives&lt;&#x2F;a&gt; 年度文章&lt;a href=&quot;http:&#x2F;&#x2F;bluesock.org&#x2F;~willg&#x2F;blog&#x2F;2005&#x2F;&quot;&gt;汇总页面&lt;&#x2F;a&gt;
+            &lt;ul&gt;
+            &lt;li&gt;应该说,可以类比的写出分类汇兑插件
+            &lt;&#x2F;li&gt;
+            &lt;&#x2F;ul&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;bluesock.org&#x2F;~willg&#x2F;cgi-bin&#x2F;pybltrac.cgi&#x2F;wiki&#x2F;wbggrep&quot;&gt;wbggrep&lt;&#x2F;a&gt; grep搜索引擎,嗬嗬!&lt;b&gt;Uinx 系统专用&lt;&#x2F;b&gt;的便利,不用求助于Google&#x2F;lucene 什么了!
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;bluesock.org&#x2F;~willg&#x2F;cgi-bin&#x2F;pybltrac.cgi&#x2F;wiki&#x2F;wbgpager&quot;&gt;wbgpager&lt;&#x2F;a&gt;多页指引
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;bluesock.org&#x2F;~willg&#x2F;cgi-bin&#x2F;pybltrac.cgi&#x2F;wiki&#x2F;wbgrecent&quot;&gt;wbgrecent&lt;&#x2F;a&gt;综合&quot;最新&quot;&lt;a href=&quot;http:&#x2F;&#x2F;bluesock.org&#x2F;~willg&#x2F;blog&#x2F;recent&quot;&gt;效果:&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ol&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc4R1FYQ0JaT&quot; name=&quot;toc4R1FYQ0JaT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTE5VR0NZM&#x27;&gt; 4. 发布邪？ &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+已经有人问及中文版本的 theme 什么时候发布了!
+&lt;&#x2F;p&gt;
+&lt;dl&gt;
+&lt;dt&gt;contribute 分发!&lt;&#x2F;dt&gt;&lt;dd&gt;
+    也是技术活,怎么样组织和说明才可以令其它人安然的安装各种插件成功?
+    不如象 &lt;a href=&quot;http:&#x2F;&#x2F;www.tiddlywiki.com&#x2F;&quot;&gt;TiddlyWiki&lt;&#x2F;a&gt; 那样儿,
+    整个完整的,立等可取用的系统合包?
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;technorati-over.gif&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;OpenSource&quot;&gt;OpenSource&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;PyBlosxom&quot;&gt;PyBlosxom&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;hacking&quot;&gt;hacking&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;SNS&quot;&gt;SNS&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;techic&#x2F;PyBlosxom&#x2F;PyblosxomFixLog7-2006-01-27-23-23.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">[core]fileentry.py</title>
+<category term="/techic/PyBlosxom/blosxom" />
+<id>/pyblosxom/2006/01/27/croe-hack-file-entry-2006-01-27-23-23</id>
+<updated>2006-01-27T15:23:00Z</updated>
+<published>2006-01-27T15:23:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/PyBlosxom/blosxom/croe-hack-file-entry-2006-01-27-23-23.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopTE5SVzY0V&#x27; id=&#x27;toptopTE5SVzY0V&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;[core]fileentry.py&lt;&#x2F;h1&gt;
+&lt;h2&gt;增补模板元素&lt;&#x2F;h2&gt;
+&lt;h3&gt;t2t渲染:2011-09-07 02:09:17&lt;&#x2F;h3&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0FaV&quot;&gt;fixed&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc2R0lYQ0FWQ&quot;&gt;TODO&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0FaV&quot; name=&quot;toc1R0VYQ0FaV&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTE5SVzY0V&#x27;&gt; 1. fixed &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;dl&gt;
+&lt;dt&gt;Why?&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;a href=&quot;..&#x2F;060120-PyblosxomFixLog3.phtm#toc5&quot;&gt;t2t支持的遗留问题&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;现在我的Blog 基本就两种文件格式:
+        &lt;ol&gt;
+        &lt;li&gt;.py 脚本文件
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;.t2t 文章
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ol&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;但是模板中 t2t 额外给出的下载 .t2t和.moin 对 .py 的文件不适用！
+    &lt;p&gt;&lt;&#x2F;p&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;problem&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;pyblosxom.sourceforge.net&#x2F;1.3&#x2F;manual&#x2F;x307.html#AEN356&quot;&gt;模板有效输出值&lt;&#x2F;a&gt;
+    的说明中有问题！
+    &lt;ul&gt;
+    &lt;li&gt;&lt;b&gt;file_path&lt;&#x2F;b&gt;	just the filename and extensions of the entry
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;实际上没有后缀！
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;所以！
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;hacked:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;i&gt;path&#x2F;to&#x2F;site-packages&#x2F;Pyblosxom&#x2F;entries&#x2F;fileentry.py&lt;&#x2F;i&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  python&quot;&gt;
+
+#147 line...
+        self[&#x27;entryext&#x27;] = ext
+        self[&#x27;filebasename&#x27;] = file_basename
+&lt;&#x2F;pre&gt;
+    追加我需要的变量！
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;模板处理:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    这样一来&lt;b&gt;story.*&lt;&#x2F;b&gt;的模板中就可以对应修正输出了！
+&lt;pre class=&quot;brush:  html&quot;&gt;
+
+| &amp;lt;a href=&quot;$base_url&#x2F;$file_path_urlencoded.$flavour&quot; 
+    title=&quot;permalink&quot;&amp;gt;#
+    永久链接&amp;lt;&#x2F;a&amp;gt;&amp;lt;!--permanent link to this entry--&amp;gt;
+    &amp;lt;sup&amp;gt;    
+    &amp;lt;a href=&quot;&#x2F;entry&#x2F;$file_path_urlencoded$entryext&quot;&amp;gt;
+    $entryext&amp;lt;&#x2F;a&amp;gt;
+    &amp;lt;a href=&quot;&#x2F;entry&#x2F;$file_path_urlencoded.t2t&quot;&amp;gt;
+    .t2t&amp;lt;&#x2F;a&amp;gt;
+    &amp;lt;a href=&quot;&#x2F;entry&#x2F;$file_path_urlencoded.moin&quot;&amp;gt;
+    .moin&amp;lt;&#x2F;a&amp;gt;
+    &amp;lt;&#x2F;sup&amp;gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc2R0lYQ0FWQ&quot; name=&quot;toc2R0lYQ0FWQ&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTE5SVzY0V&#x27;&gt; 2. TODO &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;dl&gt;
+&lt;dt&gt;contribute 分发!&lt;&#x2F;dt&gt;&lt;dd&gt;
+    接踵而来的就是如何标准化的反馈社区，
+    贡献代码了…………
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;进一步的:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    Pyblosxom的模板属于简单模板，在模板中不能加入逻辑的，
+    所以现在虽然对.py 的文章有了直接下载链接，但是，没有自动生成的.moin 
+    和约定的.t2t 下载并不应该有…………
+    向社区建议吧…………
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;technorati-over.gif&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;OpenSource&quot;&gt;OpenSource&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;PyBlosxom&quot;&gt;PyBlosxom&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;hacking&quot;&gt;hacking&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;SNS&quot;&gt;SNS&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags croe-hack-file-entry-2006-01-27-23-23.t2t --&gt;
+</content>
+</entry>
+</feed>

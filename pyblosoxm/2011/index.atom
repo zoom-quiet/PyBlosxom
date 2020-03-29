@@ -1,0 +1,1907 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/2011/index.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/2011/index.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/2011/index.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2011-10-13T05:13:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">在家寻找外星人寻求帮助</title>
+<category term="/Quiet/SiFi" />
+<id>/pyblosxom/2011/10/13/setiahome-need-help-2011-10-13-13-13</id>
+<updated>2011-10-13T05:13:00Z</updated>
+<published>2011-10-13T05:13:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/Quiet/SiFi/setiahome-need-help-2011-10-13-13-13.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopNFdPS1JaT&#x27; id=&#x27;toptopNFdPS1JaT&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;在家寻找外星人寻求帮助&lt;&#x2F;h1&gt;
+&lt;h2&gt;~ 可怜的科学项目&lt;&#x2F;h2&gt;
+&lt;h3&gt;t2t渲染:2011-10-19 09:35:28&lt;&#x2F;h3&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1RURUSTVKU&quot;&gt;接触未来的现实版&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc2RUJKVUtWQ&quot;&gt;SETI@home needs your help!&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc3RURVTDdON&quot;&gt;迷妄&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1NDJIS0wyR&quot; name=&quot;toc1NDJIS0wyR&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopNFdPS1JaT&#x27;&gt; 接触未来的现实版 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;2011&#x2F;setiahome-big-logo.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+俺收到了这封信:
+&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  txt&quot;&gt;
+
+SETI@home donors@ssl.berkeley.edu
+发件人当地时间	发送时间 17:24 (GMT-07:00)。发送地当前时间：上午6:17。 ✆
+回复	donors@ssl.berkeley.edu
+主题	SETI@home Needs Your Help
+&lt;&#x2F;pre&gt;
+&lt;p&gt;
+Dear Zoom.Quiet:
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc2S05DVklTS&quot; name=&quot;toc2S05DVklTS&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopNFdPS1JaT&#x27;&gt; SETI@home needs your help! &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;2011&#x2F;seti-gbt2sm.jpg&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+Green Bank Telescope In the last year, SETI@home has made great steps forward thanks to the generosity of volunteers like you. Earlier this year we were able to use the Green Bank Telescope (pictured) in West Virginia to expand our search to include the nearly 100 potentially habitable planets found by the Kepler Mission. We&#x27;ve also re-observed seventy two of the 102 sources of unidentified radio pulses found with our Astropulse search. We hope to observe the remaining sources soon. While it&#x27;s likely that these pulses are a natural phenomenon, we don&#x27;t yet know what we will find. Data from both these projects have arrived or are on their way to Berkeley and will be sent to our volunteers in the coming months. Without the support of &lt;a href=&quot;http:&#x2F;&#x2F;setiathome.berkeley.edu&#x2F;sah_donate.php&quot;&gt;user donations&lt;&#x2F;a&gt;, these major new extensions to the SETI@home experiment would not have been possible.
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+Though the SETI@home experiment has been active for over eleven years, we are still branching out and exploring new scientific directions. As you may know, the data that your computer analyzes comes principally from the Arecibo radio telescope in Puerto Rico. While Arecibo is an immensely powerful telescope, it cannot see the entire sky. In the past we have been able to perform short duration observations at the Green Bank Telescope. But in the coming year, we plan to start continuous collection of data at the Green Bank Telescope, allowing us to listen in on parts of the sky that, up until now, we have not been able to reach.
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+We&#x27;re also in the process of adding a new search algorithm to the SETI@home application. This new algorithm, called autocorrelation, will make us sensitive to certain broad band or spread spectrum transmissions without predicting their characteristics beforehand. No SETI sky survey has utilized this type of algorithm before.
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+SETI@home has always been a collaborative effort on a global scale; there is no other project on Earth that is quite as dependent on the help and contributions of the citizens of Earth at-large. In order to keep SETI@home up and running, as well as accomplish this year&#x27;s scientific goals, we need your help. To make a secure tax-deductible donation &lt;a href=&quot;http:&#x2F;&#x2F;setiathome.berkeley.edu&#x2F;sah_donate.php&quot;&gt;click here&lt;&#x2F;a&gt;, which will take you to a page of instructions on how to donate online or through mail via check. Any amount that you are willing to donate this holiday season would be a great help. Your contribution will not only allow SETI@home to continue to run as it has for the past eleven years, but also provide the opportunity to expand the search for intelligent life in exciting new directions. These efforts represent our best chance at answering the ever-elusive question: Are we alone?
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+Thank you for your support and continuing dedication to SETI@Home.
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+Sincerely,
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+Dr. Eric Korpela, Project Scientist
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc3NUM3M1BaT&quot; name=&quot;toc3NUM3M1BaT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopNFdPS1JaT&#x27;&gt; 迷妄 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+SETI@home 这是多么浪漫的项目哪,都出现在不少网络小说中的科学项目;
+就这么没了,卡尔小说中那些私人赞助并没有如期出现...
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+强大如美国,也要放弃科学的终极追求了嘛...
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+好在科学家有无数方法可以渡过经济危机,&lt;a href=&quot;http:&#x2F;&#x2F;setiathome.berkeley.edu&#x2F;sah_donate.php&quot;&gt;点击捐助&lt;&#x2F;a&gt;
+目前只要几万刀,就可以低烈度的继续寻找外星人了...
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags Quiet&#x2F;SiFi&#x2F;setiahome-need-help-2011-10-13-13-13.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">首届PyCon中国大会发动！</title>
+<category term="/Zen/pythonic" />
+<id>/pyblosxom/2011/10/10/pycon2011china-2011-10-10-10-10</id>
+<updated>2011-10-10T02:10:00Z</updated>
+<published>2011-10-10T02:10:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/Zen/pythonic/pycon2011china-2011-10-10-10-10.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopNUdUSk5aT&#x27; id=&#x27;toptopNUdUSk5aT&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;首届PyCon中国大会发动！&lt;&#x2F;h1&gt;
+&lt;h2&gt;~ 让我们聚首上海&lt;&#x2F;h2&gt;
+&lt;h3&gt;t2t渲染:2011-10-20 03:17:22&lt;&#x2F;h3&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1RURTMkpKN&quot;&gt;大会&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc2RURUSUpIN&quot;&gt;感思&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1NFdTS1BaR&quot; name=&quot;toc1NFdTS1BaR&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopNUdUSk5aT&#x27;&gt; 大会 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+&lt;a href=&quot;http:&#x2F;&#x2F;cn.pycon.org&#x2F;2011&#x2F;&quot;&gt;&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;2011&#x2F;PyConChina.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;&lt;&#x2F;a&gt; 世界 Python 爱好者的顶级盛会 —— PyCon 大会将首次在中国举办！本次大会由（Python 软件基金会下的）PyCon.Org 正式授权 GTUG、TopGeek、CPyUG 等社区联合举办，由 Python 作者 Guido van Rossum 及其所在的 Google 公司提供关键支持。
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+本次大会云集了国内外最为杰出的 Python 开发者，国内 Python 领域的领军人物几乎悉数到场、作为 Python 重镇的各大知名公司几乎无一缺席，所有嘉宾都承诺将自己压箱底的 Python 绝活呈现给大家！&lt;a href=&quot;http:&#x2F;&#x2F;eishn.blog.163.com&#x2F;blog&#x2F;static&#x2F;652318201191381314841&#x2F;&quot;&gt;沈游侠&lt;&#x2F;a&gt;也会在大会上进行题为《Python，通向未来之路》的纯技术演讲，欢迎捧场。
+12 月，让我们聚首上海！
+大会订票已经开始 &lt;a href=&quot;http:&#x2F;&#x2F;pycon.51qiangzuo.com&quot;&gt;http:&#x2F;&#x2F;pycon.51qiangzuo.com&lt;&#x2F;a&gt; 手速一定要快哦！
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+会议为期两天（12 月 3 日至 4 日），票价 60￥，全部用于会议期间的就餐费用，其余大会所有费用及礼品主要由 Google 等公司承担赞助。作为国内最大的赞助者，我们也同样很荣幸能够服务于广大中国 Python 爱好者。
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+ps:
+&lt;&#x2F;p&gt;
+    &lt;ul&gt;
+    &lt;li&gt;以上内容全文抄录自 &lt;a href=&quot;http:&#x2F;&#x2F;eishn.blog.163.com&#x2F;blog&#x2F;static&#x2F;652318201191381314841&#x2F;&quot;&gt;首届中国 PyCon 大会！让我们聚首上海 - 沈崴的日志 - 网易博客&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc2NDJDSjdaV&quot; name=&quot;toc2NDJDSjdaV&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopNUdUSk5aT&#x27;&gt; 感思 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+N久前就开始义务的狂热的不断的推广 Python 了:
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;zoomquiet.org&#x2F;res&#x2F;s5&#x2F;070322-introPy&#x2F;&quot;&gt;070322-introPy&#x2F;&lt;&#x2F;a&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;zoomquiet.org&#x2F;res&#x2F;s5&#x2F;100820-introPy&#x2F;&quot;&gt;100820-introPy&#x2F;&lt;&#x2F;a&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;a href=&quot;http:&#x2F;&#x2F;wiki.python.org&#x2F;moin&#x2F;PyCon&quot;&gt;PyCon - PythonInfo Wiki&lt;&#x2F;a&gt; 2003开始，每年举行一次,
+后来，随着 Python 的发展，Google 的崛起，每年一次，已经无法满足全球 Python 程序猿的现摆了，
+于是，每年，各国都有 PyCon 授权的正式大会来Party HIGH 一下,
+&lt;a href=&quot;http:&#x2F;&#x2F;pycon.sit.rp.sg&#x2F;&quot;&gt;Pycon Asia Pacific&lt;&#x2F;a&gt;2010 在新加坡也整起来了，亲历了一下，很爽；
+只是没想到，今年，中国说搞就搞起来了！
+&lt;p&gt;&lt;&#x2F;p&gt;
+虽然 Python 在中国，社区不少，但是没有 JAVA&#x2F;.NET&#x2F;Ruby 等那么趁钱，光鲜，
+大家都在自个儿happy 的用，不怎么出来吼;
+但是，在中国的 Python 程序猿真的都很NB 哪，
+不出来吼，整得是个NB社区样儿，学生们可不屑来学习的哪.
+&lt;p&gt;&lt;&#x2F;p&gt;
+好了,夸了 &lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;2011&#x2F;cpyug.gif&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt; 的定期FB聚会,
+大家一喝高了,就有了冲动,一冲动就成了...
+&lt;p&gt;&lt;&#x2F;p&gt;
+其实我们玩的真不差了,相比国际上的玩法,有正式舞台了,多吼一吼,有益身心的!
+&lt;p&gt;&lt;&#x2F;p&gt;
+反正,俺一定要出台了,大家也尽力来哈!
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags Zen&#x2F;pythonic&#x2F;pycon2011china-2011-10-10-10-10.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">ScrapBook辅助工具之expidxlevels</title>
+<category term="/utility/py4xml" />
+<id>/pyblosxom/2011/09/08/scrapbook-expidxlevels-2011-09-08-13-13</id>
+<updated>2011-09-08T05:13:00Z</updated>
+<published>2011-09-08T05:13:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/utility/py4xml/scrapbook-expidxlevels-2011-09-08-13-13.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopS05SWEVZT&#x27; id=&#x27;toptopS05SWEVZT&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;ScrapBook辅助工具之expidxlevels&lt;&#x2F;h1&gt;
+&lt;h2&gt;~ 坑爹的RDF乱斗!&lt;&#x2F;h2&gt;
+&lt;h3&gt;t2t渲染:2011-09-08 04:54:24&lt;&#x2F;h3&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0JaR&quot;&gt;不折腾要死星人&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc2R0VYRENMU&quot;&gt;1.1. scraptools&lt;&#x2F;a&gt;
+      &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#toc3R0VYRENMU&quot;&gt;1.1.1. RDF&lt;&#x2F;a&gt;
+      &lt;&#x2F;li&gt;
+      &lt;li&gt;&lt;a href=&quot;#toc4R0VYRENMU&quot;&gt;1.1.2. yeild&lt;&#x2F;a&gt;
+      &lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc5R0VYREVMU&quot;&gt;1.2. TODO&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc6R0lYQ0JaV&quot;&gt;时间帐单&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0JaR&quot; name=&quot;toc1R0VYQ0JaR&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopS05SWEVZT&#x27;&gt; 1. 不折腾要死星人 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+嗯嗯嗯，从,,, 20041214101930 开始,坚持使用&lt;a href=&quot;http:&#x2F;&#x2F;amb.vis.ne.jp&#x2F;mozilla&#x2F;scrapbook&#x2F;&quot;&gt;SCRAPBOOK :: Firefox Extension&lt;&#x2F;a&gt; 进行离线网页的收集和整理了;
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;一直很爽,而且内置的导出功能,可以一键将本地收集的网页通过一个标准的框架页面,用树状索引进行发布;
+&lt;&#x2F;li&gt;
+&lt;li&gt;使用 rsync 等等文件同步小工具,就可以发布一个静态的表述自个儿关注领域技术的纯资料网站了!
+&lt;&#x2F;li&gt;
+&lt;li&gt;其实一直以来就发布有这类两个网站:
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;floss.zoomquiet.org&quot;&gt;http:&#x2F;&#x2F;floss.zoomquiet.org&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;skm.zoomquiet.org&quot;&gt;http:&#x2F;&#x2F;skm.zoomquiet.org&lt;&#x2F;a&gt;
+    &lt;p&gt;&lt;&#x2F;p&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;好处是那些优秀的文章,即使原文网站死了,依然在俺这儿原样可查,
+&lt;&#x2F;li&gt;
+&lt;li&gt;问题是:
+    &lt;ul&gt;
+    &lt;li&gt;&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;2011&#x2F;zq_2011-09-08-154005_577x344_scrot.png&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;导出的那个索引树,随着时间的积累,已经大到无法忍受了!
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;比如说, floss.zoomquiet.org 的树,包含 2万多节点,自身体积已经超过5M
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;有网友吼,用 Chrome 都无法打开!
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;  所以:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;得想招精简如此多节点的索引树了,,,
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;为了时不时，在俺这儿打捞历史文章的亲们...
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc2R0VYRENMU&quot; name=&quot;toc2R0VYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopS05SWEVZT&#x27;&gt; 1.1. scraptools &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+所以,有了 &lt;a href=&quot;https:&#x2F;&#x2F;bitbucket.org&#x2F;ZoomQuiet&#x2F;scraptools&#x2F;wiki&#x2F;Home&quot;&gt;ZoomQuiet &#x2F; scraptools — Bitbucket&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+其中的 expidxlevels.py 就是专门进行自动索引化简的...
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc3R0VYRENMU&quot; name=&quot;toc3R0VYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h3&gt;&lt;A href=&#x27;#toptopS05SWEVZT&#x27;&gt; 1.1.1. RDF &lt;&#x2F;A&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;
+以前在相关讲演中吼过,选择 &lt;a href=&quot;http:&#x2F;&#x2F;amb.vis.ne.jp&#x2F;mozilla&#x2F;scrapbook&#x2F;&quot;&gt;SCRAPBOOK :: Firefox Extension&lt;&#x2F;a&gt;的好点之一,就是有标准的XML 数据输出,好进行二次处理
+&lt;&#x2F;p&gt;
+    &lt;ul&gt;
+    &lt;li&gt;幻灯: &lt;a href=&quot;http:&#x2F;&#x2F;zoomquiet.org&#x2F;res&#x2F;s5&#x2F;100918-MyTools&#x2F;rst2s5&#x2F;&quot;&gt;http:&#x2F;&#x2F;zoomquiet.org&#x2F;res&#x2F;s5&#x2F;100918-MyTools&#x2F;rst2s5&#x2F;&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;录音: &lt;a href=&quot;http:&#x2F;&#x2F;zoomquiet.org&#x2F;res&#x2F;m&#x2F;r&#x2F;wav4zoomq&#x2F;100930-snda-mytools&#x2F;&quot;&gt;http:&#x2F;&#x2F;zoomquiet.org&#x2F;res&#x2F;m&#x2F;r&#x2F;wav4zoomq&#x2F;100930-snda-mytools&#x2F;&lt;&#x2F;a&gt;
+    &lt;p&gt;&lt;&#x2F;p&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;设想:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;将 &lt;code&gt;scrapbook.rdf&lt;&#x2F;code&gt; (自动生成的记录树关系的RDF)进行合理解析
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;整理成分级索引页面就可以解决单一索引的巨大加载问题了
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;杯具:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;TMD没有一种XML解析库对付的了RDF!
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;p&gt;
+&lt;code&gt;scrapbook.rdf&lt;&#x2F;code&gt; 的设计很简洁:
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;根节点,索引各个 &lt;code&gt;li&lt;&#x2F;code&gt;
+&lt;pre class=&quot;brush:  xml&quot;&gt;
+
+  &amp;lt;RDF:Seq RDF:about=&quot;urn:scrapbook:root&quot;&amp;gt;
+    &amp;lt;RDF:li RDF:resource=&quot;urn:scrapbook:item20091114162455&quot;&#x2F;&amp;gt;
+    &amp;lt;RDF:li RDF:resource=&quot;urn:scrapbook:item20050206112141&quot;&#x2F;&amp;gt;
+  &amp;lt;&#x2F;RDF:Seq&amp;gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;每个 &lt;code&gt;li&lt;&#x2F;code&gt; 也可能是一组 &lt;code&gt;Seq&lt;&#x2F;code&gt;
+&lt;pre class=&quot;brush:  xml&quot;&gt;
+
+  &amp;lt;RDF:Seq RDF:about=&quot;urn:scrapbook:item20070212000600&quot;&amp;gt;
+    &amp;lt;RDF:li RDF:resource=&quot;urn:scrapbook:item20070212000504&quot;&#x2F;&amp;gt;
+    &amp;lt;RDF:li RDF:resource=&quot;urn:scrapbook:item20070212000555&quot;&#x2F;&amp;gt;
+  &amp;lt;&#x2F;RDF:Seq&amp;gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;不论 &lt;code&gt;Seq&lt;&#x2F;code&gt; 自身,还是真正的页面,都有一个描述节点来记录详情
+&lt;pre class=&quot;brush:  xml&quot;&gt;
+
+  &amp;lt;RDF:Description RDF:about=&quot;urn:scrapbook:item20051216104753&quot;
+                   NS2:id=&quot;20051216104753&quot;
+                   NS2:type=&quot;&quot;
+                   NS2:title=&quot;吉卜力的新作也用blog宣傳&quot;
+                   NS2:chars=&quot;UTF-8&quot;
+                   NS2:comment=&quot;&quot;
+                   NS2:icon=&quot;&quot;
+                   NS2:source=&quot;http:&#x2F;&#x2F;www.bigsound.org&#x2F;portnoy&#x2F;weblog&#x2F;001318.html&quot; &#x2F;&amp;gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;如果只是分隔线，就是:
+&lt;pre class=&quot;brush:  xml&quot;&gt;
+
+  &amp;lt;NC:BookmarkSeparator RDF:about=&quot;urn:scrapbook:item20091113232313&quot;
+                   NS2:id=&quot;20091113232313&quot;
+                   NS2:type=&quot;separator&quot;
+                   NS2:title=&quot;&quot;
+                   NS2:chars=&quot;&quot;
+                   NS2:comment=&quot;&quot;
+                   NS2:icon=&quot;&quot;
+                   NS2:source=&quot;&quot; &#x2F;&amp;gt;
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+那么一切就应该从 &lt;code&gt;&amp;lt;RDF:Seq RDF:about=&quot;urn:scrapbook:root&quot;&amp;gt;&lt;&#x2F;code&gt; 节点开始爬就好的了,,,
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;FT!:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;不论内置的 &lt;code&gt;xml.dom&lt;&#x2F;code&gt; &#x2F; &lt;code&gt;xml.etree.ElementTree&lt;&#x2F;code&gt; 还是伟大的 &lt;a href=&quot;http:&#x2F;&#x2F;lxml.de&#x2F;&quot;&gt;lxml&lt;&#x2F;a&gt;
+        &lt;ul&gt;
+        &lt;li&gt;都不支持根据 XML 节点的属性进行搜索！
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;即使可以用 XPath 的算子过滤:&lt;code&gt;&#x2F;&#x2F;NC[@RDF:about = &quot;urn:scrapbook:root&quot;]&lt;&#x2F;code&gt; ，但是，没有库支持完全功能的XPath!
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;俺总不能用 XSLT 先写好过滤，然后再调用支持 XSLT 的浏览器获得中间结果給 Py 用吧？！
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;好的，有一堆 RDF 专用解析器
+        &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;redfoot.sourceforge.net&#x2F;&quot;&gt;Redfoot&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.openvest.com&#x2F;trac&#x2F;wiki&#x2F;RDFAlchemy&quot;&gt;RDFAlchemy&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;code.google.com&#x2F;p&#x2F;rdflib&#x2F;wiki&#x2F;ExampleFoafSmushing&quot;&gt;rdflib&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;infomesh.net&#x2F;pyrple&#x2F;&quot;&gt;pyrple - An RDF API in Python&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;librdf.org&#x2F;raptor&#x2F;&quot;&gt;Raptor&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;packages.python.org&#x2F;SuRF&#x2F;&quot;&gt;SuRF – Object RDF mapper&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;...可是！那个复杂哪！居然要在使用前,从相关 XSD 网址下载 Scheme 的!
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;也都没有简单的方式,可以让俺搜索到那个该死的  &lt;code&gt;&amp;lt;RDF:Seq RDF:about=&quot;urn:scrapbook:root&quot;&amp;gt;&lt;&#x2F;code&gt; 节点
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;不过,也算开了眼,居然有 &lt;a href=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;Submission&#x2F;2004&#x2F;SUBM-RDQL-20040109&#x2F;&quot;&gt;RDQL&lt;&#x2F;a&gt; &#x2F; &lt;a href=&quot;http:&#x2F;&#x2F;www.ibm.com&#x2F;developerworks&#x2F;cn&#x2F;education&#x2F;xml&#x2F;x-sparql&#x2F;index.html&quot;&gt;SPARQL&lt;&#x2F;a&gt; 等专用 RDF 解析语言!
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;看来当年的 &lt;a href=&quot;http:&#x2F;&#x2F;www.ibm.com&#x2F;developerworks&#x2F;cn&#x2F;grid&#x2F;gr-semgrid&#x2F;index.html&quot;&gt;Semantic Web&lt;&#x2F;a&gt; 的确玩到了很 HIGH 的程序...
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;可是,对于俺,这么简单的需求,就是没有简单的处置方法嘛?!
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;解决:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;冷静了一下,俺只是要进行简单的数据处理,并不一定要真的对 RDF 进行语义上的理解哪?!
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;XML 自古就有一种原始的,条带化基于事件的处理模型,曰 SAX
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;Py 内置有最简单的 expat库:
+        &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;docs.python.org&#x2F;library&#x2F;pyexpat.html#example&quot;&gt;19.5. xml.parsers.expat — Fast XML parsing using Expat — Python v2.7.2 documentation&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;跟着样例快速完成了处理部分,速度也非常的快
+    &lt;p&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  python ; highlight: [5,17,24]&quot;&gt;
+
+def start_element(name, attrs):
+    if &quot;RDF:Seq&quot; == name:
+        CF.IS_SEQ = 1
+        CF.IS_DESC = 0
+        if &quot;urn:scrapbook:root&quot; == attrs[&#x27;RDF:about&#x27;]:
+            #print &#x27;ROOT element:&#x27;, name, attrs
+            CF.IS_ROOT = 1
+            CF.DICTRDF[&#x27;ROOT&#x27;][&#x27;id&#x27;] = attrs[&#x27;RDF:about&#x27;].split(&quot;:&quot;)[-1]
+            CF.CRTID = attrs[&#x27;RDF:about&#x27;].split(&quot;:&quot;)[-1]
+            CF.DICTRDF[&#x27;ROOT&#x27;][&#x27;li&#x27;] = []
+        else:
+            CF.IS_ROOT = 0
+            CF.CRTID = attrs[&#x27;RDF:about&#x27;].split(&quot;:&quot;)[-1]
+            CF.DICTRDF[&#x27;SEQ&#x27;][CF.CRTID] = []
+    else:
+        CF.IS_SEQ = 0
+        if &quot;RDF:li&quot; == name:
+            CF.IS_DESC = 0
+            CF.IS_LI = 1
+            if CF.IS_ROOT:
+                CF.DICTRDF[&#x27;ROOT&#x27;][&#x27;li&#x27;].append(attrs[&#x27;RDF:resource&#x27;].split(&quot;:&quot;)[-1])
+            else:
+                CF.DICTRDF[&#x27;SEQ&#x27;][CF.CRTID].append(attrs[&#x27;RDF:resource&#x27;].split(&quot;:&quot;)[-1])
+        elif &quot;RDF:Description&quot; == name:
+            CF.IS_DESC = 1
+            CF.IS_LI = 0
+            CF.CRTID = attrs[&#x27;RDF:about&#x27;].split(&quot;:&quot;)[-1]
+            CF.DICTRDF[&#x27;DESC&#x27;][CF.CRTID] = {
+                &#x27;id&#x27;:attrs[&#x27;NS2:id&#x27;]
+                ,&#x27;type&#x27;:attrs[&#x27;NS2:type&#x27;]
+                ,&#x27;title&#x27;:attrs[&#x27;NS2:title&#x27;]
+                ,&#x27;source&#x27;:attrs[&#x27;NS2:source&#x27;]
+                ,&#x27;chars&#x27;:attrs[&#x27;NS2:chars&#x27;]
+                ,&#x27;icon&#x27;:attrs[&#x27;NS2:icon&#x27;]
+                ,&#x27;comment&#x27;:attrs[&#x27;NS2:comment&#x27;]
+                }
+
+&lt;&#x2F;pre&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;技巧:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;就是用一堆判定,将有限的情况进行区分
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;然后丢到个字典中,供给后续处理
+    &lt;p&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  python ; highlight: [1,2,4]&quot;&gt;
+
+{&quot;ROOT&quot;:{&#x27;id&#x27;:&#x27;&#x27;,&#x27;li&#x27;:[]}
+,&quot;SEQ&quot;:{&#x27;item...&#x27;:[]
+    ,,,}
+,&quot;DESC&quot;:{&#x27;item...&#x27;:{&#x27;id&#x27;:&#x27;&#x27;
+        ,&#x27;type&#x27;:&quot;&quot; # folder||separator
+        ,&#x27;icon&#x27;:&#x27;&#x27;
+        ,&#x27;title&#x27;:&#x27;&#x27;
+        ,&#x27;source&#x27;:&#x27;&#x27;
+        ,&#x27;chars&#x27;:&#x27;&#x27;
+        ,&#x27;comment&#x27;:&#x27;&#x27;
+        }
+    ,,,
+    }
+}
+&lt;&#x2F;pre&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc4R0VYRENMU&quot; name=&quot;toc4R0VYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h3&gt;&lt;A href=&#x27;#toptopS05SWEVZT&#x27;&gt; 1.1.2. yeild &lt;&#x2F;A&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;
+好的,有了 RDF 正确的结构关系数据后,怎么优雅的输出成分层的索引页面?!
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;俺习惯用内置的文本模板功能,通过纯文本的嵌套完成 html 的输出
+&lt;&#x2F;li&gt;
+&lt;li&gt;结果,发现,俺的网页整理到不同深度的目录中
+    &lt;ul&gt;
+    &lt;li&gt;要想进行递归式的树状生成,很容易引发递归过深,Py 崩溃的现象
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;pre class=&quot;brush:  js ; highlight: [2,12]&quot;&gt;
+
+&#x2F;&#x2F; scrapbook&#x2F;chrome&#x2F;scrapbook.jar-&amp;gt;content&#x2F;scrapbook&#x2F;output.js 中
+	processRescursively : function(aContRes)
+	{
+		this.depth++;
+		var id = ScrapBookData.getProperty(aContRes, &quot;id&quot;) || &quot;root&quot;;
+		this.content += &#x27;&amp;lt;ul id=&quot;folder-&#x27; + id + &#x27;&quot;&amp;gt;\n&#x27;;
+		var resList = ScrapBookData.flattenResources(aContRes, 0, false);
+		for (var i = 1; i &amp;lt; resList.length; i++) {
+			this.content += &#x27;&amp;lt;li class=&quot;depth&#x27; + String(this.depth) + &#x27;&quot;&amp;gt;&#x27;;
+			this.content += this.getHTMLBody(resList[i]);
+			if (ScrapBookData.isContainer(resList[i]))
+				this.processRescursively(resList[i]);
+			this.content += &quot;&amp;lt;&#x2F;li&amp;gt;\n&quot;;
+		}
+		this.content += &quot;&amp;lt;&#x2F;ul&amp;gt;\n&quot;;
+		this.depth--;
+	},
+
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;amb.vis.ne.jp&#x2F;mozilla&#x2F;scrapbook&#x2F;&quot;&gt;SCRAPBOOK&lt;&#x2F;a&gt;中的原生处理是硬递归的哪,,,
+&lt;&#x2F;li&gt;
+&lt;li&gt;Py 有优雅的迭代式，但是不那么容易用起来:
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;MiscItems&#x2F;2011-08-25&quot;&gt;yeild 的递归输出问题&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;引发了社区列表讨论，结果获得的经验很简单:
+        &lt;ul&gt;
+        &lt;li&gt;&lt;b&gt;所有想返回的，都用 yeild 包装上！&lt;&#x2F;b&gt;
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;p&gt;
+于是，一切安定团结了,,,
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+用 shell 包装个命令，想发布本地 &lt;a href=&quot;http:&#x2F;&#x2F;amb.vis.ne.jp&#x2F;mozilla&#x2F;scrapbook&#x2F;&quot;&gt;SCRAPBOOK&lt;&#x2F;a&gt; 仓库时，一键完成！
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc5R0VYREVMU&quot; name=&quot;toc5R0VYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopS05SWEVZT&#x27;&gt; 1.2. TODO &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+当然总是有不如意的,留存以后,或是有心人完善了:
+&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;美化平面索引页面
+    &lt;ol&gt;
+    &lt;li&gt;排版和颜色
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;CSS 限宽效果用JS 进行动态扩展 
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;自动对所有抓取的页面,嵌入原始链接的提示
+&lt;&#x2F;li&gt;
+&lt;li&gt;对整体仓库生成 site map 帮助 google 收录 ... 
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+
+&lt;a id=&quot;toc6R0lYQ0JaV&quot; name=&quot;toc6R0lYQ0JaV&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopS05SWEVZT&#x27;&gt; 2. 时间帐单 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;ol&gt;
+&lt;li&gt;~0.01h    起意，要折腾
+&lt;&#x2F;li&gt;
+&lt;li&gt;0.5h      rdf 理解
+&lt;&#x2F;li&gt;
+&lt;li&gt;1h        ElementTree 尝试
+&lt;&#x2F;li&gt;
+&lt;li&gt;1h        lxml 尝试
+&lt;&#x2F;li&gt;
+&lt;li&gt;~2h       RDF 解析模块收集
+&lt;&#x2F;li&gt;
+&lt;li&gt;~1h       rdflib 尝试
+&lt;&#x2F;li&gt;
+&lt;li&gt;~0.5h     冷静
+&lt;&#x2F;li&gt;
+&lt;li&gt;~0.5h     expat完成解析
+&lt;&#x2F;li&gt;
+&lt;li&gt;~1h       根索引页面输出
+&lt;&#x2F;li&gt;
+&lt;li&gt;~2.5h     递归和迭代尝试
+&lt;&#x2F;li&gt;
+&lt;li&gt;~2h       获得社区反馈，完成所有功能
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+
+&lt;p&gt;
+合计,~13小时,哗,,,,大大超出原先半天的预计,纠其原因:
+&lt;&#x2F;p&gt;
+    &lt;ol&gt;
+    &lt;li&gt;对XML体系的变态缺乏足够的敬畏
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;对递归的理解一直不扎实
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+
+&lt;p&gt;
+事实证明:&lt;b&gt;嘦不经过真实编程的理解，基本都是误解&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags utility&#x2F;py4xml&#x2F;scrapbook-expidxlevels-2011-09-08-13-13.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">py2pre.py</title>
+<category term="/techic/PyBlosxom/plugins" />
+<id>/pyblosxom/2011/09/07/py2pre</id>
+<updated>2011-09-07T06:00:00Z</updated>
+<published>2011-09-07T06:00:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/PyBlosxom/plugins/py2pre.html" />
+<content type="html">&lt;pre class=&quot;brush: python&quot;&gt;# -*- coding: utf-8 -*-
+&quot;&quot;&quot;py - html Parser
+    - refactory py2pre.py from xhtml.py
+
+Copyright (c) 2011 Zoom.Quiet 
+All rights reserved.
+
+Redistribution and use in source and binary forms are permitted
+provided that the above copyright notice and this paragraph are
+duplicated in all such forms and that any documentation,
+advertising materials, and other materials related to such
+distribution and use acknowledge that the software was developed
+by the zoomquiet.org.  The name of the
+University may not be used to endorse or promote products derived
+from this software without specific prior written permission.
+THIS SOFTWARE IS PROVIDED ``AS IS&#x27;&#x27; AND WITHOUT ANY EXPRESS OR
+IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+
+&quot;&quot;&quot;
+
+
+## Leo: tab_width=-4 page_width=80
+__version__ = &quot;v11.09.7&quot;
+__author__ = &#x27;Zoom.Quiet &lt;zoomquiet+pyb at gmail dot com&gt;&#x27;
+__url__ = &quot;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;techic&#x2F;PyBlosxom&#x2F;plugins&#x2F;py2pre.html&quot;
+__description__ = &quot;.py export hmtl entry with syntaxhighlighter.&quot;
+
+#from Pyblosxom import tools
+
+def cb_entryparser(entryparsingdict):
+    &quot;&quot;&quot;
+    Register self as plain file handler
+    &quot;&quot;&quot;
+    entryparsingdict[&quot;py&quot;] = parse
+    return entryparsingdict
+def parse(filename, request):
+    #import os
+    entrydata = {}
+    source = open(filename, &quot;r&quot;).read()
+    #print filenames
+    body = &#x27;&lt;pre class=&quot;brush: python&quot;&gt;%s&lt;&#x2F;pre&gt;&#x27; % source
+    entrydata = {&#x27;body&#x27; : body
+                 ,&#x27;title&#x27; : filename.split(&quot;&#x2F;&quot;)[-1]
+                 }
+    return entrydata
+
+&lt;&#x2F;pre&gt;</content>
+</entry>
+
+<entry>
+<title type="html">升级到PyBlosxom 1.5rc3</title>
+<category term="/techic/PyBlosxom" />
+<id>/pyblosxom/2011/09/07/upinto-pyblosxom15rc3-2011-09-07-12-23</id>
+<updated>2011-09-07T04:23:00Z</updated>
+<published>2011-09-07T04:23:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/PyBlosxom/upinto-pyblosxom15rc3-2011-09-07-12-23.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopNFdHWVBaN&#x27; id=&#x27;toptopNFdHWVBaN&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;升级到PyBlosxom 1.5rc3&lt;&#x2F;h1&gt;
+&lt;h2&gt;~ hack 几点&lt;&#x2F;h2&gt;
+&lt;h3&gt;t2t渲染:2012-03-29 03:37:40&lt;&#x2F;h3&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0JaR&quot;&gt;不折腾要死星人&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc2R0VYRENMU&quot;&gt;1.1. 评注&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc3R0VYREVMU&quot;&gt;1.2. SyntaxHighlighter&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc4R0VYREdMU&quot;&gt;1.3. 插件&lt;&#x2F;a&gt;
+      &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#toc5R0VYREdMU&quot;&gt;1.3.1. py2pre.py&lt;&#x2F;a&gt;
+      &lt;&#x2F;li&gt;
+      &lt;li&gt;&lt;a href=&quot;#toc6R0VYREdMU&quot;&gt;1.3.2. cp4idx2category.py&lt;&#x2F;a&gt;
+      &lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc7R0VYRElMU&quot;&gt;1.4. TODO&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc8R0lYQ0JaV&quot;&gt;时间帐单&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0JaR&quot; name=&quot;toc1R0VYQ0JaR&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopNFdHWVBaN&#x27;&gt; 1. 不折腾要死星人 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+嗯嗯嗯，一清点，居然这么长时间没有发布正式点的 blog 了哪！
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;想恢复每周的心得汇报，但是，俺有强迫症！
+    &lt;ul&gt;
+    &lt;li&gt;PyBloxom 非常好玩，好用
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;但是，一直不甚完美
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;不过，这也是俺喜欢她的原因～ &lt;code&gt;所有不完美之处，都可以自行 hacking!&lt;&#x2F;code&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;  所以:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;安装了 Disqus
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;升級了 SyntaxHighlighter
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;修复了 py.py
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;修复了内置的分类索引
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc2R0VYRENMU&quot; name=&quot;toc2R0VYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopNFdHWVBaN&#x27;&gt; 1.1. 评注 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+一直以来,PyBlosxom 没有内置一个靠谱的评注系统,是个囧事儿,
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;现在,官方也想明白了,都 2.0时代了,不纠结了
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;pyblosxom.bluesock.org&#x2F;1.5&#x2F;comments.html#disqus&quot;&gt;Comments — PyBlosxom v1.5 documentation&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;直接建议上 &lt;a href=&quot;http:&#x2F;&#x2F;disqus.com&#x2F;&quot;&gt;DISQUS&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;为什么不呢?
+&lt;pre&gt;
+好:
+    + 安装简单
+    + 内置spam 管理
+    + 支持提醒,回答,以及其它功能
+坏:
+    - 作为web服务,没有全权控制
+    - 可能难以迁移到其它服务&#x2F;插件 ~ 虽然有评注的导出功能
+&lt;&#x2F;pre&gt;
+    &lt;p&gt;&lt;&#x2F;p&gt;
+反正,俺用了,,很轻松,,而且支持多种 SSO 认证!
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc3R0VYREVMU&quot; name=&quot;toc3R0VYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopNFdHWVBaN&#x27;&gt; 1.2. SyntaxHighlighter &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+之前,俺为了节省流量,使用了 官方提供的 hosting...
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;结果伟大的功夫网,总是令展示效果不理想!
+&lt;&#x2F;li&gt;
+&lt;li&gt;现在想通了,直接升级 到 SyntaxHighlighter 3.0.83 
+&lt;&#x2F;li&gt;
+&lt;li&gt;并指向本地的各种资源
+&lt;&#x2F;li&gt;
+&lt;li&gt;比较贴心的是,这次有了 &lt;a href=&quot;http:&#x2F;&#x2F;alexgorbatchev.com&#x2F;SyntaxHighlighter&#x2F;manual&#x2F;api&#x2F;autoloader.html&quot;&gt;Dynamic Brush Loading&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;不用象以往,逐一JS 的加载了
+    &lt;p&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  js ; highlight: [1,5,9]&quot;&gt;
+
+function path(){
+    var args = arguments;
+    var result = [];
+    for(var i = 0; i &amp;lt; args.length; i++){
+      result.push(args[i].replace(&#x27;@&#x27;, &#x27;&#x2F;pybshare&#x2F;syntaxhighlighter_3.0.83&#x2F;scripts&#x2F;&#x27;));
+      };
+    return result;
+    };
+SyntaxHighlighter.autoloader.apply(null, path(
+    &#x27;applescript            @shBrushAppleScript.js&#x27;,
+    &#x27;bash shell             @shBrushBash.js&#x27;,
+    &#x27;css                    @shBrushCss.js&#x27;,
+    &#x27;diff patch pas         @shBrushDiff.js&#x27;,
+    &#x27;erl erlang             @shBrushErlang.js&#x27;,
+    &#x27;js jscript javascript  @shBrushJScript.js&#x27;,
+    &#x27;text plain             @shBrushPlain.js&#x27;,
+    &#x27;py python              @shBrushPython.js&#x27;,
+    &#x27;sass scss              @shBrushSass.js&#x27;,
+    &#x27;sql                    @shBrushSql.js&#x27;,
+    &#x27;xml xhtml xslt html    @shBrushXml.js&#x27;
+    ));
+
+SyntaxHighlighter.all()
+&lt;&#x2F;pre&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;  PS:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;也有更加轻量的 &lt;a href=&quot;http:&#x2F;&#x2F;code.google.com&#x2F;p&#x2F;google-code-prettify&#x2F;&quot;&gt;prettify&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;但是,没有 SyntaxHighlighter 的高亮功能
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;而且,已经和 t2t 深度定制过,使用很好,也就不追赶了,,,
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc4R0VYREdMU&quot; name=&quot;toc4R0VYREdMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopNFdHWVBaN&#x27;&gt; 1.3. 插件 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+1.5 的插件体系好象有所变化,不那么简单的可以理解了,,,
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc5R0VYREdMU&quot; name=&quot;toc5R0VYREdMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h3&gt;&lt;A href=&#x27;#toptopNFdHWVBaN&#x27;&gt; 1.3.1. py2pre.py &lt;&#x2F;A&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;
+&lt;a href=&quot;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;techic&#x2F;PyBlosxom&#x2F;plugins&#x2F;py2pre.html&quot;&gt;py2pre.py&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;dl&gt;
+&lt;dt&gt;意图:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;简单的将目录中的 .py 脚本渲染成合适的 html 展示
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;问题:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;pyblosxom.bluesock.org&#x2F;registry&#x2F;text&#x2F;py.html&quot;&gt;PyBlosxom - main site - py&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;原先的老插件已经失效,在静态渲染时不触发了
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;解决:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;根据1.5.* 的文档 &lt;a href=&quot;http:&#x2F;&#x2F;pyblosxom.bluesock.org&#x2F;1.5&#x2F;dev_writing_plugins.html#writing-an-entryparser&quot;&gt;Writing an entryparser — PyBlosxom v1.5 documentation&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;快速山寨了一个 &lt;a href=&quot;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;techic&#x2F;PyBlosxom&#x2F;plugins&#x2F;py2pre.html&quot;&gt;py2pre.py&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;技巧:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;直接复用 SyntaxHighlighter 的效能
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;将所有脚本内容丢到约定的 &lt;code&gt;&amp;lt;pre&amp;gt;&lt;&#x2F;code&gt; 中就好
+    &lt;p&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  python ; highlight: [5]&quot;&gt;
+
+#...
+def parse(filename, request):
+    entrydata = {}
+    source = open(filename, &quot;r&quot;).read()
+    body = &#x27;&amp;lt;pre class=&quot;brush: python&quot;&amp;gt;%s&amp;lt;&#x2F;pre&amp;gt;&#x27; % source
+    entrydata = {&#x27;body&#x27; : body
+                 ,&#x27;title&#x27; : filename.split(&quot;&#x2F;&quot;)[-1]
+                 }
+    return entrydata
+
+&lt;&#x2F;pre&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc6R0VYREdMU&quot; name=&quot;toc6R0VYREdMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h3&gt;&lt;A href=&#x27;#toptopNFdHWVBaN&#x27;&gt; 1.3.2. cp4idx2category.py &lt;&#x2F;A&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;
+这货不是 PyBlosxom 标准插件,只是发布辅助脚本
+&lt;&#x2F;p&gt;
+&lt;dl&gt;
+&lt;dt&gt;问题:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;发现使用 &lt;code&gt;pyblosxom-cmd staticrender --config &amp;lt;&#x2F;path&#x2F;2&#x2F;config.py&amp;gt;&lt;&#x2F;code&gt; 生成的静态页面,分类索引页面有问题:
+        &lt;ul&gt;
+        &lt;li&gt;正常的分类索引中,只包含目录中一个文章
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;如果是 非内容目录,比如说py 脚本目录,倒是可以包含所有内容,可页面输出又有乱码
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;尝试:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;吼了列表,没人理
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;也忘记以前是否正当了
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;追踪代码:
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;pre class=&quot;brush:  shell&quot;&gt;
+
+Traceback (most recent call last):
+  File &quot;&#x2F;usr&#x2F;local&#x2F;bin&#x2F;pyblosxom-cmd&quot;, line 25, in &amp;lt;module&amp;gt;
+    sys.exit(command_line_handler(&quot;pyblosxom-cmd&quot;, sys.argv))
+  File &quot;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python2.6&#x2F;dist-packages&#x2F;Pyblosxom&#x2F;commandline.py&quot;, line 466, in command_line_handler
+    return f(command, argv)
+  File &quot;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python2.6&#x2F;dist-packages&#x2F;Pyblosxom&#x2F;commandline.py&quot;, line 362, in run_static_renderer
+    return p.run_static_renderer(options.incremental)
+  File &quot;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python2.6&#x2F;dist-packages&#x2F;Pyblosxom&#x2F;pyblosxom.py&quot;, line 409, in run_static_renderer
+    tools.render_url_statically(config, url, q)
+  File &quot;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python2.6&#x2F;dist-packages&#x2F;Pyblosxom&#x2F;tools.py&quot;, line 940, in render_url_statically
+    response = render_url(cdict, url, querystring)
+  File &quot;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python2.6&#x2F;dist-packages&#x2F;Pyblosxom&#x2F;tools.py&quot;, line 983, in render_url
+    p.run(static=True)
+  File &quot;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python2.6&#x2F;dist-packages&#x2F;Pyblosxom&#x2F;pyblosxom.py&quot;, line 182, in run
+    blosxom_handler(self._request)
+  File &quot;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python2.6&#x2F;dist-packages&#x2F;Pyblosxom&#x2F;pyblosxom.py&quot;, line 947, in blosxom_handler
+    renderer.render()
+  File &quot;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python2.6&#x2F;dist-packages&#x2F;Pyblosxom&#x2F;renderers&#x2F;blosxom.py&quot;, line 330, in render
+    content = self.render_content(self._content)
+  File &quot;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python2.6&#x2F;dist-packages&#x2F;Pyblosxom&#x2F;renderers&#x2F;blosxom.py&quot;, line 273, in render_content
+    self.render_template(parse_vars, &quot;story&quot;, override=1))
+  File &quot;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python2.6&#x2F;dist-packages&#x2F;Pyblosxom&#x2F;renderers&#x2F;blosxom.py&quot;, line 370, in render_template
+    {&quot;entry&quot;: entry, &quot;template&quot;: template})
+  File &quot;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python2.6&#x2F;dist-packages&#x2F;Pyblosxom&#x2F;renderers&#x2F;blosxom.py&quot;, line 405, in _run_callback
+    defaultfunc=lambda x:x)
+  File &quot;&#x2F;usr&#x2F;local&#x2F;lib&#x2F;python2.6&#x2F;dist-packages&#x2F;Pyblosxom&#x2F;tools.py&quot;, line 780, in run_callback
+    output = func(input)
+  File &quot;&#x2F;home&#x2F;zoomq&#x2F;workspace&#x2F;3hg&#x2F;zoomquiet-default&#x2F;pyblosoxm&#x2F;zoomquiet&#x2F;plugins&#x2F;preformatter&#x2F;markdown-plugin.py&quot;, line 44, in cb_story
+...
+
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;
+日!这么深的调用栈?!
+&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  text&quot;&gt;
+
+pyblosxom-cmd   命令工具
+    |
+    +-&amp;gt; commandline.py  解析参数,准备环境
+        |
+        +-&amp;gt; pyblosxom.py    调用工具
+             ^      |
+             |      +-&amp;gt; tools.py    组织插件,参数
+             |          |
+             +----&amp;lt;-----+   嗯嗯嗯?!回调 pyblosxom.py 
+             使用 renderer.render() 和动态网站流程一样,输出内容
+
+&lt;&#x2F;pre&gt;
+    &lt;ul&gt;
+    &lt;li&gt;FT! 具体分类目录在哪个环节生成基本找遍不到了,,,因为将所有需要渲染的,都丢到一个列表中了,,
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+
+&lt;dl&gt;
+&lt;dt&gt;解决:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ul&gt;
+    &lt;li&gt;其实复杂的技术问题,总是有很2的解决方案的
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;既然难以解决原有的渲染问题,那么 &lt;b&gt;使用期待的页面替换有问题的就KO的哈!&lt;&#x2F;b&gt;
+        &lt;ul&gt;
+        &lt;li&gt;俺的 &lt;a href=&quot;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;techic&#x2F;PyBlosxom&#x2F;plugins&#x2F;category_static.html&quot;&gt;category_static.py&lt;&#x2F;a&gt; 插件生成的树状索引: &lt;a href=&quot;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;category-index.html&quot;&gt;category-index.html&lt;&#x2F;a&gt; 很可以
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;那么对其进行相关裁剪,复制到对应目录中不就得了!?
+        &lt;p&gt;&lt;&#x2F;p&gt;
+先小小的增补一下&lt;a href=&quot;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;techic&#x2F;PyBlosxom&#x2F;plugins&#x2F;category_static.html&quot;&gt;category_static.py&lt;&#x2F;a&gt;
+&lt;pre class=&quot;brush:  python ; highlight: [3,4]&quot;&gt;
+
+# ...
+for e in etree[p][1:]:
+    body += &#x27;&amp;lt;span id=&quot;%s&quot; class=&quot;indents&quot;&amp;gt;%s&amp;lt;&#x2F;span&amp;gt;&amp;lt;a href=&quot;%s%s.html&quot;&amp;gt;%s&amp;lt;&#x2F;a&amp;gt;&amp;lt;br&amp;gt;\n&#x27;%(
+            &quot;&#x2F;&quot;.join(etree[p][0])
+            ,&quot;...&quot;*len(etree[p][0])
+            ,_baseurl
+            ,e[1]
+            ,e[0]
+            )
+
+
+&lt;&#x2F;pre&gt;
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;在前导空间的span 中增加代表文章所在分类目录的 id
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;p&gt;
+那么 &lt;code&gt;cp4idx2category.py&lt;&#x2F;code&gt;就可以简单的完成了:
+&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  python&quot;&gt;
+
+# -*- coding: utf-8 -*-
+&#x27;&#x27;&#x27;
+将 category_static.py 生成的树状分类索引页面，复制并修订为各个目录中的 index.html
+&#x27;&#x27;&#x27;
+__version__ = &#x27;cp4idx2category v11.09.7&#x27;
+__author__ = &#x27;Zoom.Quiet &amp;lt;zoomquiet+pyb at gmail dot com&amp;gt;&#x27;
+
+import os
+import sys
+import re
+import shutil
+
+def cp4gen(path):
+    IDX = &quot;%s&#x2F;category-index.html&quot;% path
+    p = re.compile(&quot;%s\&#x2F;\d{4}&quot;%path )
+    for root, dirs, files in os.walk(path):
+        if path == root:
+            pass
+        elif p.match(root):
+            pass
+        elif &quot;plugin_info&quot; in root:
+            pass
+        else:
+            aimpath = root.replace(path,&quot;&quot;)
+            exp = &quot;&quot;
+            for i in open(IDX,&#x27;r&#x27;):
+                if &#x27;&amp;lt;span id=&quot;&#x27; in i:
+                    if aimpath in i:
+                        exp += i
+                else:
+                    exp += i
+            open(&quot;%s&#x2F;index.html&quot;% root,&quot;w&quot;).write(exp)
+    return
+
+if __name__ == &#x27;__main__&#x27;:      # this way the module can be
+    if 2 != len(sys.argv):
+        print &quot;&quot;&quot; %s usage::
+$ python cp4idx2category.py path&#x2F;2&#x2F;_static
+            |               +- 生成的静态页面入口
+            +- 脚本自身
+        &quot;&quot;&quot; % VERSION
+    else:
+        path = sys.argv[1]
+        cp4gen(path)
+
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;b&gt;只要每次,完成静态整站渲染后,用cp4idx2category.py刷一下,就KO!&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc7R0VYRElMU&quot; name=&quot;toc7R0VYRElMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopNFdHWVBaN&#x27;&gt; 1.4. TODO &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+&lt;code&gt;不断维护的完美之折腾...&lt;&#x2F;code&gt;
+&lt;&#x2F;p&gt;
+&lt;dl&gt;
+&lt;dt&gt;  PyBlosxom 静态化发布体系:&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Hg&#x2F;Git 的 hooks 开发部署
+&lt;&#x2F;li&gt;
+&lt;li&gt;dot 的自动包含图片热区定义的 t2t 处理
+&lt;&#x2F;li&gt;
+&lt;li&gt;Leo 中的自动化发布脚本按钮
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+
+&lt;a id=&quot;toc8R0lYQ0JaV&quot; name=&quot;toc8R0lYQ0JaV&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopNFdHWVBaN&#x27;&gt; 2. 时间帐单 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;ol&gt;
+&lt;li&gt;~0.01h    起意，要折腾
+&lt;&#x2F;li&gt;
+&lt;li&gt;~.5h      SyntaxHighlighter升級
+&lt;&#x2F;li&gt;
+&lt;li&gt;~2.5h     DISQUS 加装,主要是注册和文档查阅耗时
+&lt;&#x2F;li&gt;
+&lt;li&gt;~1h       列表吼,E文真的很难以表述清楚...
+&lt;&#x2F;li&gt;
+&lt;li&gt;~1h       py2pre.py 重构完成
+&lt;&#x2F;li&gt;
+&lt;li&gt;~1h       cp4idx2category.py 山寨完成
+&lt;&#x2F;li&gt;
+&lt;li&gt;~1.5h     记录成文
+&lt;p&gt;&lt;&#x2F;p&gt;
+合计,7小时,哗,,,,
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags upinto-pyblosxom15rc3-2011-09-07-12-23.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">zqarchives.py</title>
+<category term="/techic/PyBlosxom/plugins" />
+<id>/pyblosxom/2011/08/31/zqarchives</id>
+<updated>2011-08-31T15:22:00Z</updated>
+<published>2011-08-31T15:22:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/PyBlosxom/plugins/zqarchives.html" />
+<content type="html">&lt;pre class=&quot;brush: python&quot;&gt;# -*- coding: utf-8 -*-
+
+# vim: tabstop=4 shiftwidth=4
+&quot;&quot;&quot;
+- zoomq 100419 fixed for export month&#x2F;year with count
+Walks through your blog root figuring out all the available monthly archives in
+your blogs.  It generates html with this information and stores it in the
+$archivelinks variable which you can use in your head or foot templates.
+
+You can format the output with the key &quot;archive_template&quot;.
+
+A config.py example:
+
+    py[&#x27;archive_template&#x27;] = &#x27;&lt;li&gt;&lt;a href=&quot;%(base_url)s&#x2F;%(Y)s&#x2F;%(b)s&quot;&gt;%(m)s&#x2F;%(y)s&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;&#x27;
+
+Displays the archives as list items, with a month number slash year number, like 06&#x2F;78.
+
+The vars available with typical example values are:
+    b      &#x27;Jun&#x27;
+    m      &#x27;6&#x27;
+    Y      &#x27;1978&#x27;
+    y      &#x27;78&#x27;
+
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify,
+merge, publish, distribute, sublicense, and&#x2F;or sell copies of the
+Software, and to permit persons to whom the Software is furnished
+to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Copyright 2004, 2005 Wari Wahab
+&quot;&quot;&quot;
+__author__ = &quot;Wari Wahab - wari at wari dot per dot sg&quot;
+__version__ = &quot;$Id: zqarchives.py,v 2872b22e2ace 2011&#x2F;10&#x2F;27 07:08:25 zoomquiet+hg $&quot;
+__url__ = &quot;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;techic&#x2F;PyBlosxom&#x2F;plugins&#x2F;zqarchives.html&quot;
+
+from Pyblosxom import tools
+import time, os
+
+def verify_installation(request):
+    config = request.get_configuration()
+    if not config.has_key(&quot;archive_template&quot;):
+        print &quot;missing optional config property &#x27;archive_template&#x27; which &quot;
+        print &quot;allows you to specify how the archive links are created.  &quot;
+        print &quot;refer to pyarchive plugin documentation for more details.&quot;
+    return 1
+
+class PyblArchives:
+    def __init__(self, request):
+        self._request = request
+        self._archives = None
+
+    def __str__(self):
+        if self._archives == None:
+            self.gen_linear_archive()
+        return self._archives
+
+    def gen_linear_archive(self):
+        config = self._request.get_configuration()
+        data = self._request.get_data()
+        root = config[&quot;datadir&quot;]
+        archives = {}
+        archive_list = tools.walk(self._request, root)
+        fulldict = {}
+        fulldict.update(config)
+        fulldict.update(data)
+        template = config.get(&#x27;archive_template&#x27;, 
+                    &#x27;&lt;a href=&quot;%(base_url)s&#x2F;%(Y)s&#x2F;%(m)s&quot;&gt;%(y)s.%(m)s&lt;&#x2F;a&gt;&#x27;)
+        #&lt;a href=&quot;%(base_url)s&#x2F;%(Y)s&#x2F;%(b)s&quot;&gt;%(Y)s-%(b)s&lt;&#x2F;a&gt;
+        #print fulldict[&quot;base_url&quot;]
+        for mem in archive_list:
+            timetuple = tools.filestat(self._request, mem)
+            timedict = {}
+            for x in [&quot;B&quot;, &quot;b&quot;, &quot;m&quot;, &quot;Y&quot;, &quot;y&quot;]:
+                timedict[x] = time.strftime(&quot;%&quot; + x, timetuple)
+            fulldict.update(timedict)
+            if not archives.has_key(timedict[&#x27;Y&#x27;] + timedict[&#x27;m&#x27;]):
+                archives[timedict[&#x27;Y&#x27;] + timedict[&#x27;m&#x27;]] = [template % fulldict,1]
+            else:
+                archives[timedict[&#x27;Y&#x27;] + timedict[&#x27;m&#x27;]][1] += 1
+                archives[timedict[&#x27;Y&#x27;] + timedict[&#x27;m&#x27;]][0] = template % fulldict
+        #print archives
+        #return
+        arc_keys = archives.keys()
+        arc_keys.sort()
+        arc_keys.reverse()
+        yearmonth = {}
+        result = []
+        #base archives walk and count every year&#x27;s mounth
+        for key in arc_keys:
+            yearname = key[:-2]
+            if yearname in yearmonth.keys():
+                yearmonth[yearname][0] += archives[key][1]
+                yearmonth[yearname][1].append(archives[key])
+            else:
+                yearmonth[yearname] = [archives[key][1],[]]
+                yearmonth[yearname][1].append(archives[key])
+        #print yearmonth[&quot;2007&quot;]
+        mon_keys = yearmonth.keys()
+        mon_keys.sort()
+        mon_keys.reverse()
+        #print mon_keys
+        for year in mon_keys:
+            #print &quot;%s&lt;sup&gt;%s&lt;sup&gt;&quot;%(year,yearmonth[year][0])
+            monode = yearmonth[year][1]
+            result.append(&quot;&lt;li class=&#x27;yearchives&#x27;&gt;&lt;a href=&#x27;%s&#x2F;%s&#x27;&gt;%s&lt;&#x2F;a&gt;&lt;sup&gt;(%d)&lt;&#x2F;sup&gt;&lt;&#x2F;li&gt;&quot;%(fulldict[&quot;base_url&quot;],year,year,yearmonth[year][0]))
+            if 1==len(monode):
+                #print &quot;%s&lt;sup&gt;%s&lt;sup&gt;&quot;%(monode[0][0],monode[0][1])
+                result.append(&quot;&lt;li&gt;%s&lt;sup&gt;(%d)&lt;&#x2F;sup&gt;&lt;li&gt;&quot;%(monode[0][0],monode[0][1]))
+            else:
+                for m in monode:
+                    #print m
+                    #print &quot;%s&lt;sup&gt;%s&lt;sup&gt;&quot;%(m[0],m[1])
+                    result.append(&quot;&lt;li&gt;%s&lt;sup&gt;(%d)&lt;&#x2F;sup&gt;&lt;li&gt;&quot;%(m[0],m[1]))
+                    #result.append(&quot;%s&lt;sup&gt;%s&lt;sup&gt;&quot;%(month[0],month[1]))
+
+        #print result
+        self._archives = &#x27;\n&#x27;.join(result)
+
+def cb_prepare(args):
+    request = args[&quot;request&quot;]
+    data = request.get_data()
+    data[&quot;archivelinks&quot;] = PyblArchives(request)
+
+&lt;&#x2F;pre&gt;</content>
+</entry>
+
+<entry>
+<title type="html">zqcategories.py</title>
+<category term="/techic/PyBlosxom/plugins" />
+<id>/pyblosxom/2011/08/31/zqcategories</id>
+<updated>2011-08-31T15:22:00Z</updated>
+<published>2011-08-31T15:22:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/PyBlosxom/plugins/zqcategories.html" />
+<content type="html">&lt;pre class=&quot;brush: python&quot;&gt;# -*- coding: utf-8 -*-
+# vim: tabstop=4 shiftwidth=4
+&quot;&quot;&quot;
+- 仅仅要求可以根据指定顺序输出分类目录
+
+Walks through your blog root figuring out all the categories you have
+and how many entries are in each category.  It generates html with
+this information and stores it in the $categorylinks variable which
+you can use in your head or foot templates.
+
+You can format the output by setting &quot;category_begin&quot;, &quot;category_item&quot;,
+&quot;category_end&quot; and properties.
+
+Categories exist in a hierarchy.  &quot;category_start&quot; starts the category listing
+and is only used at the very beginning.  The &quot;category_begin&quot; property begins a 
+new category group and the &quot;category_end&quot; property ends that category group.  
+The &quot;category_item&quot; property is the template for each category item.  Then
+after all the categories are printed, &quot;category_finish&quot; ends the category
+listing.
+
+For example, the following properties will use &lt;ul&gt; to open a category, &lt;&#x2F;ul&gt;
+to close a category and &lt;li&gt; for each item:
+
+py[&quot;category_start&quot;] = &quot;&lt;ul&gt;&quot;
+py[&quot;category_begin&quot;] = &quot;&lt;li&gt;&lt;ul&gt;&quot;
+py[&quot;category_item&quot;] = r&#x27;&lt;li&gt;&lt;a href=&quot;%(base_url)s&#x2F;%(category_urlencoded)sindex&quot;&gt;%(category)s&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;&#x27;
+py[&quot;category_end&quot;] = &quot;&lt;&#x2F;li&gt;&lt;&#x2F;ul&gt;&quot;
+py[&quot;category_finish&quot;] = &quot;&lt;&#x2F;ul&gt;&quot;
+
+
+Another example, the following properties don&#x27;t have a begin or an end but
+instead use indentation for links and displays the number of entries in that
+category:
+
+py[&quot;category_start&quot;] = &quot;&quot;
+py[&quot;category_begin&quot;] = &quot;&quot;
+py[&quot;category_item&quot;] = r&#x27;%(indent)s&lt;a href=&quot;%(base_url)s&#x2F;%(category_urlencoded)sindex&quot;&gt;%(category)s&lt;&#x2F;a&gt; (%(count)d)&lt;br &#x2F;&gt;&#x27;
+py[&quot;category_end&quot;] = &quot;&quot;
+py[&quot;category_finish&quot;] = &quot;&quot;
+
+There are no variables available in the category_begin or category_end 
+templates.
+
+Available variables in the category_item template:
+
+  variable                 example                      datatype
+  ========                 =======                      ========
+  base_url                 http:&#x2F;&#x2F;joe.com&#x2F;blog&#x2F;         string
+  fullcategory_urlencoded  &#x27;dev&#x2F;pyblosxom&#x2F;status&#x2F;&#x27;      string
+  fullcategory             &#x27;dev&#x2F;pyblosxom&#x2F;status&#x2F;&#x27;      string (urlencoded)
+  category                 &#x27;status&#x2F;&#x27;                    string
+  category_urlencoded      &#x27;status&#x2F;&#x27;                    string (urlencoed)
+  flavour                  &#x27;html&#x27;                       string
+  count                    70                           int
+  indent                   &#x27;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&#x27;   string
+
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify,
+merge, publish, distribute, sublicense, and&#x2F;or sell copies of the
+Software, and to permit persons to whom the Software is furnished
+to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Copyright 2004, 2005, 2006 Will Guaraldi
+&quot;&quot;&quot;
+__author__ = &quot;Will Guaraldi - willg at bluesock dot org&quot;
+__version__ = &quot;$Id: zqcategories.py,v 2872b22e2ace 2011&#x2F;10&#x2F;27 07:08:25 zoomquiet+hg $&quot;
+__url__ = &quot;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;techic&#x2F;PyBlosxom&#x2F;plugins&#x2F;zqcategories.html&quot;
+#__url__ = &quot;http:&#x2F;&#x2F;pyblosxom.sourceforge.net&#x2F;&quot;
+__description__ = &quot;Builds a list of categories.&quot;
+
+from Pyblosxom import tools
+import re, os
+
+DEFAULT_START = r&#x27;&lt;ul class=&quot;categorygroup&quot;&gt;&#x27;
+DEFAULT_BEGIN = r&#x27;&lt;li&gt;&lt;ul class=&quot;categorygroup&quot;&gt;&#x27;
+DEFAULT_ITEM = r&#x27;&lt;li&gt;&lt;a href=&quot;%(base_url)s&#x2F;%(fullcategory_urlencoded)sindex.%(flavour)s&quot;&gt;%(category)s&lt;&#x2F;a&gt; (%(count)d)&lt;&#x2F;li&gt;&#x27;
+DEFAULT_END = &quot;&lt;&#x2F;ul&gt;&lt;&#x2F;li&gt;&quot;
+DEFAULT_FINISH = &quot;&lt;&#x2F;ul&gt;&quot;
+DEFAULT_ROOT = []
+
+def verify_installation(request):
+    config = request.getConfiguration()
+    if not config.has_key(&quot;category_template&quot;):
+        print &quot;missing optional config property &#x27;category_template&#x27; which allows &quot;
+        print &quot;you to specify how the category hierarchy is rendered.  see&quot;
+        print &quot;the documentation at the top of the pycategories plugin code &quot;
+        print &quot;file for more details.&quot;
+    return 1
+
+class PyblCategories:
+    def __init__(self, request):
+        self._request = request
+        self._categories = None
+        config = self._request.getConfiguration()
+        self._baseurl = config.get(&quot;base_url&quot;, &quot;&quot;)
+
+        self.genCategories()
+
+
+    def __str__(self):
+        if self._categories == None:
+            self.genCategories()
+        return self._categories
+
+    def genCategories(self):
+        config = self._request.getConfiguration()
+        root = config[&quot;datadir&quot;]
+
+        start_t = config.get(&quot;category_start&quot;, DEFAULT_START)
+        begin_t = config.get(&quot;category_begin&quot;, DEFAULT_BEGIN)
+        item_t = config.get(&quot;category_item&quot;, DEFAULT_ITEM)
+        end_t = config.get(&quot;category_end&quot;, DEFAULT_END)
+        finish_t = config.get(&quot;category_finish&quot;, DEFAULT_FINISH)
+        #zoomq: configed order by mind the catrgorise
+        root_path_list = config.get(&quot;category_root_list&quot;, DEFAULT_ROOT)
+
+        cfgBaseUrl = config.get(&quot;base_url&quot;, &quot;&quot;)
+
+        form = self._request.getForm()
+        flavour = (form.has_key(&#x27;flav&#x27;) and form[&#x27;flav&#x27;].value or 
+            config.get(&#x27;default_flavour&#x27;, &#x27;html&#x27;))
+        #print flavour
+
+        # build the list of all entries in the datadir
+        output = &quot;&quot;
+        #@others
+        if 0==len(root_path_list):  #as default walk and export Categories as word order 
+            elist = tools.Walk(self._request, root)
+            output += self._subCategories(elist,root,&quot;&quot;)
+        else:
+            for rootCategory in root_path_list:
+                subroot = &quot;%s&#x2F;%s&quot;%(root,rootCategory)
+                self._baseurl = &quot;%s&#x2F;%s&quot;%(cfgBaseUrl,rootCategory)
+                elist = tools.Walk(self._request, subroot)
+                output += self._subCategories(elist,subroot,rootCategory)
+
+        # then we join the list and that&#x27;s the final string
+        #self._categories = &quot;\n&quot;.join(output)
+        self._categories = output
+
+    def _subCategories(self,elist,root,rootname):
+        config = self._request.getConfiguration()
+        form = self._request.getForm()
+        flavour = (form.has_key(&#x27;flav&#x27;) and form[&#x27;flav&#x27;].value or 
+            config.get(&#x27;default_flavour&#x27;, &#x27;html&#x27;))
+        start_t = config.get(&quot;category_start&quot;, DEFAULT_START)
+        begin_t = config.get(&quot;category_begin&quot;, DEFAULT_BEGIN)
+        item_t = config.get(&quot;category_item&quot;, DEFAULT_ITEM)
+        end_t = config.get(&quot;category_end&quot;, DEFAULT_END)
+        finish_t = config.get(&quot;category_finish&quot;, DEFAULT_FINISH)
+
+        # peel off the root dir from the list of entries
+        elist = [mem[len(root)+1:] for mem in elist]
+
+        # go through the list of entries and build a map that
+        # maintains a count of how many entries are in each 
+        # category
+        elistmap = {}
+        for mem in elist:
+            mem = os.path.dirname(mem)
+            elistmap[mem] = 1 + elistmap.get(mem, 0)
+        self._elistmap = elistmap
+        #print self._elistmap
+        # go through the elistmap keys (which is the list of
+        # categories) and for each piece in the key (i.e. the key
+        # could be &quot;dev&#x2F;pyblosxom&#x2F;releases&quot; and the pieces would
+        # be &quot;dev&quot;, &quot;pyblosxom&quot;, and &quot;releases&quot;) we build keys
+        # for the category list map (i.e. &quot;dev&quot;, &quot;dev&#x2F;pyblosxom&quot;,
+        # &quot;dev&#x2F;pyblosxom&#x2F;releases&quot;)
+        clistmap = {}
+        for mem in elistmap.keys():
+            mem = mem.split(os.sep)
+            for index in range(len(mem)+1):
+                p = os.sep.join(mem[0:index])
+                clistmap[p] = 0
+
+        # then we take the category list from the clistmap and
+        # sort it alphabetically
+        clist = clistmap.keys()
+        clist.sort()
+
+        output = []
+        indent = 0
+
+        output.append(start_t)
+        # then we generate each item in the list
+        for item in clist:
+            itemlist = item.split(os.sep)
+
+            num = 0
+            for key in self._elistmap.keys():
+                if item == &#x27;&#x27; or key == item or key.startswith(item + os.sep):
+                    num = num + self._elistmap[key]
+
+            if not item:
+                tab = &quot;&quot;
+            else:
+                tab = len(itemlist) * &quot;&amp;nbsp;&amp;nbsp;&quot;
+
+            if indent &gt; len(itemlist):
+                for i in range(indent - len(itemlist)):
+                    output.append(end_t)
+
+            elif indent &lt; len(itemlist):
+                for i in range(len(itemlist) - indent):
+                    output.append(begin_t)
+
+            # now we build the dict with the values for substitution
+            d = { &quot;base_url&quot;:     self._baseurl, 
+                  &quot;fullcategory&quot;: item + &quot;&#x2F;&quot;, 
+                  &quot;category&quot;:     itemlist[-1] + &quot;&#x2F;&quot;, 
+                  &quot;flavour&quot;:      flavour,
+                  &quot;count&quot;:        num,
+                  &quot;indent&quot;:       tab }
+
+            # this prevents a double &#x2F; in the root category url
+            if item == &quot;&quot;:
+                d[&quot;fullcategory&quot;] = item
+            #print d
+            # this adds urlencoded versions
+            d[&quot;fullcategory_urlencoded&quot;] = tools.urlencode_text(d[&quot;fullcategory&quot;])
+            d[&quot;category_urlencoded&quot;] = tools.urlencode_text(d[&quot;category&quot;])
+
+            # and we toss it in the thing
+            output.append(item_t % d)
+
+            indent = len(itemlist)
+
+        output.append(end_t * indent)
+        output.append(finish_t)
+        # export define item&#x27;s name
+        output[2] = output[2].replace(&quot;&gt;&#x2F;&lt;&#x2F;a&gt;&quot;,&quot; class=&#x27;rootcategory&#x27;&gt;%s&#x2F;&lt;&#x2F;a&gt;&quot;%rootname)
+        return &quot;\n&quot;.join(output)
+def cb_prepare(args):
+    request = args[&quot;request&quot;]
+    data = request.getData()
+    data[&quot;categorylinks&quot;] = PyblCategories(request)
+
+&lt;&#x2F;pre&gt;</content>
+</entry>
+
+<entry>
+<title type="html">pyfilenamemtime.py</title>
+<category term="/techic/PyBlosxom/plugins" />
+<id>/pyblosxom/2011/08/31/pyfilenamemtime</id>
+<updated>2011-08-31T15:22:00Z</updated>
+<published>2011-08-31T15:22:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/PyBlosxom/plugins/pyfilenamemtime.html" />
+<content type="html">&lt;pre class=&quot;brush: python&quot;&gt;# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
+&quot;&quot;&quot;
+If a filename contains a timestamp in the form of YYYY-MM-DD-hh-mm,
+change the mtime to be the timestamp instead of the one kept by the
+filesystem.  For example, a valid filename would be
+foo-2002-04-01-00-00.txt for April fools day on the year 2002.
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify,
+merge, publish, distribute, sublicense, and&#x2F;or sell copies of the
+Software, and to permit persons to whom the Software is furnished
+to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Copyright 2004, 2005 Tim Roberts
+&quot;&quot;&quot;
+## Leo: tab_width=-4 page_width=80
+# vim: tabstop=4 shiftwidth=4
+import os, re, time
+
+__author__ = &#x27;Tim Roberts http:&#x2F;&#x2F;www.probo.com&#x2F;timr&#x2F;blog&#x2F;&#x27;
+__version__ = &#x27;$Id: pyfilenamemtime.py,v 2872b22e2ace 2011&#x2F;10&#x2F;27 07:08:25 zoomquiet+hg $&#x27;
+
+DAYMATCH = re.compile(&#x27;([0-9]{4})-([0-1][0-9])-([0-3][0-9])-([0-2][0-9])-([0-5][0-9]).[\w]+$&#x27;)
+
+def cb_filestat(args):
+    filename = args[&quot;filename&quot;]
+    stattuple = args[&quot;mtime&quot;]
+
+    mtime = 0
+    mtch = DAYMATCH.search(os.path.basename(filename))
+    if mtch:
+        try:
+            year = int(mtch.groups()[0])
+            mo = int(mtch.groups()[1])
+            day = int(mtch.groups()[2])
+            hr = int(mtch.groups()[3])
+            minute = int(mtch.groups()[4]) 
+            mtime = time.mktime((year,mo,day,hr,minute,0,0,0,-1))
+        except:
+            # TODO: Some sort of debugging code here?
+            pass
+
+    if mtime: 
+        args[&quot;mtime&quot;] = tuple(list(stattuple[:8]) + [mtime] + list(stattuple[9:]))
+
+    return args
+
+
+&lt;&#x2F;pre&gt;</content>
+</entry>
+
+<entry>
+<title type="html">plugininfo.py</title>
+<category term="/techic/PyBlosxom/plugins" />
+<id>/pyblosxom/2011/08/31/plugininfo</id>
+<updated>2011-08-31T15:22:00Z</updated>
+<published>2011-08-31T15:22:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/PyBlosxom/plugins/plugininfo.html" />
+<content type="html">&lt;pre class=&quot;brush: python&quot;&gt;&quot;&quot;&quot;
+Summary
+=======
+
+This plugin is maintained at::
+
+   http:&#x2F;&#x2F;www.bluesock.org&#x2F;~willg&#x2F;pyblosxom&#x2F;
+
+Check that URL for new versions, better documentation, and submitting
+bug reports and feature requests.
+
+
+Usage
+=====
+
+This plugin goes through all the plugins you have installed on your blog
+and extracts information about the plugin.
+
+To kick it off, the url starts with ``&#x2F;plugin_info`` .
+
+If there are plugins you want to run that you don&#x27;t want showing up,
+list them in the ``plugininfo_hide`` property of your ``config.py`` file::
+
+   py[&quot;plugininfo_hide&quot;] = [&quot;myplugin&quot;, &quot;myotherplugin&quot;]
+
+It takes a list of strings.
+
+----
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify,
+merge, publish, distribute, sublicense, and&#x2F;or sell copies of the
+Software, and to permit persons to whom the Software is furnished
+to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Copyright 2002-2007 Will Guaraldi
+
+SUBVERSION VERSION: $Id: plugininfo.py,v 2872b22e2ace 2011&#x2F;10&#x2F;27 07:08:25 zoomquiet+hg $
+
+Revisions:
+2007-07-07 - Converted documentation to restructured text.
+2007-05-19 - Brushed up the code, fixed documentation, ...
+2005-11-11 - Pulled into another new version control system
+1.8 - (26 October, 2005) pulled into new version control system
+1.7 - (09 December, 2004) fixed date_head issue and stopped showing 
+      docstrings
+1.6 - (04 May 2004) added comment handling
+1.5 - (18 February 2004) added the ability to &quot;hide&quot; plugins so that
+      we don&#x27;t talk about them
+1.4 - (17 February 2004) added alphabetical sorting of plugins and fixed
+      num_entries issue
+1.3 - (14 July 2003) added $plugincount variable
+1.2 - (5&#x2F;27&#x2F;2003) minor fixes in the build_entry
+&quot;&quot;&quot;
+import Pyblosxom.plugin_utils
+import Pyblosxom.entries.base
+import time
+import os.path
+
+__author__  = &quot;Will Guaraldi - willg at bluesock dot org&quot;
+__version__ = &quot;$Date: 2011&#x2F;10&#x2F;27 07:08:25 $&quot;
+__url__     = &quot;http:&#x2F;&#x2F;www.bluesock.org&#x2F;~willg&#x2F;pyblosxom&#x2F;&quot;
+__description__ = &quot;Shows information about plugins that you&#x27;re running.&quot;
+
+TRIGGER = &quot;&#x2F;plugin_info&quot;
+
+def verify_installation(request):
+    config = request.getConfiguration()
+
+    # check to see if the user has specified the &quot;plugininfo_hide&quot; 
+    # property
+    if not config.has_key(&quot;plugininfo_hide&quot;):
+        # the user doesn&#x27;t have the property set, so we let them know
+        # they can set it and it prevents specified plugins from showing
+        # up.
+        print &quot;Note: You can set &#x27;plugininfo_hide&#x27; to hide plugins you &quot; + \
+              &quot;don&#x27;t want showing up.&quot;
+
+    else:
+        # they do have plugininfo_hide set, so we verify that the value
+        # is valid-ish.
+        val = config[&quot;plugininfo_hide&quot;]
+
+        if not type(val) in [ list, tuple ]:
+            print &quot;&#x27;plugininfo_hide&#x27; must be a list of strings.&quot;
+            return 0
+
+        for mem in val:
+            if not type(mem) == str:
+                print &quot;&#x27;plugininfo_hide&#x27; must be a list of strings.&quot;
+                return 0
+    return 1
+
+def build_entry(request, mem):
+    &quot;&quot;&quot;build_entry(Request, plugin) -&gt; PyBlosxom.entries.base.BaseEntry
+
+    Takes a plugin, extracts information from it, and builds a PyBlosxom
+    entry from the results.  It returns the BaseEntry object.
+    &quot;&quot;&quot;
+    plugindata = []
+    plugindata.append(&quot;&lt;pre&gt;&quot;)
+
+    # previously we pulled __doc__, but more and more people are storing
+    # documentation for the plugin as well as license information--which
+    # isn&#x27;t really what we want to show.  we really want the author, version,
+    # and url for the plugin.  currently these are stored in __author__,
+    # __version__, and __url__ (though those should be changed to something
+    # like VERSION, AUTHOR, and URL so as to avoid confusion with Python
+    # special things.
+    plugindata.append(&quot;AUTHOR: &quot; + str(getattr(mem, &quot;__author__&quot;, None)) + &quot;\n&quot;)
+    plugindata.append(&quot;VERSION: &quot; + str(getattr(mem, &quot;__version__&quot;, None)) + &quot;\n&quot;)
+    if hasattr(mem, &quot;__url__&quot;):
+        plugindata.append(&quot;URL: &lt;a href=\&quot;%s\&quot;&gt;%s&lt;&#x2F;a&gt;\n&quot; % \
+                          (str(mem.__url__), str(mem.__url__)))
+
+    plugindata.append(&quot;&lt;&#x2F;pre&gt;&quot;)
+
+    # build a dict of the metadata that generate_entry needs
+    d = { &quot;title&quot;: mem.__name__,
+          &quot;absolute_path&quot;: TRIGGER[1:],
+          &quot;fn&quot;: mem.__name__,
+          &quot;file_path&quot;: TRIGGER[1:] + &quot;&#x2F;&quot; + mem.__name__ }
+
+    # build the body of the entry
+    body = &quot;&quot;.join(plugindata)
+
+    entry = Pyblosxom.entries.base.generate_entry(request, d, body, None)
+    return entry
+
+def cb_prepare(args):
+    request = args[&quot;request&quot;]
+    data = request.getData()
+    config = request.getConfiguration()
+    antiplugins = config.get(&quot;plugininfo_hide&quot;, [])
+
+    plugins = Pyblosxom.plugin_utils.plugins
+    plugins = [m for m in plugins if m.__name__ not in antiplugins]
+
+    data[&quot;plugincount&quot;] = len(plugins)
+
+
+INIT_KEY = &quot;plugininfo_initiated&quot;
+
+def cb_date_head(args):
+    &quot;&quot;&quot;
+    If we&#x27;re showing plugins, then we don&#x27;t want the date_head templates
+    kicking in--so we block that.
+    &quot;&quot;&quot;
+    request = args[&quot;request&quot;]
+    data = request.getData()
+
+    if data.has_key(INIT_KEY):
+        args[&quot;template&quot;] = &quot;&quot;
+    return args
+
+def cb_staticrender_filelist(args):
+    &quot;&quot;&quot;
+    This is test code--trying to work additional bits into the static
+    renderer.
+    &quot;&quot;&quot;
+    request = args[&quot;request&quot;]
+    filelist = args[&quot;filelist&quot;]
+    flavours = args[&quot;flavours&quot;]
+
+    config = request.getConfiguration()
+
+    antiplugins = config.get(&quot;plugininfo_hide&quot;, [])
+
+    plugins = Pyblosxom.plugin_utils.plugins
+    plugins = [m for m in plugins if m.__name__ not in antiplugins]
+
+    if plugins:
+        for mem in plugins:
+            url = os.path.normpath(TRIGGER + &quot;&#x2F;&quot; + mem.__name__ + &quot;.&quot;)
+            for f in flavours:
+                filelist.append( (url + f, &quot;&quot;) )
+        for f in flavours:
+            filelist.append( (os.path.normpath(TRIGGER + &quot;&#x2F;index.&quot; + f), &quot;&quot;) )
+
+
+def cb_filelist(args):
+    request = args[&quot;request&quot;]
+    pyhttp = request.getHttp()
+    data = request.getData()
+    config = request.getConfiguration()
+
+    if not pyhttp[&quot;PATH_INFO&quot;].startswith(TRIGGER):
+        return
+
+    data[INIT_KEY] = 1
+    data[&#x27;root_datadir&#x27;] = config[&#x27;datadir&#x27;]
+    config[&#x27;num_entries&#x27;] = 9999
+    entry_list = []
+
+    antiplugins = config.get(&quot;plugininfo_hide&quot;, [])
+
+    plugins = Pyblosxom.plugin_utils.plugins
+    plugins = [m for m in plugins if m.__name__ not in antiplugins]
+
+    pathinfo = pyhttp[&quot;PATH_INFO&quot;]
+
+    # if the browser requested the TRIGGER or TRiGGER&#x2F;index, then we
+    # kick in and show plugin information for all plugins.
+    if pathinfo == TRIGGER or pathinfo.startswith(TRIGGER + &quot;&#x2F;index&quot;):
+        plugins.sort(lambda x,y: cmp(x.__name__, y.__name__))
+        for mem in plugins:
+            entry_list.append(build_entry(request, mem))
+        return entry_list
+
+    # the browser requested to see information on a specific plugin.
+
+    # we need to pull off the flavour that was requested
+    # (if there was one).  FIXME - this is a good candidate for a tools
+    # function.
+    pathinfo = pathinfo[len(TRIGGER):]
+
+    if pathinfo.startswith(&quot;&#x2F;&quot;): pathinfo = pathinfo[1:]
+    if pathinfo.endswith(&quot;&#x2F;&quot;): pathinfo = pathinfo[:-1]
+
+    filename, ext = os.path.splitext(pathinfo)
+    if ext[1:]:
+        data[&quot;flavour&quot;] = ext[1:]
+
+    d = {}
+    for mem in plugins:
+        d[mem.__name__] = mem
+
+    # if the browser requested to look at a specific plugin, then
+    # we only show that one.
+    if d.has_key(filename):
+        return [build_entry(request, d[filename])]
+
+    # if the plugin the browser requested isn&#x27;t in the list of
+    # plugins, then we return an empty list of entries--PyBlosxom
+    # will show a &quot;that doesn&#x27;t exist&quot; message for that.
+    return []
+
+# vim: tabstop=4 shiftwidth=4
+&lt;&#x2F;pre&gt;</content>
+</entry>
+</feed>

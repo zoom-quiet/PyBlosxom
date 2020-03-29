@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+<!DOCTYPE content [ <!ENTITY nbsp " "> ]>
+<rdf:RDF xml:base="/pyblosxom/rdf"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<rdf:Description rdf:about="/pyblosxom">
+  <dc:title> Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup> </dc:title>
+  <dc:description> Zoom.Quiet's PyBlosxom blogging </dc:description>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+</rdf:Description>
+
+<rdf:Description rdf:about="/pyblosxom/plugin_info/category_static">
+  <dc:title> category_static </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2013-12-13T06:42:28Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <pre>AUTHOR: Zoom.Quiet <zoomquiet+pyb at gmail dot com>
+VERSION: 11.09.7
+URL: <a href="http://blog.zoomquiet.org/pyblosxom/techic/PyBlosxom/plugins/category_static.html">http://blog.zoomquiet.org/pyblosxom/techic/PyBlosxom/plugins/category_static.html</a>
+</pre>
+  </content>
+
+  <rdf:Seq>
+
+<rdf:Description rdf:about="/pyblosxom/plugin_info/hardcodedates">
+  <dc:title> hardcodedates </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2013-12-13T06:42:28Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <pre>AUTHOR: Nathan Kent Bullock, Ryan Barrett
+VERSION: 1.4
+</pre>
+  </content>
+
+  <rdf:Seq>
+
+<rdf:Description rdf:about="/pyblosxom/plugin_info/index_static">
+  <dc:title> index_static </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2013-12-13T06:42:28Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <pre>AUTHOR: Ryan Barrett
+VERSION: 0.2
+URL: <a href="http://snarfed.org/space/pyblosxom+index">http://snarfed.org/space/pyblosxom+index</a>
+</pre>
+  </content>
+
+  <rdf:Seq>
+
+<rdf:Description rdf:about="/pyblosxom/plugin_info/plugininfo">
+  <dc:title> plugininfo </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2013-12-13T06:42:28Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <pre>AUTHOR: Will Guaraldi - willg at bluesock dot org
+VERSION: $Date: 2010/10/26 23:00:07 $
+URL: <a href="http://www.bluesock.org/~willg/pyblosxom/">http://www.bluesock.org/~willg/pyblosxom/</a>
+</pre>
+  </content>
+
+  <rdf:Seq>
+
+<rdf:Description rdf:about="/pyblosxom/plugin_info/py2pre">
+  <dc:title> py2pre </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2013-12-13T06:42:28Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <pre>AUTHOR: Zoom.Quiet <zoomquiet+pyb at gmail dot com>
+VERSION: v11.09.7
+URL: <a href="http://blog.zoomquiet.org/pyblosxom/techic/PyBlosxom/plugins/py2pre.html">http://blog.zoomquiet.org/pyblosxom/techic/PyBlosxom/plugins/py2pre.html</a>
+</pre>
+  </content>
+
+  <rdf:Seq>
+
+<rdf:Description rdf:about="/pyblosxom/plugin_info/pyfilenamemtime">
+  <dc:title> pyfilenamemtime </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2013-12-13T06:42:28Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <pre>AUTHOR: Tim Roberts http://www.probo.com/timr/blog/
+VERSION: $Id: pyfilenamemtime.py,v d3884047bbb9 2010/10/26 23:00:07 zoomquiet+hg $
+</pre>
+  </content>
+
+  <rdf:Seq>
+
+<rdf:Description rdf:about="/pyblosxom/plugin_info/wbgrecent">
+  <dc:title> wbgrecent </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2013-12-13T06:42:28Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <pre>AUTHOR: Will Guaraldi - willg at bluesock dot org
+VERSION: $Date: 2011/09/07 09:27:50 $
+URL: <a href="http://www.bluesock.org/~willg/pyblosxom/">http://www.bluesock.org/~willg/pyblosxom/</a>
+</pre>
+  </content>
+
+  <rdf:Seq>
+
+<rdf:Description rdf:about="/pyblosxom/plugin_info/xhtml">
+  <dc:title> xhtml </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2013-12-13T06:42:28Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <pre>AUTHOR: Zoom.Quiet <Zoom.Quiet at gmail.com>
+VERSION: v10.4.14
+URL: <a href="http://blog.zoomquiet.org/pyblosxom/techic/PyBlosxom/plugins/xhtml.html">http://blog.zoomquiet.org/pyblosxom/techic/PyBlosxom/plugins/xhtml.html</a>
+</pre>
+  </content>
+
+  <rdf:Seq>
+
+<rdf:Description rdf:about="/pyblosxom/plugin_info/zqarchives">
+  <dc:title> zqarchives </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2013-12-13T06:42:28Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <pre>AUTHOR: Wari Wahab - wari at wari dot per dot sg
+VERSION: $Id: zqarchives.py,v 7f6c62eaa2db 2011/09/07 08:52:46 zoomquiet+hg $
+URL: <a href="http://blog.zoomquiet.org/pyblosxom/techic/PyBlosxom/plugins/zqarchives.html">http://blog.zoomquiet.org/pyblosxom/techic/PyBlosxom/plugins/zqarchives.html</a>
+</pre>
+  </content>
+
+  <rdf:Seq>
+
+<rdf:Description rdf:about="/pyblosxom/plugin_info/zqcategories">
+  <dc:title> zqcategories </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2013-12-13T06:42:28Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <pre>AUTHOR: Will Guaraldi - willg at bluesock dot org
+VERSION: $Id: zqcategories.py,v 7f6c62eaa2db 2011/09/07 08:52:46 zoomquiet+hg $
+URL: <a href="http://blog.zoomquiet.org/pyblosxom/techic/PyBlosxom/plugins/zqcategories.html">http://blog.zoomquiet.org/pyblosxom/techic/PyBlosxom/plugins/zqcategories.html</a>
+</pre>
+  </content>
+
+  <rdf:Seq>
+
+  </rdf:Seq>
+</rdf:Description>
+</rdf:RDF>

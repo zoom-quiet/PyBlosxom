@@ -1,0 +1,4871 @@
+<?xml version="1.0"?>
+<!DOCTYPE content [ <!ENTITY nbsp " "> ]>
+<rdf:RDF xml:base="/pyblosxom/rdf"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<rdf:Description rdf:about="/pyblosxom">
+  <dc:title> Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup> </dc:title>
+  <dc:description> Zoom.Quiet's PyBlosxom blogging </dc:description>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+</rdf:Description>
+
+<rdf:Description rdf:about="/pyblosxom/techic/Mac/ubuntu2mac-mytoolbox-2012-02-14-23-23">
+  <dc:title> 从 Ubuntu 到 MBP </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2012-02-14T15:23:00Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <div class="header" id="header">
+<a name='toptopNFM1WTRJQ' id='toptopNFM1WTRJQ'></a><h1>从 Ubuntu 到 MBP</h1>
+<h2>--我的工具箱迁移</h2>
+</div>
+
+<div class="toc" id="toc">
+</div>
+<div class="body" id="body">
+<p>
+是也乎, Ubuntu 和 MBP 不是同种事物吼
+</p>
+<ul>
+<li>不过 Ubuntu 作为操作系统,可以安装在几乎任何硬件中
+</li>
+<li>但是, OS X 只有在 Apple 硬件上,才真心自在
+<p></p>
+所以,,,,
+<p></p>
+出于各种原因, 111216 在澳门专卖店,老婆赞助之下,入手俺第一台个人笔记本:
+<p></p>
+</li>
+<li>MacBook Pro(15吋)
+</li>
+<li>2.2 GHz 四核 Intel Core i7
+</li>
+<li>8 GB 1333 MHz DDR3(自购4G)
+</li>
+<li>500GB 5400-rpm
+</li>
+<li>Mac OS X Lion 10.7.3 Lion (自动从10.7.2升级的)
+</li>
+</ul>
+
+<p>
+而之前使用的是公司配置的 联想 x200商用笔记本,安装的是 Ubunru 10.04.4 LTS(Gutsy Gibbon);
+更早先,2006年之前,是Dell 的商务本,安装windows2003服务器版;
+</p>
+<p>
+虽然作的事儿一直没有怎么变化,但是,日用环境的变迁,令俺对工具箱有着不同的选择.
+因为,很早水决心迁移出 M$ 环境的,所以,软件的组合,一直偏向跨平台,FLOSS软件;
+</p>
+<p>
+倒是入 MAC 完全有点意外,工具的迁移有点小波折,特此,以系列文章形式记要一下;
+</p>
+<table border="1">
+<tr>
+<th>对比\内容</th>
+<th>~2006</th>
+<th>~2011</th>
+<th>2012~</th>
+</tr>
+<tr>
+<th>OS</th>
+<th>Windows</th>
+<th>Ubuntu</th>
+<th>MAC</th>
+</tr>
+<tr>
+<td align="center" colspan="4">&gt;&gt;&gt; abt.输入 &lt;&lt;&lt;</td>
+</tr>
+<tr>
+<td align="right">浏览器</td>
+<td>SwiftFox</td>
+<td>SwiftFox</td>
+<td>FireFox</td>
+</tr>
+<tr>
+<td align="right">资料收集</td>
+<td>ScrapBook</td>
+<td>ScrapBook</td>
+<td>ScrapBook</td>
+</tr>
+<tr>
+<td align="right">视频回放</td>
+<td>MPlayer</td>
+<td>MPlayer</td>
+<td>MPlayer</td>
+</tr>
+<tr>
+<td align="right">email</td>
+<td>Thunderbird+Gmail</td>
+<td>Thunderbird+Gmail</td>
+<td>Gmail</td>
+</tr>
+<tr>
+<td align="right"><b>pdf</b></td>
+<td>FoxitReader</td>
+<td>Document View</td>
+<td>Skim</td>
+</tr>
+<tr>
+<td align="right"><b>chm</b></td>
+<td>内置</td>
+<td>CHM Reader(FF插件)</td>
+<td>Enolsoft CHM View|</td>
+</tr>
+<tr>
+<td align="right"><b>漫画阅读</b></td>
+<td>ComicsViewer</td>
+<td>Comix</td>
+<td>Simple Comic</td>
+</tr>
+<tr>
+<td align="right"><b>文本阅读</b></td>
+<td>ReadBook</td>
+<td>LiteBook2</td>
+<td>EPUBReader</td>
+</tr>
+<tr>
+<td align="right"><b>音乐播放</b></td>
+<td>foobar2000</td>
+<td>Moc</td>
+<td>Cmus</td>
+</tr>
+<tr>
+<td align="right"><b>图片浏览</b></td>
+<td>IrfanView</td>
+<td>Geeqie</td>
+<td>Xee</td>
+</tr>
+<tr>
+<td align="right"><b>笔记</b></td>
+<td>Leo</td>
+<td>Zim+Leo</td>
+<td>Notational Velocity+Leo</td>
+</tr>
+<tr>
+<td align="right"><b>辞典</b></td>
+<td>星际译王</td>
+<td>星际译王</td>
+<td>内置(外挂星际译王词库)</td>
+</tr>
+<tr>
+<td align="center" colspan="4">&gt;&gt;&gt; abt.思考 &lt;&lt;&lt;</td>
+</tr>
+<tr>
+<td align="right">思维导图</td>
+<td>FreeMind</td>
+<td>XMind</td>
+<td>Xmind</td>
+</tr>
+<tr>
+<td align="right">关系图谱</td>
+<td>Graphviz</td>
+<td>Graphviz</td>
+<td>Graphviz</td>
+</tr>
+<tr>
+<td align="right"><b>UML</b></td>
+<td>JUDE</td>
+<td>JUDE</td>
+<td>websequencediagrams.com</td>
+</tr>
+<tr>
+<td align="right"><b>antiRSI</b></td>
+<td>Workrave</td>
+<td>Workrave</td>
+<td>focus booster</td>
+</tr>
+<tr>
+<td align="center" colspan="4">&gt;&gt;&gt; abt.系统管理 &lt;&lt;&lt;</td>
+</tr>
+<tr>
+<td align="right">虚拟机</td>
+<td>NULL</td>
+<td>VirtualBox</td>
+<td>VirtualBox</td>
+</tr>
+<tr>
+<td align="right"><b>软件仓库</b></td>
+<td>NULL(可悲!)</td>
+<td>apt</td>
+<td>brew</td>
+</tr>
+<tr>
+<td align="right"><b>版本管理</b></td>
+<td>CVS+SVN</td>
+<td>SVN+Hg</td>
+<td>Hg+git</td>
+</tr>
+<tr>
+<td align="right"><b>输入法</b></td>
+<td>BXM</td>
+<td>SCIM(外挂BXM)</td>
+<td>IMKQIM(外挂BXM)</td>
+</tr>
+<tr>
+<td align="right"><b>终端</b></td>
+<td>Putty</td>
+<td>Gnome 终端</td>
+<td>iTerm 2</td>
+</tr>
+<tr>
+<td align="right"><b>文件管理</b></td>
+<td>Total Commander</td>
+<td>gnome-commder</td>
+<td>muCommander</td>
+</tr>
+<tr>
+<td align="right"><b>CPU分享</b></td>
+<td>BINC</td>
+<td>BINC</td>
+<td>BINC</td>
+</tr>
+<tr>
+<td align="center" colspan="4">&gt;&gt;&gt; abt.输出 &lt;&lt;&lt;</td>
+</tr>
+<tr>
+<td align="right">办公</td>
+<td>OOo</td>
+<td>OOo</td>
+<td>OOo</td>
+</tr>
+<tr>
+<td align="right">幻灯</td>
+<td>OOo</td>
+<td>S5</td>
+<td>rst2S5</td>
+</tr>
+<tr>
+<td align="right">文档</td>
+<td>t2t/rst</td>
+<td>t2t/rst</td>
+<td>t2t/rst</td>
+</tr>
+<tr>
+<td align="right"><b>在线写作</b></td>
+<td><a href="http://docwhat.org/2007/03/its_all_text_v06/">It’s All Text!</a></td>
+<td><a href="http://docwhat.org/2007/03/its_all_text_v06/">It’s All Text!</a></td>
+<td><a href="http://docwhat.org/2007/03/its_all_text_v06/">It’s All Text!</a></td>
+</tr>
+<tr>
+<td align="right">图片管理</td>
+<td>Picasa</td>
+<td>Picasa</td>
+<td>Picasa</td>
+</tr>
+<tr>
+<td align="right">图形设计</td>
+<td>Inkscape</td>
+<td>Inkscape</td>
+<td>Inkscape</td>
+</tr>
+<tr>
+<td align="right">图像处理</td>
+<td>GIMP</td>
+<td>GIMP</td>
+<td>GIMP</td>
+</tr>
+<tr>
+<td align="right">视频处理</td>
+<td>ffmpeg</td>
+<td>ffmpeg</td>
+<td>ffmpeg</td>
+</tr>
+<tr>
+<td align="right">音频编辑</td>
+<td>Audacity</td>
+<td>Audacity</td>
+<td>Audacity</td>
+</tr>
+<tr>
+<td align="right">视频编辑</td>
+<td>-</td>
+<td>Avidemux2</td>
+<td>Avidemux2</td>
+</tr>
+<tr>
+<td align="right">系统监察</td>
+<td>内置(弱!)</td>
+<td>内置+htop</td>
+<td>内置+atMonitor</td>
+</tr>
+<tr>
+<td align="right">中文字体</td>
+<td>wqy</td>
+<td>wqy</td>
+<td>wqy</td>
+</tr>
+<tr>
+<td align="right">编程字体</td>
+<td>Courier</td>
+<td>Monaco</td>
+<td>Incosolata</td>
+</tr>
+<tr>
+<td align="right"><b>编程</b></td>
+<td>UltraEdit+Leo</td>
+<td>GEdit+Leo</td>
+<td>Sublime Text2 / Emacs +Leo</td>
+</tr>
+<tr>
+<td align="right">IM</td>
+<td>Pidgin+Skype</td>
+<td>Pidgin+Skype</td>
+<td>Aduim+QQ</td>
+</tr>
+</table>
+
+<p>
+可以看到,近7成的软件,根本不用迁移,可以直接使用!-)
+</p>
+<ul>
+<li>这就是开源的伟力之一!
+</li>
+<li>当然,有几个核心常用软件是有一定挣扎才迁移过来的,,,
+</li>
+</ul>
+
+<p>
+接下来,将对其中比较折腾的进行逐一回顾,,,
+</p>
+<hr class="light" />
+<ul>
+<li>动力源自::<b><a href="http://txt2tags.sf.net">txt2tags</a></b>
+</li>
+<li>t2t渲染:: 2012-03-19 04:28:55
+</li>
+</ul>
+
+</div>
+
+<!-- xhtml code generated by txt2tags 2.4 (http://txt2tags.sf.net) -->
+<!-- cmdline: txt2tags ubuntu2mac-mytoolbox-2012-02-14-23-23.t2t -->
+
+  </content>
+
+  <rdf:Seq>
+
+<rdf:Description rdf:about="/pyblosxom/techic/PyBlosxom/plugins/py2pre">
+  <dc:title> py2pre.py </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2011-09-07T06:00:00Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <pre class="brush: python"># -*- coding: utf-8 -*-
+"""py - html Parser
+    - refactory py2pre.py from xhtml.py
+
+Copyright (c) 2011 Zoom.Quiet 
+All rights reserved.
+
+Redistribution and use in source and binary forms are permitted
+provided that the above copyright notice and this paragraph are
+duplicated in all such forms and that any documentation,
+advertising materials, and other materials related to such
+distribution and use acknowledge that the software was developed
+by the zoomquiet.org.  The name of the
+University may not be used to endorse or promote products derived
+from this software without specific prior written permission.
+THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR
+IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+
+"""
+
+
+## Leo: tab_width=-4 page_width=80
+__version__ = "v11.09.7"
+__author__ = 'Zoom.Quiet <zoomquiet+pyb at gmail dot com>'
+__url__ = "http://blog.zoomquiet.org/pyblosxom/techic/PyBlosxom/plugins/py2pre.html"
+__description__ = ".py export hmtl entry with syntaxhighlighter."
+
+#from Pyblosxom import tools
+
+def cb_entryparser(entryparsingdict):
+    """
+    Register self as plain file handler
+    """
+    entryparsingdict["py"] = parse
+    return entryparsingdict
+def parse(filename, request):
+    #import os
+    entrydata = {}
+    source = open(filename, "r").read()
+    #print filenames
+    body = '<pre class="brush: python">%s</pre>' % source
+    entrydata = {'body' : body
+                 ,'title' : filename.split("/")[-1]
+                 }
+    return entrydata
+
+</pre>
+  </content>
+
+  <rdf:Seq>
+
+<rdf:Description rdf:about="/pyblosxom/techic/PyBlosxom/upinto-pyblosxom15rc3-2011-09-07-12-23">
+  <dc:title> 升级到PyBlosxom 1.5rc3 </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2011-09-07T04:23:00Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <div class="header" id="header">
+<a name='toptopNFdHWVBaN' id='toptopNFdHWVBaN'></a><h1>升级到PyBlosxom 1.5rc3</h1>
+<h2>~ hack 几点</h2>
+<h3>t2t渲染:2012-03-29 03:37:40</h3>
+</div>
+
+<div class="toc" id="toc">
+  <ol>
+  <li><a href="#toc1R0VYQ0JaR">不折腾要死星人</a>
+    <ul>
+    <li><a href="#toc2R0VYRENMU">1.1. 评注</a>
+    </li>
+    <li><a href="#toc3R0VYREVMU">1.2. SyntaxHighlighter</a>
+    </li>
+    <li><a href="#toc4R0VYREdMU">1.3. 插件</a>
+      <ul>
+      <li><a href="#toc5R0VYREdMU">1.3.1. py2pre.py</a>
+      </li>
+      <li><a href="#toc6R0VYREdMU">1.3.2. cp4idx2category.py</a>
+      </li>
+      </ul>
+    </li>
+    <li><a href="#toc7R0VYRElMU">1.4. TODO</a>
+    </li>
+    </ul>
+  </li>
+  <li><a href="#toc8R0lYQ0JaV">时间帐单</a>
+  </li>
+  </ol>
+
+</div>
+<div class="body" id="body">
+<a id="toc1R0VYQ0JaR" name="toc1R0VYQ0JaR"></a>
+<h1><A href='#toptopNFdHWVBaN'> 1. 不折腾要死星人 </A></h1>
+<p>
+嗯嗯嗯，一清点，居然这么长时间没有发布正式点的 blog 了哪！
+</p>
+<ul>
+<li>想恢复每周的心得汇报，但是，俺有强迫症！
+    <ul>
+    <li>PyBloxom 非常好玩，好用
+    </li>
+    <li>但是，一直不甚完美
+    </li>
+    <li>不过，这也是俺喜欢她的原因～ <code>所有不完美之处，都可以自行 hacking!</code>
+    </li>
+    </ul>
+</li>
+</ul>
+
+<dl>
+<dt>  所以:</dt><dd>
+    <ul>
+    <li>安装了 Disqus
+    </li>
+    <li>升級了 SyntaxHighlighter
+    </li>
+    <li>修复了 py.py
+    </li>
+    <li>修复了内置的分类索引
+    </li>
+    </ul>
+</dd>
+</dl>
+
+<a id="toc2R0VYRENMU" name="toc2R0VYRENMU"></a>
+<h2><A href='#toptopNFdHWVBaN'> 1.1. 评注 </A></h2>
+<p>
+一直以来,PyBlosxom 没有内置一个靠谱的评注系统,是个囧事儿,
+</p>
+<ul>
+<li>现在,官方也想明白了,都 2.0时代了,不纠结了
+</li>
+<li><a href="http://pyblosxom.bluesock.org/1.5/comments.html#disqus">Comments — PyBlosxom v1.5 documentation</a>
+    <ul>
+    <li>直接建议上 <a href="http://disqus.com/">DISQUS</a>
+    </li>
+    <li>为什么不呢?
+<pre>
+好:
+    + 安装简单
+    + 内置spam 管理
+    + 支持提醒,回答,以及其它功能
+坏:
+    - 作为web服务,没有全权控制
+    - 可能难以迁移到其它服务/插件 ~ 虽然有评注的导出功能
+</pre>
+    <p></p>
+反正,俺用了,,很轻松,,而且支持多种 SSO 认证!
+    </li>
+    </ul>
+</li>
+</ul>
+
+<a id="toc3R0VYREVMU" name="toc3R0VYREVMU"></a>
+<h2><A href='#toptopNFdHWVBaN'> 1.2. SyntaxHighlighter </A></h2>
+<p>
+之前,俺为了节省流量,使用了 官方提供的 hosting...
+</p>
+<ul>
+<li>结果伟大的功夫网,总是令展示效果不理想!
+</li>
+<li>现在想通了,直接升级 到 SyntaxHighlighter 3.0.83 
+</li>
+<li>并指向本地的各种资源
+</li>
+<li>比较贴心的是,这次有了 <a href="http://alexgorbatchev.com/SyntaxHighlighter/manual/api/autoloader.html">Dynamic Brush Loading</a>
+    <ul>
+    <li>不用象以往,逐一JS 的加载了
+    <p></p>
+<pre class="brush:  js ; highlight: [1,5,9]">
+
+function path(){
+    var args = arguments;
+    var result = [];
+    for(var i = 0; i &lt; args.length; i++){
+      result.push(args[i].replace('@', '/pybshare/syntaxhighlighter_3.0.83/scripts/'));
+      };
+    return result;
+    };
+SyntaxHighlighter.autoloader.apply(null, path(
+    'applescript            @shBrushAppleScript.js',
+    'bash shell             @shBrushBash.js',
+    'css                    @shBrushCss.js',
+    'diff patch pas         @shBrushDiff.js',
+    'erl erlang             @shBrushErlang.js',
+    'js jscript javascript  @shBrushJScript.js',
+    'text plain             @shBrushPlain.js',
+    'py python              @shBrushPython.js',
+    'sass scss              @shBrushSass.js',
+    'sql                    @shBrushSql.js',
+    'xml xhtml xslt html    @shBrushXml.js'
+    ));
+
+SyntaxHighlighter.all()
+</pre>
+    </li>
+    </ul>
+</li>
+</ul>
+
+<dl>
+<dt>  PS:</dt><dd>
+    <ul>
+    <li>也有更加轻量的 <a href="http://code.google.com/p/google-code-prettify/">prettify</a>
+    </li>
+    <li>但是,没有 SyntaxHighlighter 的高亮功能
+    </li>
+    <li>而且,已经和 t2t 深度定制过,使用很好,也就不追赶了,,,
+    </li>
+    </ul>
+</dd>
+</dl>
+
+<a id="toc4R0VYREdMU" name="toc4R0VYREdMU"></a>
+<h2><A href='#toptopNFdHWVBaN'> 1.3. 插件 </A></h2>
+<p>
+1.5 的插件体系好象有所变化,不那么简单的可以理解了,,,
+</p>
+<a id="toc5R0VYREdMU" name="toc5R0VYREdMU"></a>
+<h3><A href='#toptopNFdHWVBaN'> 1.3.1. py2pre.py </A></h3>
+<p>
+<a href="http://blog.zoomquiet.org/pyblosxom/techic/PyBlosxom/plugins/py2pre.html">py2pre.py</a>
+</p>
+<dl>
+<dt>意图:</dt><dd>
+    <ul>
+    <li>简单的将目录中的 .py 脚本渲染成合适的 html 展示
+    </li>
+    </ul>
+</dd>
+</dl>
+
+<dl>
+<dt>问题:</dt><dd>
+    <ul>
+    <li><a href="http://pyblosxom.bluesock.org/registry/text/py.html">PyBlosxom - main site - py</a>
+    </li>
+    <li>原先的老插件已经失效,在静态渲染时不触发了
+    </li>
+    </ul>
+</dd>
+</dl>
+
+<dl>
+<dt>解决:</dt><dd>
+    <ul>
+    <li>根据1.5.* 的文档 <a href="http://pyblosxom.bluesock.org/1.5/dev_writing_plugins.html#writing-an-entryparser">Writing an entryparser — PyBlosxom v1.5 documentation</a>
+    </li>
+    <li>快速山寨了一个 <a href="http://blog.zoomquiet.org/pyblosxom/techic/PyBlosxom/plugins/py2pre.html">py2pre.py</a>
+    </li>
+    </ul>
+</dd>
+</dl>
+
+<dl>
+<dt>技巧:</dt><dd>
+    <ul>
+    <li>直接复用 SyntaxHighlighter 的效能
+    </li>
+    <li>将所有脚本内容丢到约定的 <code>&lt;pre&gt;</code> 中就好
+    <p></p>
+<pre class="brush:  python ; highlight: [5]">
+
+#...
+def parse(filename, request):
+    entrydata = {}
+    source = open(filename, "r").read()
+    body = '&lt;pre class="brush: python"&gt;%s&lt;/pre&gt;' % source
+    entrydata = {'body' : body
+                 ,'title' : filename.split("/")[-1]
+                 }
+    return entrydata
+
+</pre>
+    </li>
+    </ul>
+</dd>
+</dl>
+
+<a id="toc6R0VYREdMU" name="toc6R0VYREdMU"></a>
+<h3><A href='#toptopNFdHWVBaN'> 1.3.2. cp4idx2category.py </A></h3>
+<p>
+这货不是 PyBlosxom 标准插件,只是发布辅助脚本
+</p>
+<dl>
+<dt>问题:</dt><dd>
+    <ul>
+    <li>发现使用 <code>pyblosxom-cmd staticrender --config &lt;/path/2/config.py&gt;</code> 生成的静态页面,分类索引页面有问题:
+        <ul>
+        <li>正常的分类索引中,只包含目录中一个文章
+        </li>
+        <li>如果是 非内容目录,比如说py 脚本目录,倒是可以包含所有内容,可页面输出又有乱码
+        </li>
+        </ul>
+    </li>
+    </ul>
+</dd>
+</dl>
+
+<dl>
+<dt>尝试:</dt><dd>
+    <ul>
+    <li>吼了列表,没人理
+    </li>
+    <li>也忘记以前是否正当了
+    </li>
+    <li>追踪代码:
+    </li>
+    </ul>
+</dd>
+</dl>
+
+<pre class="brush:  shell">
+
+Traceback (most recent call last):
+  File "/usr/local/bin/pyblosxom-cmd", line 25, in &lt;module&gt;
+    sys.exit(command_line_handler("pyblosxom-cmd", sys.argv))
+  File "/usr/local/lib/python2.6/dist-packages/Pyblosxom/commandline.py", line 466, in command_line_handler
+    return f(command, argv)
+  File "/usr/local/lib/python2.6/dist-packages/Pyblosxom/commandline.py", line 362, in run_static_renderer
+    return p.run_static_renderer(options.incremental)
+  File "/usr/local/lib/python2.6/dist-packages/Pyblosxom/pyblosxom.py", line 409, in run_static_renderer
+    tools.render_url_statically(config, url, q)
+  File "/usr/local/lib/python2.6/dist-packages/Pyblosxom/tools.py", line 940, in render_url_statically
+    response = render_url(cdict, url, querystring)
+  File "/usr/local/lib/python2.6/dist-packages/Pyblosxom/tools.py", line 983, in render_url
+    p.run(static=True)
+  File "/usr/local/lib/python2.6/dist-packages/Pyblosxom/pyblosxom.py", line 182, in run
+    blosxom_handler(self._request)
+  File "/usr/local/lib/python2.6/dist-packages/Pyblosxom/pyblosxom.py", line 947, in blosxom_handler
+    renderer.render()
+  File "/usr/local/lib/python2.6/dist-packages/Pyblosxom/renderers/blosxom.py", line 330, in render
+    content = self.render_content(self._content)
+  File "/usr/local/lib/python2.6/dist-packages/Pyblosxom/renderers/blosxom.py", line 273, in render_content
+    self.render_template(parse_vars, "story", override=1))
+  File "/usr/local/lib/python2.6/dist-packages/Pyblosxom/renderers/blosxom.py", line 370, in render_template
+    {"entry": entry, "template": template})
+  File "/usr/local/lib/python2.6/dist-packages/Pyblosxom/renderers/blosxom.py", line 405, in _run_callback
+    defaultfunc=lambda x:x)
+  File "/usr/local/lib/python2.6/dist-packages/Pyblosxom/tools.py", line 780, in run_callback
+    output = func(input)
+  File "/home/zoomq/workspace/3hg/zoomquiet-default/pyblosoxm/zoomquiet/plugins/preformatter/markdown-plugin.py", line 44, in cb_story
+...
+
+</pre>
+<p></p>
+<p>
+日!这么深的调用栈?!
+</p>
+<pre class="brush:  text">
+
+pyblosxom-cmd   命令工具
+    |
+    +-&gt; commandline.py  解析参数,准备环境
+        |
+        +-&gt; pyblosxom.py    调用工具
+             ^      |
+             |      +-&gt; tools.py    组织插件,参数
+             |          |
+             +----&lt;-----+   嗯嗯嗯?!回调 pyblosxom.py 
+             使用 renderer.render() 和动态网站流程一样,输出内容
+
+</pre>
+    <ul>
+    <li>FT! 具体分类目录在哪个环节生成基本找遍不到了,,,因为将所有需要渲染的,都丢到一个列表中了,,
+    </li>
+    </ul>
+
+<dl>
+<dt>解决:</dt><dd>
+    <ul>
+    <li>其实复杂的技术问题,总是有很2的解决方案的
+    </li>
+    <li>既然难以解决原有的渲染问题,那么 <b>使用期待的页面替换有问题的就KO的哈!</b>
+        <ul>
+        <li>俺的 <a href="http://blog.zoomquiet.org/pyblosxom/techic/PyBlosxom/plugins/category_static.html">category_static.py</a> 插件生成的树状索引: <a href="http://blog.zoomquiet.org/pyblosxom/category-index.html">category-index.html</a> 很可以
+        </li>
+        <li>那么对其进行相关裁剪,复制到对应目录中不就得了!?
+        <p></p>
+先小小的增补一下<a href="http://blog.zoomquiet.org/pyblosxom/techic/PyBlosxom/plugins/category_static.html">category_static.py</a>
+<pre class="brush:  python ; highlight: [3,4]">
+
+# ...
+for e in etree[p][1:]:
+    body += '&lt;span id="%s" class="indents"&gt;%s&lt;/span&gt;&lt;a href="%s%s.html"&gt;%s&lt;/a&gt;&lt;br&gt;\n'%(
+            "/".join(etree[p][0])
+            ,"..."*len(etree[p][0])
+            ,_baseurl
+            ,e[1]
+            ,e[0]
+            )
+
+
+</pre>
+        </li>
+        </ul>
+    </li>
+    <li>在前导空间的span 中增加代表文章所在分类目录的 id
+    </li>
+    </ul>
+</dd>
+</dl>
+
+<p>
+那么 <code>cp4idx2category.py</code>就可以简单的完成了:
+</p>
+<pre class="brush:  python">
+
+# -*- coding: utf-8 -*-
+'''
+将 category_static.py 生成的树状分类索引页面，复制并修订为各个目录中的 index.html
+'''
+__version__ = 'cp4idx2category v11.09.7'
+__author__ = 'Zoom.Quiet &lt;zoomquiet+pyb at gmail dot com&gt;'
+
+import os
+import sys
+import re
+import shutil
+
+def cp4gen(path):
+    IDX = "%s/category-index.html"% path
+    p = re.compile("%s\/\d{4}"%path )
+    for root, dirs, files in os.walk(path):
+        if path == root:
+            pass
+        elif p.match(root):
+            pass
+        elif "plugin_info" in root:
+            pass
+        else:
+            aimpath = root.replace(path,"")
+            exp = ""
+            for i in open(IDX,'r'):
+                if '&lt;span id="' in i:
+                    if aimpath in i:
+                        exp += i
+                else:
+                    exp += i
+            open("%s/index.html"% root,"w").write(exp)
+    return
+
+if __name__ == '__main__':      # this way the module can be
+    if 2 != len(sys.argv):
+        print """ %s usage::
+$ python cp4idx2category.py path/2/_static
+            |               +- 生成的静态页面入口
+            +- 脚本自身
+        """ % VERSION
+    else:
+        path = sys.argv[1]
+        cp4gen(path)
+
+</pre>
+<p></p>
+<p>
+<b>只要每次,完成静态整站渲染后,用cp4idx2category.py刷一下,就KO!</b>
+</p>
+<a id="toc7R0VYRElMU" name="toc7R0VYRElMU"></a>
+<h2><A href='#toptopNFdHWVBaN'> 1.4. TODO </A></h2>
+<p>
+<code>不断维护的完美之折腾...</code>
+</p>
+<dl>
+<dt>  PyBlosxom 静态化发布体系:</dt><dd>
+</dd>
+</dl>
+
+<ol>
+<li>Hg/Git 的 hooks 开发部署
+</li>
+<li>dot 的自动包含图片热区定义的 t2t 处理
+</li>
+<li>Leo 中的自动化发布脚本按钮
+</li>
+</ol>
+
+<a id="toc8R0lYQ0JaV" name="toc8R0lYQ0JaV"></a>
+<h1><A href='#toptopNFdHWVBaN'> 2. 时间帐单 </A></h1>
+<ol>
+<li>~0.01h    起意，要折腾
+</li>
+<li>~.5h      SyntaxHighlighter升級
+</li>
+<li>~2.5h     DISQUS 加装,主要是注册和文档查阅耗时
+</li>
+<li>~1h       列表吼,E文真的很难以表述清楚...
+</li>
+<li>~1h       py2pre.py 重构完成
+</li>
+<li>~1h       cp4idx2category.py 山寨完成
+</li>
+<li>~1.5h     记录成文
+<p></p>
+合计,7小时,哗,,,,
+</li>
+</ol>
+
+<hr class="light" />
+<p>
+动力源自::<b><a href="http://txt2tags.sf.net">txt2tags</a></b>
+</p>
+</div>
+
+<!-- xhtml code generated by txt2tags 2.4 (http://txt2tags.sf.net) -->
+<!-- cmdline: txt2tags upinto-pyblosxom15rc3-2011-09-07-12-23.t2t -->
+
+  </content>
+
+  <rdf:Seq>
+
+<rdf:Description rdf:about="/pyblosxom/techic/PyBlosxom/plugins/plugininfo">
+  <dc:title> plugininfo.py </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2011-08-31T15:22:00Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <pre class="brush: python">"""
+Summary
+=======
+
+This plugin is maintained at::
+
+   http://www.bluesock.org/~willg/pyblosxom/
+
+Check that URL for new versions, better documentation, and submitting
+bug reports and feature requests.
+
+
+Usage
+=====
+
+This plugin goes through all the plugins you have installed on your blog
+and extracts information about the plugin.
+
+To kick it off, the url starts with ``/plugin_info`` .
+
+If there are plugins you want to run that you don't want showing up,
+list them in the ``plugininfo_hide`` property of your ``config.py`` file::
+
+   py["plugininfo_hide"] = ["myplugin", "myotherplugin"]
+
+It takes a list of strings.
+
+----
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the "Software"), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify,
+merge, publish, distribute, sublicense, and/or sell copies of the
+Software, and to permit persons to whom the Software is furnished
+to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Copyright 2002-2007 Will Guaraldi
+
+SUBVERSION VERSION: $Id: plugininfo.py,v 2872b22e2ace 2011/10/27 07:08:25 zoomquiet+hg $
+
+Revisions:
+2007-07-07 - Converted documentation to restructured text.
+2007-05-19 - Brushed up the code, fixed documentation, ...
+2005-11-11 - Pulled into another new version control system
+1.8 - (26 October, 2005) pulled into new version control system
+1.7 - (09 December, 2004) fixed date_head issue and stopped showing 
+      docstrings
+1.6 - (04 May 2004) added comment handling
+1.5 - (18 February 2004) added the ability to "hide" plugins so that
+      we don't talk about them
+1.4 - (17 February 2004) added alphabetical sorting of plugins and fixed
+      num_entries issue
+1.3 - (14 July 2003) added $plugincount variable
+1.2 - (5/27/2003) minor fixes in the build_entry
+"""
+import Pyblosxom.plugin_utils
+import Pyblosxom.entries.base
+import time
+import os.path
+
+__author__  = "Will Guaraldi - willg at bluesock dot org"
+__version__ = "$Date: 2011/10/27 07:08:25 $"
+__url__     = "http://www.bluesock.org/~willg/pyblosxom/"
+__description__ = "Shows information about plugins that you're running."
+
+TRIGGER = "/plugin_info"
+
+def verify_installation(request):
+    config = request.getConfiguration()
+
+    # check to see if the user has specified the "plugininfo_hide" 
+    # property
+    if not config.has_key("plugininfo_hide"):
+        # the user doesn't have the property set, so we let them know
+        # they can set it and it prevents specified plugins from showing
+        # up.
+        print "Note: You can set 'plugininfo_hide' to hide plugins you " + \
+              "don't want showing up."
+
+    else:
+        # they do have plugininfo_hide set, so we verify that the value
+        # is valid-ish.
+        val = config["plugininfo_hide"]
+
+        if not type(val) in [ list, tuple ]:
+            print "'plugininfo_hide' must be a list of strings."
+            return 0
+
+        for mem in val:
+            if not type(mem) == str:
+                print "'plugininfo_hide' must be a list of strings."
+                return 0
+    return 1
+
+def build_entry(request, mem):
+    """build_entry(Request, plugin) -> PyBlosxom.entries.base.BaseEntry
+
+    Takes a plugin, extracts information from it, and builds a PyBlosxom
+    entry from the results.  It returns the BaseEntry object.
+    """
+    plugindata = []
+    plugindata.append("<pre>")
+
+    # previously we pulled __doc__, but more and more people are storing
+    # documentation for the plugin as well as license information--which
+    # isn't really what we want to show.  we really want the author, version,
+    # and url for the plugin.  currently these are stored in __author__,
+    # __version__, and __url__ (though those should be changed to something
+    # like VERSION, AUTHOR, and URL so as to avoid confusion with Python
+    # special things.
+    plugindata.append("AUTHOR: " + str(getattr(mem, "__author__", None)) + "\n")
+    plugindata.append("VERSION: " + str(getattr(mem, "__version__", None)) + "\n")
+    if hasattr(mem, "__url__"):
+        plugindata.append("URL: <a href=\"%s\">%s</a>\n" % \
+                          (str(mem.__url__), str(mem.__url__)))
+
+    plugindata.append("</pre>")
+
+    # build a dict of the metadata that generate_entry needs
+    d = { "title": mem.__name__,
+          "absolute_path": TRIGGER[1:],
+          "fn": mem.__name__,
+          "file_path": TRIGGER[1:] + "/" + mem.__name__ }
+
+    # build the body of the entry
+    body = "".join(plugindata)
+
+    entry = Pyblosxom.entries.base.generate_entry(request, d, body, None)
+    return entry
+
+def cb_prepare(args):
+    request = args["request"]
+    data = request.getData()
+    config = request.getConfiguration()
+    antiplugins = config.get("plugininfo_hide", [])
+
+    plugins = Pyblosxom.plugin_utils.plugins
+    plugins = [m for m in plugins if m.__name__ not in antiplugins]
+
+    data["plugincount"] = len(plugins)
+
+
+INIT_KEY = "plugininfo_initiated"
+
+def cb_date_head(args):
+    """
+    If we're showing plugins, then we don't want the date_head templates
+    kicking in--so we block that.
+    """
+    request = args["request"]
+    data = request.getData()
+
+    if data.has_key(INIT_KEY):
+        args["template"] = ""
+    return args
+
+def cb_staticrender_filelist(args):
+    """
+    This is test code--trying to work additional bits into the static
+    renderer.
+    """
+    request = args["request"]
+    filelist = args["filelist"]
+    flavours = args["flavours"]
+
+    config = request.getConfiguration()
+
+    antiplugins = config.get("plugininfo_hide", [])
+
+    plugins = Pyblosxom.plugin_utils.plugins
+    plugins = [m for m in plugins if m.__name__ not in antiplugins]
+
+    if plugins:
+        for mem in plugins:
+            url = os.path.normpath(TRIGGER + "/" + mem.__name__ + ".")
+            for f in flavours:
+                filelist.append( (url + f, "") )
+        for f in flavours:
+            filelist.append( (os.path.normpath(TRIGGER + "/index." + f), "") )
+
+
+def cb_filelist(args):
+    request = args["request"]
+    pyhttp = request.getHttp()
+    data = request.getData()
+    config = request.getConfiguration()
+
+    if not pyhttp["PATH_INFO"].startswith(TRIGGER):
+        return
+
+    data[INIT_KEY] = 1
+    data['root_datadir'] = config['datadir']
+    config['num_entries'] = 9999
+    entry_list = []
+
+    antiplugins = config.get("plugininfo_hide", [])
+
+    plugins = Pyblosxom.plugin_utils.plugins
+    plugins = [m for m in plugins if m.__name__ not in antiplugins]
+
+    pathinfo = pyhttp["PATH_INFO"]
+
+    # if the browser requested the TRIGGER or TRiGGER/index, then we
+    # kick in and show plugin information for all plugins.
+    if pathinfo == TRIGGER or pathinfo.startswith(TRIGGER + "/index"):
+        plugins.sort(lambda x,y: cmp(x.__name__, y.__name__))
+        for mem in plugins:
+            entry_list.append(build_entry(request, mem))
+        return entry_list
+
+    # the browser requested to see information on a specific plugin.
+
+    # we need to pull off the flavour that was requested
+    # (if there was one).  FIXME - this is a good candidate for a tools
+    # function.
+    pathinfo = pathinfo[len(TRIGGER):]
+
+    if pathinfo.startswith("/"): pathinfo = pathinfo[1:]
+    if pathinfo.endswith("/"): pathinfo = pathinfo[:-1]
+
+    filename, ext = os.path.splitext(pathinfo)
+    if ext[1:]:
+        data["flavour"] = ext[1:]
+
+    d = {}
+    for mem in plugins:
+        d[mem.__name__] = mem
+
+    # if the browser requested to look at a specific plugin, then
+    # we only show that one.
+    if d.has_key(filename):
+        return [build_entry(request, d[filename])]
+
+    # if the plugin the browser requested isn't in the list of
+    # plugins, then we return an empty list of entries--PyBlosxom
+    # will show a "that doesn't exist" message for that.
+    return []
+
+# vim: tabstop=4 shiftwidth=4
+</pre>
+  </content>
+
+  <rdf:Seq>
+
+<rdf:Description rdf:about="/pyblosxom/techic/PyBlosxom/plugins/zqarchives">
+  <dc:title> zqarchives.py </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2011-08-31T15:22:00Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <pre class="brush: python"># -*- coding: utf-8 -*-
+
+# vim: tabstop=4 shiftwidth=4
+"""
+- zoomq 100419 fixed for export month/year with count
+Walks through your blog root figuring out all the available monthly archives in
+your blogs.  It generates html with this information and stores it in the
+$archivelinks variable which you can use in your head or foot templates.
+
+You can format the output with the key "archive_template".
+
+A config.py example:
+
+    py['archive_template'] = '<li><a href="%(base_url)s/%(Y)s/%(b)s">%(m)s/%(y)s</a></li>'
+
+Displays the archives as list items, with a month number slash year number, like 06/78.
+
+The vars available with typical example values are:
+    b      'Jun'
+    m      '6'
+    Y      '1978'
+    y      '78'
+
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the "Software"), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify,
+merge, publish, distribute, sublicense, and/or sell copies of the
+Software, and to permit persons to whom the Software is furnished
+to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Copyright 2004, 2005 Wari Wahab
+"""
+__author__ = "Wari Wahab - wari at wari dot per dot sg"
+__version__ = "$Id: zqarchives.py,v 2872b22e2ace 2011/10/27 07:08:25 zoomquiet+hg $"
+__url__ = "http://blog.zoomquiet.org/pyblosxom/techic/PyBlosxom/plugins/zqarchives.html"
+
+from Pyblosxom import tools
+import time, os
+
+def verify_installation(request):
+    config = request.get_configuration()
+    if not config.has_key("archive_template"):
+        print "missing optional config property 'archive_template' which "
+        print "allows you to specify how the archive links are created.  "
+        print "refer to pyarchive plugin documentation for more details."
+    return 1
+
+class PyblArchives:
+    def __init__(self, request):
+        self._request = request
+        self._archives = None
+
+    def __str__(self):
+        if self._archives == None:
+            self.gen_linear_archive()
+        return self._archives
+
+    def gen_linear_archive(self):
+        config = self._request.get_configuration()
+        data = self._request.get_data()
+        root = config["datadir"]
+        archives = {}
+        archive_list = tools.walk(self._request, root)
+        fulldict = {}
+        fulldict.update(config)
+        fulldict.update(data)
+        template = config.get('archive_template', 
+                    '<a href="%(base_url)s/%(Y)s/%(m)s">%(y)s.%(m)s</a>')
+        #<a href="%(base_url)s/%(Y)s/%(b)s">%(Y)s-%(b)s</a>
+        #print fulldict["base_url"]
+        for mem in archive_list:
+            timetuple = tools.filestat(self._request, mem)
+            timedict = {}
+            for x in ["B", "b", "m", "Y", "y"]:
+                timedict[x] = time.strftime("%" + x, timetuple)
+            fulldict.update(timedict)
+            if not archives.has_key(timedict['Y'] + timedict['m']):
+                archives[timedict['Y'] + timedict['m']] = [template % fulldict,1]
+            else:
+                archives[timedict['Y'] + timedict['m']][1] += 1
+                archives[timedict['Y'] + timedict['m']][0] = template % fulldict
+        #print archives
+        #return
+        arc_keys = archives.keys()
+        arc_keys.sort()
+        arc_keys.reverse()
+        yearmonth = {}
+        result = []
+        #base archives walk and count every year's mounth
+        for key in arc_keys:
+            yearname = key[:-2]
+            if yearname in yearmonth.keys():
+                yearmonth[yearname][0] += archives[key][1]
+                yearmonth[yearname][1].append(archives[key])
+            else:
+                yearmonth[yearname] = [archives[key][1],[]]
+                yearmonth[yearname][1].append(archives[key])
+        #print yearmonth["2007"]
+        mon_keys = yearmonth.keys()
+        mon_keys.sort()
+        mon_keys.reverse()
+        #print mon_keys
+        for year in mon_keys:
+            #print "%s<sup>%s<sup>"%(year,yearmonth[year][0])
+            monode = yearmonth[year][1]
+            result.append("<li class='yearchives'><a href='%s/%s'>%s</a><sup>(%d)</sup></li>"%(fulldict["base_url"],year,year,yearmonth[year][0]))
+            if 1==len(monode):
+                #print "%s<sup>%s<sup>"%(monode[0][0],monode[0][1])
+                result.append("<li>%s<sup>(%d)</sup><li>"%(monode[0][0],monode[0][1]))
+            else:
+                for m in monode:
+                    #print m
+                    #print "%s<sup>%s<sup>"%(m[0],m[1])
+                    result.append("<li>%s<sup>(%d)</sup><li>"%(m[0],m[1]))
+                    #result.append("%s<sup>%s<sup>"%(month[0],month[1]))
+
+        #print result
+        self._archives = '\n'.join(result)
+
+def cb_prepare(args):
+    request = args["request"]
+    data = request.get_data()
+    data["archivelinks"] = PyblArchives(request)
+
+</pre>
+  </content>
+
+  <rdf:Seq>
+
+<rdf:Description rdf:about="/pyblosxom/techic/PyBlosxom/plugins/zqcategories">
+  <dc:title> zqcategories.py </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2011-08-31T15:22:00Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <pre class="brush: python"># -*- coding: utf-8 -*-
+# vim: tabstop=4 shiftwidth=4
+"""
+- 仅仅要求可以根据指定顺序输出分类目录
+
+Walks through your blog root figuring out all the categories you have
+and how many entries are in each category.  It generates html with
+this information and stores it in the $categorylinks variable which
+you can use in your head or foot templates.
+
+You can format the output by setting "category_begin", "category_item",
+"category_end" and properties.
+
+Categories exist in a hierarchy.  "category_start" starts the category listing
+and is only used at the very beginning.  The "category_begin" property begins a 
+new category group and the "category_end" property ends that category group.  
+The "category_item" property is the template for each category item.  Then
+after all the categories are printed, "category_finish" ends the category
+listing.
+
+For example, the following properties will use <ul> to open a category, </ul>
+to close a category and <li> for each item:
+
+py["category_start"] = "<ul>"
+py["category_begin"] = "<li><ul>"
+py["category_item"] = r'<li><a href="%(base_url)s/%(category_urlencoded)sindex">%(category)s</a></li>'
+py["category_end"] = "</li></ul>"
+py["category_finish"] = "</ul>"
+
+
+Another example, the following properties don't have a begin or an end but
+instead use indentation for links and displays the number of entries in that
+category:
+
+py["category_start"] = ""
+py["category_begin"] = ""
+py["category_item"] = r'%(indent)s<a href="%(base_url)s/%(category_urlencoded)sindex">%(category)s</a> (%(count)d)<br />'
+py["category_end"] = ""
+py["category_finish"] = ""
+
+There are no variables available in the category_begin or category_end 
+templates.
+
+Available variables in the category_item template:
+
+  variable                 example                      datatype
+  ========                 =======                      ========
+  base_url                 http://joe.com/blog/         string
+  fullcategory_urlencoded  'dev/pyblosxom/status/'      string
+  fullcategory             'dev/pyblosxom/status/'      string (urlencoded)
+  category                 'status/'                    string
+  category_urlencoded      'status/'                    string (urlencoed)
+  flavour                  'html'                       string
+  count                    70                           int
+  indent                   '&nbsp;&nbsp;&nbsp;&nbsp;'   string
+
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the "Software"), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify,
+merge, publish, distribute, sublicense, and/or sell copies of the
+Software, and to permit persons to whom the Software is furnished
+to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Copyright 2004, 2005, 2006 Will Guaraldi
+"""
+__author__ = "Will Guaraldi - willg at bluesock dot org"
+__version__ = "$Id: zqcategories.py,v 2872b22e2ace 2011/10/27 07:08:25 zoomquiet+hg $"
+__url__ = "http://blog.zoomquiet.org/pyblosxom/techic/PyBlosxom/plugins/zqcategories.html"
+#__url__ = "http://pyblosxom.sourceforge.net/"
+__description__ = "Builds a list of categories."
+
+from Pyblosxom import tools
+import re, os
+
+DEFAULT_START = r'<ul class="categorygroup">'
+DEFAULT_BEGIN = r'<li><ul class="categorygroup">'
+DEFAULT_ITEM = r'<li><a href="%(base_url)s/%(fullcategory_urlencoded)sindex.%(flavour)s">%(category)s</a> (%(count)d)</li>'
+DEFAULT_END = "</ul></li>"
+DEFAULT_FINISH = "</ul>"
+DEFAULT_ROOT = []
+
+def verify_installation(request):
+    config = request.getConfiguration()
+    if not config.has_key("category_template"):
+        print "missing optional config property 'category_template' which allows "
+        print "you to specify how the category hierarchy is rendered.  see"
+        print "the documentation at the top of the pycategories plugin code "
+        print "file for more details."
+    return 1
+
+class PyblCategories:
+    def __init__(self, request):
+        self._request = request
+        self._categories = None
+        config = self._request.getConfiguration()
+        self._baseurl = config.get("base_url", "")
+
+        self.genCategories()
+
+
+    def __str__(self):
+        if self._categories == None:
+            self.genCategories()
+        return self._categories
+
+    def genCategories(self):
+        config = self._request.getConfiguration()
+        root = config["datadir"]
+
+        start_t = config.get("category_start", DEFAULT_START)
+        begin_t = config.get("category_begin", DEFAULT_BEGIN)
+        item_t = config.get("category_item", DEFAULT_ITEM)
+        end_t = config.get("category_end", DEFAULT_END)
+        finish_t = config.get("category_finish", DEFAULT_FINISH)
+        #zoomq: configed order by mind the catrgorise
+        root_path_list = config.get("category_root_list", DEFAULT_ROOT)
+
+        cfgBaseUrl = config.get("base_url", "")
+
+        form = self._request.getForm()
+        flavour = (form.has_key('flav') and form['flav'].value or 
+            config.get('default_flavour', 'html'))
+        #print flavour
+
+        # build the list of all entries in the datadir
+        output = ""
+        #@others
+        if 0==len(root_path_list):  #as default walk and export Categories as word order 
+            elist = tools.Walk(self._request, root)
+            output += self._subCategories(elist,root,"")
+        else:
+            for rootCategory in root_path_list:
+                subroot = "%s/%s"%(root,rootCategory)
+                self._baseurl = "%s/%s"%(cfgBaseUrl,rootCategory)
+                elist = tools.Walk(self._request, subroot)
+                output += self._subCategories(elist,subroot,rootCategory)
+
+        # then we join the list and that's the final string
+        #self._categories = "\n".join(output)
+        self._categories = output
+
+    def _subCategories(self,elist,root,rootname):
+        config = self._request.getConfiguration()
+        form = self._request.getForm()
+        flavour = (form.has_key('flav') and form['flav'].value or 
+            config.get('default_flavour', 'html'))
+        start_t = config.get("category_start", DEFAULT_START)
+        begin_t = config.get("category_begin", DEFAULT_BEGIN)
+        item_t = config.get("category_item", DEFAULT_ITEM)
+        end_t = config.get("category_end", DEFAULT_END)
+        finish_t = config.get("category_finish", DEFAULT_FINISH)
+
+        # peel off the root dir from the list of entries
+        elist = [mem[len(root)+1:] for mem in elist]
+
+        # go through the list of entries and build a map that
+        # maintains a count of how many entries are in each 
+        # category
+        elistmap = {}
+        for mem in elist:
+            mem = os.path.dirname(mem)
+            elistmap[mem] = 1 + elistmap.get(mem, 0)
+        self._elistmap = elistmap
+        #print self._elistmap
+        # go through the elistmap keys (which is the list of
+        # categories) and for each piece in the key (i.e. the key
+        # could be "dev/pyblosxom/releases" and the pieces would
+        # be "dev", "pyblosxom", and "releases") we build keys
+        # for the category list map (i.e. "dev", "dev/pyblosxom",
+        # "dev/pyblosxom/releases")
+        clistmap = {}
+        for mem in elistmap.keys():
+            mem = mem.split(os.sep)
+            for index in range(len(mem)+1):
+                p = os.sep.join(mem[0:index])
+                clistmap[p] = 0
+
+        # then we take the category list from the clistmap and
+        # sort it alphabetically
+        clist = clistmap.keys()
+        clist.sort()
+
+        output = []
+        indent = 0
+
+        output.append(start_t)
+        # then we generate each item in the list
+        for item in clist:
+            itemlist = item.split(os.sep)
+
+            num = 0
+            for key in self._elistmap.keys():
+                if item == '' or key == item or key.startswith(item + os.sep):
+                    num = num + self._elistmap[key]
+
+            if not item:
+                tab = ""
+            else:
+                tab = len(itemlist) * "&nbsp;&nbsp;"
+
+            if indent > len(itemlist):
+                for i in range(indent - len(itemlist)):
+                    output.append(end_t)
+
+            elif indent < len(itemlist):
+                for i in range(len(itemlist) - indent):
+                    output.append(begin_t)
+
+            # now we build the dict with the values for substitution
+            d = { "base_url":     self._baseurl, 
+                  "fullcategory": item + "/", 
+                  "category":     itemlist[-1] + "/", 
+                  "flavour":      flavour,
+                  "count":        num,
+                  "indent":       tab }
+
+            # this prevents a double / in the root category url
+            if item == "":
+                d["fullcategory"] = item
+            #print d
+            # this adds urlencoded versions
+            d["fullcategory_urlencoded"] = tools.urlencode_text(d["fullcategory"])
+            d["category_urlencoded"] = tools.urlencode_text(d["category"])
+
+            # and we toss it in the thing
+            output.append(item_t % d)
+
+            indent = len(itemlist)
+
+        output.append(end_t * indent)
+        output.append(finish_t)
+        # export define item's name
+        output[2] = output[2].replace(">/</a>"," class='rootcategory'>%s/</a>"%rootname)
+        return "\n".join(output)
+def cb_prepare(args):
+    request = args["request"]
+    data = request.getData()
+    data["categorylinks"] = PyblCategories(request)
+
+</pre>
+  </content>
+
+  <rdf:Seq>
+
+<rdf:Description rdf:about="/pyblosxom/techic/PyBlosxom/plugins/pyfilenamemtime">
+  <dc:title> pyfilenamemtime.py </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2011-08-31T15:22:00Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <pre class="brush: python"># -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
+"""
+If a filename contains a timestamp in the form of YYYY-MM-DD-hh-mm,
+change the mtime to be the timestamp instead of the one kept by the
+filesystem.  For example, a valid filename would be
+foo-2002-04-01-00-00.txt for April fools day on the year 2002.
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the "Software"), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify,
+merge, publish, distribute, sublicense, and/or sell copies of the
+Software, and to permit persons to whom the Software is furnished
+to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Copyright 2004, 2005 Tim Roberts
+"""
+## Leo: tab_width=-4 page_width=80
+# vim: tabstop=4 shiftwidth=4
+import os, re, time
+
+__author__ = 'Tim Roberts http://www.probo.com/timr/blog/'
+__version__ = '$Id: pyfilenamemtime.py,v 2872b22e2ace 2011/10/27 07:08:25 zoomquiet+hg $'
+
+DAYMATCH = re.compile('([0-9]{4})-([0-1][0-9])-([0-3][0-9])-([0-2][0-9])-([0-5][0-9]).[\w]+$')
+
+def cb_filestat(args):
+    filename = args["filename"]
+    stattuple = args["mtime"]
+
+    mtime = 0
+    mtch = DAYMATCH.search(os.path.basename(filename))
+    if mtch:
+        try:
+            year = int(mtch.groups()[0])
+            mo = int(mtch.groups()[1])
+            day = int(mtch.groups()[2])
+            hr = int(mtch.groups()[3])
+            minute = int(mtch.groups()[4]) 
+            mtime = time.mktime((year,mo,day,hr,minute,0,0,0,-1))
+        except:
+            # TODO: Some sort of debugging code here?
+            pass
+
+    if mtime: 
+        args["mtime"] = tuple(list(stattuple[:8]) + [mtime] + list(stattuple[9:]))
+
+    return args
+
+
+</pre>
+  </content>
+
+  <rdf:Seq>
+
+<rdf:Description rdf:about="/pyblosxom/techic/PyBlosxom/plugins/hardcodedates">
+  <dc:title> hardcodedates.py </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2010-05-31T03:10:00Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <pre class="brush: python"># -*- coding: utf-8 -*-
+from Pyblosxom import tools
+import os, os.path, posix, re, stat, time
+
+FILETIME = re.compile('^([0-9]{4})-([0-1][0-9])-([0-3][0-9])-([0-2][0-9])-([0-5][0-9]) +(.*)$')
+
+all_timestamps = {}
+extensions = []
+timestamps_to_save = {}
+
+
+#mode: python; indent-tabs-mode: t, tab-width: 4 
+"""
+This allows the user to create a file "timestamps" in their datadir,
+that will override the timestamp of any given blog entry. Each line
+in this file should be of the form "YYYY-MM-DD-hh-mm file-name".
+Then for any entry that one of these lines exist the system will use
+that timestamp instead of the actual files modification time.
+
+Note: the filename is relative to your data-dir.
+Example of a line for the file /var/data-dir/school/abc.txt
+   where the datadir is "/var/data-dir/" and the date is Aug 9, 2004.
+
+2004-08-09-00-00 school/abc.txt
+"""
+__author__ = 'Nathan Kent Bullock, Ryan Barrett'
+__homepage__ = 'http://snarfed.org/space/hardcodedates'
+__email__ = 'nathan_kent_bullock -at- yahoo.ca, hardcodedates -at- ryanb.org'
+__version__ = '1.4'
+def init(request):
+    if all_timestamps:
+        return  # already initialized
+
+    datadir = request.getConfiguration()['datadir']
+    timestamp_file = os.path.join(datadir, 'timestamps')
+
+    if os.path.isfile(timestamp_file):
+        f = file(timestamp_file)
+        for str in f.readlines():
+            m = FILETIME.search(str.strip())
+            if m:
+                year = int(m.group(1))
+                mo = int(m.group(2))
+                day = int(m.group(3))
+                hr = int(m.group(4))
+                minute = int(m.group(5))
+                mtime = time.mktime((year,mo,day,hr,minute,0,0,0,-1))
+                filename = os.path.join(datadir, m.group(6))
+                all_timestamps[filename] = mtime
+
+        f.close()
+
+    extensions.extend(request.getData()['extensions'].keys())
+    extensions.append(request.getConfiguration().get('comment_ext', 'cmt'))
+
+def cb_filestat(args):
+    request = args['request']
+    init(request)
+
+    filename = args['filename']
+    extension = os.path.splitext(filename)[1][1:]
+    datadir = request.getConfiguration()['datadir']
+
+    if all_timestamps.has_key(filename):
+        # we know this file's timestamp
+        mtime = args['mtime']
+        assert isinstance(mtime, (tuple, posix.stat_result))
+        args['mtime'] = (mtime[0:stat.ST_MTIME] + (all_timestamps[filename],) +
+                         mtime[stat.ST_MTIME + 1:])
+
+    elif extension in extensions and filename.startswith(datadir):
+        # we don't know it, but we should. ask the os for it, and remember it.
+        args['mtime'] = os.stat(filename)
+        all_timestamps[filename] = args['mtime'][stat.ST_MTIME]
+        timestamps_to_save[filename] = args['mtime'][stat.ST_MTIME]
+
+    return args
+
+def cb_end(args):
+    if timestamps_to_save:
+        datadir = args['request'].getConfiguration()['datadir']
+        datadir = os.path.normpath(datadir)
+        tsfile = file(os.path.join(datadir, 'timestamps'), 'a')
+        for filename, mtime in timestamps_to_save.items():
+            time_str = time.strftime('%Y-%m-%d-%H-%M', time.localtime(mtime))
+            # strip the datadir prefix and directory separator slash
+            filename = filename[len(datadir) + 1:]
+            tsfile.write('%s %s\n' % (time_str, filename))
+            tools.getLogger().info('Saved mtime %s for %s' % (time_str, filename))
+        tsfile.close()
+        timestamps_to_save.clear()
+
+</pre>
+  </content>
+
+  <rdf:Seq>
+
+<rdf:Description rdf:about="/pyblosxom/techic/PyBlosxom/plugins/index_static">
+  <dc:title> index_static.py </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2010-05-31T03:10:00Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <pre class="brush: python"># -*- coding: utf-8 -*-
+"""
+index_static.py
+    - just fixed for pyblosxom-cmd  staticrender export all .html links
+base index.py from:
+http://snarfed.org/space/pyblosxom+index
+Ryan Barrett <pyblosxom@ryanb.org>
+
+This plugin displays an alphabetical index of all entries. It uses these
+optional config variables from config.py, shown here with their defaults:
+
+py['index_trigger']            = '/site-index'
+py['index_num_columns']        = 2
+py['index_letters_first']      = True
+py['index_title']              = 'index'
+py['index_use_story_template'] = True
+
+
+VERSION:
+0.2
+
+TODO:
+- use a template instead of hard-coded HTML
+
+Copyright 2006 Ryan Barrett
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+"""
+import math
+import os.path
+import time
+from Pyblosxom import tools
+import Pyblosxom.entries
+
+__author__ = 'Ryan Barrett'
+__version__ = '0.2'
+__url__ = 'http://snarfed.org/space/pyblosxom+index'
+__description__ = 'Displays an alphabetical index of all entries.'
+
+
+def verify_installation(request):
+  return 1
+
+def cb_filelist(args):
+  request = args['request']
+  http = request.getHttp()
+  data = request.getData()
+  config = request.getConfiguration()
+
+  trigger = config.get('index_trigger', 'site-index')
+  if http['PATH_INFO'] != trigger:
+    return
+
+  # get the entries
+  datadir = config['datadir']
+  files = tools.Walk(request, datadir)
+  files.sort()
+
+  # sort into sections, one for each letter. the dictionary is 
+  # letter => (entry name, path) where path is the relative to datadir.
+  sections = {}
+  entry_extensions = data['extensions'].keys()
+
+  for file in files:
+    assert file.startswith(datadir)
+    path, ext = os.path.splitext(file[len(datadir):])
+    if ext[1:] in entry_extensions:  # strip the leading period from ext
+      entry_name = os.path.basename(path)
+      sections.setdefault(entry_name[0].upper(), []).append((entry_name, path))
+
+  # extract the first letters. sort as usual, except that numbers and other
+  # non-letters go *after* letters. 
+  def letters_before_symbols(a, b):
+    if a.isalpha() and not b.isalpha():
+      return -1
+    elif not a.isalpha() and b.isalpha():
+      return 1
+    else:
+      return cmp(a, b)
+
+  letters = sections.keys()
+  if config.get('index_letters_first', 1):
+    letters.sort(letters_before_symbols)
+  else:
+    letters.sort()
+
+  # add the header with links to each section
+  body = '<p class="index-header">'
+  letter_links = ['<a href="#%s">%s</a>' % (l, l) for l in letters]
+  body += ' |\n'.join(letter_links)
+  body += '</p>\n<hr class="index"/>\n\n'
+
+  # add the sections themselves, with one link per entry, in a table. the
+  # number of columns is taken from the index_num_columns config variable.
+  # entries are ordered down each column, in order.
+  num_cols = config.get('index_num_columns', 2)
+
+  for l in letters:
+    body += '<h3 class="index">%s</h3> <a name="%s"></a n>\n' % (l, l)
+    body += '<table class="index">\n'
+
+    entries = sections[l]
+    entries.sort()
+    num_rows = int(math.ceil(float(len(entries)) / num_cols))
+
+    for row in range(0, num_rows):
+      # alternate the <tr> tags' class between index-row-stripe-0 and
+      # index-row-stripe-1, so you can use CSS to alternate their color for
+      # readability, if you want.
+      body += '<tr class="index-row-stripe-%d">\n' % (row % 2)
+      for col in range(0, num_cols):
+        entry_index = col * num_rows + row
+        if entry_index < len(entries):
+          entry_name, path = entries[entry_index]
+        else:
+          entry_name = path = ''
+        body += '<td><a href="%s.html">%s</a></td>\n' % (path[1:], entry_name)
+      body += '</tr>\n'
+
+    body += '</table>\n<hr class="index"/>\n\n'
+
+  data = {'title': config.get('index_title', 'index')}
+  # use the epoch for mtime. otherwise, pyblosxom uses the current time, which
+  # makes other plugins (like weblogsping) think this is a new entry.
+  epoch = time.localtime(0)
+  fe = Pyblosxom.entries.base.generate_entry(request, data, body, epoch)
+  return [fe]
+
+def cb_story(args):
+  request = args['request']
+  http = request.getHttp()
+  config = request.getConfiguration()
+  trigger = config.get('index_trigger', 'site-index')
+
+  if (http['PATH_INFO'] == trigger and
+      not config.get('index_use_story_template', 1)):
+    title = config.get('index_title', 'index')
+    args['template'] = '<h1 class="index">%s</h1>\n<hr />\n$body' % title
+
+  return args
+</pre>
+  </content>
+
+  <rdf:Seq>
+
+<rdf:Description rdf:about="/pyblosxom/techic/PyBlosxom/plugins/category_static">
+  <dc:title> category_static.py </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2010-05-31T03:10:00Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <pre class="brush: python"># -*- coding: utf-8 -*-
+"""
+category_static.py
+    - just fixed for pyblosxom-cmd  staticrender export all .html links
+base index.py from:
+http://snarfed.org/space/pyblosxom+index
+Ryan Barrett <pyblosxom@ryanb.org>
+    - Zoom.Quiet 100401
+
+This plugin displays an alphabetical index of all entries. It uses these
+optional config variables from config.py, shown here with their defaults:
+
+py['cindex_trigger']            = '/site-index'
+py['cindex_num_columns']        = 2
+py['cindex_letters_first']      = True
+py['cindex_title']              = 'index'
+py['cindex_use_story_template'] = True
+
+
+VERSION:
+0.2
+
+TODO:
+- use a template instead of hard-coded HTML
+
+Copyright 2006 Ryan Barrett
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+"""
+
+
+import math
+import os.path
+import time
+from operator import itemgetter
+from Pyblosxom import tools
+import Pyblosxom.entries
+#import re
+
+__author__ = 'Zoom.Quiet <zoomquiet+pyb at gmail dot com>'
+__version__ = '11.09.7'
+__url__ = "http://blog.zoomquiet.org/pyblosxom/techic/PyBlosxom/plugins/category_static.html"
+__description__ = 'Displays an Category index as Tree for all entries. in one page'
+DEFAULT_ROOT = []
+def verify_installation(request):
+  return 1
+
+def cb_filelist(args):
+    request = args['request']
+    http = request.getHttp()
+    data = request.getData()
+    config = request.getConfiguration()
+    _baseurl = config.get("base_url", "")
+
+    trigger = config.get('cindex_trigger', 'site-index')
+    if http['PATH_INFO'] != trigger:
+        return
+
+    # get the entries
+    datadir = config['datadir']
+    files = tools.Walk(request, datadir)
+    files.sort()
+
+    body = '<div id="categoriselist">'
+    #print files
+    # sort into sections, one for each letter. the dictionary is 
+    # letter => (entry name, path) where path is the relative to datadir.
+    #sections = {}
+    #   the entrise dictionary is 
+    # path => (entry name, 0) 
+    entrise = []
+
+    entry_extensions = data['extensions'].keys()
+
+    for file in files:
+        #objEntry = entries.fileentry.FileEntry(request, file,datadir)
+        #print objEntry.keys()  
+        assert file.startswith(datadir)
+        path, ext = os.path.splitext(file[len(datadir):])
+        if ext[1:] in entry_extensions:  # strip the leading period from ext
+            entry_name = os.path.basename(path)
+            #sections.setdefault(entry_name[0].upper(), []).append((entry_name, path))
+            entrise.append((entry_name,path,file))
+    #print entrise
+    #sortPaths = sorted(entrise.iteritems(), key=itemgetter(1), reverse=True)
+    #print sortPaths
+    #print _baseurl
+    etree = {}
+    """{
+    "pathID":[(path.split()),"title",...]
+    ,
+    }
+    """
+    for entry in entrise:
+        e = Pyblosxom.entries.fileentry.FileEntry(request, entry[2], entry[1])
+        deeps = entry[1].split("/")[:-1]
+        pathID = "".join(deeps)
+        if pathID in etree:
+            etree[pathID].append((e['title'],entry[1]))
+        else:
+            etree[pathID]= [tuple(deeps),(e['title'],entry[1])]
+    #print etree.keys()
+    root_path_list = config.get("category_root_list", DEFAULT_ROOT)
+    root_entry_list = []
+    for opath in root_path_list:
+        #print opath
+        crtRoot = []
+        for k in etree.keys():
+            if opath in k:
+                crtRoot.append(k)
+        crtRoot.sort()
+        root_entry_list.append((opath,crtRoot))
+
+    '''root_entry_list as::
+    [('Zen', ['ZenChinese', 'ZenGoogle', 'Zenpythonic']), ('oss', ['oss', 'ossFreeBSD', 'ossMozillaFireFox', 'ossUbuntu']), ('opening', []), ('mind', ['mind']), ('Quiet', ['Quietliving', 'Quietnomeans']), ('utility', ['utilitySubversion', 'utilitySubversionhooks', 'utilitypy4strStructuredText', 'utilitypy4webDjango', 'utilitypy4webMoinMoin', 'utilitypy4webQuixote', 'utilitypy4zh', 'utilityzqlib']), ('internet', ['internet', 'internetFolksonomy']), ('easy', ['easymovie', 'easymusic']), ('techic', ['techic', 'techicEmacs', 'techicPyBlosxom', 'techicPyBlosxomblosxom', 'techicPyBlosxomplugins'])]
+    '''
+    body += '<h3>/</h3>'
+    for e in etree[''][1:]:
+        #print "etree[''] include::",e
+        body += '<span class="indents">%s</span><a href="%s%s.html">%s</a><br>\n'%(
+            "...."
+            ,_baseurl
+            ,e[1]
+            ,e[0]
+            )
+    #print root_entry_list
+
+    for k in root_entry_list:
+        #['techic', 'techicEmacs', 'techicPyBlosxom', 'techicPyBlosxomblosxom', 'techicPyBlosxomplugins']
+        body += '<h4>%s/</h4>'%k[0]
+        cpath = ""
+        for p in k[1]:
+            #print etree[p]
+            #[('', 'Zen', 'Chinese'), '9.18', 'CC Salon BJ', '\xe2\x80\x9c\xe5\x9b\xbd\xe9\x99\x85\xe8\x87\xaa\xe7\x94\xb1\xe8\xbd\xaf\xe4\xbb\xb6\xe6\x97\xa5\xe2\x80\x9d\xe4\xb9\x8b\xe5\xa4\xb4\xe8\x84\x91\xe9\xa3\x8e\xe6\x9a\xb4', '\xe8\xa1\xa8\xe5\xbd\xa2\xe7\xa0\x81\xe7\x9a\x84\xe6\xb6\x88\xe4\xba\xa1\xe8\x83\x8c\xe6\x99\xaf\xef\xbc\x81']
+            epath = "/".join(etree[p][0][2:])
+            if k[0] != "".join(etree[p][0]):
+                if cpath != epath:
+                    cpath = epath
+                    ldeep = len(etree[p][0][1:])
+                    if 3 > ldeep:
+                        body += '<H5>%s/</H5>'%"/".join(etree[p][0][2:])
+                    else:
+                        body += '<H6>%s/</H6>'%"/".join(etree[p][0][3:])
+            for e in etree[p][1:]:
+                body += '<span id="%s" class="indents">%s</span><a href="%s%s.html">%s</a><br>\n'%(
+                        "/".join(etree[p][0])
+                        ,"..."*len(etree[p][0])
+                        ,_baseurl
+                        ,e[1]
+                        ,e[0]
+                        )
+
+    '''
+    [('', 'easy', 'movie'), '\xe4\xb8\x96\xe9\x97\xb4\xe5\xae\x89\xe5\xbe\x97\xe5\x8f\x8c\xe5\x85\xa8\xe6\xb3\x95,\xe4\xb8\x8d\xe8\xb4\x9f\xe5\xa6\x82\xe6\x9d\xa5\xe4\xb8\x8d\xe8\xb4\x9f\xe5\x8d\xbf!']
+    [('', 'easy', 'music'), 'ZARD\xe6\xb6\x88\xe9\x80\x9d\xe4\xba\x86']
+
+    for entry in entrise:
+        e = Pyblosxom.entries.fileentry.FileEntry(request, entry[2], entry[1])
+        #print e['title']
+        #print entry[1].split("/")[:-1]
+        body += '<span class="indents">%s</span><a href="%s%s.html">%s</a>%s<br>\n'%(
+                "...."*len(entry[1].split("/"))
+                ,_baseurl
+                ,entry[1]
+                ,e['title'] #entry[0]
+                ,entry[1]
+                )
+    '''
+    #print body
+    body +="</div>" 
+    data = {'title': config.get('cindex_title', 'index')}
+    # use the epoch for mtime. otherwise, pyblosxom uses the current time, which
+    # makes other plugins (like weblogsping) think this is a new entry.
+    epoch = time.localtime(0)
+    fe = Pyblosxom.entries.base.generate_entry(request, data, body, epoch)
+    return [fe]
+
+def cb_story(args):
+  request = args['request']
+  http = request.getHttp()
+  config = request.getConfiguration()
+  trigger = config.get('cindex_trigger', 'site-index')
+
+  if (http['PATH_INFO'] == trigger and
+      not config.get('cindex_use_story_template', 1)):
+    title = config.get('cindex_title', 'index')
+    args['template'] = '<h1 class="index">%s</h1>\n<hr />\n$body' % title
+
+  return args
+</pre>
+  </content>
+
+  <rdf:Seq>
+
+<rdf:Description rdf:about="/pyblosxom/techic/PyBlosxom/relivin-pyblosxom-2010-04-18-23-23">
+  <dc:title> 回到PyBlosxom </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2010-04-18T15:23:00Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <div class="header" id="header">
+<a name='toptopNFdOWjVaT' id='toptopNFdOWjVaT'></a><h1>回到PyBlosxom</h1>
+<h2>~重启Blogging生活</h2>
+<h3>t2t渲染:2010-10-09 02:21:39</h3>
+</div>
+
+<div class="toc" id="toc">
+  <ol>
+  <li><a href="#toc1R0VYQ0JaV">怎么了？</a>
+  </li>
+  <li><a href="#toc2R0lYQ0IyR">规划</a>
+    <ul>
+    <li><a href="#toc3R0lYRENMU">2.1. 系统</a>
+    </li>
+    <li><a href="#toc4R0lYREVMU">2.2. 样式</a>
+    </li>
+    <li><a href="#toc5R0lYREdMU">2.3. 插件</a>
+    </li>
+    </ul>
+  </li>
+  <li><a href="#toc6R01YQ0JaV">成果</a>
+    <ul>
+    <li><a href="#toc7R01YRENMU">3.1. TODO</a>
+    </li>
+    </ul>
+  </li>
+  </ol>
+
+</div>
+<div class="body" id="body">
+<a id="toc1R0VYQ0JaV" name="toc1R0VYQ0JaV"></a>
+<h1><A href='#toptopNFdOWjVaT'> 1. 怎么了？ </A></h1>
+<ul>
+<li>曾经的 PyBlosxom 1.3.1 发布的 <img align="right" src="/pybimage/2010/preview-old-zoomquiet.org-pyb.jpg" border="0" alt=""/>
+</li>
+<li>从2005年开始用到2007年南下到金山,远离了服务器,发布不便就停了下来,但是总之还在存活...
+</li>
+<li>100401 啄木鸟新SA,小白同学升级 FreeBSD 时,发现 PyBlosxom 的cgi 有安全隐患,算是彻底关闭了当年定制了很多东西的hacker 级别Blog 实例;
+</li>
+<li>刚好 <a href="http://pyblosxom.sourceforge.net/releases/pyblosxom.1.5-rc1.html">PyBlosxom1.5-rc1</a> 也发布了,就趁机整体搞一下
+</li>
+</ul>
+
+<p></p>
+<a id="toc2R0lYQ0IyR" name="toc2R0lYQ0IyR"></a>
+<h1><A href='#toptopNFdOWjVaT'> 2. 规划 </A></h1>
+<p>
+习惯性的先计划,再作...
+</p>
+<a id="toc3R0lYRENMU" name="toc3R0lYRENMU"></a>
+<h2><A href='#toptopNFdOWjVaT'> 2.1. 系统 </A></h2>
+<ul>
+<li>从PyBlosxom 1.3.1 升级到 1.5-rc1
+</li>
+<li>发布方式从 cgi 升级到 静态发布 <i>(类似 MT 的那种)</i>
+</li>
+<li>版本管理从 SVN 迁移到 Hg <i>(依然在 code.google 空间中)</i>
+</li>
+</ul>
+
+<a id="toc4R0lYREVMU" name="toc4R0lYREVMU"></a>
+<h2><A href='#toptopNFdOWjVaT'> 2.2. 样式 </A></h2>
+<ul>
+<li>从自个儿模仿 <a href="http://www.deviantart.com/">deviantART</a> 设计的暗绿色,迁移到 Wordpress 中最轻的样式:
+<a href="http://www.bestwpthemes.com/doc/">doc</a>
+</li>
+</ul>
+
+<a id="toc5R0lYREdMU" name="toc5R0lYREdMU"></a>
+<h2><A href='#toptopNFdOWjVaT'> 2.3. 插件 </A></h2>
+<p>
+<code>从用途来分类</code>
+</p>
+<dl>
+<dt>归档:</dt><dd>
+    <ul>
+    <li>使用 xhtml作为最终输出
+    </li>
+    <li>按照年月归档并计数
+    </li>
+    <li>按照分类归档并计数
+    </li>
+    <li>对所有图片进行简单的图库管理
+    </li>
+    </ul>
+<p></p>
+</dd>
+<dt>导览:</dt><dd>
+    <ul>
+    <li>对静态页面网站提供搜索  
+    </li>
+    <li>前后关联文章的快速链接
+    </li>
+    <li><u>分页式的导航链接</u> <i>杯具的插件,在静态发布状态中</i>    
+    </li>
+    <li>按照文章首字母的总索引
+    </li>
+    <li>支持多种语言的语法高亮
+    </li>
+    </ul>
+<p></p>
+</dd>
+<dt>SNS:</dt><dd>
+    <ul>
+    <li>rdf/rss 自动生成
+    </li>
+    <li>评注?-( <i>(mail 先)</i>
+    </li>
+    <li>TAG云?-( <i>(和分类有重叠)</i>
+    </li>
+    </ul>
+</dd>
+</dl>
+
+<a id="toc6R01YQ0JaV" name="toc6R01YQ0JaV"></a>
+<h1><A href='#toptopNFdOWjVaT'> 3. 成果 </A></h1>
+<p>
+<b>就是当前这个重生的 ZQ's PyBlosxom 了</b>
+</p>
+<ul>
+<li>通过对 t2t 的hack,可以直接在 t2t 文本中聲明是否使用 <a href="http://alexgorbatchev.com/wiki/SyntaxHighlighter:Usage">SyntaxHighlighter</a> ,以及使用哪种语法刷来显示
+<p></p>
+</li>
+</ul>
+
+<dl>
+<dt>demo</dt><dd>
+<pre class="brush:  python">
+
+py["plugin_dirs"] = [os.path.join(blogdir, "plugins")
+                        ,os.path.join(blogdir, "plugins/archives")
+                        ,os.path.join(blogdir, "plugins/navigate")
+                        ,os.path.join(blogdir, "plugins/date")                        
+                        ,os.path.join(blogdir, "plugins/preformatters")
+                        ,os.path.join(blogdir, "plugins/folksonomy")
+                        ,os.path.join(blogdir, "plugins/willplugins")
+                        ,os.path.join(blogdir, "plugins/zqpyb+")    
+                        ]
+</pre>
+</dd>
+</dl>
+
+<a id="toc7R01YRENMU" name="toc7R01YRENMU"></a>
+<h2><A href='#toptopNFdOWjVaT'> 3.1. TODO </A></h2>
+<p>
+<code>不断维护的完美之途紀...</code>
+</p>
+<dl>
+<dt>PyBlosxom 静态化发布体系:</dt><dd>
+</dd>
+</dl>
+
+<ol>
+<li>升級到 1.5.1b
+</li>
+<li>摸索静态化发布
+ <ol>
+ <li>升迁旧样式
+ </li>
+ <li>兼容插件
+ </li>
+ <li>微调样式:
+    <ul>
+    <li>头部的标题索引入口文字,怎么也消除不了下划綇
+    </li>
+    <li>//<a href="http://alexgorbatchev.com/wiki/SyntaxHighlighter:Usage">SyntaxHighlighter</a> 的行号后有意外空白 //
+        <ul>
+        <li><u>伪问题</u> fixed!
+        </li>
+        </ul>
+    </li>
+    <li>归档插件的输出页面中,日期链接失常,应该清除
+    </li>
+    </ul>
+ </li>
+ </ol>
+</li>
+<li>Hg的 hooks 部署
+</li>
+<li>dot 的自动包含图片热区定义的 t2t 处理
+</li>
+<li>Leo 中的自动化发布脚本按钮
+</li>
+</ol>
+
+<hr class="light" />
+<p>
+动力源自::<b><a href="http://txt2tags.sf.net">txt2tags</a></b>
+</p>
+</div>
+
+<!-- xhtml code generated by txt2tags 2.4 (http://txt2tags.sf.net) -->
+<!-- cmdline: txt2tags ./techic/PyBlosxom/relivin-pyblosxom-2010-04-18-23-23.t2t -->
+
+  </content>
+
+  <rdf:Seq>
+
+<rdf:Description rdf:about="/pyblosxom/techic/PyBlosxom/plugins/wbgrecent">
+  <dc:title> wbgrecent.py </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2009-06-13T10:23:00Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <pre class="brush: python">"""
+Summary
+=======
+
+Walks through all your blog entries and comments and makes a list of
+all the entries that were either written in the last 14 days or have
+comments written in the last 14 days.  It then generates a very
+hard-coded html representation of them and semi-abuses the 
+flavour template yearmonthsummary which I use for my wbgarchives
+plugin.
+
+This plugin requires no installation.  Just drop it in and the url
+will be::
+
+   $baseurl/recent
+
+to see the recent activity.
+
+----
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the "Software"), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify,
+merge, publish, distribute, sublicense, and/or sell copies of the
+Software, and to permit persons to whom the Software is furnished
+to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Copyright 2004-2007 Will Guaraldi
+
+SUBVERSION VERSION: $Id: wbgrecent.py,v 2872b22e2ace 2011/10/27 07:08:25 zoomquiet+hg $
+
+Revisions:
+2007-07-07 - Converted documentation to reST.
+2005-11-11 - Pulled into new VCS.
+1.5 - (26 October, 2005) pulled into new VCS
+1.1 - (09 December, 2004) fixed the timestamp and date_head issues
+1.0 - (31 August, 2004) initial writing
+"""
+__author__ = "Will Guaraldi - willg at bluesock dot org"
+__version__ = "$Date: 2011/10/27 07:08:25 $"
+__url__ = "http://www.bluesock.org/~willg/pyblosxom/"
+__description__ = "Summary of recent blog activity."
+
+from Pyblosxom import tools, entries
+import time, os, glob, urllib
+
+def verify_installation(request):
+    return 1
+
+
+def new_entry(request, title, body):
+    """
+    Takes a bunch of variables and generates an entry out of it.  It creates
+    a timestamp so that conditionalhttp can handle it without getting
+    all fussy.
+    """
+    entry = entries.base.EntryBase(request)
+
+    entry['title'] = title
+    entry['filename'] = title + "/recent"
+    entry['file_path'] = title
+    entry._id = title + "::recent"
+
+    entry["template_name"] = "yearsummarystory"
+    entry["nocomments"] = "yes"
+
+    entry.setTime(time.localtime())
+    entry.setData(body)
+
+    return entry
+
+
+INIT_KEY = "wbgrecent_initiated"
+
+def cb_date_head(args):
+    request = args["request"]
+    data = request.getData()
+
+    if data.has_key(INIT_KEY):
+        args["template"] = ""
+    return args
+
+def get_comment_text(cmt):
+    f = open(cmt[1], "r")
+    lines = f.readlines()
+    title = "No title"
+    author = "Unknown"
+    for mem in lines:
+        mem = mem.rstrip()
+        if mem.find("<title>") == 0:
+            title = mem.replace("<title>", "").replace("</title>", "")
+            title = urllib.unquote(title)
+        elif mem.find("<author>") == 0:
+            author = mem.replace("<author>", "").replace("</author>", "")
+            author = urllib.unquote(author)
+
+    return "(%s) comment from %s" % \
+           (time.strftime("%m/%d/%Y %H:%M", time.localtime(cmt[0])), \
+            author)
+
+def cb_filelist(args):
+    request = args["request"]
+    pyhttp = request.getHttp()
+    data = request.getData()
+    config = request.getConfiguration()
+
+    if not pyhttp["PATH_INFO"].startswith("/recent"):
+        return
+
+    datadir = config["datadir"]
+    baseurl = config.get("base_url", "")
+    cmntdir = config.get("comment_dir", datadir + os.sep + "comments")
+    cmntext = config.get("comment_ext", ".cmt")
+
+    data["blog_title"] = config.get("blog_title", "") + " - recent activity"
+    data[INIT_KEY] = 1
+    config['num_entries'] = 9999
+
+    marker = time.time() - (60 * 60 * 24 * 14)
+
+    # get all the entries
+    allentries = tools.Walk(request, datadir)
+
+    debug = []
+    stuff = []
+
+    for mem in allentries:
+        timetuple = tools.filestat(request, mem)
+        entrytstamp = time.mktime(timetuple)
+        tstamp = entrytstamp
+
+        absolute_path = mem[len(datadir):mem.rfind(os.sep)]
+        fn = mem[mem.rfind(os.sep)+1:mem.rfind(".")]
+
+        cmtexpr = os.path.join(cmntdir + absolute_path, fn + '-*.' + cmntext)
+        cmtlist = glob.glob(cmtexpr)
+        cmtlist = [ (os.stat(m)[8], m) for m in cmtlist]
+        cmtlist.sort()
+        cmtlist.reverse()
+
+        # we want the most recent mtime from either the entry or
+        # any of its comments
+        if len(cmtlist) > 0:
+            if tstamp < cmtlist[0][0]:
+                tstamp = cmtlist[0][0]
+
+        # if the mtime is more recent than our marker, we toss the
+        # stuff into our list of things to look at.
+        if tstamp > marker:
+            stuff.append( [tstamp, entrytstamp, mem, cmtlist] )
+
+
+    stuff.sort()
+    stuff.reverse()
+
+    # time stamp and blog entry
+    e = "<tr>\n<td valign=\"top\" align=\"left\">%s:</td>\n" \
+        "<td><a href=\"%s/%s\">%s</a> (%s)<br />%s</td></tr>\n"
+
+    entrylist = []
+    output = []
+    for mem in stuff:
+        entry = entries.fileentry.FileEntry(request, mem[2], config["datadir"])
+        tstamp = time.strftime("%m/%d/%Y", time.localtime(mem[1]))
+
+        temp = e % (tstamp, \
+                    baseurl, \
+                    entry["file_path"], \
+                    entry["title"], \
+                    entry["path"], \
+                    "".join( [get_comment_text(c) + "<br />" for c in mem[3]]))
+        output.append(temp)
+
+    entrylist.append(new_entry(request, "Recent activity:", "<tr><td colspan=2>&nbsp;</td></tr>\n".join(output)))
+
+    return entrylist
+</pre>
+  </content>
+
+  <rdf:Seq>
+
+<rdf:Description rdf:about="/pyblosxom/techic/Emacs/fw_learning_emacs_notes-2007-03-08-18-00">
+  <dc:title> [FW]学习笔记 </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2007-03-08T10:00:00Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <div class="header" id="header">
+<a name='toptopTE5ERk9YU' id='toptopTE5ERk9YU'></a><h1>[FW]学习笔记</h1>
+<h2>参考O'reilly的&lt; &lt;学习 GNU Emacs&gt; &gt;</h2>
+<h3>t2t渲染:2010-10-09 02:21:39</h3>
+</div>
+
+<div class="toc" id="toc">
+  <ol>
+  <li><a href="#toc1R0VYQ0FRM">Chapter 2 文件编辑</a>
+    <ul>
+    <li><a href="#toc2R0VYRENMU">1.1. 一，移动光标</a>
+    </li>
+    <li><a href="#toc3R0VYREVMU">1.2. 二，文本的删除</a>
+    </li>
+    <li><a href="#toc4R0VYREdMU">1.3. 三，编辑技巧</a>
+    </li>
+    <li><a href="#toc5R0VYRElMU">1.4. 四，修改的撤销</a>
+    </li>
+    </ul>
+  </li>
+  <li><a href="#toc6R0lYQ0FRM">Chapter 3 查找和替换</a>
+    <ul>
+    <li><a href="#toc7R0lYRENMU">2.1. 一，查找</a>
+    </li>
+    <li><a href="#toc8R0lYREVMU">2.2. 二, 查找和替换</a>
+    </li>
+    <li><a href="#toc9R0lYREdMU">2.3. 三，拼写检查</a>
+    </li>
+    <li><a href="#toc10R0lYRElMU">2.4. 四，单词简写模式</a>
+    </li>
+    </ul>
+  </li>
+  <li><a href="#toc11R01YQ0FRM">Chapter 4 编辑缓冲区和窗口</a>
+    <ul>
+    <li><a href="#toc12R01YRENMU">3.1. 一，Buffer</a>
+    </li>
+    <li><a href="#toc13R01YREVMU">3.2. 二，窗口</a>
+    </li>
+    <li><a href="#toc14R01YREdMU">3.3. 三，书签</a>
+    </li>
+    <li><a href="#toc15R01YRElMU">3.4. 四，窗格</a>
+    </li>
+    </ul>
+  </li>
+  <li><a href="#toc16R1FYQ0FRM">Chapter 5 Emacs工作环境</a>
+    <ul>
+    <li><a href="#toc17R1FYRENMU">4.1. 一, 执行UNIX命令</a>
+    </li>
+    <li><a href="#toc18R1FYREVMU">4.2. 二，文件和目录操作</a>
+    </li>
+    <li><a href="#toc19R1FYREdMU">4.3. 三，查阅unix在线手册</a>
+    </li>
+    <li><a href="#toc20R1FYRElMU">4.4. 四，日历与日记</a>
+    </li>
+    </ul>
+  </li>
+  <li><a href="#toc21R1VYQ0FRM">Chapter 6 宏</a>
+  </li>
+  <li><a href="#toc22R1lYQ0FRM">Chapter 7 Emacs进行编程</a>
+    <ul>
+    <li><a href="#toc23R1lYRENMU">6.1. 一，各语言通用</a>
+    </li>
+    <li><a href="#toc24R1lYREVMU">6.2. 二，C/C++</a>
+    </li>
+    <li><a href="#toc25R1lYREdMU">6.3. 三，编译</a>
+    </li>
+    </ul>
+  </li>
+  <li><a href="#toc26RzRYQ0FRM">Chapter 7 帮助</a>
+    <ul>
+    <li><a href="#toc27RzRYRENMU">7.1. 一，自动完成</a>
+    </li>
+    <li><a href="#toc28RzRYREVMU">7.2. 二，帮助</a>
+    </li>
+    </ul>
+  </li>
+  </ol>
+
+</div>
+<div class="body" id="body">
+<dl>
+<dt>FW:</dt><dd>
+    同事LiLu:
+<pre>
+最近学习了一下Emacs，把重点的概念和操作简单做了笔记如下，有兴趣的同学一
+起学习探讨啊
+</pre>
+<p></p>
+= Chapter 1 基本文件操作 =
+</dd>
+</dl>
+
+<pre>
+概念：
+文件
+编辑缓冲区(buffer)
+窗口
+模式（主模式，辅模式)
+
+C-x C-f 查找文件并打开
+C-x C-v 读入另外一个文件替换
+C-x i 插入文件到光标处
+C-x C-s 保存文件
+C-x C-w 把缓冲区内容写入文件
+C-x C-c 推出
+</pre>
+<p></p>
+<a id="toc1R0VYQ0FRM" name="toc1R0VYQ0FRM"></a>
+<h1><A href='#toptopTE5ERk9YU'> 1. Chapter 2 文件编辑 </A></h1>
+<a id="toc2R0VYRENMU" name="toc2R0VYRENMU"></a>
+<h2><A href='#toptopTE5ERk9YU'> 1.1. 一，移动光标 </A></h2>
+<pre>
+C-f,C-b,C-p,C-n 上下左右
+M-f,M-b 左右移动(单词)
+C-a,C-e 行首和行尾
+M-a,M-e 左右移动(句子）
+M-{,M-} 上下移动（段落)
+C-v,M-v 上下翻动(翻屏)
+C-x [,C-x ] 上下翻页(有分页符)
+M-&lt;,M-&gt; 缓冲区开头和结尾
+M-g g
+M-x goto-line n
+去到第n行
+M-x goto-char n
+去到第n个字符
+C-l 重绘屏显
+
+重复执行命令：
+C-u n C-u默认4次，C-u,C-u16次，。。。。4的幂次方
+M-100 100次执行
+
+Mode:
+自动换行辅模式 auto-fill-mode
+</pre>
+<p></p>
+<a id="toc3R0VYREVMU" name="toc3R0VYREVMU"></a>
+<h2><A href='#toptopTE5ERk9YU'> 1.2. 二，文本的删除 </A></h2>
+<pre>
+C-x u undo操作
+M - 加在这些命令前边，都是行首到光标，不然都是光标到行尾
+
+删除
+C-d 删除当前字符
+M-d 删除当前单词
+C-k 删除行
+M-k 删除句子
+
+恢复
+C-y 除了C-d和del删除的都能召回,（kill类指令)，召回最新
+M-y 把删除环中以前的一次次召回
+
+文本块处理
+
+C-@ Mark文本标记
+M-@ Mark文本，当前到词尾
+C-w 文本块删除(剪切)
+M-w 文本块复制
+C-x,C-x 检查文本标记位置
+M-h 标记整段
+C-x h 标记整buffer
+
+Mode:
+临时标记模式 transient-mode
+</pre>
+<p></p>
+<a id="toc4R0VYREdMU" name="toc4R0VYREdMU"></a>
+<h2><A href='#toptopTE5ERk9YU'> 1.3. 三，编辑技巧 </A></h2>
+<pre>
+M-q 段落重排
+
+交换
+
+C-t 交换两个字符的位置
+M-t 交换两个单词的位置
+C-x,C-t 交换两行
+
+大小写
+
+M-c 单词首字母大写
+M-u 单词全字母大写
+M-l 单词全字母小写
+</pre>
+<p></p>
+<a id="toc5R0VYRElMU" name="toc5R0VYRElMU"></a>
+<h2><A href='#toptopTE5ERk9YU'> 1.4. 四，修改的撤销 </A></h2>
+<pre>
+C-x,u undo
+M-x revert-buffer 回复缓冲区
+可以返回文件的备份版本 filename~
+可以从自动保存的文件恢复
+</pre>
+<p></p>
+<a id="toc6R0lYQ0FRM" name="toc6R0lYQ0FRM"></a>
+<h1><A href='#toptopTE5ERk9YU'> 2. Chapter 3 查找和替换 </A></h1>
+<pre>
+C-x ESC ESC 寻找以前执行过的命令
+M-p/M-n 命令区条目查看
+</pre>
+<p></p>
+<a id="toc7R0lYRENMU" name="toc7R0lYRENMU"></a>
+<h2><A href='#toptopTE5ERk9YU'> 2.1. 一，查找 </A></h2>
+<pre>
+C-s 递增查找
+C-r 反向递增查找
+C-s,C-w 复制单词
+C-s,C-y 复制句子
+C-s,M-y 删除环文本复制
+C-s
+非递增查找
+C-s
+C-w 单词查找
+都有对应C-r
+</pre>
+<p></p>
+<a id="toc8R0lYREVMU" name="toc8R0lYREVMU"></a>
+<h2><A href='#toptopTE5ERk9YU'> 2.2. 二, 查找和替换 </A></h2>
+<pre>
+M-x replace-string 替换
+M-% 查询-替换
+space or y 替换
+del or n 不替换
+, 替换了看看情况
+! 替换之后所有
+
+递归编辑
+在查询-替换操作中C-r
+推出递归编辑
+M-C-c
+随时递归编辑
+M-x recursive-edit
+
+大小写字母的问题
+默认不区分大小写，且按照原来大小写情况匹配
+编程时可能需要调整
+M-x set-variable
+设case-fold-search变量的值 查找时是否大小写敏感 t变为nil
+设case-replace的值 是否按照原大小写匹配
+
+正则表达式查找替换
+各命令和M一同使用
+替换
+C-M-%
+query-replace-regexp
+在目标串中的表示
+\&amp; 整字串
+\N 部分字串，N为第N个()
+\# replace多少次
+</pre>
+<p></p>
+<a id="toc9R0lYREdMU" name="toc9R0lYREdMU"></a>
+<h2><A href='#toptopTE5ERk9YU'> 2.3. 三，拼写检查 </A></h2>
+<pre>
+Ispell
+M-x ispell-buffer 检查整个buffer
+强大的拼写检查器，可替换
+M-$ 检查当前单词
+M-Tab 自动补全单词
+</pre>
+<p></p>
+<a id="toc10R0lYRElMU" name="toc10R0lYRElMU"></a>
+<h2><A href='#toptopTE5ERk9YU'> 2.4. 四，单词简写模式 </A></h2>
+<p>
+简写词作用范围是模式
+</p>
+<a id="toc11R01YQ0FRM" name="toc11R01YQ0FRM"></a>
+<h1><A href='#toptopTE5ERk9YU'> 3. Chapter 4 编辑缓冲区和窗口 </A></h1>
+<a id="toc12R01YRENMU" name="toc12R01YRENMU"></a>
+<h2><A href='#toptopTE5ERk9YU'> 3.1. 一，Buffer </A></h2>
+<pre>
+C-x b 切换Buffer
+C-x C-b 调出buffer列表
+C-x s 保存多个Buffer
+y,n,!,q,C-r(查看当前buffer),C-c(退出C-r的查看)
+C-x k 删除当前Buffer
+C-x C-v 找到另一个文件代替当前的文件
+C-x C-q 切换当前buffer是否只读
+
+Buffer List:
+状态：
+. 已显示
+* 已修改
+D 待删除
+&gt; &gt; 待显示
+S 待存盘
+% 只读
+操作：
+x 执行操作
+d 删除
+del 去除上一步操作
+s 存盘
+% 只读
+1 满凭显示buffer
+f 当前buffer替代buffer list
+o 另外一个窗口打开buffer
+m 待显示
+v 显示
+</pre>
+<p></p>
+<a id="toc13R01YREVMU" name="toc13R01YREVMU"></a>
+<h2><A href='#toptopTE5ERk9YU'> 3.2. 二，窗口 </A></h2>
+<pre>
+C-x 2 水平分割窗口
+C-x 3 垂直分割窗口
+C-x N .....多窗口
+C-x o 窗口间的移动
+C-x 0 关闭当前窗口
+C-x 1 只保留当前窗口
+C-x ^ 加高当前窗口
+C-x } 加宽当前窗口
+C-x - 窗口变为buffer大小
+C-x + 多窗口同样大小
+M-C-v/Shift-M-C-v 卷动其他窗口内容
+
+C-x 4 f 自动在新窗口里打开文件
+类似的还有C-x 4 b等等。。。
+C-x 4 r 只读方式打开
+
+对比两文件的不同
+compare-window命令
+</pre>
+<p></p>
+<a id="toc14R01YREdMU" name="toc14R01YREdMU"></a>
+<h2><A href='#toptopTE5ERk9YU'> 3.3. 三，书签 </A></h2>
+<pre>
+C-x r m 在当前光标位置设置书签
+C-x r b 打开书签
+为书签改名：
+bookmark-rename
+删除书签
+bookmark-delete
+
+C-x r l 打开书签清单
+书签清单操作 同buffer
+特殊
+r 重命名
+</pre>
+<p></p>
+<a id="toc15R01YRElMU" name="toc15R01YRElMU"></a>
+<h2><A href='#toptopTE5ERk9YU'> 3.4. 四，窗格 </A></h2>
+<ul>
+<li>操作大多同窗口
+</li>
+<li>4换成5
+</li>
+</ul>
+
+<a id="toc16R1FYQ0FRM" name="toc16R1FYQ0FRM"></a>
+<h1><A href='#toptopTE5ERk9YU'> 4. Chapter 5 Emacs工作环境 </A></h1>
+<ul>
+<li>M-p/M-n 历史记录查询，适用于大多数需要输入的地方
+</li>
+</ul>
+
+<a id="toc17R1FYRENMU" name="toc17R1FYRENMU"></a>
+<h2><A href='#toptopTE5ERk9YU'> 4.1. 一, 执行UNIX命令 </A></h2>
+<pre>
+M-! 执行UNIX命令
+默认结果进Shell Command Output缓冲区
+C-u M-! 结果进当前编辑缓冲区
+M-| 将标记文本块作为shell command的输入
+
+可以修改变量shell-file-name指定使用shell的名字
+
+M-x shell 执行unix命令交互式功能
+C-c 加在unix快捷键前，如C-z
+C-c C-o 不显示上条命令的输入结果
+C-c C-r 输出放到窗口顶
+C-c C-e 输出放到窗口底
+C-c C-p 查看上一输出组
+C-c C-n 查看下一输出组
+
+cd时会改变查找文件的默认目录
+(setq-default shell-popd-regexp nil)这样就不变了
+
+可以让输入的口令不可见
+</pre>
+<p></p>
+<a id="toc18R1FYREVMU" name="toc18R1FYREVMU"></a>
+<h2><A href='#toptopTE5ERk9YU'> 4.2. 二，文件和目录操作 </A></h2>
+<pre>
+Dired模式
+
+C-x C-f/C-x d/启动emacs dir 都可以进入此模式
+s 切换文件排序方法
+buffer中的操作方法依然适用
+在命令前加数字可以同时对N个文件作操作
+v 进入view mode，只能看
+q 回到目录
+f 可以改
+d 待删除
+# 删除所有自动保存文件
+~ 删除所有备份文件
+D 真正删除
+C 复制文件
+R 重命名/移动文件
+Z 压缩/解压缩（只有gz)
+= 比较两文件
+M-= 比较备份文件
+! 执行任何unix命令
+* 标记待操作文件
+u 去掉标记
+g 刷新屏显的目录情况
+% 后面跟的命令对文件进行正则选取
++ 创建目录
+Q 可以进行对多文件内容的查询和替换
+</pre>
+<p></p>
+<ul>
+<li>还有很多命令，请参考手册
+</li>
+</ul>
+
+<a id="toc19R1FYREdMU" name="toc19R1FYREdMU"></a>
+<h2><A href='#toptopTE5ERk9YU'> 4.3. 三，查阅unix在线手册 </A></h2>
+<p>
+M-x man
+</p>
+<a id="toc20R1FYRElMU" name="toc20R1FYRElMU"></a>
+<h2><A href='#toptopTE5ERk9YU'> 4.4. 四，日历与日记 </A></h2>
+<p>
+M-x calendar
+</p>
+<a id="toc21R1VYQ0FRM" name="toc21R1VYQ0FRM"></a>
+<h1><A href='#toptopTE5ERk9YU'> 5. Chapter 6 宏 </A></h1>
+<pre>
+C-x ( 录制宏
+C-x ) 退出宏
+C-x e 执行宏，前边可以加C-u
+C-u C-x( 为以前的宏添加动作
+M-x name-last-kbd-macro 保存最后一个宏
+之后用M-x macroname使用即可,前边加M-n执行n次
+M-x insert-kbd-macro
+macroname
+
+打开一个文件后执行，即可把宏的lisp代码保存入文件
+M-x load-file filename
+加载宏定义文件，也可以加载任何lisp定制文件
+C-u C-x q 录制宏时进行递归编辑
+M-C-c 退出递归编辑
+C-x q 让宏停下来进行询问
+同查找替换
+</pre>
+<p></p>
+<a id="toc22R1lYQ0FRM" name="toc22R1lYQ0FRM"></a>
+<h1><A href='#toptopTE5ERk9YU'> 6. Chapter 7 Emacs进行编程 </A></h1>
+<a id="toc23R1lYRENMU" name="toc23R1lYRENMU"></a>
+<h2><A href='#toptopTE5ERk9YU'> 6.1. 一，各语言通用 </A></h2>
+<pre>
+(autoload 'function "filename")
+为某个mod增加关联程序包
+变量：
+auto-mode-alist
+自动将模式与特定后缀文件做关联
+
+M-C-\ 对文本块缩进
+M-m 光标移到当前行第一个非空白字符
+M-^ 当前行合并到上一行
+M-; 增加注释
+M-j 为注释增加新行
+变量comment-multi-line控制
+
+命令：
+comment-region 把文本块标为注释
+</pre>
+<p></p>
+<a id="toc24R1lYREVMU" name="toc24R1lYREVMU"></a>
+<h2><A href='#toptopTE5ERk9YU'> 6.2. 二，C/C++ </A></h2>
+<pre>
+模式：
+c-mode
+c++mode
+perl和c大同小异
+
+M-a 移动到语句开头
+M-e 移动到语句结尾
+M-q 注释文本段落重排
+M-C-a 移动到函数开头
+M-C-e 移动到函数末尾
+M-C-h 把函数选为文本块
+C-c C-q 函数整体缩进
+C-c C-u 预处理条件开始
+C-c C-p 上一个预处理条件
+C-c C-n 下一个预处理条件
+
+命令：
+c-set-style 选一种缩进样式
+
+C-c C-a 自动新行功能
+C-c C-d 饥饿的删除键
+
+设定：
+(add-hook 'c-mode-hook
+'(lambda ()
+(c-set-style " stylename ")
+(c-toggle-auto-state)
+(c-toggle-auto-hungry-state)))
+C-c C-e 将预处理块送入实际预处理器执行
+
+etags：
+强大的函数search工具
+调用:
+etags *.[ch] 这样为所有.c,.h建立函数标签
+emacs调用：
+命令
+visit-tags-table
+函数标签命令：
+M-. 查找匹配某字符串的函数,默认是光标当前字符串
+C-x 4 . 使用一个新窗口打开M-.
+M-, 查找下一个函数
+命令
+tags-search 正则搜TAGS包括文件的一切内容
+tags-query-replace
+查找和替换，加C-u完全匹配单词
+tags-apropos
+打开匹配的tag list
+list-tags 把给定文件的标签都列出来
+</pre>
+<p></p>
+<a id="toc25R1lYREdMU" name="toc25R1lYREdMU"></a>
+<h2><A href='#toptopTE5ERk9YU'> 6.3. 三，编译 </A></h2>
+<pre>
+模式：
+编译模式
+命令：
+compile
+变量：
+compile-command
+C-x ` 来到出错信息所在位置
+加C-u 到第一条出错信息所在
+M-n/M-p 向上/下找错误信息
+C-c C-c 访问对应于当前错误信息的源代码
+
+调用grep工具：
+命令grep
+可以用编译模式的命令
+</pre>
+<p></p>
+<a id="toc26RzRYQ0FRM" name="toc26RzRYQ0FRM"></a>
+<h1><A href='#toptopTE5ERk9YU'> 7. Chapter 7 帮助 </A></h1>
+<a id="toc27RzRYRENMU" name="toc27RzRYRENMU"></a>
+<h2><A href='#toptopTE5ERk9YU'> 7.1. 一，自动完成 </A></h2>
+<pre>
+变量:
+completion-ignored-extension
+把一些后缀的文件或命令加入不自动补完列表
+</pre>
+<p></p>
+<a id="toc28RzRYREVMU" name="toc28RzRYREVMU"></a>
+<h2><A href='#toptopTE5ERk9YU'> 7.2. 二，帮助 </A></h2>
+<pre>
+C-h ? 帮助的帮助
+C-h a 这个概念涉及哪些命令
+apropos 这个概念涉及哪些函数和变量
+super-apropos 哪些文档提到此概念
+都可用正则
+</pre>
+<p></p>
+<hr class="light" />
+<p>
+动力源自::<b><a href="http://txt2tags.sf.net">txt2tags</a></b>
+</p>
+</div>
+
+<!-- xhtml code generated by txt2tags 2.4 (http://txt2tags.sf.net) -->
+<!-- cmdline: txt2tags ./techic/Emacs/fw_learning_emacs_notes-2007-03-08-18-00.t2t -->
+
+  </content>
+
+  <rdf:Seq>
+
+<rdf:Description rdf:about="/pyblosxom/techic/PyBlosxom/pyblosxom-up132-2006-05-12-19-00">
+  <dc:title> 升级！ </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2006-05-12T11:00:00Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <div class="header" id="header">
+<a name='toptopNFdHWVBaN' id='toptopNFdHWVBaN'></a><h1>升级！</h1>
+<h2>from Pyblosoxm1.3.0b to Pyblosoxm1.3.2</h2>
+<h3>t2t渲染:2010-10-09 02:21:38</h3>
+</div>
+
+<div class="toc" id="toc">
+</div>
+<div class="body" id="body">
+<dl>
+<dt>升级操作！</dt><dd>
+    <ul>
+    <li>3分钟完成！
+     <ol>
+     <li>下载 <code>`fetch ,,, pyblosxom-1.3.2.tar.gz`</code>
+     </li>
+     <li>解开 <code>`tar xzvf pyblosxom-1.3.2.tar.gz`</code>
+     </li>
+     <li>安装 <code>`sudo python setup.py install`</code>
+     </li>
+     <li>DONE!
+     </li>
+     </ol>
+    </li>
+    <li>居然不用任何修改，<b>兼容以前版本的一切用户定制！</b>
+    </li>
+    <li>爽哪！！哈哈哈！！
+    </li>
+    </ul>
+</dd>
+</dl>
+
+<hr class="light" />
+<p>
+动力源自::<b><a href="http://txt2tags.sf.net">txt2tags</a></b>
+</p>
+<p>
+<img align="middle" src="/pybimage/technorati-over.gif" border="0" alt=""/>
+    <a href="http://www.technorati.com/tags/OpenSource">OpenSource</a>
+    ,<a href="http://www.technorati.com/tags/PyBlosxom">PyBlosxom</a>
+</p>
+</div>
+
+<!-- xhtml code generated by txt2tags 2.4 (http://txt2tags.sf.net) -->
+<!-- cmdline: txt2tags ./techic/PyBlosxom/pyblosxom-up132-2006-05-12-19-00.t2t -->
+
+  </content>
+
+  <rdf:Seq>
+
+<rdf:Description rdf:about="/pyblosxom/techic/ldap-valgrind-2006-03-17-17-00">
+  <dc:title> LDAP的内存泄露 </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2006-03-17T09:00:00Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <div class="header" id="header">
+<a name='toptopSlJDRUNVS' id='toptopSlJDRUNVS'></a><h1>LDAP的内存泄露</h1>
+<h2>-- Python说:不是俺的错！</h2>
+</div>
+
+<div class="toc" id="toc">
+</div>
+<div class="body" id="body">
+<dl>
+<dt>故事:</dt><dd>
+    友人在折腾<a href="http://www.openldap.org/">LDAP</a> ,使用Python 的 <a href="http://twistedmatrix.com/">Twisted</a> 组件来开发时应用常常死亡，
+    怀疑Python的内存泄露，但是找不到证据……
+</dd>
+<dt>结局:</dt><dd>
+    找到高人<a href="http://blog.delphij.net/">delphj</a> 运用内存分析工具:
+<pre>
+/usr/ports/devel/valgrind&gt; cat pkg-descr
+Valgrind is a system for debugging and profiling un*x programs. With the tools
+that come with Valgrind, you can automatically detect many memory management
+and threading bugs, avoiding hours of frustrating bug-hunting, making your
+programs more stable. You can also perform detailed profiling, to speed up and
+reduce memory use of your programs.
+
+The Valgrind distribution includes five tools: two memory error detectors, a
+thread error detector, a cache profiler and a heap profiler. Several other
+tools have been built with Valgrind.
+
+Valgrind was ported to FreeBSD by Doug Rabson (http://www.rabson.org/).
+
+WWW: http://valgrind.kde.org/
+
+</pre>
+    才发现是<a href="http://www.openldap.org/">LDAP</a>本身的问题：
+    每次RPC 的远程连接结束后，会泄露 32字节的内存！
+    晕哪！怪不得叫 LDAP, 因为很轻的连接情况下的确很不容易发觉，在当前内存动不动就上Gb的情况下…………
+<p></p>
+    <b>Python的虚拟机是非常坚固的！不要轻易怀疑吧……</b>
+</dd>
+</dl>
+
+<p>
+<img align="middle" src="/pybimage/technorati-over.gif" border="0" alt=""/>
+    <a href="http://www.technorati.com/tags/Zen">Zen</a>
+    ,<a href="http://www.technorati.com/tags/python">Python</a>
+    ,<a href="http://www.technorati.com/tags/ldap">ldap</a>
+    ,<a href="http://www.technorati.com/tags/computer">computer</a>
+</p>
+<hr class="light" />
+<ul>
+<li>动力源自::<b><a href="http://txt2tags.sf.net">txt2tags</a></b>
+</li>
+<li>t2t渲染:: 2010-10-09 02:21:39
+</li>
+</ul>
+
+</div>
+
+<!-- xhtml code generated by txt2tags 2.4 (http://txt2tags.sf.net) -->
+<!-- cmdline: txt2tags ./techic/ldap-valgrind-2006-03-17-17-00.t2t -->
+
+  </content>
+
+  <rdf:Seq>
+
+<rdf:Description rdf:about="/pyblosxom/techic/PyBlosxom/zqcategory-2006-01-28-17-00">
+  <dc:title> [ZqPyb+]插件开发 </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2006-01-28T09:00:00Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <div class="header" id="header">
+<a name='toptopTE5OSENVR' id='toptopTE5OSENVR'></a><h1>[ZqPyb+]插件开发</h1>
+<h2>快速完成分类索引增强</h2>
+<h3>t2t渲染:2010-10-09 02:21:38</h3>
+</div>
+
+<div class="toc" id="toc">
+  <ol>
+  <li><a href="#toc1R0VYQ0IyT">需求</a>
+  </li>
+  <li><a href="#toc2R0lYQ0IyR">过程</a>
+  </li>
+  </ol>
+
+</div>
+<div class="body" id="body">
+<a id="toc1R0VYQ0IyT" name="toc1R0VYQ0IyT"></a>
+<h1><A href='#toptopTE5OSENVR'> 1. 需求 </A></h1>
+<dl>
+<dt>原先的分类索引</dt><dd>
+    指向的页面是将所有文章的正文输出
+    <ul>
+    <li>例如
+    </li>
+    <li>如果
+    </li>
+    </ul>
+</dd>
+</dl>
+
+<a id="toc2R0lYQ0IyR" name="toc2R0lYQ0IyR"></a>
+<h1><A href='#toptopTE5OSENVR'> 2. 过程 </A></h1>
+<dl>
+<dt>logging</dt><dd>
+    <ol>
+    <li>30分钟，学习<a href="plugins/wbgrecent">wbgrecent.py</a>
+    </li>
+    <li>5分钟，使用原版脚本创建
+    <a href="plugins/zqcategory">zqcategory.py</a>
+    ;<a href="plugins/zqcrecent">zqcrecent.py</a>
+    </li>
+    <li>30分钟，调试功能
+    </li>
+    <li>20分钟增强CSS
+    </li>
+    <li>85分钟完成心中所想！
+    </li>
+    </ol>
+</dd>
+<dt>分析最重要！</dt><dd>
+    原先想象的和实现的，完全不同！
+</dd>
+</dl>
+
+<hr class="light" />
+<p>
+动力源自::<b><a href="http://txt2tags.sf.net">txt2tags</a></b>
+</p>
+<p>
+<img align="middle" src="/pybimage/technorati-over.gif" border="0" alt=""/>
+    <a href="http://www.technorati.com/tags/OpenSource">OpenSource</a>
+    ,<a href="http://www.technorati.com/tags/PyBlosxom">PyBlosxom</a>
+    ,<a href="http://www.technorati.com/tags/hacking">hacking</a>
+    ,<a href="http://www.technorati.com/tags/css">css</a>
+</p>
+</div>
+
+<!-- xhtml code generated by txt2tags 2.4 (http://txt2tags.sf.net) -->
+<!-- cmdline: txt2tags ./techic/PyBlosxom/zqcategory-2006-01-28-17-00.t2t -->
+
+  </content>
+
+  <rdf:Seq>
+
+<rdf:Description rdf:about="/pyblosxom/techic/PyBlosxom/operacss2-2006-01-28-10-00">
+  <dc:title> [fix PyBlosxom]CSS for Opera </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2006-01-28T02:00:00Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <div class="header" id="header">
+<a name='toptopTE5UR1M2Q' id='toptopTE5UR1M2Q'></a><h1>[fix PyBlosxom]CSS for Opera</h1>
+<h2>都是CSS惹的祸?</h2>
+<h3>t2t渲染:2010-10-09 02:21:38</h3>
+</div>
+
+<div class="toc" id="toc">
+  <ol>
+  <li><a href="#toc1R0VYQ0JaV">怎么了？</a>
+  </li>
+  </ol>
+
+</div>
+<div class="body" id="body">
+<a id="toc1R0VYQ0JaV" name="toc1R0VYQ0JaV"></a>
+<h1><A href='#toptopTE5UR1M2Q'> 1. 怎么了？ </A></h1>
+<dl>
+<dt><img align="middle" src="/pybimage/snap060126-opera-css-error.png" border="0" alt=""/></dt><dd>
+    晚上回家使用Opera 8.51 才发现这问题…………
+<p></p>
+= fixed =
+<p></p>
+</dd>
+<dt>CSS2的兼容性哪…………</dt><dd>
+    <ul>
+    <li>??? 怎么看也不象！
+    </li>
+    </ul>
+</dd>
+<dt>原来如比</dt><dd>
+<pre>
+&lt;a name="1137513213.36"&gt;&lt;/a&gt;
+[Tue Jan 17 23:53:33 2006] 
+&lt;!--&gt;
+&lt;a href="mailto:"&gt;123&lt;/a&gt;
+&lt;sup&gt;&lt;a href=""&gt;URL&lt;/a&gt;&lt;/sup&gt;
+曰::
+    ...
+</pre>
+    输出中有意外的HTML代码？！
+    原来是Opera 坚守标准HTML 的结果！！
+</dd>
+<dt>修正</dt><dd>
+    将原先<code>comment.phtm</code>模板中的:
+<pre>
+...
+&lt;!-- $cmt_title --&gt;
+&lt;a name="$cmt_time"&gt;&lt;/a&gt;
+[$cmt_pubDate] 
+&lt;!--$cmt_link--&gt;
+</pre>
+    修改为
+<pre>
+&lt;!-- 
+$cmt_title 
+--&gt;
+&lt;a name="$cmt_time"&gt;&lt;/a&gt;
+[$cmt_pubDate] 
+&lt;!--
+$cmt_link
+--&gt;
+</pre>
+    一切就正常了！
+</dd>
+</dl>
+
+<hr class="light" />
+<p>
+动力源自::<b><a href="http://txt2tags.sf.net">txt2tags</a></b>
+</p>
+<p>
+<img align="middle" src="/pybimage/technorati-over.gif" border="0" alt=""/>
+    <a href="http://www.technorati.com/tags/OpenSource">OpenSource</a>
+    ,<a href="http://www.technorati.com/tags/PyBlosxom">PyBlosxom</a>
+    ,<a href="http://www.technorati.com/tags/hacking">hacking</a>
+    ,<a href="http://www.technorati.com/tags/css">css</a>
+</p>
+</div>
+
+<!-- xhtml code generated by txt2tags 2.4 (http://txt2tags.sf.net) -->
+<!-- cmdline: txt2tags ./techic/PyBlosxom/operacss2-2006-01-28-10-00.t2t -->
+
+  </content>
+
+  <rdf:Seq>
+
+<rdf:Description rdf:about="/pyblosxom/techic/PyBlosxom/blosxom/croe-hack-file-entry-2006-01-27-23-23">
+  <dc:title> [core]fileentry.py </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2006-01-27T15:23:00Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <div class="header" id="header">
+<a name='toptopTE5SVzY0V' id='toptopTE5SVzY0V'></a><h1>[core]fileentry.py</h1>
+<h2>增补模板元素</h2>
+<h3>t2t渲染:2011-09-07 02:09:17</h3>
+</div>
+
+<div class="toc" id="toc">
+  <ol>
+  <li><a href="#toc1R0VYQ0FaV">fixed</a>
+  </li>
+  <li><a href="#toc2R0lYQ0FWQ">TODO</a>
+  </li>
+  </ol>
+
+</div>
+<div class="body" id="body">
+<a id="toc1R0VYQ0FaV" name="toc1R0VYQ0FaV"></a>
+<h1><A href='#toptopTE5SVzY0V'> 1. fixed </A></h1>
+<dl>
+<dt>Why?</dt><dd>
+    <a href="../060120-PyblosxomFixLog3.phtm#toc5">t2t支持的遗留问题</a>
+    <ul>
+    <li>现在我的Blog 基本就两种文件格式:
+        <ol>
+        <li>.py 脚本文件
+        </li>
+        <li>.t2t 文章
+        </li>
+        </ol>
+    </li>
+    <li>但是模板中 t2t 额外给出的下载 .t2t和.moin 对 .py 的文件不适用！
+    <p></p>
+    </li>
+    </ul>
+</dd>
+<dt>problem</dt><dd>
+    <a href="http://pyblosxom.sourceforge.net/1.3/manual/x307.html#AEN356">模板有效输出值</a>
+    的说明中有问题！
+    <ul>
+    <li><b>file_path</b>	just the filename and extensions of the entry
+    </li>
+    <li>实际上没有后缀！
+    </li>
+    <li>所以！
+    </li>
+    </ul>
+</dd>
+<dt>hacked:</dt><dd>
+    <i>path/to/site-packages/Pyblosxom/entries/fileentry.py</i>
+<p></p>
+<pre class="brush:  python">
+
+#147 line...
+        self['entryext'] = ext
+        self['filebasename'] = file_basename
+</pre>
+    追加我需要的变量！
+</dd>
+<dt>模板处理:</dt><dd>
+    这样一来<b>story.*</b>的模板中就可以对应修正输出了！
+<pre class="brush:  html">
+
+| &lt;a href="$base_url/$file_path_urlencoded.$flavour" 
+    title="permalink"&gt;#
+    永久链接&lt;/a&gt;&lt;!--permanent link to this entry--&gt;
+    &lt;sup&gt;    
+    &lt;a href="/entry/$file_path_urlencoded$entryext"&gt;
+    $entryext&lt;/a&gt;
+    &lt;a href="/entry/$file_path_urlencoded.t2t"&gt;
+    .t2t&lt;/a&gt;
+    &lt;a href="/entry/$file_path_urlencoded.moin"&gt;
+    .moin&lt;/a&gt;
+    &lt;/sup&gt;
+</pre>
+</dd>
+</dl>
+
+<a id="toc2R0lYQ0FWQ" name="toc2R0lYQ0FWQ"></a>
+<h1><A href='#toptopTE5SVzY0V'> 2. TODO </A></h1>
+<dl>
+<dt>contribute 分发!</dt><dd>
+    接踵而来的就是如何标准化的反馈社区，
+    贡献代码了…………
+</dd>
+<dt>进一步的:</dt><dd>
+    Pyblosxom的模板属于简单模板，在模板中不能加入逻辑的，
+    所以现在虽然对.py 的文章有了直接下载链接，但是，没有自动生成的.moin 
+    和约定的.t2t 下载并不应该有…………
+    向社区建议吧…………
+</dd>
+</dl>
+
+<hr class="light" />
+<p>
+动力源自::<b><a href="http://txt2tags.sf.net">txt2tags</a></b>
+</p>
+<p>
+<img align="middle" src="/pybimage/technorati-over.gif" border="0" alt=""/>
+    <a href="http://www.technorati.com/tags/OpenSource">OpenSource</a>
+    ,<a href="http://www.technorati.com/tags/PyBlosxom">PyBlosxom</a>
+    ,<a href="http://www.technorati.com/tags/hacking">hacking</a>
+    ,<a href="http://www.technorati.com/tags/SNS">SNS</a>
+</p>
+</div>
+
+<!-- xhtml code generated by txt2tags 2.4 (http://txt2tags.sf.net) -->
+<!-- cmdline: txt2tags croe-hack-file-entry-2006-01-27-23-23.t2t -->
+
+  </content>
+
+  <rdf:Seq>
+
+<rdf:Description rdf:about="/pyblosxom/techic/PyBlosxom/PyblosxomFixLog7-2006-01-27-23-23">
+  <dc:title> [hack7]Plugins </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2006-01-27T15:23:00Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <div class="header" id="header">
+<a name='toptopTE5VR0NZM' id='toptopTE5VR0NZM'></a><h1>[hack7]Plugins</h1>
+<h2>插件扩展之旅……</h2>
+<h3>t2t渲染:2010-10-09 02:21:39</h3>
+</div>
+
+<div class="toc" id="toc">
+  <ol>
+  <li><a href="#toc1R0VYQ0JaV">总体上</a>
+  </li>
+  <li><a href="#toc2R0lYQ0JaT">已安装</a>
+  </li>
+  <li><a href="#toc3R01YQ0JaT">垂涎的</a>
+  </li>
+  <li><a href="#toc4R1FYQ0JaT">发布邪？</a>
+  </li>
+  </ol>
+
+</div>
+<div class="body" id="body">
+<a id="toc1R0VYQ0JaV" name="toc1R0VYQ0JaV"></a>
+<h1><A href='#toptopTE5VR0NZM'> 1. 总体上 </A></h1>
+<dl>
+<dt><a href="http://pyblosxom.sourceforge.net/blog/static/development">贡献规范</a></dt><dd>
+    约定了开发插件的代码规范！
+    另外有丰富，标准的API信息:
+        <ol>
+        <li><a href="http://pyblosxom.sourceforge.net/1.3/api/index.html">1.3 API</a>
+        </li>
+        <li><a href="http://pyblosxom.sourceforge.net/1.3/plugins/index.html">1.3 plugin API</a>
+        </li>
+        <li><a href="http://pyblosxom.sourceforge.net/1.3/plugins/public/docs.ReadMeForPlugins-module.html">1.3 callbacks</a>
+        </li>
+        </ol>
+</dd>
+<dt>故！</dt><dd>
+    可以标准化的安装，hacking 和分享！赞！
+</dd>
+<dt>别传:</dt><dd>
+<pre>
+Response Headers - http://pyblosxom.sourceforge.net/1.3/API/index.html
+
+Date: Fri, 27 Jan 2006 03:31:00 GMT
+Server: Apache/1.3.33 (Unix) PHP/4.3.10
+X-Powered-By: PHP/4.3.10
+Connection: keep-alive
+Content-Type: text/html
+Transfer-Encoding: chunked
+
+404 Not Found
+</pre>
+    嘿嘿嘿，无意中发现 PyBlosxom 的服务端使用的是 PHP 发布？！
+</dd>
+</dl>
+
+<a id="toc2R0lYQ0JaT" name="toc2R0lYQ0JaT"></a>
+<h1><A href='#toptopTE5VR0NZM'> 2. 已安装 </A></h1>
+<dl>
+<dt>直接使用的</dt><dd>
+    <ol>
+    <li>"pycalendar" 日历
+    </li>
+    <li>"pycategories" 简要分类
+    </li>
+    <li>"pyarchives" 月度归档
+    </li>
+    <li>"py" Python 语法颜色渲染
+    </li>
+    <li>"comments" 评注
+    </li>
+    </ol>
+</dd>
+<dt>少量修改的:</dt><dd>
+    <ol>
+    <li>"latest_comments" 最新评注
+    </li>
+    </ol>
+</dd>
+<dt>自个儿开发的:</dt><dd>
+    <ol>
+    <li>"xhtml" 简单XHTML 文本格式
+    </li>
+    </ol>
+</dd>
+</dl>
+
+<a id="toc3R01YQ0JaT" name="toc3R01YQ0JaT"></a>
+<h1><A href='#toptopTE5VR0NZM'> 3. 垂涎的 </A></h1>
+<dl>
+<dt>安装未果的</dt><dd>
+    <ol>
+    <li>"moinmoin" 格式文本处理器(不支持高版本MoinMoin)
+    </li>
+    <li>"trackback" 安装文档看不明(好象也没有人使用TB 哪!)
+    </li>
+    </ol>
+</dd>
+<dt><b>一定要安装的</b></dt><dd>
+    <ol>
+    <li>"commentAPI" 嗯嗯!可以结合Greasemonkey 开发插件式的评注工具哪!
+    </li>
+    <li>"folksonomy" 呜乎哀哉!垂涎哪!象美味书签哪样儿的标签化分类
+        <ul>
+        <li>"keywords" 同上,类似
+        </li>
+        </ul>
+    </li>
+    <li><a href="http://www.codeape.org/blog/static/download">pyguest</a> 
+    简单留言板
+    <p></p>
+    </li>
+    <li><a href="http://bluesock.org/~willg/cgi-bin/pybltrac.cgi/wiki">Will's 系列插件</a>
+        <ol>
+        <li><a href="http://bluesock.org/~willg/cgi-bin/pybltrac.cgi/wiki/plugininfo">plugininfo</a> 自动汇报使用插件情况
+        </li>
+        <li><a href="http://bluesock.org/~willg/cgi-bin/pybltrac.cgi/wiki/pystaticfile">pystaticfile</a>发布静态说明性文章;类似 aboutme 之类的...
+        </li>
+        <li><a href="http://bluesock.org/~willg/cgi-bin/pybltrac.cgi/wiki/wbgarchives">wbgarchives</a> 年度文章<a href="http://bluesock.org/~willg/blog/2005/">汇总页面</a>
+            <ul>
+            <li>应该说,可以类比的写出分类汇兑插件
+            </li>
+            </ul>
+        </li>
+        <li><a href="http://bluesock.org/~willg/cgi-bin/pybltrac.cgi/wiki/wbggrep">wbggrep</a> grep搜索引擎,嗬嗬!<b>Uinx 系统专用</b>的便利,不用求助于Google/lucene 什么了!
+        </li>
+        <li><a href="http://bluesock.org/~willg/cgi-bin/pybltrac.cgi/wiki/wbgpager">wbgpager</a>多页指引
+        </li>
+        <li><a href="http://bluesock.org/~willg/cgi-bin/pybltrac.cgi/wiki/wbgrecent">wbgrecent</a>综合"最新"<a href="http://bluesock.org/~willg/blog/recent">效果:</a>
+        </li>
+        </ol>
+    </li>
+    </ol>
+</dd>
+</dl>
+
+<a id="toc4R1FYQ0JaT" name="toc4R1FYQ0JaT"></a>
+<h1><A href='#toptopTE5VR0NZM'> 4. 发布邪？ </A></h1>
+<p>
+已经有人问及中文版本的 theme 什么时候发布了!
+</p>
+<dl>
+<dt>contribute 分发!</dt><dd>
+    也是技术活,怎么样组织和说明才可以令其它人安然的安装各种插件成功?
+    不如象 <a href="http://www.tiddlywiki.com/">TiddlyWiki</a> 那样儿,
+    整个完整的,立等可取用的系统合包?
+</dd>
+</dl>
+
+<hr class="light" />
+<p>
+动力源自::<b><a href="http://txt2tags.sf.net">txt2tags</a></b>
+</p>
+<p>
+<img align="middle" src="/pybimage/technorati-over.gif" border="0" alt=""/>
+    <a href="http://www.technorati.com/tags/OpenSource">OpenSource</a>
+    ,<a href="http://www.technorati.com/tags/PyBlosxom">PyBlosxom</a>
+    ,<a href="http://www.technorati.com/tags/hacking">hacking</a>
+    ,<a href="http://www.technorati.com/tags/SNS">SNS</a>
+</p>
+</div>
+
+<!-- xhtml code generated by txt2tags 2.4 (http://txt2tags.sf.net) -->
+<!-- cmdline: txt2tags ./techic/PyBlosxom/PyblosxomFixLog7-2006-01-27-23-23.t2t -->
+
+  </content>
+
+  <rdf:Seq>
+
+<rdf:Description rdf:about="/pyblosxom/techic/PyBlosxom/PyblosxomFixLog6-2006-01-24-23-23">
+  <dc:title> [hack6]SNS化 </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2006-01-24T15:23:00Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <div class="header" id="header">
+<a name='toptopTE5VR0NZM' id='toptopTE5VR0NZM'></a><h1>[hack6]SNS化</h1>
+<h2>社会化软件增强</h2>
+<h3>t2t渲染:2010-10-09 02:21:38</h3>
+</div>
+
+<div class="toc" id="toc">
+</div>
+<div class="body" id="body">
+<dl>
+<dt>火热的 Web2.0beta</dt><dd>
+    有定义图<img align="middle" src="/pybimage/web2.0defining.png" border="0" alt=""/>;来自<a href="http://www.flickr.com/photos/kosmar/88198896/">kosmar</a>
+    <ul>
+    <li>嗬嗬！还有<a href="http://www.flickr.com/photos/kosmar/62381076/in/set-1371686/">标记版本的Web2.0</a>
+    </li>
+    <li>新版本的::<a href="http://www.flickr.com/photos/kosmar/88198896/in/set-1371686/">Netz2.0</a>
+    <p></p>
+    </li>
+    </ul>
+</dd>
+<dt><a href="http://blog.timetide.net/archives/2005/01/15/20050115015808.php">Folksonomy</a></dt><dd>
+  分众分类！
+  <ul>
+  <li>PyBlosxom 如何支持呢？
+  </li>
+  <li>Google it!::<a href="http://www.timfanelli.com/item/42">Folksonomy 1.2</a>
+   <ul>
+   <li>很中意哪！类似del.icio.us 的TAGs 分重效果哪！
+   </li>
+   </ul>
+  </li>
+  <li>唉呀呀？！作者的Blog 怎么是<a href="http://blosxonomy.com/"><img align="middle" src="/pybimage/pb_blosxonomy.gif" border="0" alt=""/></a> ,还以为是PyBlosxom的,
+  又一个Ruby 的<a href="http://blosxom.com/">blosxom</a> clone!
+  </li>
+  <li>看来 <a href="http://blosxom.com/">blosxom</a><b>“简单即是美”</b>
+  的设计感化了不少程序员哪！
+   <ul>
+   <li><b><a href="http://blosxonomy.com/">Simply put: It's a Zen thing...</a></b>
+   </li>
+   </ul>
+  </li>
+  <li>可惜，安装失败！ N多的报错！想来此次PyBlosxom 的升级造成的修改还要有段时间的磨合
+  </li>
+  <li>再Google!::从<a href="http://copia.ogbuji.net/blog/Keywords_on_Copia">Keywords on Copia</a>知道了<a href="http://llimllib.f2o.org/blog/serve/entry/keyword_update.html">Keywords Plugin</a>
+  </li>
+  <li>依然安装不能！呜乎哀哉…………
+  </li>
+  </ul>
+</dd>
+</dl>
+
+<hr class="light" />
+<p>
+动力源自::<b><a href="http://txt2tags.sf.net">txt2tags</a></b>
+</p>
+<p>
+<img align="middle" src="/pybimage/technorati-over.gif" border="0" alt=""/>
+    <a href="http://www.technorati.com/tags/OpenSource">OpenSource</a>
+    ,<a href="http://www.technorati.com/tags/PyBlosxom">PyBlosxom</a>
+    ,<a href="http://www.technorati.com/tags/hacking">hacking</a>
+    ,<a href="http://www.technorati.com/tags/SNS">SNS</a>
+</p>
+</div>
+
+<!-- xhtml code generated by txt2tags 2.4 (http://txt2tags.sf.net) -->
+<!-- cmdline: txt2tags ./techic/PyBlosxom/PyblosxomFixLog6-2006-01-24-23-23.t2t -->
+
+  </content>
+
+  <rdf:Seq>
+
+<rdf:Description rdf:about="/pyblosxom/techic/PyBlosxom/PyblosxomFixLog5-2006-01-24-23-23">
+  <dc:title> [hack5]样式！ </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2006-01-24T15:23:00Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <div class="header" id="header">
+<a name='toptopTE5VR0NZM' id='toptopTE5VR0NZM'></a><h1>[hack5]样式！</h1>
+<h2>颜色系统...FT!</h2>
+<h3>t2t渲染:2010-10-09 02:21:38</h3>
+</div>
+
+<div class="toc" id="toc">
+  <ol>
+  <li><a href="#toc1R0VYQ0IyR">设计</a>
+  </li>
+  <li><a href="#toc2R0lYQ0IyR">进行</a>
+  </li>
+  <li><a href="#toc3R01YQ0JaV">教训</a>
+  </li>
+  <li><a href="#toc4R1FYQ0FWQ">TODO</a>
+  </li>
+  </ol>
+
+</div>
+<div class="body" id="body">
+<a id="toc1R0VYQ0IyR" name="toc1R0VYQ0IyR"></a>
+<h1><A href='#toptopTE5VR0NZM'> 1. 设计 </A></h1>
+<p>
+VI系统现在已经算是门手艺了！在下不行！
+</p>
+<p>
+但是可以偷哪！
+</p>
+<p>
+以往各种喜欢的网站，都不太吻合心目中的Blogging space ..
+</p>
+<p>
+原先想直接 clone Vim 的 desert 颜色系统的…………
+</p>
+<p>
+但是突然记起了:<b><a href="http://services.deviantart.com/">deviantart</a></b>
+</p>
+<p>
+<img align="middle" src="/pybimage/snap060126-deviantart-top.png" border="0" alt=""/>
+</p>
+<p>
+<img align="middle" src="/pybimage/snap060126-deviantart-abt.png" border="0" alt=""/>
+</p>
+<p>
+所以....
+</p>
+<a id="toc2R0lYQ0IyR" name="toc2R0lYQ0IyR"></a>
+<h1><A href='#toptopTE5VR0NZM'> 2. 进行 </A></h1>
+<dl>
+<dt>抓取颜色！</dt><dd>
+    <a href="http://www.redalt.com/Tools/ilyc.php">I Like Your Colors!</a> 
+    塞上CSS的URL;
+    自动获取<img align="middle" src="/pybimage/snap060126-ilikeurcolor.png" border="0" alt=""/> 颜色列表,
+    然后就挥舞CSS就好！
+</dd>
+<dt>Flavours的配合</dt><dd>
+    这个比较自然，就是在<b>适当的</b>地方，加上<b>适当的</b>
+    <b>class 或是 id</b>
+</dd>
+<dt>适当的……</dt><dd>
+    怎么样是适当的呢？
+    <b><a href="http://plone.org/">Plone</a></b> 模板的DIV 层叠设计就非常的合理，
+    以前设计过 <a href="http://www.czug.org/about/art/zoomq">CZUG.org</a> 的样式
+    ，所以有些体会…………
+</dd>
+</dl>
+
+<p>
+<i>但是………………</i>
+</p>
+<a id="toc3R01YQ0JaV" name="toc3R01YQ0JaV"></a>
+<h1><A href='#toptopTE5VR0NZM'> 3. 教训 </A></h1>
+<dl>
+<dt><a href="http://pyblosxom.sourceforge.net/blog/registry/flavours/MainlyGreen">MainlyGreen</a></dt><dd>
+    此样式，的排版非常古怪，折腾了半天，越调越乱；
+    最后还是调出<a href="http://www.donews.net/ZoomQuiet">自个儿donews</a> 的样式
+    , 使用 69%-25% 的百分比来组织版块。
+</dd>
+<dt>教训:</dt><dd>
+    <ol>
+    <li>CSS 和代码开发一样，没有理解就不能尝试
+    </li>
+    <li>CSS 的增长比代码还要快,所以最后应该进行精简
+    </li>
+    <li>CSS2 对IE的兼容性，就不要折腾了，先调试FireFox 再 Opera,最后看IE 再不成，就直接禁止IE访问吧…………
+    </li>
+    </ol>
+</dd>
+</dl>
+
+<a id="toc4R1FYQ0FWQ" name="toc4R1FYQ0FWQ"></a>
+<h1><A href='#toptopTE5VR0NZM'> 4. TODO </A></h1>
+<dl>
+<dt><a href="http://diveintoaccessibility.org/">Dive Into Accessibility</a></dt><dd>
+    中文版本:<a href="http://dia.z6i.org/cn/">网站亲和力</a>;
+    <ul>
+    <li>网站可访问性的官方网站
+    </li>
+    <li>还要继续优化VI
+    </li>
+    <li>现在的问题主要在于:
+        <ol>
+        <li>颜色太个性，没有考虑到 弱视力访问者
+        </li>
+        <li>导航太个性，没有考虑到 特殊访问者
+        </li>
+        <li>功能没有完全，不能整体来调优 VI
+        </li>
+        </ol>
+    </li>
+    </ul>
+</dd>
+</dl>
+
+<p>
+<b>VI 是艺术性科学,是挑战，要学习……</b>
+</p>
+<hr class="light" />
+<p>
+动力源自::<b><a href="http://txt2tags.sf.net">txt2tags</a></b>
+</p>
+<p>
+<img align="middle" src="/pybimage/technorati-over.gif" border="0" alt=""/>
+    <a href="http://www.technorati.com/tags/OpenSource">OpenSource</a>
+    ,<a href="http://www.technorati.com/tags/PyBlosxom">PyBlosxom</a>
+    ,<a href="http://www.technorati.com/tags/hacking">hacking</a>
+</p>
+</div>
+
+<!-- xhtml code generated by txt2tags 2.4 (http://txt2tags.sf.net) -->
+<!-- cmdline: txt2tags ./techic/PyBlosxom/PyblosxomFixLog5-2006-01-24-23-23.t2t -->
+
+  </content>
+
+  <rdf:Seq>
+
+<rdf:Description rdf:about="/pyblosxom/techic/PyBlosxom/PyblosxomFixLog4-2006-01-21-23-23">
+  <dc:title> [hack4]SVN集成 </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2006-01-21T15:23:00Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <div class="header" id="header">
+<a name='toptopTE5VR0NZM' id='toptopTE5VR0NZM'></a><h1>[hack4]SVN集成</h1>
+<h2>通过SVN来发布Blog</h2>
+<h3>t2t渲染:2010-10-09 02:21:39</h3>
+</div>
+
+<div class="toc" id="toc">
+  <ol>
+  <li><a href="#toc1R0VYQ0JaT">好坏</a>
+  </li>
+  <li><a href="#toc2R0lYQ0JaT">实施</a>
+    <ul>
+    <li><a href="#toc3R0lYRENMU">2.1. 配合</a>
+    </li>
+    </ul>
+  </li>
+  <li><a href="#toc4R01YQ0FWQ">TODO</a>
+    <ul>
+    <li><a href="#toc5R01YRENMU">3.1. 技术文档</a>
+    </li>
+    </ul>
+  </li>
+  </ol>
+
+</div>
+<div class="body" id="body">
+<a id="toc1R0VYQ0JaT" name="toc1R0VYQ0JaT"></a>
+<h1><A href='#toptopTE5VR0NZM'> 1. 好坏 </A></h1>
+<p>
+在本地使用自个儿习惯的格式来写，通过SVN 自动版本同步到PyBlsxom发布！
+</p>
+<dl>
+<dt>好处：</dt><dd>
+    <ol>
+    <li>天然的备份！
+    </li>
+    <li>离线写作！
+    </li>
+    <li>本地搜索！
+    </li>
+    <li>自然备份！
+    </li>
+    <li>强力版本管理！
+    </li>
+    <li>灾难恢复简单
+    </li>
+    <li>Blog系统定制权限容易管理
+    </li>
+    <li>...
+    </li>
+    </ol>
+</dd>
+<dt>坏处:</dt><dd>
+    <ul>
+    <li>要学习TortoiseSVN 的使用
+    </li>
+    <li>要修正Blogging 习惯..
+    </li>
+    </ul>
+</dd>
+</dl>
+
+<a id="toc2R0lYQ0JaT" name="toc2R0lYQ0JaT"></a>
+<h1><A href='#toptopTE5VR0NZM'> 2. 实施 </A></h1>
+<dl>
+<dt>幸好有积累:</dt><dd>
+    <ul>
+    <li>曾经<a href="http://wiki.woodpecker.org.cn/moin/CvsRootHook">透过CVS进行内容维护</a>
+    </li>
+    <li>后来同理推导出:<a href="http://wiki.woodpecker.org.cn/moin/SubversionHooks">透过SVN进行内容维护</a>
+    <p></p>
+    </li>
+    </ul>
+</dd>
+<dt>HOOKs 脚本:</dt><dd>
+    <ul>
+    <li>关键代码:
+<pre>
+在post-commit 事务中插入:
+    ...
+        upsvn = "%s update %s"%(self.SVN,(aim+mod) )
+        fup = os.popen(upsvn)
+        up = fup.read().strip()
+        self.chkpybt2t(up
+                        ,"pyblosxom/zoomquiet/data/")
+</pre>
+    </li>
+    <li>专用t2t 处理函式:
+<pre>
+def chkpybt2t(self,dirs,mark):
+    """auto check PyBlosxom .t2t blog
+    """
+    for l in dirs.split():
+        if mark in l:
+            self.autot2t(l)
+def autot2t(self,upath):
+    """自动处理t2t 到对应PyBlosxom 目录
+        - upath svnlook 出来的对应更新记录
+        - t2t 文件本身输出 xhtml ，cp为txt 由PyBlosxom 显示
+        - 另外输出为.moin 的wiki 文件
+        --target moin
+    """    
+    t2txhtml = "%s %s"%(self.T2T,upath)
+    t2tmoin = "%s %s %s"%(self.T2T," --target moin ",upath)
+    try:
+        r, w, e = popen2.popen3(t2txhtml)
+        r, w, e = popen2.popen3(t2tmoin)
+        r.close()
+        e.close()
+        w.close()        
+    except:
+        # 日志处理
+        print &gt;&gt; self.f,"~"*7+"t2t::popen2.popen3() ::crash"    
+</pre>
+    </li>
+    <li>通过标准的t2t 命令行来输出两种格式的文件 .xhtml和.moin 的
+    </li>
+    <li><b>特别的</b> 为了定制方便，将 txt2tags 的执行文件专用化:
+    </li>
+    <li><code>self.T2T = "/path/to/my/PyBlosxom/plugins/preformatters/txt2tags"</code>
+    以便进行定制修改
+        <ul>
+        <li><b>完全是因为t2t 太精巧了，就一个文件哪！</b>
+        </li>
+        </ul>
+    </li>
+    </ul>
+</dd>
+</dl>
+
+<a id="toc3R0lYRENMU" name="toc3R0lYRENMU"></a>
+<h2><A href='#toptopTE5VR0NZM'> 2.1. 配合 </A></h2>
+<dl>
+<dt>已经完成的:</dt><dd>
+    <ol>
+    <li>由 SVN hooks 在每次检入时，自动检测是否为指定模块中的 .t2t 文件?
+    </li>
+    <li>如果是:
+        <ul>
+        <li>自动更新指定目录
+        </li>
+        <li><code>svn up</code>
+        </li>
+        </ul>
+    </li>
+    <li>再调用t2t 输出两种格式的文件
+        <ul>
+        <li><code>txt2tags /path/to/the/.t2t</code>
+        </li>
+        <li><code>txt2tags  --target moin  /path/to/the/.t2t</code>
+        </li>
+        </ul>
+    </li>
+    </ol>
+</dd>
+<dt>现在要最终处理的:</dt><dd>
+    <ul>
+    <li>如何令PyBlosxom 解析 .xhtml 到页面中?
+    </li>
+    <li>默许的是仅仅识别 html/纯文本格式的 .txt 文件的
+    </li>
+    <li>参照已有的<a href="plugins/py.phtm">py.py</a> 预格式脚本:
+        <ul>
+        <li>hack 出 <a href="plugins/xhtml.phtm">xhtml.py</a>
+        </li>
+        <li>配置文件中打开此插件
+<pre>
+config.py 中
+...
+py['load_plugins'] = ["pycalendar"
+                      , "py"
+                      ,"xhtml"
+                      ...
+</pre>
+        </li>
+        <li>搞掂！
+        </li>
+        </ul>
+    </li>
+    </ul>
+</dd>
+<dt>特别的:</dt><dd>
+    <ul>
+    <li>文章标题的抓取:
+<pre>
+
+    for line in open(filename,"r").readlines():
+        if "&lt;title&gt;" in line:
+            title=line[7:].replace("&lt;/title&gt;","")
+            break
+</pre>
+    </li>
+    <li>一般性的，PyBlosxom 是从原文头行取，但是 xhtml 中有HTML 的格式标识字串，所以，要从<code>&lt;title&gt;</code> 标签中抓，
+    </li>
+    <li>这里不使用 正则表达式，是为了加速，简单的行读取，
+    比在内存中分析整个文件要Pythonic 哪!
+    </li>
+    </ul>
+</dd>
+</dl>
+
+<a id="toc4R01YQ0FWQ" name="toc4R01YQ0FWQ"></a>
+<h1><A href='#toptopTE5VR0NZM'> 3. TODO </A></h1>
+<p>
+<b>没有最好，只有更好！</b>
+</p>
+<dl>
+<dt>现在:</dt><dd>
+    <ol>
+    <li>通过 SVN 在本地使用t2t 格式来写作
+    </li>
+    <li>通过 SVN hooks 自动处理服务端的文章输出
+    </li>
+    <li>PyBlosxom 中的专用格式处理脚本，识别并辅助处理了 xhtml 输出!
+    </li>
+    </ol>
+</dd>
+<dt>但是:</dt><dd>
+    不能聪明的识别不同的原始文件来提供下载哪！
+    如果是 .py 的，在 <i>永久链接 .t2t .moin</i> 处的其它链接就有问题！
+    <ul>
+    <li>询问列表，却没有人回答:
+<pre>
+发件人: will guaraldi &lt;willg@bluesock.org&gt;	邮送域: lists.sourceforge.net
+收件人: pyblosxom-devel@lists.sourceforge.net
+日期: 2006-1-25 上午12:15
+主题: [Pyblosxom-devel] will's status
+
+Just as an fyi, my email client is still having problems with Zoom's
+emails so I haven't read any of them yet.
+
+I also started classes a week and a half ago and I'm working part time
+this semester.  As such, I'm going to be laying low on PyBlosxom stuff
+including fielding user requests and help for a while.  I'll try to get to
+bugs and user isues at least once a month.
+
+I am also still sitting on a contributed plugins release--that's first
+priority.  I need to go through and fix the logging issues on plugins I
+don't use.
+
+/will
+
+</pre>
+    </li>
+    <li>呜乎哀哉！看来 Gmail 并不是完美的哪！俺的询问邮件没有中文字符的哪！
+    连标点也不敢使用中文的...
+    </li>
+    </ul>
+</dd>
+</dl>
+
+<a id="toc5R01YRENMU" name="toc5R01YRENMU"></a>
+<h2><A href='#toptopTE5VR0NZM'> 3.1. 技术文档 </A></h2>
+<dl>
+<dt><a href="http://pyblosxom.sourceforge.net/1.3/manual/x307.html#AEN356">PyBlosoxm模板中有效变量</a></dt><dd>
+    但是！
+    <ul>
+    <li><b>file_path</b> just the filename and extensions of the entry
+     <ul>
+     <li>就是仅仅输出了文件名儿，没有后缀的说
+     </li>
+     <li>开源项目的文档是极其重要的组成部分，有多少项目是因为文档不全而自然消亡的哪…………
+     </li>
+     </ul>
+    </li>
+    </ul>
+</dd>
+</dl>
+
+<dl>
+<dt>技术文档樣文:</dt><dd>
+    日本人作的就是要好些:
+        <ul>
+        <li><b><a href="../060117-OSSdocDemoJPS.phtm">FreeBSD unionfsの改善提案</a></b>
+        </li>
+        </ul>
+</dd>
+</dl>
+
+<hr class="light" />
+<p>
+动力源自::<b><a href="http://txt2tags.sf.net">txt2tags</a></b>
+</p>
+<p>
+<img align="middle" src="/pybimage/technorati-over.gif" border="0" alt=""/>
+    <a href="http://www.technorati.com/tags/OpenSource">OpenSource</a>
+    ,<a href="http://www.technorati.com/tags/PyBlosxom">PyBlosxom</a>
+    ,<a href="http://www.technorati.com/tags/hacking">hacking</a>
+</p>
+</div>
+
+<!-- xhtml code generated by txt2tags 2.4 (http://txt2tags.sf.net) -->
+<!-- cmdline: txt2tags ./techic/PyBlosxom/PyblosxomFixLog4-2006-01-21-23-23.t2t -->
+
+  </content>
+
+  <rdf:Seq>
+
+<rdf:Description rdf:about="/pyblosxom/techic/PyBlosxom/PyblosxomFixLog3-2006-01-20-23-23">
+  <dc:title> [hack3]定制entry文本格式 </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2006-01-20T15:23:00Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <div class="header" id="header">
+<a name='toptopTE5VR0NZM' id='toptopTE5VR0NZM'></a><h1>[hack3]定制entry文本格式</h1>
+<h2>preformatters 的扩展</h2>
+<h3>t2t渲染:2010-10-09 02:21:39</h3>
+</div>
+
+<div class="toc" id="toc">
+  <ol>
+  <li><a href="#toc1R0VYQ0JaT">分析</a>
+  </li>
+  <li><a href="#toc2R0lYQ0JaT">尝试</a>
+    <ul>
+    <li><a href="#toc3R0lYRENMU">2.1. t2t all!</a>
+      <ul>
+      <li><a href="#toc4R0lYRENMU">2.1.1. 八股化写作</a>
+      </li>
+      </ul>
+    </li>
+    </ul>
+  </li>
+  </ol>
+
+</div>
+<div class="body" id="body">
+<a id="toc1R0VYQ0JaT" name="toc1R0VYQ0JaT"></a>
+<h1><A href='#toptopTE5VR0NZM'> 1. 分析 </A></h1>
+<dl>
+<dt><a href="http://pyblosxom.sourceforge.net/1.3/manual/c651.html">http://pyblosxom.sourceforge.net/1.3/manual/c651.html</a></dt><dd>
+  默许提供:: txt(html),genericwiki,moin,py,txtl,rst文本格式来Blogging！
+  <ul>
+  <li>标记签文本:
+      <ol>
+      <li>.txt(html) 不用说，麻烦！不用！
+      </li>
+      </ol>
+  </li>
+  <li>自然文本:
+      <ol>
+      <li>.py 咳咳咳，只能代码引用时哪！而且没有行号也要修改
+      </li>
+      </ol>
+  </li>
+  <li>结构化文本:
+      <ol>
+      <li>.rst 丰富！强大！但是复杂！难用，内存也占的大
+      </li>
+      <li>.txtl 很好，但是依赖很多系统工具
+      </li>
+      <li>.moin 赞！但是不支持MoinMoin 1.3.x 以后的不会hack ,问了，也没人回复，呜乎哀哉
+      </li>
+      <li>.genericwiki 用过MoinMoin 的人，绝对不想这种原始 wiki 格式的！
+  怎么办，什么都不顺手！
+  那未就自个儿DIY!
+      </li>
+      </ol>
+  </li>
+  </ul>
+</dd>
+</dl>
+
+<a id="toc2R0lYQ0JaT" name="toc2R0lYQ0JaT"></a>
+<h1><A href='#toptopTE5VR0NZM'> 2. 尝试 </A></h1>
+<p>
+安装 <b><a href="http://txt2tags.sourceforge.net">txt2tags</a></b> 先:
+</p>
+ <ol>
+ <li>在FreeBSD 中有内含的!
+<pre>
+#cd /usr/ports/textproc/txt2tags
+#make install clean
+</pre>
+ </li>
+ <li>需要按照说明,将 <b>txt2tags</b> 执行文件复制到 <code>/usr/bin</code> 中
+ </li>
+ </ol>
+
+<a id="toc3R0lYRENMU" name="toc3R0lYRENMU"></a>
+<h2><A href='#toptopTE5VR0NZM'> 2.1. t2t all! </A></h2>
+<p>
+保持<img align="middle" src="/pybimage/kiss.jpg" border="0" alt=""/>是我的本意
+</p>
+<dl>
+<dt>发布流程</dt><dd>
+    我设想的Blogging flow: 
+        <ol>
+        <li>本地撰写
+        </li>
+        <li>上传系统
+        </li>
+        <li>自动生成多格式文件
+        </li>
+        <li>PyBlosxom 发布 .xhtml 的
+        </li>
+        <li>同时提供 .t2t 原件和 .moin 格式的下载
+        </li>
+        </ol>
+</dd>
+<dt>对应支持</dt><dd>
+    已经可以进行的:        
+        <ol>
+        <li>本地撰写 -- <a href="http://wiki.woodpecker.org.cn/moin/LeoEnvironment">Leo</a>
+<img align="middle" src="/pybimage/snap060124-leo-pyblosom.png" border="0" alt=""/>
+        </li>
+        <li>上传系统 -- 透过 <a href="http://wiki.woodpecker.org.cn/moin/SubversionHooks">SVNhookscript</a>自动从服务端检出到对应目录
+        </li>
+        <li>自动生成多格式文件 -- ?是SVN hooks 还是创建 t2t.py 预格式化处理?
+        </li>
+        <li>PyBlosxom 发布 .xhtml 的 -- 设置默许格式就好!
+        </li>
+        <li>同时提供 .t2t 原件和 .moin 格式的下载 -- 模板的处理
+        </li>
+        </ol>
+</dd>
+</dl>
+
+<a id="toc4R0lYRENMU" name="toc4R0lYRENMU"></a>
+<h3><A href='#toptopTE5VR0NZM'> 2.1.1. 八股化写作 </A></h3>
+<p>
+    嗯哪……<img align="middle" src="/pybimage/snap060125-leo-pybt2t.png" border="0" alt=""/> 这样一来，格式漂亮的文章，
+    根本就<b>"八股化"</b> 了！ 在 Leo 中，仅仅保持固定的几个预定义节点，
+    其它的就不用理会，随便写，怎么样都会自动组织成非常规范的文章，
+    比在各种Blog 系统中，所谓<b>WYSIWYG</b>编辑环境中，反复调整不得，
+    结构化文本的<b>WYTIWYG</b>是绝对快感的！
+</p>
+    <ul>
+    <li><a href="http://learn.tsinghua.edu.cn:8080/2001315450/tex/tex_start.html">王垠很早有介绍</a>
+    <b>所见即所得vs所想即所得</b>
+    </li>
+    <li><a href="http://blog.cathayan.org/item/920">有诗证曰:</a>
+<pre>
+文本文件好
+工具遍地跑
+程序两三行
+全部改好了
+</pre>
+哈哈哈！
+    <p></p>
+= TODO =
+    <p></p>
+Blog 不同于静态文章,需要有一些SNS配合的输出,t2t 没有进行专门的支持,要进行深入hack:
+    <p></p>
+    </li>
+    </ul>
+
+<dl>
+<dt><a href="http://www.technorati.com">technorati</a>支持</dt><dd>
+    链接要类似
+<pre>
+&lt;a href="http://technorati.com/tag/nomeans" rel="tag"&gt;nomeans&lt;/a&gt;
+</pre>
+<p></p>
+    有<code>rel="tag"</code> 声明! t2t 输出的链接没有!
+    hacking!
+<p></p>
+</dd>
+<dt>xhtml 的输出:</dt><dd>
+    每篇Blog的原文通过 Leo 的节点共用统一的格式声明:
+<pre>
+%%date(%Y-%m-%d %I:%M:%S)
+
+%! Target  : xhtml
+%! Encoding: UTF-8
+%! Options : --toc --css-sugar --enum-title
+</pre>
+<p></p>
+    要求 t2t 输出为 xhtml格式，以utf-8 编码，
+    要整理出章节索引，并以CSS样式友好的形式组织,并数字式列表之!
+    <ul>
+    <li>要fixed的问题:
+        <ol>
+        <li>完整的 xhtml 输出含有 head标签内容，
+        这样一来PyBlosxom输出时一页会含有多个head,不利于搜索，也浪费数据！
+        但是<code>--no-headers</code>参数的输出 却没有了主副标题的组织，两难哪！
+        </li>
+        <li>索引链接的 anchor 输出，太简单！如果一页内含了多个t2t 输出页面的话一定有冲突！
+        需要学习MoinMoin 的索引锚点，加入hash的混淆区分！
+        </li>
+        </ol>
+    </li>
+    </ul>
+</dd>
+</dl>
+
+<hr class="light" />
+<p>
+动力源自::<b><a href="http://txt2tags.sf.net">txt2tags</a></b>
+</p>
+<p>
+<img align="middle" src="/pybimage/technorati-over.gif" border="0" alt=""/>
+    <a href="http://www.technorati.com/tags/OpenSource">OpenSource</a>
+    ,<a href="http://www.technorati.com/tags/PyBlosxom">PyBlosxom</a>
+    ,<a href="http://www.technorati.com/tags/hacking">hacking</a>
+</p>
+</div>
+
+<!-- xhtml code generated by txt2tags 2.4 (http://txt2tags.sf.net) -->
+<!-- cmdline: txt2tags ./techic/PyBlosxom/PyblosxomFixLog3-2006-01-20-23-23.t2t -->
+
+  </content>
+
+  <rdf:Seq>
+
+<rdf:Description rdf:about="/pyblosxom/techic/PyBlosxom/PyblosxomFixLog2-2006-01-15-23-23">
+  <dc:title> [hack2]允许评注 </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2006-01-15T15:23:00Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <div class="header" id="header">
+<a name='toptopTE5VR0NZM' id='toptopTE5VR0NZM'></a><h1>[hack2]允许评注</h1>
+<h2>comments.py的安装</h2>
+<h3>t2t渲染:2010-10-09 02:21:38</h3>
+</div>
+
+<div class="toc" id="toc">
+</div>
+<div class="body" id="body">
+<dl>
+<dt><a href="http://pyblosxom.sourceforge.net/1.3/manual/c857.html">http://pyblosxom.sourceforge.net/1.3/manual/c857.html</a></dt><dd>
+  怎么着？一个最普通的评注要这么复杂才能够成功？！
+  呜乎哀哉…………
+  <ul>
+  <li>最后发现还是老实的按照说明步骤一步接一步的来才不会有"惊奇"
+  </li>
+  <li>可以参考以前
+  <a href="http://wiki.woodpecker.org.cn/moin/PyBlosxomIniComments">limodou的体验</a>
+  <p></p>
+  </li>
+  </ul>
+</dd>
+<dt>速度</dt><dd>
+    为什么 PyBlxosom 的 comment 时的响应速度如此慢？！
+    <ul>
+    <li>果然不是 XML 的事儿！
+    </li>
+    <li>是 smtp 发送提醒邮件时失败而长期等候,只能 不使用提醒先睹  
+    </li>
+    </ul>
+</dd>
+</dl>
+
+<p>
+草看了一下子 <a href="plugins/latest_comments.phtm">comments.py</a> 真是牛哪！
+</p>
+ <ul>
+ <li><code>from xml.sax import make_parser, SAXException</code>
+ </li>
+ <li>使用 sax 事务性XML解析器进行的处理，
+ </li>
+ <li>作者<a href="http://www.sauria.com/blog">Ted Leung</a>是<img align="middle" src="/pybimage/pyb-TedLeung.jpg" border="0" alt=""/> <a href="http://www.amazon.com/gp/product/0764543555/103-4617059-9959043?n=283155">《Professional XML Development with Apache Tools》</a>的作者！怪不得使用这么专业的处理手法
+ <p></p>
+ </li>
+ <li>情急乱投医时有邮件往来:
+<pre>
+发件人: Ted Leung &lt;twl@sauria.com&gt;	邮送域: sauria.com
+收件人: Zoom Quiet &lt;zoom.quiet@gmail.com&gt;
+日期: 2006-1-24 下午2:54
+主题: Re: [bug]comments recoder double info. ?
+...
+I am no longer maintaining the comments plugin.  The appropriate
+place to get the answer to your question is pyblosxom-devel.   I get
+several hundred e-mails per day, and you are doubling your share of
+the traffic by copying me personally.  I see the messages that go to
+pyblosxom-devel.  There is no need to send me an extra copy.
+</pre>
+ </li>
+ <li>嗬嗬 不是第一次向他批发询问邮件了，还如此好脾气的指导，大师的风范！学习之！
+ </li>
+ <li>其实通过将毎条评注依照对应的目录，分布记录在文件系统中，
+ 然后使用XML集中进行处理，实在是最明快的处理方式了，只是没有提供管理的入口？
+ </li>
+ </ul>
+
+<hr class="light" />
+<p>
+动力源自::<b><a href="http://txt2tags.sf.net">txt2tags</a></b>
+</p>
+<p>
+<img align="middle" src="/pybimage/technorati-over.gif" border="0" alt=""/>
+    <a href="http://www.technorati.com/tags/OpenSource">OpenSource</a>
+    ,<a href="http://www.technorati.com/tags/PyBlosxom">PyBlosxom</a>
+    ,<a href="http://www.technorati.com/tags/hacking">hacking</a>
+</p>
+</div>
+
+<!-- xhtml code generated by txt2tags 2.4 (http://txt2tags.sf.net) -->
+<!-- cmdline: txt2tags ./techic/PyBlosxom/PyblosxomFixLog2-2006-01-15-23-23.t2t -->
+
+  </content>
+
+  <rdf:Seq>
+
+<rdf:Description rdf:about="/pyblosxom/techic/PyBlosxom/PyblosxomFixLog-2006-01-10-23-23">
+  <dc:title> [hack1]理解Flavours </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2006-01-10T15:23:00Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <div class="header" id="header">
+<a name='toptopTE5VR0NZM' id='toptopTE5VR0NZM'></a><h1>[hack1]理解Flavours</h1>
+<h2>规划部属</h2>
+<h3>t2t渲染:2010-10-09 02:21:38</h3>
+</div>
+
+<div class="toc" id="toc">
+  <ol>
+  <li><a href="#toc1R0VYQ0JaR">体验</a>
+    <ul>
+    <li><a href="#toc2R0VYRENMU">1.1. 部属</a>
+    </li>
+    </ul>
+  </li>
+  </ol>
+
+</div>
+<div class="body" id="body">
+<a id="toc1R0VYQ0JaR" name="toc1R0VYQ0JaR"></a>
+<h1><A href='#toptopTE5VR0NZM'> 1. 体验 </A></h1>
+<dl>
+<dt><a href="http://pyblosxom.sourceforge.net/1.3/manual/c218.html">http://pyblosxom.sourceforge.net/1.3/manual/c218.html</a></dt><dd>
+  反复尝试不果！
+  终于发现是<b>版本问题</b>，要使用1.3 自带的Flavours才可能成功运行
+  …………呜乎哀哉！！
+<p></p>
+本来仅仅是要先安装一个最基本的PyBlosxom ,结果一折腾牵出了各种问题,工具的理解,定制...
+<p></p>
+模板,PyBlosxom 中叫 Flavours,其实就是和系统配合的简单Python 模板系统,
+<p></p>
+和我们在CherryPy 或是 Python 默许的模板系统中一样 <code>$var</code> 安放在HTML 中,通过渲染输出最终页面
+<p></p>
+只是 PyBlosxom 升级到 1.3.0 以后各种变量都有变化,于以前的模板完全不能兼容,而且 <b>contrib</b>--工具集也没有释放,可以下载的 contrib.1.2.2仅仅针对 v 1.2x版本的系统,
+<p></p>
+反复了几次,还是老实的从 sf.net 的CVS 中检出最新版本的,这才成功.
+</dd>
+</dl>
+
+<a id="toc2R0VYRENMU" name="toc2R0VYRENMU"></a>
+<h2><A href='#toptopTE5VR0NZM'> 1.1. 部属 </A></h2>
+<p>
+特殊的,根据以往经验进行了web server 的配合发布
+</p>
+<pre>
++--flavours     各种模板
+|  +--atom.flav
+|  +--error.flav
+|  +--html.flav
+|  +--phtm.flav
+|  +--rss.flav
+|  \--rss20.flav
++--plugins      各种插件使用
+|  +--comments
+|  +--lucene
+|  +--meta_plugins
+|  +--preformatters
+|  \--xmlrpc_plugins
+\--zoomquiet    我的PyBlosxom 实例
+   +--cache     
+   +--comment   评注数据
+   +--data      Blog 内容
+   |  +--OpenSource
+   |  |  +--...
+   |  \--Zen
+   |     +--...
+   +--log       日志
+   +--stat      统计数据
+   +--static    静态页面存储
+   \--web       web 服务发布
+</pre>
+<p></p>
+<p>
+在Apache 中:
+</p>
+<pre>
+    Alias /styles "/path/to/flavours/"
+    &lt;Directory "/path/to/flavours"&gt;
+    ...
+    Alias /entry "/path/to/zoomquiet/data/"
+    &lt;Directory "/path/to/zoomquiet/data"&gt;
+    ...
+</pre>
+<dl>
+<dt><b>/styles</b> </dt><dd>
+    样式发布目录,来为将来的多用户分享模板作准备
+</dd>
+<dt><b>/entry</b> </dt><dd>
+    内容发布目录,为将来的日志正文下载作准备
+</dd>
+</dl>
+
+<hr class="light" />
+<p>
+动力源自::<b><a href="http://txt2tags.sf.net">txt2tags</a></b>
+</p>
+<p>
+<img align="middle" src="/pybimage/technorati-over.gif" border="0" alt=""/>
+    <a href="http://www.technorati.com/tags/OpenSource">OpenSource</a>
+    ,<a href="http://www.technorati.com/tags/PyBlosxom">PyBlosxom</a>
+    ,<a href="http://www.technorati.com/tags/hacking">hacking</a>
+</p>
+</div>
+
+<!-- xhtml code generated by txt2tags 2.4 (http://txt2tags.sf.net) -->
+<!-- cmdline: txt2tags ./techic/PyBlosxom/PyblosxomFixLog-2006-01-10-23-23.t2t -->
+
+  </content>
+
+  <rdf:Seq>
+
+<rdf:Description rdf:about="/pyblosxom/techic/PyBlosxom/PyblosxomInstallog-2006-01-01-23-23">
+  <dc:title> PyBlosxom 重启 </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2006-01-01T15:23:00Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <div class="header" id="header">
+<a name='toptopS0I0VUUzR' id='toptopS0I0VUUzR'></a><h1>PyBlosxom 重启</h1>
+<h2>定制笔记</h2>
+<h3>t2t渲染:2010-10-09 02:21:38</h3>
+</div>
+
+<div class="toc" id="toc">
+  <ol>
+  <li><a href="#toc1R0VYQ0JaT">初始安装</a>
+  </li>
+  <li><a href="#toc2R0lYQ0IyR">规划</a>
+    <ul>
+    <li><a href="#toc3R0lYRENMU">2.1. PyBlosxom</a>
+    </li>
+    </ul>
+  </li>
+  </ol>
+
+</div>
+<div class="body" id="body">
+<a id="toc1R0VYQ0JaT" name="toc1R0VYQ0JaT"></a>
+<h1><A href='#toptopS0I0VUUzR'> 1. 初始安装 </A></h1>
+<dl>
+<dt><a href="http://pyblosxom.sourceforge.net/1.3/manual/x74.html">http://pyblosxom.sourceforge.net/1.3/manual/x74.html</a></dt><dd>
+  任何一步都不能少！！！
+  折腾了几天才发现，默许的只识别 .txt 文件的！！
+  原先就是在 BSD 中只安放了 "firstpost" 文本文件， 
+  所以,一直报怨没有找到页面的输出…………呜乎哀哉！！
+</dd>
+</dl>
+
+<a id="toc2R0lYQ0IyR" name="toc2R0lYQ0IyR"></a>
+<h1><A href='#toptopS0I0VUUzR'> 2. 规划 </A></h1>
+<p>
+一个实用的，简练的Blog 系统到底需要哪些功能？
+</p>
+ <ol>
+ <li>按照用户喜欢的格式来写
+ </li>
+ <li>样式可定制
+ </li>
+ <li>备份方便
+ </li>
+ <li>有SNS功能
+ </li>
+ </ol>
+
+<p></p>
+<p>
+齐了！其它的各种功能不过是对应的加强了
+</p>
+<a id="toc3R0lYRENMU" name="toc3R0lYRENMU"></a>
+<h2><A href='#toptopS0I0VUUzR'> 2.1. PyBlosxom </A></h2>
+<dl>
+<dt>[PyBlosxom <a href="http://wiki.woodpecker.org.cn/moin/PyBlosxom">http://wiki.woodpecker.org.cn/moin/PyBlosxom</a>?]</dt><dd>
+    是<a href="http://blosxom.com/">blosxom</a>的Python Clone 
+    <ul>
+    <li><b>优点</b>:
+        <ol>
+        <li>不用DB
+        </li>
+        <li>插件化
+        </li>
+        <li>简单
+        </li>
+        </ol>
+    </li>
+    <li><i>缺点</i>:
+        <ul>
+        <li>速度?
+        </li>
+        <li>部属?
+        </li>
+        </ul>
+    </li>
+    </ul>
+</dd>
+</dl>
+
+<p>
+反正,是轻型的个人Blog 系统,就当作Python 应用练习了!
+</p>
+<p>
+Pure Python 系统哪!嗯哪……就是求个Cool.
+</p>
+<hr class="light" />
+<p>
+动力源自::<b><a href="http://txt2tags.sf.net">txt2tags</a></b>
+</p>
+<p>
+<img align="middle" src="/pybimage/technorati-over.gif" border="0" alt=""/>
+    <a href="http://www.technorati.com/tags/OpenSource">OpenSource</a>
+    ,<a href="http://www.technorati.com/tags/PyBlosxom">PyBlosxom</a>
+    ,<a href="http://www.technorati.com/tags/hacking">hacking</a>
+</p>
+</div>
+
+<!-- xhtml code generated by txt2tags 2.4 (http://txt2tags.sf.net) -->
+<!-- cmdline: txt2tags ./techic/PyBlosxom/PyblosxomInstallog-2006-01-01-23-23.t2t -->
+
+  </content>
+
+  <rdf:Seq>
+
+<rdf:Description rdf:about="/pyblosxom/techic/PyBlosxom/plugins/xhtml">
+  <dc:title> xhtml.py </dc:title>
+  <dc:creator> Zoom.Quiet &lt;zoomquiet+blog [AT] gmail.com&gt; </dc:creator>
+  <dc:date> 2005-04-01T15:23:00Z </dc:date>
+  <dc:language> zh </dc:language>
+  <dc:format> text/html </dc:format>
+  <dc:rights> Copyright 2001-2012 Zoom.Quiet </dc:rights>
+
+  <content>
+    <pre class="brush: python"># -*- coding: utf-8 -*-
+"""XHTML - html Parser
+    - 仅仅适用于 t2t 输出的xhtml
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the "Software"), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify,
+merge, publish, distribute, sublicense, and/or sell copies of the
+Software, and to permit persons to whom the Software is furnished
+to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Copyleft 2005, 2006 Zoom.Quiet
+
+"""
+
+
+## Leo: tab_width=-4 page_width=80
+PREFORMATTER_ID = 'xhtml'
+FILE_EXT = 'xhtml'
+__version__ = "v10.4.14"
+__author__ = 'Zoom.Quiet <Zoom.Quiet at gmail.com>'
+#__url__ = "http://blog.zoomquiet.org/pyblosxom/OpenSource/PyBlosxom/plugins/xhtml.phtm"
+__url__ = "http://blog.zoomquiet.org/pyblosxom/techic/PyBlosxom/plugins/xhtml.html"
+
+__description__ = "txt2tags export xhmtl entry - Pyblosxom Parser."
+
+from Pyblosxom import tools
+
+def cb_entryparser(args):
+    args['xhtml'] = parse
+    return args
+def parse(filename, request):
+    import os, sys
+    config = request.getConfiguration()
+    ## 简单处理,基于 t2t 2.4.3
+    source = open(filename,"r").readlines()
+    body = "".join(source[11:-1])
+    #print source[6]
+    title = source[6][7:-9]
+    #print source[14]
+    #tags = source[14][4:-6]
+    #print tags
+    '''
+    title = ""
+    for line in open(filename,"r").readlines():
+        if "<title>" in line:
+            title=line[7:].replace("</title>","")
+            break
+    if "" == title:
+        title = filename.replace(config['datadir'], '')
+    '''
+    entryData = {'body' : body
+                 ,'title' : title
+                 #,'tags' : tags
+                 #filename.replace(config['datadir'], '')
+                 }
+
+    return entryData
+
+</pre>
+  </content>
+
+  <rdf:Seq>
+
+  </rdf:Seq>
+</rdf:Description>
+</rdf:RDF>

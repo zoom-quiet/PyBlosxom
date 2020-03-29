@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/techic/PyBlosxom/PyblosxomFixLog7-2006-01-27-23-23.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/techic/PyBlosxom/PyblosxomFixLog7-2006-01-27-23-23.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/techic/PyBlosxom/PyblosxomFixLog7-2006-01-27-23-23.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2006-01-27T15:23:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">[hack7]Plugins</title>
+<category term="" />
+<id>/pyblosxom/2006/01/27/PyblosxomFixLog7-2006-01-27-23-23</id>
+<updated>2006-01-27T15:23:00Z</updated>
+<published>2006-01-27T15:23:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/PyBlosxom/PyblosxomFixLog7-2006-01-27-23-23.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopTE5VR0NZM&#x27; id=&#x27;toptopTE5VR0NZM&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;[hack7]Plugins&lt;&#x2F;h1&gt;
+&lt;h2&gt;插件扩展之旅……&lt;&#x2F;h2&gt;
+&lt;h3&gt;t2t渲染:2010-10-09 02:21:39&lt;&#x2F;h3&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0JaV&quot;&gt;总体上&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc2R0lYQ0JaT&quot;&gt;已安装&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc3R01YQ0JaT&quot;&gt;垂涎的&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc4R1FYQ0JaT&quot;&gt;发布邪？&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0JaV&quot; name=&quot;toc1R0VYQ0JaV&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTE5VR0NZM&#x27;&gt; 1. 总体上 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;dl&gt;
+&lt;dt&gt;&lt;a href=&quot;http:&#x2F;&#x2F;pyblosxom.sourceforge.net&#x2F;blog&#x2F;static&#x2F;development&quot;&gt;贡献规范&lt;&#x2F;a&gt;&lt;&#x2F;dt&gt;&lt;dd&gt;
+    约定了开发插件的代码规范！
+    另外有丰富，标准的API信息:
+        &lt;ol&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;pyblosxom.sourceforge.net&#x2F;1.3&#x2F;api&#x2F;index.html&quot;&gt;1.3 API&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;pyblosxom.sourceforge.net&#x2F;1.3&#x2F;plugins&#x2F;index.html&quot;&gt;1.3 plugin API&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;pyblosxom.sourceforge.net&#x2F;1.3&#x2F;plugins&#x2F;public&#x2F;docs.ReadMeForPlugins-module.html&quot;&gt;1.3 callbacks&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ol&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;故！&lt;&#x2F;dt&gt;&lt;dd&gt;
+    可以标准化的安装，hacking 和分享！赞！
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;别传:&lt;&#x2F;dt&gt;&lt;dd&gt;
+&lt;pre&gt;
+Response Headers - http:&#x2F;&#x2F;pyblosxom.sourceforge.net&#x2F;1.3&#x2F;API&#x2F;index.html
+
+Date: Fri, 27 Jan 2006 03:31:00 GMT
+Server: Apache&#x2F;1.3.33 (Unix) PHP&#x2F;4.3.10
+X-Powered-By: PHP&#x2F;4.3.10
+Connection: keep-alive
+Content-Type: text&#x2F;html
+Transfer-Encoding: chunked
+
+404 Not Found
+&lt;&#x2F;pre&gt;
+    嘿嘿嘿，无意中发现 PyBlosxom 的服务端使用的是 PHP 发布？！
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc2R0lYQ0JaT&quot; name=&quot;toc2R0lYQ0JaT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTE5VR0NZM&#x27;&gt; 2. 已安装 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;dl&gt;
+&lt;dt&gt;直接使用的&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ol&gt;
+    &lt;li&gt;&quot;pycalendar&quot; 日历
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&quot;pycategories&quot; 简要分类
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&quot;pyarchives&quot; 月度归档
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&quot;py&quot; Python 语法颜色渲染
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&quot;comments&quot; 评注
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;少量修改的:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ol&gt;
+    &lt;li&gt;&quot;latest_comments&quot; 最新评注
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;自个儿开发的:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ol&gt;
+    &lt;li&gt;&quot;xhtml&quot; 简单XHTML 文本格式
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc3R01YQ0JaT&quot; name=&quot;toc3R01YQ0JaT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTE5VR0NZM&#x27;&gt; 3. 垂涎的 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;dl&gt;
+&lt;dt&gt;安装未果的&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ol&gt;
+    &lt;li&gt;&quot;moinmoin&quot; 格式文本处理器(不支持高版本MoinMoin)
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&quot;trackback&quot; 安装文档看不明(好象也没有人使用TB 哪!)
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;&lt;b&gt;一定要安装的&lt;&#x2F;b&gt;&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;ol&gt;
+    &lt;li&gt;&quot;commentAPI&quot; 嗯嗯!可以结合Greasemonkey 开发插件式的评注工具哪!
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&quot;folksonomy&quot; 呜乎哀哉!垂涎哪!象美味书签哪样儿的标签化分类
+        &lt;ul&gt;
+        &lt;li&gt;&quot;keywords&quot; 同上,类似
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.codeape.org&#x2F;blog&#x2F;static&#x2F;download&quot;&gt;pyguest&lt;&#x2F;a&gt; 
+    简单留言板
+    &lt;p&gt;&lt;&#x2F;p&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;bluesock.org&#x2F;~willg&#x2F;cgi-bin&#x2F;pybltrac.cgi&#x2F;wiki&quot;&gt;Will&#x27;s 系列插件&lt;&#x2F;a&gt;
+        &lt;ol&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;bluesock.org&#x2F;~willg&#x2F;cgi-bin&#x2F;pybltrac.cgi&#x2F;wiki&#x2F;plugininfo&quot;&gt;plugininfo&lt;&#x2F;a&gt; 自动汇报使用插件情况
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;bluesock.org&#x2F;~willg&#x2F;cgi-bin&#x2F;pybltrac.cgi&#x2F;wiki&#x2F;pystaticfile&quot;&gt;pystaticfile&lt;&#x2F;a&gt;发布静态说明性文章;类似 aboutme 之类的...
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;bluesock.org&#x2F;~willg&#x2F;cgi-bin&#x2F;pybltrac.cgi&#x2F;wiki&#x2F;wbgarchives&quot;&gt;wbgarchives&lt;&#x2F;a&gt; 年度文章&lt;a href=&quot;http:&#x2F;&#x2F;bluesock.org&#x2F;~willg&#x2F;blog&#x2F;2005&#x2F;&quot;&gt;汇总页面&lt;&#x2F;a&gt;
+            &lt;ul&gt;
+            &lt;li&gt;应该说,可以类比的写出分类汇兑插件
+            &lt;&#x2F;li&gt;
+            &lt;&#x2F;ul&gt;
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;bluesock.org&#x2F;~willg&#x2F;cgi-bin&#x2F;pybltrac.cgi&#x2F;wiki&#x2F;wbggrep&quot;&gt;wbggrep&lt;&#x2F;a&gt; grep搜索引擎,嗬嗬!&lt;b&gt;Uinx 系统专用&lt;&#x2F;b&gt;的便利,不用求助于Google&#x2F;lucene 什么了!
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;bluesock.org&#x2F;~willg&#x2F;cgi-bin&#x2F;pybltrac.cgi&#x2F;wiki&#x2F;wbgpager&quot;&gt;wbgpager&lt;&#x2F;a&gt;多页指引
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;bluesock.org&#x2F;~willg&#x2F;cgi-bin&#x2F;pybltrac.cgi&#x2F;wiki&#x2F;wbgrecent&quot;&gt;wbgrecent&lt;&#x2F;a&gt;综合&quot;最新&quot;&lt;a href=&quot;http:&#x2F;&#x2F;bluesock.org&#x2F;~willg&#x2F;blog&#x2F;recent&quot;&gt;效果:&lt;&#x2F;a&gt;
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ol&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc4R1FYQ0JaT&quot; name=&quot;toc4R1FYQ0JaT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTE5VR0NZM&#x27;&gt; 4. 发布邪？ &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+已经有人问及中文版本的 theme 什么时候发布了!
+&lt;&#x2F;p&gt;
+&lt;dl&gt;
+&lt;dt&gt;contribute 分发!&lt;&#x2F;dt&gt;&lt;dd&gt;
+    也是技术活,怎么样组织和说明才可以令其它人安然的安装各种插件成功?
+    不如象 &lt;a href=&quot;http:&#x2F;&#x2F;www.tiddlywiki.com&#x2F;&quot;&gt;TiddlyWiki&lt;&#x2F;a&gt; 那样儿,
+    整个完整的,立等可取用的系统合包?
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;technorati-over.gif&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;OpenSource&quot;&gt;OpenSource&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;PyBlosxom&quot;&gt;PyBlosxom&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;hacking&quot;&gt;hacking&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;SNS&quot;&gt;SNS&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;techic&#x2F;PyBlosxom&#x2F;PyblosxomFixLog7-2006-01-27-23-23.t2t --&gt;
+</content>
+</entry>
+</feed>

@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/2005/04/01/index.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/2005/04/01/index.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/2005/04/01/index.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2005-04-01T15:23:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">TXT2TAGS 示例</title>
+<category term="/utility/py4str/StructuredText" />
+<id>/pyblosxom/2005/04/01/t2tdemo-2005-04-01-23-23</id>
+<updated>2005-04-01T15:23:00Z</updated>
+<published>2005-04-01T15:23:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/utility/py4str/StructuredText/t2tdemo-2005-04-01-23-23.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopS1JNRklNU&#x27; id=&#x27;toptopS1JNRklNU&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;TXT2TAGS 示例&lt;&#x2F;h1&gt;
+&lt;h2&gt;~ by ZoomQuiet&lt;&#x2F;h2&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0JaR&quot;&gt;介绍 Intro.&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc2R0VYRENMU&quot;&gt;1.1. 文档声明&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc3R0lYQ0JaT&quot;&gt;字体与美化 Fonts and Beautifiers&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc4R0lYRENMU&quot;&gt;2.1. 美化 Beautifiers&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc5R0lYREVMU&quot;&gt;2.2. 更多的装饰 More Cosmetics&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc6R01YQ0JaT&quot;&gt;列表&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc7R01YRENMU&quot;&gt;3.1. 普通列表 Plain List&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc8R01YREVMU&quot;&gt;3.2. 数字列表 Numbered List&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc9R01YREdMU&quot;&gt;3.3. 定义列表 Definition List&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc10R1FYQ0IyR&quot;&gt;表格 Tables&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc11R1VYQ0JaN&quot;&gt;特殊实体 Special Entities&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc12R1VYRENMU&quot;&gt;5.1. 图片 Images&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;&lt;a href=&quot;#toc13R1VYREVMU&quot;&gt;5.2. 其它 Other&lt;&#x2F;a&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0JaR&quot; name=&quot;toc1R0VYQ0JaR&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopS1JNRklNU&#x27;&gt; 1. 介绍 Intro. &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+欢迎阅读 txt2tags 示例文件！
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+这里你可以看到常用的所有 t2t 使用
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+文件的头二行是文档的基本信息，
+按照以下顺序填写:
+&lt;&#x2F;p&gt;
+&lt;pre&gt;
+行 1: 文档标题
+行 2: 作者名，邮箱
+行 3: 日期，时间
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;
+空行，是自然段间的分隔
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+中文用户，一般要再单另一行声明编码:
+&lt;&#x2F;p&gt;
+&lt;pre&gt;
+%!encoding: gb2312
+&lt;&#x2F;pre&gt;
+&lt;p&gt;
+最好使用更加通用的Unicode 编码:
+&lt;&#x2F;p&gt;
+&lt;pre&gt;
+%!encoding: UTF-8
+&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc2R0VYRENMU&quot; name=&quot;toc2R0VYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopS1JNRklNU&#x27;&gt; 1.1. 文档声明 &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+使用编辑环境时最好加入类似文档声明:
+&lt;&#x2F;p&gt;
+&lt;pre&gt;
+%! Target  : html
+%! Options : --toc --css-inside
+%! Options : --css-sugar
+%! Style   : css&#x2F;moin.css
+
+&lt;&#x2F;pre&gt;
+&lt;p&gt;
+说明本文输出时的重要参数:
+&lt;&#x2F;p&gt;
+ &lt;ol&gt;
+ &lt;li&gt;输出为标准HTML标签格式
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;要文档标题索引，并将CSS形式表包含在文档内
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;将文章按照结构使用 DIV 层来分离，以便使用CSS来进行美化
+  &lt;ul&gt;
+  &lt;li&gt;就象sample中展示的modern 效果
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+ &lt;&#x2F;li&gt;
+ &lt;li&gt;使用外部指定的一个CSS定义 
+ &lt;&#x2F;li&gt;
+ &lt;&#x2F;ol&gt;
+
+&lt;a id=&quot;toc3R0lYQ0JaT&quot; name=&quot;toc3R0lYQ0JaT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopS1JNRklNU&#x27;&gt; 2. 字体与美化 Fonts and Beautifiers &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+整体上来说t2t 使用两种字体设定:
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+正常 字体可以使用各种美化处理
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;code&gt;打印机字体&lt;&#x2F;code&gt; 即“等宽体” 是被预格式化处理的不能被美化处理
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+现在进入详细章节...
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc4R0lYRENMU&quot; name=&quot;toc4R0lYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopS1JNRklNU&#x27;&gt; 2.1. 美化 Beautifiers &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+就象你在 email 中定义文本样式一样，t2t 可以简单的快速美化字样
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;双* 产生 &lt;b&gt;加重&lt;&#x2F;b&gt;效果
+&lt;&#x2F;li&gt;
+&lt;li&gt;双&#x2F; 产生 &lt;i&gt;斜体&lt;&#x2F;i&gt;效果
+&lt;&#x2F;li&gt;
+&lt;li&gt;双_ 产生 &lt;u&gt;下线&lt;&#x2F;u&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+并且&lt;i&gt;可以&lt;b&gt;混合&lt;&#x2F;b&gt;使用&lt;&#x2F;i&gt;！
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc5R0lYREVMU&quot; name=&quot;toc5R0lYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopS1JNRklNU&#x27;&gt; 2.2. 更多的装饰 More Cosmetics &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+特殊的内容，比如说 email (&lt;a href=&quot;mailto:duh@somewhere.com&quot;&gt;duh@somewhere.com&lt;&#x2F;a&gt;) 和
+URL (&lt;a href=&quot;http:&#x2F;&#x2F;www.duh.com&quot;&gt;http:&#x2F;&#x2F;www.duh.com&lt;&#x2F;a&gt;) 会自动处理
+还有横线:
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+^ 细的 或是 粗的 v
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;heavy&quot; &#x2F;&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;
+你也可以定义带URL的标签&lt;a href=&quot;http:&#x2F;&#x2F;duh.org&quot;&gt;外部链接&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+并且记住,
+&lt;&#x2F;p&gt;
+	&lt;blockquote&gt;
+	在一行前缀一个制表符将产生引用, A TAB in front of the line does a quotation.
+		&lt;blockquote&gt;
+		而且可以嵌套使用用 More TABs, more depth (if allowed).
+		&lt;&#x2F;blockquote&gt;
+	&lt;&#x2F;blockquote&gt;
+&lt;p&gt;
+非常好用的！.
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc6R01YQ0JaT&quot; name=&quot;toc6R01YQ0JaT&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopS1JNRklNU&#x27;&gt; 3. 列表 &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+形成一个列表非常的自然，只要在行前使用 &lt;b&gt;减号&lt;&#x2F;b&gt; 或是 &lt;b&gt;加号&lt;&#x2F;b&gt; 
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc7R01YRENMU&quot; name=&quot;toc7R01YRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopS1JNRklNU&#x27;&gt; 3.1. 普通列表 Plain List &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+减号 用来标识默许的列表. 对于嵌套列表只要在行前加 &lt;b&gt;空格&lt;&#x2F;b&gt; ,
+并且很自然的，越多的空格，层次就越深
+&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;地球
+  &lt;ul&gt;
+  &lt;li&gt;中国
+    &lt;ul&gt;
+    &lt;li&gt;北京
+      &lt;ul&gt;
+      &lt;li&gt;海淀
+        &lt;ul&gt;
+        &lt;li&gt;还要多深？
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ul&gt;
+      &lt;&#x2F;li&gt;
+      &lt;&#x2F;ul&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;朝鲜
+    &lt;ul&gt;
+    &lt;li&gt;更多的国家
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;火星
+  &lt;ul&gt;
+  &lt;li&gt;上面有谁？
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;p&gt;
+想结束列表，只要使用连续&lt;b&gt;两个空行&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc8R01YREVMU&quot; name=&quot;toc8R01YREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopS1JNRklNU&#x27;&gt; 3.2. 数字列表 Numbered List &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+同样的规则，只是使用 加号，则自动处理为数字式的列表
+&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;甲 one
+&lt;&#x2F;li&gt;
+&lt;li&gt;乙 two
+&lt;&#x2F;li&gt;
+&lt;li&gt;丙 three
+  &lt;ul&gt;
+  &lt;li&gt;混合普通列表 mixed lists!
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;没有关系 
+    &lt;ol&gt;
+    &lt;li&gt;继续数字式的 counting again
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;...
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;丁 four
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+
+&lt;a id=&quot;toc9R01YREdMU&quot; name=&quot;toc9R01YREdMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopS1JNRklNU&#x27;&gt; 3.3. 定义列表 Definition List &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+使用冒号，可以引出词典式的列表. 内容是在紧接的下一行
+&lt;&#x2F;p&gt;
+&lt;dl&gt;
+&lt;dt&gt;桔 orange&lt;&#x2F;dt&gt;&lt;dd&gt;
+  黄色的水果 a yellow fruit
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;苹果 apple&lt;&#x2F;dt&gt;&lt;dd&gt;
+  绿色或是红色的 a green or red fruit
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;其它 other fruits&lt;&#x2F;dt&gt;&lt;dd&gt;
+  &lt;ul&gt;
+  &lt;li&gt;嗬嗬 wee!
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;当然可以混合 mixing lists
+    &lt;ol&gt;
+    &lt;li&gt;数字式的 again!
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;带来 and again!
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ol&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc10R1FYQ0IyR&quot; name=&quot;toc10R1FYQ0IyR&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopS1JNRklNU&#x27;&gt; 4. 表格 Tables &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+使用竖线来组成表格,
+双线开始，表示将解析表格，并作为表头
+使用空格对齐来标识每个表格项
+&lt;&#x2F;p&gt;
+&lt;table align=&quot;center&quot; border=&quot;1&quot;&gt;
+&lt;tr&gt;
+&lt;th&gt;表头 1&lt;&#x2F;th&gt;
+&lt;th&gt;表头 2&lt;&#x2F;th&gt;
+&lt;th&gt;表头 3&lt;&#x2F;th&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td&gt;内文 1.1&lt;&#x2F;td&gt;
+&lt;td align=&quot;center&quot;&gt;内文 1.2&lt;&#x2F;td&gt;
+&lt;td align=&quot;right&quot;&gt;内文 1.3&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td&gt;内文 2.1&lt;&#x2F;td&gt;
+&lt;td align=&quot;center&quot;&gt;内文 2.2&lt;&#x2F;td&gt;
+&lt;td align=&quot;right&quot;&gt;内文 2.3&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;&#x2F;table&gt;
+
+&lt;p&gt;
+没有最后的竖线，则没有边框:
+&lt;&#x2F;p&gt;
+&lt;table align=&quot;center&quot;&gt;
+&lt;tr&gt;
+&lt;th&gt;表头 1&lt;&#x2F;th&gt;
+&lt;th&gt;表头 2&lt;&#x2F;th&gt;
+&lt;th&gt;表头 3&lt;&#x2F;th&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td&gt;内文 1.1&lt;&#x2F;td&gt;
+&lt;td align=&quot;center&quot;&gt;内文 1.2&lt;&#x2F;td&gt;
+&lt;td align=&quot;center&quot;&gt;内文 1.3&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+&lt;td&gt;内文 2.1&lt;&#x2F;td&gt;
+&lt;td align=&quot;center&quot;&gt;内文 2.2&lt;&#x2F;td&gt;
+&lt;td align=&quot;center&quot;&gt;内文 2.3&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;&#x2F;table&gt;
+
+&lt;a id=&quot;toc11R1VYQ0JaN&quot; name=&quot;toc11R1VYQ0JaN&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopS1JNRklNU&#x27;&gt; 5. 特殊实体 Special Entities &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;
+让事儿都简单哪！
+&lt;&#x2F;p&gt;
+&lt;a id=&quot;toc12R1VYRENMU&quot; name=&quot;toc12R1VYRENMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopS1JNRklNU&#x27;&gt; 5.1. 图片 Images &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+非常简单的图片引用方式: &lt;code&gt;[filename]&lt;&#x2F;code&gt;.
+&lt;&#x2F;p&gt;
+                      &lt;center&gt;&lt;img align=&quot;middle&quot; src=&quot;..&#x2F;img&#x2F;photo.jpg&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;&lt;&#x2F;center&gt;  
+&lt;ul&gt;
+&lt;li&gt;文件必须是 PNG, JPG, GIF 格式
+&lt;&#x2F;li&gt;
+&lt;li&gt;方框内不能有空格
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;a id=&quot;toc13R1VYREVMU&quot; name=&quot;toc13R1VYREVMU&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h2&gt;&lt;A href=&#x27;#toptopS1JNRklNU&#x27;&gt; 5.2. 其它 Other &lt;&#x2F;A&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;
+&lt;b&gt;&lt;code&gt;%%date&lt;&#x2F;code&gt;&lt;&#x2F;b&gt; 宏会输出当前日期
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+是标准的ISO &lt;code&gt;YYYYMMDD&lt;&#x2F;code&gt; 格式 20101009 
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+当然可以声明特殊的输出方式
+比如说: &lt;code&gt;%%date(%m-%d-%Y)&lt;&#x2F;code&gt; 会形成: 10-09-2010.
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+That&#x27;s all ! 现在你知道的足够开始使用 &lt;b&gt;t2t&lt;&#x2F;b&gt; 组织文档了！.
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+Translated to Chinese by Zoom.Quiet(&lt;a href=&quot;http:&#x2F;&#x2F;wiki.woodpecker.org.cn&#x2F;moin&#x2F;ZoomQuiet&quot;&gt;Zoom Quiet&lt;&#x2F;a&gt;).
+&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;ul&gt;
+&lt;li&gt;t2t渲染:: 2010-10-09 02:21:37
+&lt;&#x2F;li&gt;
+&lt;li&gt;动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags .&#x2F;utility&#x2F;py4str&#x2F;StructuredText&#x2F;t2tdemo-2005-04-01-23-23.t2t --&gt;
+</content>
+</entry>
+
+<entry>
+<title type="html">xhtml.py</title>
+<category term="/techic/PyBlosxom/plugins" />
+<id>/pyblosxom/2005/04/01/xhtml</id>
+<updated>2005-04-01T15:23:00Z</updated>
+<published>2005-04-01T15:23:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/PyBlosxom/plugins/xhtml.html" />
+<content type="html">&lt;pre class=&quot;brush: python&quot;&gt;# -*- coding: utf-8 -*-
+&quot;&quot;&quot;XHTML - html Parser
+    - 仅仅适用于 t2t 输出的xhtml
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the &quot;Software&quot;), to deal in the Software without restriction,
+including without limitation the rights to use, copy, modify,
+merge, publish, distribute, sublicense, and&#x2F;or sell copies of the
+Software, and to permit persons to whom the Software is furnished
+to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Copyleft 2005, 2006 Zoom.Quiet
+
+&quot;&quot;&quot;
+
+
+## Leo: tab_width=-4 page_width=80
+PREFORMATTER_ID = &#x27;xhtml&#x27;
+FILE_EXT = &#x27;xhtml&#x27;
+__version__ = &quot;v10.4.14&quot;
+__author__ = &#x27;Zoom.Quiet &lt;Zoom.Quiet at gmail.com&gt;&#x27;
+#__url__ = &quot;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;OpenSource&#x2F;PyBlosxom&#x2F;plugins&#x2F;xhtml.phtm&quot;
+__url__ = &quot;http:&#x2F;&#x2F;blog.zoomquiet.org&#x2F;pyblosxom&#x2F;techic&#x2F;PyBlosxom&#x2F;plugins&#x2F;xhtml.html&quot;
+
+__description__ = &quot;txt2tags export xhmtl entry - Pyblosxom Parser.&quot;
+
+from Pyblosxom import tools
+
+def cb_entryparser(args):
+    args[&#x27;xhtml&#x27;] = parse
+    return args
+def parse(filename, request):
+    import os, sys
+    config = request.getConfiguration()
+    ## 简单处理,基于 t2t 2.4.3
+    source = open(filename,&quot;r&quot;).readlines()
+    body = &quot;&quot;.join(source[11:-1])
+    #print source[6]
+    title = source[6][7:-9]
+    #print source[14]
+    #tags = source[14][4:-6]
+    #print tags
+    &#x27;&#x27;&#x27;
+    title = &quot;&quot;
+    for line in open(filename,&quot;r&quot;).readlines():
+        if &quot;&lt;title&gt;&quot; in line:
+            title=line[7:].replace(&quot;&lt;&#x2F;title&gt;&quot;,&quot;&quot;)
+            break
+    if &quot;&quot; == title:
+        title = filename.replace(config[&#x27;datadir&#x27;], &#x27;&#x27;)
+    &#x27;&#x27;&#x27;
+    entryData = {&#x27;body&#x27; : body
+                 ,&#x27;title&#x27; : title
+                 #,&#x27;tags&#x27; : tags
+                 #filename.replace(config[&#x27;datadir&#x27;], &#x27;&#x27;)
+                 }
+
+    return entryData
+
+&lt;&#x2F;pre&gt;</content>
+</entry>
+</feed>

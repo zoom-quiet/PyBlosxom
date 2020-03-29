@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+<title type="text">Z<sub>en</sub>o<sub>f</sub>o<sub>pen</sub>M<sup>ind</sup>. Q<sub>uickly</sub>u<sub>tility</sub>i<sub>nternet</sub>e<sub>asy</sub>t<sup>echnic</sup></title>
+<subtitle type="html"><![CDATA[
+Zoom.Quiet's PyBlosxom blogging
+]]></subtitle>
+<id>/pyblosxom/techic/PyBlosxom/blosxom/croe-hack-file-entry-2006-01-27-23-23.atom</id>
+<link rel="alternate" type="text/html" href="/pyblosxom" />
+<link rel="self" type="application/atom+xml" href="/pyblosxom/techic/PyBlosxom/blosxom/croe-hack-file-entry-2006-01-27-23-23.atom" />
+
+
+<author>
+<name>Zoom.Quiet</name>
+<uri>/pyblosxom/techic/PyBlosxom/blosxom/croe-hack-file-entry-2006-01-27-23-23.atom</uri>
+<email>zoomquiet+blog [AT] gmail.com</email>
+</author>
+<rights>Copyright 2001-2012 Zoom.Quiet</rights>
+<generator uri="http://pyblosxom.sourceforge.net/" version="1.5.2">
+PyBlosxom http://pyblosxom.sourceforge.net/ 1.5.2
+</generator>
+
+<updated>2006-01-27T15:23:00Z</updated>
+<!-- icon?  logo?  -->
+
+<entry>
+<title type="html">[core]fileentry.py</title>
+<category term="" />
+<id>/pyblosxom/2006/01/27/croe-hack-file-entry-2006-01-27-23-23</id>
+<updated>2006-01-27T15:23:00Z</updated>
+<published>2006-01-27T15:23:00Z</published>
+<link rel="alternate" type="text/html" href="/pyblosxom/techic/PyBlosxom/blosxom/croe-hack-file-entry-2006-01-27-23-23.html" />
+<content type="html">&lt;div class=&quot;header&quot; id=&quot;header&quot;&gt;
+&lt;a name=&#x27;toptopTE5SVzY0V&#x27; id=&#x27;toptopTE5SVzY0V&#x27;&gt;&lt;&#x2F;a&gt;&lt;h1&gt;[core]fileentry.py&lt;&#x2F;h1&gt;
+&lt;h2&gt;增补模板元素&lt;&#x2F;h2&gt;
+&lt;h3&gt;t2t渲染:2011-09-07 02:09:17&lt;&#x2F;h3&gt;
+&lt;&#x2F;div&gt;
+
+&lt;div class=&quot;toc&quot; id=&quot;toc&quot;&gt;
+  &lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc1R0VYQ0FaV&quot;&gt;fixed&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;li&gt;&lt;a href=&quot;#toc2R0lYQ0FWQ&quot;&gt;TODO&lt;&#x2F;a&gt;
+  &lt;&#x2F;li&gt;
+  &lt;&#x2F;ol&gt;
+
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;body&quot; id=&quot;body&quot;&gt;
+&lt;a id=&quot;toc1R0VYQ0FaV&quot; name=&quot;toc1R0VYQ0FaV&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTE5SVzY0V&#x27;&gt; 1. fixed &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;dl&gt;
+&lt;dt&gt;Why?&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;a href=&quot;..&#x2F;060120-PyblosxomFixLog3.phtm#toc5&quot;&gt;t2t支持的遗留问题&lt;&#x2F;a&gt;
+    &lt;ul&gt;
+    &lt;li&gt;现在我的Blog 基本就两种文件格式:
+        &lt;ol&gt;
+        &lt;li&gt;.py 脚本文件
+        &lt;&#x2F;li&gt;
+        &lt;li&gt;.t2t 文章
+        &lt;&#x2F;li&gt;
+        &lt;&#x2F;ol&gt;
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;但是模板中 t2t 额外给出的下载 .t2t和.moin 对 .py 的文件不适用！
+    &lt;p&gt;&lt;&#x2F;p&gt;
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;problem&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;pyblosxom.sourceforge.net&#x2F;1.3&#x2F;manual&#x2F;x307.html#AEN356&quot;&gt;模板有效输出值&lt;&#x2F;a&gt;
+    的说明中有问题！
+    &lt;ul&gt;
+    &lt;li&gt;&lt;b&gt;file_path&lt;&#x2F;b&gt;	just the filename and extensions of the entry
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;实际上没有后缀！
+    &lt;&#x2F;li&gt;
+    &lt;li&gt;所以！
+    &lt;&#x2F;li&gt;
+    &lt;&#x2F;ul&gt;
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;hacked:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    &lt;i&gt;path&#x2F;to&#x2F;site-packages&#x2F;Pyblosxom&#x2F;entries&#x2F;fileentry.py&lt;&#x2F;i&gt;
+&lt;p&gt;&lt;&#x2F;p&gt;
+&lt;pre class=&quot;brush:  python&quot;&gt;
+
+#147 line...
+        self[&#x27;entryext&#x27;] = ext
+        self[&#x27;filebasename&#x27;] = file_basename
+&lt;&#x2F;pre&gt;
+    追加我需要的变量！
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;模板处理:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    这样一来&lt;b&gt;story.*&lt;&#x2F;b&gt;的模板中就可以对应修正输出了！
+&lt;pre class=&quot;brush:  html&quot;&gt;
+
+| &amp;lt;a href=&quot;$base_url&#x2F;$file_path_urlencoded.$flavour&quot; 
+    title=&quot;permalink&quot;&amp;gt;#
+    永久链接&amp;lt;&#x2F;a&amp;gt;&amp;lt;!--permanent link to this entry--&amp;gt;
+    &amp;lt;sup&amp;gt;    
+    &amp;lt;a href=&quot;&#x2F;entry&#x2F;$file_path_urlencoded$entryext&quot;&amp;gt;
+    $entryext&amp;lt;&#x2F;a&amp;gt;
+    &amp;lt;a href=&quot;&#x2F;entry&#x2F;$file_path_urlencoded.t2t&quot;&amp;gt;
+    .t2t&amp;lt;&#x2F;a&amp;gt;
+    &amp;lt;a href=&quot;&#x2F;entry&#x2F;$file_path_urlencoded.moin&quot;&amp;gt;
+    .moin&amp;lt;&#x2F;a&amp;gt;
+    &amp;lt;&#x2F;sup&amp;gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;a id=&quot;toc2R0lYQ0FWQ&quot; name=&quot;toc2R0lYQ0FWQ&quot;&gt;&lt;&#x2F;a&gt;
+&lt;h1&gt;&lt;A href=&#x27;#toptopTE5SVzY0V&#x27;&gt; 2. TODO &lt;&#x2F;A&gt;&lt;&#x2F;h1&gt;
+&lt;dl&gt;
+&lt;dt&gt;contribute 分发!&lt;&#x2F;dt&gt;&lt;dd&gt;
+    接踵而来的就是如何标准化的反馈社区，
+    贡献代码了…………
+&lt;&#x2F;dd&gt;
+&lt;dt&gt;进一步的:&lt;&#x2F;dt&gt;&lt;dd&gt;
+    Pyblosxom的模板属于简单模板，在模板中不能加入逻辑的，
+    所以现在虽然对.py 的文章有了直接下载链接，但是，没有自动生成的.moin 
+    和约定的.t2t 下载并不应该有…………
+    向社区建议吧…………
+&lt;&#x2F;dd&gt;
+&lt;&#x2F;dl&gt;
+
+&lt;hr class=&quot;light&quot; &#x2F;&gt;
+&lt;p&gt;
+动力源自::&lt;b&gt;&lt;a href=&quot;http:&#x2F;&#x2F;txt2tags.sf.net&quot;&gt;txt2tags&lt;&#x2F;a&gt;&lt;&#x2F;b&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;img align=&quot;middle&quot; src=&quot;&#x2F;pybimage&#x2F;technorati-over.gif&quot; border=&quot;0&quot; alt=&quot;&quot;&#x2F;&gt;
+    &lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;OpenSource&quot;&gt;OpenSource&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;PyBlosxom&quot;&gt;PyBlosxom&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;hacking&quot;&gt;hacking&lt;&#x2F;a&gt;
+    ,&lt;a href=&quot;http:&#x2F;&#x2F;www.technorati.com&#x2F;tags&#x2F;SNS&quot;&gt;SNS&lt;&#x2F;a&gt;
+&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+
+&lt;!-- xhtml code generated by txt2tags 2.4 (http:&#x2F;&#x2F;txt2tags.sf.net) --&gt;
+&lt;!-- cmdline: txt2tags croe-hack-file-entry-2006-01-27-23-23.t2t --&gt;
+</content>
+</entry>
+</feed>
